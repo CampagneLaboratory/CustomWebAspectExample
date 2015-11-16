@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <root>
+    <file name="AllCirclesInDb_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.circles.mockup.behavior.AllCirclesInDb_BehaviorDescriptor" />
+    </file>
+    <file name="BehaviorAspectDescriptor.java">
+      <unit at="9,0,32,0" name="org.campagnelab.circles.mockup.behavior.BehaviorAspectDescriptor" />
+    </file>
+    <file name="CircleContainer_BehaviorDescriptor.java">
+      <unit at="6,0,8,0" name="org.campagnelab.circles.mockup.behavior.CircleContainer_BehaviorDescriptor" />
+    </file>
+    <file name="CircleItem_BehaviorDescriptor.java">
+      <unit at="10,0,21,0" name="org.campagnelab.circles.mockup.behavior.CircleItem_BehaviorDescriptor" />
+    </file>
+    <file name="CircleRef_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.circles.mockup.behavior.CircleRef_BehaviorDescriptor" />
+    </file>
+    <file name="Circle_BehaviorDescriptor.java">
+      <unit at="10,0,21,0" name="org.campagnelab.circles.mockup.behavior.Circle_BehaviorDescriptor" />
+    </file>
+    <file name="Dashboard_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.circles.mockup.behavior.Dashboard_BehaviorDescriptor" />
+    </file>
+    <file name="FileItem_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.circles.mockup.behavior.FileItem_BehaviorDescriptor" />
+    </file>
+  </root>
+</debug-info>
+
