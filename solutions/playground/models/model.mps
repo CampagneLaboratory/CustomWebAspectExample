@@ -35,6 +35,14 @@
     </language>
   </registry>
   <node concept="317o2z" id="7pelyIRn7$U">
+    <node concept="317LwS" id="7pelyIRqwWf" role="317o2y">
+      <property role="TrG5h" value="Project2" />
+      <property role="317LwX" value="wu92389283293" />
+      <node concept="31bO2F" id="7pelyIRqwWs" role="31bOZr">
+        <property role="TrG5h" value="file.txt" />
+        <property role="31bO2E" value="/file./txt" />
+      </node>
+    </node>
     <node concept="317LwS" id="7pelyIRny2h" role="317o2y">
       <property role="TrG5h" value="reads" />
       <property role="317LwX" value="u2u3uiwe" />
@@ -53,7 +61,7 @@
     </node>
   </node>
   <node concept="317FyR" id="7pelyIRn7_9">
-    <property role="3170p$" value="i9283928392390sd" />
+    <property role="3170p$" value="wu92389283293" />
     <node concept="314PbK" id="7pelyIRnxwx" role="317ZaZ">
       <ref role="314PbR" node="7pelyIRny2h" resolve="reads" />
     </node>
@@ -62,6 +70,9 @@
     </node>
     <node concept="314PbK" id="7pelyIRoOT1" role="317ZaZ">
       <ref role="314PbR" node="7pelyIRn7$V" resolve="project" />
+    </node>
+    <node concept="314PbK" id="7pelyIRqwWl" role="317ZaZ">
+      <ref role="314PbR" node="7pelyIRqwWf" resolve="Project2" />
     </node>
   </node>
 </model>
