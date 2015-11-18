@@ -10,16 +10,6 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Component;
-import javax.swing.JComponent;
-import org.campagnelab.ui.code.Swing.ButtonCallback;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import org.campagnelab.ui.code.Swing.Button;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.openapi.editor.style.Style;
@@ -43,10 +33,9 @@ public class Circle_Editor extends DefaultNodeEditor {
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createProperty_zihja6_a0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_zihja6_b0(editorContext, node));
-    editorCell.addEditorCell(this.createJComponent_zihja6_c0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_zihja6_d0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_zihja6_e0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_zihja6_f0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_zihja6_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_zihja6_d0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_zihja6_e0(editorContext, node));
     return editorCell;
   }
   private EditorCell createProperty_zihja6_a0(EditorContext editorContext, SNode node) {
@@ -81,27 +70,8 @@ public class Circle_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createJComponent_zihja6_c0(EditorContext editorContext, SNode node) {
-    EditorCell editorCell = EditorCell_Component.createComponentCell(editorContext, node, Circle_Editor._QueryFunction_JComponent_zihja6_a2a(node, editorContext), "_zihja6_c0");
-    editorCell.setCellId("JComponent_zihja6_c0");
-    return editorCell;
-  }
-  private static JComponent _QueryFunction_JComponent_zihja6_a2a(final SNode node, final EditorContext editorContext) {
-    ButtonCallback callback = new ButtonCallback(node, editorContext) {
-      public void process(final SNode n, final EditorContext editorContext) {
-        {
-          final SNode node = ((SNode) n);
-          SNode ref = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb75d04dbL, "org.campagnelab.circles.mockup.structure.CircleRef")));
-          SLinkOperations.setTarget(ref, MetaAdapterFactory.getReferenceLink(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb75d04dbL, 0x764e562bb75d04dcL, "circle"), node);
-          ListSequence.fromList(SLinkOperations.getChildren(ListSequence.fromList(SModelOperations.roots(SNodeOperations.getModel(node), MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb750ee9cL, "org.campagnelab.circles.mockup.structure.Dashboard"))).first(), MetaAdapterFactory.getContainmentLink(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb751a497L, 0x764e562bb751a494L, "containedCircles"))).addElement(ref);
-        }
-      }
-    };
-    return Button.createButton("Add to Dashboard", editorContext, node, callback);
-
-  }
-  private EditorCell createRefNodeList_zihja6_d0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Circle_Editor.containedCirclesListHandler_zihja6_d0(node, "containedCircles", editorContext);
+  private EditorCell createRefNodeList_zihja6_c0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new Circle_Editor.containedCirclesListHandler_zihja6_c0(node, "containedCircles", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_containedCircles");
     Style style = new StyleImpl();
@@ -111,8 +81,8 @@ public class Circle_Editor extends DefaultNodeEditor {
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class containedCirclesListHandler_zihja6_d0 extends RefNodeListHandler {
-    public containedCirclesListHandler_zihja6_d0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class containedCirclesListHandler_zihja6_c0 extends RefNodeListHandler {
+    public containedCirclesListHandler_zihja6_c0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {
@@ -143,17 +113,17 @@ public class Circle_Editor extends DefaultNodeEditor {
       }
     }
   }
-  private EditorCell createConstant_zihja6_e0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_zihja6_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "items:");
-    editorCell.setCellId("Constant_zihja6_e0");
+    editorCell.setCellId("Constant_zihja6_d0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNodeList_zihja6_f0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Circle_Editor.itemsListHandler_zihja6_f0(node, "items", editorContext);
+  private EditorCell createRefNodeList_zihja6_e0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new Circle_Editor.itemsListHandler_zihja6_e0(node, "items", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_items");
     Style style = new StyleImpl();
@@ -163,8 +133,8 @@ public class Circle_Editor extends DefaultNodeEditor {
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class itemsListHandler_zihja6_f0 extends RefNodeListHandler {
-    public itemsListHandler_zihja6_f0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class itemsListHandler_zihja6_e0 extends RefNodeListHandler {
+    public itemsListHandler_zihja6_e0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {

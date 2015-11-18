@@ -14,19 +14,6 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Component;
-import javax.swing.JComponent;
-import org.campagnelab.ui.code.Swing.ButtonCallback;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.jetbrains.mps.openapi.language.SAbstractConcept;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import org.campagnelab.ui.code.Swing.Button;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
@@ -62,7 +49,6 @@ public class Dashboard_Editor extends DefaultNodeEditor {
     style.set(StyleAttributes.SELECTABLE, 0, false);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(this.createProperty_3r3pi4_a1a(editorContext, node));
-    editorCell.addEditorCell(this.createJComponent_3r3pi4_b1a(editorContext, node));
     return editorCell;
   }
   private EditorCell createProperty_3r3pi4_a1a(EditorContext editorContext, SNode node) {
@@ -80,30 +66,6 @@ public class Dashboard_Editor extends DefaultNodeEditor {
       return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
     } else
     return editorCell;
-  }
-  private EditorCell createJComponent_3r3pi4_b1a(EditorContext editorContext, SNode node) {
-    EditorCell editorCell = EditorCell_Component.createComponentCell(editorContext, node, Dashboard_Editor._QueryFunction_JComponent_3r3pi4_a1b0(node, editorContext), "_3r3pi4_b1a");
-    editorCell.setCellId("JComponent_3r3pi4_b1a");
-    return editorCell;
-  }
-  private static JComponent _QueryFunction_JComponent_3r3pi4_a1b0(final SNode node, final EditorContext editorContext) {
-    ButtonCallback callback = new ButtonCallback(node, editorContext) {
-      public void process(final SNode n, final EditorContext editorContext) {
-        {
-          final SNode node = ((SNode) n);
-          SNode c = ListSequence.fromList(SNodeOperations.getNodeDescendants(ListSequence.fromList(SModelOperations.roots(SNodeOperations.getModel(node), MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb753d688L, "org.campagnelab.circles.mockup.structure.AllCirclesInDb"))).first(), MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb7514e13L, "org.campagnelab.circles.mockup.structure.Circle"), false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
-            public boolean accept(SNode it) {
-              return eq_3r3pi4_a0a0a0a0a0a1a0a0a0a0a0g(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb7514e13L, 0x764e562bb7514e16L, "id")), SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb750ee9cL, 0x764e562bb752504fL, "queryTerm")));
-            }
-          });
-          SNode cRef = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb75d04dbL, "org.campagnelab.circles.mockup.structure.CircleRef")));
-          SLinkOperations.setTarget(cRef, MetaAdapterFactory.getReferenceLink(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb75d04dbL, 0x764e562bb75d04dcL, "circle"), c);
-          ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb751a497L, 0x764e562bb751a494L, "containedCircles"))).addElement(cRef);
-        }
-      }
-    };
-    return Button.createButton("Add New Circle", editorContext, node, callback);
-
   }
   private EditorCell createRefNodeList_3r3pi4_c0(EditorContext editorContext, SNode node) {
     AbstractCellListHandler handler = new Dashboard_Editor.containedCirclesListHandler_3r3pi4_c0(node, "containedCircles", editorContext);
@@ -143,8 +105,5 @@ public class Dashboard_Editor extends DefaultNodeEditor {
         }
       }
     }
-  }
-  private static boolean eq_3r3pi4_a0a0a0a0a0a1a0a0a0a0a0g(Object a, Object b) {
-    return (a != null ? a.equals(b) : a == b);
   }
 }
