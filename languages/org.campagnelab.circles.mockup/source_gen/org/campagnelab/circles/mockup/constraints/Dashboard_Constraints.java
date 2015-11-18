@@ -12,7 +12,7 @@ import jetbrains.mps.smodel.runtime.base.BasePropertyConstraintsDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.campagnelab.circles.mockup.behavior.Dashboard_Behavior;
+import org.campagnelab.circles.mockup.behavior.Dashboard__BehaviorDescriptor;
 
 public class Dashboard_Constraints extends BaseConstraintsDescriptor {
   public Dashboard_Constraints() {
@@ -31,8 +31,8 @@ public class Dashboard_Constraints extends BaseConstraintsDescriptor {
         String propertyName = "queryTerm";
         SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb750ee9cL, 0x764e562bb752504fL, "queryTerm"), (SPropertyOperations.getString(propertyValue)));
 
-        if (Dashboard_Behavior.call_canAddNewCircle_5883119402027348663(node)) {
-          Dashboard_Behavior.call_addNewCircle_5883119402027343278(node);
+        if ((boolean) Dashboard__BehaviorDescriptor.canAddNewCircle_id56_2uOh37aR.invoke(node)) {
+          Dashboard__BehaviorDescriptor.addNewCircle_id56_2uOh35QI.invoke(node);
           SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb750ee9cL, 0x764e562bb752504fL, "queryTerm"), "");
         }
       }

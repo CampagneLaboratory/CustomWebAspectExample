@@ -4,11 +4,17 @@ package org.campagnelab.circles.mockup.behavior;
 
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 
+/**
+ * Will be removed after 3.3
+ * Need to support compilation of the legacy behavior descriptors before the language is rebuilt
+ * This class is not involved in the actual method invocation
+ */
+@Deprecated
 public class CircleRef_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
-  public CircleRef_BehaviorDescriptor() {
-  }
+
   @Override
   public String getConceptFqName() {
     return "org.campagnelab.circles.mockup.structure.CircleRef";
   }
+
 }

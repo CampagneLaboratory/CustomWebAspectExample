@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="runtime.WebLanguageAspect" file="WebLanguageAspect.java">
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
+  </dependency>
+</dependenciesRoot>
+
