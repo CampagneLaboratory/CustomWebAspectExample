@@ -4,9 +4,6 @@
     <file name="Database_BehaviorDescriptor.java">
       <unit at="12,0,21,0" name="org.campagnelab.circles.persistence.behavior.Database_BehaviorDescriptor" />
     </file>
-    <file name="ExclusionRule_BehaviorDescriptor.java">
-      <unit at="12,0,21,0" name="org.campagnelab.circles.persistence.behavior.ExclusionRule_BehaviorDescriptor" />
-    </file>
     <file name="IncludeConcept_BehaviorDescriptor.java">
       <unit at="12,0,21,0" name="org.campagnelab.circles.persistence.behavior.IncludeConcept_BehaviorDescriptor" />
     </file>

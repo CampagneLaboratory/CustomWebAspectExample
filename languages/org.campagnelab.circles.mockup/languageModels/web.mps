@@ -17,7 +17,7 @@
         <property id="4824635715685243887" name="user" index="1mS5tK" />
       </concept>
       <concept id="4824635715685240681" name="org.campagnelab.circles.persistence.structure.IncludeConcept" flags="ng" index="1mS4fQ">
-        <reference id="4824635715685240682" name="concept" index="1mS4fP" />
+        <reference id="4824635715685240682" name="c" index="1mS4fP" />
       </concept>
       <concept id="4824635715685240675" name="org.campagnelab.circles.persistence.structure.PersistedConcepts" flags="ng" index="1mS4fW">
         <child id="4824635715685240684" name="inclusionRules" index="1mS4fN" />
@@ -30,17 +30,14 @@
     <property role="1mS5tH" value="admin" />
   </node>
   <node concept="1mS4fW" id="4bOz9Wk5dmE">
-    <node concept="1mS4fQ" id="4bOz9Wk5dmF" role="1mS4fN">
-      <ref role="1mS4fP" to="avse:7pelyIRkkSj" resolve="Circle" />
-    </node>
-    <node concept="1mS4fQ" id="4bOz9Wk5dmH" role="1mS4fN">
+    <node concept="1mS4fQ" id="4Ozo2LNWFS" role="1mS4fN">
       <ref role="1mS4fP" to="avse:7pelyIRohap" resolve="CircleItem" />
     </node>
-    <node concept="1mS4fQ" id="4bOz9Wk5dmK" role="1mS4fN">
-      <ref role="1mS4fP" to="avse:7pelyIRngjr" resolve="CircleRef" />
-    </node>
-    <node concept="1mS4fQ" id="4bOz9Wk5dmO" role="1mS4fN">
+    <node concept="1mS4fQ" id="4Ozo2LNWFX" role="1mS4fN">
       <ref role="1mS4fP" to="avse:7pelyIRohq0" resolve="FileItem" />
+    </node>
+    <node concept="1mS4fQ" id="4bOz9Wk5dmF" role="1mS4fN">
+      <ref role="1mS4fP" to="avse:7pelyIRkkSj" resolve="Circle" />
     </node>
   </node>
 </model>

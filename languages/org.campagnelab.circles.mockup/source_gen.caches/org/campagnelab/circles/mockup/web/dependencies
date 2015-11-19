@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="org.campagnelab.circles.mockup.web.WebAspectImplementation" file="WebAspectImplementation.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.metadata.schema.OClass" />
+    <classNode dependClassName="com.orientechnologies.orient.core.metadata.schema.OSchemaProxy" />
+    <classNode dependClassName="com.orientechnologies.orient.core.metadata.schema.OType" />
+    <classNode dependClassName="com.orientechnologies.orient.core.query.live.OLiveQueryHook" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.CollectionSequence" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SDataType" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SEnumeration" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SPrimitiveDataType" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SReferenceLink" />
     <classNode extendsClassName="org.campagnelab.circles.aspect.runtime.WebLanguageAspect" />
   </dependency>
 </dependenciesRoot>

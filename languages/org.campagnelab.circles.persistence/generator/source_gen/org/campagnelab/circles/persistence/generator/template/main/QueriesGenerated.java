@@ -7,44 +7,49 @@ import jetbrains.mps.generator.template.CreateRootRuleContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModuleOperations;
 import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.generator.template.ReferenceMacroContext;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
+import jetbrains.mps.generator.template.TemplateQueryContext;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.internal.collections.runtime.ISelector;
-import java.util.List;
 
 @Generated
 public class QueriesGenerated {
   public static boolean createRootRule_Condition_8334940743345623047(final CreateRootRuleContext _context) {
     return SModuleOperations.isAspect(_context.getOriginalInputModel(), "web");
   }
-  public static Object propertyMacro_GetPropertyValue_2897519568668614238(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(ListSequence.fromList(SModelOperations.roots(_context.getInputModel(), MetaAdapterFactory.getConcept(0x22916f45e98f4433L, 0x9c1b1b382cf5bd8dL, 0x28360eb22c3ac732L, "jetbrains.mps.samples.customAspect.documentation.structure.ConceptDocumentation"))).findFirst(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x22916f45e98f4433L, 0x9c1b1b382cf5bd8dL, 0x28360eb22c3ac732L, 0x28360eb22c3ad436L, "cncpt")) == _context.getNode();
-      }
-    }), MetaAdapterFactory.getProperty(0x22916f45e98f4433L, 0x9c1b1b382cf5bd8dL, 0x28360eb22c3ac732L, 0x28360eb22c3acdf0L, "text"));
+  public static Object propertyMacro_GetPropertyValue_1004539053071820795(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(((SNode) _context.getVariable("var:database")), MetaAdapterFactory.getProperty(0x8202d3ebbfe04fb5L, 0x9544c67c5faa531dL, 0x2970c96b0e706973L, 0x2970c96b0e706974L, "url"));
   }
-  public static Object referenceMacro_GetReferent_2897519568668612287(final ReferenceMacroContext _context) {
+  public static Object propertyMacro_GetPropertyValue_1004539053072184206(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
+  }
+  public static Object referenceMacro_GetReferent_86849876705426592(final ReferenceMacroContext _context) {
     return _context.getNode();
   }
-  public static Iterable<SNode> sourceNodesQuery_86849876705294770(final SourceSubstituteMacroNodesContext _context) {
-    return ListSequence.fromList(SModelOperations.roots(_context.getOriginalInputModel(), MetaAdapterFactory.getConcept(0x8202d3ebbfe04fb5L, 0x9544c67c5faa531dL, 0x42f48c9f1414cf63L, "org.campagnelab.circles.persistence.structure.PersistedConcepts"))).select(new ISelector<SNode, List<SNode>>() {
-      public List<SNode> select(SNode it) {
-        return SLinkOperations.getChildren(it, MetaAdapterFactory.getContainmentLink(0x8202d3ebbfe04fb5L, 0x9544c67c5faa531dL, 0x42f48c9f1414cf63L, 0x42f48c9f1414cf6cL, "inclusionRules"));
+  public static Iterable<SNode> sourceNodesQuery_1004539053072181794(final SourceSubstituteMacroNodesContext _context) {
+    return ((Iterable<SNode>) _context.getVariable("var:concepts"));
+  }
+  public static Iterable<SNode> sourceNodesQuery_86849876705397790(final SourceSubstituteMacroNodesContext _context) {
+    return ((Iterable<SNode>) _context.getVariable("var:concepts"));
+  }
+  public static Object insertMacro_varValue_86849876705431332(final TemplateQueryContext _context) {
+    return ListSequence.fromList(SLinkOperations.getChildren(ListSequence.fromList(SModelOperations.roots(_context.getOriginalInputModel(), MetaAdapterFactory.getConcept(0x8202d3ebbfe04fb5L, 0x9544c67c5faa531dL, 0x42f48c9f1414cf63L, "org.campagnelab.circles.persistence.structure.PersistedConcepts"))).first(), MetaAdapterFactory.getContainmentLink(0x8202d3ebbfe04fb5L, 0x9544c67c5faa531dL, 0x42f48c9f1414cf63L, 0x42f48c9f1414cf6cL, "inclusionRules"))).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return (SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x8202d3ebbfe04fb5L, 0x9544c67c5faa531dL, 0x42f48c9f1414cf69L, 0x42f48c9f1414cf6aL, "c")) != null);
+      }
+    }).select(new ISelector<SNode, SNode>() {
+      public SNode select(SNode it) {
+        return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x8202d3ebbfe04fb5L, 0x9544c67c5faa531dL, 0x42f48c9f1414cf69L, 0x42f48c9f1414cf6aL, "c"));
       }
     }).distinct();
   }
-  public static Iterable<SNode> sourceNodesQuery_2897519568668600552(final SourceSubstituteMacroNodesContext _context) {
-    return ListSequence.fromList(SModelOperations.roots(_context.getOriginalInputModel(), MetaAdapterFactory.getConcept(0x22916f45e98f4433L, 0x9c1b1b382cf5bd8dL, 0x28360eb22c3ac732L, "jetbrains.mps.samples.customAspect.documentation.structure.ConceptDocumentation"))).select(new ISelector<SNode, SNode>() {
-      public SNode select(SNode it) {
-        return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x22916f45e98f4433L, 0x9c1b1b382cf5bd8dL, 0x28360eb22c3ac732L, 0x28360eb22c3ad436L, "cncpt"));
-      }
-    }).distinct();
+  public static Object insertMacro_varValue_1004539053071837750(final TemplateQueryContext _context) {
+    return ListSequence.fromList(SModelOperations.roots(_context.getOriginalInputModel(), MetaAdapterFactory.getConcept(0x8202d3ebbfe04fb5L, 0x9544c67c5faa531dL, 0x2970c96b0e706973L, "org.campagnelab.circles.persistence.structure.Database"))).first();
   }
 }

@@ -68,19 +68,6 @@
       <ref role="20lvS9" node="4bOz9Wk5cXD" resolve="IncludeConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4bOz9Wk5cXA">
-    <property role="1pbfSe" value="1460231173" />
-    <property role="TrG5h" value="ExclusionRule" />
-    <property role="34LRSv" value="exclude" />
-    <property role="R4oN_" value="Exclude Concepts From Persistence" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="4bOz9Wk5cXB" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="concept" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="4bOz9Wk5cXD">
     <property role="1pbfSe" value="1460231176" />
     <property role="TrG5h" value="IncludeConcept" />
@@ -89,7 +76,7 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4bOz9Wk5cXE" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="concep" />
+      <property role="20kJfa" value="c" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
     </node>
