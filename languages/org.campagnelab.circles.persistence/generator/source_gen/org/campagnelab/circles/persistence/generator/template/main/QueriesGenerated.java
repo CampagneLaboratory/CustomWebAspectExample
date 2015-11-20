@@ -15,8 +15,8 @@ import jetbrains.mps.generator.template.TemplateQueryContext;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
-import jetbrains.mps.internal.collections.runtime.ISelector;
+import jetbrains.mps.internal.collections.runtime.ITranslator2;
+import org.campagnelab.circles.persistence.behavior.IIncludeConcepts__BehaviorDescriptor;
 
 @Generated
 public class QueriesGenerated {
@@ -39,13 +39,9 @@ public class QueriesGenerated {
     return ((Iterable<SNode>) _context.getVariable("var:concepts"));
   }
   public static Object insertMacro_varValue_86849876705431332(final TemplateQueryContext _context) {
-    return ListSequence.fromList(SLinkOperations.getChildren(ListSequence.fromList(SModelOperations.roots(_context.getOriginalInputModel(), MetaAdapterFactory.getConcept(0x8202d3ebbfe04fb5L, 0x9544c67c5faa531dL, 0x42f48c9f1414cf63L, "org.campagnelab.circles.persistence.structure.PersistedConcepts"))).first(), MetaAdapterFactory.getContainmentLink(0x8202d3ebbfe04fb5L, 0x9544c67c5faa531dL, 0x42f48c9f1414cf63L, 0x42f48c9f1414cf6cL, "inclusionRules"))).where(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return (SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x8202d3ebbfe04fb5L, 0x9544c67c5faa531dL, 0x42f48c9f1414cf69L, 0x42f48c9f1414cf6aL, "c")) != null);
-      }
-    }).select(new ISelector<SNode, SNode>() {
-      public SNode select(SNode it) {
-        return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x8202d3ebbfe04fb5L, 0x9544c67c5faa531dL, 0x42f48c9f1414cf69L, 0x42f48c9f1414cf6aL, "c"));
+    return ListSequence.fromList(SLinkOperations.getChildren(ListSequence.fromList(SModelOperations.roots(_context.getOriginalInputModel(), MetaAdapterFactory.getConcept(0x8202d3ebbfe04fb5L, 0x9544c67c5faa531dL, 0x42f48c9f1414cf63L, "org.campagnelab.circles.persistence.structure.PersistedConcepts"))).first(), MetaAdapterFactory.getContainmentLink(0x8202d3ebbfe04fb5L, 0x9544c67c5faa531dL, 0x42f48c9f1414cf63L, 0x42f48c9f1414cf6cL, "inclusionRules"))).translate(new ITranslator2<SNode, SNode>() {
+      public Iterable<SNode> translate(SNode it) {
+        return (Iterable<SNode>) IIncludeConcepts__BehaviorDescriptor.getConcepts_idRKPJ9dogRU.invoke(it);
       }
     }).distinct();
   }

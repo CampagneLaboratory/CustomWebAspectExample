@@ -4,7 +4,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <root>
     <file name="QueriesGenerated.java">
-      <unit at="21,0,56,0" name="org.campagnelab.circles.persistence.generator.template.main.QueriesGenerated" />
+      <unit at="21,0,52,0" name="org.campagnelab.circles.persistence.generator.template.main.QueriesGenerated" />
     </file>
   </root>
   <root nodeRef="r:31d4daf4-04c8-4f0b-b42f-4498d37943a3(org.campagnelab.circles.persistence.generator.template.main@generator)/2986108014587540577">
@@ -20,29 +20,22 @@
       <node id="86849876705426599" at="32,107,33,30" concept="1" />
       <node id="1004539053072183550" at="35,120,36,68" concept="1" />
       <node id="86849876705428936" at="38,118,39,68" concept="1" />
-      <node id="86849876705863707" at="43,39,44,181" concept="1" />
-      <node id="86849876705863707" at="47,37,48,171" concept="1" />
-      <node id="1004539053072219417" at="52,102,53,251" concept="1" />
-      <node id="86849876705863707" at="43,0,46,0" concept="0" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="86849876705863707" at="47,0,50,0" concept="0" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="86849876705857532" at="41,100,50,18" concept="1" />
+      <node id="1004539053072592690" at="43,50,44,106" concept="1" />
+      <node id="1004539053072219417" at="48,102,49,251" concept="1" />
+      <node id="1004539053072671529" at="43,0,46,0" concept="0" trace="translate#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <node id="86849876705857532" at="41,100,46,18" concept="1" />
       <scope id="1004539053071820796" at="26,112,27,212" />
       <scope id="1004539053072184207" at="29,112,30,175" />
       <scope id="86849876705426593" at="32,107,33,30" />
       <scope id="1004539053072181796" at="35,120,36,68" />
       <scope id="86849876705397791" at="38,118,39,68" />
-      <scope id="86849876705863707" at="43,39,44,181" />
-      <scope id="86849876705863707" at="47,37,48,171" />
-      <scope id="1004539053071837752" at="52,102,53,251" />
-      <scope id="86849876705863707" at="43,0,46,0">
-        <var name="it" id="86849876705863707" />
+      <scope id="1004539053072671530" at="43,50,44,106" />
+      <scope id="1004539053071837752" at="48,102,49,251" />
+      <scope id="1004539053072671529" at="43,0,46,0">
+        <var name="it" id="1004539053072671529" />
       </scope>
-      <scope id="86849876705863707" at="47,0,50,0">
-        <var name="it" id="86849876705863707" />
-      </scope>
-      <scope id="86849876705431334" at="41,100,50,18" />
-      <unit id="86849876705863707" at="42,463,46,5" name="org.campagnelab.circles.persistence.generator.template.main.QueriesGenerated$1" />
-      <unit id="86849876705863707" at="46,18,50,5" name="org.campagnelab.circles.persistence.generator.template.main.QueriesGenerated$2" />
+      <scope id="86849876705431334" at="41,100,46,18" />
+      <unit id="1004539053072671529" at="42,467,46,5" name="org.campagnelab.circles.persistence.generator.template.main.QueriesGenerated$1" />
     </file>
   </root>
 </debug-info>

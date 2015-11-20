@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="org.campagnelab.circles.aspect.runtime.WebLanguageAspect" file="WebLanguageAspect.java">
+  <dependency className="org.campagnelab.circles.aspect.runtime.WebLanguageAspectDescriptor" file="WebLanguageAspectDescriptor.java">
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
   </dependency>
 </dependenciesRoot>

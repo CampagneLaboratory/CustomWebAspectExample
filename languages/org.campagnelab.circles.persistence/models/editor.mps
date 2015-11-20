@@ -90,7 +90,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4bOz9Wk5dmY">
-    <ref role="1XX52x" to="zfvb:4bOz9Wk5cXD" resolve="IncludeConcept" />
+    <ref role="1XX52x" to="zfvb:4bOz9Wk5cXD" resolve="IncludeConcepts" />
     <node concept="3EZMnI" id="4bOz9Wk5dn0" role="2wV5jI">
       <node concept="3F0ifn" id="4bOz9Wk5dn7" role="3EZMnx">
         <property role="3F0ifm" value="include" />
@@ -105,6 +105,24 @@
         </node>
       </node>
       <node concept="2iRfu4" id="4bOz9Wk5dnd" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="RKPJ9dohji">
+    <ref role="1XX52x" to="zfvb:RKPJ9dohel" resolve="IncludeLanguage" />
+    <node concept="3EZMnI" id="RKPJ9dohju" role="2wV5jI">
+      <node concept="3F0ifn" id="RKPJ9dohjC" role="3EZMnx">
+        <property role="3F0ifm" value="language" />
+      </node>
+      <node concept="1iCGBv" id="RKPJ9dohjL" role="3EZMnx">
+        <ref role="1NtTu8" to="zfvb:RKPJ9dohew" />
+        <node concept="1sVBvm" id="RKPJ9dohjN" role="1sWHZn">
+          <node concept="3F0A7n" id="RKPJ9dohjZ" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="RKPJ9dohjx" role="2iSdaV" />
     </node>
   </node>
 </model>

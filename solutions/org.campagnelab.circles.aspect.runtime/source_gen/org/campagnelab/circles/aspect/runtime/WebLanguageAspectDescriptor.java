@@ -4,7 +4,7 @@ package org.campagnelab.circles.aspect.runtime;
 
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
 
-public interface WebLanguageAspect extends ILanguageAspect {
+public interface WebLanguageAspectDescriptor extends ILanguageAspect {
 
   /**
    * Use this method to define the schema in the database for each concept of this language.

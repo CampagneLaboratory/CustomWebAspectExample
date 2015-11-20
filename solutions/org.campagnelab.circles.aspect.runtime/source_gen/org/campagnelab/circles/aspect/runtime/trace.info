@@ -2,10 +2,10 @@
 <debug-info>
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <root nodeRef="r:2c4c7e9e-399c-490f-b18e-ff7f5ebd651b(org.campagnelab.circles.aspect.runtime)/4824635715685250266">
-    <file name="WebLanguageAspect.java">
+    <file name="WebLanguageAspectDescriptor.java">
       <node id="4824635715685250587" at="12,0,13,0" concept="0" trace="defineSchemaForConcepts#()V" />
       <scope id="4824635715685250587" at="12,0,13,0" />
-      <unit id="4824635715685250266" at="7,0,14,0" name="org.campagnelab.circles.aspect.runtime.WebLanguageAspect" />
+      <unit id="4824635715685250266" at="7,0,14,0" name="org.campagnelab.circles.aspect.runtime.WebLanguageAspectDescriptor" />
     </file>
   </root>
 </debug-info>

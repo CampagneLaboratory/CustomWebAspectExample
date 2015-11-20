@@ -18,8 +18,11 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x8202d3ebbfe04fb5L, 0x9544c67c5faa531dL, 0x2970c96b0e706973L, "org.campagnelab.circles.persistence.structure.Database"))) {
         return Collections.<ConceptEditor>singletonList(new Database_Editor());
       }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x8202d3ebbfe04fb5L, 0x9544c67c5faa531dL, 0x42f48c9f1414cf69L, "org.campagnelab.circles.persistence.structure.IncludeConcept"))) {
-        return Collections.<ConceptEditor>singletonList(new IncludeConcept_Editor());
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x8202d3ebbfe04fb5L, 0x9544c67c5faa531dL, 0x42f48c9f1414cf69L, "org.campagnelab.circles.persistence.structure.IncludeConcepts"))) {
+        return Collections.<ConceptEditor>singletonList(new IncludeConcepts_Editor());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x8202d3ebbfe04fb5L, 0x9544c67c5faa531dL, 0xdf0d6f24d611395L, "org.campagnelab.circles.persistence.structure.IncludeLanguage"))) {
+        return Collections.<ConceptEditor>singletonList(new IncludeLanguage_Editor());
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x8202d3ebbfe04fb5L, 0x9544c67c5faa531dL, 0x42f48c9f1414cf63L, "org.campagnelab.circles.persistence.structure.PersistedConcepts"))) {
         return Collections.<ConceptEditor>singletonList(new PersistedConcepts_Editor());

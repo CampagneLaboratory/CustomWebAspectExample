@@ -64,7 +64,7 @@
     </language>
   </registry>
   <node concept="3HP615" id="4bOz9Wk5fjq">
-    <property role="TrG5h" value="WebLanguageAspect" />
+    <property role="TrG5h" value="WebLanguageAspectDescriptor" />
     <node concept="2tJIrI" id="4bOz9Wk5fkS" role="jymVt" />
     <node concept="3clFb_" id="4bOz9Wk5for" role="jymVt">
       <property role="1EzhhJ" value="true" />

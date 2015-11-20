@@ -7,6 +7,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="64sm" ref="8202d3eb-bfe0-4fb5-9544-c67c5faa531d/java:com.orientechnologies.orient.core(org.campagnelab.circles.persistence/)" />
     <import index="avse" ref="r:51fcf803-02a7-4ac6-994f-040e45f3e9a5(org.campagnelab.circles.mockup.structure)" implicit="true" />
   </imports>
   <registry>
@@ -16,7 +17,7 @@
         <property id="4824635715685243890" name="password" index="1mS5tH" />
         <property id="4824635715685243887" name="user" index="1mS5tK" />
       </concept>
-      <concept id="4824635715685240681" name="org.campagnelab.circles.persistence.structure.IncludeConcept" flags="ng" index="1mS4fQ">
+      <concept id="4824635715685240681" name="org.campagnelab.circles.persistence.structure.IncludeConcepts" flags="ng" index="1mS4fQ">
         <reference id="4824635715685240682" name="c" index="1mS4fP" />
       </concept>
       <concept id="4824635715685240675" name="org.campagnelab.circles.persistence.structure.PersistedConcepts" flags="ng" index="1mS4fW">

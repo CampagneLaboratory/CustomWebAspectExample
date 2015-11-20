@@ -10,11 +10,11 @@ import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class IncludeConcept_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
+public abstract class ContributeConcepts_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements IIncludeConcepts_BehaviorDescriptor {
 
   @Override
   public String getConceptFqName() {
-    return "org.campagnelab.circles.persistence.structure.IncludeConcept";
+    return "org.campagnelab.circles.persistence.structure.ContributeConcepts";
   }
 
 }
