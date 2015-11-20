@@ -66,7 +66,7 @@ public class DefineDbSchema_Action extends BaseAction {
     SAbstractConcept concept = event.getData(MPSCommonDataKeys.NODE).getConcept();
     LanguageRuntime languageRuntime = LanguageRegistry.getInstance(event.getData(MPSCommonDataKeys.MPS_PROJECT)).getLanguage(concept.getLanguage());
     WebLanguageAspectDescriptor webDescriptor = languageRuntime.getAspect(WebLanguageAspectDescriptor.class);
-    webDescriptor.defineSchemaForConcepts();
+    webDescriptor.defineSchemaForConcepts("root", "admin");
     if (LOG.isInfoEnabled()) {
       LOG.info("Done with define schema");
     }

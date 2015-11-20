@@ -30,45 +30,42 @@ public class DbSchemaHelper {
     this.classMap = new HashMap();
   }
   private HashMap<String, OClass> classMap;
-  public void defineSchemaForConcepts() {
+  public void defineSchemaForConcepts(String user, String password) {
     if (LOG.isInfoEnabled()) {
-      LOG.info("Starting defineSchemaForConcepts for " + "plocal:/usr/local/dbs/test6");
+      LOG.info("Starting defineSchemaForConcepts for " + "remote:127.0.0.1/circles");
     }
     try {
       ODatabaseDocumentTx db;
-      db = new ODatabaseDocumentTx("plocal:/usr/local/dbs/test6");
-      if (!(db.exists())) {
+      db = new ODatabaseDocumentTx("remote:127.0.0.1/circles");
+      if (this.url.startsWith("plocal:") && !((db.exists()))) {
         if (LOG.isInfoEnabled()) {
           LOG.info("Database did not exist, creating new one");
         }
         db.create();
-        // activate Live-query hook: 
-        db.activateOnCurrentThread();
-        db.registerHook(new OLiveQueryHook(db));
-        // register each concept in the schema: 
-        final OSchemaProxy schema = db.getMetadata().getSchema();
-        // create each class before anything else: 
-        defineClass(schema, "org~campagnelab~circles~mockup~structure~Circle");
-        defineClass(schema, "org~campagnelab~circles~mockup~structure~CircleContainer");
-        defineClass(schema, "org~campagnelab~circles~mockup~structure~CircleItem");
-        defineClass(schema, "org~campagnelab~circles~mockup~structure~Dashboard");
-        defineClass(schema, "jetbrains~mps~lang~core~structure~Attribute");
-        defineClass(schema, "org~campagnelab~circles~mockup~structure~CircleRef");
-
-        // add details for each class: 
-        createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb7514e13L, "org.campagnelab.circles.mockup.structure.Circle"));
-        createSchemaFor(db, MetaAdapterFactory.getInterfaceConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb751a497L, "org.campagnelab.circles.mockup.structure.CircleContainer"));
-        createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb7611299L, "org.campagnelab.circles.mockup.structure.CircleItem"));
-        createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb750ee9cL, "org.campagnelab.circles.mockup.structure.Dashboard"));
-        createSchemaFor(db, MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x47bf8397520e5939L, "jetbrains.mps.lang.core.structure.Attribute"));
-        createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb75d04dbL, "org.campagnelab.circles.mockup.structure.CircleRef"));
-        db.close();
       } else {
-        if (LOG.isInfoEnabled()) {
-          LOG.info("Database already exists");
-        }
+        db.open(user, password);
       }
+      // activate Live-query hook: 
+      db.activateOnCurrentThread();
+      db.registerHook(new OLiveQueryHook(db));
+      // register each concept in the schema: 
+      final OSchemaProxy schema = db.getMetadata().getSchema();
+      // create each class before anything else: 
+      defineClass(schema, "org~campagnelab~circles~mockup~structure~Circle");
+      defineClass(schema, "org~campagnelab~circles~mockup~structure~CircleContainer");
+      defineClass(schema, "org~campagnelab~circles~mockup~structure~CircleItem");
+      defineClass(schema, "org~campagnelab~circles~mockup~structure~Dashboard");
+      defineClass(schema, "jetbrains~mps~lang~core~structure~Attribute");
+      defineClass(schema, "org~campagnelab~circles~mockup~structure~CircleRef");
 
+      // add details for each class: 
+      createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb7514e13L, "org.campagnelab.circles.mockup.structure.Circle"));
+      createSchemaFor(db, MetaAdapterFactory.getInterfaceConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb751a497L, "org.campagnelab.circles.mockup.structure.CircleContainer"));
+      createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb7611299L, "org.campagnelab.circles.mockup.structure.CircleItem"));
+      createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb750ee9cL, "org.campagnelab.circles.mockup.structure.Dashboard"));
+      createSchemaFor(db, MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x47bf8397520e5939L, "jetbrains.mps.lang.core.structure.Attribute"));
+      createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb75d04dbL, "org.campagnelab.circles.mockup.structure.CircleRef"));
+      db.close();
 
     } catch (Throwable t) {
       if (LOG.isEnabledFor(Level.ERROR)) {

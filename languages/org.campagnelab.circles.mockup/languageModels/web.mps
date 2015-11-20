@@ -27,7 +27,7 @@
     </language>
   </registry>
   <node concept="B0a0o" id="4UvP5h6JFr9">
-    <property role="B0a0v" value="plocal:/usr/local/dbs/test6" />
+    <property role="B0a0v" value="remote:127.0.0.1/circles" />
     <property role="1mS5tK" value="admin" />
     <property role="1mS5tH" value="admin" />
   </node>
