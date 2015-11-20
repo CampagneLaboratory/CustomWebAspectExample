@@ -10,6 +10,9 @@ import com.orientechnologies.orient.core.metadata.schema.OSchemaProxy;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.apache.log4j.Level;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import java.util.Iterator;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 import com.orientechnologies.orient.core.metadata.schema.OType;
@@ -49,17 +52,23 @@ public class DbSchemaHelper {
         final OSchemaProxy schema = db.getMetadata().getSchema();
         // create each class before anything else: 
         defineClass(schema, "org~campagnelab~circles~mockup~structure~Circle");
+        defineClass(schema, "jetbrains~mps~lang~core~structure~BaseConcept");
+        defineClass(schema, "jetbrains~mps~lang~core~structure~INamedConcept");
         defineClass(schema, "org~campagnelab~circles~mockup~structure~CircleContainer");
         defineClass(schema, "org~campagnelab~circles~mockup~structure~CircleItem");
         defineClass(schema, "org~campagnelab~circles~mockup~structure~Dashboard");
+        defineClass(schema, "org~campagnelab~circles~mockup~structure~FileItem");
         defineClass(schema, "jetbrains~mps~lang~core~structure~Attribute");
         defineClass(schema, "org~campagnelab~circles~mockup~structure~CircleRef");
 
         // add details for each class: 
         createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb7514e13L, "org.campagnelab.circles.mockup.structure.Circle"));
+        createSchemaFor(db, MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept"));
+        createSchemaFor(db, MetaAdapterFactory.getInterfaceConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, "jetbrains.mps.lang.core.structure.INamedConcept"));
         createSchemaFor(db, MetaAdapterFactory.getInterfaceConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb751a497L, "org.campagnelab.circles.mockup.structure.CircleContainer"));
         createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb7611299L, "org.campagnelab.circles.mockup.structure.CircleItem"));
         createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb750ee9cL, "org.campagnelab.circles.mockup.structure.Dashboard"));
+        createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb7611680L, "org.campagnelab.circles.mockup.structure.FileItem"));
         createSchemaFor(db, MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x47bf8397520e5939L, "jetbrains.mps.lang.core.structure.Attribute"));
         createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb75d04dbL, "org.campagnelab.circles.mockup.structure.CircleRef"));
         db.close();
@@ -77,6 +86,9 @@ public class DbSchemaHelper {
     }
   }
   public void defineClass(OSchemaProxy schema, String conceptName) {
+    if (LOG.isInfoEnabled()) {
+      LOG.info("Defining Class " + conceptName);
+    }
     OClass dbClass = schema.createClass(conceptName);
     dbClass.addSuperClass(schema.getClass("ORestricted"));
     classMap.put(conceptName, dbClass);
@@ -90,6 +102,20 @@ public class DbSchemaHelper {
     final OSchemaProxy schema = db.getMetadata().getSchema();
     OClass dbClass = classMap.get(conceptFqName);
     assert dbClass != null : "Class must be found for concept: " + conceptFqName + " raw name:" + c;
+
+    {
+      Iterator<SAbstractConcept> superConcept_it = ListSequence.fromList(SConceptOperations.getDirectSuperConcepts(c, false)).iterator();
+      SAbstractConcept superConcept_var;
+      while (superConcept_it.hasNext()) {
+        superConcept_var = superConcept_it.next();
+        if (neq_vl3h2u_a0b0c0h0f(getFqName(superConcept_var), conceptFqName)) {
+          if (LOG.isInfoEnabled()) {
+            LOG.info(conceptFqName + " extends " + getFqName(superConcept_var));
+          }
+          dbClass.addSuperClass(classMap.get(getFqName(superConcept_var)));
+        }
+      }
+    }
     for (SProperty p : CollectionSequence.fromCollection(c.getProperties())) {
       OType dbType = OType.ANY;
       SDataType type = p.getType();
@@ -147,4 +173,7 @@ public class DbSchemaHelper {
     return INamedConcept__BehaviorDescriptor.getFqName_idhEwIO9y.invoke(SNodeOperations.asNode(concept)).replaceAll("[\\.]", "~");
   }
   protected static Logger LOG = LogManager.getLogger(DbSchemaHelper.class);
+  private static boolean neq_vl3h2u_a0b0c0h0f(Object a, Object b) {
+    return !(((a != null ? a.equals(b) : a == b)));
+  }
 }

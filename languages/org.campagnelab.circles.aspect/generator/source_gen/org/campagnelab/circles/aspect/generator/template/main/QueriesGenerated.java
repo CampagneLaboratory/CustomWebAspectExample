@@ -27,6 +27,11 @@ import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.structure.behavior.AbstractConceptDeclaration__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ISelector;
+import java.util.Set;
+import jetbrains.mps.internal.collections.runtime.SetSequence;
+import java.util.LinkedHashSet;
+import jetbrains.mps.internal.collections.runtime.IVisitor;
+import java.util.Iterator;
 
 @Generated
 public class QueriesGenerated {
@@ -105,7 +110,22 @@ public class QueriesGenerated {
     ListSequence.fromList(result).addSequence(Sequence.fromIterable(targetConcepts));
     ListSequence.fromList(result).addSequence(Sequence.fromIterable(conceptsFromLinks));
     ListSequence.fromList(result).addSequence(Sequence.fromIterable(conceptsFromReferences));
-    return ListSequence.fromList(result).distinct();
+    Set<SNode> withSuperCOncepts = SetSequence.fromSet(new LinkedHashSet<SNode>());
+    ListSequence.fromList(result).visitAll(new IVisitor<SNode>() {
+      public void visit(SNode it) {
+      }
+    });
+    {
+      Iterator<SNode> c_it = ListSequence.fromList(result).iterator();
+      SNode c_var;
+      while (c_it.hasNext()) {
+        c_var = c_it.next();
+        if (c_var != null) {
+          SetSequence.fromSet(withSuperCOncepts).addSequence(Sequence.fromIterable(AbstractConceptDeclaration__BehaviorDescriptor.getAllSuperConcepts_id2A8AB0rAWpG.invoke(c_var, ((boolean) true))));
+        }
+      }
+    }
+    return SetSequence.fromSet(withSuperCOncepts).distinct();
   }
   public static Object insertMacro_varValue_8976455985456471182(final TemplateQueryContext _context) {
     return ListSequence.fromList(SModelOperations.roots(_context.getOriginalInputModel(), MetaAdapterFactory.getConcept(0x8c40f9f4b3bd42d0L, 0x8b658e644273493cL, 0x2970c96b0e706973L, "org.campagnelab.circles.aspect.structure.Database"))).first();
