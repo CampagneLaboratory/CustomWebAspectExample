@@ -5,19 +5,14 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="3" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
   </languages>
   <imports>
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="4stj" ref="r:ed8e9175-44d1-47ad-9d2b-75c7b10d01f8(jetbrains.mps.samples.customAspect.documentation.runtime)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" />
-    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
-    <import index="zgec" ref="r:31d4daf4-04c8-4f0b-b42f-4498d37943a3(org.campagnelab.circles.persistence.generator.template.main@generator)" />
     <import index="y8z9" ref="r:2c4c7e9e-399c-490f-b18e-ff7f5ebd651b(org.campagnelab.circles.aspect.runtime)" />
     <import index="9oh" ref="r:de82dfab-9448-49ba-813e-2b0579f7fb15(jetbrains.mps.ide.platform.actions)" />
   </imports>
@@ -87,7 +82,6 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -98,7 +92,6 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -228,6 +221,12 @@
             </node>
           </node>
         </node>
+        <node concept="34ab3g" id="4UvP5h6M9hc" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="Xl_RD" id="4UvP5h6M9he" role="34bqiv">
+            <property role="Xl_RC" value="Done with define schema" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1DS2jV" id="RKPJ9dqOBK" role="1NuT2Z">
@@ -311,18 +310,6 @@
                 </node>
               </node>
             </node>
-            <node concept="34ab3g" id="RKPJ9draQZ" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="3cpWs3" id="RKPJ9drbcA" role="34bqiv">
-                <node concept="37vLTw" id="RKPJ9drdjR" role="3uHU7w">
-                  <ref role="3cqZAo" node="RKPJ9dqOCb" resolve="webDescriptor" />
-                </node>
-                <node concept="Xl_RD" id="RKPJ9draR1" role="3uHU7B">
-                  <property role="Xl_RC" value="webDescriptor=" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="RKPJ9drcZe" role="3cqZAp" />
             <node concept="3cpWs6" id="RKPJ9dr9Tk" role="3cqZAp">
               <node concept="3y3z36" id="RKPJ9dra9r" role="3cqZAk">
                 <node concept="10Nm6u" id="RKPJ9drafa" role="3uHU7w" />

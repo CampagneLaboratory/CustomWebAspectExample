@@ -46,7 +46,7 @@ public class LanguageAspectsEP_extension extends Extension.Default<LanguageAspec
       }
       @NotNull
       public Collection<SLanguage> getMainLanguages() {
-        return ListSequence.fromListAndArray(new ArrayList<SLanguage>(), MetaAdapterFactory.getLanguage(MetaIdFactory.langId(0x8202d3ebbfe04fb5L, 0x9544c67c5faa531dL), "org.campagnelab.circles.persistence"));
+        return ListSequence.fromListAndArray(new ArrayList<SLanguage>(), MetaAdapterFactory.getLanguage(MetaIdFactory.langId(0x8c40f9f4b3bd42d0L, 0x8b658e644273493cL), "org.campagnelab.circles.aspect"));
       }
       @Nullable
       public LanguageAspectGenerator getGenerator() {

@@ -14,11 +14,13 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
+    <classNode dependClassName="org.campagnelab.circles.aspect.runtime.WebLanguageAspectDescriptor" />
     <classNode dependClassName="org.campagnelab.circles.mockup.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="org.campagnelab.circles.mockup.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="org.campagnelab.circles.mockup.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="org.campagnelab.circles.mockup.intentions.IntentionsDescriptor" />
     <classNode dependClassName="org.campagnelab.circles.mockup.structure.StructureAspectDescriptor" />
+    <classNode dependClassName="org.campagnelab.circles.mockup.web.WebAspectDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />
   </dependency>
 </dependenciesRoot>

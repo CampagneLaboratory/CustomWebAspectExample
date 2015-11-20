@@ -9,8 +9,10 @@ import java.util.Collection;
 import jetbrains.mps.generator.runtime.TemplateModule;
 import jetbrains.mps.generator.runtime.TemplateUtil;
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
+import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
-import jetbrains.mps.nodeEditor.EditorAspectDescriptorBase;
+import org.campagnelab.circles.aspect.editor.EditorAspectDescriptorImpl;
+import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 
 public class Language extends LanguageRuntime {
   public static String MODULE_REF = "8c40f9f4-b3bd-42d0-8b65-8e644273493c(org.campagnelab.circles.aspect)";
@@ -31,16 +33,22 @@ public class Language extends LanguageRuntime {
   }
   @Override
   protected String[] getExtendedLanguageIDs() {
-    return new String[]{};
+    return new String[]{"jetbrains.mps.lang.core", "org.campagnelab.circles.persistence"};
   }
   @Override
   public Collection<TemplateModule> getGenerators() {
-    return TemplateUtil.<TemplateModule>asCollection(TemplateUtil.createInterpretedGenerator(this, "b2b1246e-f436-4de9-9e47-0ba9404ea6b3(org.campagnelab.circles.aspect#2986108014587568802)"));
+    return TemplateUtil.<TemplateModule>asCollection(TemplateUtil.createInterpretedGenerator(this, "0c4ed533-0d53-4e8f-9849-9abba77b21fb(org.campagnelab.circles.aspect#5665480314684357216)"));
   }
   @Override
   protected <T extends ILanguageAspect> T createAspect(Class<T> aspectClass) {
+    if (aspectClass == BehaviorAspectDescriptor.class) {
+      return (T) new org.campagnelab.circles.aspect.behavior.BehaviorAspectDescriptor();
+    }
     if (aspectClass == EditorAspectDescriptor.class) {
-      return ((T) new EditorAspectDescriptorBase());
+      return (T) new EditorAspectDescriptorImpl();
+    }
+    if (aspectClass == StructureAspectDescriptor.class) {
+      return (T) new org.campagnelab.circles.aspect.structure.StructureAspectDescriptor();
     }
     return super.createAspect(aspectClass);
   }

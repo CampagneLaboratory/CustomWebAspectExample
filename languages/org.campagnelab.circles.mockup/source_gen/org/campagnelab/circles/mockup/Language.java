@@ -15,6 +15,8 @@ import org.campagnelab.circles.mockup.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.intentions.IntentionAspectDescriptor;
 import org.campagnelab.circles.mockup.intentions.IntentionsDescriptor;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
+import org.campagnelab.circles.aspect.runtime.WebLanguageAspectDescriptor;
+import org.campagnelab.circles.mockup.web.WebAspectDescriptor;
 
 public class Language extends LanguageRuntime {
   public static String MODULE_REF = "3dc3d3d3-b034-480c-8b21-d7a88903974b(org.campagnelab.circles.mockup)";
@@ -57,6 +59,11 @@ public class Language extends LanguageRuntime {
     }
     if (aspectClass == StructureAspectDescriptor.class) {
       return (T) new org.campagnelab.circles.mockup.structure.StructureAspectDescriptor();
+    }
+    if (aspectClass.getName().equals("org.campagnelab.circles.aspect.runtime.WebLanguageAspectDescriptor")) {
+      if (aspectClass == WebLanguageAspectDescriptor.class) {
+        return (T) new WebAspectDescriptor();
+      }
     }
     return super.createAspect(aspectClass);
   }

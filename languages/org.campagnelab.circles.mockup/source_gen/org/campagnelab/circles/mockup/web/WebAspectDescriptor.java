@@ -17,15 +17,22 @@ import org.jetbrains.mps.openapi.language.SPrimitiveDataType;
 import org.jetbrains.mps.openapi.language.SEnumeration;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
+import org.apache.log4j.Logger;
+import org.apache.log4j.LogManager;
 
 public class WebAspectDescriptor implements WebLanguageAspectDescriptor {
   public WebAspectDescriptor() {
   }
   public void defineSchemaForConcepts() {
+    if (LOG.isInfoEnabled()) {
+      LOG.info("Starting defineSchemaForConcepts for " + "plocal:/usr/local/dbs/test2");
+    }
     ODatabaseDocumentTx db;
-    db = new ODatabaseDocumentTx("plocal:/usr/local/dbs/test");
+    db = new ODatabaseDocumentTx("plocal:/usr/local/dbs/test2");
     if (!(db.exists())) {
-      System.out.println("Initializing DB Schema");
+      if (LOG.isInfoEnabled()) {
+        LOG.info("Database did not exist, creating new one");
+      }
       db.create();
       // activate Live-query hook: 
       db.activateOnCurrentThread();
@@ -33,13 +40,17 @@ public class WebAspectDescriptor implements WebLanguageAspectDescriptor {
       // register each concept in the schema: 
       final OSchemaProxy schema = db.getMetadata().getSchema();
       // create each class before anything else: 
-      defineClass(schema, "CircleItem");
-      defineClass(schema, "FileItem");
       defineClass(schema, "Circle");
+      defineClass(schema, "CircleContainer");
+      defineClass(schema, "CircleItem");
       // add details for each class: 
-      createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb7611299L, "org.campagnelab.circles.mockup.structure.CircleItem"));
-      createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb7611680L, "org.campagnelab.circles.mockup.structure.FileItem"));
       createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb7514e13L, "org.campagnelab.circles.mockup.structure.Circle"));
+      createSchemaFor(db, MetaAdapterFactory.getInterfaceConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb751a497L, "org.campagnelab.circles.mockup.structure.CircleContainer"));
+      createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb7611299L, "org.campagnelab.circles.mockup.structure.CircleItem"));
+    } else {
+      if (LOG.isInfoEnabled()) {
+        LOG.info("Database already exists");
+      }
     }
 
   }
@@ -48,6 +59,9 @@ public class WebAspectDescriptor implements WebLanguageAspectDescriptor {
     dbClass.addSuperClass(schema.getClass("ORestricted"));
   }
   public void createSchemaFor(ODatabaseDocumentTx db, SAbstractConcept c) {
+    if (LOG.isInfoEnabled()) {
+      LOG.info("Creating schema for " + c.getName());
+    }
     final OSchemaProxy schema = db.getMetadata().getSchema();
     OClass dbClass = schema.getClass(c.getName());
 
@@ -92,4 +106,5 @@ public class WebAspectDescriptor implements WebLanguageAspectDescriptor {
       dbClass.createProperty(referenceLink.getRoleName(), OType.LINK, schema.getClass(referenceLink.getTargetConcept().getName()));
     }
   }
+  protected static Logger LOG = LogManager.getLogger(WebAspectDescriptor.class);
 }

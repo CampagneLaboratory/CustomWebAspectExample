@@ -34,10 +34,6 @@ public class DefineDbSchema_Action extends BaseAction {
     LanguageRuntime languageRuntime = LanguageRegistry.getInstance(event.getData(MPSCommonDataKeys.MPS_PROJECT)).getLanguage(concept.getLanguage());
     if (languageRuntime != null) {
       WebLanguageAspectDescriptor webDescriptor = languageRuntime.getAspect(WebLanguageAspectDescriptor.class);
-      if (LOG.isInfoEnabled()) {
-        LOG.info("webDescriptor=" + webDescriptor);
-      }
-
       return webDescriptor != null;
     }
     return true;
@@ -71,6 +67,9 @@ public class DefineDbSchema_Action extends BaseAction {
     LanguageRuntime languageRuntime = LanguageRegistry.getInstance(event.getData(MPSCommonDataKeys.MPS_PROJECT)).getLanguage(concept.getLanguage());
     WebLanguageAspectDescriptor webDescriptor = languageRuntime.getAspect(WebLanguageAspectDescriptor.class);
     webDescriptor.defineSchemaForConcepts();
+    if (LOG.isInfoEnabled()) {
+      LOG.info("Done with define schema");
+    }
   }
   protected static Logger LOG = LogManager.getLogger(DefineDbSchema_Action.class);
 }

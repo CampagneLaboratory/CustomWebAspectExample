@@ -9,10 +9,8 @@ import java.util.Collection;
 import jetbrains.mps.generator.runtime.TemplateModule;
 import jetbrains.mps.generator.runtime.TemplateUtil;
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
-import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import org.campagnelab.circles.persistence.editor.EditorAspectDescriptorImpl;
-import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 
 public class Language extends LanguageRuntime {
   public static String MODULE_REF = "8202d3eb-bfe0-4fb5-9544-c67c5faa531d(org.campagnelab.circles.persistence)";
@@ -41,14 +39,8 @@ public class Language extends LanguageRuntime {
   }
   @Override
   protected <T extends ILanguageAspect> T createAspect(Class<T> aspectClass) {
-    if (aspectClass == BehaviorAspectDescriptor.class) {
-      return (T) new org.campagnelab.circles.persistence.behavior.BehaviorAspectDescriptor();
-    }
     if (aspectClass == EditorAspectDescriptor.class) {
       return (T) new EditorAspectDescriptorImpl();
-    }
-    if (aspectClass == StructureAspectDescriptor.class) {
-      return (T) new org.campagnelab.circles.persistence.structure.StructureAspectDescriptor();
     }
     return super.createAspect(aspectClass);
   }

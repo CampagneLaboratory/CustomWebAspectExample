@@ -6,7 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="zfvb" ref="r:dedaf12d-69d8-4966-8d0c-5601cbc6a25d(org.campagnelab.circles.persistence.structure)" implicit="true" />
+    <import index="6je1" ref="r:2b50e9c8-828e-4d1c-b75e-74ee8d185c93(org.campagnelab.circles.aspect.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -48,38 +48,38 @@
     </language>
   </registry>
   <node concept="24kQdi" id="acvUmyEcT1">
-    <ref role="1XX52x" to="zfvb:2_KMmGes6_N" resolve="Database" />
+    <ref role="1XX52x" to="6je1:2_KMmGes6_N" resolve="Database" />
     <node concept="3EZMnI" id="acvUmyEcT3" role="2wV5jI">
       <node concept="3F0ifn" id="acvUmyEcTa" role="3EZMnx">
         <property role="3F0ifm" value="Persist to this database:" />
       </node>
       <node concept="3F0A7n" id="acvUmyEcTg" role="3EZMnx">
-        <ref role="1NtTu8" to="zfvb:2_KMmGes6_O" resolve="url" />
+        <ref role="1NtTu8" to="6je1:2_KMmGes6_O" resolve="url" />
       </node>
       <node concept="3F0ifn" id="4bOz9Wk5dJ_" role="3EZMnx">
         <property role="3F0ifm" value="with credentials:" />
       </node>
       <node concept="3F0A7n" id="4bOz9Wk5dJQ" role="3EZMnx">
-        <ref role="1NtTu8" to="zfvb:4bOz9Wk5dJJ" resolve="user" />
+        <ref role="1NtTu8" to="6je1:4bOz9Wk5dJJ" resolve="user" />
       </node>
       <node concept="3F0ifn" id="4bOz9Wk5dK2" role="3EZMnx">
         <property role="3F0ifm" value="/" />
       </node>
       <node concept="3F0A7n" id="4bOz9Wk5dKg" role="3EZMnx">
-        <ref role="1NtTu8" to="zfvb:4bOz9Wk5dJM" resolve="password" />
+        <ref role="1NtTu8" to="6je1:4bOz9Wk5dJM" resolve="password" />
       </node>
       <node concept="l2Vlx" id="acvUmyEcT6" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="4bOz9Wk5daG">
-    <ref role="1XX52x" to="zfvb:4bOz9Wk5cXz" resolve="PersistedConcepts" />
+    <ref role="1XX52x" to="6je1:4bOz9Wk5cXz" resolve="PersistedConcepts" />
     <node concept="3EZMnI" id="4bOz9Wk5daO" role="2wV5jI">
       <node concept="l2Vlx" id="4bOz9Wk5daP" role="2iSdaV" />
       <node concept="3F0ifn" id="4bOz9Wk5daX" role="3EZMnx">
         <property role="3F0ifm" value="Include the following concepts:" />
       </node>
       <node concept="3F2HdR" id="4bOz9Wk5daL" role="3EZMnx">
-        <ref role="1NtTu8" to="zfvb:4bOz9Wk5cXG" />
+        <ref role="1NtTu8" to="6je1:4bOz9Wk5cXG" />
         <node concept="pVoyu" id="4bOz9Wk5db1" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -90,13 +90,13 @@
     </node>
   </node>
   <node concept="24kQdi" id="4bOz9Wk5dmY">
-    <ref role="1XX52x" to="zfvb:4bOz9Wk5cXD" resolve="IncludeConcepts" />
+    <ref role="1XX52x" to="6je1:4bOz9Wk5cXD" resolve="IncludeConcepts" />
     <node concept="3EZMnI" id="4bOz9Wk5dn0" role="2wV5jI">
       <node concept="3F0ifn" id="4bOz9Wk5dn7" role="3EZMnx">
         <property role="3F0ifm" value="include" />
       </node>
       <node concept="1iCGBv" id="4bOz9Wk5dnf" role="3EZMnx">
-        <ref role="1NtTu8" to="zfvb:4bOz9Wk5cXE" />
+        <ref role="1NtTu8" to="6je1:4bOz9Wk5cXE" />
         <node concept="1sVBvm" id="4bOz9Wk5dnh" role="1sWHZn">
           <node concept="3F0A7n" id="4bOz9Wk5dns" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -108,13 +108,13 @@
     </node>
   </node>
   <node concept="24kQdi" id="RKPJ9dohji">
-    <ref role="1XX52x" to="zfvb:RKPJ9dohel" resolve="IncludeLanguage" />
+    <ref role="1XX52x" to="6je1:RKPJ9dohel" resolve="IncludeLanguage" />
     <node concept="3EZMnI" id="RKPJ9dohju" role="2wV5jI">
       <node concept="3F0ifn" id="RKPJ9dohjC" role="3EZMnx">
         <property role="3F0ifm" value="language" />
       </node>
       <node concept="1iCGBv" id="RKPJ9dohjL" role="3EZMnx">
-        <ref role="1NtTu8" to="zfvb:RKPJ9dohew" />
+        <ref role="1NtTu8" to="6je1:RKPJ9dohew" />
         <node concept="1sVBvm" id="RKPJ9dohjN" role="1sWHZn">
           <node concept="3F0A7n" id="RKPJ9dohjZ" role="2wV5jI">
             <property role="1Intyy" value="true" />

@@ -10,13 +10,17 @@
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
-    <classNode dependClassName="org.campagnelab.circles.persistence.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="org.campagnelab.circles.persistence.editor.EditorAspectDescriptorImpl" />
-    <classNode dependClassName="org.campagnelab.circles.persistence.structure.StructureAspectDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.persistence.MigrationDescriptorImpl" file="MigrationDescriptorImpl.java">
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.MapSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.migration.runtime.base.MigrationScript" />
+    <classNode extendsClassName="jetbrains.mps.lang.migration.runtime.base.MigrationDescriptor" />
   </dependency>
 </dependenciesRoot>
 

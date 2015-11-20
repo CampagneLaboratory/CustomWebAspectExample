@@ -7,9 +7,10 @@
     <classNode dependClassName="com.orientechnologies.orient.core.metadata.schema.OType" />
     <classNode dependClassName="com.orientechnologies.orient.core.query.live.OLiveQueryHook" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.CollectionSequence" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.apache.log4j.LogManager" />
+    <classNode dependClassName="org.apache.log4j.Logger" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SDataType" />

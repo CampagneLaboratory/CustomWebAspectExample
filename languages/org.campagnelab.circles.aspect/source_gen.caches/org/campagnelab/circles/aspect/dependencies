@@ -8,10 +8,14 @@
     <classNode dependClassName="java.util.UUID" />
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateModule" />
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorAspectDescriptorBase" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
+    <classNode dependClassName="org.campagnelab.circles.aspect.behavior.BehaviorAspectDescriptor" />
+    <classNode dependClassName="org.campagnelab.circles.aspect.editor.EditorAspectDescriptorImpl" />
+    <classNode dependClassName="org.campagnelab.circles.aspect.structure.StructureAspectDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />
   </dependency>
 </dependenciesRoot>
