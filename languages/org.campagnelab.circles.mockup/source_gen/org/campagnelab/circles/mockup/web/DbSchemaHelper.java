@@ -51,6 +51,7 @@ public class DbSchemaHelper {
         defineClass(schema, "org~campagnelab~circles~mockup~structure~Circle");
         defineClass(schema, "org~campagnelab~circles~mockup~structure~CircleContainer");
         defineClass(schema, "org~campagnelab~circles~mockup~structure~CircleItem");
+        defineClass(schema, "org~campagnelab~circles~mockup~structure~Dashboard");
         defineClass(schema, "jetbrains~mps~lang~core~structure~Attribute");
         defineClass(schema, "org~campagnelab~circles~mockup~structure~CircleRef");
 
@@ -58,6 +59,7 @@ public class DbSchemaHelper {
         createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb7514e13L, "org.campagnelab.circles.mockup.structure.Circle"));
         createSchemaFor(db, MetaAdapterFactory.getInterfaceConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb751a497L, "org.campagnelab.circles.mockup.structure.CircleContainer"));
         createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb7611299L, "org.campagnelab.circles.mockup.structure.CircleItem"));
+        createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb750ee9cL, "org.campagnelab.circles.mockup.structure.Dashboard"));
         createSchemaFor(db, MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x47bf8397520e5939L, "jetbrains.mps.lang.core.structure.Attribute"));
         createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb75d04dbL, "org.campagnelab.circles.mockup.structure.CircleRef"));
         db.close();

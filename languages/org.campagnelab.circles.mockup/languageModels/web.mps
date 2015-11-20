@@ -41,6 +41,9 @@
     <node concept="1mS4fQ" id="4UvP5h6KPFH" role="1mS4fN">
       <ref role="1mS4fP" to="avse:7pelyIRohap" resolve="CircleItem" />
     </node>
+    <node concept="1mS4fQ" id="7MiLMzjaM2S" role="1mS4fN">
+      <ref role="1mS4fP" to="avse:7pelyIRkeUs" resolve="Dashboard" />
+    </node>
   </node>
 </model>
 

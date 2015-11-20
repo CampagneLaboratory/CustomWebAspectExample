@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
+  <root>
+    <file name="QueriesGenerated.java">
+      <unit at="31,0,114,0" name="org.campagnelab.circles.aspect.generator.template.main.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:ccf57985-801c-4f69-ab7c-010c610dc9b9(org.campagnelab.circles.aspect.generator.template.main@generator)/2897519568668637315">
+    <file name="QueriesGenerated.java">
+      <node id="2030416617762091403" at="36,110,37,87" concept="3" />
+      <scope id="1570228009929814974" at="36,110,37,87" />
+    </file>
+  </root>
+  <root nodeRef="r:ccf57985-801c-4f69-ab7c-010c610dc9b9(org.campagnelab.circles.aspect.generator.template.main@generator)/2986108014587568803">
+    <file name="QueriesGenerated.java">
+      <node id="8334940743345626675" at="33,108,34,79" concept="3" />
+      <scope id="8334940743345623048" at="33,108,34,79" />
+    </file>
+  </root>
+  <root nodeRef="r:ccf57985-801c-4f69-ab7c-010c610dc9b9(org.campagnelab.circles.aspect.generator.template.main@generator)/4824635715685271072">
+    <file name="QueriesGenerated.java">
+      <node id="8976455985456544393" at="39,112,40,212" concept="3" />
+      <node id="8976455985456449670" at="42,112,43,212" concept="3" />
+      <node id="1004539053072592690" at="71,50,72,106" concept="3" />
+      <node id="1004539053072219417" at="76,102,77,246" concept="3" />
+      <node id="1004539053072671529" at="71,0,74,0" concept="1" trace="translate#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <node id="86849876705857532" at="69,100,74,18" concept="3" />
+      <scope id="8976455985456544392" at="39,112,40,212" />
+      <scope id="8976455985456449669" at="42,112,43,212" />
+      <scope id="1004539053072671530" at="71,50,72,106" />
+      <scope id="1004539053071837752" at="76,102,77,246" />
+      <scope id="1004539053072671529" at="71,0,74,0">
+        <var name="it" id="1004539053072671529" />
+      </scope>
+      <scope id="86849876705431334" at="69,100,74,18" />
+      <unit id="1004539053072671529" at="70,462,74,5" name="org.campagnelab.circles.aspect.generator.template.main.QueriesGenerated$1" />
+    </file>
+  </root>
+  <root nodeRef="r:ccf57985-801c-4f69-ab7c-010c610dc9b9(org.campagnelab.circles.aspect.generator.template.main@generator)/8976455985456436057">
+    <file name="QueriesGenerated.java">
+      <node id="5665480314685426426" at="45,112,46,212" concept="3" />
+      <node id="1004539053071845422" at="48,112,49,212" concept="3" />
+      <node id="1004539053072184370" at="51,112,52,110" concept="3" />
+      <node id="86849876705426599" at="54,107,55,30" concept="3" />
+      <node id="1004539053072183550" at="63,120,64,68" concept="3" />
+      <node id="86849876705428936" at="66,118,67,68" concept="3" />
+      <node id="8976455985457056660" at="79,102,80,71" concept="2" />
+      <node id="8976455985457055515" at="80,71,81,0" concept="4" />
+      <node id="8976455985456465684" at="83,50,84,106" concept="3" />
+      <node id="8976455985457161705" at="90,41,91,168" concept="3" />
+      <node id="8976455985457059806" at="99,41,100,168" concept="3" />
+      <node id="8976455985457067459" at="104,7,105,85" concept="0" />
+      <node id="8976455985457082694" at="105,85,106,88" concept="0" />
+      <node id="8976455985457085995" at="106,88,107,93" concept="0" />
+      <node id="8976455985457090868" at="107,93,108,52" concept="3" />
+      <node id="8976455985456482377" at="110,102,111,246" concept="3" />
+      <node id="8976455985456465682" at="83,0,86,0" concept="1" trace="translate#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <node id="8976455985457159878" at="90,0,93,0" concept="1" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8976455985457059804" at="99,0,102,0" concept="1" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8976455985457018578" at="81,0,86,18" concept="2" />
+      <node id="8976455985457143112" at="88,49,93,11" concept="3" />
+      <node id="8976455985457059798" at="97,49,102,11" concept="3" />
+      <node id="8976455985457024812" at="88,0,95,0" concept="1" trace="translate#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <node id="8976455985457059796" at="97,0,104,0" concept="1" trace="translate#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <node id="8976455985457022075" at="86,18,95,7" concept="2" />
+      <node id="8976455985457059789" at="95,7,104,7" concept="2" />
+      <scope id="5665480314685426425" at="45,112,46,212" />
+      <scope id="1004539053071820796" at="48,112,49,212" />
+      <scope id="1004539053072184207" at="51,112,52,110" />
+      <scope id="86849876705426593" at="54,107,55,30" />
+      <scope id="1004539053072181796" at="63,120,64,68" />
+      <scope id="86849876705397791" at="66,118,67,68" />
+      <scope id="8976455985456465683" at="83,50,84,106" />
+      <scope id="8976455985457159879" at="90,41,91,168" />
+      <scope id="8976455985457059805" at="99,41,100,168" />
+      <scope id="8976455985456471184" at="110,102,111,246" />
+      <scope id="8976455985456465682" at="83,0,86,0">
+        <var name="it" id="8976455985456465682" />
+      </scope>
+      <scope id="8976455985457159878" at="90,0,93,0">
+        <var name="it" id="8976455985457159878" />
+      </scope>
+      <scope id="8976455985457059804" at="99,0,102,0">
+        <var name="it" id="8976455985457059804" />
+      </scope>
+      <scope id="8976455985457024813" at="88,49,93,11" />
+      <scope id="8976455985457059797" at="97,49,102,11" />
+      <scope id="8976455985457024812" at="88,0,95,0">
+        <var name="c" id="8976455985457024812" />
+      </scope>
+      <scope id="8976455985457059796" at="97,0,104,0">
+        <var name="c" id="8976455985457059796" />
+      </scope>
+      <scope id="8976455985456464739" at="79,102,108,52">
+        <var name="conceptsFromLinks" id="8976455985457022076" />
+        <var name="conceptsFromReferences" id="8976455985457059790" />
+        <var name="result" id="8976455985457056661" />
+        <var name="targetConcepts" id="8976455985457018581" />
+      </scope>
+      <unit id="8976455985456465682" at="82,488,86,5" name="org.campagnelab.circles.aspect.generator.template.main.QueriesGenerated$2" />
+      <unit id="8976455985457159878" at="89,136,93,9" name="org.campagnelab.circles.aspect.generator.template.main.QueriesGenerated$4" />
+      <unit id="8976455985457059804" at="98,145,102,9" name="org.campagnelab.circles.aspect.generator.template.main.QueriesGenerated$5" />
+      <unit id="8976455985457024812" at="87,92,95,5" name="org.campagnelab.circles.aspect.generator.template.main.QueriesGenerated$3" />
+      <unit id="8976455985457059796" at="96,97,104,5" name="org.campagnelab.circles.aspect.generator.template.main.QueriesGenerated$4" />
+    </file>
+  </root>
+</debug-info>
+
