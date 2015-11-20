@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="6je1" ref="r:2b50e9c8-828e-4d1c-b75e-74ee8d185c93(org.campagnelab.circles.aspect.structure)" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -58,7 +59,7 @@
         <node concept="1sVBvm" id="RKPJ9dohjN" role="1sWHZn">
           <node concept="3F0A7n" id="RKPJ9dohjZ" role="2wV5jI">
             <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1NtTu8" to="tp25:34EJa6aIcNo" resolve="languageId" />
           </node>
         </node>
       </node>

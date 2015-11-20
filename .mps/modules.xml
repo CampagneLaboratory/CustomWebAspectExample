@@ -4,7 +4,6 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.circles.aspect/org.campagnelab.circles.aspect.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.circles.mockup/org.campagnelab.circles.mockup.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.circles.persistence/org.campagnelab.circles.persistence.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.circles.aspect.runtime/org.campagnelab.circles.aspect.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.circles.plugin/org.campagnelab.circles.plugin.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/playground/playground.msd" folder="" />

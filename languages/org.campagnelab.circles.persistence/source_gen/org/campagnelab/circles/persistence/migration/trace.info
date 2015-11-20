@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<debug-info>
-  <root>
-    <file name="MigrationDescriptorImpl.java">
-      <unit at="11,0,17,0" name="org.campagnelab.circles.persistence.migration.MigrationDescriptorImpl" />
-    </file>
-  </root>
-</debug-info>
-
