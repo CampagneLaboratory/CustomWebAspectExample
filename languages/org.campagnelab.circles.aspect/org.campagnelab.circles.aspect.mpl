@@ -23,9 +23,7 @@
           <sourceRoot location="." />
         </modelRoot>
       </models>
-      <external-templates>
-        <generator generatorUID="8222bfd8-11cc-4dd0-b321-1132f66b1146(org.campagnelab.circles.persistence#4824635715685251114)" />
-      </external-templates>
+      <external-templates />
       <dependencies>
         <dependency reexport="false">8c40f9f4-b3bd-42d0-8b65-8e644273493c(org.campagnelab.circles.aspect)</dependency>
         <dependency reexport="false">86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)</dependency>
@@ -70,7 +68,6 @@
         <module reference="0c4ed533-0d53-4e8f-9849-9abba77b21fb(org.campagnelab.circles.aspect#5665480314684357216)" version="0" />
         <module reference="b117aec4-8d9e-4c87-a347-e41e0dfe0990(org.campagnelab.circles.aspect.runtime)" version="0" />
         <module reference="8202d3eb-bfe0-4fb5-9544-c67c5faa531d(org.campagnelab.circles.persistence)" version="1" />
-        <module reference="8222bfd8-11cc-4dd0-b321-1132f66b1146(org.campagnelab.circles.persistence#4824635715685251114)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
