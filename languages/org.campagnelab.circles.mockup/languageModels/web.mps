@@ -2,9 +2,9 @@
 <model ref="r:03542aec-b353-49d7-b1f1-f27cbb5af092(org.campagnelab.circles.mockup.web)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="0" />
-    <use id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect" version="0" />
-    <use id="8202d3eb-bfe0-4fb5-9544-c67c5faa531d" name="org.campagnelab.circles.persistence" version="1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect" version="-1" />
+    <use id="8202d3eb-bfe0-4fb5-9544-c67c5faa531d" name="org.campagnelab.circles.persistence" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -27,7 +27,7 @@
     </language>
   </registry>
   <node concept="B0a0o" id="4UvP5h6JFr9">
-    <property role="B0a0v" value="plocal:/usr/local/dbs/test6" />
+    <property role="B0a0v" value="remote:127.0.0.1/circles" />
     <property role="1mS5tK" value="admin" />
     <property role="1mS5tH" value="admin" />
   </node>

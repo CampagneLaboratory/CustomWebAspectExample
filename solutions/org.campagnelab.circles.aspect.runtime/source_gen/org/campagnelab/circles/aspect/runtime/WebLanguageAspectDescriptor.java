@@ -9,5 +9,5 @@ public interface WebLanguageAspectDescriptor extends ILanguageAspect {
   /**
    * Use this method to define the schema in the database for each concept of this language.
    */
-  public void defineSchemaForConcepts();
+  public void defineSchemaForConcepts(String user, String password);
 }

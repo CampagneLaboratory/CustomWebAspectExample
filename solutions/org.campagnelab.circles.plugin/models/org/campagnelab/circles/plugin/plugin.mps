@@ -218,6 +218,12 @@
             </node>
             <node concept="liA8E" id="RKPJ9dqOB_" role="2OqNvi">
               <ref role="37wK5l" to="y8z9:4bOz9Wk5for" resolve="defineSchemaForConcepts" />
+              <node concept="Xl_RD" id="6MwrlOu9bIw" role="37wK5m">
+                <property role="Xl_RC" value="root" />
+              </node>
+              <node concept="Xl_RD" id="6MwrlOu9bKd" role="37wK5m">
+                <property role="Xl_RC" value="admin" />
+              </node>
             </node>
           </node>
         </node>

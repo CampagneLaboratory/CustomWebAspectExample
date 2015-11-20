@@ -17,10 +17,10 @@ import jetbrains.mps.project.MPSProject;
 import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
 
-public class DefineDbSchema_Action extends BaseAction {
+public class DropDbSchema_Action extends BaseAction {
   private static final Icon ICON = null;
-  public DefineDbSchema_Action() {
-    super("Define DB Schema", "", ICON);
+  public DropDbSchema_Action() {
+    super("Drop DB Schema", "", ICON);
     this.setIsAlwaysVisible(false);
     this.setExecuteOutsideCommand(false);
   }
@@ -66,10 +66,10 @@ public class DefineDbSchema_Action extends BaseAction {
     SAbstractConcept concept = event.getData(MPSCommonDataKeys.NODE).getConcept();
     LanguageRuntime languageRuntime = LanguageRegistry.getInstance(event.getData(MPSCommonDataKeys.MPS_PROJECT)).getLanguage(concept.getLanguage());
     WebLanguageAspectDescriptor webDescriptor = languageRuntime.getAspect(WebLanguageAspectDescriptor.class);
-    webDescriptor.defineSchemaForConcepts("root", "admin");
+    webDescriptor.dropSchemaForConcepts("root", "admin");
     if (LOG.isInfoEnabled()) {
       LOG.info("Done with define schema");
     }
   }
-  protected static Logger LOG = LogManager.getLogger(DefineDbSchema_Action.class);
+  protected static Logger LOG = LogManager.getLogger(DropDbSchema_Action.class);
 }

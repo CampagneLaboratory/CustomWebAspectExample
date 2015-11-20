@@ -9,15 +9,15 @@ import org.apache.log4j.LogManager;
 
 public class WebAspectDescriptor implements WebLanguageAspectDescriptor {
   public WebAspectDescriptor() {
-    dbHelper = new DbSchemaHelper("plocal:/usr/local/dbs/test6");
+    dbHelper = new DbSchemaHelper("remote:127.0.0.1/circles");
   }
   private DbSchemaHelper dbHelper;
-  public void defineSchemaForConcepts() {
+  public void defineSchemaForConcepts(String user, String password) {
     if (LOG.isInfoEnabled()) {
-      LOG.info("Starting defineSchemaForConcepts for " + "plocal:/usr/local/dbs/test6");
+      LOG.info("Starting defineSchemaForConcepts for " + "remote:127.0.0.1/circles");
     }
     try {
-      dbHelper.defineSchemaForConcepts();
+      dbHelper.defineSchemaForConcepts(user, password);
     } catch (Throwable t) {
       if (LOG.isEnabledFor(Level.ERROR)) {
         LOG.error("Unable to define schema:", t);
