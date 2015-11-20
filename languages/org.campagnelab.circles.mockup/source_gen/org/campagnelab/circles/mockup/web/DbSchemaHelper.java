@@ -6,15 +6,15 @@ import java.util.HashMap;
 import com.orientechnologies.orient.core.metadata.schema.OClass;
 import com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx;
 import com.orientechnologies.orient.core.metadata.schema.OSchemaProxy;
-import com.orientechnologies.orient.core.query.live.OLiveQueryHook;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.apache.log4j.Level;
+import com.orientechnologies.orient.core.query.live.OLiveQueryHook;
+import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import java.util.Iterator;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import org.jetbrains.mps.openapi.language.SProperty;
-import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 import com.orientechnologies.orient.core.metadata.schema.OType;
 import org.jetbrains.mps.openapi.language.SDataType;
 import org.jetbrains.mps.openapi.language.SPrimitiveDataType;
@@ -42,7 +42,8 @@ public class DbSchemaHelper {
       db = openCreateDb(user, password);
 
       final OSchemaProxy schema = db.getMetadata().getSchema();
-      // create each class before anything else: 
+      // drop each class, starting with baseConcept: 
+      dropClass(schema, getFqName(MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept")));
       dropClass(schema, "org~campagnelab~circles~mockup~structure~Circle");
       dropClass(schema, "jetbrains~mps~lang~core~structure~BaseConcept");
       dropClass(schema, "jetbrains~mps~lang~core~structure~INamedConcept");
@@ -68,9 +69,6 @@ public class DbSchemaHelper {
 
     try {
       db = openCreateDb(user, password);
-      // activate Live-query hook: 
-      db.activateOnCurrentThread();
-      db.registerHook(new OLiveQueryHook(db));
       // register each concept in the schema: 
       final OSchemaProxy schema = db.getMetadata().getSchema();
       // create each class before anything else: 
@@ -94,7 +92,6 @@ public class DbSchemaHelper {
       createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb7611680L, "org.campagnelab.circles.mockup.structure.FileItem"));
       createSchemaFor(db, MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x47bf8397520e5939L, "jetbrains.mps.lang.core.structure.Attribute"));
       createSchemaFor(db, MetaAdapterFactory.getConcept(0x3dc3d3d3b034480cL, 0x8b21d7a88903974bL, 0x764e562bb75d04dbL, "org.campagnelab.circles.mockup.structure.CircleRef"));
-      db.close();
 
     } catch (Throwable t) {
       if (LOG.isEnabledFor(Level.ERROR)) {
@@ -114,9 +111,11 @@ public class DbSchemaHelper {
         LOG.info("Database did not exist, creating new one");
       }
       db.create();
+      db.registerHook(new OLiveQueryHook(db));
     } else {
       db.open(user, password);
     }
+    db.activateOnCurrentThread();
     return db;
   }
   public void defineClass(OSchemaProxy schema, String conceptName) {
@@ -143,8 +142,12 @@ public class DbSchemaHelper {
       return;
     }
     OClass oRestrictedClass = schema.getClass("ORestricted");
-    if (oRestrictedClass != null && dbClass.getSuperClassesNames().contains("ORestricted")) {
+    if (oRestrictedClass != null && dbClass.getSuperClassesNames().contains(oRestrictedClass.getName())) {
       dbClass.removeSuperClass(oRestrictedClass);
+    }
+    // need to remove subclasses before the one class: 
+    for (OClass subClass : CollectionSequence.fromCollection(dbClass.getSubclasses())) {
+      dropClass(schema, subClass.getName());
     }
     schema.dropClass(conceptName);
     classMap.remove(conceptName);
@@ -174,6 +177,16 @@ public class DbSchemaHelper {
       }
     }
     for (SProperty p : CollectionSequence.fromCollection(c.getProperties())) {
+      if (LOG.isInfoEnabled()) {
+        LOG.info("p.getOwner:" + p.getOwner());
+      }
+      if (LOG.isInfoEnabled()) {
+        LOG.info("p.getContainingConcept" + p.getContainingConcept());
+      }
+
+      if (p.getOwner() != c) {
+        continue;
+      }
       OType dbType = OType.ANY;
       SDataType type = p.getType();
       if (type instanceof SPrimitiveDataType) {
@@ -198,6 +211,10 @@ public class DbSchemaHelper {
       dbClass.createProperty(p.getName(), dbType);
     }
     for (SContainmentLink childRole : CollectionSequence.fromCollection(c.getContainmentLinks())) {
+      if (childRole.getOwner() != c) {
+        continue;
+      }
+
       OType linkDbType;
       if (childRole.isMultiple()) {
         if (childRole.isUnordered()) {
@@ -216,6 +233,10 @@ public class DbSchemaHelper {
       dbClass.createProperty(childRole.getRoleName(), linkDbType, classMap.get(getFqName(childRole.getTargetConcept())));
     }
     for (SReferenceLink referenceLink : CollectionSequence.fromCollection(c.getReferenceLinks())) {
+      if (referenceLink.getOwner() != c) {
+        continue;
+      }
+
       if (!(classMap.containsKey(getFqName(referenceLink.getTargetConcept())))) {
         if (LOG.isInfoEnabled()) {
           LOG.info("Concept not in schema:" + referenceLink.getTargetConcept());
