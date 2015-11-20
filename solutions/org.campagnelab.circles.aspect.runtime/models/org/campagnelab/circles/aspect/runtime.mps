@@ -95,6 +95,29 @@
         <node concept="17QB3L" id="6MwrlOu9aZZ" role="1tU5fm" />
       </node>
     </node>
+    <node concept="3clFb_" id="3Uieg3MruQq" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="dropSchemaForConcepts" />
+      <node concept="3clFbS" id="3Uieg3MruQr" role="3clF47" />
+      <node concept="3Tm1VV" id="3Uieg3MruQs" role="1B3o_S" />
+      <node concept="3cqZAl" id="3Uieg3MruQt" role="3clF45" />
+      <node concept="P$JXv" id="3Uieg3MruQu" role="lGtFl">
+        <node concept="TZ5HA" id="3Uieg3MruQv" role="TZ5H$">
+          <node concept="1dT_AC" id="3Uieg3MruQw" role="1dT_Ay">
+            <property role="1dT_AB" value="Use this method to drop the schema in the database for each concept of this language." />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3Uieg3MruQx" role="3clF46">
+        <property role="TrG5h" value="user" />
+        <node concept="17QB3L" id="3Uieg3MruQy" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3Uieg3MruQz" role="3clF46">
+        <property role="TrG5h" value="password" />
+        <node concept="17QB3L" id="3Uieg3MruQ$" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="4bOz9Wk5fjr" role="1B3o_S" />
     <node concept="3uibUv" id="4bOz9Wk5fk5" role="3HQHJm">
       <ref role="3uigEE" to="ze1i:~ILanguageAspect" resolve="ILanguageAspect" />

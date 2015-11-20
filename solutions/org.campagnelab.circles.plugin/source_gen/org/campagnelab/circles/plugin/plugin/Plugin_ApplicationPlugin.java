@@ -15,6 +15,7 @@ public class Plugin_ApplicationPlugin extends BaseApplicationPlugin {
   public void createGroups() {
     // actions w/o parameters 
     addAction(new DefineDbSchema_Action());
+    addAction(new DropDbSchema_Action());
     // groups 
     addGroup(new AddCirclesActions_ActionGroup());
   }

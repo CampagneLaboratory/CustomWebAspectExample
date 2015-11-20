@@ -68,7 +68,7 @@ public class DropDbSchema_Action extends BaseAction {
     WebLanguageAspectDescriptor webDescriptor = languageRuntime.getAspect(WebLanguageAspectDescriptor.class);
     webDescriptor.dropSchemaForConcepts("root", "admin");
     if (LOG.isInfoEnabled()) {
-      LOG.info("Done with define schema");
+      LOG.info("Done with drop schema");
     }
   }
   protected static Logger LOG = LogManager.getLogger(DropDbSchema_Action.class);

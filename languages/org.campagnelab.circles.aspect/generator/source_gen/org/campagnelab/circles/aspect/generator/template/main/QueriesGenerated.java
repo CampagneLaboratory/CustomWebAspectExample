@@ -47,10 +47,13 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_8976455985456449668(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(((SNode) _context.getVariable("var:database")), MetaAdapterFactory.getProperty(0x8c40f9f4b3bd42d0L, 0x8b658e644273493cL, 0x2970c96b0e706973L, 0x2970c96b0e706974L, "url"));
   }
-  public static Object propertyMacro_GetPropertyValue_5665480314685426424(final PropertyMacroContext _context) {
+  public static Object propertyMacro_GetPropertyValue_4508728853181670365(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(((SNode) _context.getVariable("var:database")), MetaAdapterFactory.getProperty(0x8c40f9f4b3bd42d0L, 0x8b658e644273493cL, 0x2970c96b0e706973L, 0x2970c96b0e706974L, "url"));
   }
-  public static Object propertyMacro_GetPropertyValue_1004539053071820795(final PropertyMacroContext _context) {
+  public static Object propertyMacro_GetPropertyValue_4508728853181299904(final PropertyMacroContext _context) {
+    return INamedConcept__BehaviorDescriptor.getFqName_idhEwIO9y.invoke(_context.getNode()).replace(".", "~");
+  }
+  public static Object propertyMacro_GetPropertyValue_5665480314685426424(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(((SNode) _context.getVariable("var:database")), MetaAdapterFactory.getProperty(0x8c40f9f4b3bd42d0L, 0x8b658e644273493cL, 0x2970c96b0e706973L, 0x2970c96b0e706974L, "url"));
   }
   public static Object propertyMacro_GetPropertyValue_1004539053072184206(final PropertyMacroContext _context) {
@@ -64,6 +67,9 @@ public class QueriesGenerated {
   }
   public static Object templateArgumentQuery_5700381506346626450(final TemplateArgumentContext _context) {
     return SNodeOperations.getNode("r:2c4c7e9e-399c-490f-b18e-ff7f5ebd651b(org.campagnelab.circles.aspect.runtime)", "4824635715685250266");
+  }
+  public static Iterable<SNode> sourceNodesQuery_4508728853181299915(final SourceSubstituteMacroNodesContext _context) {
+    return ((Iterable<SNode>) _context.getVariable("var:concepts"));
   }
   public static Iterable<SNode> sourceNodesQuery_1004539053072181794(final SourceSubstituteMacroNodesContext _context) {
     return ((Iterable<SNode>) _context.getVariable("var:concepts"));

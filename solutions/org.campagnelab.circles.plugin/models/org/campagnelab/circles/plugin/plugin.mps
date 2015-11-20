@@ -347,9 +347,213 @@
       <node concept="tCFHf" id="RKPJ9dr0s9" role="ftvYc">
         <ref role="tCJdB" node="RKPJ9dqOB2" resolve="DefineDbSchema" />
       </node>
+      <node concept="tCFHf" id="3Uieg3MsTbM" role="ftvYc">
+        <ref role="tCJdB" node="3Uieg3Mrup8" resolve="DropDbSchema" />
+      </node>
     </node>
     <node concept="tT9cl" id="RKPJ9dqXoO" role="2f5YQi">
       <ref role="tU$_T" to="9oh:4vodOtydcQR" resolve="Code" />
+    </node>
+  </node>
+  <node concept="sE7Ow" id="3Uieg3Mrup8">
+    <property role="TrG5h" value="DropDbSchema" />
+    <property role="2uzpH1" value="Drop DB Schema" />
+    <node concept="tnohg" id="3Uieg3Mrup9" role="tncku">
+      <node concept="3clFbS" id="3Uieg3Mrupa" role="2VODD2">
+        <node concept="3cpWs8" id="3Uieg3Mrupb" role="3cqZAp">
+          <node concept="3cpWsn" id="3Uieg3Mrupc" role="3cpWs9">
+            <property role="TrG5h" value="concept" />
+            <node concept="3bZ5Sz" id="3Uieg3Mrupd" role="1tU5fm" />
+            <node concept="2OqwBi" id="3Uieg3Mrupe" role="33vP2m">
+              <node concept="2OqwBi" id="3Uieg3Mrupf" role="2Oq$k0">
+                <node concept="2WthIp" id="3Uieg3Mrupg" role="2Oq$k0" />
+                <node concept="1DTwFV" id="3Uieg3Mruph" role="2OqNvi">
+                  <ref role="2WH_rO" node="3Uieg3MrupI" resolve="node" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3Uieg3Mrupi" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3Uieg3Mrupj" role="3cqZAp">
+          <node concept="3cpWsn" id="3Uieg3Mrupk" role="3cpWs9">
+            <property role="TrG5h" value="languageRuntime" />
+            <node concept="3uibUv" id="3Uieg3Mrupl" role="1tU5fm">
+              <ref role="3uigEE" to="vndm:~LanguageRuntime" resolve="LanguageRuntime" />
+            </node>
+            <node concept="2OqwBi" id="3Uieg3Mrupm" role="33vP2m">
+              <node concept="2YIFZM" id="3Uieg3Mrupn" role="2Oq$k0">
+                <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
+                <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(jetbrains.mps.project.Project):jetbrains.mps.smodel.language.LanguageRegistry" resolve="getInstance" />
+                <node concept="2OqwBi" id="3Uieg3Mrupo" role="37wK5m">
+                  <node concept="2WthIp" id="3Uieg3Mrupp" role="2Oq$k0" />
+                  <node concept="1DTwFV" id="3Uieg3Mrupq" role="2OqNvi">
+                    <ref role="2WH_rO" node="3Uieg3MrupK" resolve="project" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="3Uieg3Mrupr" role="2OqNvi">
+                <ref role="37wK5l" to="vndm:~LanguageRegistry.getLanguage(org.jetbrains.mps.openapi.language.SLanguage):jetbrains.mps.smodel.language.LanguageRuntime" resolve="getLanguage" />
+                <node concept="2OqwBi" id="3Uieg3Mrups" role="37wK5m">
+                  <node concept="37vLTw" id="3Uieg3Mrupt" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3Uieg3Mrupc" resolve="concept" />
+                  </node>
+                  <node concept="liA8E" id="3Uieg3Mrupu" role="2OqNvi">
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getLanguage():org.jetbrains.mps.openapi.language.SLanguage" resolve="getLanguage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3Uieg3Mrupv" role="3cqZAp">
+          <node concept="3cpWsn" id="3Uieg3Mrupw" role="3cpWs9">
+            <property role="TrG5h" value="webDescriptor" />
+            <node concept="3uibUv" id="3Uieg3Mrupx" role="1tU5fm">
+              <ref role="3uigEE" to="y8z9:4bOz9Wk5fjq" resolve="WebLanguageAspectDescriptor" />
+            </node>
+            <node concept="2OqwBi" id="3Uieg3Mrupy" role="33vP2m">
+              <node concept="37vLTw" id="3Uieg3Mrupz" role="2Oq$k0">
+                <ref role="3cqZAo" node="3Uieg3Mrupk" resolve="languageRuntime" />
+              </node>
+              <node concept="liA8E" id="3Uieg3Mrup$" role="2OqNvi">
+                <ref role="37wK5l" to="vndm:~LanguageRuntime.getAspect(java.lang.Class):jetbrains.mps.smodel.runtime.ILanguageAspect" resolve="getAspect" />
+                <node concept="3VsKOn" id="3Uieg3Mrup_" role="37wK5m">
+                  <ref role="3VsUkX" to="y8z9:4bOz9Wk5fjq" resolve="WebLanguageAspectDescriptor" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3Uieg3MrupA" role="3cqZAp">
+          <node concept="2OqwBi" id="3Uieg3MrupB" role="3clFbG">
+            <node concept="37vLTw" id="3Uieg3MrupC" role="2Oq$k0">
+              <ref role="3cqZAo" node="3Uieg3Mrupw" resolve="webDescriptor" />
+            </node>
+            <node concept="liA8E" id="3Uieg3MrupD" role="2OqNvi">
+              <ref role="37wK5l" to="y8z9:3Uieg3MruQq" resolve="dropSchemaForConcepts" />
+              <node concept="Xl_RD" id="3Uieg3MrupE" role="37wK5m">
+                <property role="Xl_RC" value="root" />
+              </node>
+              <node concept="Xl_RD" id="3Uieg3MrupF" role="37wK5m">
+                <property role="Xl_RC" value="admin" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="34ab3g" id="3Uieg3MrupG" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="Xl_RD" id="3Uieg3MrupH" role="34bqiv">
+            <property role="Xl_RC" value="Done with drop schema" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1DS2jV" id="3Uieg3MrupI" role="1NuT2Z">
+      <property role="TrG5h" value="node" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.NODE" resolve="NODE" />
+      <node concept="1oajcY" id="3Uieg3MrupJ" role="1oa70y" />
+    </node>
+    <node concept="1DS2jV" id="3Uieg3MrupK" role="1NuT2Z">
+      <property role="TrG5h" value="project" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="3Uieg3MrupL" role="1oa70y" />
+    </node>
+    <node concept="2ScWuX" id="3Uieg3MrupM" role="tmbBb">
+      <node concept="3clFbS" id="3Uieg3MrupN" role="2VODD2">
+        <node concept="3cpWs8" id="3Uieg3MrupO" role="3cqZAp">
+          <node concept="3cpWsn" id="3Uieg3MrupP" role="3cpWs9">
+            <property role="TrG5h" value="concept" />
+            <node concept="3bZ5Sz" id="3Uieg3MrupQ" role="1tU5fm" />
+            <node concept="2OqwBi" id="3Uieg3MrupR" role="33vP2m">
+              <node concept="2OqwBi" id="3Uieg3MrupS" role="2Oq$k0">
+                <node concept="2WthIp" id="3Uieg3MrupT" role="2Oq$k0" />
+                <node concept="1DTwFV" id="3Uieg3MrupU" role="2OqNvi">
+                  <ref role="2WH_rO" node="3Uieg3MrupI" resolve="node" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3Uieg3MrupV" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3Uieg3MrupW" role="3cqZAp">
+          <node concept="3cpWsn" id="3Uieg3MrupX" role="3cpWs9">
+            <property role="TrG5h" value="languageRuntime" />
+            <node concept="3uibUv" id="3Uieg3MrupY" role="1tU5fm">
+              <ref role="3uigEE" to="vndm:~LanguageRuntime" resolve="LanguageRuntime" />
+            </node>
+            <node concept="2OqwBi" id="3Uieg3MrupZ" role="33vP2m">
+              <node concept="2YIFZM" id="3Uieg3Mruq0" role="2Oq$k0">
+                <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(jetbrains.mps.project.Project):jetbrains.mps.smodel.language.LanguageRegistry" resolve="getInstance" />
+                <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
+                <node concept="2OqwBi" id="3Uieg3Mruq1" role="37wK5m">
+                  <node concept="2WthIp" id="3Uieg3Mruq2" role="2Oq$k0" />
+                  <node concept="1DTwFV" id="3Uieg3Mruq3" role="2OqNvi">
+                    <ref role="2WH_rO" node="3Uieg3MrupK" resolve="project" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="3Uieg3Mruq4" role="2OqNvi">
+                <ref role="37wK5l" to="vndm:~LanguageRegistry.getLanguage(org.jetbrains.mps.openapi.language.SLanguage):jetbrains.mps.smodel.language.LanguageRuntime" resolve="getLanguage" />
+                <node concept="2OqwBi" id="3Uieg3Mruq5" role="37wK5m">
+                  <node concept="37vLTw" id="3Uieg3Mruq6" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3Uieg3MrupP" resolve="concept" />
+                  </node>
+                  <node concept="liA8E" id="3Uieg3Mruq7" role="2OqNvi">
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getLanguage():org.jetbrains.mps.openapi.language.SLanguage" resolve="getLanguage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3Uieg3Mruq8" role="3cqZAp">
+          <node concept="3clFbS" id="3Uieg3Mruq9" role="3clFbx">
+            <node concept="3cpWs8" id="3Uieg3Mruqa" role="3cqZAp">
+              <node concept="3cpWsn" id="3Uieg3Mruqb" role="3cpWs9">
+                <property role="TrG5h" value="webDescriptor" />
+                <node concept="3uibUv" id="3Uieg3Mruqc" role="1tU5fm">
+                  <ref role="3uigEE" to="y8z9:4bOz9Wk5fjq" resolve="WebLanguageAspectDescriptor" />
+                </node>
+                <node concept="2OqwBi" id="3Uieg3Mruqd" role="33vP2m">
+                  <node concept="37vLTw" id="3Uieg3Mruqe" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3Uieg3MrupX" resolve="languageRuntime" />
+                  </node>
+                  <node concept="liA8E" id="3Uieg3Mruqf" role="2OqNvi">
+                    <ref role="37wK5l" to="vndm:~LanguageRuntime.getAspect(java.lang.Class):jetbrains.mps.smodel.runtime.ILanguageAspect" resolve="getAspect" />
+                    <node concept="3VsKOn" id="3Uieg3Mruqg" role="37wK5m">
+                      <ref role="3VsUkX" to="y8z9:4bOz9Wk5fjq" resolve="WebLanguageAspectDescriptor" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="3Uieg3Mruqh" role="3cqZAp">
+              <node concept="3y3z36" id="3Uieg3Mruqi" role="3cqZAk">
+                <node concept="10Nm6u" id="3Uieg3Mruqj" role="3uHU7w" />
+                <node concept="37vLTw" id="3Uieg3Mruqk" role="3uHU7B">
+                  <ref role="3cqZAo" node="3Uieg3Mruqb" resolve="webDescriptor" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="3Uieg3Mruql" role="3clFbw">
+            <node concept="10Nm6u" id="3Uieg3Mruqm" role="3uHU7w" />
+            <node concept="37vLTw" id="3Uieg3Mruqn" role="3uHU7B">
+              <ref role="3cqZAo" node="3Uieg3MrupX" resolve="languageRuntime" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3Uieg3Mruqo" role="3cqZAp">
+          <node concept="3clFbT" id="3Uieg3Mruqp" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

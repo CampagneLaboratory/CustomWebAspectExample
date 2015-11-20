@@ -24,5 +24,17 @@ public class WebAspectDescriptor implements WebLanguageAspectDescriptor {
       }
     }
   }
+  public void dropSchemaForConcepts(String user, String password) {
+    if (LOG.isInfoEnabled()) {
+      LOG.info("Starting dropSchemaForConcepts for " + "remote:127.0.0.1/circles");
+    }
+    try {
+      dbHelper.dropSchemaForConcepts(user, password);
+    } catch (Throwable t) {
+      if (LOG.isEnabledFor(Level.ERROR)) {
+        LOG.error("Unable to drop schema:", t);
+      }
+    }
+  }
   protected static Logger LOG = LogManager.getLogger(WebAspectDescriptor.class);
 }
