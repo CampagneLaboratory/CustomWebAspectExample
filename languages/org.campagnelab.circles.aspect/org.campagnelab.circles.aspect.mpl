@@ -32,6 +32,7 @@
         <dependency reexport="false">3ac18869-0828-4401-abad-822a47bf83f1(jetbrains.mps.lang.descriptor#9020561928507175817)</dependency>
         <dependency reexport="false">e45a8b22-94f2-427f-b849-77f254c4eef5(jetbrains.mps.lang.aspect#3274906159125927726)</dependency>
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
+        <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
       </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -86,7 +87,6 @@
   </stubModelEntries>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">8202d3eb-bfe0-4fb5-9544-c67c5faa531d(org.campagnelab.circles.persistence)</dependency>
     <dependency reexport="false">7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</dependency>
     <dependency reexport="true">8202d3eb-bfe0-4fb5-9544-c67c5faa531d(org.campagnelab.circles.persistence)</dependency>
   </dependencies>
