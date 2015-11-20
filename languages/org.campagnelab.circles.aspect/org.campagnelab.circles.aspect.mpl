@@ -4,6 +4,16 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
+    <modelRoot contentPath="${module}" type="java_classes">
+      <sourceRoot location="orientdb-client-2.1.5.jar" />
+      <sourceRoot location="jna-platform-4.0.0.jar" />
+      <sourceRoot location="concurrentlinkedhashmap-lru-1.4.1.jar" />
+      <sourceRoot location="jna-4.0.0.jar" />
+      <sourceRoot location="hamcrest-core-1.3.jar" />
+      <sourceRoot location="orientdb-enterprise-2.1.5.jar" />
+      <sourceRoot location="orientdb-core-2.1.5.jar" />
+      <sourceRoot location="snappy-java-1.1.0.1.jar" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
@@ -18,10 +28,10 @@
       </external-templates>
       <dependencies>
         <dependency reexport="false">8c40f9f4-b3bd-42d0-8b65-8e644273493c(org.campagnelab.circles.aspect)</dependency>
-        <dependency reexport="false">8202d3eb-bfe0-4fb5-9544-c67c5faa531d(org.campagnelab.circles.persistence)</dependency>
         <dependency reexport="false">86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)</dependency>
         <dependency reexport="false">3ac18869-0828-4401-abad-822a47bf83f1(jetbrains.mps.lang.descriptor#9020561928507175817)</dependency>
         <dependency reexport="false">e45a8b22-94f2-427f-b849-77f254c4eef5(jetbrains.mps.lang.aspect#3274906159125927726)</dependency>
+        <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
       </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -42,7 +52,6 @@
         <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" fqName="jetbrains.mps.lang.smodel" version="2" />
         <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
         <language id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" fqName="org.campagnelab.circles.aspect" version="0" />
-        <language id="8202d3eb-bfe0-4fb5-9544-c67c5faa531d" fqName="org.campagnelab.circles.persistence" version="1" />
       </languageVersions>
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -64,10 +73,22 @@
       <mapping-priorities />
     </generator>
   </generators>
+  <stubModelEntries>
+    <stubModelEntry path="${module}" />
+    <stubModelEntry path="${module}/concurrentlinkedhashmap-lru-1.4.1.jar" />
+    <stubModelEntry path="${module}/jna-platform-4.0.0.jar" />
+    <stubModelEntry path="${module}/jna-4.0.0.jar" />
+    <stubModelEntry path="${module}/hamcrest-core-1.3.jar" />
+    <stubModelEntry path="${module}/orientdb-client-2.1.5.jar" />
+    <stubModelEntry path="${module}/orientdb-core-2.1.5.jar" />
+    <stubModelEntry path="${module}/orientdb-enterprise-2.1.5.jar" />
+    <stubModelEntry path="${module}/snappy-java-1.1.0.1.jar" />
+  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">8202d3eb-bfe0-4fb5-9544-c67c5faa531d(org.campagnelab.circles.persistence)</dependency>
     <dependency reexport="false">7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</dependency>
+    <dependency reexport="true">8202d3eb-bfe0-4fb5-9544-c67c5faa531d(org.campagnelab.circles.persistence)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -122,7 +143,6 @@
   </runtime>
   <extendedLanguages>
     <extendedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</extendedLanguage>
-    <extendedLanguage>8202d3eb-bfe0-4fb5-9544-c67c5faa531d(org.campagnelab.circles.persistence)</extendedLanguage>
   </extendedLanguages>
 </language>
 

@@ -2,7 +2,7 @@
 <debug-info>
   <root>
     <file name="WebAspectDescriptor.java">
-      <unit at="23,0,111,0" name="org.campagnelab.circles.mockup.web.WebAspectDescriptor" />
+      <unit at="24,0,120,0" name="org.campagnelab.circles.mockup.web.WebAspectDescriptor" />
     </file>
   </root>
 </debug-info>

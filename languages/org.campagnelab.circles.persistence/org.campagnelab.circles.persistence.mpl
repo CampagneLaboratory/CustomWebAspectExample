@@ -4,10 +4,6 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="orientdb-client-2.1.5.jar" />
-      <sourceRoot location="orientdb-core-2.1.5.jar" />
-    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
@@ -58,10 +54,6 @@
       <mapping-priorities />
     </generator>
   </generators>
-  <stubModelEntries>
-    <stubModelEntry path="${module}/orientdb-client-2.1.5.jar" />
-    <stubModelEntry path="${module}/orientdb-core-2.1.5.jar" />
-  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">8c40f9f4-b3bd-42d0-8b65-8e644273493c(org.campagnelab.circles.aspect)</dependency>

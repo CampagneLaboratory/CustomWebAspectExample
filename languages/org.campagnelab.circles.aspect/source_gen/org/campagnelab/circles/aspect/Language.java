@@ -33,7 +33,7 @@ public class Language extends LanguageRuntime {
   }
   @Override
   protected String[] getExtendedLanguageIDs() {
-    return new String[]{"jetbrains.mps.lang.core", "org.campagnelab.circles.persistence"};
+    return new String[]{"jetbrains.mps.lang.core"};
   }
   @Override
   public Collection<TemplateModule> getGenerators() {
