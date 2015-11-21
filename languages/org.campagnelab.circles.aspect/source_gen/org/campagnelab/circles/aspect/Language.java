@@ -12,6 +12,8 @@ import jetbrains.mps.smodel.runtime.ILanguageAspect;
 import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import org.campagnelab.circles.aspect.editor.EditorAspectDescriptorImpl;
+import jetbrains.mps.smodel.runtime.MakeAspectDescriptor;
+import org.campagnelab.circles.aspect.plugin.FacetAspectDescriptor;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 
 public class Language extends LanguageRuntime {
@@ -46,6 +48,9 @@ public class Language extends LanguageRuntime {
     }
     if (aspectClass == EditorAspectDescriptor.class) {
       return (T) new EditorAspectDescriptorImpl();
+    }
+    if (aspectClass == MakeAspectDescriptor.class) {
+      return (T) new FacetAspectDescriptor();
     }
     if (aspectClass == StructureAspectDescriptor.class) {
       return (T) new org.campagnelab.circles.aspect.structure.StructureAspectDescriptor();

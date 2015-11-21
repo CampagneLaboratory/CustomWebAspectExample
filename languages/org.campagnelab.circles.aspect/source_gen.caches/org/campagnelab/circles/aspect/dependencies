@@ -12,9 +12,11 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.MakeAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
     <classNode dependClassName="org.campagnelab.circles.aspect.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="org.campagnelab.circles.aspect.editor.EditorAspectDescriptorImpl" />
+    <classNode dependClassName="org.campagnelab.circles.aspect.plugin.FacetAspectDescriptor" />
     <classNode dependClassName="org.campagnelab.circles.aspect.structure.StructureAspectDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />
   </dependency>
