@@ -84,6 +84,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
@@ -138,6 +139,7 @@
   </node>
   <node concept="312cEu" id="1mpyZGFcP7X">
     <property role="TrG5h" value="Web_" />
+    <property role="3GE5qa" value="web.views" />
     <node concept="3Tm1VV" id="1mpyZGFcP7Y" role="1B3o_S" />
     <node concept="n94m4" id="1mpyZGFcP7Z" role="lGtFl">
       <ref role="n9lRv" to="6je1:1mpyZGF7F7F" resolve="WebEditors" />
@@ -166,11 +168,16 @@
               <node concept="Xl_RD" id="1mpyZGFcPBU" role="3uHU7B">
                 <property role="Xl_RC" value="Web" />
               </node>
-              <node concept="2OqwBi" id="1mpyZGFcPtY" role="3uHU7w">
-                <node concept="3TrcHB" id="1mpyZGFcPu1" role="2OqNvi">
+              <node concept="2OqwBi" id="FyYyYnIGu1" role="3uHU7w">
+                <node concept="2OqwBi" id="1mpyZGFcPtY" role="2Oq$k0">
+                  <node concept="3TrEf2" id="FyYyYnIGly" role="2OqNvi">
+                    <ref role="3Tt5mk" to="6je1:1mpyZGF7F7H" />
+                  </node>
+                  <node concept="30H73N" id="1mpyZGFcPu2" role="2Oq$k0" />
+                </node>
+                <node concept="3TrcHB" id="FyYyYnIGBN" role="2OqNvi">
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
-                <node concept="30H73N" id="1mpyZGFcPu2" role="2Oq$k0" />
               </node>
             </node>
           </node>
