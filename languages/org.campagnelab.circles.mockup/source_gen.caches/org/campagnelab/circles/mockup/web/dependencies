@@ -37,5 +37,9 @@
     <classNode dependClassName="org.campagnelab.circles.mockup.web.DbSchemaHelper" />
     <classNode extendsClassName="org.campagnelab.circles.aspect.runtime.WebLanguageAspectDescriptor" />
   </dependency>
+  <dependency className="org.campagnelab.circles.mockup.web.WebCircleContainer_Editor" file="WebCircleContainer_Editor.java" />
+  <dependency className="org.campagnelab.circles.mockup.web.WebCircleRef_Editor" file="WebCircleRef_Editor.java" />
+  <dependency className="org.campagnelab.circles.mockup.web.WebCircle_Editor" file="WebCircle_Editor.java" />
+  <dependency className="org.campagnelab.circles.mockup.web.WebDashboard_Editor" file="WebDashboard_Editor.java" />
 </dependenciesRoot>
 

@@ -24,6 +24,20 @@
       <unit at="10,0,41,0" name="org.campagnelab.circles.mockup.web.WebAspectDescriptor" />
     </file>
   </root>
+  <root nodeRef="r:03542aec-b353-49d7-b1f1-f27cbb5af092(org.campagnelab.circles.mockup.web)/1556429057109780661">
+    <file name="WebCircleContainer_Editor.java">
+      <unit id="1556429057109780661" at="6,0,8,0" name="org.campagnelab.circles.mockup.web.WebCircleContainer_Editor" />
+    </file>
+    <file name="WebCircleRef_Editor.java">
+      <unit id="1556429057109780661" at="6,0,8,0" name="org.campagnelab.circles.mockup.web.WebCircleRef_Editor" />
+    </file>
+    <file name="WebCircle_Editor.java">
+      <unit id="1556429057109780661" at="6,0,8,0" name="org.campagnelab.circles.mockup.web.WebCircle_Editor" />
+    </file>
+    <file name="WebDashboard_Editor.java">
+      <unit id="1556429057109780661" at="6,0,8,0" name="org.campagnelab.circles.mockup.web.WebDashboard_Editor" />
+    </file>
+  </root>
   <root nodeRef="r:03542aec-b353-49d7-b1f1-f27cbb5af092(org.campagnelab.circles.mockup.web)/5665480314684639699">
     <file name="DbSchemaHelper.java">
       <node id="5665480314684639699" at="30,0,31,0" concept="6" trace="url" />

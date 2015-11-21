@@ -12,6 +12,11 @@
     <import index="avse" ref="r:51fcf803-02a7-4ac6-994f-040e45f3e9a5(org.campagnelab.circles.mockup.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
     <language id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect">
       <concept id="2986108014587570547" name="org.campagnelab.circles.aspect.structure.Database" flags="ng" index="B0a0o">
         <property id="2986108014587570548" name="url" index="B0a0v" />
@@ -56,15 +61,19 @@
   </node>
   <node concept="YxNCg" id="1mpyZGF7YyP">
     <node concept="YxNCn" id="1mpyZGF7YyZ" role="YxNBU">
+      <property role="TrG5h" value="CircleContainer_Editor" />
       <ref role="YxNCm" to="lnem:7pelyIRkxD_" resolve="CircleContainer_Editor" />
     </node>
     <node concept="YxNCn" id="1mpyZGF7Yz1" role="YxNBU">
+      <property role="TrG5h" value="CircleRef_Editor" />
       <ref role="YxNCm" to="lnem:7pelyIRny2r" resolve="CircleRef_Editor" />
     </node>
     <node concept="YxNCn" id="1mpyZGF7Yz4" role="YxNBU">
+      <property role="TrG5h" value="Circle_Editor" />
       <ref role="YxNCm" to="lnem:7pelyIRkzwA" resolve="Circle_Editor" />
     </node>
     <node concept="YxNCn" id="1mpyZGF7Yz8" role="YxNBU">
+      <property role="TrG5h" value="Dashboard_Editor" />
       <ref role="YxNCm" to="lnem:7pelyIRkzxh" resolve="Dashboard_Editor" />
     </node>
   </node>
