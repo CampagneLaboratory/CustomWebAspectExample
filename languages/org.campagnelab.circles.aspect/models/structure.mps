@@ -6,6 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
@@ -118,6 +119,30 @@
     </node>
     <node concept="PrWs8" id="4UvP5h6Kffr" role="PzmwI">
       <ref role="PrY4T" node="RKPJ9dogRy" resolve="IIncludeConcepts" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1mpyZGF7F7F">
+    <property role="1pbfSe" value="1085816294" />
+    <property role="TrG5h" value="WebEditors" />
+    <property role="19KtqR" value="true" />
+    <property role="R4oN_" value="Set of Editors to Web Enable" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1mpyZGF7F81" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="editors" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1mpyZGF7F7G" resolve="EditorRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1mpyZGF7F7G">
+    <property role="1pbfSe" value="1085816295" />
+    <property role="TrG5h" value="EditorRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1mpyZGF7F7H" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="editor" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpc2:fA4kQeF" resolve="ConceptEditorDeclaration" />
     </node>
   </node>
 </model>
