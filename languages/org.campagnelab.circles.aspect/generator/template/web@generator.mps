@@ -62,6 +62,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -114,6 +115,7 @@
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
       </concept>
       <concept id="5015072279636464462" name="jetbrains.mps.lang.generator.structure.VarMacro" flags="lg" index="2jeGV$">
+        <child id="5015072279636624635" name="type" index="2jfP_h" />
         <child id="5015072279636624596" name="value" index="2jfP_Y" />
       </concept>
       <concept id="5015072279636592410" name="jetbrains.mps.lang.generator.structure.VarMacro_ValueQuery" flags="in" index="2jfdEK" />
@@ -349,7 +351,7 @@
           <node concept="3clFbF" id="FyYyYnKIEm" role="3cqZAp">
             <node concept="2OqwBi" id="FyYyYnKIFG" role="3clFbG">
               <node concept="1iwH7S" id="FyYyYnKIEd" role="2Oq$k0" />
-              <node concept="1bhEwm" id="FyYyYnKIHg" role="2OqNvi">
+              <node concept="1bhEwm" id="3N2WJcqmaST" role="2OqNvi">
                 <ref role="1bhEwk" node="FyYyYnKI3d" resolve="ClassName" />
               </node>
             </node>
@@ -390,6 +392,7 @@
           </node>
         </node>
       </node>
+      <node concept="17QB3L" id="3N2WJcqmbsL" role="2jfP_h" />
     </node>
   </node>
 </model>
