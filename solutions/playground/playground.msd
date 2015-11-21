@@ -6,9 +6,6 @@
     </modelRoot>
   </models>
   <sourcePath />
-  <usedLanguages>
-    <usedLanguage>3dc3d3d3-b034-480c-8b21-d7a88903974b(org.campagnelab.circles.mockup)</usedLanguage>
-  </usedLanguages>
   <languageVersions>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />
     <language id="3dc3d3d3-b034-480c-8b21-d7a88903974b" fqName="org.campagnelab.circles.mockup" version="0" />
