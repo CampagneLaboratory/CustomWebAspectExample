@@ -4,19 +4,16 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect" version="-1" />
-    <use id="8202d3eb-bfe0-4fb5-9544-c67c5faa531d" name="org.campagnelab.circles.persistence" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="lnem" ref="r:c03de3d9-fc26-4342-a7f1-effa193be9df(org.campagnelab.circles.mockup.editor)" />
+    <import index="wwko" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.core.client(org.google.gwt/)" />
+    <import index="rn0p" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.dom.client(org.google.gwt/)" />
+    <import index="k02x" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.uibinder.client(org.google.gwt/)" />
     <import index="avse" ref="r:51fcf803-02a7-4ac6-994f-040e45f3e9a5(org.campagnelab.circles.mockup.structure)" implicit="true" />
   </imports>
   <registry>
-    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
-        <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-    </language>
     <language id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect">
       <concept id="2986108014587570547" name="org.campagnelab.circles.aspect.structure.Database" flags="ng" index="B0a0o">
         <property id="2986108014587570548" name="url" index="B0a0v" />
@@ -61,19 +58,15 @@
   </node>
   <node concept="YxNCg" id="1mpyZGF7YyP">
     <node concept="YxNCn" id="1mpyZGF7YyZ" role="YxNBU">
-      <property role="TrG5h" value="CircleContainer_Editor" />
       <ref role="YxNCm" to="lnem:7pelyIRkxD_" resolve="CircleContainer_Editor" />
     </node>
     <node concept="YxNCn" id="1mpyZGF7Yz1" role="YxNBU">
-      <property role="TrG5h" value="CircleRef_Editor" />
       <ref role="YxNCm" to="lnem:7pelyIRny2r" resolve="CircleRef_Editor" />
     </node>
     <node concept="YxNCn" id="1mpyZGF7Yz4" role="YxNBU">
-      <property role="TrG5h" value="Circle_Editor" />
       <ref role="YxNCm" to="lnem:7pelyIRkzwA" resolve="Circle_Editor" />
     </node>
     <node concept="YxNCn" id="1mpyZGF7Yz8" role="YxNBU">
-      <property role="TrG5h" value="Dashboard_Editor" />
       <ref role="YxNCm" to="lnem:7pelyIRkzxh" resolve="Dashboard_Editor" />
     </node>
   </node>

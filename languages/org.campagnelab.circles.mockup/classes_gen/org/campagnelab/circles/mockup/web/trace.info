@@ -25,17 +25,53 @@
     </file>
   </root>
   <root nodeRef="r:03542aec-b353-49d7-b1f1-f27cbb5af092(org.campagnelab.circles.mockup.web)/1556429057109780661">
-    <file name="WebCircleContainer_Editor.java">
-      <unit id="1556429057109780661" at="6,0,8,0" name="org.campagnelab.circles.mockup.web.WebCircleContainer_Editor" />
+    <file name="CircleContainer_WebView.java">
+      <node id="1556429057109780661" at="15,0,16,0" concept="14" trace="ourUiBinder" />
+      <node id="1556429057109780661" at="22,36,23,50" concept="5" />
+      <node id="1556429057109780661" at="16,0,18,0" concept="6" trace="idBox" />
+      <node id="1556429057109780661" at="18,0,20,0" concept="6" trace="addNew" />
+      <node id="1556429057109780661" at="20,0,22,0" concept="6" trace="monitoredCircles" />
+      <node id="1556429057109780661" at="22,0,25,0" concept="3" trace="CircleContainer_WebView#()V" />
+      <scope id="1556429057109780661" at="22,36,23,50" />
+      <scope id="1556429057109780661" at="22,0,25,0" />
+      <unit id="1556429057109780661" at="25,0,27,0" name="org.campagnelab.circles.mockup.web.CircleContainer_WebView$ViewUiBinder" />
+      <unit id="1556429057109780661" at="14,0,29,0" name="org.campagnelab.circles.mockup.web.CircleContainer_WebView" />
     </file>
-    <file name="WebCircleRef_Editor.java">
-      <unit id="1556429057109780661" at="6,0,8,0" name="org.campagnelab.circles.mockup.web.WebCircleRef_Editor" />
+    <file name="CircleRef_WebView.java">
+      <node id="1556429057109780661" at="15,0,16,0" concept="14" trace="ourUiBinder" />
+      <node id="1556429057109780661" at="22,30,23,50" concept="5" />
+      <node id="1556429057109780661" at="16,0,18,0" concept="6" trace="idBox" />
+      <node id="1556429057109780661" at="18,0,20,0" concept="6" trace="addNew" />
+      <node id="1556429057109780661" at="20,0,22,0" concept="6" trace="monitoredCircles" />
+      <node id="1556429057109780661" at="22,0,25,0" concept="3" trace="CircleRef_WebView#()V" />
+      <scope id="1556429057109780661" at="22,30,23,50" />
+      <scope id="1556429057109780661" at="22,0,25,0" />
+      <unit id="1556429057109780661" at="25,0,27,0" name="org.campagnelab.circles.mockup.web.CircleRef_WebView$ViewUiBinder" />
+      <unit id="1556429057109780661" at="14,0,29,0" name="org.campagnelab.circles.mockup.web.CircleRef_WebView" />
     </file>
-    <file name="WebCircle_Editor.java">
-      <unit id="1556429057109780661" at="6,0,8,0" name="org.campagnelab.circles.mockup.web.WebCircle_Editor" />
+    <file name="Circle_WebView.java">
+      <node id="1556429057109780661" at="15,0,16,0" concept="14" trace="ourUiBinder" />
+      <node id="1556429057109780661" at="22,27,23,50" concept="5" />
+      <node id="1556429057109780661" at="16,0,18,0" concept="6" trace="idBox" />
+      <node id="1556429057109780661" at="18,0,20,0" concept="6" trace="addNew" />
+      <node id="1556429057109780661" at="20,0,22,0" concept="6" trace="monitoredCircles" />
+      <node id="1556429057109780661" at="22,0,25,0" concept="3" trace="Circle_WebView#()V" />
+      <scope id="1556429057109780661" at="22,27,23,50" />
+      <scope id="1556429057109780661" at="22,0,25,0" />
+      <unit id="1556429057109780661" at="25,0,27,0" name="org.campagnelab.circles.mockup.web.Circle_WebView$ViewUiBinder" />
+      <unit id="1556429057109780661" at="14,0,29,0" name="org.campagnelab.circles.mockup.web.Circle_WebView" />
     </file>
-    <file name="WebDashboard_Editor.java">
-      <unit id="1556429057109780661" at="6,0,8,0" name="org.campagnelab.circles.mockup.web.WebDashboard_Editor" />
+    <file name="Dashboard_WebView.java">
+      <node id="1556429057109780661" at="15,0,16,0" concept="14" trace="ourUiBinder" />
+      <node id="1556429057109780661" at="22,30,23,50" concept="5" />
+      <node id="1556429057109780661" at="16,0,18,0" concept="6" trace="idBox" />
+      <node id="1556429057109780661" at="18,0,20,0" concept="6" trace="addNew" />
+      <node id="1556429057109780661" at="20,0,22,0" concept="6" trace="monitoredCircles" />
+      <node id="1556429057109780661" at="22,0,25,0" concept="3" trace="Dashboard_WebView#()V" />
+      <scope id="1556429057109780661" at="22,30,23,50" />
+      <scope id="1556429057109780661" at="22,0,25,0" />
+      <unit id="1556429057109780661" at="25,0,27,0" name="org.campagnelab.circles.mockup.web.Dashboard_WebView$ViewUiBinder" />
+      <unit id="1556429057109780661" at="14,0,29,0" name="org.campagnelab.circles.mockup.web.Dashboard_WebView" />
     </file>
   </root>
   <root nodeRef="r:03542aec-b353-49d7-b1f1-f27cbb5af092(org.campagnelab.circles.mockup.web)/5665480314684639699">

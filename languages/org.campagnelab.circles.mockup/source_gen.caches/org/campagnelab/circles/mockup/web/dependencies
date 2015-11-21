@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
+  <dependency className="org.campagnelab.circles.mockup.web.CircleContainer_WebView" file="CircleContainer_WebView.java">
+    <classNode dependClassName="com.google.gwt.core.client.GWT" />
+    <classNode dependClassName="com.google.gwt.dom.client.AnchorElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.DivElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.InputElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.UListElement" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiBinder" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiField" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.gwt.BaseWithElement" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.mockup.web.CircleRef_WebView" file="CircleRef_WebView.java">
+    <classNode dependClassName="com.google.gwt.core.client.GWT" />
+    <classNode dependClassName="com.google.gwt.dom.client.AnchorElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.DivElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.InputElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.UListElement" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiBinder" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiField" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.gwt.BaseWithElement" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.mockup.web.Circle_WebView" file="Circle_WebView.java">
+    <classNode dependClassName="com.google.gwt.core.client.GWT" />
+    <classNode dependClassName="com.google.gwt.dom.client.AnchorElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.DivElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.InputElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.UListElement" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiBinder" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiField" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.gwt.BaseWithElement" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.mockup.web.Dashboard_WebView" file="Dashboard_WebView.java">
+    <classNode dependClassName="com.google.gwt.core.client.GWT" />
+    <classNode dependClassName="com.google.gwt.dom.client.AnchorElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.DivElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.InputElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.UListElement" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiBinder" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiField" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.gwt.BaseWithElement" />
+  </dependency>
   <dependency className="org.campagnelab.circles.mockup.web.DbSchemaHelper" file="DbSchemaHelper.java">
     <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
     <classNode dependClassName="com.orientechnologies.orient.core.metadata.schema.OClass" />
@@ -37,9 +77,5 @@
     <classNode dependClassName="org.campagnelab.circles.mockup.web.DbSchemaHelper" />
     <classNode extendsClassName="org.campagnelab.circles.aspect.runtime.WebLanguageAspectDescriptor" />
   </dependency>
-  <dependency className="org.campagnelab.circles.mockup.web.WebCircleContainer_Editor" file="WebCircleContainer_Editor.java" />
-  <dependency className="org.campagnelab.circles.mockup.web.WebCircleRef_Editor" file="WebCircleRef_Editor.java" />
-  <dependency className="org.campagnelab.circles.mockup.web.WebCircle_Editor" file="WebCircle_Editor.java" />
-  <dependency className="org.campagnelab.circles.mockup.web.WebDashboard_Editor" file="WebDashboard_Editor.java" />
 </dependenciesRoot>
 

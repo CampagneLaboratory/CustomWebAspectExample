@@ -3,21 +3,25 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <root>
     <file name="QueriesGenerated.java">
-      <unit at="13,0,25,0" name="web.QueriesGenerated" />
+      <unit at="15,0,33,0" name="web.QueriesGenerated" />
     </file>
   </root>
   <root nodeRef="r:700dcccc-5294-4569-a97b-cb7b4632a7c8(web@generator)/1556429057110100220">
     <file name="QueriesGenerated.java">
-      <node id="1556429057110100247" at="15,112,16,348" concept="0" />
-      <scope id="1556429057110100241" at="15,112,16,348" />
+      <node id="1556429057110100247" at="17,112,18,348" concept="0" />
+      <scope id="1556429057110100241" at="17,112,18,348" />
     </file>
   </root>
   <root nodeRef="r:700dcccc-5294-4569-a97b-cb7b4632a7c8(web@generator)/1556429057111052797">
     <file name="QueriesGenerated.java">
-      <node id="1556429057111054211" at="18,112,19,341" concept="0" />
-      <node id="1556429057111052939" at="21,120,22,193" concept="0" />
-      <scope id="1556429057111054205" at="18,112,19,341" />
-      <scope id="1556429057111052845" at="21,120,22,193" />
+      <node id="784464367432428182" at="20,112,21,60" concept="0" />
+      <node id="784464367432428682" at="23,108,24,60" concept="0" />
+      <node id="1556429057111052939" at="26,120,27,193" concept="0" />
+      <node id="784464367432427618" at="29,101,30,365" concept="0" />
+      <scope id="1556429057111054205" at="20,112,21,60" />
+      <scope id="784464367432428537" at="23,108,24,60" />
+      <scope id="1556429057111052845" at="26,120,27,193" />
+      <scope id="784464367432425681" at="29,101,30,365" />
     </file>
   </root>
 </debug-info>
