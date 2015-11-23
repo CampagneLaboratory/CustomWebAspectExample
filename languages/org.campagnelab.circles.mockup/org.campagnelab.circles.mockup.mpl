@@ -9,10 +9,7 @@
   <generators />
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">8c40f9f4-b3bd-42d0-8b65-8e644273493c(org.campagnelab.circles.aspect)</dependency>
     <dependency reexport="false">b117aec4-8d9e-4c87-a347-e41e0dfe0990(org.campagnelab.circles.aspect.runtime)</dependency>
-    <dependency reexport="false">c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3(org.google.gwt)</dependency>
-    <dependency reexport="false">67b3c41d-58b3-4756-b971-30bf8a9d63e6(jetbrains.jetpad)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -42,7 +39,6 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
     <language id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" fqName="org.campagnelab.circles.aspect" version="0" />
-    <language id="8202d3eb-bfe0-4fb5-9544-c67c5faa531d" fqName="org.campagnelab.circles.persistence" version="-1" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />

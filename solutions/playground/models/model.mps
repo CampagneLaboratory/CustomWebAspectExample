@@ -5,9 +5,7 @@
     <use id="3dc3d3d3-b034-480c-8b21-d7a88903974b" name="org.campagnelab.circles.mockup" version="-1" />
     <use id="87c8043e-fece-4ba6-9d13-3ef71e47af25" name="org.campagnelab.circles.model" version="0" />
   </languages>
-  <imports>
-    <import index="77ry" ref="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
-  </imports>
+  <imports />
   <registry>
     <language id="3dc3d3d3-b034-480c-8b21-d7a88903974b" name="org.campagnelab.circles.mockup">
       <concept id="8524845890418836699" name="org.campagnelab.circles.mockup.structure.CircleRef" flags="ng" index="314PbK">

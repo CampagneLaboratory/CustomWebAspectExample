@@ -12,20 +12,15 @@
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="fn29" ref="r:6ba2667b-185e-45cd-ac65-e4b9d66da28e(jetbrains.mps.smodel.resources)" />
     <import index="fy8e" ref="r:89c0fb70-0977-7777-a076-5906f9d8630f(jetbrains.mps.make.facets)" />
-    <import index="erd2" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.make.facets(MPS.Core/)" />
-    <import index="v8u3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.make.resources(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="rk9m" ref="r:f8580193-afc4-4673-a635-d4757ca591cf(jetbrains.mps.internal.make.runtime.util)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
-    <import index="bgxn" ref="r:01d327ba-040c-402c-a2b6-8832116588df(jetbrains.mps.lang.plugin.plugin)" />
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
@@ -463,14 +458,18 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="1daRAt" id="FyYyYnRvi_" role="3cqZAp">
-                          <property role="1daRAr" value="INFO" />
-                          <node concept="3cpWs3" id="FyYyYnRvn4" role="1daK9t">
-                            <node concept="37vLTw" id="FyYyYnRvnU" role="3uHU7w">
-                              <ref role="3cqZAo" node="FyYyYnRuwc" resolve="projectDirPath" />
-                            </node>
-                            <node concept="Xl_RD" id="FyYyYnRvkm" role="3uHU7B">
-                              <property role="Xl_RC" value="projectDir=" />
+                        <node concept="1X3_iC" id="242NPypM_uL" role="lGtFl">
+                          <property role="3V$3am" value="statement" />
+                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                          <node concept="1daRAt" id="FyYyYnRvi_" role="8Wnug">
+                            <property role="1daRAr" value="INFO" />
+                            <node concept="3cpWs3" id="FyYyYnRvn4" role="1daK9t">
+                              <node concept="37vLTw" id="FyYyYnRvnU" role="3uHU7w">
+                                <ref role="3cqZAo" node="FyYyYnRuwc" resolve="projectDirPath" />
+                              </node>
+                              <node concept="Xl_RD" id="FyYyYnRvkm" role="3uHU7B">
+                                <property role="Xl_RC" value="projectDir=" />
+                              </node>
                             </node>
                           </node>
                         </node>

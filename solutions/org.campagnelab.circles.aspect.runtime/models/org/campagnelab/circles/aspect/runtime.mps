@@ -9,9 +9,6 @@
   </languages>
   <imports>
     <import index="ze1i" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime(MPS.Core/)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="cfvd" ref="r:ccf57985-801c-4f69-ab7c-010c610dc9b9(org.campagnelab.circles.aspect.generator.template.main@generator)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="laoz" ref="8c40f9f4-b3bd-42d0-8b65-8e644273493c/java:com.orientechnologies.orient.core.db.document(org.campagnelab.circles.aspect/)" />
     <import index="ajju" ref="8c40f9f4-b3bd-42d0-8b65-8e644273493c/java:com.orientechnologies.orient.core.query.live(org.campagnelab.circles.aspect/)" />
@@ -212,7 +209,7 @@
       </node>
       <node concept="37vLTG" id="4Uz6rqjNC3i" role="3clF46">
         <property role="TrG5h" value="project" />
-        <node concept="3uibUv" id="4Uz6rqjNC3j" role="1tU5fm">
+        <node concept="3uibUv" id="242NPypPN_a" role="1tU5fm">
           <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
         </node>
       </node>
@@ -384,7 +381,7 @@
         <property role="TrG5h" value="password" />
         <node concept="17QB3L" id="5eOdMaf13CZ" role="1tU5fm" />
       </node>
-      <node concept="3uibUv" id="5eOdMaf13CV" role="3clF45">
+      <node concept="3uibUv" id="242NPypPJnD" role="3clF45">
         <ref role="3uigEE" to="laoz:~ODatabaseDocumentTx" resolve="ODatabaseDocumentTx" />
       </node>
       <node concept="3Tm1VV" id="4Uz6rqjJxf5" role="1B3o_S" />
