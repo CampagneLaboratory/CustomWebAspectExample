@@ -216,7 +216,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3j_dQLHeC2_">
-    <property role="1pbfSe" value="1574979791" />
+    <property role="1pbfSe" value="1574979567" />
     <property role="TrG5h" value="MavenArtifactInfo" />
     <property role="3GE5qa" value="maven" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />

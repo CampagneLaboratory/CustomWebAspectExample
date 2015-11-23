@@ -34,6 +34,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -56,8 +59,24 @@
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
-      <concept id="1196350785113" name="jetbrains.mps.lang.quotation.structure.Quotation" flags="nn" index="2c44tf">
-        <child id="1196350785114" name="quotedNode" index="2c44tc" />
+      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
+        <reference id="5455284157994012188" name="link" index="2pIpSl" />
+      </concept>
+      <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
+        <reference id="5455284157993911078" name="property" index="2pJxcJ" />
+      </concept>
+      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
+        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+      </concept>
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+        <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="8182547171709738802" name="jetbrains.mps.lang.quotation.structure.NodeBuilderList" flags="nn" index="36be1Y">
+        <child id="8182547171709738803" name="nodes" index="36be1Z" />
       </concept>
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
@@ -89,32 +108,6 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect">
-      <concept id="3811513598467841685" name="org.campagnelab.circles.aspect.structure.GwtPomBuild" flags="ng" index="1pQyBT" />
-      <concept id="3811513598467870231" name="org.campagnelab.circles.aspect.structure.Apache2_0" flags="ng" index="1pQF_V" />
-      <concept id="3811513598467870120" name="org.campagnelab.circles.aspect.structure.License" flags="ng" index="1pQFF4">
-        <property id="3811513598467870228" name="name" index="1pQF_S" />
-        <property id="3811513598467870226" name="url" index="1pQF_Y" />
-      </concept>
-      <concept id="3811513598467538885" name="org.campagnelab.circles.aspect.structure.MavenDependency" flags="ng" index="1pROyD">
-        <property id="3811513598467538895" name="scope" index="1pROyz" />
-        <property id="3811513598467538888" name="artifactId" index="1pROy$" />
-        <property id="3811513598467538891" name="version" index="1pROyB" />
-        <property id="3811513598467538886" name="groupId" index="1pROyE" />
-      </concept>
-      <concept id="3811513598467530483" name="org.campagnelab.circles.aspect.structure.MavenPom" flags="ng" index="1pRQAv">
-        <child id="3811513598467841679" name="build" index="1pQyBz" />
-        <child id="3811513598467870121" name="license" index="1pQFF5" />
-        <child id="3811513598467539117" name="self" index="1pRVv1" />
-        <child id="3811513598467539106" name="parent" index="1pRVve" />
-        <child id="3811513598467539100" name="dependencies" index="1pRVvK" />
-      </concept>
-      <concept id="3811513598467539109" name="org.campagnelab.circles.aspect.structure.MavenArtifactInfo" flags="ng" index="1pRVv9">
-        <property id="3811513598467539112" name="version" index="1pRVv4" />
-        <property id="3811513598467539110" name="groupId" index="1pRVva" />
-        <property id="3811513598467539111" name="artifactId" index="1pRVvb" />
-      </concept>
-    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
@@ -135,37 +128,148 @@
               <node concept="3Tqbb2" id="3j_dQLHgab1" role="1tU5fm">
                 <ref role="ehGHo" to="6je1:3j_dQLHe_VN" resolve="MavenPom" />
               </node>
-              <node concept="2c44tf" id="3j_dQLHgacC" role="33vP2m">
-                <node concept="1pRQAv" id="3j_dQLHeLGt" role="2c44tc">
-                  <node concept="1pROyD" id="3j_dQLHeMD0" role="1pRVvK">
-                    <property role="1pROyE" value="com.google.gwt" />
-                    <property role="1pROy$" value="gwt-servlet" />
-                    <property role="1pROyB" value="2.7.0" />
-                    <property role="1pROyz" value="runtime" />
+              <node concept="2pJPEk" id="5C6899HBmod" role="33vP2m">
+                <node concept="2pJPED" id="5C6899HBmnt" role="2pJPEn">
+                  <ref role="2pJxaS" to="6je1:3j_dQLHe_VN" resolve="MavenPom" />
+                  <node concept="2pIpSj" id="5C6899HBmnu" role="2pJxcM">
+                    <ref role="2pIpSl" to="6je1:3j_dQLHfLUf" />
+                    <node concept="2pJPED" id="5C6899HBmnv" role="2pJxcZ">
+                      <ref role="2pJxaS" to="6je1:3j_dQLHfLUl" resolve="GwtPomBuild" />
+                    </node>
                   </node>
-                  <node concept="1pROyD" id="3j_dQLHf9lq" role="1pRVvK">
-                    <property role="1pROyE" value="com.google.guava" />
-                    <property role="1pROy$" value="guava-gwt" />
+                  <node concept="2pIpSj" id="5C6899HBmnw" role="2pJxcM">
+                    <ref role="2pIpSl" to="6je1:3j_dQLHeC2s" />
+                    <node concept="36be1Y" id="5C6899HBmnx" role="2pJxcZ">
+                      <node concept="2pJPED" id="5C6899HBmny" role="36be1Z">
+                        <ref role="2pJxaS" to="6je1:3j_dQLHeBZ5" resolve="MavenDependency" />
+                        <node concept="2pJxcG" id="5C6899HBmnz" role="2pJxcM">
+                          <ref role="2pJxcJ" to="6je1:3j_dQLHeBZ8" resolve="artifactId" />
+                          <node concept="Xl_RD" id="5C6899HBmn$" role="2pJxcZ">
+                            <property role="Xl_RC" value="gwt-servlet" />
+                          </node>
+                        </node>
+                        <node concept="2pJxcG" id="5C6899HBmn_" role="2pJxcM">
+                          <ref role="2pJxcJ" to="6je1:3j_dQLHeBZ6" resolve="groupId" />
+                          <node concept="Xl_RD" id="5C6899HBmnA" role="2pJxcZ">
+                            <property role="Xl_RC" value="com.google.gwt" />
+                          </node>
+                        </node>
+                        <node concept="2pJxcG" id="5C6899HBmnB" role="2pJxcM">
+                          <ref role="2pJxcJ" to="6je1:3j_dQLHeBZf" resolve="scope" />
+                          <node concept="Xl_RD" id="5C6899HBmnC" role="2pJxcZ">
+                            <property role="Xl_RC" value="runtime" />
+                          </node>
+                        </node>
+                        <node concept="2pJxcG" id="5C6899HBmnD" role="2pJxcM">
+                          <ref role="2pJxcJ" to="6je1:3j_dQLHeBZb" resolve="version" />
+                          <node concept="Xl_RD" id="5C6899HBmnE" role="2pJxcZ">
+                            <property role="Xl_RC" value="2.7.0" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2pJPED" id="5C6899HBmnF" role="36be1Z">
+                        <ref role="2pJxaS" to="6je1:3j_dQLHeBZ5" resolve="MavenDependency" />
+                        <node concept="2pJxcG" id="5C6899HBmnG" role="2pJxcM">
+                          <ref role="2pJxcJ" to="6je1:3j_dQLHeBZ8" resolve="artifactId" />
+                          <node concept="Xl_RD" id="5C6899HBmnH" role="2pJxcZ">
+                            <property role="Xl_RC" value="guava-gwt" />
+                          </node>
+                        </node>
+                        <node concept="2pJxcG" id="5C6899HBmnI" role="2pJxcM">
+                          <ref role="2pJxcJ" to="6je1:3j_dQLHeBZ6" resolve="groupId" />
+                          <node concept="Xl_RD" id="5C6899HBmnJ" role="2pJxcZ">
+                            <property role="Xl_RC" value="com.google.guava" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2pJPED" id="5C6899HBmnK" role="36be1Z">
+                        <ref role="2pJxaS" to="6je1:3j_dQLHeBZ5" resolve="MavenDependency" />
+                        <node concept="2pJxcG" id="5C6899HBmnL" role="2pJxcM">
+                          <ref role="2pJxcJ" to="6je1:3j_dQLHeBZ8" resolve="artifactId" />
+                          <node concept="Xl_RD" id="5C6899HBmnM" role="2pJxcZ">
+                            <property role="Xl_RC" value="orientdb-core" />
+                          </node>
+                        </node>
+                        <node concept="2pJxcG" id="5C6899HBmnN" role="2pJxcM">
+                          <ref role="2pJxcJ" to="6je1:3j_dQLHeBZ6" resolve="groupId" />
+                          <node concept="Xl_RD" id="5C6899HBmnO" role="2pJxcZ">
+                            <property role="Xl_RC" value="com.orientechnologies" />
+                          </node>
+                        </node>
+                        <node concept="2pJxcG" id="5C6899HBmnP" role="2pJxcM">
+                          <ref role="2pJxcJ" to="6je1:3j_dQLHeBZb" resolve="version" />
+                          <node concept="Xl_RD" id="5C6899HBmnQ" role="2pJxcZ">
+                            <property role="Xl_RC" value="2.1.5" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                   </node>
-                  <node concept="1pROyD" id="3j_dQLHfcD7" role="1pRVvK">
-                    <property role="1pROyE" value="com.orientechnologies" />
-                    <property role="1pROy$" value="orientdb-core" />
-                    <property role="1pROyB" value="2.1.5" />
+                  <node concept="2pIpSj" id="5C6899HBmnR" role="2pJxcM">
+                    <ref role="2pIpSl" to="6je1:3j_dQLHfSQD" />
+                    <node concept="2pJPED" id="5C6899HBmnS" role="2pJxcZ">
+                      <ref role="2pJxaS" to="6je1:3j_dQLHfSSn" resolve="Apache2_0" />
+                      <node concept="2pJxcG" id="5C6899HBmnT" role="2pJxcM">
+                        <ref role="2pJxcJ" to="6je1:3j_dQLHfSSk" resolve="name" />
+                        <node concept="Xl_RD" id="5C6899HBmnU" role="2pJxcZ">
+                          <property role="Xl_RC" value="Apache License, Version 2.0" />
+                        </node>
+                      </node>
+                      <node concept="2pJxcG" id="5C6899HBmnV" role="2pJxcM">
+                        <ref role="2pJxcJ" to="6je1:3j_dQLHfSSi" resolve="url" />
+                        <node concept="Xl_RD" id="5C6899HBmnW" role="2pJxcZ">
+                          <property role="Xl_RC" value="http://www.apache.org/licenses/LICENSE-2.0.txt" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
-                  <node concept="1pRVv9" id="3j_dQLHeLGu" role="1pRVv1">
-                    <property role="1pRVva" value="org.campagnelab" />
-                    <property role="1pRVvb" value="circles" />
-                    <property role="1pRVv4" value="1.0-SNAPSHOT" />
+                  <node concept="2pIpSj" id="5C6899HBmnX" role="2pJxcM">
+                    <ref role="2pIpSl" to="6je1:3j_dQLHeC2y" />
+                    <node concept="2pJPED" id="5C6899HBmnY" role="2pJxcZ">
+                      <ref role="2pJxaS" to="6je1:3j_dQLHeC2_" resolve="MavenArtifactInfo" />
+                      <node concept="2pJxcG" id="5C6899HBmnZ" role="2pJxcM">
+                        <ref role="2pJxcJ" to="6je1:3j_dQLHeC2B" resolve="artifactId" />
+                        <node concept="Xl_RD" id="5C6899HBmo0" role="2pJxcZ">
+                          <property role="Xl_RC" value="container" />
+                        </node>
+                      </node>
+                      <node concept="2pJxcG" id="5C6899HBmo1" role="2pJxcM">
+                        <ref role="2pJxcJ" to="6je1:3j_dQLHeC2A" resolve="groupId" />
+                        <node concept="Xl_RD" id="5C6899HBmo2" role="2pJxcZ">
+                          <property role="Xl_RC" value="jetbrains.jetpad.mapper" />
+                        </node>
+                      </node>
+                      <node concept="2pJxcG" id="5C6899HBmo3" role="2pJxcM">
+                        <ref role="2pJxcJ" to="6je1:3j_dQLHeC2C" resolve="version" />
+                        <node concept="Xl_RD" id="5C6899HBmo4" role="2pJxcZ">
+                          <property role="Xl_RC" value="1.1-SNAPSHOT" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
-                  <node concept="1pRVv9" id="3j_dQLHeMCW" role="1pRVve">
-                    <property role="1pRVva" value="jetbrains.jetpad.mapper" />
-                    <property role="1pRVvb" value="container" />
-                    <property role="1pRVv4" value="1.1-SNAPSHOT" />
-                  </node>
-                  <node concept="1pQyBT" id="3j_dQLHfRd1" role="1pQyBz" />
-                  <node concept="1pQF_V" id="3j_dQLHg3Uu" role="1pQFF5">
-                    <property role="1pQF_S" value="Apache License, Version 2.0" />
-                    <property role="1pQF_Y" value="http://www.apache.org/licenses/LICENSE-2.0.txt" />
+                  <node concept="2pIpSj" id="5C6899HBmo5" role="2pJxcM">
+                    <ref role="2pIpSl" to="6je1:3j_dQLHeC2H" />
+                    <node concept="2pJPED" id="5C6899HBmo6" role="2pJxcZ">
+                      <ref role="2pJxaS" to="6je1:3j_dQLHeC2_" resolve="MavenArtifactInfo" />
+                      <node concept="2pJxcG" id="5C6899HBmo7" role="2pJxcM">
+                        <ref role="2pJxcJ" to="6je1:3j_dQLHeC2B" resolve="artifactId" />
+                        <node concept="Xl_RD" id="5C6899HBmo8" role="2pJxcZ">
+                          <property role="Xl_RC" value="circles" />
+                        </node>
+                      </node>
+                      <node concept="2pJxcG" id="5C6899HBmo9" role="2pJxcM">
+                        <ref role="2pJxcJ" to="6je1:3j_dQLHeC2A" resolve="groupId" />
+                        <node concept="Xl_RD" id="5C6899HBmoa" role="2pJxcZ">
+                          <property role="Xl_RC" value="org.campagnelab" />
+                        </node>
+                      </node>
+                      <node concept="2pJxcG" id="5C6899HBmob" role="2pJxcM">
+                        <ref role="2pJxcJ" to="6je1:3j_dQLHeC2C" resolve="version" />
+                        <node concept="Xl_RD" id="5C6899HBmoc" role="2pJxcZ">
+                          <property role="Xl_RC" value="1.0-SNAPSHOT" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
