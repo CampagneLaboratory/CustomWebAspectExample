@@ -5,10 +5,10 @@ package org.campagnelab.circles.model.web;
 import java.util.HashMap;
 import com.orientechnologies.orient.core.metadata.schema.OClass;
 import com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx;
+import org.campagnelab.circles.aspect.runtime.DbAccess;
 import com.orientechnologies.orient.core.metadata.schema.OSchemaProxy;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.apache.log4j.Level;
-import com.orientechnologies.orient.core.query.live.OLiveQueryHook;
 import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -21,8 +21,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 import java.util.Iterator;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.lang.core.behavior.INamedConcept__BehaviorDescriptor;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.campagnelab.circles.aspect.runtime.DbClassNameUtil;
 import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
 
@@ -39,7 +38,7 @@ public class DbSchemaHelper {
     }
     ODatabaseDocumentTx db = null;
     try {
-      db = openCreateDb(user, password);
+      db = DbAccess.openCreateDb(url, user, password);
 
       final OSchemaProxy schema = db.getMetadata().getSchema();
       // drop each class, starting with baseConcept: 
@@ -52,9 +51,7 @@ public class DbSchemaHelper {
       dropClass(schema, "jetbrains~mps~lang~core~structure~Attribute");
 
     } finally {
-      if (db != null) {
-        db.close();
-      }
+      DbAccess.closeDb(db);
     }
 
   }
@@ -65,7 +62,7 @@ public class DbSchemaHelper {
     ODatabaseDocumentTx db = null;
 
     try {
-      db = openCreateDb(user, password);
+      db = DbAccess.openCreateDb(url, user, password);
       // register each concept in the schema: 
       final OSchemaProxy schema = db.getMetadata().getSchema();
       // create each class before anything else: 
@@ -89,25 +86,8 @@ public class DbSchemaHelper {
         LOG.error("Unable to define schema:", t);
       }
     } finally {
-      if (db != null) {
-        db.close();
-      }
+      DbAccess.closeDb(db);
     }
-  }
-  private ODatabaseDocumentTx openCreateDb(String user, String password) {
-    ODatabaseDocumentTx db;
-    db = new ODatabaseDocumentTx(url);
-    if (this.url.startsWith("plocal:") && !((db.exists()))) {
-      if (LOG.isInfoEnabled()) {
-        LOG.info("Database did not exist, creating new one");
-      }
-      db.create();
-      db.registerHook(new OLiveQueryHook(db));
-    } else {
-      db.open(user, password);
-    }
-    db.activateOnCurrentThread();
-    return db;
   }
   public void defineClass(OSchemaProxy schema, String conceptName) {
     if (schema.getClass(conceptName) != null) {
@@ -118,7 +98,7 @@ public class DbSchemaHelper {
       LOG.info("Defining Class " + conceptName);
     }
     OClass dbClass = schema.createClass(conceptName);
-    if (eq_vl3h2u_a0d0g(conceptName, "jetbrains~mps~lang~core~structure~BaseConcept")) {
+    if (eq_vl3h2u_a0d0f(conceptName, "jetbrains~mps~lang~core~structure~BaseConcept")) {
       // add restricted to BaseConcept, to avoid duplicating the fields: 
       dbClass.addSuperClass(schema.getClass("ORestricted"));
     }
@@ -156,10 +136,6 @@ public class DbSchemaHelper {
 
     for (SProperty p : CollectionSequence.fromCollection(c.getProperties())) {
       if (LOG.isInfoEnabled()) {
-        LOG.info("Looping on prop: " + p.getName());
-      }
-
-      if (LOG.isInfoEnabled()) {
         LOG.info("p.getOwner:" + p.getOwner());
       }
       if (LOG.isInfoEnabled()) {
@@ -167,9 +143,6 @@ public class DbSchemaHelper {
       }
       // skip the property if it already exists 
       if (dbClass.existsProperty(p.getName())) {
-        if (LOG.isInfoEnabled()) {
-          LOG.info("Skipping property");
-        }
         continue;
       }
       if (p.getOwner() != c) {
@@ -195,9 +168,7 @@ public class DbSchemaHelper {
         // store enums as string until orientdb issue 62 (GitHub) is closed.     
         dbType = OType.STRING;
       }
-      if (LOG.isInfoEnabled()) {
-        LOG.info("Adding property " + p.getName());
-      }
+
       dbClass.createProperty(p.getName(), dbType);
     }
     for (SContainmentLink childRole : CollectionSequence.fromCollection(c.getContainmentLinks())) {
@@ -246,16 +217,12 @@ public class DbSchemaHelper {
       SAbstractConcept superConcept_var;
       while (superConcept_it.hasNext()) {
         superConcept_var = superConcept_it.next();
-        if (neq_vl3h2u_a0b0c0k0j(getFqName(superConcept_var), conceptFqName)) {
+        if (neq_vl3h2u_a0b0c0k0i(getFqName(superConcept_var), conceptFqName)) {
           if (!(dbClass.getAllSuperClasses().contains(schema.getClass(getFqName(superConcept_var))))) {
             if (LOG.isInfoEnabled()) {
               LOG.info(conceptFqName + " extends " + getFqName(superConcept_var));
             }
             dbClass.addSuperClass(schema.getClass(getFqName(superConcept_var)));
-            if (LOG.isInfoEnabled()) {
-              LOG.info("Done adding super class");
-            }
-
           }
         }
       }
@@ -264,13 +231,13 @@ public class DbSchemaHelper {
   }
 
   /*package*/ String getFqName(SAbstractConcept concept) {
-    return INamedConcept__BehaviorDescriptor.getFqName_idhEwIO9y.invoke(SNodeOperations.asNode(concept)).replaceAll("[\\.]", "~");
+    return DbClassNameUtil.getFqName(concept);
   }
   protected static Logger LOG = LogManager.getLogger(DbSchemaHelper.class);
-  private static boolean eq_vl3h2u_a0d0g(Object a, Object b) {
+  private static boolean eq_vl3h2u_a0d0f(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
-  private static boolean neq_vl3h2u_a0b0c0k0j(Object a, Object b) {
+  private static boolean neq_vl3h2u_a0b0c0k0i(Object a, Object b) {
     return !(((a != null ? a.equals(b) : a == b)));
   }
 }
