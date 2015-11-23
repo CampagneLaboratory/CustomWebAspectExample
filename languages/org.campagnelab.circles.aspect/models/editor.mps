@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="6je1" ref="r:2b50e9c8-828e-4d1c-b75e-74ee8d185c93(org.campagnelab.circles.aspect.structure)" />
-    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -20,6 +19,7 @@
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
+      <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -65,19 +65,13 @@
     <property role="3GE5qa" value="db" />
     <ref role="1XX52x" to="6je1:RKPJ9dohel" resolve="IncludeLanguage" />
     <node concept="3EZMnI" id="RKPJ9dohju" role="2wV5jI">
-      <node concept="3F0ifn" id="RKPJ9dohjC" role="3EZMnx">
-        <property role="3F0ifm" value="language" />
-      </node>
-      <node concept="1iCGBv" id="RKPJ9dohjL" role="3EZMnx">
-        <ref role="1NtTu8" to="6je1:RKPJ9dohew" />
-        <node concept="1sVBvm" id="RKPJ9dohjN" role="1sWHZn">
-          <node concept="3F0A7n" id="RKPJ9dohjZ" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tp25:34EJa6aIcNo" resolve="languageId" />
-          </node>
-        </node>
+      <node concept="3F1sOY" id="242NPypWlef" role="3EZMnx">
+        <ref role="1NtTu8" to="6je1:242NPypVmXx" />
       </node>
       <node concept="l2Vlx" id="RKPJ9dohjx" role="2iSdaV" />
+      <node concept="pj6Ft" id="242NPypWydv" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="acvUmyEcT1">
@@ -121,6 +115,7 @@
         <node concept="lj46D" id="4bOz9Wk5db4" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+        <node concept="l2Vlx" id="242NPypWzjP" role="2czzBx" />
       </node>
     </node>
   </node>
