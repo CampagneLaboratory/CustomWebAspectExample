@@ -3,8 +3,11 @@
   <persistence version="9" />
   <languages>
     <use id="3dc3d3d3-b034-480c-8b21-d7a88903974b" name="org.campagnelab.circles.mockup" version="-1" />
+    <use id="87c8043e-fece-4ba6-9d13-3ef71e47af25" name="org.campagnelab.circles.model" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="77ry" ref="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
+  </imports>
   <registry>
     <language id="3dc3d3d3-b034-480c-8b21-d7a88903974b" name="org.campagnelab.circles.mockup">
       <concept id="8524845890418836699" name="org.campagnelab.circles.mockup.structure.CircleRef" flags="ng" index="314PbK">
@@ -32,6 +35,9 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="87c8043e-fece-4ba6-9d13-3ef71e47af25" name="org.campagnelab.circles.model">
+      <concept id="6031506422524116531" name="org.campagnelab.circles.model.structure.Project" flags="ng" index="3sJk$h" />
     </language>
   </registry>
   <node concept="317o2z" id="7pelyIRn7$U">
@@ -80,6 +86,9 @@
     <node concept="314PbK" id="56_2uOh4$t9" role="317ZaZ">
       <ref role="314PbR" node="7pelyIRny2h" resolve="reads" />
     </node>
+  </node>
+  <node concept="3sJk$h" id="5eOdMaf2BiH">
+    <property role="TrG5h" value="TestP" />
   </node>
 </model>
 
