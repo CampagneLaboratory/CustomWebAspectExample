@@ -21,7 +21,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.WhileStatement" />
   <root>
     <file name="WebAspectDescriptor.java">
-      <unit at="11,0,48,0" name="org.campagnelab.circles.model.web.WebAspectDescriptor" />
+      <unit at="12,0,50,0" name="org.campagnelab.circles.model.web.WebAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:49694c02-82df-42da-ab19-bdfcf6883a78(org.campagnelab.circles.model.web)/6031506422524117231">
@@ -333,6 +333,71 @@
         <var name="db" id="6031506422524117231" />
       </scope>
       <unit id="6031506422524117231" at="28,0,244,0" name="org.campagnelab.circles.model.web.DbSchemaHelper" />
+    </file>
+    <file name="DbSerializer.java">
+      <node id="6031506422524117231" at="14,0,15,0" concept="6" trace="url" />
+      <node id="6031506422524117231" at="15,0,16,0" concept="6" trace="project" />
+      <node id="6031506422524117231" at="17,55,18,19" concept="5" />
+      <node id="6031506422524117231" at="18,19,19,27" concept="5" />
+      <node id="6031506422524117231" at="21,62,22,34" concept="10" />
+      <node id="6031506422524117231" at="23,9,24,48" concept="5" />
+      <node id="6031506422524117231" at="26,44,27,66" concept="5" />
+      <node id="6031506422524117231" at="28,9,29,15" concept="11" />
+      <node id="6031506422524117231" at="30,7,31,0" concept="13" />
+      <node id="6031506422524117231" at="31,0,32,0" concept="13" />
+      <node id="6031506422524117231" at="32,0,33,0" concept="13" />
+      <node id="6031506422524117231" at="34,15,35,27" concept="5" />
+      <node id="6031506422524117231" at="39,77,40,34" concept="10" />
+      <node id="6031506422524117231" at="41,9,42,48" concept="5" />
+      <node id="6031506422524117231" at="44,44,45,66" concept="5" />
+      <node id="6031506422524117231" at="46,9,47,15" concept="11" />
+      <node id="6031506422524117231" at="48,7,49,0" concept="13" />
+      <node id="6031506422524117231" at="49,0,50,0" concept="13" />
+      <node id="6031506422524117231" at="50,0,51,0" concept="13" />
+      <node id="6031506422524117231" at="52,15,53,27" concept="5" />
+      <node id="6031506422524117231" at="57,0,58,0" concept="14" trace="LOG" />
+      <node id="6031506422524117231" at="25,23,28,9" concept="1" />
+      <node id="6031506422524117231" at="25,23,28,9" concept="8" />
+      <node id="6031506422524117231" at="43,23,46,9" concept="1" />
+      <node id="6031506422524117231" at="43,23,46,9" concept="8" />
+      <node id="6031506422524117231" at="17,0,21,0" concept="3" trace="DbSerializer#(Ljava/lang/String;Ljetbrains/mps/project/MPSProject;)V" />
+      <node id="6031506422524117231" at="24,48,30,7" concept="8" />
+      <node id="6031506422524117231" at="42,48,48,7" concept="8" />
+      <node id="6031506422524117231" at="22,34,36,5" concept="17" />
+      <node id="6031506422524117231" at="40,34,54,5" concept="17" />
+      <node id="6031506422524117231" at="21,0,38,0" concept="9" trace="serializeProject#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="6031506422524117231" at="39,0,56,0" concept="9" trace="serializeModule#(Ljava/lang/String;Ljava/lang/String;Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="6031506422524117231" at="26,44,27,66" />
+      <scope id="6031506422524117231" at="34,15,35,27" />
+      <scope id="6031506422524117231" at="44,44,45,66" />
+      <scope id="6031506422524117231" at="52,15,53,27" />
+      <scope id="6031506422524117231" at="17,55,19,27" />
+      <scope id="6031506422524117231" at="25,23,28,9" />
+      <scope id="6031506422524117231" at="43,23,46,9" />
+      <scope id="6031506422524117231" at="17,0,21,0">
+        <var name="project" id="6031506422524117231" />
+        <var name="url" id="6031506422524117231" />
+      </scope>
+      <scope id="6031506422524117231" at="25,23,29,15" />
+      <scope id="6031506422524117231" at="43,23,47,15" />
+      <scope id="6031506422524117231" at="23,9,33,0" />
+      <scope id="6031506422524117231" at="41,9,51,0" />
+      <scope id="6031506422524117231" at="21,62,36,5">
+        <var name="db" id="6031506422524117231" />
+      </scope>
+      <scope id="6031506422524117231" at="39,77,54,5">
+        <var name="db" id="6031506422524117231" />
+      </scope>
+      <scope id="6031506422524117231" at="21,0,38,0">
+        <var name="password" id="6031506422524117231" />
+        <var name="user" id="6031506422524117231" />
+      </scope>
+      <scope id="6031506422524117231" at="39,0,56,0">
+        <var name="module" id="6031506422524117231" />
+        <var name="password" id="6031506422524117231" />
+        <var name="user" id="6031506422524117231" />
+      </scope>
+      <unit id="6031506422524117231" at="13,0,59,0" name="org.campagnelab.circles.model.web.DbSerializer" />
     </file>
   </root>
 </debug-info>

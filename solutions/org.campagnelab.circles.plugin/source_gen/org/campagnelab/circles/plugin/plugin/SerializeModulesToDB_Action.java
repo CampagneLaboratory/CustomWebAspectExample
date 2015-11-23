@@ -13,8 +13,6 @@ import org.jetbrains.mps.openapi.module.SModule;
 import jetbrains.mps.project.MPSProject;
 import org.campagnelab.circles.aspect.runtime.WebLanguageAspectDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import org.jetbrains.mps.openapi.model.SModel;
-import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.jetbrains.mps.openapi.language.SLanguage;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import jetbrains.mps.smodel.language.LanguageRuntime;
@@ -61,10 +59,9 @@ public class SerializeModulesToDB_Action extends BaseAction {
   @Override
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
     WebLanguageAspectDescriptor descriptor = SerializeModulesToDB_Action.this.findWebAspect(event.getData(MPSCommonDataKeys.MODULES), event);
+    descriptor.serializeProject("root", "admin", event.getData(MPSCommonDataKeys.MPS_PROJECT));
     for (SModule module : ListSequence.fromList(event.getData(MPSCommonDataKeys.MODULES))) {
-      for (SModel model : Sequence.fromIterable(module.getModels())) {
-        descriptor.serializeModel("root", "admin", model);
-      }
+      descriptor.serializeModule("root", "admin", module, event.getData(MPSCommonDataKeys.MPS_PROJECT));
     }
   }
   /*package*/ WebLanguageAspectDescriptor findWebAspect(List<SModule> modules, final AnActionEvent event) {

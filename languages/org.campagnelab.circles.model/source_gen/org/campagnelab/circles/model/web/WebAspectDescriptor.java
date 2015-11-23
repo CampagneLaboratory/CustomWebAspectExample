@@ -4,16 +4,16 @@ package org.campagnelab.circles.model.web;
 
 import org.campagnelab.circles.aspect.runtime.WebLanguageAspectDescriptor;
 import org.apache.log4j.Level;
-import org.jetbrains.mps.openapi.model.SModel;
+import jetbrains.mps.project.MPSProject;
+import org.jetbrains.mps.openapi.module.SModule;
 import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
 
 public class WebAspectDescriptor implements WebLanguageAspectDescriptor {
   public WebAspectDescriptor() {
-    dbHelper = new DbSchemaHelper("remote:127.0.0.1/circles");
   }
-  private DbSchemaHelper dbHelper;
   public void defineSchemaForConcepts(String user, String password) {
+    DbSchemaHelper dbHelper = new DbSchemaHelper("remote:127.0.0.1/circles");
     if (LOG.isInfoEnabled()) {
       LOG.info("Starting defineSchemaForConcepts for " + "remote:127.0.0.1/circles");
     }
@@ -26,6 +26,7 @@ public class WebAspectDescriptor implements WebLanguageAspectDescriptor {
     }
   }
   public void dropSchemaForConcepts(String user, String password) {
+    DbSchemaHelper dbHelper = new DbSchemaHelper("remote:127.0.0.1/circles");
     if (LOG.isInfoEnabled()) {
       LOG.info("Starting dropSchemaForConcepts for " + "remote:127.0.0.1/circles");
     }
@@ -37,11 +38,12 @@ public class WebAspectDescriptor implements WebLanguageAspectDescriptor {
       }
     }
   }
-  public void serializeModel(String user, String password, SModel model) {
-    if (LOG.isInfoEnabled()) {
-      LOG.info("Starting serialize model " + model.getModelName());
-    }
-
+  public void serializeProject(String user, String password, MPSProject project) {
+    DbSerializer serializer = new DbSerializer("remote:127.0.0.1/circles", project);
+    serializer.serializeProject(user, password);
+  }
+  public void serializeModule(String user, String password, SModule module, MPSProject project) {
+    DbSerializer serializer = new DbSerializer("remote:127.0.0.1/circles", project);
   }
   protected static Logger LOG = LogManager.getLogger(WebAspectDescriptor.class);
 }

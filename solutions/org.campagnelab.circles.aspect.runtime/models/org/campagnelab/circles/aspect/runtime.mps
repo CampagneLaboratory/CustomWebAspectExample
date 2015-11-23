@@ -16,6 +16,8 @@
     <import index="laoz" ref="8c40f9f4-b3bd-42d0-8b65-8e644273493c/java:com.orientechnologies.orient.core.db.document(org.campagnelab.circles.aspect/)" />
     <import index="ajju" ref="8c40f9f4-b3bd-42d0-8b65-8e644273493c/java:com.orientechnologies.orient.core.query.live(org.campagnelab.circles.aspect/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -196,35 +198,71 @@
         <node concept="17QB3L" id="3Uieg3MruQ$" role="1tU5fm" />
       </node>
     </node>
-    <node concept="3clFb_" id="5eOdMaeZhL_" role="jymVt">
+    <node concept="3clFb_" id="4Uz6rqjNC3b" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="serializeModel" />
-      <node concept="37vLTG" id="5eOdMaeZhNm" role="3clF46">
+      <property role="TrG5h" value="serializeProject" />
+      <node concept="37vLTG" id="4Uz6rqjNC3c" role="3clF46">
         <property role="TrG5h" value="user" />
-        <node concept="17QB3L" id="5eOdMaeZhNU" role="1tU5fm" />
+        <node concept="17QB3L" id="4Uz6rqjNC3d" role="1tU5fm" />
       </node>
-      <node concept="37vLTG" id="5eOdMaeZhOv" role="3clF46">
+      <node concept="37vLTG" id="4Uz6rqjNC3e" role="3clF46">
         <property role="TrG5h" value="password" />
-        <node concept="17QB3L" id="5eOdMaeZhPO" role="1tU5fm" />
+        <node concept="17QB3L" id="4Uz6rqjNC3f" role="1tU5fm" />
       </node>
-      <node concept="37vLTG" id="5eOdMaeZmOp" role="3clF46">
-        <property role="TrG5h" value="model" />
-        <node concept="3uibUv" id="5eOdMaeZnjB" role="1tU5fm">
-          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+      <node concept="37vLTG" id="4Uz6rqjNC3i" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="3uibUv" id="4Uz6rqjNC3j" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
         </node>
       </node>
-      <node concept="3clFbS" id="5eOdMaeZhLC" role="3clF47" />
-      <node concept="3Tm1VV" id="5eOdMaeZhLD" role="1B3o_S" />
-      <node concept="3cqZAl" id="5eOdMaeZhKq" role="3clF45" />
-      <node concept="P$JXv" id="5eOdMaeZhSv" role="lGtFl">
-        <node concept="TZ5HA" id="5eOdMaeZhSw" role="TZ5H$">
-          <node concept="1dT_AC" id="5eOdMaeZhSx" role="1dT_Ay">
-            <property role="1dT_AB" value="Use this method to serialize nodes in a model in the database." />
+      <node concept="3clFbS" id="4Uz6rqjNC3k" role="3clF47" />
+      <node concept="3Tm1VV" id="4Uz6rqjNC3l" role="1B3o_S" />
+      <node concept="3cqZAl" id="4Uz6rqjNC3m" role="3clF45" />
+      <node concept="P$JXv" id="4Uz6rqjNC3n" role="lGtFl">
+        <node concept="TZ5HA" id="4Uz6rqjNC3o" role="TZ5H$">
+          <node concept="1dT_AC" id="4Uz6rqjNC3p" role="1dT_Ay">
+            <property role="1dT_AB" value="Use this method to serialize a project in the database." />
           </node>
         </node>
       </node>
     </node>
+    <node concept="3clFb_" id="4Uz6rqjMFhO" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="serializeModule" />
+      <node concept="37vLTG" id="4Uz6rqjMFhP" role="3clF46">
+        <property role="TrG5h" value="user" />
+        <node concept="17QB3L" id="4Uz6rqjMFhQ" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4Uz6rqjMFhR" role="3clF46">
+        <property role="TrG5h" value="password" />
+        <node concept="17QB3L" id="4Uz6rqjMFhS" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4Uz6rqjMFhT" role="3clF46">
+        <property role="TrG5h" value="module" />
+        <node concept="3uibUv" id="4Uz6rqjLpl0" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4Uz6rqjMSjO" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="3uibUv" id="4Uz6rqjMSm4" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="4Uz6rqjMFhU" role="3clF47" />
+      <node concept="3Tm1VV" id="4Uz6rqjMFhV" role="1B3o_S" />
+      <node concept="3cqZAl" id="4Uz6rqjMFhW" role="3clF45" />
+      <node concept="P$JXv" id="4Uz6rqjMFhX" role="lGtFl">
+        <node concept="TZ5HA" id="4Uz6rqjMFhY" role="TZ5H$">
+          <node concept="1dT_AC" id="4Uz6rqjMFhZ" role="1dT_Ay">
+            <property role="1dT_AB" value="Use this method to serialize models and their nodes in a module in the database." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4Uz6rqjMFgi" role="jymVt" />
     <node concept="3Tm1VV" id="4bOz9Wk5fjr" role="1B3o_S" />
     <node concept="3uibUv" id="4bOz9Wk5fk5" role="3HQHJm">
       <ref role="3uigEE" to="ze1i:~ILanguageAspect" resolve="ILanguageAspect" />
