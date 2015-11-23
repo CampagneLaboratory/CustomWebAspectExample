@@ -42,6 +42,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -50,6 +53,7 @@
   <node concept="1TIwiD" id="RKPJ9dohel">
     <property role="1pbfSe" value="1532095111" />
     <property role="TrG5h" value="IncludeLanguage" />
+    <property role="3GE5qa" value="db" />
     <ref role="1TJDcQ" node="RKPJ9do_wG" resolve="ContributeConcepts" />
     <node concept="1TJgyj" id="RKPJ9dohew" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -65,6 +69,7 @@
     <property role="1pbfSe" value="937505502" />
     <property role="TrG5h" value="Database" />
     <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="db" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2_KMmGes6_O" role="1TKVEl">
       <property role="TrG5h" value="url" />
@@ -83,6 +88,7 @@
     <property role="1pbfSe" value="1460231170" />
     <property role="TrG5h" value="PersistedConcepts" />
     <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="db" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4bOz9Wk5cXG" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -94,6 +100,7 @@
   <node concept="PlHQZ" id="RKPJ9dogRy">
     <property role="1pbfSe" value="1532093652" />
     <property role="TrG5h" value="IIncludeConcepts" />
+    <property role="3GE5qa" value="db" />
   </node>
   <node concept="1TIwiD" id="RKPJ9do_wG">
     <property role="1pbfSe" value="1532178206" />
@@ -110,6 +117,7 @@
     <property role="TrG5h" value="IncludeConcepts" />
     <property role="34LRSv" value="include" />
     <property role="R4oN_" value="Include Concepts For Persistence" />
+    <property role="3GE5qa" value="db" />
     <ref role="1TJDcQ" node="RKPJ9do_wG" resolve="ContributeConcepts" />
     <node concept="1TJgyj" id="4bOz9Wk5cXE" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -126,6 +134,7 @@
     <property role="TrG5h" value="WebEditors" />
     <property role="19KtqR" value="true" />
     <property role="R4oN_" value="Set of Editors to Web Enable" />
+    <property role="3GE5qa" value="editors" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1mpyZGF7F81" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -138,6 +147,7 @@
     <property role="1pbfSe" value="1085816295" />
     <property role="TrG5h" value="EditorRef" />
     <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="editors" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1mpyZGF7F7H" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -145,6 +155,121 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpc2:fA4kQeF" resolve="ConceptEditorDeclaration" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3j_dQLHe_VN">
+    <property role="1pbfSe" value="1574988193" />
+    <property role="TrG5h" value="MavenPom" />
+    <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="maven" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3j_dQLHeC2H" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="self" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3j_dQLHeC2_" resolve="MavenArtifactInfo" />
+    </node>
+    <node concept="1TJgyj" id="3j_dQLHfSQD" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="license" />
+      <ref role="20lvS9" node="3j_dQLHfSQC" resolve="License" />
+    </node>
+    <node concept="1TJgyj" id="3j_dQLHeC2y" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parent" />
+      <ref role="20lvS9" node="3j_dQLHeC2_" resolve="MavenArtifactInfo" />
+    </node>
+    <node concept="1TJgyj" id="3j_dQLHeC2s" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="dependencies" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3j_dQLHeBZ5" resolve="MavenDependency" />
+    </node>
+    <node concept="1TJgyj" id="3j_dQLHfLUf" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="build" />
+      <ref role="20lvS9" node="3j_dQLHfLUk" resolve="MavenPomBuildSection" />
+    </node>
+    <node concept="PrWs8" id="3V7o9sVw8ww" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3j_dQLHeBZ5">
+    <property role="1pbfSe" value="1574979791" />
+    <property role="TrG5h" value="MavenDependency" />
+    <property role="3GE5qa" value="maven" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3j_dQLHeBZ6" role="1TKVEl">
+      <property role="TrG5h" value="groupId" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3j_dQLHeBZ8" role="1TKVEl">
+      <property role="TrG5h" value="artifactId" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3j_dQLHeBZb" role="1TKVEl">
+      <property role="TrG5h" value="version" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3j_dQLHeBZf" role="1TKVEl">
+      <property role="TrG5h" value="scope" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3j_dQLHeC2_">
+    <property role="1pbfSe" value="1574979791" />
+    <property role="TrG5h" value="MavenArtifactInfo" />
+    <property role="3GE5qa" value="maven" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3j_dQLHeC2A" role="1TKVEl">
+      <property role="TrG5h" value="groupId" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3j_dQLHeC2B" role="1TKVEl">
+      <property role="TrG5h" value="artifactId" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3j_dQLHeC2C" role="1TKVEl">
+      <property role="TrG5h" value="version" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3j_dQLHfLUk">
+    <property role="1pbfSe" value="1574676992" />
+    <property role="3GE5qa" value="maven" />
+    <property role="TrG5h" value="MavenPomBuildSection" />
+    <property role="34LRSv" value="&lt;build/&gt;" />
+    <property role="R4oN_" value="Empty Build Section" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="3j_dQLHfLUl">
+    <property role="1pbfSe" value="1574676991" />
+    <property role="3GE5qa" value="maven" />
+    <property role="TrG5h" value="GwtPomBuild" />
+    <property role="34LRSv" value="GWT" />
+    <property role="R4oN_" value="Build a GWT Web Application" />
+    <ref role="1TJDcQ" node="3j_dQLHfLUk" resolve="MavenPomBuildSection" />
+  </node>
+  <node concept="1TIwiD" id="3j_dQLHfSQC">
+    <property role="1pbfSe" value="1574648556" />
+    <property role="3GE5qa" value="maven" />
+    <property role="TrG5h" value="License" />
+    <property role="34LRSv" value="License" />
+    <property role="R4oN_" value="Specify License" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3j_dQLHfSSi" role="1TKVEl">
+      <property role="TrG5h" value="url" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3j_dQLHfSSk" role="1TKVEl">
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3j_dQLHfSSn">
+    <property role="1pbfSe" value="1574648445" />
+    <property role="3GE5qa" value="maven" />
+    <property role="TrG5h" value="Apache2_0" />
+    <ref role="1TJDcQ" node="3j_dQLHfSQC" resolve="License" />
   </node>
 </model>
 
