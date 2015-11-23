@@ -11,9 +11,6 @@ import org.apache.log4j.Level;
 import com.orientechnologies.orient.core.query.live.OLiveQueryHook;
 import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
-import java.util.Iterator;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import org.jetbrains.mps.openapi.language.SProperty;
 import com.orientechnologies.orient.core.metadata.schema.OType;
 import org.jetbrains.mps.openapi.language.SDataType;
@@ -21,6 +18,9 @@ import org.jetbrains.mps.openapi.language.SPrimitiveDataType;
 import org.jetbrains.mps.openapi.language.SEnumeration;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
+import java.util.Iterator;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.core.behavior.INamedConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.apache.log4j.Logger;
@@ -147,34 +147,31 @@ public class DbSchemaHelper {
   public void createSchemaFor(ODatabaseDocumentTx db, SAbstractConcept c) {
     String conceptFqName = getFqName(c);
     if (LOG.isInfoEnabled()) {
-      LOG.info("Creating schema for " + conceptFqName);
+      LOG.info("Creating schema for concept: " + conceptFqName);
     }
 
     final OSchemaProxy schema = db.getMetadata().getSchema();
     OClass dbClass = schema.getClass(conceptFqName);
     assert dbClass != null : "Class must be found for concept: " + conceptFqName + " raw name:" + c;
 
-    {
-      Iterator<SAbstractConcept> superConcept_it = ListSequence.fromList(SConceptOperations.getDirectSuperConcepts(c, false)).iterator();
-      SAbstractConcept superConcept_var;
-      while (superConcept_it.hasNext()) {
-        superConcept_var = superConcept_it.next();
-        if (neq_vl3h2u_a0b0c0h0j(getFqName(superConcept_var), conceptFqName)) {
-          if (LOG.isInfoEnabled()) {
-            LOG.info(conceptFqName + " extends " + getFqName(superConcept_var));
-          }
-          dbClass.addSuperClass(schema.getClass(getFqName(superConcept_var)));
-        }
-      }
-    }
     for (SProperty p : CollectionSequence.fromCollection(c.getProperties())) {
+      if (LOG.isInfoEnabled()) {
+        LOG.info("Looping on prop: " + p.getName());
+      }
+
       if (LOG.isInfoEnabled()) {
         LOG.info("p.getOwner:" + p.getOwner());
       }
       if (LOG.isInfoEnabled()) {
         LOG.info("p.getContainingConcept" + p.getContainingConcept());
       }
-
+      // skip the property if it already exists 
+      if (dbClass.existsProperty(p.getName())) {
+        if (LOG.isInfoEnabled()) {
+          LOG.info("Skipping property");
+        }
+        continue;
+      }
       if (p.getOwner() != c) {
         continue;
       }
@@ -198,11 +195,16 @@ public class DbSchemaHelper {
         // store enums as string until orientdb issue 62 (GitHub) is closed.     
         dbType = OType.STRING;
       }
-
+      if (LOG.isInfoEnabled()) {
+        LOG.info("Adding property " + p.getName());
+      }
       dbClass.createProperty(p.getName(), dbType);
     }
     for (SContainmentLink childRole : CollectionSequence.fromCollection(c.getContainmentLinks())) {
       if (childRole.getOwner() != c) {
+        continue;
+      }
+      if (dbClass.existsProperty(childRole.getRoleName())) {
         continue;
       }
 
@@ -227,6 +229,9 @@ public class DbSchemaHelper {
       if (referenceLink.getOwner() != c) {
         continue;
       }
+      if (dbClass.existsProperty(referenceLink.getRoleName())) {
+        continue;
+      }
 
       if (!(classMap.containsKey(getFqName(referenceLink.getTargetConcept())))) {
         if (LOG.isInfoEnabled()) {
@@ -236,6 +241,26 @@ public class DbSchemaHelper {
 
       dbClass.createProperty(referenceLink.getRoleName(), OType.LINK, classMap.get(getFqName(referenceLink.getTargetConcept())));
     }
+    {
+      Iterator<SAbstractConcept> superConcept_it = ListSequence.fromList(SConceptOperations.getDirectSuperConcepts(c, false)).iterator();
+      SAbstractConcept superConcept_var;
+      while (superConcept_it.hasNext()) {
+        superConcept_var = superConcept_it.next();
+        if (neq_vl3h2u_a0b0c0k0j(getFqName(superConcept_var), conceptFqName)) {
+          if (!(dbClass.getAllSuperClasses().contains(schema.getClass(getFqName(superConcept_var))))) {
+            if (LOG.isInfoEnabled()) {
+              LOG.info(conceptFqName + " extends " + getFqName(superConcept_var));
+            }
+            dbClass.addSuperClass(schema.getClass(getFqName(superConcept_var)));
+            if (LOG.isInfoEnabled()) {
+              LOG.info("Done adding super class");
+            }
+
+          }
+        }
+      }
+    }
+
   }
 
   /*package*/ String getFqName(SAbstractConcept concept) {
@@ -245,7 +270,7 @@ public class DbSchemaHelper {
   private static boolean eq_vl3h2u_a0d0g(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
-  private static boolean neq_vl3h2u_a0b0c0h0j(Object a, Object b) {
+  private static boolean neq_vl3h2u_a0b0c0k0j(Object a, Object b) {
     return !(((a != null ? a.equals(b) : a == b)));
   }
 }
