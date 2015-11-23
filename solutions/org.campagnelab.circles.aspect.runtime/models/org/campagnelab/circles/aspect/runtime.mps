@@ -7,6 +7,8 @@
   </languages>
   <imports>
     <import index="ze1i" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime(MPS.Core/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -111,6 +113,35 @@
       <node concept="37vLTG" id="3Uieg3MruQz" role="3clF46">
         <property role="TrG5h" value="password" />
         <node concept="17QB3L" id="3Uieg3MruQ$" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="5eOdMaeZhL_" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="serializeModel" />
+      <node concept="37vLTG" id="5eOdMaeZhNm" role="3clF46">
+        <property role="TrG5h" value="user" />
+        <node concept="17QB3L" id="5eOdMaeZhNU" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5eOdMaeZhOv" role="3clF46">
+        <property role="TrG5h" value="password" />
+        <node concept="17QB3L" id="5eOdMaeZhPO" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5eOdMaeZmOp" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="3uibUv" id="5eOdMaeZnjB" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5eOdMaeZhLC" role="3clF47" />
+      <node concept="3Tm1VV" id="5eOdMaeZhLD" role="1B3o_S" />
+      <node concept="3cqZAl" id="5eOdMaeZhKq" role="3clF45" />
+      <node concept="P$JXv" id="5eOdMaeZhSv" role="lGtFl">
+        <node concept="TZ5HA" id="5eOdMaeZhSw" role="TZ5H$">
+          <node concept="1dT_AC" id="5eOdMaeZhSx" role="1dT_Ay">
+            <property role="1dT_AB" value="Use this method to serialize nodes in a model in the database." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="4bOz9Wk5fjr" role="1B3o_S" />
