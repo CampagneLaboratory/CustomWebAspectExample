@@ -153,9 +153,6 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
-      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
-        <child id="1081516765348" name="expression" index="3fr31v" />
-      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -315,46 +312,6 @@
                   </node>
                   <node concept="3cmrfG" id="3hEqlZ1qKDg" role="37wK5m">
                     <property role="3cmrfH" value="2" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="FyYyYnMlsx" role="3cqZAp">
-              <node concept="3cpWsn" id="FyYyYnMlsy" role="3cpWs9">
-                <property role="TrG5h" value="destDir" />
-                <node concept="3uibUv" id="FyYyYnMlsz" role="1tU5fm">
-                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
-                </node>
-                <node concept="2ShNRf" id="FyYyYnMlFl" role="33vP2m">
-                  <node concept="1pGfFk" id="FyYyYnMlFk" role="2ShVmc">
-                    <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                    <node concept="Xl_RD" id="FyYyYnMlG3" role="37wK5m">
-                      <property role="Xl_RC" value="/Users/fac2003/IdeaProjects/git/circles/web-app/main/java/" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbJ" id="FyYyYnMlZB" role="3cqZAp">
-              <node concept="3clFbS" id="FyYyYnMlZD" role="3clFbx">
-                <node concept="3clFbF" id="FyYyYnMnzV" role="3cqZAp">
-                  <node concept="2OqwBi" id="FyYyYnMn__" role="3clFbG">
-                    <node concept="37vLTw" id="FyYyYnMnzT" role="2Oq$k0">
-                      <ref role="3cqZAo" node="FyYyYnMlsy" resolve="destDir" />
-                    </node>
-                    <node concept="liA8E" id="FyYyYnMnIG" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~File.mkdirs():boolean" resolve="mkdirs" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3fqX7Q" id="FyYyYnMngD" role="3clFbw">
-                <node concept="2OqwBi" id="FyYyYnMngF" role="3fr31v">
-                  <node concept="37vLTw" id="FyYyYnMngG" role="2Oq$k0">
-                    <ref role="3cqZAo" node="FyYyYnMlsy" resolve="destDir" />
-                  </node>
-                  <node concept="liA8E" id="FyYyYnMngH" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
                   </node>
                 </node>
               </node>
@@ -785,7 +742,22 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3clFbH" id="FyYyYnOKqp" role="3cqZAp" />
+                    <node concept="3cpWs8" id="242NPypKC_4" role="3cqZAp">
+                      <node concept="3cpWsn" id="242NPypKC_5" role="3cpWs9">
+                        <property role="TrG5h" value="modDir" />
+                        <node concept="3uibUv" id="242NPypKC_6" role="1tU5fm">
+                          <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                        </node>
+                        <node concept="2ShNRf" id="242NPypKRID" role="33vP2m">
+                          <node concept="1pGfFk" id="242NPypKRIC" role="2ShVmc">
+                            <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                            <node concept="37vLTw" id="242NPypKTtm" role="37wK5m">
+                              <ref role="3cqZAo" node="FyYyYnOJRH" resolve="moduleDir" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                     <node concept="3clFbJ" id="Ik4DRK6NlI" role="3cqZAp">
                       <node concept="3clFbS" id="Ik4DRK6NlJ" role="3clFbx">
                         <node concept="3cpWs8" id="1t1utOFshjU" role="3cqZAp">
@@ -954,16 +926,16 @@
                       </node>
                       <node concept="1Wc70l" id="Ik4DRK6PQ2" role="3clFbw">
                         <node concept="2OqwBi" id="Ik4DRK6PQ6" role="3uHU7w">
-                          <node concept="37vLTw" id="3GM_nagT_5r" role="2Oq$k0">
-                            <ref role="3cqZAo" node="FyYyYnMlsy" resolve="destDir" />
+                          <node concept="37vLTw" id="242NPypKVZS" role="2Oq$k0">
+                            <ref role="3cqZAo" node="242NPypKC_5" resolve="modDir" />
                           </node>
                           <node concept="liA8E" id="Ik4DRK6PQa" role="2OqNvi">
                             <ref role="37wK5l" to="guwi:~File.isDirectory():boolean" resolve="isDirectory" />
                           </node>
                         </node>
                         <node concept="2OqwBi" id="Ik4DRK6PPY" role="3uHU7B">
-                          <node concept="37vLTw" id="3GM_nagT_07" role="2Oq$k0">
-                            <ref role="3cqZAo" node="FyYyYnMlsy" resolve="destDir" />
+                          <node concept="37vLTw" id="242NPypKV9$" role="2Oq$k0">
+                            <ref role="3cqZAo" node="242NPypKC_5" resolve="modDir" />
                           </node>
                           <node concept="liA8E" id="Ik4DRK6PQ1" role="2OqNvi">
                             <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
