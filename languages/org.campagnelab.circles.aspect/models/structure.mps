@@ -97,6 +97,9 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="RKPJ9do_wG" resolve="ContributeConcepts" />
     </node>
+    <node concept="PrWs8" id="2SasHe_wGer" role="PzmwI">
+      <ref role="PrY4T" node="RKPJ9dogRy" resolve="IIncludeConcepts" />
+    </node>
   </node>
   <node concept="PlHQZ" id="RKPJ9dogRy">
     <property role="1pbfSe" value="1532093652" />

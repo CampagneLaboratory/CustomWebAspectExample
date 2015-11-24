@@ -12,6 +12,7 @@
     <import index="lnem" ref="r:c03de3d9-fc26-4342-a7f1-effa193be9df(org.campagnelab.circles.mockup.editor)" />
     <import index="y8z9" ref="r:2c4c7e9e-399c-490f-b18e-ff7f5ebd651b(org.campagnelab.circles.aspect.runtime)" />
     <import index="avse" ref="r:51fcf803-02a7-4ac6-994f-040e45f3e9a5(org.campagnelab.circles.mockup.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -42,6 +43,9 @@
       </concept>
       <concept id="1004539053072257941" name="org.campagnelab.circles.aspect.structure.IncludeLanguage" flags="ng" index="10$slB">
         <child id="2378691532651589473" name="language" index="2SVU0T" />
+      </concept>
+      <concept id="4824635715685240681" name="org.campagnelab.circles.aspect.structure.IncludeConcepts" flags="ng" index="1mS4fQ">
+        <reference id="4824635715685240682" name="c" index="1mS4fP" />
       </concept>
       <concept id="4824635715685240675" name="org.campagnelab.circles.aspect.structure.PersistedConcepts" flags="ng" index="1mS4fW">
         <child id="4824635715685240684" name="inclusionRules" index="1mS4fN" />
@@ -85,6 +89,12 @@
           <property role="2V$B1Q" value="org.campagnelab.circles.mockup" />
         </node>
       </node>
+    </node>
+    <node concept="1mS4fQ" id="2SasHe_phYD" role="1mS4fN">
+      <ref role="1mS4fP" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="1mS4fQ" id="2SasHe_v5IK" role="1mS4fN">
+      <ref role="1mS4fP" to="avse:7pelyIRkqin" resolve="CircleContainer" />
     </node>
   </node>
   <node concept="YxNCg" id="1mpyZGF7YyP">
