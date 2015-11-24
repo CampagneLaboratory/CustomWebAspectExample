@@ -113,6 +113,11 @@
       <property role="1pROyB" value="2.7.0" />
       <property role="1pROyz" value="runtime" />
     </node>
+    <node concept="1pROyD" id="242NPypZgKK" role="1pRVvK">
+      <property role="1pROyE" value="com.google.gwt" />
+      <property role="1pROy$" value="gwt-user" />
+      <property role="1pROyB" value="2.7.0" />
+    </node>
     <node concept="1pROyD" id="3V7o9sVwdhS" role="1pRVvK">
       <property role="1pROyE" value="com.google.guava" />
       <property role="1pROy$" value="guava-gwt" />
@@ -121,6 +126,16 @@
       <property role="1pROyE" value="com.orientechnologies" />
       <property role="1pROy$" value="orientdb-core" />
       <property role="1pROyB" value="2.1.5" />
+    </node>
+    <node concept="1pROyD" id="242NPypZmQx" role="1pRVvK">
+      <property role="1pROyE" value="jetbrains.jetpad.mapper" />
+      <property role="1pROy$" value="gwt-util" />
+      <property role="1pROyB" value="1.1-SNAPSHOT" />
+    </node>
+    <node concept="1pROyD" id="242NPypZmQB" role="1pRVvK">
+      <property role="1pROyE" value="jetbrains.jetpad" />
+      <property role="1pROy$" value="model-gwt" />
+      <property role="1pROyB" value="1.1-SNAPSHOT" />
     </node>
     <node concept="1pRVv9" id="3V7o9sVwdhV" role="1pRVve">
       <property role="1pRVva" value="jetbrains.jetpad.mapper" />
