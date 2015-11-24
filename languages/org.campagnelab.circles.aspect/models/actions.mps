@@ -192,6 +192,69 @@
                           </node>
                         </node>
                       </node>
+                      <node concept="2pJPED" id="242NPypZq0j" role="36be1Z">
+                        <ref role="2pJxaS" to="6je1:3j_dQLHeBZ5" resolve="MavenDependency" />
+                        <node concept="2pJxcG" id="242NPypZq1w" role="2pJxcM">
+                          <ref role="2pJxcJ" to="6je1:3j_dQLHeBZ6" resolve="groupId" />
+                          <node concept="Xl_RD" id="242NPypZqNx" role="2pJxcZ">
+                            <property role="Xl_RC" value="com.google.gwt" />
+                          </node>
+                        </node>
+                        <node concept="2pJxcG" id="242NPypZq3n" role="2pJxcM">
+                          <ref role="2pJxcJ" to="6je1:3j_dQLHeBZ8" resolve="artifactId" />
+                          <node concept="Xl_RD" id="242NPypZqNJ" role="2pJxcZ">
+                            <property role="Xl_RC" value="gwt-user" />
+                          </node>
+                        </node>
+                        <node concept="2pJxcG" id="242NPypZq5m" role="2pJxcM">
+                          <ref role="2pJxcJ" to="6je1:3j_dQLHeBZb" resolve="version" />
+                          <node concept="Xl_RD" id="242NPypZqO3" role="2pJxcZ">
+                            <property role="Xl_RC" value="2.7.0" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2pJPED" id="242NPypZqJS" role="36be1Z">
+                        <ref role="2pJxaS" to="6je1:3j_dQLHeBZ5" resolve="MavenDependency" />
+                        <node concept="2pJxcG" id="242NPypZqJT" role="2pJxcM">
+                          <ref role="2pJxcJ" to="6je1:3j_dQLHeBZ6" resolve="groupId" />
+                          <node concept="Xl_RD" id="242NPypZqOt" role="2pJxcZ">
+                            <property role="Xl_RC" value="jetbrains.jetpad.mapper" />
+                          </node>
+                        </node>
+                        <node concept="2pJxcG" id="242NPypZqJV" role="2pJxcM">
+                          <ref role="2pJxcJ" to="6je1:3j_dQLHeBZ8" resolve="artifactId" />
+                          <node concept="Xl_RD" id="242NPypZqO_" role="2pJxcZ">
+                            <property role="Xl_RC" value="gwt-util" />
+                          </node>
+                        </node>
+                        <node concept="2pJxcG" id="242NPypZqJX" role="2pJxcM">
+                          <ref role="2pJxcJ" to="6je1:3j_dQLHeBZb" resolve="version" />
+                          <node concept="Xl_RD" id="242NPypZqOH" role="2pJxcZ">
+                            <property role="Xl_RC" value="1.1-SNAPSHOT" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2pJPED" id="242NPypZqLA" role="36be1Z">
+                        <ref role="2pJxaS" to="6je1:3j_dQLHeBZ5" resolve="MavenDependency" />
+                        <node concept="2pJxcG" id="242NPypZqLB" role="2pJxcM">
+                          <ref role="2pJxcJ" to="6je1:3j_dQLHeBZ6" resolve="groupId" />
+                          <node concept="Xl_RD" id="242NPypZqP7" role="2pJxcZ">
+                            <property role="Xl_RC" value="jetbrains.jetpad" />
+                          </node>
+                        </node>
+                        <node concept="2pJxcG" id="242NPypZqLD" role="2pJxcM">
+                          <ref role="2pJxcJ" to="6je1:3j_dQLHeBZ8" resolve="artifactId" />
+                          <node concept="Xl_RD" id="242NPypZqRB" role="2pJxcZ">
+                            <property role="Xl_RC" value="model-gwt" />
+                          </node>
+                        </node>
+                        <node concept="2pJxcG" id="242NPypZqLF" role="2pJxcM">
+                          <ref role="2pJxcJ" to="6je1:3j_dQLHeBZb" resolve="version" />
+                          <node concept="Xl_RD" id="242NPypZqRP" role="2pJxcZ">
+                            <property role="Xl_RC" value="1.1-SNAPSHOT" />
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                   <node concept="2pIpSj" id="5C6899HBmnR" role="2pJxcM">

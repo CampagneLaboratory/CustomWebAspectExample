@@ -84,17 +84,18 @@ public class StageFilesToWebApp_Facet extends IFacet.Stub {
                   if ((expandPath == null || expandPath.length() == 0)) {
                     continue;
                   }
-                  final IFile projectDir = FileSystem.getInstance().getFileByPath(expandPath);
+                  final IFile mpsProjectDir = FileSystem.getInstance().getFileByPath(expandPath);
                   final String projectDirPath;
                   try {
-                    projectDirPath = (new File(projectDir.getPath())).getCanonicalPath();
+                    projectDirPath = (new File(mpsProjectDir.getPath())).getCanonicalPath();
                   } catch (IOException e) {
                     monitor.reportFeedback(new IFeedback.ERROR(String.valueOf(e.getMessage())));
                     return new IResult.FAILURE(_output_svfapc_a0a);
                   }
-                  final String moduleDir = projectDirPath + File.separator + "web-app" + File.separator + "src" + File.separator + "main" + File.separator + "java" + File.separator + tres.module().getModuleName().replace('.', '/');
+                  final String projectDir = projectDirPath + File.separator + "web-app";
+                  final String moduleDir = projectDir + File.separator + "src" + File.separator + "main" + File.separator + "java" + File.separator + tres.module().getModuleName().replace('.', '/') + File.separator + "web" + File.separator;
                   (new File(moduleDir)).mkdirs();
-                  final Function moveFunction = new Function<IFile, Boolean>() {
+                  final Function moveViewFunction = new Function<IFile, Boolean>() {
                     public Boolean fun(IFile file) {
                       File toMove = new File(file.getPath());
                       File destination = new File(moduleDir + File.separator + file.getName());
@@ -106,23 +107,40 @@ public class StageFilesToWebApp_Facet extends IFacet.Stub {
                       return file.delete();
                     }
                   };
+                  final Function movePomFunction = new Function<IFile, Boolean>() {
+                    public Boolean fun(IFile file) {
+                      File toMove = new File(file.getPath());
+                      File destination = new File(projectDir + File.separator + file.getName());
+                      destination.getParentFile().mkdirs();
+                      monitor.reportFeedback(new IFeedback.INFORMATION(String.valueOf("Staging " + toMove.getName() + " to " + destination.getPath())));
+                      FileUtil.copyFile(toMove, destination);
+                      progressMonitor.step(file.getName());
+
+                      return file.delete();
+                    }
+                  };
+
                   File modDir = new File(moduleDir);
                   if (modDir.exists() && modDir.isDirectory()) {
                     final IFile[] pluginXml = new IFile[1];
                     new DeltaReconciler(tres.delta()).visitAll(new FilesDelta.Visitor() {
                       @Override
                       public boolean acceptWritten(IFile file) {
-                        if (file.getName().endsWith("WebView.java")) {
-                          moveFunction.fun(file);
-                        }
+                        doMove(file, moveViewFunction, movePomFunction);
                         return true;
                       }
                       @Override
                       public boolean acceptKept(IFile file) {
-                        if (file.getName().endsWith("WebView.java")) {
-                          moveFunction.fun(file);
-                        }
+                        doMove(file, moveViewFunction, movePomFunction);
                         return true;
+                      }
+                      private void doMove(IFile file, final Function moveViewFunction, final Function movePomFunction) {
+                        if (file.getName().endsWith("WebView.java")) {
+                          moveViewFunction.fun(file);
+                        }
+                        if (file.getName().equals("pom.xml")) {
+                          movePomFunction.fun(file);
+                        }
                       }
                     });
                   }
