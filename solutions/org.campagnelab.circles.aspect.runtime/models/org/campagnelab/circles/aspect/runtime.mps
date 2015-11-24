@@ -16,6 +16,7 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="77ry" ref="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -108,6 +109,7 @@
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -211,7 +213,7 @@
     <node concept="3clFb_" id="4Uz6rqjNC3b" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="serializeProject" />
+      <property role="TrG5h" value="serializeProjectWithModules" />
       <node concept="37vLTG" id="4Uz6rqjNC3c" role="3clF46">
         <property role="TrG5h" value="user" />
         <node concept="17QB3L" id="4Uz6rqjNC3d" role="1tU5fm" />
@@ -226,6 +228,15 @@
           <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
         </node>
       </node>
+      <node concept="37vLTG" id="2CxJDc5xjy" role="3clF46">
+        <property role="TrG5h" value="modules" />
+        <node concept="3uibUv" id="2CxJDc5xow" role="1tU5fm">
+          <ref role="3uigEE" to="33ny:~List" resolve="List" />
+          <node concept="3uibUv" id="2CxJDc5xqW" role="11_B2D">
+            <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+          </node>
+        </node>
+      </node>
       <node concept="3clFbS" id="4Uz6rqjNC3k" role="3clF47" />
       <node concept="3Tm1VV" id="4Uz6rqjNC3l" role="1B3o_S" />
       <node concept="3cqZAl" id="4Uz6rqjNC3m" role="3clF45" />
@@ -233,41 +244,6 @@
         <node concept="TZ5HA" id="4Uz6rqjNC3o" role="TZ5H$">
           <node concept="1dT_AC" id="4Uz6rqjNC3p" role="1dT_Ay">
             <property role="1dT_AB" value="Use this method to serialize a project in the database." />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3clFb_" id="4Uz6rqjMFhO" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="serializeModule" />
-      <node concept="37vLTG" id="4Uz6rqjMFhP" role="3clF46">
-        <property role="TrG5h" value="user" />
-        <node concept="17QB3L" id="4Uz6rqjMFhQ" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="4Uz6rqjMFhR" role="3clF46">
-        <property role="TrG5h" value="password" />
-        <node concept="17QB3L" id="4Uz6rqjMFhS" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="4Uz6rqjMFhT" role="3clF46">
-        <property role="TrG5h" value="module" />
-        <node concept="3uibUv" id="4Uz6rqjLpl0" role="1tU5fm">
-          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="4Uz6rqjMSjO" role="3clF46">
-        <property role="TrG5h" value="project" />
-        <node concept="3uibUv" id="4Uz6rqjMSm4" role="1tU5fm">
-          <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="4Uz6rqjMFhU" role="3clF47" />
-      <node concept="3Tm1VV" id="4Uz6rqjMFhV" role="1B3o_S" />
-      <node concept="3cqZAl" id="4Uz6rqjMFhW" role="3clF45" />
-      <node concept="P$JXv" id="4Uz6rqjMFhX" role="lGtFl">
-        <node concept="TZ5HA" id="4Uz6rqjMFhY" role="TZ5H$">
-          <node concept="1dT_AC" id="4Uz6rqjMFhZ" role="1dT_Ay">
-            <property role="1dT_AB" value="Use this method to serialize models and their nodes in a module in the database." />
           </node>
         </node>
       </node>
@@ -700,7 +676,7 @@
       </node>
     </node>
     <node concept="QsSxf" id="5C6899HKZAo" role="Qtgdg">
-      <property role="TrG5h" value="CHILDREN" />
+      <property role="TrG5h" value="PROJECT_MODULES" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       <node concept="3clFb_" id="5C6899HLsFs" role="2HKRsH">
         <property role="1EzhhJ" value="false" />
@@ -713,14 +689,14 @@
         <node concept="3clFbS" id="5C6899HLsFw" role="3clF47">
           <node concept="3clFbF" id="5C6899HLsL5" role="3cqZAp">
             <node concept="Xl_RD" id="5C6899HLsL4" role="3clFbG">
-              <property role="Xl_RC" value="children" />
+              <property role="Xl_RC" value="modules" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="QsSxf" id="5C6899HKZBm" role="Qtgdg">
-      <property role="TrG5h" value="PARENT" />
+      <property role="TrG5h" value="MODULE_MODELS" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       <node concept="3clFb_" id="5C6899HLsG0" role="2HKRsH">
         <property role="1EzhhJ" value="false" />
@@ -733,7 +709,7 @@
         <node concept="3clFbS" id="5C6899HLsG4" role="3clF47">
           <node concept="3clFbF" id="5C6899HLsPO" role="3cqZAp">
             <node concept="Xl_RD" id="5C6899HLsPN" role="3clFbG">
-              <property role="Xl_RC" value="parent" />
+              <property role="Xl_RC" value="models" />
             </node>
           </node>
         </node>

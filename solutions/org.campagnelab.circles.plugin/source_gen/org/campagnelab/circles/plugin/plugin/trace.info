@@ -256,28 +256,26 @@
       <node id="6031506422523281947" at="53,22,54,21" concept="8" />
       <node id="6031506422523281947" at="56,5,57,16" concept="8" />
       <node id="6031506422523298013" at="60,96,61,141" concept="7" />
-      <node id="5666401028116745237" at="61,141,62,95" concept="2" />
-      <node id="5666401028116545713" at="63,92,64,104" concept="2" />
-      <node id="6031506422523290970" at="69,81,70,139" concept="7" />
-      <node id="6031506422523290982" at="71,38,72,115" concept="7" />
-      <node id="6031506422523296843" at="73,38,74,33" concept="8" />
-      <node id="6031506422523289849" at="78,5,79,16" concept="8" />
+      <node id="5666401028116745237" at="61,141,62,148" concept="2" />
+      <node id="6031506422523290970" at="66,81,67,139" concept="7" />
+      <node id="6031506422523290982" at="68,38,69,115" concept="7" />
+      <node id="6031506422523296843" at="70,38,71,33" concept="8" />
+      <node id="6031506422523289849" at="75,5,76,16" concept="8" />
       <node id="6031506422523281947" at="41,95,44,5" concept="5" />
       <node id="6031506422523281947" at="46,65,49,7" concept="5" />
       <node id="6031506422523281947" at="52,66,55,7" concept="5" />
-      <node id="6031506422523302488" at="62,95,65,5" concept="4" />
-      <node id="6031506422523294801" at="72,115,75,11" concept="5" />
+      <node id="6031506422523294801" at="69,115,72,11" concept="5" />
       <node id="6031506422523281947" at="28,0,32,0" concept="6" trace="isDumbAware#()Z" />
       <node id="6031506422523281947" at="32,0,36,0" concept="6" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
       <node id="6031506422523281947" at="36,0,40,0" concept="6" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
       <node id="6031506422523281947" at="23,0,28,0" concept="1" trace="SerializeModulesToDB_Action#()V" />
+      <node id="6031506422523281947" at="59,0,64,0" concept="6" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
       <node id="6031506422523281947" at="44,5,50,5" concept="0" />
       <node id="6031506422523281947" at="50,5,56,5" concept="0" />
-      <node id="6031506422523292481" at="70,139,76,9" concept="5" />
-      <node id="6031506422523281947" at="59,0,67,0" concept="6" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
-      <node id="6031506422523290311" at="68,59,77,7" concept="4" />
-      <node id="6031506422523289451" at="67,107,78,5" concept="4" />
-      <node id="6031506422523283944" at="67,0,81,0" concept="6" trace="findWebAspect#(Ljava/util/List;Lcom/intellij/openapi/actionSystem/AnActionEvent;)Lorg/campagnelab/circles/aspect/runtime/WebLanguageAspectDescriptor;" />
+      <node id="6031506422523292481" at="67,139,73,9" concept="5" />
+      <node id="6031506422523290311" at="65,59,74,7" concept="4" />
+      <node id="6031506422523289451" at="64,107,75,5" concept="4" />
+      <node id="6031506422523283944" at="64,0,78,0" concept="6" trace="findWebAspect#(Ljava/util/List;Lcom/intellij/openapi/actionSystem/AnActionEvent;)Lorg/campagnelab/circles/aspect/runtime/WebLanguageAspectDescriptor;" />
       <node id="6031506422523281947" at="40,0,59,0" concept="6" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
       <scope id="6031506422523281947" at="29,32,30,16" />
       <scope id="6031506422523299186" at="33,87,34,115" />
@@ -285,12 +283,11 @@
       <scope id="6031506422523281947" at="42,53,43,19" />
       <scope id="6031506422523281947" at="47,22,48,21" />
       <scope id="6031506422523281947" at="53,22,54,21" />
-      <scope id="6031506422523302492" at="63,92,64,104" />
-      <scope id="6031506422523294803" at="73,38,74,33" />
-      <scope id="6031506422523281947" at="23,40,26,41" />
-      <scope id="6031506422523302488" at="62,95,65,5">
-        <var name="module" id="6031506422523302490" />
+      <scope id="6031506422523294803" at="70,38,71,33" />
+      <scope id="6031506422523281947" at="60,96,62,148">
+        <var name="descriptor" id="6031506422523298014" />
       </scope>
+      <scope id="6031506422523281947" at="23,40,26,41" />
       <scope id="6031506422523281947" at="28,0,32,0" />
       <scope id="6031506422523281947" at="32,0,36,0">
         <var name="_params" id="6031506422523281947" />
@@ -306,29 +303,26 @@
       <scope id="6031506422523281947" at="51,5,55,7">
         <var name="p" id="6031506422523281947" />
       </scope>
-      <scope id="6031506422523292483" at="71,38,75,11">
+      <scope id="6031506422523292483" at="68,38,72,11">
         <var name="webDescriptor" id="6031506422523290983" />
       </scope>
       <scope id="6031506422523281947" at="23,0,28,0" />
-      <scope id="6031506422523281947" at="60,96,65,5">
-        <var name="descriptor" id="6031506422523298014" />
-      </scope>
-      <scope id="6031506422523290313" at="69,81,76,9">
-        <var name="languageRuntime" id="6031506422523290971" />
-      </scope>
-      <scope id="6031506422523281947" at="59,0,67,0">
+      <scope id="6031506422523281947" at="59,0,64,0">
         <var name="_params" id="6031506422523281947" />
         <var name="event" id="6031506422523281947" />
       </scope>
-      <scope id="6031506422523289453" at="68,59,77,7" />
-      <scope id="6031506422523290311" at="68,59,77,7">
+      <scope id="6031506422523290313" at="66,81,73,9">
+        <var name="languageRuntime" id="6031506422523290971" />
+      </scope>
+      <scope id="6031506422523289453" at="65,59,74,7" />
+      <scope id="6031506422523290311" at="65,59,74,7">
         <var name="language" id="6031506422523290312" />
       </scope>
-      <scope id="6031506422523289451" at="67,107,78,5">
+      <scope id="6031506422523289451" at="64,107,75,5">
         <var name="module" id="6031506422523289452" />
       </scope>
-      <scope id="6031506422523283945" at="67,107,79,16" />
-      <scope id="6031506422523283944" at="67,0,81,0">
+      <scope id="6031506422523283945" at="64,107,76,16" />
+      <scope id="6031506422523283944" at="64,0,78,0">
         <var name="event" id="6031506422523283944" />
         <var name="modules" id="6031506422523287955" />
       </scope>
@@ -337,7 +331,7 @@
         <var name="_params" id="6031506422523281947" />
         <var name="event" id="6031506422523281947" />
       </scope>
-      <unit id="6031506422523281947" at="21,0,82,0" name="org.campagnelab.circles.plugin.plugin.SerializeModulesToDB_Action" />
+      <unit id="6031506422523281947" at="21,0,79,0" name="org.campagnelab.circles.plugin.plugin.SerializeModulesToDB_Action" />
     </file>
   </root>
 </debug-info>

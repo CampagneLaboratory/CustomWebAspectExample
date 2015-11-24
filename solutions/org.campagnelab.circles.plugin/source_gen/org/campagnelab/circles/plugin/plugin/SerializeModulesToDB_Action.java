@@ -59,10 +59,7 @@ public class SerializeModulesToDB_Action extends BaseAction {
   @Override
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
     WebLanguageAspectDescriptor descriptor = SerializeModulesToDB_Action.this.findWebAspect(event.getData(MPSCommonDataKeys.MODULES), event);
-    descriptor.serializeProject("root", "admin", event.getData(MPSCommonDataKeys.MPS_PROJECT));
-    for (SModule module : ListSequence.fromList(event.getData(MPSCommonDataKeys.MODULES))) {
-      descriptor.serializeModule("root", "admin", module, event.getData(MPSCommonDataKeys.MPS_PROJECT));
-    }
+    descriptor.serializeProjectWithModules("root", "admin", event.getData(MPSCommonDataKeys.MPS_PROJECT), event.getData(MPSCommonDataKeys.MODULES));
   }
   /*package*/ WebLanguageAspectDescriptor findWebAspect(List<SModule> modules, final AnActionEvent event) {
     for (SModule module : ListSequence.fromList(modules)) {

@@ -11,11 +11,11 @@ import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.lang.core.behavior.INamedConcept__BehaviorDescriptor;
+import org.campagnelab.circles.aspect.runtime.DbClassNameUtil;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.generator.template.ReferenceMacroContext;
 import jetbrains.mps.generator.template.TemplateArgumentContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 import jetbrains.mps.generator.template.TemplateQueryContext;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
@@ -56,20 +56,17 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_4508728853181670365(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(((SNode) _context.getVariable("var:database")), MetaAdapterFactory.getProperty(0x8c40f9f4b3bd42d0L, 0x8b658e644273493cL, 0x2970c96b0e706973L, 0x2970c96b0e706974L, "url"));
   }
-  public static Object propertyMacro_GetPropertyValue_5666401028116747265(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(((SNode) _context.getVariable("var:database")), MetaAdapterFactory.getProperty(0x8c40f9f4b3bd42d0L, 0x8b658e644273493cL, 0x2970c96b0e706973L, 0x2970c96b0e706974L, "url"));
-  }
-  public static Object propertyMacro_GetPropertyValue_5666401028116758534(final PropertyMacroContext _context) {
+  public static Object propertyMacro_GetPropertyValue_47436205663855272(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(((SNode) _context.getVariable("var:database")), MetaAdapterFactory.getProperty(0x8c40f9f4b3bd42d0L, 0x8b658e644273493cL, 0x2970c96b0e706973L, 0x2970c96b0e706974L, "url"));
   }
   public static Object propertyMacro_GetPropertyValue_4508728853181299904(final PropertyMacroContext _context) {
-    return INamedConcept__BehaviorDescriptor.getFqName_idhEwIO9y.invoke(_context.getNode()).replace(".", "~");
+    return DbClassNameUtil.getFqName(SNodeOperations.asSConcept(_context.getNode()));
   }
   public static Object propertyMacro_GetPropertyValue_5665480314685426424(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(((SNode) _context.getVariable("var:database")), MetaAdapterFactory.getProperty(0x8c40f9f4b3bd42d0L, 0x8b658e644273493cL, 0x2970c96b0e706973L, 0x2970c96b0e706974L, "url"));
   }
   public static Object propertyMacro_GetPropertyValue_1004539053072184206(final PropertyMacroContext _context) {
-    return INamedConcept__BehaviorDescriptor.getFqName_idhEwIO9y.invoke(_context.getNode()).replace(".", "~");
+    return DbClassNameUtil.getFqName(SNodeOperations.asSConcept(_context.getNode()));
   }
   public static Object referenceMacro_GetReferent_86849876705426592(final ReferenceMacroContext _context) {
     return _context.getNode();

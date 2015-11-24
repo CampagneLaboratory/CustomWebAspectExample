@@ -16,15 +16,15 @@ public enum FIELDS {
     }
 
   },
-  CHILDREN() {
+  PROJECT_MODULES() {
     public String dbName() {
-      return "children";
+      return "modules";
     }
 
   },
-  PARENT() {
+  MODULE_MODELS() {
     public String dbName() {
-      return "parent";
+      return "models";
     }
 
   };

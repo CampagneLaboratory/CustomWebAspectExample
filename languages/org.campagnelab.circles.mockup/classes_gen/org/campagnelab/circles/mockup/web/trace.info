@@ -21,10 +21,10 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.WhileStatement" />
   <root>
     <file name="DbSerializer.java">
-      <unit at="16,0,69,0" name="org.campagnelab.circles.mockup.web.DbSerializer" />
+      <unit at="23,0,81,0" name="org.campagnelab.circles.mockup.web.DbSerializer" />
     </file>
     <file name="WebAspectDescriptor.java">
-      <unit at="12,0,50,0" name="org.campagnelab.circles.mockup.web.WebAspectDescriptor" />
+      <unit at="13,0,48,0" name="org.campagnelab.circles.mockup.web.WebAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:03542aec-b353-49d7-b1f1-f27cbb5af092(org.campagnelab.circles.mockup.web)/1556429057109780661">

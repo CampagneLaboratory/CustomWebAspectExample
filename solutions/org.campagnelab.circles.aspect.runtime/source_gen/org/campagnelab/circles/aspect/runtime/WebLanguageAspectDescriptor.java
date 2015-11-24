@@ -4,6 +4,7 @@ package org.campagnelab.circles.aspect.runtime;
 
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
 import jetbrains.mps.project.MPSProject;
+import java.util.List;
 import org.jetbrains.mps.openapi.module.SModule;
 
 public interface WebLanguageAspectDescriptor extends ILanguageAspect {
@@ -19,10 +20,6 @@ public interface WebLanguageAspectDescriptor extends ILanguageAspect {
   /**
    * Use this method to serialize a project in the database.
    */
-  public void serializeProject(String user, String password, MPSProject project);
-  /**
-   * Use this method to serialize models and their nodes in a module in the database.
-   */
-  public void serializeModule(String user, String password, SModule module, MPSProject project);
+  public void serializeProjectWithModules(String user, String password, MPSProject project, List<SModule> modules);
 
 }

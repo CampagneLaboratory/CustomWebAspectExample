@@ -5,6 +5,7 @@ package org.campagnelab.circles.mockup.web;
 import org.campagnelab.circles.aspect.runtime.WebLanguageAspectDescriptor;
 import org.apache.log4j.Level;
 import jetbrains.mps.project.MPSProject;
+import java.util.List;
 import org.jetbrains.mps.openapi.module.SModule;
 import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
@@ -38,12 +39,9 @@ public class WebAspectDescriptor implements WebLanguageAspectDescriptor {
       }
     }
   }
-  public void serializeProject(String user, String password, MPSProject project) {
+  public void serializeProjectWithModules(String user, String password, MPSProject project, List<SModule> modules) {
     DbSerializer serializer = new DbSerializer("remote:127.0.0.1/circles", project);
-    serializer.serializeProject(user, password);
-  }
-  public void serializeModule(String user, String password, SModule module, MPSProject project) {
-    DbSerializer serializer = new DbSerializer("remote:127.0.0.1/circles", project);
+    serializer.serializeModules(user, password, modules);
   }
   protected static Logger LOG = LogManager.getLogger(WebAspectDescriptor.class);
 }
