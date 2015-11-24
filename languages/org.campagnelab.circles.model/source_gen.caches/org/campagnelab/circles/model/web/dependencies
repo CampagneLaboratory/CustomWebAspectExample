@@ -29,12 +29,15 @@
   </dependency>
   <dependency className="org.campagnelab.circles.model.web.DbSerializer" file="DbSerializer.java">
     <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.project.MPSProject" />
     <classNode dependClassName="org.apache.log4j.Level" />
     <classNode dependClassName="org.apache.log4j.LogManager" />
     <classNode dependClassName="org.apache.log4j.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.aspect.runtime.CIRCLES_BASE_CONCEPTS" />
     <classNode dependClassName="org.campagnelab.circles.aspect.runtime.DbAccess" />
+    <classNode dependClassName="org.campagnelab.circles.aspect.runtime.FIELDS" />
     <classNode dependClassName="org.jetbrains.mps.openapi.module.SModule" />
   </dependency>
   <dependency className="org.campagnelab.circles.model.web.WebAspectDescriptor" file="WebAspectDescriptor.java">

@@ -12,7 +12,7 @@ import org.jetbrains.mps.openapi.model.SNode;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class Module_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor {
+public abstract class Module_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor {
   public String virtual_getFqName_1213877404258(SNode __thisNode__) {
     return null;
   }

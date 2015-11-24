@@ -13,6 +13,6 @@ public class DbClassNameUtil {
   }
 
   private static String make(String value) {
-    return value.replaceAll("[\\.]", "~");
+    return value.replaceAll("[\\.]", "_C_");
   }
 }

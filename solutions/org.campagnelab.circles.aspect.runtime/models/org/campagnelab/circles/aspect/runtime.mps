@@ -824,6 +824,54 @@
         </node>
       </node>
     </node>
+    <node concept="QsSxf" id="2CxJDc4EPn" role="Qtgdg">
+      <property role="TrG5h" value="LANGUAGE" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+      <node concept="3clFb_" id="2CxJDc4EPo" role="2HKRsH">
+        <property role="1EzhhJ" value="false" />
+        <property role="TrG5h" value="dbClass" />
+        <property role="od$2w" value="false" />
+        <property role="DiZV1" value="false" />
+        <property role="2aFKle" value="false" />
+        <node concept="3Tm1VV" id="2CxJDc4EPp" role="1B3o_S" />
+        <node concept="17QB3L" id="2CxJDc4EPq" role="3clF45" />
+        <node concept="3clFbS" id="2CxJDc4EPr" role="3clF47">
+          <node concept="3clFbF" id="2CxJDc4EPs" role="3cqZAp">
+            <node concept="2YIFZM" id="2CxJDc4EPt" role="3clFbG">
+              <ref role="1Pybhc" node="4Uz6rqjJFHS" resolve="DbClassNameUtil" />
+              <ref role="37wK5l" node="4Uz6rqjJHFQ" resolve="getFqName" />
+              <node concept="35c_gC" id="2CxJDc4EPu" role="37wK5m">
+                <ref role="35c_gD" to="77ry:2CxJDc4Cpd" resolve="Language" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QsSxf" id="2CxJDc4ESv" role="Qtgdg">
+      <property role="TrG5h" value="SOLUTION" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+      <node concept="3clFb_" id="2CxJDc4ESw" role="2HKRsH">
+        <property role="1EzhhJ" value="false" />
+        <property role="TrG5h" value="dbClass" />
+        <property role="od$2w" value="false" />
+        <property role="DiZV1" value="false" />
+        <property role="2aFKle" value="false" />
+        <node concept="3Tm1VV" id="2CxJDc4ESx" role="1B3o_S" />
+        <node concept="17QB3L" id="2CxJDc4ESy" role="3clF45" />
+        <node concept="3clFbS" id="2CxJDc4ESz" role="3clF47">
+          <node concept="3clFbF" id="2CxJDc4ES$" role="3cqZAp">
+            <node concept="2YIFZM" id="2CxJDc4ES_" role="3clFbG">
+              <ref role="1Pybhc" node="4Uz6rqjJFHS" resolve="DbClassNameUtil" />
+              <ref role="37wK5l" node="4Uz6rqjJHFQ" resolve="getFqName" />
+              <node concept="35c_gC" id="2CxJDc4ESA" role="37wK5m">
+                <ref role="35c_gD" to="77ry:2CxJDc4Cpg" resolve="Solution" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="5C6899HKZDm" role="1B3o_S" />
   </node>
 </model>

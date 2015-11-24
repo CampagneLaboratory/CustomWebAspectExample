@@ -9,6 +9,7 @@ import org.campagnelab.circles.aspect.runtime.DbAccess;
 import com.orientechnologies.orient.core.metadata.schema.OSchemaProxy;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.apache.log4j.Level;
+import org.campagnelab.circles.aspect.runtime.DbClassNameUtil;
 import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -21,7 +22,6 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 import java.util.Iterator;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import org.campagnelab.circles.aspect.runtime.DbClassNameUtil;
 import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
 
@@ -43,12 +43,14 @@ public class DbSchemaHelper {
       final OSchemaProxy schema = db.getMetadata().getSchema();
       // drop each class, starting with baseConcept: 
       dropClass(schema, getFqName(MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept")));
-      dropClass(schema, "org~campagnelab~circles~model~structure~Project");
-      dropClass(schema, "jetbrains~mps~lang~core~structure~BaseConcept");
-      dropClass(schema, "jetbrains~mps~lang~core~structure~INamedConcept");
-      dropClass(schema, "org~campagnelab~circles~model~structure~Module");
-      dropClass(schema, "org~campagnelab~circles~model~structure~Model");
-      dropClass(schema, "jetbrains~mps~lang~core~structure~Attribute");
+      dropClass(schema, "org_C_campagnelab_C_circles_C_model_C_structure_C_Project");
+      dropClass(schema, "jetbrains_C_mps_C_lang_C_core_C_structure_C_BaseConcept");
+      dropClass(schema, "jetbrains_C_mps_C_lang_C_core_C_structure_C_INamedConcept");
+      dropClass(schema, "org_C_campagnelab_C_circles_C_model_C_structure_C_Module");
+      dropClass(schema, "org_C_campagnelab_C_circles_C_model_C_structure_C_Language");
+      dropClass(schema, "org_C_campagnelab_C_circles_C_model_C_structure_C_Solution");
+      dropClass(schema, "org_C_campagnelab_C_circles_C_model_C_structure_C_Model");
+      dropClass(schema, "jetbrains_C_mps_C_lang_C_core_C_structure_C_Attribute");
 
     } finally {
       DbAccess.closeDb(db);
@@ -66,18 +68,22 @@ public class DbSchemaHelper {
       // register each concept in the schema: 
       final OSchemaProxy schema = db.getMetadata().getSchema();
       // create each class before anything else: 
-      defineClass(schema, "org~campagnelab~circles~model~structure~Project");
-      defineClass(schema, "jetbrains~mps~lang~core~structure~BaseConcept");
-      defineClass(schema, "jetbrains~mps~lang~core~structure~INamedConcept");
-      defineClass(schema, "org~campagnelab~circles~model~structure~Module");
-      defineClass(schema, "org~campagnelab~circles~model~structure~Model");
-      defineClass(schema, "jetbrains~mps~lang~core~structure~Attribute");
+      defineClass(schema, "org_C_campagnelab_C_circles_C_model_C_structure_C_Project");
+      defineClass(schema, "jetbrains_C_mps_C_lang_C_core_C_structure_C_BaseConcept");
+      defineClass(schema, "jetbrains_C_mps_C_lang_C_core_C_structure_C_INamedConcept");
+      defineClass(schema, "org_C_campagnelab_C_circles_C_model_C_structure_C_Module");
+      defineClass(schema, "org_C_campagnelab_C_circles_C_model_C_structure_C_Language");
+      defineClass(schema, "org_C_campagnelab_C_circles_C_model_C_structure_C_Solution");
+      defineClass(schema, "org_C_campagnelab_C_circles_C_model_C_structure_C_Model");
+      defineClass(schema, "jetbrains_C_mps_C_lang_C_core_C_structure_C_Attribute");
 
       // add details for each class: 
       createSchemaFor(db, MetaAdapterFactory.getConcept(0x87c8043efece4ba6L, 0x9d133ef71e47af25L, 0x53b437228f097e33L, "org.campagnelab.circles.model.structure.Project"));
       createSchemaFor(db, MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept"));
       createSchemaFor(db, MetaAdapterFactory.getInterfaceConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, "jetbrains.mps.lang.core.structure.INamedConcept"));
       createSchemaFor(db, MetaAdapterFactory.getConcept(0x87c8043efece4ba6L, 0x9d133ef71e47af25L, 0x53b437228f097e36L, "org.campagnelab.circles.model.structure.Module"));
+      createSchemaFor(db, MetaAdapterFactory.getConcept(0x87c8043efece4ba6L, 0x9d133ef71e47af25L, 0xa886fa4c12864dL, "org.campagnelab.circles.model.structure.Language"));
+      createSchemaFor(db, MetaAdapterFactory.getConcept(0x87c8043efece4ba6L, 0x9d133ef71e47af25L, 0xa886fa4c128650L, "org.campagnelab.circles.model.structure.Solution"));
       createSchemaFor(db, MetaAdapterFactory.getConcept(0x87c8043efece4ba6L, 0x9d133ef71e47af25L, 0x53b437228f097e39L, "org.campagnelab.circles.model.structure.Model"));
       createSchemaFor(db, MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x47bf8397520e5939L, "jetbrains.mps.lang.core.structure.Attribute"));
 
@@ -98,7 +104,7 @@ public class DbSchemaHelper {
       LOG.info("Defining Class " + conceptName);
     }
     OClass dbClass = schema.createClass(conceptName);
-    if (eq_vl3h2u_a0d0f(conceptName, "jetbrains~mps~lang~core~structure~BaseConcept")) {
+    if (eq_vl3h2u_a0d0f(conceptName, DbClassNameUtil.getFqName(MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept")))) {
       // add restricted to BaseConcept, to avoid duplicating the fields: 
       dbClass.addSuperClass(schema.getClass("ORestricted"));
     }

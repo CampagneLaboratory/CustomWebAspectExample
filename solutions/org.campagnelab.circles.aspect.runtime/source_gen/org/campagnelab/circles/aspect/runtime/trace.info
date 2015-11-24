@@ -102,11 +102,11 @@
   <root nodeRef="r:2c4c7e9e-399c-490f-b18e-ff7f5ebd651b(org.campagnelab.circles.aspect.runtime)/5666401028115708792">
     <file name="DbClassNameUtil.java">
       <node id="5666401028115716300" at="11,60,12,111" concept="5" />
-      <node id="5666401028115715229" at="15,44,16,42" concept="5" />
+      <node id="5666401028115715229" at="15,44,16,44" concept="5" />
       <node id="5666401028115716854" at="11,0,14,0" concept="7" trace="getFqName#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Ljava/lang/String;" />
       <node id="5666401028115717017" at="15,0,18,0" concept="7" trace="make#(Ljava/lang/String;)Ljava/lang/String;" />
       <scope id="5666401028115714598" at="11,60,12,111" />
-      <scope id="5666401028115715142" at="15,44,16,42" />
+      <scope id="5666401028115715142" at="15,44,16,44" />
       <scope id="5666401028115716854" at="11,0,14,0">
         <var name="concept" id="5666401028115714637" />
       </scope>
@@ -114,6 +114,56 @@
         <var name="value" id="5666401028115715180" />
       </scope>
       <unit id="5666401028115708792" at="9,0,19,0" name="org.campagnelab.circles.aspect.runtime.DbClassNameUtil" />
+    </file>
+  </root>
+  <root nodeRef="r:2c4c7e9e-399c-490f-b18e-ff7f5ebd651b(org.campagnelab.circles.aspect.runtime)/6486908126552652084">
+    <file name="FIELDS.java">
+      <node id="6486908126552771543" at="8,28,9,18" concept="5" />
+      <node id="6486908126552772045" at="14,28,15,20" concept="5" />
+      <node id="6486908126552771653" at="20,28,21,24" concept="5" />
+      <node id="6486908126552771956" at="26,28,27,22" concept="5" />
+      <node id="6486908126552771182" at="32,0,33,0" concept="3" trace="dbName#()Ljava/lang/String;" />
+      <node id="6486908126552771220" at="8,0,11,0" concept="3" trace="dbName#()Ljava/lang/String;" />
+      <node id="6486908126552771256" at="14,0,17,0" concept="3" trace="dbName#()Ljava/lang/String;" />
+      <node id="6486908126552771292" at="20,0,23,0" concept="3" trace="dbName#()Ljava/lang/String;" />
+      <node id="6486908126552771328" at="26,0,29,0" concept="3" trace="dbName#()Ljava/lang/String;" />
+      <scope id="6486908126552771224" at="8,28,9,18" />
+      <scope id="6486908126552771260" at="14,28,15,20" />
+      <scope id="6486908126552771296" at="20,28,21,24" />
+      <scope id="6486908126552771332" at="26,28,27,22" />
+      <scope id="6486908126552771182" at="32,0,33,0" />
+      <scope id="6486908126552771220" at="8,0,11,0" />
+      <scope id="6486908126552771256" at="14,0,17,0" />
+      <scope id="6486908126552771292" at="20,0,23,0" />
+      <scope id="6486908126552771328" at="26,0,29,0" />
+      <unit id="6486908126552652084" at="6,0,34,0" name="org.campagnelab.circles.aspect.runtime.FIELDS" />
+    </file>
+  </root>
+  <root nodeRef="r:2c4c7e9e-399c-490f-b18e-ff7f5ebd651b(org.campagnelab.circles.aspect.runtime)/6486908126552652373">
+    <file name="CIRCLES_BASE_CONCEPTS.java">
+      <node id="6486908126553182580" at="9,29,10,184" concept="5" />
+      <node id="6486908126553182995" at="15,29,16,183" concept="5" />
+      <node id="6486908126553183179" at="21,29,22,182" concept="5" />
+      <node id="47436205663628636" at="27,29,28,183" concept="5" />
+      <node id="47436205663628836" at="33,29,34,183" concept="5" />
+      <node id="6486908126552770283" at="39,0,40,0" concept="3" trace="dbClass#()Ljava/lang/String;" />
+      <node id="6486908126552770327" at="9,0,12,0" concept="3" trace="dbClass#()Ljava/lang/String;" />
+      <node id="6486908126552770520" at="15,0,18,0" concept="3" trace="dbClass#()Ljava/lang/String;" />
+      <node id="6486908126552770681" at="21,0,24,0" concept="3" trace="dbClass#()Ljava/lang/String;" />
+      <node id="47436205663628632" at="27,0,30,0" concept="3" trace="dbClass#()Ljava/lang/String;" />
+      <node id="47436205663628832" at="33,0,36,0" concept="3" trace="dbClass#()Ljava/lang/String;" />
+      <scope id="6486908126552770331" at="9,29,10,184" />
+      <scope id="6486908126552770523" at="15,29,16,183" />
+      <scope id="6486908126552770684" at="21,29,22,182" />
+      <scope id="47436205663628635" at="27,29,28,183" />
+      <scope id="47436205663628835" at="33,29,34,183" />
+      <scope id="6486908126552770283" at="39,0,40,0" />
+      <scope id="6486908126552770327" at="9,0,12,0" />
+      <scope id="6486908126552770520" at="15,0,18,0" />
+      <scope id="6486908126552770681" at="21,0,24,0" />
+      <scope id="47436205663628632" at="27,0,30,0" />
+      <scope id="47436205663628832" at="33,0,36,0" />
+      <unit id="6486908126552652373" at="7,0,41,0" name="org.campagnelab.circles.aspect.runtime.CIRCLES_BASE_CONCEPTS" />
     </file>
   </root>
 </debug-info>

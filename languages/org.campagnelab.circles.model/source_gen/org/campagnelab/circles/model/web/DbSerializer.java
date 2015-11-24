@@ -6,6 +6,9 @@ import jetbrains.mps.project.MPSProject;
 import com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx;
 import org.campagnelab.circles.aspect.runtime.DbAccess;
 import org.apache.log4j.Level;
+import com.orientechnologies.orient.core.record.impl.ODocument;
+import org.campagnelab.circles.aspect.runtime.CIRCLES_BASE_CONCEPTS;
+import org.campagnelab.circles.aspect.runtime.FIELDS;
 import org.jetbrains.mps.openapi.module.SModule;
 import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
@@ -19,6 +22,10 @@ public class DbSerializer {
     this.project = project;
   }
   public void serializeProject(String user, String password) {
+    if (LOG.isInfoEnabled()) {
+      LOG.info("serialize project " + this.project.getName());
+    }
+
     ODatabaseDocumentTx db = null;
     try {
       db = DbAccess.openDb(url, user, password);
@@ -28,9 +35,12 @@ public class DbSerializer {
         }
         return;
       }
-
-
-
+      ODocument doc = db.newInstance(CIRCLES_BASE_CONCEPTS.PROJECT.dbClass());
+      doc.field(FIELDS.NAME.dbName(), this.project.getName());
+      if (LOG.isInfoEnabled()) {
+        LOG.info("db serialized ");
+      }
+      doc.save();
     } finally {
       DbAccess.closeDb(db);
     }

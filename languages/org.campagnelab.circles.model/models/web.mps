@@ -32,6 +32,12 @@
     <node concept="1mS4fQ" id="5eOdMaf2o3S" role="1mS4fN">
       <ref role="1mS4fP" to="77ry:5eOdMaf2nSQ" resolve="Module" />
     </node>
+    <node concept="1mS4fQ" id="2CxJDc4Cpp" role="1mS4fN">
+      <ref role="1mS4fP" to="77ry:2CxJDc4Cpd" resolve="Language" />
+    </node>
+    <node concept="1mS4fQ" id="2CxJDc4CpB" role="1mS4fN">
+      <ref role="1mS4fP" to="77ry:2CxJDc4Cpg" resolve="Solution" />
+    </node>
     <node concept="1mS4fQ" id="5eOdMaf2o40" role="1mS4fN">
       <ref role="1mS4fP" to="77ry:5eOdMaf2nST" resolve="Model" />
     </node>

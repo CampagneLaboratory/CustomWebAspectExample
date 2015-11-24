@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
   <root>
+    <file name="Language_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="org.campagnelab.circles.model.behavior.Language_BehaviorDescriptor" />
+    </file>
     <file name="Model_BehaviorDescriptor.java">
       <unit at="14,0,26,0" name="org.campagnelab.circles.model.behavior.Model_BehaviorDescriptor" />
     </file>
@@ -9,6 +12,9 @@
     </file>
     <file name="Project_BehaviorDescriptor.java">
       <unit at="14,0,26,0" name="org.campagnelab.circles.model.behavior.Project_BehaviorDescriptor" />
+    </file>
+    <file name="Solution_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="org.campagnelab.circles.model.behavior.Solution_BehaviorDescriptor" />
     </file>
   </root>
 </debug-info>
