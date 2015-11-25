@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
-    <use id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="69b8a993-9b87-4d96-bf0c-3559f4bb0c63" name="jetbrains.mps.lang.slanguage" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
@@ -11,6 +10,8 @@
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
+    <use id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -30,6 +31,7 @@
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="dbgh" ref="r:12745d44-e790-475c-9c32-e0e28707b5bb(org.campagnelab.circles.aspect.intentions)" />
     <import index="x3ey" ref="r:db1c5d5d-cc86-4bed-9aa5-f6746cfde04e(org.campagnelab.circles.aspect.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -103,7 +105,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
@@ -325,6 +327,20 @@
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
+    </language>
+    <language id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect">
+      <concept id="3317590328854032612" name="org.campagnelab.circles.aspect.structure.StageToAnnotation" flags="ng" index="2b_W8R">
+        <child id="3317590328854209169" name="destination" index="2bEx12" />
+      </concept>
+      <concept id="3317590328854209162" name="org.campagnelab.circles.aspect.structure.StagingInfo" flags="ng" index="2bEx1p">
+        <property id="3317590328854999532" name="generatedFilename" index="2bDwcZ" />
+        <property id="3317590328854225222" name="package" index="2bEHel" />
+        <property id="3317590328854225220" name="stagingDirRoot" index="2bEHen" />
+        <child id="3317590328856609127" name="imports" index="2bNReO" />
+      </concept>
+      <concept id="3317590328856609124" name="org.campagnelab.circles.aspect.structure.AddImportStatement" flags="ng" index="2bNReR">
+        <property id="3317590328856609125" name="packageName" index="2bNReQ" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -996,6 +1012,34 @@
       </node>
       <node concept="17QB3L" id="3N2WJcqmbsL" role="2jfP_h" />
     </node>
+    <node concept="2b_W8R" id="2SasHe_Hj77" role="lGtFl">
+      <node concept="2bEx1p" id="2SasHe_HjyJ" role="2bEx12">
+        <property role="2bEHen" value="${module}/../../web-app/src/main/java" />
+        <property role="2bEHel" value="org.campagnelab.circles.web.views" />
+        <property role="2bDwcZ" value="view.java" />
+        <node concept="17Uvod" id="2SasHe_HjyK" role="lGtFl">
+          <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328854209162/3317590328854999532" />
+          <property role="2qtEX9" value="generatedFilename" />
+          <node concept="3zFVjK" id="2SasHe_HjyL" role="3zH0cK">
+            <node concept="3clFbS" id="2SasHe_HjyM" role="2VODD2">
+              <node concept="3clFbF" id="2SasHe_HjyN" role="3cqZAp">
+                <node concept="3cpWs3" id="2SasHe_HjyO" role="3clFbG">
+                  <node concept="Xl_RD" id="2SasHe_HjyP" role="3uHU7w">
+                    <property role="Xl_RC" value=".java" />
+                  </node>
+                  <node concept="2OqwBi" id="2SasHe_HjyQ" role="3uHU7B">
+                    <node concept="1iwH7S" id="2SasHe_HjyR" role="2Oq$k0" />
+                    <node concept="1bhEwm" id="2SasHe_HjyS" role="2OqNvi">
+                      <ref role="1bhEwk" node="FyYyYnKI3d" resolve="ClassName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="242NPypZWXX">
     <property role="TrG5h" value="WebMapper" />
@@ -1348,6 +1392,40 @@
         </node>
       </node>
       <node concept="17QB3L" id="242NPypZX0v" role="2jfP_h" />
+    </node>
+    <node concept="2b_W8R" id="2SasHe_BXuB" role="lGtFl">
+      <node concept="2bEx1p" id="2SasHe_C9BC" role="2bEx12">
+        <property role="2bEHen" value="${module}/../../web-app/src/main/java" />
+        <property role="2bEHel" value="org.campagnelab.circles.web.mappers" />
+        <property role="2bDwcZ" value="mapper.java" />
+        <node concept="2bNReR" id="2SasHe_LAjU" role="2bNReO">
+          <property role="2bNReQ" value="org.campagnelab.circles.web.models" />
+        </node>
+        <node concept="17Uvod" id="2SasHe_FcB1" role="lGtFl">
+          <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328854209162/3317590328854999532" />
+          <property role="2qtEX9" value="generatedFilename" />
+          <node concept="3zFVjK" id="2SasHe_FcB2" role="3zH0cK">
+            <node concept="3clFbS" id="2SasHe_FcB3" role="2VODD2">
+              <node concept="3clFbF" id="2SasHe_Fd0S" role="3cqZAp">
+                <node concept="3cpWs3" id="2SasHe_Fd2G" role="3clFbG">
+                  <node concept="Xl_RD" id="2SasHe_Fd2S" role="3uHU7w">
+                    <property role="Xl_RC" value=".java" />
+                  </node>
+                  <node concept="2OqwBi" id="2SasHe_Fd0T" role="3uHU7B">
+                    <node concept="1iwH7S" id="2SasHe_Fd0U" role="2Oq$k0" />
+                    <node concept="1bhEwm" id="2SasHe_Fd0V" role="2OqNvi">
+                      <ref role="1bhEwk" node="242NPypZX0i" resolve="ClassName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2bNReR" id="2SasHe_LYHC" role="2bNReO">
+          <property role="2bNReQ" value="org.campagnelab.circles.web.views" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="242NPyq00ID">
@@ -1727,6 +1805,34 @@
       </node>
       <node concept="3bZ5Sz" id="2SasHe_pLfX" role="2jfP_h" />
     </node>
+    <node concept="2b_W8R" id="2SasHe_HgkH" role="lGtFl">
+      <node concept="2bEx1p" id="2SasHe_Hh24" role="2bEx12">
+        <property role="2bEHen" value="${module}/../../web-app/src/main/java" />
+        <property role="2bEHel" value="org.campagnelab.circles.web.models" />
+        <property role="2bDwcZ" value="model.java" />
+        <node concept="17Uvod" id="2SasHe_Hh25" role="lGtFl">
+          <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328854209162/3317590328854999532" />
+          <property role="2qtEX9" value="generatedFilename" />
+          <node concept="3zFVjK" id="2SasHe_Hh26" role="3zH0cK">
+            <node concept="3clFbS" id="2SasHe_Hh27" role="2VODD2">
+              <node concept="3clFbF" id="2SasHe_Hh28" role="3cqZAp">
+                <node concept="3cpWs3" id="2SasHe_Hh29" role="3clFbG">
+                  <node concept="Xl_RD" id="2SasHe_Hh2a" role="3uHU7w">
+                    <property role="Xl_RC" value=".java" />
+                  </node>
+                  <node concept="2OqwBi" id="2SasHe_Hh2b" role="3uHU7B">
+                    <node concept="1iwH7S" id="2SasHe_Hh2c" role="2Oq$k0" />
+                    <node concept="1bhEwm" id="2SasHe_Hh2d" role="2OqNvi">
+                      <ref role="1bhEwk" node="242NPyq00KY" resolve="ClassName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="2SasHe_mro2">
     <property role="3GE5qa" value="editors" />
@@ -1747,6 +1853,13 @@
     <node concept="n94m4" id="2SasHe_mro4" role="lGtFl" />
     <node concept="2ZBi8u" id="2SasHe_mrqv" role="lGtFl">
       <ref role="2rW$FS" node="2SasHe_mrqD" resolve="BaseConceptModel" />
+    </node>
+    <node concept="2b_W8R" id="2SasHe_HlDa" role="lGtFl">
+      <node concept="2bEx1p" id="2SasHe_Hmgq" role="2bEx12">
+        <property role="2bEHen" value="${module}/../../web-app/src/main/java" />
+        <property role="2bEHel" value="org.campagnelab.circles.web.mappers" />
+        <property role="2bDwcZ" value="BaseConceptModel.java" />
+      </node>
     </node>
   </node>
   <node concept="2pMbU2" id="2SasHe_z_Cw">
@@ -1822,6 +1935,39 @@
               <node concept="30H73N" id="2SasHe_z_WA" role="2Oq$k0" />
               <node concept="3Tsc0h" id="2SasHe_zA8p" role="2OqNvi">
                 <ref role="3TtcxE" to="6je1:1mpyZGF7F81" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2b_W8R" id="2SasHe_Hk4T" role="lGtFl">
+      <node concept="2bEx1p" id="2SasHe_Hkcy" role="2bEx12">
+        <property role="2bEHen" value="${module}/../../web-app/src/main/java" />
+        <property role="2bEHel" value="org.campagnelab.circles.web.models" />
+        <property role="2bDwcZ" value="uiBinder.xml" />
+        <node concept="17Uvod" id="2SasHe_Hkcz" role="lGtFl">
+          <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328854209162/3317590328854999532" />
+          <property role="2qtEX9" value="generatedFilename" />
+          <node concept="3zFVjK" id="2SasHe_Hkc$" role="3zH0cK">
+            <node concept="3clFbS" id="2SasHe_Hkc_" role="2VODD2">
+              <node concept="3clFbF" id="2SasHe_HlqJ" role="3cqZAp">
+                <node concept="3cpWs3" id="2SasHe_HlqK" role="3clFbG">
+                  <node concept="Xl_RD" id="2SasHe_HlqL" role="3uHU7w">
+                    <property role="Xl_RC" value=".ui.xml" />
+                  </node>
+                  <node concept="2OqwBi" id="2SasHe_HlqM" role="3uHU7B">
+                    <node concept="2OqwBi" id="2SasHe_HlqN" role="2Oq$k0">
+                      <node concept="30H73N" id="2SasHe_HlqO" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="2SasHe_HlqP" role="2OqNvi">
+                        <ref role="3Tt5mk" to="6je1:1mpyZGF7F7H" />
+                      </node>
+                    </node>
+                    <node concept="3TrcHB" id="2SasHe_HlqQ" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>

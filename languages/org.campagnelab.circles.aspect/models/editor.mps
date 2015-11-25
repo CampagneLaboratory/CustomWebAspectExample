@@ -24,10 +24,16 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2" />
+      <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
@@ -307,6 +313,74 @@
         <node concept="Vb9p2" id="3j_dQLHg532" role="3F10Kt" />
       </node>
       <node concept="l2Vlx" id="3j_dQLHfOT0" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2SasHe_Br4I">
+    <property role="3GE5qa" value="staging" />
+    <ref role="1XX52x" to="6je1:2SasHe_Br3$" resolve="StageToAnnotation" />
+    <node concept="3EZMnI" id="2SasHe_Br4W" role="2wV5jI">
+      <node concept="3EZMnI" id="2SasHe_Br53" role="3EZMnx">
+        <node concept="VPM3Z" id="2SasHe_Br55" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="2SasHe_Br5f" role="3EZMnx">
+          <property role="3F0ifm" value="Stage to:" />
+          <node concept="Vb9p2" id="2SasHe_C66e" role="3F10Kt" />
+          <node concept="Veino" id="2SasHe_C67V" role="3F10Kt">
+            <property role="Vb096" value="LIGHT_BLUE" />
+          </node>
+        </node>
+        <node concept="3F1sOY" id="2SasHe_C6a_" role="3EZMnx">
+          <ref role="1NtTu8" to="6je1:2SasHe_C6ah" />
+          <node concept="Veino" id="2SasHe_C6cj" role="3F10Kt">
+            <property role="Vb096" value="LIGHT_BLUE" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="2SasHe_Br58" role="2iSdaV" />
+      </node>
+      <node concept="2SsqMj" id="2SasHe_Br6q" role="3EZMnx" />
+      <node concept="2iRkQZ" id="2SasHe_Br4Z" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2SasHe_Ca4V">
+    <property role="3GE5qa" value="staging" />
+    <ref role="1XX52x" to="6je1:2SasHe_C6aa" resolve="StagingInfo" />
+    <node concept="3EZMnI" id="2SasHe_Ca4X" role="2wV5jI">
+      <node concept="3F0A7n" id="2SasHe_Ca59" role="3EZMnx">
+        <ref role="1NtTu8" to="6je1:2SasHe_Ca54" resolve="stagingDirRoot" />
+      </node>
+      <node concept="3F0A7n" id="2SasHe_Ca5f" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <ref role="1NtTu8" to="6je1:2SasHe_Ca56" resolve="package" />
+      </node>
+      <node concept="3F0ifn" id="2SasHe_F78p" role="3EZMnx">
+        <property role="3F0ifm" value="name:" />
+        <node concept="pVoyu" id="2SasHe_F78R" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="Vb9p2" id="2SasHe_F7aD" role="3F10Kt" />
+      </node>
+      <node concept="3F0A7n" id="2SasHe_F78J" role="3EZMnx">
+        <ref role="1NtTu8" to="6je1:2SasHe_F77G" resolve="generatedFilename" />
+      </node>
+      <node concept="3F0ifn" id="2SasHe_Lg5L" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+      </node>
+      <node concept="3F2HdR" id="2SasHe_Lg63" role="3EZMnx">
+        <ref role="1NtTu8" to="6je1:2SasHe_Lg5B" />
+        <node concept="l2Vlx" id="2SasHe_Lg65" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="2SasHe_Lg6q" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+      </node>
+      <node concept="l2Vlx" id="2SasHe_Ca50" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2SasHe_LApk">
+    <property role="3GE5qa" value="staging" />
+    <ref role="1XX52x" to="6je1:2SasHe_Lg5$" resolve="AddImportStatement" />
+    <node concept="3F0A7n" id="2SasHe_LApm" role="2wV5jI">
+      <ref role="1NtTu8" to="6je1:2SasHe_Lg5_" resolve="packageName" />
     </node>
   </node>
 </model>
