@@ -2124,15 +2124,25 @@
                 </node>
               </node>
             </node>
+            <node concept="3SKdUt" id="4Myj_Uv1E7n" role="3cqZAp">
+              <node concept="3SKdUq" id="4Myj_Uv1E8C" role="3SKWNk">
+                <property role="3SKdUp" value="don't use embedded below because we don't know whether some other" />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="4Myj_Uv1Emt" role="3cqZAp">
+              <node concept="3SKdUq" id="4Myj_Uv1Emu" role="3SKWNk">
+                <property role="3SKdUp" value="part of the AST needs to refer to the child." />
+              </node>
+            </node>
             <node concept="3clFbJ" id="RKPJ9dn18J" role="3cqZAp">
               <node concept="3clFbS" id="RKPJ9dn18L" role="3clFbx">
                 <node concept="3clFbJ" id="RKPJ9dn2ek" role="3cqZAp">
                   <node concept="3clFbS" id="RKPJ9dn2em" role="3clFbx">
                     <node concept="3clFbF" id="RKPJ9dn1_g" role="3cqZAp">
                       <node concept="37vLTI" id="RKPJ9dn1CL" role="3clFbG">
-                        <node concept="Rm8GO" id="142PNjef$uc" role="37vLTx">
+                        <node concept="Rm8GO" id="4Myj_Uv1_6n" role="37vLTx">
+                          <ref role="Rm8GQ" to="jm6w:~OType.LINKSET" resolve="LINKSET" />
                           <ref role="1Px2BO" to="jm6w:~OType" resolve="OType" />
-                          <ref role="Rm8GQ" to="jm6w:~OType.EMBEDDEDSET" resolve="EMBEDDEDSET" />
                         </node>
                         <node concept="37vLTw" id="RKPJ9dn1_e" role="37vLTJ">
                           <ref role="3cqZAo" node="RKPJ9dmZtO" resolve="linkDbType" />
@@ -2152,9 +2162,9 @@
                     <node concept="3clFbS" id="RKPJ9dn2gG" role="9aQI4">
                       <node concept="3clFbF" id="RKPJ9dn2h0" role="3cqZAp">
                         <node concept="37vLTI" id="RKPJ9dn2h1" role="3clFbG">
-                          <node concept="Rm8GO" id="142PNjef$xa" role="37vLTx">
+                          <node concept="Rm8GO" id="4Myj_Uv1_84" role="37vLTx">
+                            <ref role="Rm8GQ" to="jm6w:~OType.LINKLIST" resolve="LINKLIST" />
                             <ref role="1Px2BO" to="jm6w:~OType" resolve="OType" />
-                            <ref role="Rm8GQ" to="jm6w:~OType.EMBEDDEDLIST" resolve="EMBEDDEDLIST" />
                           </node>
                           <node concept="37vLTw" id="RKPJ9dn2h3" role="37vLTJ">
                             <ref role="3cqZAo" node="RKPJ9dmZtO" resolve="linkDbType" />
@@ -2177,9 +2187,9 @@
                 <node concept="3clFbS" id="RKPJ9dn2yF" role="9aQI4">
                   <node concept="3clFbF" id="RKPJ9dn2$7" role="3cqZAp">
                     <node concept="37vLTI" id="RKPJ9dn2BC" role="3clFbG">
-                      <node concept="Rm8GO" id="142PNjef$yK" role="37vLTx">
+                      <node concept="Rm8GO" id="4Myj_Uv1_9L" role="37vLTx">
+                        <ref role="Rm8GQ" to="jm6w:~OType.LINK" resolve="LINK" />
                         <ref role="1Px2BO" to="jm6w:~OType" resolve="OType" />
-                        <ref role="Rm8GQ" to="jm6w:~OType.EMBEDDED" resolve="EMBEDDED" />
                       </node>
                       <node concept="37vLTw" id="RKPJ9dn2$6" role="37vLTJ">
                         <ref role="3cqZAo" node="RKPJ9dmZtO" resolve="linkDbType" />
