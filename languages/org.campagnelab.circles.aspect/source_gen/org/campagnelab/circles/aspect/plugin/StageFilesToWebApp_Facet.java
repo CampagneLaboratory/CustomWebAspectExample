@@ -135,7 +135,7 @@ public class StageFilesToWebApp_Facet extends IFacet.Stub {
                         return true;
                       }
                       private void doMove(IFile file, final Function moveViewFunction, final Function movePomFunction) {
-                        if (file.getName().endsWith("WebView.java")) {
+                        if (file.getName().endsWith("WebView.java") || file.getName().endsWith("WebModel.java") || file.getName().endsWith("WebMapper.java")) {
                           moveViewFunction.fun(file);
                         }
                         if (file.getName().equals("pom.xml")) {

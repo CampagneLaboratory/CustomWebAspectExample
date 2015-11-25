@@ -16,17 +16,19 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   private final BHDescriptor myIncludeLanguage__BehaviorDescriptor = new IncludeLanguage__BehaviorDescriptor();
   private final BHDescriptor myMavenPom__BehaviorDescriptor = new MavenPom__BehaviorDescriptor();
   private final BHDescriptor myApache2_0__BehaviorDescriptor = new Apache2_0__BehaviorDescriptor();
+  private final BHDescriptor myPersistedConcepts__BehaviorDescriptor = new PersistedConcepts__BehaviorDescriptor();
   private final BHDescriptor myIncludeConcepts__BehaviorDescriptor = new IncludeConcepts__BehaviorDescriptor();
 
   private final long[] myConceptBehaviorIds;
 
   public BehaviorAspectDescriptor() {
-    myConceptBehaviorIds = new long[5];
+    myConceptBehaviorIds = new long[6];
     myConceptBehaviorIds[0] = 0xdf0d6f24d610de2L;
     myConceptBehaviorIds[1] = 0xdf0d6f24d611395L;
     myConceptBehaviorIds[2] = 0x34e5376c6d3a5ef3L;
     myConceptBehaviorIds[3] = 0x34e5376c6d3f8e17L;
-    myConceptBehaviorIds[4] = 0x42f48c9f1414cf69L;
+    myConceptBehaviorIds[4] = 0x42f48c9f1414cf63L;
+    myConceptBehaviorIds[5] = 0x42f48c9f1414cf69L;
   }
 
   @Deprecated
@@ -49,6 +51,8 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
       case 3:
         return myApache2_0__BehaviorDescriptor;
       case 4:
+        return myPersistedConcepts__BehaviorDescriptor;
+      case 5:
         return myIncludeConcepts__BehaviorDescriptor;
       default:
         return null;

@@ -18,6 +18,8 @@ import org.campagnelab.circles.aspect.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.smodel.runtime.MakeAspectDescriptor;
 import org.campagnelab.circles.aspect.plugin.FacetAspectDescriptor;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
+import jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor;
+import org.campagnelab.circles.aspect.typesystem.TypesystemDescriptor;
 
 public class Language extends LanguageRuntime {
   public static String MODULE_REF = "8c40f9f4-b3bd-42d0-8b65-8e644273493c(org.campagnelab.circles.aspect)";
@@ -63,6 +65,9 @@ public class Language extends LanguageRuntime {
     }
     if (aspectClass == StructureAspectDescriptor.class) {
       return (T) new org.campagnelab.circles.aspect.structure.StructureAspectDescriptor();
+    }
+    if (aspectClass == IHelginsDescriptor.class) {
+      return (T) new TypesystemDescriptor();
     }
     return super.createAspect(aspectClass);
   }

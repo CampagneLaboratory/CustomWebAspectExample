@@ -16,21 +16,15 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import java.util.ArrayList;
-import jetbrains.mps.smodel.Language;
-import jetbrains.mps.smodel.ModuleRepositoryFacade;
-import jetbrains.mps.lang.smodel.behavior.LanguageIdentity__BehaviorDescriptor;
-import java.util.Iterator;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.ITranslator2;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
-public final class IncludeLanguage__BehaviorDescriptor extends BaseBHDescriptor {
-  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x8c40f9f4b3bd42d0L, 0x8b658e644273493cL, 0xdf0d6f24d611395L, "org.campagnelab.circles.aspect.structure.IncludeLanguage");
+public final class PersistedConcepts__BehaviorDescriptor extends BaseBHDescriptor {
+  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x8c40f9f4b3bd42d0L, 0x8b658e644273493cL, 0x42f48c9f1414cf63L, "org.campagnelab.circles.aspect.structure.PersistedConcepts");
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
   public static final SMethod<Iterable<SNode>> getConcepts_idRKPJ9dogRU = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getConcepts").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("RKPJ9dogRU").registry(REGISTRY).build();
@@ -38,34 +32,17 @@ public final class IncludeLanguage__BehaviorDescriptor extends BaseBHDescriptor 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConcepts_idRKPJ9dogRU);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
-    SLinkOperations.setTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x8c40f9f4b3bd42d0L, 0x8b658e644273493cL, 0xdf0d6f24d611395L, 0x2102cf5899ed6f61L, "language"), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x7866978ea0f04cc7L, 0x81bc4d213d9375e1L, 0x3e6a40ba27dd70f3L, "jetbrains.mps.lang.smodel.structure.LanguageRefExpression"))));
   }
 
   /*package*/ static Iterable<SNode> getConcepts_idRKPJ9dogRU(@NotNull SNode __thisNode__) {
-    List<SNode> concepts = ListSequence.fromList(new ArrayList<SNode>());
-    Language l = ModuleRepositoryFacade.getInstance().getModule(LanguageIdentity__BehaviorDescriptor.getLanguage_id34EJa6aIcyj.invoke(SLinkOperations.getTarget(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x8c40f9f4b3bd42d0L, 0x8b658e644273493cL, 0xdf0d6f24d611395L, 0x2102cf5899ed6f61L, "language")), MetaAdapterFactory.getContainmentLink(0x7866978ea0f04cc7L, 0x81bc4d213d9375e1L, 0x3e6a40ba27dd70f3L, 0x312abca18ab995e2L, "languageId"))).getQualifiedName(), Language.class);
-    {
-      Iterator<SNode> e_it = ListSequence.fromList(l.getConceptDeclarations()).iterator();
-      SNode e_var;
-      while (e_it.hasNext()) {
-        e_var = e_it.next();
-        ListSequence.fromList(concepts).addElement((SNode) e_var);
-        // add interface concepts implemented by e: 
-        {
-          final SNode cd = e_var;
-          if (SNodeOperations.isInstanceOf(cd, MetaAdapterFactory.getConcept(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L, "jetbrains.mps.lang.structure.structure.ConceptDeclaration"))) {
-            for (SNode i : ListSequence.fromList(SLinkOperations.getChildren(cd, MetaAdapterFactory.getContainmentLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L, 0x110358d693eL, "implements")))) {
-              ListSequence.fromList(concepts).addElement(SLinkOperations.getTarget(i, MetaAdapterFactory.getReferenceLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0x110356fc618L, 0x110356fe029L, "intfc")));
-            }
-            SLinkOperations.getChildren(cd, MetaAdapterFactory.getContainmentLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L, 0x110358d693eL, "implements"));
-          }
-        }
+    return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x8c40f9f4b3bd42d0L, 0x8b658e644273493cL, 0x42f48c9f1414cf63L, 0x42f48c9f1414cf6cL, "inclusionRules"))).translate(new ITranslator2<SNode, SNode>() {
+      public Iterable<SNode> translate(SNode it) {
+        return (Iterable<SNode>) IIncludeConcepts__BehaviorDescriptor.getConcepts_idRKPJ9dogRU.invoke(it);
       }
-    }
-    return ListSequence.fromList(concepts).distinct();
+    }).distinct();
   }
 
-  /*package*/ IncludeLanguage__BehaviorDescriptor() {
+  /*package*/ PersistedConcepts__BehaviorDescriptor() {
     super(REGISTRY);
   }
 
