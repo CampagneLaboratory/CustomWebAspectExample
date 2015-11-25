@@ -65,7 +65,7 @@
     </node>
   </node>
   <node concept="317FyR" id="7pelyIRn7_9">
-    <property role="3170p$" value="" />
+    <property role="3170p$" value="test query term" />
     <node concept="314PbK" id="7pelyIRnxwx" role="317ZaZ">
       <ref role="314PbR" node="7pelyIRny2h" resolve="reads" />
     </node>
