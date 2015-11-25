@@ -35,8 +35,8 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="i6bd" ref="8c40f9f4-b3bd-42d0-8b65-8e644273493c/java:com.orientechnologies.orient.core.record(org.campagnelab.circles.aspect/)" />
-    <import index="ajju" ref="8c40f9f4-b3bd-42d0-8b65-8e644273493c/java:com.orientechnologies.orient.core.query.live(org.campagnelab.circles.aspect/)" />
     <import index="daa6" ref="r:623c8eb4-df21-4fdc-925d-d384e22129a2(org.campagnelab.circles.aspect.db)" />
+    <import index="ajju" ref="8c40f9f4-b3bd-42d0-8b65-8e644273493c/java:com.orientechnologies.orient.core.query.live(org.campagnelab.circles.aspect/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -146,7 +146,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -1509,8 +1509,8 @@
           </node>
           <node concept="17R0WA" id="3Uieg3Mrjrr" role="3clFbw">
             <node concept="2YIFZM" id="5C6899HOx$8" role="3uHU7w">
-              <ref role="1Pybhc" to="daa6:4Uz6rqjJFHS" resolve="DbClassNameUtil" />
               <ref role="37wK5l" to="daa6:4Uz6rqjJHFQ" resolve="getFqName" />
+              <ref role="1Pybhc" to="daa6:4Uz6rqjJFHS" resolve="DbClassNameUtil" />
               <node concept="35c_gC" id="5C6899HOxAA" role="37wK5m">
                 <ref role="35c_gD" to="tpck:gw2VY9q" resolve="BaseConcept" />
               </node>
@@ -2137,15 +2137,25 @@
                 </node>
               </node>
             </node>
+            <node concept="3SKdUt" id="4Myj_Uv1E7n" role="3cqZAp">
+              <node concept="3SKdUq" id="4Myj_Uv1E8C" role="3SKWNk">
+                <property role="3SKdUp" value="don't use embedded below because we don't know whether some other" />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="4Myj_Uv1Emt" role="3cqZAp">
+              <node concept="3SKdUq" id="4Myj_Uv1Emu" role="3SKWNk">
+                <property role="3SKdUp" value="part of the AST needs to refer to the child." />
+              </node>
+            </node>
             <node concept="3clFbJ" id="RKPJ9dn18J" role="3cqZAp">
               <node concept="3clFbS" id="RKPJ9dn18L" role="3clFbx">
                 <node concept="3clFbJ" id="RKPJ9dn2ek" role="3cqZAp">
                   <node concept="3clFbS" id="RKPJ9dn2em" role="3clFbx">
                     <node concept="3clFbF" id="RKPJ9dn1_g" role="3cqZAp">
                       <node concept="37vLTI" id="RKPJ9dn1CL" role="3clFbG">
-                        <node concept="Rm8GO" id="142PNjef$uc" role="37vLTx">
+                        <node concept="Rm8GO" id="4Myj_Uv1_6n" role="37vLTx">
+                          <ref role="Rm8GQ" to="jm6w:~OType.LINKSET" resolve="LINKSET" />
                           <ref role="1Px2BO" to="jm6w:~OType" resolve="OType" />
-                          <ref role="Rm8GQ" to="jm6w:~OType.EMBEDDEDSET" resolve="EMBEDDEDSET" />
                         </node>
                         <node concept="37vLTw" id="RKPJ9dn1_e" role="37vLTJ">
                           <ref role="3cqZAo" node="RKPJ9dmZtO" resolve="linkDbType" />
@@ -2165,9 +2175,9 @@
                     <node concept="3clFbS" id="RKPJ9dn2gG" role="9aQI4">
                       <node concept="3clFbF" id="RKPJ9dn2h0" role="3cqZAp">
                         <node concept="37vLTI" id="RKPJ9dn2h1" role="3clFbG">
-                          <node concept="Rm8GO" id="142PNjef$xa" role="37vLTx">
+                          <node concept="Rm8GO" id="4Myj_Uv1_84" role="37vLTx">
+                            <ref role="Rm8GQ" to="jm6w:~OType.LINKLIST" resolve="LINKLIST" />
                             <ref role="1Px2BO" to="jm6w:~OType" resolve="OType" />
-                            <ref role="Rm8GQ" to="jm6w:~OType.EMBEDDEDLIST" resolve="EMBEDDEDLIST" />
                           </node>
                           <node concept="37vLTw" id="RKPJ9dn2h3" role="37vLTJ">
                             <ref role="3cqZAo" node="RKPJ9dmZtO" resolve="linkDbType" />
@@ -2190,9 +2200,9 @@
                 <node concept="3clFbS" id="RKPJ9dn2yF" role="9aQI4">
                   <node concept="3clFbF" id="RKPJ9dn2$7" role="3cqZAp">
                     <node concept="37vLTI" id="RKPJ9dn2BC" role="3clFbG">
-                      <node concept="Rm8GO" id="142PNjef$yK" role="37vLTx">
+                      <node concept="Rm8GO" id="4Myj_Uv1_9L" role="37vLTx">
+                        <ref role="Rm8GQ" to="jm6w:~OType.LINK" resolve="LINK" />
                         <ref role="1Px2BO" to="jm6w:~OType" resolve="OType" />
-                        <ref role="Rm8GQ" to="jm6w:~OType.EMBEDDED" resolve="EMBEDDED" />
                       </node>
                       <node concept="37vLTw" id="RKPJ9dn2$6" role="37vLTJ">
                         <ref role="3cqZAo" node="RKPJ9dmZtO" resolve="linkDbType" />
@@ -3024,9 +3034,6 @@
           <node concept="3clFbS" id="4Uz6rqjNEYX" role="2GV8ay">
             <node concept="3clFbF" id="4Uz6rqjNEYY" role="3cqZAp">
               <node concept="37vLTI" id="4Uz6rqjNEYZ" role="3clFbG">
-                <node concept="37vLTw" id="4Uz6rqjNEZ0" role="37vLTJ">
-                  <ref role="3cqZAo" node="4Uz6rqjNEYT" resolve="db" />
-                </node>
                 <node concept="2YIFZM" id="beLIuVlUys" role="37vLTx">
                   <ref role="37wK5l" node="4Uz6rqjJxnh" resolve="openDb" />
                   <ref role="1Pybhc" node="4Uz6rqjJu8m" resolve="DbAccess" />
@@ -3039,6 +3046,9 @@
                   <node concept="37vLTw" id="beLIuVlUyv" role="37wK5m">
                     <ref role="3cqZAo" node="4Uz6rqjNEZs" resolve="password" />
                   </node>
+                </node>
+                <node concept="37vLTw" id="4Uz6rqjNEZ0" role="37vLTJ">
+                  <ref role="3cqZAo" node="4Uz6rqjNEYT" resolve="db" />
                 </node>
               </node>
             </node>
