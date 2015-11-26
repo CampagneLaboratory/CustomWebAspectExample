@@ -28,7 +28,6 @@
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
-    <import index="ea1z" ref="r:4d14f64f-fa9a-4ab0-8621-23682dd759f0(org.campagnelab.circles.aspect.plugin)" />
     <import index="7x5y" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.charset(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpcq" ref="r:00000000-0000-4000-0000-011c89590286(jetbrains.mps.lang.core.plugin)" implicit="true" />
@@ -249,6 +248,7 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1200397529627" name="jetbrains.mps.baseLanguage.structure.CharConstant" flags="nn" index="1Xhbcc">
         <property id="1200397540847" name="charConstant" index="1XhdNS" />
       </concept>
@@ -603,16 +603,12 @@
                                   <property role="TrG5h" value="imports" />
                                   <node concept="3uibUv" id="2SasHe_OKjE" role="1tU5fm">
                                     <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
-                                    <node concept="3uibUv" id="2SasHe_OKAr" role="11_B2D">
-                                      <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-                                    </node>
+                                    <node concept="17QB3L" id="4c7_nAY3BnF" role="11_B2D" />
                                   </node>
                                   <node concept="2ShNRf" id="2SasHe_OJo5" role="33vP2m">
                                     <node concept="1pGfFk" id="2SasHe_OJFQ" role="2ShVmc">
                                       <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
-                                      <node concept="3uibUv" id="2SasHe_OKSw" role="1pMfVU">
-                                        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-                                      </node>
+                                      <node concept="17QB3L" id="4c7_nAY3BnH" role="1pMfVU" />
                                     </node>
                                   </node>
                                 </node>
@@ -1460,9 +1456,7 @@
                                   <property role="TrG5h" value="addTheseImportedPackages" />
                                   <node concept="3uibUv" id="2SasHe_OZvr" role="1tU5fm">
                                     <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
-                                    <node concept="3uibUv" id="2SasHe_P08p" role="11_B2D">
-                                      <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-                                    </node>
+                                    <node concept="17QB3L" id="4c7_nAY3BnG" role="11_B2D" />
                                   </node>
                                 </node>
                                 <node concept="3clFbS" id="2SasHe_JNuT" role="3clF47">
@@ -1493,9 +1487,7 @@
                                           <node concept="3cpWsn" id="2SasHe_JRPF" role="3cpWs9">
                                             <property role="3TUv4t" value="false" />
                                             <property role="TrG5h" value="line" />
-                                            <node concept="3uibUv" id="2SasHe_JRPH" role="1tU5fm">
-                                              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-                                            </node>
+                                            <node concept="17QB3L" id="4c7_nAY3BnE" role="1tU5fm" />
                                           </node>
                                         </node>
                                         <node concept="3cpWs8" id="2SasHe_K8az" role="3cqZAp">
@@ -1607,8 +1599,21 @@
                                               <node concept="3cpWsn" id="2SasHe_JU0W" role="3cpWs9">
                                                 <property role="TrG5h" value="firstLine" />
                                                 <node concept="10P_77" id="2SasHe_JU0R" role="1tU5fm" />
-                                                <node concept="3clFbT" id="2SasHe_JU2U" role="33vP2m">
-                                                  <property role="3clFbU" value="true" />
+                                                <node concept="2OqwBi" id="4c7_nAY89iG" role="33vP2m">
+                                                  <node concept="2OqwBi" id="4c7_nAY891c" role="2Oq$k0">
+                                                    <node concept="37vLTw" id="4c7_nAY88Y2" role="2Oq$k0">
+                                                      <ref role="3cqZAo" node="2SasHe_JOlF" resolve="toMove" />
+                                                    </node>
+                                                    <node concept="liA8E" id="4c7_nAY89bn" role="2OqNvi">
+                                                      <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                                                    </node>
+                                                  </node>
+                                                  <node concept="liA8E" id="4c7_nAY89Nu" role="2OqNvi">
+                                                    <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+                                                    <node concept="Xl_RD" id="4c7_nAY89Tw" role="37wK5m">
+                                                      <property role="Xl_RC" value=".java" />
+                                                    </node>
+                                                  </node>
                                                 </node>
                                               </node>
                                             </node>
@@ -1685,9 +1690,7 @@
                                                       </node>
                                                       <node concept="3cpWsn" id="2SasHe_LpTp" role="1Duv9x">
                                                         <property role="TrG5h" value="importedPackageName" />
-                                                        <node concept="3uibUv" id="2SasHe_P60H" role="1tU5fm">
-                                                          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-                                                        </node>
+                                                        <node concept="17QB3L" id="4c7_nAY3BnD" role="1tU5fm" />
                                                       </node>
                                                       <node concept="37vLTw" id="2SasHe_LsLG" role="1DdaDG">
                                                         <ref role="3cqZAo" node="2SasHe_LrzB" resolve="addTheseImportedPackages" />
@@ -1704,8 +1707,21 @@
                                                       </node>
                                                     </node>
                                                   </node>
-                                                  <node concept="37vLTw" id="2SasHe_JUa3" role="3clFbw">
-                                                    <ref role="3cqZAo" node="2SasHe_JU0W" resolve="firstLine" />
+                                                  <node concept="1Wc70l" id="4c7_nAY8a3x" role="3clFbw">
+                                                    <node concept="2OqwBi" id="4c7_nAY8ab0" role="3uHU7w">
+                                                      <node concept="37vLTw" id="4c7_nAY8a7_" role="2Oq$k0">
+                                                        <ref role="3cqZAo" node="2SasHe_JRPF" resolve="line" />
+                                                      </node>
+                                                      <node concept="liA8E" id="4c7_nAY8aA9" role="2OqNvi">
+                                                        <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                                                        <node concept="Xl_RD" id="4c7_nAY8aBE" role="37wK5m">
+                                                          <property role="Xl_RC" value="package " />
+                                                        </node>
+                                                      </node>
+                                                    </node>
+                                                    <node concept="37vLTw" id="2SasHe_JUa3" role="3uHU7B">
+                                                      <ref role="3cqZAo" node="2SasHe_JU0W" resolve="firstLine" />
+                                                    </node>
                                                   </node>
                                                   <node concept="9aQIb" id="2SasHe_K7q6" role="9aQIa">
                                                     <node concept="3clFbS" id="2SasHe_K7q7" role="9aQI4">
