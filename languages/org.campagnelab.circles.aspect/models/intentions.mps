@@ -60,6 +60,7 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
@@ -68,7 +69,6 @@
       <concept id="1192795911897" name="jetbrains.mps.lang.intentions.structure.ExecuteBlock" flags="in" index="2Sbjvc" />
       <concept id="1192796902958" name="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" flags="nn" index="2Sf5sV" />
       <concept id="2522969319638091381" name="jetbrains.mps.lang.intentions.structure.BaseIntentionDeclaration" flags="ig" index="2ZfUlf">
-        <property id="2522969319638091386" name="isAvailableInChildNodes" index="2ZfUl0" />
         <reference id="2522969319638198290" name="forConcept" index="2ZfgGC" />
         <child id="2522969319638198291" name="executeFunction" index="2ZfgGD" />
         <child id="2522969319638093995" name="isApplicableFunction" index="2ZfVeh" />
@@ -76,6 +76,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
@@ -100,7 +101,6 @@
   </registry>
   <node concept="2S6QgY" id="2SasHe_B_jQ">
     <property role="TrG5h" value="AddRemoveStageAnnotation" />
-    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="2S6ZIM" id="2SasHe_B_jR" role="2ZfVej">
       <node concept="3clFbS" id="2SasHe_B_jS" role="2VODD2">
@@ -189,12 +189,21 @@
             <property role="3SKdUp" value="only applicable to root nodes:" />
           </node>
         </node>
-        <node concept="3clFbF" id="2SasHe_BBP4" role="3cqZAp">
-          <node concept="3clFbC" id="2SasHe_BC4$" role="3clFbG">
-            <node concept="10Nm6u" id="2SasHe_BC5A" role="3uHU7w" />
-            <node concept="2OqwBi" id="2SasHe_BBQN" role="3uHU7B">
-              <node concept="2Sf5sV" id="2SasHe_BBP3" role="2Oq$k0" />
-              <node concept="1mfA1w" id="2SasHe_BC0J" role="2OqNvi" />
+        <node concept="3clFbF" id="4c7_nAY7xUs" role="3cqZAp">
+          <node concept="1Wc70l" id="4c7_nAY7ypk" role="3clFbG">
+            <node concept="3clFbC" id="4c7_nAY7yzg" role="3uHU7B">
+              <node concept="10Nm6u" id="4c7_nAY7y$F" role="3uHU7w" />
+              <node concept="2OqwBi" id="4c7_nAY7ysO" role="3uHU7B">
+                <node concept="2Sf5sV" id="4c7_nAY7yqG" role="2Oq$k0" />
+                <node concept="1mfA1w" id="4c7_nAY7yvA" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="3clFbC" id="4c7_nAY7y36" role="3uHU7w">
+              <node concept="2Sf5sV" id="4c7_nAY7y5n" role="3uHU7w" />
+              <node concept="2OqwBi" id="4c7_nAY7xWo" role="3uHU7B">
+                <node concept="2Sf5sV" id="4c7_nAY7xUq" role="2Oq$k0" />
+                <node concept="2Rxl7S" id="4c7_nAY7xZC" role="2OqNvi" />
+              </node>
             </node>
           </node>
         </node>

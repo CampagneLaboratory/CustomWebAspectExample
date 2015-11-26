@@ -343,5 +343,15 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4c7_nAY5GnG">
+    <property role="1pbfSe" value="18766693" />
+    <property role="TrG5h" value="GwtModule" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4c7_nAY5OIW" role="1TKVEl">
+      <property role="TrG5h" value="moduleName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 

@@ -12,6 +12,9 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
     <use id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect" version="0" />
+    <use id="289fcc83-6543-41e8-a5ca-768235715ce4" name="jetbrains.mps.lang.generator.generationParameters" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -31,7 +34,6 @@
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="dbgh" ref="r:12745d44-e790-475c-9c32-e0e28707b5bb(org.campagnelab.circles.aspect.intentions)" />
     <import index="x3ey" ref="r:db1c5d5d-cc86-4bed-9aa5-f6746cfde04e(org.campagnelab.circles.aspect.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -73,6 +75,7 @@
         <property id="1240249534625" name="isVolatile" index="34CwA1" />
       </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
+        <child id="1095933932569" name="implementedInterface" index="EKbjA" />
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -156,11 +159,23 @@
       </concept>
     </language>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
+      <concept id="2133624044437898907" name="jetbrains.mps.core.xml.structure.XmlDoctypeDeclaration" flags="ng" index="29q25o">
+        <property id="2133624044437898910" name="doctypeName" index="29q25t" />
+        <child id="2133624044438029120" name="externalId" index="29qyi3" />
+      </concept>
+      <concept id="2133624044438029119" name="jetbrains.mps.core.xml.structure.XmlExternalId" flags="ng" index="29qyjW">
+        <property id="2133624044438029123" name="publicId" index="29qyi0" />
+        <property id="2133624044438029125" name="isPublic" index="29qyi6" />
+        <property id="2133624044438029124" name="systemId" index="29qyi7" />
+      </concept>
       <concept id="6666499814681515200" name="jetbrains.mps.core.xml.structure.XmlFile" flags="ng" index="2pMbU2">
         <child id="6666499814681515201" name="document" index="2pMbU3" />
       </concept>
       <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
         <property id="6666499814681541920" name="text" index="2pMdty" />
+      </concept>
+      <concept id="6666499814681299057" name="jetbrains.mps.core.xml.structure.XmlProlog" flags="ng" index="2pNm8N">
+        <child id="7604553062773674214" name="elements" index="BGLLu" />
       </concept>
       <concept id="6666499814681299064" name="jetbrains.mps.core.xml.structure.XmlComment" flags="nn" index="2pNm8U">
         <child id="1622293396949036151" name="lines" index="3o66t8" />
@@ -182,16 +197,21 @@
       </concept>
       <concept id="6786756355279841993" name="jetbrains.mps.core.xml.structure.XmlDocument" flags="ng" index="3rIKKV">
         <child id="6666499814681299055" name="rootElement" index="2pNm8H" />
+        <child id="6666499814681299060" name="prolog" index="2pNm8Q" />
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
       <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
+      <concept id="1219952072943" name="jetbrains.mps.lang.generator.structure.DropRootRule" flags="lg" index="aNPBN">
+        <reference id="1219952338328" name="applicableConcept" index="aOQi4" />
+      </concept>
       <concept id="1114729360583" name="jetbrains.mps.lang.generator.structure.CopySrcListMacro" flags="ln" index="2b32R4">
         <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
       </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
+        <child id="1219952894531" name="dropRootRule" index="aQYdv" />
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
         <child id="1167088157977" name="createRootRule" index="2VS0gm" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
@@ -273,6 +293,7 @@
         <reference id="1216860049623" name="label" index="1iwH7c" />
       </concept>
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
+      <concept id="1217026863835" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalInputModel" flags="nn" index="1st3f0" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -283,7 +304,12 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
+        <reference id="1171315804605" name="concept" index="2RRcyH" />
+      </concept>
+      <concept id="6995935425733782641" name="jetbrains.mps.lang.smodel.structure.Model_GetModule" flags="nn" index="13u695" />
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -584,6 +610,18 @@
       <property role="13Pg2o" value="true" />
       <ref role="30HIoZ" to="6je1:1mpyZGF7F7F" resolve="WebEditors" />
       <ref role="3lhOvi" node="2SasHe_z_Cw" resolve="UIBundle" />
+    </node>
+    <node concept="3lhOvk" id="4c7_nAY5ISX" role="3lj3bC">
+      <property role="13Pg2o" value="true" />
+      <ref role="30HIoZ" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+      <ref role="3lhOvi" node="4c7_nAY4BLf" resolve="GwtModule" />
+    </node>
+    <node concept="3lhOvk" id="4c7_nAY8Jon" role="3lj3bC">
+      <ref role="30HIoZ" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+      <ref role="3lhOvi" node="4c7_nAY8tZh" resolve="ModuleEntryPoint" />
+    </node>
+    <node concept="aNPBN" id="4c7_nAY6gat" role="aQYdv">
+      <ref role="aOQi4" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
     </node>
   </node>
   <node concept="312cEu" id="1mpyZGF9czW">
@@ -1011,7 +1049,7 @@
     <node concept="2b_W8R" id="2SasHe_Hj77" role="lGtFl">
       <node concept="2bEx1p" id="2SasHe_HjyJ" role="2bEx12">
         <property role="2bEHen" value="${module}/../../web-app/src/main/java" />
-        <property role="2bEHel" value="org.campagnelab.circles.web.views" />
+        <property role="2bEHel" value="org.campagnelab.circles.web.client.views" />
         <property role="2bDwcZ" value="view.java" />
         <node concept="17Uvod" id="2SasHe_HjyK" role="lGtFl">
           <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328854209162/3317590328854999532" />
@@ -1027,6 +1065,38 @@
                     <node concept="1iwH7S" id="2SasHe_HjyR" role="2Oq$k0" />
                     <node concept="1bhEwm" id="2SasHe_HjyS" role="2OqNvi">
                       <ref role="1bhEwk" node="FyYyYnKI3d" resolve="ClassName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="17Uvod" id="4c7_nAY4K3K" role="lGtFl">
+          <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328854209162/3317590328854225222" />
+          <property role="2qtEX9" value="package" />
+          <node concept="3zFVjK" id="4c7_nAY4K3L" role="3zH0cK">
+            <node concept="3clFbS" id="4c7_nAY4K3M" role="2VODD2">
+              <node concept="3clFbF" id="4c7_nAY4K57" role="3cqZAp">
+                <node concept="3cpWs3" id="4c7_nAY4K58" role="3clFbG">
+                  <node concept="Xl_RD" id="4c7_nAY4K59" role="3uHU7w">
+                    <property role="Xl_RC" value=".client.views" />
+                  </node>
+                  <node concept="2OqwBi" id="4c7_nAY66Rp" role="3uHU7B">
+                    <node concept="2OqwBi" id="4c7_nAY66Rq" role="2Oq$k0">
+                      <node concept="2OqwBi" id="4c7_nAY66Rr" role="2Oq$k0">
+                        <node concept="2OqwBi" id="4c7_nAY66Rs" role="2Oq$k0">
+                          <node concept="30H73N" id="4c7_nAY66Rt" role="2Oq$k0" />
+                          <node concept="I4A8Y" id="4c7_nAY66Ru" role="2OqNvi" />
+                        </node>
+                        <node concept="2RRcyG" id="4c7_nAY66Rv" role="2OqNvi">
+                          <ref role="2RRcyH" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="4c7_nAY66Rw" role="2OqNvi" />
+                    </node>
+                    <node concept="3TrcHB" id="4c7_nAY66Rx" role="2OqNvi">
+                      <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
                     </node>
                   </node>
                 </node>
@@ -1392,10 +1462,42 @@
     <node concept="2b_W8R" id="2SasHe_BXuB" role="lGtFl">
       <node concept="2bEx1p" id="2SasHe_C9BC" role="2bEx12">
         <property role="2bEHen" value="${module}/../../web-app/src/main/java" />
-        <property role="2bEHel" value="org.campagnelab.circles.web.mappers" />
+        <property role="2bEHel" value="org.campagnelab.circles.web.client.mappers" />
         <property role="2bDwcZ" value="mapper.java" />
         <node concept="2bNReR" id="2SasHe_LAjU" role="2bNReO">
-          <property role="2bNReQ" value="org.campagnelab.circles.web.models" />
+          <property role="2bNReQ" value="org.campagnelab.circles.web.client.models" />
+          <node concept="17Uvod" id="4c7_nAY5jbn" role="lGtFl">
+            <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328856609124/3317590328856609125" />
+            <property role="2qtEX9" value="packageName" />
+            <node concept="3zFVjK" id="4c7_nAY5jbo" role="3zH0cK">
+              <node concept="3clFbS" id="4c7_nAY5jbp" role="2VODD2">
+                <node concept="3clFbF" id="4c7_nAY5jc_" role="3cqZAp">
+                  <node concept="3cpWs3" id="4c7_nAY5jcA" role="3clFbG">
+                    <node concept="Xl_RD" id="4c7_nAY5jcB" role="3uHU7w">
+                      <property role="Xl_RC" value=".client.models" />
+                    </node>
+                    <node concept="2OqwBi" id="4c7_nAY7cEa" role="3uHU7B">
+                      <node concept="2OqwBi" id="4c7_nAY7bMJ" role="2Oq$k0">
+                        <node concept="2OqwBi" id="4c7_nAY7bMK" role="2Oq$k0">
+                          <node concept="2OqwBi" id="4c7_nAY7bML" role="2Oq$k0">
+                            <node concept="1iwH7S" id="4c7_nAY7bMM" role="2Oq$k0" />
+                            <node concept="1st3f0" id="4c7_nAY7bMN" role="2OqNvi" />
+                          </node>
+                          <node concept="2RRcyG" id="4c7_nAY7bMO" role="2OqNvi">
+                            <ref role="2RRcyH" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+                          </node>
+                        </node>
+                        <node concept="1uHKPH" id="4c7_nAY7bMP" role="2OqNvi" />
+                      </node>
+                      <node concept="3TrcHB" id="4c7_nAY7cLF" role="2OqNvi">
+                        <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="17Uvod" id="2SasHe_FcB1" role="lGtFl">
           <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328854209162/3317590328854999532" />
@@ -1419,7 +1521,71 @@
           </node>
         </node>
         <node concept="2bNReR" id="2SasHe_LYHC" role="2bNReO">
-          <property role="2bNReQ" value="org.campagnelab.circles.web.views" />
+          <property role="2bNReQ" value="org.campagnelab.circles.web.client.views" />
+          <node concept="17Uvod" id="4c7_nAY5jne" role="lGtFl">
+            <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328856609124/3317590328856609125" />
+            <property role="2qtEX9" value="packageName" />
+            <node concept="3zFVjK" id="4c7_nAY5jnf" role="3zH0cK">
+              <node concept="3clFbS" id="4c7_nAY5jng" role="2VODD2">
+                <node concept="3clFbF" id="4c7_nAY5jos" role="3cqZAp">
+                  <node concept="3cpWs3" id="4c7_nAY5jot" role="3clFbG">
+                    <node concept="Xl_RD" id="4c7_nAY5jou" role="3uHU7w">
+                      <property role="Xl_RC" value=".client.views" />
+                    </node>
+                    <node concept="2OqwBi" id="4c7_nAY7cTm" role="3uHU7B">
+                      <node concept="2OqwBi" id="4c7_nAY7cTn" role="2Oq$k0">
+                        <node concept="2OqwBi" id="4c7_nAY7cTo" role="2Oq$k0">
+                          <node concept="2OqwBi" id="4c7_nAY7cTp" role="2Oq$k0">
+                            <node concept="1iwH7S" id="4c7_nAY7cTq" role="2Oq$k0" />
+                            <node concept="1st3f0" id="4c7_nAY7cTr" role="2OqNvi" />
+                          </node>
+                          <node concept="2RRcyG" id="4c7_nAY7cTs" role="2OqNvi">
+                            <ref role="2RRcyH" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+                          </node>
+                        </node>
+                        <node concept="1uHKPH" id="4c7_nAY7cTt" role="2OqNvi" />
+                      </node>
+                      <node concept="3TrcHB" id="4c7_nAY7cTu" role="2OqNvi">
+                        <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="17Uvod" id="4c7_nAY4IJi" role="lGtFl">
+          <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328854209162/3317590328854225222" />
+          <property role="2qtEX9" value="package" />
+          <node concept="3zFVjK" id="4c7_nAY4IJj" role="3zH0cK">
+            <node concept="3clFbS" id="4c7_nAY4IJk" role="2VODD2">
+              <node concept="3clFbF" id="4c7_nAY4IKD" role="3cqZAp">
+                <node concept="3cpWs3" id="4c7_nAY4IKE" role="3clFbG">
+                  <node concept="Xl_RD" id="4c7_nAY4IKF" role="3uHU7w">
+                    <property role="Xl_RC" value=".client.mappers" />
+                  </node>
+                  <node concept="2OqwBi" id="4c7_nAY6Rq$" role="3uHU7B">
+                    <node concept="2OqwBi" id="4c7_nAY6P03" role="2Oq$k0">
+                      <node concept="2OqwBi" id="4c7_nAY6OoI" role="2Oq$k0">
+                        <node concept="2OqwBi" id="4c7_nAY6NN4" role="2Oq$k0">
+                          <node concept="1iwH7S" id="4c7_nAY6NGa" role="2Oq$k0" />
+                          <node concept="1st3f0" id="4c7_nAY6NS1" role="2OqNvi" />
+                        </node>
+                        <node concept="2RRcyG" id="4c7_nAY6Ou0" role="2OqNvi">
+                          <ref role="2RRcyH" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="4c7_nAY6Q$H" role="2OqNvi" />
+                    </node>
+                    <node concept="3TrcHB" id="4c7_nAY6R$Q" role="2OqNvi">
+                      <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -1804,7 +1970,7 @@
     <node concept="2b_W8R" id="2SasHe_HgkH" role="lGtFl">
       <node concept="2bEx1p" id="2SasHe_Hh24" role="2bEx12">
         <property role="2bEHen" value="${module}/../../web-app/src/main/java" />
-        <property role="2bEHel" value="org.campagnelab.circles.web.models" />
+        <property role="2bEHel" value="org.campagnelab.circles.web.client.models" />
         <property role="2bDwcZ" value="model.java" />
         <node concept="17Uvod" id="2SasHe_Hh25" role="lGtFl">
           <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328854209162/3317590328854999532" />
@@ -1827,6 +1993,38 @@
             </node>
           </node>
         </node>
+        <node concept="17Uvod" id="4c7_nAY4ITM" role="lGtFl">
+          <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328854209162/3317590328854225222" />
+          <property role="2qtEX9" value="package" />
+          <node concept="3zFVjK" id="4c7_nAY4ITN" role="3zH0cK">
+            <node concept="3clFbS" id="4c7_nAY4ITO" role="2VODD2">
+              <node concept="3clFbF" id="4c7_nAY4IV9" role="3cqZAp">
+                <node concept="3cpWs3" id="4c7_nAY4IVa" role="3clFbG">
+                  <node concept="Xl_RD" id="4c7_nAY4IVb" role="3uHU7w">
+                    <property role="Xl_RC" value=".client.models" />
+                  </node>
+                  <node concept="2OqwBi" id="4c7_nAY7dMZ" role="3uHU7B">
+                    <node concept="2OqwBi" id="4c7_nAY6UeE" role="2Oq$k0">
+                      <node concept="2OqwBi" id="4c7_nAY6UeF" role="2Oq$k0">
+                        <node concept="2OqwBi" id="4c7_nAY6UeG" role="2Oq$k0">
+                          <node concept="1iwH7S" id="4c7_nAY6UeH" role="2Oq$k0" />
+                          <node concept="1st3f0" id="4c7_nAY6UeI" role="2OqNvi" />
+                        </node>
+                        <node concept="2RRcyG" id="4c7_nAY6UeJ" role="2OqNvi">
+                          <ref role="2RRcyH" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="4c7_nAY6UeK" role="2OqNvi" />
+                    </node>
+                    <node concept="3TrcHB" id="4c7_nAY7exA" role="2OqNvi">
+                      <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -1840,9 +2038,7 @@
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="2SasHe_mrow" role="1tU5fm">
         <ref role="3uigEE" to="lgza:~Property" resolve="Property" />
-        <node concept="3uibUv" id="2SasHe_mrpL" role="11_B2D">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
+        <node concept="17QB3L" id="4c7_nAY4BKM" role="11_B2D" />
       </node>
     </node>
     <node concept="3Tm1VV" id="2SasHe_mro3" role="1B3o_S" />
@@ -1855,6 +2051,38 @@
         <property role="2bEHen" value="${module}/../../web-app/src/main/java" />
         <property role="2bEHel" value="org.campagnelab.circles.web.mappers" />
         <property role="2bDwcZ" value="BaseConceptModel.java" />
+        <node concept="17Uvod" id="4c7_nAY5gq2" role="lGtFl">
+          <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328854209162/3317590328854225222" />
+          <property role="2qtEX9" value="package" />
+          <node concept="3zFVjK" id="4c7_nAY5gq3" role="3zH0cK">
+            <node concept="3clFbS" id="4c7_nAY5gq4" role="2VODD2">
+              <node concept="3clFbF" id="4c7_nAY5grg" role="3cqZAp">
+                <node concept="3cpWs3" id="4c7_nAY5gvs" role="3clFbG">
+                  <node concept="Xl_RD" id="4c7_nAY5gvA" role="3uHU7w">
+                    <property role="Xl_RC" value=".client.mappers" />
+                  </node>
+                  <node concept="2OqwBi" id="4c7_nAY8185" role="3uHU7B">
+                    <node concept="2OqwBi" id="4c7_nAY701k" role="2Oq$k0">
+                      <node concept="2OqwBi" id="4c7_nAY701l" role="2Oq$k0">
+                        <node concept="2OqwBi" id="4c7_nAY701m" role="2Oq$k0">
+                          <node concept="1iwH7S" id="4c7_nAY701n" role="2Oq$k0" />
+                          <node concept="1st3f0" id="4c7_nAY701o" role="2OqNvi" />
+                        </node>
+                        <node concept="2RRcyG" id="4c7_nAY701p" role="2OqNvi">
+                          <ref role="2RRcyH" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="4c7_nAY701q" role="2OqNvi" />
+                    </node>
+                    <node concept="3TrcHB" id="4c7_nAY81QG" role="2OqNvi">
+                      <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -1940,7 +2168,7 @@
     <node concept="2b_W8R" id="2SasHe_Hk4T" role="lGtFl">
       <node concept="2bEx1p" id="2SasHe_Hkcy" role="2bEx12">
         <property role="2bEHen" value="${module}/../../web-app/src/main/java" />
-        <property role="2bEHel" value="org.campagnelab.circles.web.models" />
+        <property role="2bEHel" value="org.campagnelab.circles.web.client.views" />
         <property role="2bDwcZ" value="uiBinder.xml" />
         <node concept="17Uvod" id="2SasHe_Hkcz" role="lGtFl">
           <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328854209162/3317590328854999532" />
@@ -1962,6 +2190,412 @@
                     <node concept="3TrcHB" id="2SasHe_HlqQ" role="2OqNvi">
                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="17Uvod" id="4c7_nAY4HMB" role="lGtFl">
+          <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328854209162/3317590328854225222" />
+          <property role="2qtEX9" value="package" />
+          <node concept="3zFVjK" id="4c7_nAY4HMC" role="3zH0cK">
+            <node concept="3clFbS" id="4c7_nAY4HMD" role="2VODD2">
+              <node concept="3clFbF" id="4c7_nAY5Xh1" role="3cqZAp">
+                <node concept="3cpWs3" id="4c7_nAY60QR" role="3clFbG">
+                  <node concept="Xl_RD" id="4c7_nAY4HWt" role="3uHU7w">
+                    <property role="Xl_RC" value=".client.views" />
+                  </node>
+                  <node concept="2OqwBi" id="4c7_nAY805t" role="3uHU7B">
+                    <node concept="2OqwBi" id="4c7_nAY70sb" role="2Oq$k0">
+                      <node concept="2OqwBi" id="4c7_nAY70sc" role="2Oq$k0">
+                        <node concept="2OqwBi" id="4c7_nAY70sd" role="2Oq$k0">
+                          <node concept="1iwH7S" id="4c7_nAY70se" role="2Oq$k0" />
+                          <node concept="1st3f0" id="4c7_nAY70sf" role="2OqNvi" />
+                        </node>
+                        <node concept="2RRcyG" id="4c7_nAY70sg" role="2OqNvi">
+                          <ref role="2RRcyH" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="4c7_nAY70sh" role="2OqNvi" />
+                    </node>
+                    <node concept="3TrcHB" id="4c7_nAY80cV" role="2OqNvi">
+                      <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2pMbU2" id="4c7_nAY4BLf">
+    <property role="3GE5qa" value="module" />
+    <property role="TrG5h" value="GwtModule" />
+    <node concept="3rIKKV" id="4c7_nAY4BLg" role="2pMbU3">
+      <node concept="2pNNFK" id="4c7_nAY4Cda" role="2pNm8H">
+        <property role="2pNNFO" value="module" />
+        <node concept="2pNm8U" id="4c7_nAY4Ek2" role="3o6s8t">
+          <node concept="3o66tx" id="4c7_nAY4Enw" role="3o66t8">
+            <property role="3o66tw" value="Code translated to javascript for the client will be under these relative paths:" />
+          </node>
+        </node>
+        <node concept="2pNNFK" id="4c7_nAY4CK3" role="3o6s8t">
+          <property role="2pNNFO" value="source" />
+          <node concept="2pNUuL" id="4c7_nAY4CME" role="2pNNFR">
+            <property role="2pNUuO" value="path" />
+            <node concept="2pMdtt" id="4c7_nAY4Ek0" role="2pMdts">
+              <property role="2pMdty" value="client" />
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="4c7_nAY4Epm" role="3o6s8t">
+          <property role="2pNNFO" value="source" />
+          <node concept="2pNUuL" id="4c7_nAY4Epn" role="2pNNFR">
+            <property role="2pNUuO" value="path" />
+            <node concept="2pMdtt" id="4c7_nAY4Epo" role="2pMdts">
+              <property role="2pMdty" value="shared" />
+            </node>
+          </node>
+        </node>
+        <node concept="3o6iSG" id="4c7_nAY4Eny" role="3o6s8t" />
+        <node concept="2pNNFK" id="4c7_nAY4CPj" role="3o6s8t">
+          <property role="2pNNFO" value="inherits" />
+          <node concept="2pNUuL" id="4c7_nAY4CRW" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="4c7_nAY4CRY" role="2pMdts">
+              <property role="2pMdty" value="jetbrains.jetpad.mapper.gwt.GwtMapper" />
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="4c7_nAY4CT5" role="3o6s8t">
+          <property role="2pNNFO" value="inherits" />
+          <node concept="2pNUuL" id="4c7_nAY4CT6" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="4c7_nAY4CVO" role="2pMdts">
+              <property role="2pMdty" value="jetbrains.jetpad.model.ModelGwt" />
+            </node>
+          </node>
+        </node>
+        <node concept="2pNm8U" id="4c7_nAY4Egy" role="3o6s8t">
+          <node concept="3o66tx" id="4c7_nAY4EjY" role="3o66t8">
+            <property role="3o66tw" value="Use the following to speed up compilation by restricting to Chrome/Safari " />
+          </node>
+        </node>
+        <node concept="2pNNFK" id="4c7_nAY4CY$" role="3o6s8t">
+          <property role="2pNNFO" value="set-property" />
+          <node concept="2pNUuL" id="4c7_nAY4D1k" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="4c7_nAY4D1m" role="2pMdts">
+              <property role="2pMdty" value="user.agent" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="4c7_nAY4D1q" role="2pNNFR">
+            <property role="2pNUuO" value="value" />
+            <node concept="2pMdtt" id="4c7_nAY4D1u" role="2pMdts">
+              <property role="2pMdty" value="safari" />
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="4c7_nAY4D1w" role="3o6s8t">
+          <property role="2pNNFO" value="add-linker" />
+          <node concept="3o6iSG" id="4c7_nAY4D4i" role="3o6s8t">
+            <property role="3o6i5n" value="xsi-frame" />
+          </node>
+        </node>
+        <node concept="2pNm8U" id="4c7_nAY4Dyu" role="3o6s8t">
+          <node concept="3o66tx" id="4c7_nAY4DzE" role="3o66t8">
+            <property role="3o66tw" value="TODO: set following to name of generated entry point class:" />
+          </node>
+        </node>
+        <node concept="2pNNFK" id="4c7_nAY4D78" role="3o6s8t">
+          <property role="2pNNFO" value="entry-point" />
+          <node concept="3o6iSG" id="4c7_nAY4D9W" role="3o6s8t">
+            <property role="3o6i5n" value="org.campagnelab.circles.ModuleEntryPoint&gt;" />
+            <node concept="17Uvod" id="4c7_nAY8zQM" role="lGtFl">
+              <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/1622293396948952339/1622293396948953704" />
+              <property role="2qtEX9" value="value" />
+              <node concept="3zFVjK" id="4c7_nAY8zQN" role="3zH0cK">
+                <node concept="3clFbS" id="4c7_nAY8zQO" role="2VODD2">
+                  <node concept="3clFbF" id="4c7_nAY8zS1" role="3cqZAp">
+                    <node concept="3cpWs3" id="4c7_nAY8$3g" role="3clFbG">
+                      <node concept="Xl_RD" id="4c7_nAY8$3m" role="3uHU7w">
+                        <property role="Xl_RC" value="ModuleEntryPoint" />
+                      </node>
+                      <node concept="2OqwBi" id="4c7_nAY8zUe" role="3uHU7B">
+                        <node concept="30H73N" id="4c7_nAY8zS0" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="4c7_nAY8zY5" role="2OqNvi">
+                          <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="4c7_nAY4DA$" role="3o6s8t">
+          <property role="2pNNFO" value="inherits" />
+          <node concept="2pNUuL" id="4c7_nAY4DDu" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="4c7_nAY4DDw" role="2pMdts">
+              <property role="2pMdty" value="com.google.gwt.logging.Logging" />
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="4c7_nAY4DGt" role="3o6s8t">
+          <property role="2pNNFO" value="set-property" />
+          <node concept="2pNUuL" id="4c7_nAY4DJq" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="4c7_nAY4DV1" role="2pMdts">
+              <property role="2pMdty" value="gwt.logging.logLevel" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="4c7_nAY4DV5" role="2pNNFR">
+            <property role="2pNUuO" value="value" />
+            <node concept="2pMdtt" id="4c7_nAY4DV9" role="2pMdts">
+              <property role="2pMdty" value="INFO" />
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="4c7_nAY4DKI" role="3o6s8t">
+          <property role="2pNNFO" value="set-property" />
+          <node concept="2pNUuL" id="4c7_nAY4DKJ" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="4c7_nAY4E68" role="2pMdts">
+              <property role="2pMdty" value="gwt.logging.enabled" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="4c7_nAY4DVd" role="2pNNFR">
+            <property role="2pNUuO" value="value" />
+            <node concept="2pMdtt" id="4c7_nAY4E6a" role="2pMdts">
+              <property role="2pMdty" value="TRUE" />
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="4c7_nAY4DYi" role="3o6s8t">
+          <property role="2pNNFO" value="set-property" />
+          <node concept="2pNUuL" id="4c7_nAY4DYj" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="4c7_nAY4E6c" role="2pMdts">
+              <property role="2pMdty" value="gwt.logging.systemHandler" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="4c7_nAY4DYk" role="2pNNFR">
+            <property role="2pNUuO" value="value" />
+            <node concept="2pMdtt" id="4c7_nAY4E6e" role="2pMdts">
+              <property role="2pMdty" value="ENABLED" />
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="4c7_nAY4E1q" role="3o6s8t">
+          <property role="2pNNFO" value="set-property" />
+          <node concept="2pNUuL" id="4c7_nAY4E1r" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="4c7_nAY4E6g" role="2pMdts">
+              <property role="2pMdty" value="gwt.logging.consoleHandler" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="4c7_nAY4E1s" role="2pNNFR">
+            <property role="2pNUuO" value="value" />
+            <node concept="2pMdtt" id="4c7_nAY4E6i" role="2pMdts">
+              <property role="2pMdty" value="ENABLED" />
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="4c7_nAY4E2U" role="3o6s8t">
+          <property role="2pNNFO" value="set-property" />
+          <node concept="2pNUuL" id="4c7_nAY4E2V" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="4c7_nAY4EcZ" role="2pMdts">
+              <property role="2pMdty" value="gwt.logging.developmentModeHandler" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="4c7_nAY4E2W" role="2pNNFR">
+            <property role="2pNUuO" value="value" />
+            <node concept="2pMdtt" id="4c7_nAY4Ed1" role="2pMdts">
+              <property role="2pMdty" value="DISABLED" />
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="4c7_nAY4E9B" role="3o6s8t">
+          <property role="2pNNFO" value="set-property" />
+          <node concept="2pNUuL" id="4c7_nAY4E9C" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="4c7_nAY4Ed3" role="2pMdts">
+              <property role="2pMdty" value="gwt.logging.simpleRemoteHandler" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="4c7_nAY4E9D" role="2pNNFR">
+            <property role="2pNUuO" value="value" />
+            <node concept="2pMdtt" id="4c7_nAY4Ed5" role="2pMdts">
+              <property role="2pMdty" value="DISABLED" />
+            </node>
+          </node>
+        </node>
+        <node concept="3o6iSG" id="4c7_nAY4DJs" role="3o6s8t" />
+        <node concept="3o6iSG" id="4c7_nAY4E6k" role="3o6s8t" />
+        <node concept="2pNUuL" id="4c7_nAY4Cde" role="2pNNFR">
+          <property role="2pNUuO" value="renameTo" />
+          <node concept="2pMdtt" id="4c7_nAY4Cdg" role="2pMdts">
+            <property role="2pMdty" value="moduleName" />
+            <node concept="17Uvod" id="4c7_nAY4Cdi" role="lGtFl">
+              <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
+              <property role="2qtEX9" value="text" />
+              <node concept="3zFVjK" id="4c7_nAY4Cdj" role="3zH0cK">
+                <node concept="3clFbS" id="4c7_nAY4Cdk" role="2VODD2">
+                  <node concept="3clFbF" id="4c7_nAY4Ce1" role="3cqZAp">
+                    <node concept="2OqwBi" id="4c7_nAY4Cvl" role="3clFbG">
+                      <node concept="2OqwBi" id="4c7_nAY4CkZ" role="2Oq$k0">
+                        <node concept="2OqwBi" id="4c7_nAY4CfM" role="2Oq$k0">
+                          <node concept="30H73N" id="4c7_nAY4Ce0" role="2Oq$k0" />
+                          <node concept="I4A8Y" id="4c7_nAY4Ci9" role="2OqNvi" />
+                        </node>
+                        <node concept="13u695" id="4c7_nAY4Crp" role="2OqNvi" />
+                      </node>
+                      <node concept="2qgKlT" id="4c7_nAY4CBl" role="2OqNvi">
+                        <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2pNm8N" id="4c7_nAY4Cd4" role="2pNm8Q">
+        <node concept="29q25o" id="4c7_nAY4Cd6" role="BGLLu">
+          <property role="29q25t" value="module" />
+          <node concept="29qyjW" id="4c7_nAY4Cd8" role="29qyi3">
+            <property role="29qyi6" value="true" />
+            <property role="29qyi0" value="-//Google Inc.//DTD Google Web Toolkit 2.0//EN" />
+            <property role="29qyi7" value="http://google-web-toolkit.googlecode.com/svn/releases/2.0/distro-source/core/src/gwt-module.dtd" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="n94m4" id="4c7_nAY4BLi" role="lGtFl">
+      <ref role="n9lRv" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+    </node>
+    <node concept="17Uvod" id="4c7_nAY4BLk" role="lGtFl">
+      <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+      <property role="2qtEX9" value="name" />
+      <node concept="3zFVjK" id="4c7_nAY4BLl" role="3zH0cK">
+        <node concept="3clFbS" id="4c7_nAY4BLm" role="2VODD2">
+          <node concept="3clFbH" id="4c7_nAY5IT9" role="3cqZAp" />
+          <node concept="3clFbF" id="4c7_nAY4BM$" role="3cqZAp">
+            <node concept="3cpWs3" id="4c7_nAY4C49" role="3clFbG">
+              <node concept="Xl_RD" id="4c7_nAY4C4f" role="3uHU7w">
+                <property role="Xl_RC" value=".gwt" />
+              </node>
+              <node concept="2OqwBi" id="4c7_nAY4BOl" role="3uHU7B">
+                <node concept="30H73N" id="4c7_nAY4BMz" role="2Oq$k0" />
+                <node concept="3TrcHB" id="4c7_nAY61pm" role="2OqNvi">
+                  <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2b_W8R" id="4c7_nAY4EsU" role="lGtFl">
+      <node concept="2bEx1p" id="4c7_nAY4EsV" role="2bEx12">
+        <property role="2bEHen" value="${module}/../../web-app/src/main/java" />
+        <property role="2bEHel" value="org.campagnelab.circles.web" />
+        <property role="2bDwcZ" value="module.gwt.xml" />
+        <node concept="17Uvod" id="4c7_nAY4GEN" role="lGtFl">
+          <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328854209162/3317590328854999532" />
+          <property role="2qtEX9" value="generatedFilename" />
+          <node concept="3zFVjK" id="4c7_nAY4GEO" role="3zH0cK">
+            <node concept="3clFbS" id="4c7_nAY4GEP" role="2VODD2">
+              <node concept="3clFbF" id="4c7_nAY4GFx" role="3cqZAp">
+                <node concept="3cpWs3" id="4c7_nAY4GFy" role="3clFbG">
+                  <node concept="Xl_RD" id="4c7_nAY4GFz" role="3uHU7w">
+                    <property role="Xl_RC" value=".gwt.xml" />
+                  </node>
+                  <node concept="2OqwBi" id="4c7_nAY4GFA" role="3uHU7B">
+                    <node concept="30H73N" id="4c7_nAY4GFB" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="4c7_nAY61BE" role="2OqNvi">
+                      <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="17Uvod" id="4c7_nAY4H8U" role="lGtFl">
+          <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328854209162/3317590328854225222" />
+          <property role="2qtEX9" value="package" />
+          <node concept="3zFVjK" id="4c7_nAY4H8V" role="3zH0cK">
+            <node concept="3clFbS" id="4c7_nAY4H8W" role="2VODD2">
+              <node concept="3clFbF" id="4c7_nAY4Hc8" role="3cqZAp">
+                <node concept="2OqwBi" id="4c7_nAY5JSi" role="3clFbG">
+                  <node concept="30H73N" id="4c7_nAY5JNu" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="4c7_nAY5WBH" role="2OqNvi">
+                    <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="4c7_nAY8tZh">
+    <property role="3GE5qa" value="module" />
+    <property role="TrG5h" value="ModuleEntryPoint" />
+    <node concept="3clFb_" id="4c7_nAY8u0z" role="jymVt">
+      <property role="TrG5h" value="onModuleLoad" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="2AHcQZ" id="4c7_nAY8u0$" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="3clFbS" id="4c7_nAY8u0_" role="3clF47" />
+      <node concept="3Tm1VV" id="4c7_nAY8u15" role="1B3o_S" />
+      <node concept="3cqZAl" id="4c7_nAY8u16" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="4c7_nAY8u0q" role="jymVt" />
+    <node concept="3Tm1VV" id="4c7_nAY8tZi" role="1B3o_S" />
+    <node concept="n94m4" id="4c7_nAY8tZj" role="lGtFl">
+      <ref role="n9lRv" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+    </node>
+    <node concept="3uibUv" id="4c7_nAY8tZO" role="EKbjA">
+      <ref role="3uigEE" to="wwko:~EntryPoint" resolve="EntryPoint" />
+    </node>
+    <node concept="2b_W8R" id="4c7_nAY8uhy" role="lGtFl">
+      <node concept="2bEx1p" id="4c7_nAY8vj$" role="2bEx12">
+        <property role="2bEHen" value="${module}/../../web-app/src/main/java" />
+        <property role="2bEHel" value="org.campagnelab.circles.web" />
+        <property role="2bDwcZ" value="ModuleEntryPoint.java" />
+        <node concept="17Uvod" id="4c7_nAY8vjI" role="lGtFl">
+          <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328854209162/3317590328854225222" />
+          <property role="2qtEX9" value="package" />
+          <node concept="3zFVjK" id="4c7_nAY8vjJ" role="3zH0cK">
+            <node concept="3clFbS" id="4c7_nAY8vjK" role="2VODD2">
+              <node concept="3clFbF" id="4c7_nAY8vjL" role="3cqZAp">
+                <node concept="2OqwBi" id="4c7_nAY8vjO" role="3clFbG">
+                  <node concept="2OqwBi" id="4c7_nAY8vjP" role="2Oq$k0">
+                    <node concept="2OqwBi" id="4c7_nAY8vjQ" role="2Oq$k0">
+                      <node concept="2OqwBi" id="4c7_nAY8vjR" role="2Oq$k0">
+                        <node concept="1iwH7S" id="4c7_nAY8vjS" role="2Oq$k0" />
+                        <node concept="1st3f0" id="4c7_nAY8vjT" role="2OqNvi" />
+                      </node>
+                      <node concept="2RRcyG" id="4c7_nAY8vjU" role="2OqNvi">
+                        <ref role="2RRcyH" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+                      </node>
+                    </node>
+                    <node concept="1uHKPH" id="4c7_nAY8vjV" role="2OqNvi" />
+                  </node>
+                  <node concept="3TrcHB" id="4c7_nAY8vjW" role="2OqNvi">
+                    <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
                   </node>
                 </node>
               </node>

@@ -74,6 +74,9 @@
         <property id="3811513598467539110" name="groupId" index="1pRVva" />
         <property id="3811513598467539111" name="artifactId" index="1pRVvb" />
       </concept>
+      <concept id="4829993475490891244" name="org.campagnelab.circles.aspect.structure.GwtModule" flags="ng" index="3X4l2l">
+        <property id="4829993475490925500" name="moduleName" index="3X4dV5" />
+      </concept>
     </language>
   </registry>
   <node concept="B0a0o" id="4UvP5h6JFr9">
@@ -158,6 +161,9 @@
       <property role="1pRVvb" value="circles" />
       <property role="1pRVv4" value="1.0-SNAPSHOT" />
     </node>
+  </node>
+  <node concept="3X4l2l" id="4c7_nAY6nuA">
+    <property role="3X4dV5" value="org.campagnelab.circles" />
   </node>
 </model>
 
