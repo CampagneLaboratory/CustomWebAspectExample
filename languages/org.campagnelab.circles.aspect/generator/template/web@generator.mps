@@ -224,10 +224,6 @@
       <concept id="1227303129915" name="jetbrains.mps.lang.generator.structure.AbstractMacro" flags="lg" index="30XT8A">
         <property id="3265704088513289864" name="comment" index="34cw8o" />
       </concept>
-      <concept id="1092059087312" name="jetbrains.mps.lang.generator.structure.TemplateDeclaration" flags="ig" index="13MO4I">
-        <reference id="1168285871518" name="applicableConcept" index="3gUMe" />
-        <child id="1092060348987" name="contentNode" index="13RCb5" />
-      </concept>
       <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="ln" index="17Uvod">
         <child id="1167756362303" name="propertyValueFunction" index="3zH0cK" />
       </concept>
@@ -1974,11 +1970,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="13MO4I" id="2SasHe_$CjQ">
-    <property role="TrG5h" value="reduce_CellModel_RefCell" />
-    <ref role="3gUMe" to="tpc2:fPiCG$y" resolve="CellModel_RefCell" />
-    <node concept="2VYdi" id="2SasHe_$CjR" role="13RCb5" />
   </node>
 </model>
 
