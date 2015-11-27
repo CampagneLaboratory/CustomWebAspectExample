@@ -34,8 +34,9 @@
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="q4uu" ref="r:700dcccc-5294-4569-a97b-cb7b4632a7c8(web@generator)" />
     <import index="x3ey" ref="r:db1c5d5d-cc86-4bed-9aa5-f6746cfde04e(org.campagnelab.circles.aspect.behavior)" />
+    <import index="xmwj" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.user.client.rpc(org.google.gwt/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -99,7 +100,9 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
+        <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
+      </concept>
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -604,8 +607,21 @@
     </node>
     <node concept="3lhOvk" id="4c7_nAYa2oW" role="3lj3bC">
       <property role="2n97ot" value="Create Class that implements web-based editor" />
+      <property role="13Pg2o" value="true" />
       <ref role="30HIoZ" to="6je1:4bOz9Wk5cXz" resolve="PersistedConcepts" />
       <ref role="3lhOvi" node="4c7_nAY92_$" resolve="POJOBean" />
+    </node>
+    <node concept="3lhOvk" id="2pxiRTw5awu" role="3lj3bC">
+      <ref role="30HIoZ" to="6je1:4bOz9Wk5cXz" resolve="PersistedConcepts" />
+      <ref role="3lhOvi" node="2pxiRTw5awB" resolve="DbGenericService" />
+    </node>
+    <node concept="3lhOvk" id="2pxiRTw5awU" role="3lj3bC">
+      <ref role="30HIoZ" to="6je1:4bOz9Wk5cXz" resolve="PersistedConcepts" />
+      <ref role="3lhOvi" node="2pxiRTw5ax4" resolve="DbGenericServiceAsync" />
+    </node>
+    <node concept="3lhOvk" id="2pxiRTw6ZKC" role="3lj3bC">
+      <ref role="30HIoZ" to="6je1:4bOz9Wk5cXz" resolve="PersistedConcepts" />
+      <ref role="3lhOvi" node="2pxiRTw6ZKN" resolve="DbGenericServiceImpl" />
     </node>
     <node concept="3lhOvk" id="2SasHe_zBO9" role="3lj3bC">
       <property role="13Pg2o" value="true" />
@@ -2919,6 +2935,373 @@
                       <node concept="1uHKPH" id="4c7_nAY92CC" role="2OqNvi" />
                     </node>
                     <node concept="3TrcHB" id="4c7_nAY92CD" role="2OqNvi">
+                      <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3uibUv" id="2pxiRTw6NRR" role="EKbjA">
+      <ref role="3uigEE" to="guwi:~Serializable" resolve="Serializable" />
+    </node>
+  </node>
+  <node concept="3HP615" id="2pxiRTw5awB">
+    <property role="TrG5h" value="DbGenericService" />
+    <property role="3GE5qa" value="services" />
+    <node concept="3clFb_" id="2pxiRTw5ayb" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="getModule" />
+      <node concept="37vLTG" id="2pxiRTw5ayI" role="3clF46">
+        <property role="TrG5h" value="moduleName" />
+        <node concept="17QB3L" id="2pxiRTw5ayW" role="1tU5fm" />
+      </node>
+      <node concept="3uibUv" id="2pxiRTw5azl" role="3clF45">
+        <ref role="3uigEE" node="4c7_nAY92_$" resolve="POJOBean" />
+        <node concept="1ZhdrF" id="2pxiRTw5az$" role="lGtFl">
+          <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
+          <property role="2qtEX8" value="classifier" />
+          <node concept="3$xsQk" id="2pxiRTw5az_" role="3$ytzL">
+            <node concept="3clFbS" id="2pxiRTw5azA" role="2VODD2">
+              <node concept="3clFbF" id="2pxiRTw5btu" role="3cqZAp">
+                <node concept="Xl_RD" id="2pxiRTw5btt" role="3clFbG">
+                  <property role="Xl_RC" value="Module_Bean" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2pxiRTw5aye" role="1B3o_S" />
+      <node concept="3clFbS" id="2pxiRTw5ayf" role="3clF47" />
+    </node>
+    <node concept="3Tm1VV" id="2pxiRTw5awC" role="1B3o_S" />
+    <node concept="n94m4" id="2pxiRTw5awD" role="lGtFl">
+      <ref role="n9lRv" to="6je1:4bOz9Wk5cXz" resolve="PersistedConcepts" />
+    </node>
+    <node concept="3uibUv" id="2pxiRTw5axZ" role="3HQHJm">
+      <ref role="3uigEE" to="xmwj:~RemoteService" resolve="RemoteService" />
+    </node>
+    <node concept="2b_W8R" id="2pxiRTw5l7z" role="lGtFl">
+      <node concept="2bEx1p" id="2pxiRTw5lfN" role="2bEx12">
+        <property role="2bEHen" value="${module}/../../web-app/src/main/java" />
+        <property role="2bEHel" value="org.campagnelab.circles.web.client" />
+        <property role="2bDwcZ" value="DbGenericService.java" />
+        <node concept="2bNReR" id="2pxiRTw5lfO" role="2bNReO">
+          <property role="2bNReQ" value="org.campagnelab.circles.web.client.beans" />
+          <node concept="17Uvod" id="2pxiRTw5lfP" role="lGtFl">
+            <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328856609124/3317590328856609125" />
+            <property role="2qtEX9" value="packageName" />
+            <node concept="3zFVjK" id="2pxiRTw5lfQ" role="3zH0cK">
+              <node concept="3clFbS" id="2pxiRTw5lfR" role="2VODD2">
+                <node concept="3clFbF" id="2pxiRTw5lfS" role="3cqZAp">
+                  <node concept="3cpWs3" id="2pxiRTw5lfT" role="3clFbG">
+                    <node concept="Xl_RD" id="2pxiRTw5lfU" role="3uHU7w">
+                      <property role="Xl_RC" value=".shared.beans" />
+                    </node>
+                    <node concept="2OqwBi" id="2pxiRTw5lfV" role="3uHU7B">
+                      <node concept="2OqwBi" id="2pxiRTw5lfW" role="2Oq$k0">
+                        <node concept="2OqwBi" id="2pxiRTw5lfX" role="2Oq$k0">
+                          <node concept="2OqwBi" id="2pxiRTw5lfY" role="2Oq$k0">
+                            <node concept="1iwH7S" id="2pxiRTw5lfZ" role="2Oq$k0" />
+                            <node concept="1st3f0" id="2pxiRTw5lg0" role="2OqNvi" />
+                          </node>
+                          <node concept="2RRcyG" id="2pxiRTw5lg1" role="2OqNvi">
+                            <ref role="2RRcyH" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+                          </node>
+                        </node>
+                        <node concept="1uHKPH" id="2pxiRTw5lg2" role="2OqNvi" />
+                      </node>
+                      <node concept="3TrcHB" id="2pxiRTw5lg3" role="2OqNvi">
+                        <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="17Uvod" id="2pxiRTw5lg4" role="lGtFl">
+          <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328854209162/3317590328854225222" />
+          <property role="2qtEX9" value="package" />
+          <node concept="3zFVjK" id="2pxiRTw5lg5" role="3zH0cK">
+            <node concept="3clFbS" id="2pxiRTw5lg6" role="2VODD2">
+              <node concept="3clFbF" id="2pxiRTw5lg7" role="3cqZAp">
+                <node concept="3cpWs3" id="2pxiRTw5lg8" role="3clFbG">
+                  <node concept="Xl_RD" id="2pxiRTw5lg9" role="3uHU7w">
+                    <property role="Xl_RC" value=".client" />
+                  </node>
+                  <node concept="2OqwBi" id="2pxiRTw5lga" role="3uHU7B">
+                    <node concept="2OqwBi" id="2pxiRTw5lgb" role="2Oq$k0">
+                      <node concept="2OqwBi" id="2pxiRTw5lgc" role="2Oq$k0">
+                        <node concept="2OqwBi" id="2pxiRTw5lgd" role="2Oq$k0">
+                          <node concept="1iwH7S" id="2pxiRTw5lge" role="2Oq$k0" />
+                          <node concept="1st3f0" id="2pxiRTw5lgf" role="2OqNvi" />
+                        </node>
+                        <node concept="2RRcyG" id="2pxiRTw5lgg" role="2OqNvi">
+                          <ref role="2RRcyH" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="2pxiRTw5lgh" role="2OqNvi" />
+                    </node>
+                    <node concept="3TrcHB" id="2pxiRTw5lgi" role="2OqNvi">
+                      <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3HP615" id="2pxiRTw5ax4">
+    <property role="TrG5h" value="DbGenericServiceAsync" />
+    <property role="3GE5qa" value="services" />
+    <node concept="3clFb_" id="2pxiRTw5bAz" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="getModule" />
+      <node concept="37vLTG" id="2pxiRTw5bA$" role="3clF46">
+        <property role="TrG5h" value="moduleName" />
+        <node concept="17QB3L" id="2pxiRTw5bA_" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="2pxiRTw6FhK" role="3clF46">
+        <property role="TrG5h" value="asyn" />
+        <node concept="3uibUv" id="2pxiRTw6Fi5" role="1tU5fm">
+          <ref role="3uigEE" to="xmwj:~AsyncCallback" resolve="AsyncCallback" />
+          <node concept="3uibUv" id="2pxiRTw6FiG" role="11_B2D">
+            <ref role="3uigEE" node="4c7_nAY92_$" resolve="POJOBean" />
+            <node concept="1ZhdrF" id="2pxiRTw6Fk4" role="lGtFl">
+              <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
+              <property role="2qtEX8" value="classifier" />
+              <node concept="3$xsQk" id="2pxiRTw6Fk5" role="3$ytzL">
+                <node concept="3clFbS" id="2pxiRTw6Fk6" role="2VODD2">
+                  <node concept="3clFbF" id="2pxiRTw6Fmd" role="3cqZAp">
+                    <node concept="Xl_RD" id="2pxiRTw6Fmc" role="3clFbG">
+                      <property role="Xl_RC" value="Module_Bean" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2pxiRTw5bAG" role="1B3o_S" />
+      <node concept="3clFbS" id="2pxiRTw5bAH" role="3clF47" />
+      <node concept="3cqZAl" id="2pxiRTw5bDD" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="2pxiRTw5bAx" role="jymVt" />
+    <node concept="3Tm1VV" id="2pxiRTw5ax5" role="1B3o_S" />
+    <node concept="n94m4" id="2pxiRTw5ax6" role="lGtFl">
+      <ref role="n9lRv" to="6je1:4bOz9Wk5cXz" resolve="PersistedConcepts" />
+    </node>
+    <node concept="2b_W8R" id="2pxiRTw5imY" role="lGtFl">
+      <node concept="2bEx1p" id="2pxiRTw5jip" role="2bEx12">
+        <property role="2bEHen" value="${module}/../../web-app/src/main/java" />
+        <property role="2bEHel" value="org.campagnelab.circles.web.client" />
+        <property role="2bDwcZ" value="DbGenericServiceAsync.java" />
+        <node concept="2bNReR" id="2pxiRTw5kW1" role="2bNReO">
+          <property role="2bNReQ" value="org.campagnelab.circles.web.shared.beans" />
+          <node concept="17Uvod" id="2pxiRTw5kW3" role="lGtFl">
+            <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328856609124/3317590328856609125" />
+            <property role="2qtEX9" value="packageName" />
+            <node concept="3zFVjK" id="2pxiRTw5kW4" role="3zH0cK">
+              <node concept="3clFbS" id="2pxiRTw5kW5" role="2VODD2">
+                <node concept="3clFbF" id="2pxiRTw5kWL" role="3cqZAp">
+                  <node concept="3cpWs3" id="2pxiRTw5kWM" role="3clFbG">
+                    <node concept="Xl_RD" id="2pxiRTw5kWN" role="3uHU7w">
+                      <property role="Xl_RC" value=".shared.beans" />
+                    </node>
+                    <node concept="2OqwBi" id="2pxiRTw5kWO" role="3uHU7B">
+                      <node concept="2OqwBi" id="2pxiRTw5kWP" role="2Oq$k0">
+                        <node concept="2OqwBi" id="2pxiRTw5kWQ" role="2Oq$k0">
+                          <node concept="2OqwBi" id="2pxiRTw5kWR" role="2Oq$k0">
+                            <node concept="1iwH7S" id="2pxiRTw5kWS" role="2Oq$k0" />
+                            <node concept="1st3f0" id="2pxiRTw5kWT" role="2OqNvi" />
+                          </node>
+                          <node concept="2RRcyG" id="2pxiRTw5kWU" role="2OqNvi">
+                            <ref role="2RRcyH" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+                          </node>
+                        </node>
+                        <node concept="1uHKPH" id="2pxiRTw5kWV" role="2OqNvi" />
+                      </node>
+                      <node concept="3TrcHB" id="2pxiRTw5kWW" role="2OqNvi">
+                        <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="17Uvod" id="2pxiRTw5jiz" role="lGtFl">
+          <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328854209162/3317590328854225222" />
+          <property role="2qtEX9" value="package" />
+          <node concept="3zFVjK" id="2pxiRTw5ji$" role="3zH0cK">
+            <node concept="3clFbS" id="2pxiRTw5ji_" role="2VODD2">
+              <node concept="3clFbF" id="2pxiRTw5jiA" role="3cqZAp">
+                <node concept="3cpWs3" id="2pxiRTw5jiB" role="3clFbG">
+                  <node concept="Xl_RD" id="2pxiRTw5jiC" role="3uHU7w">
+                    <property role="Xl_RC" value=".client" />
+                  </node>
+                  <node concept="2OqwBi" id="2pxiRTw5jiD" role="3uHU7B">
+                    <node concept="2OqwBi" id="2pxiRTw5jiE" role="2Oq$k0">
+                      <node concept="2OqwBi" id="2pxiRTw5jiF" role="2Oq$k0">
+                        <node concept="2OqwBi" id="2pxiRTw5jiG" role="2Oq$k0">
+                          <node concept="1iwH7S" id="2pxiRTw5jiH" role="2Oq$k0" />
+                          <node concept="1st3f0" id="2pxiRTw5jiI" role="2OqNvi" />
+                        </node>
+                        <node concept="2RRcyG" id="2pxiRTw5jiJ" role="2OqNvi">
+                          <ref role="2RRcyH" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="2pxiRTw5jiK" role="2OqNvi" />
+                    </node>
+                    <node concept="3TrcHB" id="2pxiRTw5jiL" role="2OqNvi">
+                      <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="2pxiRTw6ZKN">
+    <property role="TrG5h" value="DbGenericServiceImpl" />
+    <property role="3GE5qa" value="services" />
+    <node concept="3Tm1VV" id="2pxiRTw6ZKO" role="1B3o_S" />
+    <node concept="n94m4" id="2pxiRTw6ZKP" role="lGtFl">
+      <ref role="n9lRv" to="6je1:4bOz9Wk5cXz" resolve="PersistedConcepts" />
+    </node>
+    <node concept="3uibUv" id="2pxiRTw6ZLE" role="EKbjA">
+      <ref role="3uigEE" node="2pxiRTw5awB" resolve="DbGenericService" />
+    </node>
+    <node concept="3clFb_" id="2pxiRTw6ZM3" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getModule" />
+      <node concept="37vLTG" id="2pxiRTw6ZM4" role="3clF46">
+        <property role="TrG5h" value="moduleName" />
+        <node concept="17QB3L" id="2pxiRTw6ZM5" role="1tU5fm" />
+      </node>
+      <node concept="3uibUv" id="2pxiRTw6ZM6" role="3clF45">
+        <ref role="3uigEE" node="4c7_nAY92_$" resolve="POJOBean" />
+      </node>
+      <node concept="3Tm1VV" id="2pxiRTw6ZMc" role="1B3o_S" />
+      <node concept="3clFbS" id="2pxiRTw6ZMe" role="3clF47">
+        <node concept="3clFbF" id="2pxiRTw6ZMg" role="3cqZAp">
+          <node concept="10Nm6u" id="2pxiRTw6ZMf" role="3clFbG" />
+        </node>
+      </node>
+    </node>
+    <node concept="2b_W8R" id="2pxiRTw6ZOb" role="lGtFl">
+      <node concept="2bEx1p" id="2pxiRTw6ZTT" role="2bEx12">
+        <property role="2bEHen" value="${module}/../../web-app/src/main/java" />
+        <property role="2bEHel" value="org.campagnelab.circles.web.server" />
+        <property role="2bDwcZ" value="DbGenericServiceImpl.java" />
+        <node concept="2bNReR" id="2pxiRTw6ZTU" role="2bNReO">
+          <property role="2bNReQ" value="org.campagnelab.circles.web.shared.beans" />
+          <node concept="17Uvod" id="2pxiRTw6ZTV" role="lGtFl">
+            <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328856609124/3317590328856609125" />
+            <property role="2qtEX9" value="packageName" />
+            <node concept="3zFVjK" id="2pxiRTw6ZTW" role="3zH0cK">
+              <node concept="3clFbS" id="2pxiRTw6ZTX" role="2VODD2">
+                <node concept="3clFbF" id="2pxiRTw6ZTY" role="3cqZAp">
+                  <node concept="3cpWs3" id="2pxiRTw6ZTZ" role="3clFbG">
+                    <node concept="Xl_RD" id="2pxiRTw6ZU0" role="3uHU7w">
+                      <property role="Xl_RC" value=".shared.beans" />
+                    </node>
+                    <node concept="2OqwBi" id="2pxiRTw6ZU1" role="3uHU7B">
+                      <node concept="2OqwBi" id="2pxiRTw6ZU2" role="2Oq$k0">
+                        <node concept="2OqwBi" id="2pxiRTw6ZU3" role="2Oq$k0">
+                          <node concept="2OqwBi" id="2pxiRTw6ZU4" role="2Oq$k0">
+                            <node concept="1iwH7S" id="2pxiRTw6ZU5" role="2Oq$k0" />
+                            <node concept="1st3f0" id="2pxiRTw6ZU6" role="2OqNvi" />
+                          </node>
+                          <node concept="2RRcyG" id="2pxiRTw6ZU7" role="2OqNvi">
+                            <ref role="2RRcyH" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+                          </node>
+                        </node>
+                        <node concept="1uHKPH" id="2pxiRTw6ZU8" role="2OqNvi" />
+                      </node>
+                      <node concept="3TrcHB" id="2pxiRTw6ZU9" role="2OqNvi">
+                        <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2bNReR" id="2pxiRTw700r" role="2bNReO">
+          <property role="2bNReQ" value="web.client" />
+          <node concept="17Uvod" id="2pxiRTw700H" role="lGtFl">
+            <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328856609124/3317590328856609125" />
+            <property role="2qtEX9" value="packageName" />
+            <node concept="3zFVjK" id="2pxiRTw700I" role="3zH0cK">
+              <node concept="3clFbS" id="2pxiRTw700J" role="2VODD2">
+                <node concept="3clFbF" id="2pxiRTw706r" role="3cqZAp">
+                  <node concept="3cpWs3" id="2pxiRTw706s" role="3clFbG">
+                    <node concept="Xl_RD" id="2pxiRTw706t" role="3uHU7w">
+                      <property role="Xl_RC" value=".client" />
+                    </node>
+                    <node concept="2OqwBi" id="2pxiRTw706u" role="3uHU7B">
+                      <node concept="2OqwBi" id="2pxiRTw706v" role="2Oq$k0">
+                        <node concept="2OqwBi" id="2pxiRTw706w" role="2Oq$k0">
+                          <node concept="2OqwBi" id="2pxiRTw706x" role="2Oq$k0">
+                            <node concept="1iwH7S" id="2pxiRTw706y" role="2Oq$k0" />
+                            <node concept="1st3f0" id="2pxiRTw706z" role="2OqNvi" />
+                          </node>
+                          <node concept="2RRcyG" id="2pxiRTw706$" role="2OqNvi">
+                            <ref role="2RRcyH" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+                          </node>
+                        </node>
+                        <node concept="1uHKPH" id="2pxiRTw706_" role="2OqNvi" />
+                      </node>
+                      <node concept="3TrcHB" id="2pxiRTw706A" role="2OqNvi">
+                        <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="17Uvod" id="2pxiRTw6ZUa" role="lGtFl">
+          <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328854209162/3317590328854225222" />
+          <property role="2qtEX9" value="package" />
+          <node concept="3zFVjK" id="2pxiRTw6ZUb" role="3zH0cK">
+            <node concept="3clFbS" id="2pxiRTw6ZUc" role="2VODD2">
+              <node concept="3clFbF" id="2pxiRTw6ZUd" role="3cqZAp">
+                <node concept="3cpWs3" id="2pxiRTw6ZUe" role="3clFbG">
+                  <node concept="Xl_RD" id="2pxiRTw6ZUf" role="3uHU7w">
+                    <property role="Xl_RC" value=".server" />
+                  </node>
+                  <node concept="2OqwBi" id="2pxiRTw6ZUg" role="3uHU7B">
+                    <node concept="2OqwBi" id="2pxiRTw6ZUh" role="2Oq$k0">
+                      <node concept="2OqwBi" id="2pxiRTw6ZUi" role="2Oq$k0">
+                        <node concept="2OqwBi" id="2pxiRTw6ZUj" role="2Oq$k0">
+                          <node concept="1iwH7S" id="2pxiRTw6ZUk" role="2Oq$k0" />
+                          <node concept="1st3f0" id="2pxiRTw6ZUl" role="2OqNvi" />
+                        </node>
+                        <node concept="2RRcyG" id="2pxiRTw6ZUm" role="2OqNvi">
+                          <ref role="2RRcyH" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="2pxiRTw6ZUn" role="2OqNvi" />
+                    </node>
+                    <node concept="3TrcHB" id="2pxiRTw6ZUo" role="2OqNvi">
                       <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
                     </node>
                   </node>

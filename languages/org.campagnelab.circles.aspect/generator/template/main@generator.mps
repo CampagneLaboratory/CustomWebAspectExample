@@ -42,7 +42,6 @@
     <import index="ttfg" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.checkedName(MPS.Editor/)" />
     <import index="ahrh" ref="r:f922da3a-135f-4fe9-9051-9f018bc5c1bf(jetbrains.mps.lang.checkedName.typesystem)" />
     <import index="77ry" ref="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
-    <import index="u7l9" ref="f:diff_old#f:diff_repository#r:ccf57985-801c-4f69-ab7c-010c610dc9b9(org.campagnelab.circles.aspect.generator.template.main@generator@repository@old)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -4947,6 +4946,9 @@
                     </node>
                     <node concept="2GrUjf" id="beLIuVGYo5" role="37wK5m">
                       <ref role="2Gs0qQ" node="beLIuVGM1n" resolve="child" />
+                    </node>
+                    <node concept="37vLTw" id="2pxiRTw3Vi4" role="37wK5m">
+                      <ref role="3cqZAo" node="4c7_nAYiYp1" resolve="parentModel" />
                     </node>
                     <node concept="37vLTw" id="beLIuVGFVN" role="37wK5m">
                       <ref role="3cqZAo" node="beLIuVGyB3" resolve="db" />
