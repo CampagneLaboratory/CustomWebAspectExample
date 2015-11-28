@@ -3,18 +3,51 @@
   <persistence version="9" />
   <languages>
     <use id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="77ry" ref="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" implicit="true" />
+    <import index="77ry" ref="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
+        <child id="3542851458883491298" name="languageId" index="2V$M_3" />
+      </concept>
+      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="ng" index="2V$Bhx">
+        <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
+        <property id="3542851458883439832" name="languageId" index="2V$B1T" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
     <language id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect">
       <concept id="2986108014587570547" name="org.campagnelab.circles.aspect.structure.Database" flags="ng" index="B0a0o">
         <property id="2986108014587570548" name="url" index="B0a0v" />
         <property id="4824635715685243890" name="password" index="1mS5tH" />
         <property id="4824635715685243887" name="user" index="1mS5tK" />
+        <child id="2765574652333579748" name="queries" index="16iTqq" />
+      </concept>
+      <concept id="1004539053072257941" name="org.campagnelab.circles.aspect.structure.IncludeLanguage" flags="ng" index="10$slB">
+        <child id="2378691532651589473" name="language" index="2SVU0T" />
+      </concept>
+      <concept id="2765574652333579000" name="org.campagnelab.circles.aspect.structure.QueryArgument" flags="ng" index="16iT66">
+        <child id="2765574652333579001" name="type" index="16iT67" />
+      </concept>
+      <concept id="2765574652333578994" name="org.campagnelab.circles.aspect.structure.QueryKind" flags="ng" index="16iT6c">
+        <property id="2765574652333675583" name="sql" index="16jhX1" />
+        <child id="2765574652333579766" name="returnType" index="16iTq8" />
+        <child id="2765574652333579764" name="arguments" index="16iTqa" />
+      </concept>
+      <concept id="2765574652333578995" name="org.campagnelab.circles.aspect.structure.QueryReturnType" flags="ng" index="16iT6d">
+        <reference id="2765574652333578996" name="concept" index="16iT6a" />
       </concept>
       <concept id="4824635715685240681" name="org.campagnelab.circles.aspect.structure.IncludeConcepts" flags="ng" index="1mS4fQ">
         <reference id="4824635715685240682" name="c" index="1mS4fP" />
@@ -22,9 +55,20 @@
       <concept id="4824635715685240675" name="org.campagnelab.circles.aspect.structure.PersistedConcepts" flags="ng" index="1mS4fW">
         <child id="4824635715685240684" name="inclusionRules" index="1mS4fN" />
       </concept>
+      <concept id="4829993475490891244" name="org.campagnelab.circles.aspect.structure.GwtModule" flags="ng" index="3X4l2l">
+        <property id="4829993475490925500" name="moduleName" index="3X4dV5" />
+      </concept>
     </language>
   </registry>
   <node concept="1mS4fW" id="5eOdMaf2o3J">
+    <node concept="10$slB" id="6mblWKdIip2" role="1mS4fN">
+      <node concept="pHN19" id="6mblWKdIip3" role="2SVU0T">
+        <node concept="2V$Bhx" id="6mblWKdIipg" role="2V$M_3">
+          <property role="2V$B1T" value="87c8043e-fece-4ba6-9d13-3ef71e47af25" />
+          <property role="2V$B1Q" value="org.campagnelab.circles.model" />
+        </node>
+      </node>
+    </node>
     <node concept="1mS4fQ" id="5eOdMaf2o3M" role="1mS4fN">
       <ref role="1mS4fP" to="77ry:5eOdMaf2nSN" resolve="Project" />
     </node>
@@ -48,6 +92,31 @@
     <property role="B0a0v" value="remote:127.0.0.1/circles" />
     <property role="1mS5tK" value="admin" />
     <property role="1mS5tH" value="admin" />
+    <node concept="16iT6c" id="2pxiRTwb2VX" role="16iTqq">
+      <property role="TrG5h" value="lookupModule" />
+      <property role="16jhX1" value="select from Module where name =?" />
+      <node concept="16iT6d" id="2pxiRTwb2VY" role="16iTq8">
+        <ref role="16iT6a" to="77ry:5eOdMaf2nSQ" resolve="Module" />
+      </node>
+      <node concept="16iT66" id="2pxiRTwb2VZ" role="16iTqa">
+        <property role="TrG5h" value="moduleId" />
+        <node concept="17QB3L" id="2pxiRTwb2Wd" role="16iT67" />
+      </node>
+    </node>
+    <node concept="16iT6c" id="6mblWKdIf7R" role="16iTqq">
+      <property role="TrG5h" value="lookupModel" />
+      <property role="16jhX1" value="select from Model where modelId= ?" />
+      <node concept="16iT6d" id="6mblWKdIwiF" role="16iTq8">
+        <ref role="16iT6a" to="77ry:5eOdMaf2nST" resolve="Model" />
+      </node>
+      <node concept="16iT66" id="6mblWKdIf7T" role="16iTqa">
+        <property role="TrG5h" value="modelId" />
+        <node concept="17QB3L" id="6mblWKdIf83" role="16iT67" />
+      </node>
+    </node>
+  </node>
+  <node concept="3X4l2l" id="6mblWKdIZZl">
+    <property role="3X4dV5" value="org.campagnelab.circles.model" />
   </node>
 </model>
 

@@ -11,7 +11,6 @@
   <dependencies>
     <dependency reexport="false">b117aec4-8d9e-4c87-a347-e41e0dfe0990(org.campagnelab.circles.aspect.runtime)</dependency>
     <dependency reexport="false">87c8043e-fece-4ba6-9d13-3ef71e47af25(org.campagnelab.circles.model)</dependency>
-    <dependency reexport="false" scope="generate-into">8c40f9f4-b3bd-42d0-8b65-8e644273493c(org.campagnelab.circles.aspect)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
