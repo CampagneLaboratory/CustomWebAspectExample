@@ -541,9 +541,6 @@
         <property role="3F0ifm" value=")" />
         <node concept="Vb9p2" id="2pxiRTwb5gp" role="3F10Kt" />
       </node>
-      <node concept="3F0ifn" id="2pxiRTwaHSc" role="3EZMnx">
-        <property role="3F0ifm" value="-&gt;" />
-      </node>
       <node concept="3F1sOY" id="2pxiRTwaHSo" role="3EZMnx">
         <ref role="1NtTu8" to="6je1:2pxiRTwaHRQ" />
       </node>
@@ -559,6 +556,9 @@
   <node concept="24kQdi" id="2pxiRTwb2Wg">
     <ref role="1XX52x" to="6je1:2pxiRTwaHFN" resolve="QueryReturnType" />
     <node concept="3EZMnI" id="2pxiRTwb2Wi" role="2wV5jI">
+      <node concept="3F0ifn" id="6mblWKdIwiN" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
       <node concept="1iCGBv" id="2pxiRTwb2Wp" role="3EZMnx">
         <ref role="1NtTu8" to="6je1:2pxiRTwaHFO" />
         <node concept="1sVBvm" id="2pxiRTwb2Wr" role="1sWHZn">
