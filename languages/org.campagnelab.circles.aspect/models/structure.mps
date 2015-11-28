@@ -359,6 +359,12 @@
       <property role="TrG5h" value="moduleName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyj" id="6mblWKdLLCW" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="uses" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6mblWKdLLCY" resolve="GwtModuleRef" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2pxiRTwaHFM">
     <property role="1pbfSe" value="2037635472" />
@@ -411,6 +417,17 @@
     </node>
     <node concept="PrWs8" id="2pxiRTwaHR6" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6mblWKdLLCY">
+    <property role="1pbfSe" value="1934782986" />
+    <property role="TrG5h" value="GwtModuleRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6mblWKdLLCZ" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4c7_nAY5GnG" resolve="GwtModule" />
     </node>
   </node>
 </model>

@@ -6,6 +6,7 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="3" />
+    <use id="87c8043e-fece-4ba6-9d13-3ef71e47af25" name="org.campagnelab.circles.model" version="0" />
     <generationPart ref="8c40f9f4-b3bd-42d0-8b65-8e644273493c(org.campagnelab.circles.aspect)" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -14,9 +15,13 @@
     <import index="y8z9" ref="r:2c4c7e9e-399c-490f-b18e-ff7f5ebd651b(org.campagnelab.circles.aspect.runtime)" />
     <import index="avse" ref="r:51fcf803-02a7-4ac6-994f-040e45f3e9a5(org.campagnelab.circles.mockup.structure)" />
     <import index="77ry" ref="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
+    <import index="qkpo" ref="r:49694c02-82df-42da-ab19-bdfcf6883a78(org.campagnelab.circles.model.web)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
         <child id="3542851458883491298" name="languageId" index="2V$M_3" />
@@ -36,6 +41,7 @@
         <property id="2986108014587570548" name="url" index="B0a0v" />
         <property id="4824635715685243890" name="password" index="1mS5tH" />
         <property id="4824635715685243887" name="user" index="1mS5tK" />
+        <child id="2765574652333579748" name="queries" index="16iTqq" />
       </concept>
       <concept id="1556429057109701099" name="org.campagnelab.circles.aspect.structure.WebEditors" flags="ng" index="YxNCg">
         <child id="1556429057109701121" name="editors" index="YxNBU" />
@@ -45,6 +51,17 @@
       </concept>
       <concept id="1004539053072257941" name="org.campagnelab.circles.aspect.structure.IncludeLanguage" flags="ng" index="10$slB">
         <child id="2378691532651589473" name="language" index="2SVU0T" />
+      </concept>
+      <concept id="2765574652333579000" name="org.campagnelab.circles.aspect.structure.QueryArgument" flags="ng" index="16iT66">
+        <child id="2765574652333579001" name="type" index="16iT67" />
+      </concept>
+      <concept id="2765574652333578994" name="org.campagnelab.circles.aspect.structure.QueryKind" flags="ng" index="16iT6c">
+        <property id="2765574652333675583" name="sql" index="16jhX1" />
+        <child id="2765574652333579766" name="returnType" index="16iTq8" />
+        <child id="2765574652333579764" name="arguments" index="16iTqa" />
+      </concept>
+      <concept id="2765574652333578995" name="org.campagnelab.circles.aspect.structure.QueryReturnType" flags="ng" index="16iT6d">
+        <reference id="2765574652333578996" name="concept" index="16iT6a" />
       </concept>
       <concept id="4824635715685240681" name="org.campagnelab.circles.aspect.structure.IncludeConcepts" flags="ng" index="1mS4fQ">
         <reference id="4824635715685240682" name="c" index="1mS4fP" />
@@ -76,8 +93,12 @@
         <property id="3811513598467539110" name="groupId" index="1pRVva" />
         <property id="3811513598467539111" name="artifactId" index="1pRVvb" />
       </concept>
+      <concept id="7317038553509599806" name="org.campagnelab.circles.aspect.structure.GwtModuleRef" flags="ng" index="1Cj4RM">
+        <reference id="7317038553509599807" name="ref" index="1Cj4RN" />
+      </concept>
       <concept id="4829993475490891244" name="org.campagnelab.circles.aspect.structure.GwtModule" flags="ng" index="3X4l2l">
         <property id="4829993475490925500" name="moduleName" index="3X4dV5" />
+        <child id="7317038553509599804" name="uses" index="1Cj4RK" />
       </concept>
     </language>
   </registry>
@@ -85,6 +106,17 @@
     <property role="B0a0v" value="remote:127.0.0.1/circles" />
     <property role="1mS5tK" value="admin" />
     <property role="1mS5tH" value="admin" />
+    <node concept="16iT6c" id="6mblWKdLHVB" role="16iTqq">
+      <property role="TrG5h" value="lookupCircle" />
+      <property role="16jhX1" value="select from Circle where id =?" />
+      <node concept="16iT6d" id="6mblWKdLHVC" role="16iTq8">
+        <ref role="16iT6a" to="avse:7pelyIRkkSj" resolve="Circle" />
+      </node>
+      <node concept="16iT66" id="6mblWKdLHVD" role="16iTqa">
+        <property role="TrG5h" value="circleId" />
+        <node concept="17QB3L" id="6mblWKdLHVJ" role="16iT67" />
+      </node>
+    </node>
   </node>
   <node concept="1mS4fW" id="4UvP5h6JKBj">
     <node concept="10$slB" id="242NPypWmof" role="1mS4fN">
@@ -166,6 +198,9 @@
   </node>
   <node concept="3X4l2l" id="4c7_nAY6nuA">
     <property role="3X4dV5" value="org.campagnelab.circles" />
+    <node concept="1Cj4RM" id="6mblWKdLY6h" role="1Cj4RK">
+      <ref role="1Cj4RN" to="qkpo:6mblWKdIZZl" />
+    </node>
   </node>
 </model>
 

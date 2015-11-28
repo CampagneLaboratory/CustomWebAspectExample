@@ -41,6 +41,7 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -113,10 +114,20 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
@@ -303,6 +314,49 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="6mblWKdLYbU">
+    <property role="TrG5h" value="check_GwtModuleRef" />
+    <node concept="3clFbS" id="6mblWKdLYbV" role="18ibNy">
+      <node concept="3clFbJ" id="6mblWKdLYc1" role="3cqZAp">
+        <node concept="3clFbS" id="6mblWKdLYc2" role="3clFbx">
+          <node concept="2MkqsV" id="6mblWKdLYvE" role="3cqZAp">
+            <node concept="Xl_RD" id="6mblWKdLYvQ" role="2MkJ7o">
+              <property role="Xl_RC" value="Module cannot use itself." />
+            </node>
+            <node concept="1YBJjd" id="6mblWKdLYxl" role="2OEOjV">
+              <ref role="1YBMHb" node="6mblWKdLYbX" resolve="gwtModuleRef" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbC" id="6mblWKdLYkS" role="3clFbw">
+          <node concept="2OqwBi" id="6mblWKdLYo2" role="3uHU7w">
+            <node concept="1YBJjd" id="6mblWKdLYlJ" role="2Oq$k0">
+              <ref role="1YBMHb" node="6mblWKdLYbX" resolve="gwtModuleRef" />
+            </node>
+            <node concept="2Xjw5R" id="6mblWKdLYtH" role="2OqNvi">
+              <node concept="1xMEDy" id="6mblWKdLYtJ" role="1xVPHs">
+                <node concept="chp4Y" id="6mblWKdLYuE" role="ri$Ld">
+                  <ref role="cht4Q" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6mblWKdLYdI" role="3uHU7B">
+            <node concept="1YBJjd" id="6mblWKdLYcd" role="2Oq$k0">
+              <ref role="1YBMHb" node="6mblWKdLYbX" resolve="gwtModuleRef" />
+            </node>
+            <node concept="3TrEf2" id="6mblWKdLYgw" role="2OqNvi">
+              <ref role="3Tt5mk" to="6je1:6mblWKdLLCZ" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6mblWKdLYbX" role="1YuTPh">
+      <property role="TrG5h" value="gwtModuleRef" />
+      <ref role="1YaFvo" to="6je1:6mblWKdLLCY" resolve="GwtModuleRef" />
     </node>
   </node>
 </model>

@@ -507,6 +507,37 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F0ifn" id="6mblWKdLLDb" role="3EZMnx">
+        <property role="3F0ifm" value="uses/inherits:" />
+        <node concept="pVoyu" id="6mblWKdLLDJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="6mblWKdLLDL" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="6mblWKdLLEh" role="3EZMnx">
+        <node concept="VPM3Z" id="6mblWKdLLEj" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F2HdR" id="6mblWKdLLDx" role="3EZMnx">
+          <ref role="1NtTu8" to="6je1:6mblWKdLLCW" />
+          <node concept="l2Vlx" id="6mblWKdLLDz" role="2czzBx" />
+          <node concept="pVoyu" id="6mblWKdLLDO" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="6mblWKdLLDQ" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="6mblWKdLLEm" role="2iSdaV" />
+        <node concept="pVoyu" id="6mblWKdLLEF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="6mblWKdLLEI" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="2pxiRTwaHRd">
@@ -569,6 +600,24 @@
         </node>
       </node>
       <node concept="l2Vlx" id="2pxiRTwb2Wl" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6mblWKdLUpv">
+    <ref role="1XX52x" to="6je1:6mblWKdLLCY" resolve="GwtModuleRef" />
+    <node concept="3EZMnI" id="6mblWKdLUpx" role="2wV5jI">
+      <node concept="3F0ifn" id="6mblWKdLUpC" role="3EZMnx">
+        <property role="3F0ifm" value="module" />
+      </node>
+      <node concept="1iCGBv" id="6mblWKdLUpI" role="3EZMnx">
+        <ref role="1NtTu8" to="6je1:6mblWKdLLCZ" />
+        <node concept="1sVBvm" id="6mblWKdLUpK" role="1sWHZn">
+          <node concept="3F0A7n" id="6mblWKdLUpS" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="6mblWKdLUp$" role="2iSdaV" />
     </node>
   </node>
 </model>
