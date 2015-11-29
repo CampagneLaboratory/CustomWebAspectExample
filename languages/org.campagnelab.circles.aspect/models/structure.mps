@@ -375,6 +375,12 @@
       <property role="20kJfa" value="html" />
       <ref role="20lvS9" node="6mblWKdRxNF" resolve="HtmlDocument" />
     </node>
+    <node concept="1TJgyj" id="6mblWKe6oxQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="places" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6mblWKe6oxU" resolve="PlaceRef" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2pxiRTwaHFM">
     <property role="1pbfSe" value="2037635472" />
@@ -463,6 +469,71 @@
     <node concept="1TJgyi" id="6mblWKdSkL0" role="1TKVEl">
       <property role="TrG5h" value="to" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6mblWKe6oxI">
+    <property role="1pbfSe" value="1940185146" />
+    <property role="TrG5h" value="Place" />
+    <property role="R4oN_" value="Bookmarkable Place" />
+    <property role="3GE5qa" value="places" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6mblWKe6oxO" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tokens" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6mblWKe6oxL" resolve="Token" />
+    </node>
+    <node concept="1TJgyj" id="6mblWKe7y9B" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="activity" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6mblWKe7y9z" resolve="Activity" />
+    </node>
+    <node concept="PrWs8" id="6mblWKe6oxJ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6mblWKe6oxL">
+    <property role="1pbfSe" value="1940185149" />
+    <property role="3GE5qa" value="places" />
+    <property role="TrG5h" value="Token" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6mblWKe6oxM" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6mblWKe6oxU">
+    <property role="1pbfSe" value="1940185158" />
+    <property role="3GE5qa" value="places" />
+    <property role="TrG5h" value="PlaceRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6mblWKe6oxV" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="place" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6mblWKe6oxI" resolve="Place" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6mblWKe7y9z">
+    <property role="1pbfSe" value="1940486703" />
+    <property role="TrG5h" value="Activity" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="activities" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="6mblWKe7y9$">
+    <property role="1pbfSe" value="1940486704" />
+    <property role="3GE5qa" value="activities" />
+    <property role="TrG5h" value="ViewNodeActivity" />
+    <property role="R4oN_" value="View a Single Node" />
+    <property role="34LRSv" value="ViewNodeActivity" />
+    <ref role="1TJDcQ" node="6mblWKe7y9z" resolve="Activity" />
+    <node concept="1TJgyj" id="6mblWKe7y9_" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="nodeIdToken" />
+      <ref role="20lvS9" node="6mblWKe6oxL" resolve="Token" />
     </node>
   </node>
 </model>

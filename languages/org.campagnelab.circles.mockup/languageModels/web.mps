@@ -99,10 +99,22 @@
       <concept id="7317038553511107819" name="org.campagnelab.circles.aspect.structure.HtmlDocument" flags="ng" index="1ClkGB">
         <property id="7317038553511135446" name="title" index="1CltWq" />
       </concept>
+      <concept id="7317038553515001966" name="org.campagnelab.circles.aspect.structure.Place" flags="ng" index="1F$HYy">
+        <child id="7317038553515001972" name="tokens" index="1F$HYS" />
+        <child id="7317038553515303527" name="activity" index="1F_nmF" />
+      </concept>
+      <concept id="7317038553515001978" name="org.campagnelab.circles.aspect.structure.PlaceRef" flags="ng" index="1F$HYQ">
+        <reference id="7317038553515001979" name="place" index="1F$HYR" />
+      </concept>
+      <concept id="7317038553515001969" name="org.campagnelab.circles.aspect.structure.Token" flags="ng" index="1F$HYX" />
+      <concept id="7317038553515303524" name="org.campagnelab.circles.aspect.structure.ViewNodeActivity" flags="ng" index="1F_nmC">
+        <reference id="7317038553515303525" name="nodeIdToken" index="1F_nmD" />
+      </concept>
       <concept id="4829993475490891244" name="org.campagnelab.circles.aspect.structure.GwtModule" flags="ng" index="3X4l2l">
         <property id="4829993475490925500" name="moduleName" index="3X4dV5" />
         <child id="7317038553509599804" name="uses" index="1Cj4RK" />
         <child id="7317038553511107820" name="html" index="1ClkGw" />
+        <child id="7317038553515001974" name="places" index="1F$HYU" />
       </concept>
     </language>
   </registry>
@@ -207,6 +219,21 @@
     </node>
     <node concept="1ClkGB" id="6mblWKdR$S7" role="1ClkGw">
       <property role="1CltWq" value="Hello World" />
+    </node>
+    <node concept="1F$HYQ" id="6mblWKe7lLI" role="1F$HYU">
+      <ref role="1F$HYR" node="6mblWKe7lLv" resolve="NodeViewPlace" />
+    </node>
+  </node>
+  <node concept="1F$HYy" id="6mblWKe7lLv">
+    <property role="TrG5h" value="NodeViewPlace" />
+    <node concept="1F$HYX" id="6mblWKe7lLw" role="1F$HYS">
+      <property role="TrG5h" value="nodeId" />
+    </node>
+    <node concept="1F$HYX" id="6mblWKe7KIB" role="1F$HYS">
+      <property role="TrG5h" value="modelId" />
+    </node>
+    <node concept="1F_nmC" id="6mblWKe7AzT" role="1F_nmF">
+      <ref role="1F_nmD" node="6mblWKe7lLw" resolve="nodeId" />
     </node>
   </node>
 </model>
