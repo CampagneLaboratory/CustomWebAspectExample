@@ -41,6 +41,7 @@
     <import index="hke8" ref="8c40f9f4-b3bd-42d0-8b65-8e644273493c/java:com.orientechnologies.orient.core.sql.query(org.campagnelab.circles.aspect/)" />
     <import index="8qyd" ref="8c40f9f4-b3bd-42d0-8b65-8e644273493c/java:com.orientechnologies.orient.core.record.impl(org.campagnelab.circles.aspect/)" />
     <import index="ea1z" ref="r:4d14f64f-fa9a-4ab0-8621-23682dd759f0(org.campagnelab.circles.aspect.plugin)" />
+    <import index="kqln" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.user.server.rpc(org.google.gwt/)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -245,6 +246,9 @@
       <concept id="6786756355279841993" name="jetbrains.mps.core.xml.structure.XmlDocument" flags="ng" index="3rIKKV">
         <child id="6666499814681299055" name="rootElement" index="2pNm8H" />
         <child id="6666499814681299060" name="prolog" index="2pNm8Q" />
+      </concept>
+      <concept id="5228786488744996718" name="jetbrains.mps.core.xml.structure.XmlDeclaration" flags="ng" index="3W$oVP">
+        <property id="5491461270226117667" name="version" index="1D$jbd" />
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
@@ -718,6 +722,7 @@
       <ref role="3lhOvi" node="4c7_nAY8tZh" resolve="ModuleEntryPoint" />
     </node>
     <node concept="3lhOvk" id="6mblWKdRBW4" role="3lj3bC">
+      <property role="13Pg2o" value="true" />
       <ref role="30HIoZ" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
       <ref role="3lhOvi" node="6mblWKdRCkE" resolve="module.html" />
       <node concept="30G5F_" id="6mblWKdRBWy" role="30HLyM">
@@ -731,6 +736,25 @@
                 </node>
               </node>
               <node concept="3x8VRR" id="6mblWKdRCi4" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3lhOvk" id="6mblWKe2RZv" role="3lj3bC">
+      <ref role="30HIoZ" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+      <ref role="3lhOvi" node="6mblWKe2Sce" resolve="web" />
+      <node concept="30G5F_" id="6mblWKe2S4W" role="30HLyM">
+        <node concept="3clFbS" id="6mblWKe2S4X" role="2VODD2">
+          <node concept="3clFbF" id="6mblWKe2RWl" role="3cqZAp">
+            <node concept="2OqwBi" id="6mblWKe2RWm" role="3clFbG">
+              <node concept="2OqwBi" id="6mblWKe2RWn" role="2Oq$k0">
+                <node concept="30H73N" id="6mblWKe2RWo" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6mblWKe2RWp" role="2OqNvi">
+                  <ref role="3Tt5mk" to="6je1:6mblWKdRxNG" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="6mblWKe2RWq" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -2302,7 +2326,7 @@
     <node concept="2b_W8R" id="4c7_nAY8uhy" role="lGtFl">
       <node concept="2bEx1p" id="4c7_nAY8vj$" role="2bEx12">
         <property role="2bEHen" value="${module}/../../web-app/src/main/java" />
-        <property role="2bEHel" value="org.campagnelab.circles.web" />
+        <property role="2bEHel" value="org.campagnelab.circles.web.client" />
         <property role="2bDwcZ" value="ModuleEntryPoint.java" />
         <node concept="2bNReR" id="6mblWKdM8aT" role="2bNReO">
           <property role="2bNReQ" value="web.client" />
@@ -2345,21 +2369,26 @@
           <node concept="3zFVjK" id="4c7_nAY8vjJ" role="3zH0cK">
             <node concept="3clFbS" id="4c7_nAY8vjK" role="2VODD2">
               <node concept="3clFbF" id="4c7_nAY8vjL" role="3cqZAp">
-                <node concept="2OqwBi" id="4c7_nAY8vjO" role="3clFbG">
-                  <node concept="2OqwBi" id="4c7_nAY8vjP" role="2Oq$k0">
-                    <node concept="2OqwBi" id="4c7_nAY8vjQ" role="2Oq$k0">
-                      <node concept="2OqwBi" id="4c7_nAY8vjR" role="2Oq$k0">
-                        <node concept="1iwH7S" id="4c7_nAY8vjS" role="2Oq$k0" />
-                        <node concept="1st3f0" id="4c7_nAY8vjT" role="2OqNvi" />
-                      </node>
-                      <node concept="2RRcyG" id="4c7_nAY8vjU" role="2OqNvi">
-                        <ref role="2RRcyH" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
-                      </node>
-                    </node>
-                    <node concept="1uHKPH" id="4c7_nAY8vjV" role="2OqNvi" />
+                <node concept="3cpWs3" id="6mblWKe5fyu" role="3clFbG">
+                  <node concept="Xl_RD" id="6mblWKe5fyE" role="3uHU7w">
+                    <property role="Xl_RC" value=".client" />
                   </node>
-                  <node concept="3TrcHB" id="4c7_nAY8vjW" role="2OqNvi">
-                    <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                  <node concept="2OqwBi" id="4c7_nAY8vjO" role="3uHU7B">
+                    <node concept="2OqwBi" id="4c7_nAY8vjP" role="2Oq$k0">
+                      <node concept="2OqwBi" id="4c7_nAY8vjQ" role="2Oq$k0">
+                        <node concept="2OqwBi" id="4c7_nAY8vjR" role="2Oq$k0">
+                          <node concept="1iwH7S" id="4c7_nAY8vjS" role="2Oq$k0" />
+                          <node concept="1st3f0" id="4c7_nAY8vjT" role="2OqNvi" />
+                        </node>
+                        <node concept="2RRcyG" id="4c7_nAY8vjU" role="2OqNvi">
+                          <ref role="2RRcyH" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="4c7_nAY8vjV" role="2OqNvi" />
+                    </node>
+                    <node concept="3TrcHB" id="4c7_nAY8vjW" role="2OqNvi">
+                      <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -3907,6 +3936,9 @@
         <ref role="ehGHo" to="6je1:2_KMmGes6_N" resolve="Database" />
       </node>
     </node>
+    <node concept="3uibUv" id="6mblWKe4Edk" role="1zkMxy">
+      <ref role="3uigEE" to="kqln:~RemoteServiceServlet" resolve="RemoteServiceServlet" />
+    </node>
   </node>
   <node concept="312cEu" id="2pxiRTwbCtg">
     <property role="TrG5h" value="DbToPojoHelper" />
@@ -4631,7 +4663,7 @@
           <node concept="2pNUuL" id="6mblWKdF9JX" role="2pNNFR">
             <property role="2pNUuO" value="name" />
             <node concept="2pMdtt" id="6mblWKdF9JZ" role="2pMdts">
-              <property role="2pMdty" value="xsi-frame" />
+              <property role="2pMdty" value="xsiframe" />
             </node>
           </node>
         </node>
@@ -4649,7 +4681,7 @@
                     <node concept="3clFbF" id="4c7_nAY8zS1" role="3cqZAp">
                       <node concept="3cpWs3" id="4c7_nAY8$3g" role="3clFbG">
                         <node concept="Xl_RD" id="4c7_nAY8$3m" role="3uHU7w">
-                          <property role="Xl_RC" value=".ModuleEntryPoint" />
+                          <property role="Xl_RC" value=".client.ModuleEntryPoint" />
                         </node>
                         <node concept="2OqwBi" id="4c7_nAY8zUe" role="3uHU7B">
                           <node concept="30H73N" id="4c7_nAY8zS0" role="2Oq$k0" />
@@ -4978,6 +5010,201 @@
           <property role="1CqxJM" value=".html.xml" />
           <property role="1CqxIc" value=".html" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2pMbU2" id="6mblWKe2Sce">
+    <property role="TrG5h" value="web" />
+    <property role="3GE5qa" value="webapp" />
+    <node concept="3rIKKV" id="6mblWKe2Scf" role="2pMbU3">
+      <node concept="2pNNFK" id="6mblWKe2SeN" role="2pNm8H">
+        <property role="2pNNFO" value="web-app" />
+        <node concept="3o6iSG" id="6mblWKe2Sft" role="3o6s8t" />
+        <node concept="2pNNFK" id="6mblWKe2Sfy" role="3o6s8t">
+          <property role="2pNNFO" value="servlet" />
+          <node concept="2pNNFK" id="6mblWKe2SfE" role="3o6s8t">
+            <property role="2pNNFO" value="servlet-name" />
+            <node concept="3o6iSG" id="6mblWKe2Sgo" role="3o6s8t">
+              <property role="3o6i5n" value="org.campagnelab.circles.Circles DbService" />
+              <node concept="17Uvod" id="6mblWKe339r" role="lGtFl">
+                <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/1622293396948952339/1622293396948953704" />
+                <property role="2qtEX9" value="value" />
+                <node concept="3zFVjK" id="6mblWKe339s" role="3zH0cK">
+                  <node concept="3clFbS" id="6mblWKe339t" role="2VODD2">
+                    <node concept="3clFbF" id="6mblWKe33aE" role="3cqZAp">
+                      <node concept="3cpWs3" id="6mblWKe34mr" role="3clFbG">
+                        <node concept="Xl_RD" id="6mblWKe34mx" role="3uHU7w">
+                          <property role="Xl_RC" value=" DbGenericService" />
+                        </node>
+                        <node concept="2OqwBi" id="6mblWKe33f6" role="3uHU7B">
+                          <node concept="30H73N" id="6mblWKe33aD" role="2Oq$k0" />
+                          <node concept="3TrcHB" id="6mblWKe33n_" role="2OqNvi">
+                            <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2pNNFK" id="6mblWKe2SfL" role="3o6s8t">
+            <property role="2pNNFO" value="servlet-class" />
+            <node concept="3o6iSG" id="6mblWKe2Sgq" role="3o6s8t">
+              <property role="3o6i5n" value="org.campagnelab.circles.server.DbServiceImpl" />
+              <node concept="17Uvod" id="6mblWKe35tj" role="lGtFl">
+                <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/1622293396948952339/1622293396948953704" />
+                <property role="2qtEX9" value="value" />
+                <node concept="3zFVjK" id="6mblWKe35tk" role="3zH0cK">
+                  <node concept="3clFbS" id="6mblWKe35tl" role="2VODD2">
+                    <node concept="3clFbF" id="6mblWKe35uy" role="3cqZAp">
+                      <node concept="3cpWs3" id="6mblWKe36Cv" role="3clFbG">
+                        <node concept="Xl_RD" id="6mblWKe36C_" role="3uHU7w">
+                          <property role="Xl_RC" value=".server.DbGenericServiceImpl" />
+                        </node>
+                        <node concept="2OqwBi" id="6mblWKe35yY" role="3uHU7B">
+                          <node concept="30H73N" id="6mblWKe35ux" role="2Oq$k0" />
+                          <node concept="3TrcHB" id="6mblWKe35Ft" role="2OqNvi">
+                            <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3ejVUv" id="6mblWKe2Skl" role="lGtFl">
+            <node concept="3JmXsc" id="6mblWKe2Skn" role="3_Rtg">
+              <node concept="3clFbS" id="6mblWKe2Skp" role="2VODD2">
+                <node concept="3clFbF" id="6mblWKe32S4" role="3cqZAp">
+                  <node concept="2OqwBi" id="6mblWKe32Up" role="3clFbG">
+                    <node concept="30H73N" id="6mblWKe32RX" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="6mblWKe330B" role="2OqNvi">
+                      <ref role="37wK5l" to="x3ey:6mblWKe2TS0" resolve="usedModules" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="6mblWKe2Sg3" role="3o6s8t">
+          <property role="2pNNFO" value="servlet-mapping" />
+          <node concept="2pNNFK" id="6mblWKe2Sge" role="3o6s8t">
+            <property role="2pNNFO" value="servlet-name" />
+            <node concept="3o6iSG" id="6mblWKe2Sgs" role="3o6s8t">
+              <property role="3o6i5n" value="org.campagnelab.circles.Circles DbService" />
+              <node concept="17Uvod" id="6mblWKe35aD" role="lGtFl">
+                <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/1622293396948952339/1622293396948953704" />
+                <property role="2qtEX9" value="value" />
+                <node concept="3zFVjK" id="6mblWKe35aE" role="3zH0cK">
+                  <node concept="3clFbS" id="6mblWKe35aF" role="2VODD2">
+                    <node concept="3clFbF" id="6mblWKe35ds" role="3cqZAp">
+                      <node concept="3cpWs3" id="6mblWKe35dt" role="3clFbG">
+                        <node concept="Xl_RD" id="6mblWKe35du" role="3uHU7w">
+                          <property role="Xl_RC" value=" DbGenericService" />
+                        </node>
+                        <node concept="2OqwBi" id="6mblWKe35dv" role="3uHU7B">
+                          <node concept="30H73N" id="6mblWKe35dw" role="2Oq$k0" />
+                          <node concept="3TrcHB" id="6mblWKe35dx" role="2OqNvi">
+                            <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2pNNFK" id="6mblWKe2Sgi" role="3o6s8t">
+            <property role="2pNNFO" value="url-pattern" />
+            <node concept="3o6iSG" id="6mblWKe2Sgu" role="3o6s8t">
+              <property role="3o6i5n" value="/circles/dbAPI" />
+              <node concept="17Uvod" id="6mblWKe36Xg" role="lGtFl">
+                <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/1622293396948952339/1622293396948953704" />
+                <property role="2qtEX9" value="value" />
+                <node concept="3zFVjK" id="6mblWKe36Xh" role="3zH0cK">
+                  <node concept="3clFbS" id="6mblWKe36Xi" role="2VODD2">
+                    <node concept="3clFbF" id="6mblWKe36XY" role="3cqZAp">
+                      <node concept="3cpWs3" id="6mblWKe37ba" role="3clFbG">
+                        <node concept="Xl_RD" id="6mblWKe37bg" role="3uHU7w">
+                          <property role="Xl_RC" value="/dbGenericAPI" />
+                        </node>
+                        <node concept="3cpWs3" id="6mblWKe37v5" role="3uHU7B">
+                          <node concept="Xl_RD" id="6mblWKe37vb" role="3uHU7B">
+                            <property role="Xl_RC" value="/" />
+                          </node>
+                          <node concept="2OqwBi" id="6mblWKe36Y0" role="3uHU7w">
+                            <node concept="30H73N" id="6mblWKe36Y1" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="6mblWKe36Y2" role="2OqNvi">
+                              <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3ejVUv" id="6mblWKe34RT" role="lGtFl">
+            <node concept="3JmXsc" id="6mblWKe34RV" role="3_Rtg">
+              <node concept="3clFbS" id="6mblWKe34RX" role="2VODD2">
+                <node concept="3clFbF" id="6mblWKe34Ta" role="3cqZAp">
+                  <node concept="2OqwBi" id="6mblWKe34Vv" role="3clFbG">
+                    <node concept="30H73N" id="6mblWKe34T9" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="6mblWKe351H" role="2OqNvi">
+                      <ref role="37wK5l" to="x3ey:6mblWKe2TS0" resolve="usedModules" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2pNUuL" id="6mblWKe2SeR" role="2pNNFR">
+          <property role="2pNUuO" value="xmlns" />
+          <node concept="2pMdtt" id="6mblWKe2SeZ" role="2pMdts">
+            <property role="2pMdty" value="http://java.sun.com/xml/ns/javaee" />
+          </node>
+        </node>
+        <node concept="2pNUuL" id="6mblWKe2SeW" role="2pNNFR">
+          <property role="2pNUuO" value="xmlns:xsi" />
+          <node concept="2pMdtt" id="6mblWKe2Sf1" role="2pMdts">
+            <property role="2pMdty" value="http://www.w3.org/2001/XMLSchema-instance" />
+          </node>
+        </node>
+        <node concept="2pNUuL" id="6mblWKe2Sf5" role="2pNNFR">
+          <property role="2pNUuO" value="xsi:schemaLocation" />
+          <node concept="2pMdtt" id="6mblWKe2Sfb" role="2pMdts">
+            <property role="2pMdty" value="http://java.sun.com/xml/ns/javaee\n\t\t  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" />
+          </node>
+        </node>
+        <node concept="2pNUuL" id="6mblWKe2Sfj" role="2pNNFR">
+          <property role="2pNUuO" value="version" />
+          <node concept="2pMdtt" id="6mblWKe2Sfr" role="2pMdts">
+            <property role="2pMdty" value="2.5" />
+          </node>
+        </node>
+      </node>
+      <node concept="2pNm8N" id="6mblWKe2Sgw" role="2pNm8Q">
+        <node concept="3W$oVP" id="6mblWKe2Sgy" role="BGLLu">
+          <property role="1D$jbd" value="1.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="n94m4" id="6mblWKe2Sch" role="lGtFl">
+      <ref role="n9lRv" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+    </node>
+    <node concept="2b_W8R" id="6mblWKe2Sg$" role="lGtFl">
+      <node concept="2bEx1p" id="6mblWKe2Sg_" role="2bEx12">
+        <property role="2bEHen" value="${module}/../../web-app/src/main/webapp/WEB-INF" />
+        <property role="2bDwcZ" value="web.xml" />
       </node>
     </node>
   </node>
