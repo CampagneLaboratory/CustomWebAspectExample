@@ -327,6 +327,11 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="2SasHe_Lg5$" resolve="AddImportStatement" />
     </node>
+    <node concept="1TJgyj" id="6mblWKdSkLJ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="renameExtension" />
+      <ref role="20lvS9" node="6mblWKdSkKX" resolve="ChangeExtensionInfo" />
+    </node>
     <node concept="1TJgyi" id="2SasHe_Ca54" role="1TKVEl">
       <property role="TrG5h" value="stagingDirRoot" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -364,6 +369,11 @@
       <property role="20kJfa" value="uses" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6mblWKdLLCY" resolve="GwtModuleRef" />
+    </node>
+    <node concept="1TJgyj" id="6mblWKdRxNG" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="html" />
+      <ref role="20lvS9" node="6mblWKdRxNF" resolve="HtmlDocument" />
     </node>
   </node>
   <node concept="1TIwiD" id="2pxiRTwaHFM">
@@ -428,6 +438,31 @@
       <property role="20kJfa" value="ref" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4c7_nAY5GnG" resolve="GwtModule" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6mblWKdRxNF">
+    <property role="1pbfSe" value="1936290999" />
+    <property role="TrG5h" value="HtmlDocument" />
+    <property role="3GE5qa" value="html" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6mblWKdRCzm" role="1TKVEl">
+      <property role="TrG5h" value="title" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6mblWKdSkKX">
+    <property role="1pbfSe" value="1936499721" />
+    <property role="3GE5qa" value="staging" />
+    <property role="TrG5h" value="ChangeExtensionInfo" />
+    <property role="R4oN_" value="Change extension from to" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6mblWKdSkKY" role="1TKVEl">
+      <property role="TrG5h" value="from" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6mblWKdSkL0" role="1TKVEl">
+      <property role="TrG5h" value="to" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

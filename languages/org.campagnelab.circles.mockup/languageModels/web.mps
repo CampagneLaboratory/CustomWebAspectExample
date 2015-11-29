@@ -96,9 +96,13 @@
       <concept id="7317038553509599806" name="org.campagnelab.circles.aspect.structure.GwtModuleRef" flags="ng" index="1Cj4RM">
         <reference id="7317038553509599807" name="ref" index="1Cj4RN" />
       </concept>
+      <concept id="7317038553511107819" name="org.campagnelab.circles.aspect.structure.HtmlDocument" flags="ng" index="1ClkGB">
+        <property id="7317038553511135446" name="title" index="1CltWq" />
+      </concept>
       <concept id="4829993475490891244" name="org.campagnelab.circles.aspect.structure.GwtModule" flags="ng" index="3X4l2l">
         <property id="4829993475490925500" name="moduleName" index="3X4dV5" />
         <child id="7317038553509599804" name="uses" index="1Cj4RK" />
+        <child id="7317038553511107820" name="html" index="1ClkGw" />
       </concept>
     </language>
   </registry>
@@ -200,6 +204,9 @@
     <property role="3X4dV5" value="org.campagnelab.circles" />
     <node concept="1Cj4RM" id="6mblWKdLY6h" role="1Cj4RK">
       <ref role="1Cj4RN" to="qkpo:6mblWKdIZZl" />
+    </node>
+    <node concept="1ClkGB" id="6mblWKdR$S7" role="1ClkGw">
+      <property role="1CltWq" value="Hello World" />
     </node>
   </node>
 </model>

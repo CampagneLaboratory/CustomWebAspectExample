@@ -11,7 +11,9 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+      </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
@@ -42,6 +44,7 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -396,6 +399,13 @@
       </node>
       <node concept="l2Vlx" id="2SasHe_Ca50" role="2iSdaV" />
     </node>
+    <node concept="3EZMnI" id="6mblWKdSkKT" role="6VMZX">
+      <node concept="l2Vlx" id="6mblWKdSkKU" role="2iSdaV" />
+      <node concept="3F1sOY" id="6mblWKdSkLM" role="3EZMnx">
+        <property role="1$x2rV" value="press enter to change the file extension" />
+        <ref role="1NtTu8" to="6je1:6mblWKdSkLJ" />
+      </node>
+    </node>
   </node>
   <node concept="24kQdi" id="2SasHe_LApk">
     <property role="3GE5qa" value="staging" />
@@ -538,6 +548,19 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F0ifn" id="6mblWKdRxO8" role="3EZMnx">
+        <property role="3F0ifm" value="html:" />
+        <node concept="lj46D" id="6mblWKdRxOv" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="Vb9p2" id="6mblWKdRxQc" role="3F10Kt" />
+        <node concept="pVoyu" id="6mblWKdR_8k" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="6mblWKdRxQD" role="3EZMnx">
+        <ref role="1NtTu8" to="6je1:6mblWKdRxNG" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="2pxiRTwaHRd">
@@ -618,6 +641,39 @@
         </node>
       </node>
       <node concept="l2Vlx" id="6mblWKdLUp$" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6mblWKdR_8t">
+    <property role="3GE5qa" value="html" />
+    <ref role="1XX52x" to="6je1:6mblWKdRxNF" resolve="HtmlDocument" />
+    <node concept="3EZMnI" id="6mblWKdRCzo" role="2wV5jI">
+      <node concept="l2Vlx" id="6mblWKdRCzp" role="2iSdaV" />
+      <node concept="3F0ifn" id="6mblWKdR_8v" role="3EZMnx">
+        <property role="3F0ifm" value="Create HTML document with title=" />
+        <node concept="Vb9p2" id="6mblWKdRC_d" role="3F10Kt" />
+      </node>
+      <node concept="3F0A7n" id="6mblWKdRCzx" role="3EZMnx">
+        <ref role="1NtTu8" to="6je1:6mblWKdRCzm" resolve="title" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6mblWKdSkL8">
+    <property role="3GE5qa" value="staging" />
+    <ref role="1XX52x" to="6je1:6mblWKdSkKX" resolve="ChangeExtensionInfo" />
+    <node concept="3EZMnI" id="6mblWKdSkLa" role="2wV5jI">
+      <node concept="3F0ifn" id="6mblWKdSkLh" role="3EZMnx">
+        <property role="3F0ifm" value="Change file extension from" />
+      </node>
+      <node concept="3F0A7n" id="6mblWKdSkLn" role="3EZMnx">
+        <ref role="1NtTu8" to="6je1:6mblWKdSkKY" resolve="from" />
+      </node>
+      <node concept="3F0ifn" id="6mblWKdSkLv" role="3EZMnx">
+        <property role="3F0ifm" value="to:" />
+      </node>
+      <node concept="3F0A7n" id="6mblWKdSkLD" role="3EZMnx">
+        <ref role="1NtTu8" to="6je1:6mblWKdSkL0" resolve="to" />
+      </node>
+      <node concept="l2Vlx" id="6mblWKdSkLd" role="2iSdaV" />
     </node>
   </node>
 </model>

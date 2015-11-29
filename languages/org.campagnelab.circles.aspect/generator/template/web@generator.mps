@@ -374,6 +374,7 @@
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -423,9 +424,14 @@
         <property id="3317590328854225222" name="package" index="2bEHel" />
         <property id="3317590328854225220" name="stagingDirRoot" index="2bEHen" />
         <child id="3317590328856609127" name="imports" index="2bNReO" />
+        <child id="7317038553511316591" name="renameExtension" index="1CqxIz" />
       </concept>
       <concept id="3317590328856609124" name="org.campagnelab.circles.aspect.structure.AddImportStatement" flags="ng" index="2bNReR">
         <property id="3317590328856609125" name="packageName" index="2bNReQ" />
+      </concept>
+      <concept id="7317038553511316541" name="org.campagnelab.circles.aspect.structure.ChangeExtensionInfo" flags="ng" index="1CqxJL">
+        <property id="7317038553511316544" name="to" index="1CqxIc" />
+        <property id="7317038553511316542" name="from" index="1CqxJM" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -707,8 +713,28 @@
       <ref role="3lhOvi" node="4c7_nAY4BLf" resolve="module.gwt" />
     </node>
     <node concept="3lhOvk" id="4c7_nAY8Jon" role="3lj3bC">
+      <property role="13Pg2o" value="true" />
       <ref role="30HIoZ" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
       <ref role="3lhOvi" node="4c7_nAY8tZh" resolve="ModuleEntryPoint" />
+    </node>
+    <node concept="3lhOvk" id="6mblWKdRBW4" role="3lj3bC">
+      <ref role="30HIoZ" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+      <ref role="3lhOvi" node="6mblWKdRCkE" resolve="module.html" />
+      <node concept="30G5F_" id="6mblWKdRBWy" role="30HLyM">
+        <node concept="3clFbS" id="6mblWKdRBWz" role="2VODD2">
+          <node concept="3clFbF" id="6mblWKdRBXE" role="3cqZAp">
+            <node concept="2OqwBi" id="6mblWKdRCb5" role="3clFbG">
+              <node concept="2OqwBi" id="6mblWKdRBZP" role="2Oq$k0">
+                <node concept="30H73N" id="6mblWKdRBXD" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6mblWKdRC5x" role="2OqNvi">
+                  <ref role="3Tt5mk" to="6je1:6mblWKdRxNG" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="6mblWKdRCi4" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="aNPBN" id="4c7_nAY6gat" role="aQYdv">
       <ref role="aOQi4" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
@@ -4804,6 +4830,153 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2pMbU2" id="6mblWKdRCkE">
+    <property role="TrG5h" value="module.html" />
+    <property role="3GE5qa" value="webapp" />
+    <node concept="3rIKKV" id="6mblWKdRCkF" role="2pMbU3">
+      <node concept="2pNNFK" id="6mblWKdRCmL" role="2pNm8H">
+        <property role="2pNNFO" value="html" />
+        <node concept="2pNNFK" id="6mblWKdRCmY" role="3o6s8t">
+          <property role="2pNNFO" value="head" />
+          <node concept="2pNNFK" id="6mblWKdRCn3" role="3o6s8t">
+            <property role="2pNNFO" value="title" />
+            <node concept="3o6iSG" id="6mblWKdRCn5" role="3o6s8t">
+              <property role="3o6i5n" value="Title" />
+              <node concept="17Uvod" id="6mblWKe1Hyh" role="lGtFl">
+                <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/1622293396948952339/1622293396948953704" />
+                <property role="2qtEX9" value="value" />
+                <node concept="3zFVjK" id="6mblWKe1Hyi" role="3zH0cK">
+                  <node concept="3clFbS" id="6mblWKe1Hyj" role="2VODD2">
+                    <node concept="3clFbF" id="6mblWKe1Hzw" role="3cqZAp">
+                      <node concept="2OqwBi" id="6mblWKe1HIg" role="3clFbG">
+                        <node concept="2OqwBi" id="6mblWKe1H_H" role="2Oq$k0">
+                          <node concept="30H73N" id="6mblWKe1Hzv" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="6mblWKe1HD$" role="2OqNvi">
+                            <ref role="3Tt5mk" to="6je1:6mblWKdRxNG" />
+                          </node>
+                        </node>
+                        <node concept="3TrcHB" id="6mblWKe1HMM" role="2OqNvi">
+                          <ref role="3TsBF5" to="6je1:6mblWKdRCzm" resolve="title" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2pNNFK" id="6mblWKdRCnb" role="3o6s8t">
+            <property role="2pNNFO" value="link" />
+            <property role="qg3DV" value="true" />
+            <node concept="2pNUuL" id="6mblWKdRCnh" role="2pNNFR">
+              <property role="2pNUuO" value="rel" />
+              <node concept="2pMdtt" id="6mblWKdRCnj" role="2pMdts">
+                <property role="2pMdty" value="stylesheet" />
+              </node>
+            </node>
+            <node concept="2pNUuL" id="6mblWKdRCnn" role="2pNNFR">
+              <property role="2pNUuO" value="href" />
+              <node concept="2pMdtt" id="6mblWKdRCnr" role="2pMdts">
+                <property role="2pMdty" value="style.css" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="6mblWKdRCnt" role="3o6s8t">
+          <property role="2pNNFO" value="body" />
+          <node concept="2pNNFK" id="6mblWKdRKNx" role="3o6s8t">
+            <property role="2pNNFO" value="iframe" />
+            <node concept="2pNUuL" id="6mblWKdRKNJ" role="2pNNFR">
+              <property role="2pNUuO" value="src" />
+              <node concept="2pMdtt" id="6mblWKdRKNL" role="2pMdts">
+                <property role="2pMdty" value="javascript:''" />
+              </node>
+            </node>
+            <node concept="2pNUuL" id="6mblWKdRKNP" role="2pNNFR">
+              <property role="2pNUuO" value="id" />
+              <node concept="2pMdtt" id="6mblWKdRKNT" role="2pMdts">
+                <property role="2pMdty" value="__gwt_historyFrame" />
+              </node>
+            </node>
+            <node concept="2pNUuL" id="6mblWKdRKNZ" role="2pNNFR">
+              <property role="2pNUuO" value="style" />
+              <node concept="2pMdtt" id="6mblWKdRKO5" role="2pMdts">
+                <property role="2pMdty" value="position:absolute;width:0;height:0;border:0" />
+              </node>
+            </node>
+          </node>
+          <node concept="2pNNFK" id="6mblWKdRCnB" role="3o6s8t">
+            <property role="2pNNFO" value="script" />
+            <node concept="2pNUuL" id="6mblWKdRCnF" role="2pNNFR">
+              <property role="2pNUuO" value="type" />
+              <node concept="2pMdtt" id="6mblWKdRCnH" role="2pMdts">
+                <property role="2pMdty" value="text/javascript" />
+              </node>
+            </node>
+            <node concept="2pNUuL" id="6mblWKdRCnL" role="2pNNFR">
+              <property role="2pNUuO" value="language" />
+              <node concept="2pMdtt" id="6mblWKdRCnP" role="2pMdts">
+                <property role="2pMdty" value="javascript" />
+              </node>
+            </node>
+            <node concept="2pNUuL" id="6mblWKdRCnT" role="2pNNFR">
+              <property role="2pNUuO" value="src" />
+              <node concept="2pMdtt" id="6mblWKdRCnZ" role="2pMdts">
+                <property role="2pMdty" value="circles/circles.nocache.js" />
+              </node>
+            </node>
+          </node>
+          <node concept="2pNNFK" id="6mblWKdRCoa" role="3o6s8t">
+            <property role="2pNNFO" value="div" />
+            <node concept="2pNUuL" id="6mblWKdRCol" role="2pNNFR">
+              <property role="2pNUuO" value="id" />
+              <node concept="2pMdtt" id="6mblWKdRCon" role="2pMdts">
+                <property role="2pMdty" value="main" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2pNm8N" id="6mblWKdRCmN" role="2pNm8Q">
+        <node concept="29q25o" id="6mblWKdRCmP" role="BGLLu">
+          <property role="29q25t" value="html" />
+          <node concept="29qyjW" id="6mblWKdRCmR" role="29qyi3">
+            <property role="29qyi6" value="true" />
+            <property role="29qyi0" value="-//W3C//DTD HTML 4.01 Transitional//EN" />
+            <property role="29qyi7" value="http://www.w3.org/TR/html4/loose.dtd" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="n94m4" id="6mblWKdRCkH" role="lGtFl">
+      <ref role="n9lRv" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+    </node>
+    <node concept="2jeGV$" id="6mblWKdRCos" role="lGtFl">
+      <property role="TrG5h" value="Html" />
+      <node concept="2jfdEK" id="6mblWKdRCou" role="2jfP_Y">
+        <node concept="3clFbS" id="6mblWKdRCow" role="2VODD2">
+          <node concept="3clFbF" id="6mblWKdRCpd" role="3cqZAp">
+            <node concept="2OqwBi" id="6mblWKdRCqY" role="3clFbG">
+              <node concept="30H73N" id="6mblWKdRCpc" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6mblWKdRCwq" role="2OqNvi">
+                <ref role="3Tt5mk" to="6je1:6mblWKdRxNG" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2b_W8R" id="6mblWKdRKO7" role="lGtFl">
+      <node concept="2bEx1p" id="6mblWKdRKO8" role="2bEx12">
+        <property role="2bEHen" value="${module}/../../web-app/src/main/webapp" />
+        <property role="2bDwcZ" value="module.html.xml" />
+        <node concept="1CqxJL" id="6mblWKdSta3" role="1CqxIz">
+          <property role="1CqxJM" value=".html.xml" />
+          <property role="1CqxIc" value=".html" />
         </node>
       </node>
     </node>
