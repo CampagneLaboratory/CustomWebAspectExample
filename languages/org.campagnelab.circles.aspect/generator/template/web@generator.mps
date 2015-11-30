@@ -4586,6 +4586,27 @@
             </node>
           </node>
         </node>
+        <node concept="2pNNFK" id="6mblWKe8SoQ" role="3o6s8t">
+          <property role="2pNNFO" value="inherits" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="6mblWKe8Sqn" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="6mblWKe8Sqq" role="2pMdts">
+              <property role="2pMdty" value="com.google.gwt.place.Place" />
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="6mblWKe8SKF" role="3o6s8t">
+          <property role="2pNNFO" value="inherits" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="6mblWKe8SKG" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="6mblWKe8SKH" role="2pMdts">
+              <property role="2pMdty" value="com.google.gwt.activity.Activity" />
+            </node>
+          </node>
+        </node>
+        <node concept="3o6iSG" id="6mblWKe8SDm" role="3o6s8t" />
         <node concept="2pNNFK" id="6mblWKdLOER" role="3o6s8t">
           <property role="2pNNFO" value="inherits" />
           <property role="qg3DV" value="true" />
