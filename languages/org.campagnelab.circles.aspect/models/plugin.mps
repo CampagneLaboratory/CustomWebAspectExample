@@ -1292,23 +1292,41 @@
                                       </node>
                                     </node>
                                   </node>
-                                  <node concept="3clFbH" id="2SasHe_JQoX" role="3cqZAp" />
-                                  <node concept="3clFbF" id="2SasHe_GYCA" role="3cqZAp">
-                                    <node concept="2OqwBi" id="2SasHe_GYCB" role="3clFbG">
-                                      <node concept="2OqwBi" id="2SasHe_H6qs" role="2Oq$k0">
-                                        <node concept="37vLTw" id="2SasHe_GYCC" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="2SasHe_GYBL" resolve="infoWithFile" />
-                                        </node>
-                                        <node concept="2sxana" id="2SasHe_H6vu" role="2OqNvi">
-                                          <ref role="2sxfKC" node="2SasHe_H0tE" resolve="file" />
+                                  <node concept="3SKdUt" id="2KSnIHIEjQq" role="3cqZAp">
+                                    <node concept="3SKdUq" id="2KSnIHIEjRW" role="3SKWNk">
+                                      <property role="3SKdUp" value="use Java File to delete. Idea file needs synchronization and slows down the build." />
+                                    </node>
+                                  </node>
+                                  <node concept="3clFbF" id="2KSnIHIDN1T" role="3cqZAp">
+                                    <node concept="2OqwBi" id="2KSnIHIDNSt" role="3clFbG">
+                                      <node concept="2ShNRf" id="2KSnIHIDN1P" role="2Oq$k0">
+                                        <node concept="1pGfFk" id="2KSnIHIDNvQ" role="2ShVmc">
+                                          <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                                          <node concept="2OqwBi" id="2KSnIHIDNGh" role="37wK5m">
+                                            <node concept="2OqwBi" id="2KSnIHIDNzr" role="2Oq$k0">
+                                              <node concept="37vLTw" id="2KSnIHIDNzs" role="2Oq$k0">
+                                                <ref role="3cqZAo" node="2SasHe_GYBL" resolve="infoWithFile" />
+                                              </node>
+                                              <node concept="2sxana" id="2KSnIHIDNzt" role="2OqNvi">
+                                                <ref role="2sxfKC" node="2SasHe_H0tE" resolve="file" />
+                                              </node>
+                                            </node>
+                                            <node concept="liA8E" id="2KSnIHIDNNv" role="2OqNvi">
+                                              <ref role="37wK5l" to="3ju5:~IFile.getPath():java.lang.String" resolve="getPath" />
+                                            </node>
+                                          </node>
                                         </node>
                                       </node>
-                                      <node concept="liA8E" id="2SasHe_GYCD" role="2OqNvi">
-                                        <ref role="37wK5l" to="3ju5:~IFile.delete():boolean" resolve="delete" />
+                                      <node concept="liA8E" id="2KSnIHIDOeC" role="2OqNvi">
+                                        <ref role="37wK5l" to="guwi:~File.delete():boolean" resolve="delete" />
                                       </node>
                                     </node>
                                   </node>
-                                  <node concept="3clFbH" id="2SasHe_GYC_" role="3cqZAp" />
+                                  <node concept="3clFbF" id="2KSnIHID_xl" role="3cqZAp">
+                                    <node concept="3clFbT" id="2KSnIHID_xk" role="3clFbG">
+                                      <property role="3clFbU" value="false" />
+                                    </node>
+                                  </node>
                                 </node>
                               </node>
                               <node concept="3clFb_" id="6mblWKdSu59" role="jymVt">
