@@ -435,7 +435,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="acvUmyEtNp" role="3vqPLo">
-      <property role="1QGGTI" value="${module}/icons/web-aspect-icon-1.png" />
+      <property role="1QGGTI" value="${module}/icons/web-aspect-2.png" />
     </node>
   </node>
   <node concept="15KeUS" id="FyYyYnKV_d">
