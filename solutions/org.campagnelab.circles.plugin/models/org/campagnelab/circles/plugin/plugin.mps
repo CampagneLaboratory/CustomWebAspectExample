@@ -5,8 +5,8 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="3" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
@@ -18,6 +18,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="zdfu" ref="cac2fef0-41a6-4fcd-923f-f893d536b2ab/java:jetbrains.mps.ide.devkit.actions(jetbrains.mps.ide.mpsdevkit/)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -198,11 +199,16 @@
             <node concept="2OqwBi" id="RKPJ9dqUWd" role="33vP2m">
               <node concept="2YIFZM" id="RKPJ9dqUWe" role="2Oq$k0">
                 <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
-                <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(jetbrains.mps.project.Project):jetbrains.mps.smodel.language.LanguageRegistry" resolve="getInstance" />
-                <node concept="2OqwBi" id="RKPJ9dqUWf" role="37wK5m">
-                  <node concept="2WthIp" id="RKPJ9dqUWg" role="2Oq$k0" />
-                  <node concept="1DTwFV" id="RKPJ9dqUWh" role="2OqNvi">
-                    <ref role="2WH_rO" node="RKPJ9dqOBM" resolve="project" />
+                <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(org.jetbrains.mps.openapi.module.SRepository):jetbrains.mps.smodel.language.LanguageRegistry" resolve="getInstance" />
+                <node concept="2OqwBi" id="4sIn2o4mGrL" role="37wK5m">
+                  <node concept="2OqwBi" id="4sIn2o4mGrM" role="2Oq$k0">
+                    <node concept="2WthIp" id="4sIn2o4mGrN" role="2Oq$k0" />
+                    <node concept="1DTwFV" id="4sIn2o4mGrO" role="2OqNvi">
+                      <ref role="2WH_rO" node="RKPJ9dqOBM" resolve="project" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="4sIn2o4mGrP" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
                   </node>
                 </node>
               </node>
@@ -301,11 +307,16 @@
             <node concept="2OqwBi" id="RKPJ9dqOC1" role="33vP2m">
               <node concept="2YIFZM" id="RKPJ9dqOC2" role="2Oq$k0">
                 <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
-                <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(jetbrains.mps.project.Project):jetbrains.mps.smodel.language.LanguageRegistry" resolve="getInstance" />
-                <node concept="2OqwBi" id="RKPJ9dqOC3" role="37wK5m">
-                  <node concept="2WthIp" id="RKPJ9dqOC4" role="2Oq$k0" />
-                  <node concept="1DTwFV" id="RKPJ9dqOC5" role="2OqNvi">
-                    <ref role="2WH_rO" node="RKPJ9dqOBM" resolve="project" />
+                <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(org.jetbrains.mps.openapi.module.SRepository):jetbrains.mps.smodel.language.LanguageRegistry" resolve="getInstance" />
+                <node concept="2OqwBi" id="4sIn2o4mFMd" role="37wK5m">
+                  <node concept="2OqwBi" id="RKPJ9dqOC3" role="2Oq$k0">
+                    <node concept="2WthIp" id="RKPJ9dqOC4" role="2Oq$k0" />
+                    <node concept="1DTwFV" id="RKPJ9dqOC5" role="2OqNvi">
+                      <ref role="2WH_rO" node="RKPJ9dqOBM" resolve="project" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="4sIn2o4mGmi" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
                   </node>
                 </node>
               </node>
@@ -417,11 +428,16 @@
             <node concept="2OqwBi" id="3Uieg3Mrupm" role="33vP2m">
               <node concept="2YIFZM" id="3Uieg3Mrupn" role="2Oq$k0">
                 <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
-                <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(jetbrains.mps.project.Project):jetbrains.mps.smodel.language.LanguageRegistry" resolve="getInstance" />
-                <node concept="2OqwBi" id="3Uieg3Mrupo" role="37wK5m">
-                  <node concept="2WthIp" id="3Uieg3Mrupp" role="2Oq$k0" />
-                  <node concept="1DTwFV" id="3Uieg3Mrupq" role="2OqNvi">
-                    <ref role="2WH_rO" node="3Uieg3MrupK" resolve="project" />
+                <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(org.jetbrains.mps.openapi.module.SRepository):jetbrains.mps.smodel.language.LanguageRegistry" resolve="getInstance" />
+                <node concept="2OqwBi" id="4sIn2o4mGSu" role="37wK5m">
+                  <node concept="2OqwBi" id="4sIn2o4mGSv" role="2Oq$k0">
+                    <node concept="2WthIp" id="4sIn2o4mGSw" role="2Oq$k0" />
+                    <node concept="1DTwFV" id="4sIn2o4mGSx" role="2OqNvi">
+                      <ref role="2WH_rO" node="3Uieg3MrupK" resolve="project" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="4sIn2o4mGSy" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
                   </node>
                 </node>
               </node>
@@ -519,12 +535,17 @@
             </node>
             <node concept="2OqwBi" id="3Uieg3MrupZ" role="33vP2m">
               <node concept="2YIFZM" id="3Uieg3Mruq0" role="2Oq$k0">
-                <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(jetbrains.mps.project.Project):jetbrains.mps.smodel.language.LanguageRegistry" resolve="getInstance" />
                 <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
-                <node concept="2OqwBi" id="3Uieg3Mruq1" role="37wK5m">
-                  <node concept="2WthIp" id="3Uieg3Mruq2" role="2Oq$k0" />
-                  <node concept="1DTwFV" id="3Uieg3Mruq3" role="2OqNvi">
-                    <ref role="2WH_rO" node="3Uieg3MrupK" resolve="project" />
+                <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(org.jetbrains.mps.openapi.module.SRepository):jetbrains.mps.smodel.language.LanguageRegistry" resolve="getInstance" />
+                <node concept="2OqwBi" id="4sIn2o4mGL1" role="37wK5m">
+                  <node concept="2OqwBi" id="4sIn2o4mGL2" role="2Oq$k0">
+                    <node concept="2WthIp" id="4sIn2o4mGL3" role="2Oq$k0" />
+                    <node concept="1DTwFV" id="4sIn2o4mGL4" role="2OqNvi">
+                      <ref role="2WH_rO" node="3Uieg3MrupK" resolve="project" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="4sIn2o4mGL5" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
                   </node>
                 </node>
               </node>
@@ -611,12 +632,17 @@
                     </node>
                     <node concept="2OqwBi" id="5eOdMaeZelt" role="33vP2m">
                       <node concept="2YIFZM" id="5eOdMaeZelu" role="2Oq$k0">
-                        <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(jetbrains.mps.project.Project):jetbrains.mps.smodel.language.LanguageRegistry" resolve="getInstance" />
                         <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
-                        <node concept="2OqwBi" id="5eOdMaeZelv" role="37wK5m">
-                          <node concept="2WthIp" id="5eOdMaeZelw" role="2Oq$k0" />
-                          <node concept="1DTwFV" id="5eOdMaeZelx" role="2OqNvi">
-                            <ref role="2WH_rO" node="5eOdMaeZcyv" resolve="project" />
+                        <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(org.jetbrains.mps.openapi.module.SRepository):jetbrains.mps.smodel.language.LanguageRegistry" resolve="getInstance" />
+                        <node concept="2OqwBi" id="4sIn2o4mHhh" role="37wK5m">
+                          <node concept="2OqwBi" id="4sIn2o4mHhi" role="2Oq$k0">
+                            <node concept="2WthIp" id="4sIn2o4mHhj" role="2Oq$k0" />
+                            <node concept="1DTwFV" id="4sIn2o4mHhk" role="2OqNvi">
+                              <ref role="2WH_rO" node="5eOdMaeZcyv" resolve="project" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="4sIn2o4mHhl" role="2OqNvi">
+                            <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
                           </node>
                         </node>
                       </node>
