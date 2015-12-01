@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="77ry" ref="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
+    <import index="ehbc" ref="r:3d4b8a25-2cca-4083-ac64-ee80560fc20e(org.campagnelab.circles.model.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -35,6 +36,12 @@
         <property id="4824635715685243887" name="user" index="1mS5tK" />
         <child id="2765574652333579748" name="queries" index="16iTqq" />
       </concept>
+      <concept id="1556429057109701099" name="org.campagnelab.circles.aspect.structure.WebEditors" flags="ng" index="YxNCg">
+        <child id="1556429057109701121" name="editors" index="YxNBU" />
+      </concept>
+      <concept id="1556429057109701100" name="org.campagnelab.circles.aspect.structure.EditorRef" flags="ng" index="YxNCn">
+        <reference id="1556429057109701101" name="editor" index="YxNCm" />
+      </concept>
       <concept id="1004539053072257941" name="org.campagnelab.circles.aspect.structure.IncludeLanguage" flags="ng" index="10$slB">
         <child id="2378691532651589473" name="language" index="2SVU0T" />
       </concept>
@@ -54,6 +61,15 @@
       </concept>
       <concept id="4824635715685240675" name="org.campagnelab.circles.aspect.structure.PersistedConcepts" flags="ng" index="1mS4fW">
         <child id="4824635715685240684" name="inclusionRules" index="1mS4fN" />
+      </concept>
+      <concept id="7317038553515001966" name="org.campagnelab.circles.aspect.structure.Place" flags="ng" index="1F$HYy">
+        <reference id="7317038553516752305" name="concept" index="1FJQDX" />
+        <child id="7317038553515001972" name="tokens" index="1F$HYS" />
+        <child id="7317038553515303527" name="activity" index="1F_nmF" />
+      </concept>
+      <concept id="7317038553515001969" name="org.campagnelab.circles.aspect.structure.Token" flags="ng" index="1F$HYX" />
+      <concept id="7317038553515303524" name="org.campagnelab.circles.aspect.structure.ViewNodeActivity" flags="ng" index="1F_nmC">
+        <reference id="7317038553515303525" name="nodeIdToken" index="1F_nmD" />
       </concept>
       <concept id="4829993475490891244" name="org.campagnelab.circles.aspect.structure.GwtModule" flags="ng" index="3X4l2l">
         <property id="4829993475490925500" name="moduleName" index="3X4dV5" />
@@ -103,6 +119,17 @@
         <node concept="17QB3L" id="2pxiRTwb2Wd" role="16iT67" />
       </node>
     </node>
+    <node concept="16iT6c" id="6mblWKefljZ" role="16iTqq">
+      <property role="TrG5h" value="lookupProject" />
+      <property role="16jhX1" value="select from Project where name= ?" />
+      <node concept="16iT6d" id="6mblWKeflk0" role="16iTq8">
+        <ref role="16iT6a" to="77ry:5eOdMaf2nSN" resolve="Project" />
+      </node>
+      <node concept="16iT66" id="6mblWKeflk1" role="16iTqa">
+        <property role="TrG5h" value="projectName" />
+        <node concept="17QB3L" id="6mblWKeflkf" role="16iT67" />
+      </node>
+    </node>
     <node concept="16iT6c" id="6mblWKdIf7R" role="16iTqq">
       <property role="TrG5h" value="lookupModel" />
       <property role="16jhX1" value="select from Model where modelId= ?" />
@@ -117,6 +144,30 @@
   </node>
   <node concept="3X4l2l" id="6mblWKdIZZl">
     <property role="3X4dV5" value="org.campagnelab.circles.model" />
+  </node>
+  <node concept="1F$HYy" id="6mblWKecU_y">
+    <property role="TrG5h" value="ViewProject" />
+    <ref role="1FJQDX" to="77ry:5eOdMaf2nSN" resolve="Project" />
+    <node concept="1F$HYX" id="6mblWKecU_z" role="1F$HYS">
+      <property role="TrG5h" value="projectName" />
+    </node>
+    <node concept="1F_nmC" id="6mblWKecU_B" role="1F_nmF">
+      <ref role="1F_nmD" node="6mblWKecU_z" resolve="projectName" />
+    </node>
+  </node>
+  <node concept="YxNCg" id="6mblWKeeUjh">
+    <node concept="YxNCn" id="6mblWKeeUji" role="YxNBU">
+      <ref role="YxNCm" to="ehbc:6mblWKeeSyN" resolve="Project_Editor" />
+    </node>
+    <node concept="YxNCn" id="6mblWKeeUjk" role="YxNBU">
+      <ref role="YxNCm" to="ehbc:6mblWKeeSxV" resolve="Language_Editor" />
+    </node>
+    <node concept="YxNCn" id="6mblWKeeUjn" role="YxNBU">
+      <ref role="YxNCm" to="ehbc:6mblWKeeSxf" resolve="Model_Editor" />
+    </node>
+    <node concept="YxNCn" id="6mblWKeeUjr" role="YxNBU">
+      <ref role="YxNCm" to="ehbc:6mblWKeeSzv" resolve="Solution_Editor" />
+    </node>
   </node>
 </model>
 

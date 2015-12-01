@@ -750,6 +750,21 @@
       <node concept="3F0ifn" id="6mblWKe7oOJ" role="3EZMnx">
         <property role="3F0ifm" value="Place" />
       </node>
+      <node concept="3F0A7n" id="6mblWKecVhc" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="6mblWKed3R4" role="3EZMnx">
+        <property role="3F0ifm" value="viewing" />
+      </node>
+      <node concept="1iCGBv" id="6mblWKed3R$" role="3EZMnx">
+        <ref role="1NtTu8" to="6je1:6mblWKed3QL" />
+        <node concept="1sVBvm" id="6mblWKed3RA" role="1sWHZn">
+          <node concept="3F0A7n" id="6mblWKed3RY" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
       <node concept="3F0ifn" id="6mblWKe7EgT" role="3EZMnx">
         <property role="3F0ifm" value="tokens {" />
         <node concept="pVoyu" id="6mblWKe7Eh4" role="3F10Kt">

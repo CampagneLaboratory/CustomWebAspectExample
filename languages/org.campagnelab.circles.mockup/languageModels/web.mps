@@ -100,6 +100,7 @@
         <property id="7317038553511135446" name="title" index="1CltWq" />
       </concept>
       <concept id="7317038553515001966" name="org.campagnelab.circles.aspect.structure.Place" flags="ng" index="1F$HYy">
+        <reference id="7317038553516752305" name="concept" index="1FJQDX" />
         <child id="7317038553515001972" name="tokens" index="1F$HYS" />
         <child id="7317038553515303527" name="activity" index="1F_nmF" />
       </concept>
@@ -221,19 +222,17 @@
       <property role="1CltWq" value="Hello World" />
     </node>
     <node concept="1F$HYQ" id="6mblWKe7lLI" role="1F$HYU">
-      <ref role="1F$HYR" node="6mblWKe7lLv" resolve="NodeViewPlace" />
+      <ref role="1F$HYR" node="6mblWKe7lLv" resolve="CircleViewPlace" />
     </node>
   </node>
   <node concept="1F$HYy" id="6mblWKe7lLv">
-    <property role="TrG5h" value="NodeViewPlace" />
+    <property role="TrG5h" value="CircleViewPlace" />
+    <ref role="1FJQDX" to="avse:7pelyIRkkSj" resolve="Circle" />
     <node concept="1F$HYX" id="6mblWKe7lLw" role="1F$HYS">
-      <property role="TrG5h" value="nodeId" />
-    </node>
-    <node concept="1F$HYX" id="6mblWKe7KIB" role="1F$HYS">
-      <property role="TrG5h" value="modelId" />
+      <property role="TrG5h" value="circleId" />
     </node>
     <node concept="1F_nmC" id="6mblWKe7AzT" role="1F_nmF">
-      <ref role="1F_nmD" node="6mblWKe7lLw" resolve="nodeId" />
+      <ref role="1F_nmD" node="6mblWKe7lLw" resolve="circleId" />
     </node>
   </node>
 </model>
