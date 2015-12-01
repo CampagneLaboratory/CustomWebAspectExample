@@ -146,7 +146,7 @@
     <property role="3X4dV5" value="org.campagnelab.circles.model" />
   </node>
   <node concept="1F$HYy" id="6mblWKecU_y">
-    <property role="TrG5h" value="ViewProject" />
+    <property role="TrG5h" value="ViewProjectPlace" />
     <ref role="1FJQDX" to="77ry:5eOdMaf2nSN" resolve="Project" />
     <node concept="1F$HYX" id="6mblWKecU_z" role="1F$HYS">
       <property role="TrG5h" value="projectName" />

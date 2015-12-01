@@ -47,16 +47,12 @@
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-    <module reference="67b3c41d-58b3-4756-b971-30bf8a9d63e6(jetbrains.jetpad)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
-    <module reference="a1250a4d-c090-42c3-ad7c-d298a3357dd4(jetbrains.mps.make.runtime)" version="0" />
-    <module reference="8c40f9f4-b3bd-42d0-8b65-8e644273493c(org.campagnelab.circles.aspect)" version="0" />
     <module reference="b117aec4-8d9e-4c87-a347-e41e0dfe0990(org.campagnelab.circles.aspect.runtime)" version="0" />
     <module reference="3dc3d3d3-b034-480c-8b21-d7a88903974b(org.campagnelab.circles.mockup)" version="0" />
     <module reference="87c8043e-fece-4ba6-9d13-3ef71e47af25(org.campagnelab.circles.model)" version="0" />
-    <module reference="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3(org.google.gwt)" version="0" />
   </dependencyVersions>
   <runtime>
     <dependency reexport="false">b117aec4-8d9e-4c87-a347-e41e0dfe0990(org.campagnelab.circles.aspect.runtime)</dependency>

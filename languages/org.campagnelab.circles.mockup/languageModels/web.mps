@@ -222,11 +222,11 @@
       <property role="1CltWq" value="Hello World" />
     </node>
     <node concept="1F$HYQ" id="6mblWKe7lLI" role="1F$HYU">
-      <ref role="1F$HYR" node="6mblWKe7lLv" resolve="CircleViewPlace" />
+      <ref role="1F$HYR" node="6mblWKe7lLv" resolve="ViewCirclePlace" />
     </node>
   </node>
   <node concept="1F$HYy" id="6mblWKe7lLv">
-    <property role="TrG5h" value="CircleViewPlace" />
+    <property role="TrG5h" value="ViewCirclePlace" />
     <ref role="1FJQDX" to="avse:7pelyIRkkSj" resolve="Circle" />
     <node concept="1F$HYX" id="6mblWKe7lLw" role="1F$HYS">
       <property role="TrG5h" value="circleId" />
