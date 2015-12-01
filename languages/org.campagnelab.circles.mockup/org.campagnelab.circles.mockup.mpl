@@ -40,7 +40,7 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
     <language id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" fqName="org.campagnelab.circles.aspect" version="0" />
-    <language id="87c8043e-fece-4ba6-9d13-3ef71e47af25" fqName="org.campagnelab.circles.model" version="0" />
+    <language id="87c8043e-fece-4ba6-9d13-3ef71e47af25" fqName="org.campagnelab.circles.model" version="-1" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
