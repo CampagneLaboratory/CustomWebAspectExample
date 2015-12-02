@@ -2254,6 +2254,21 @@
   <node concept="312cEu" id="4c7_nAY8tZh">
     <property role="3GE5qa" value="module" />
     <property role="TrG5h" value="ModuleEntryPoint" />
+    <node concept="312cEg" id="4sIn2o4pkG7" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="appWidget" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="4sIn2o4pkG9" role="1tU5fm">
+        <ref role="3uigEE" to="h2fa:~SimplePanel" resolve="SimplePanel" />
+      </node>
+      <node concept="2ShNRf" id="4sIn2o4pkGc" role="33vP2m">
+        <node concept="1pGfFk" id="4sIn2o4pkGd" role="2ShVmc">
+          <ref role="37wK5l" to="h2fa:~SimplePanel.&lt;init&gt;()" resolve="SimplePanel" />
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="4sIn2o4pkGb" role="1B3o_S" />
+    </node>
     <node concept="312cEg" id="4sIn2o4o01b" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -2380,6 +2395,20 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4sIn2o4pkZu" role="3cqZAp">
+          <node concept="2OqwBi" id="4sIn2o4pkZ$" role="3clFbG">
+            <node concept="37vLTw" id="4sIn2o4pkZz" role="2Oq$k0">
+              <ref role="3cqZAo" node="4sIn2o4nVW7" resolve="activityManager" />
+            </node>
+            <node concept="liA8E" id="4sIn2o4pkZ_" role="2OqNvi">
+              <ref role="37wK5l" to="uxhu:~ActivityManager.setDisplay(com.google.gwt.user.client.ui.AcceptsOneWidget):void" resolve="setDisplay" />
+              <node concept="37vLTw" id="4sIn2o4pkZw" role="37wK5m">
+                <ref role="3cqZAo" node="4sIn2o4pkG7" resolve="appWidget" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4sIn2o4pkUp" role="3cqZAp" />
         <node concept="3SKdUt" id="4sIn2o4nVWE" role="3cqZAp">
           <node concept="3SKdUq" id="4sIn2o4nVWD" role="3SKWNk">
             <property role="3SKdUp" value="Start PlaceHistoryHandler with our PlaceHistoryMapper" />
@@ -2418,6 +2447,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="4sIn2o4pl6g" role="3cqZAp" />
         <node concept="3clFbF" id="4sIn2o4nVWr" role="3cqZAp">
           <node concept="2OqwBi" id="4sIn2o4nWGa" role="3clFbG">
             <node concept="37vLTw" id="4sIn2o4nWG9" role="2Oq$k0">
@@ -2437,6 +2467,21 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4sIn2o4plhU" role="3cqZAp">
+          <node concept="2OqwBi" id="4sIn2o4plhV" role="3clFbG">
+            <node concept="2YIFZM" id="4sIn2o4pli1" role="2Oq$k0">
+              <ref role="1Pybhc" to="h2fa:~RootPanel" resolve="RootPanel" />
+              <ref role="37wK5l" to="h2fa:~RootPanel.get():com.google.gwt.user.client.ui.RootPanel" resolve="get" />
+            </node>
+            <node concept="liA8E" id="4sIn2o4plhX" role="2OqNvi">
+              <ref role="37wK5l" to="h2fa:~AbsolutePanel.add(com.google.gwt.user.client.ui.Widget):void" resolve="add" />
+              <node concept="37vLTw" id="4sIn2o4plhY" role="37wK5m">
+                <ref role="3cqZAo" node="4sIn2o4pkG7" resolve="appWidget" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4sIn2o4pm94" role="3cqZAp" />
         <node concept="3SKdUt" id="4sIn2o4nVWG" role="3cqZAp">
           <node concept="3SKdUq" id="4sIn2o4nVWF" role="3SKWNk">
             <property role="3SKdUp" value="Goes to the place represented on URL else default place" />
@@ -2452,7 +2497,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4sIn2o4nVTN" role="3cqZAp" />
+        <node concept="3clFbH" id="4sIn2o4plDQ" role="3cqZAp" />
       </node>
       <node concept="3Tm1VV" id="4c7_nAY8u15" role="1B3o_S" />
       <node concept="3cqZAl" id="4c7_nAY8u16" role="3clF45" />
@@ -6461,6 +6506,17 @@
         </node>
       </node>
     </node>
+    <node concept="312cEg" id="4sIn2o4psWr" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="htmlWrapper" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="4sIn2o4pPTp" role="1tU5fm">
+        <ref role="3uigEE" to="h2fa:~HTML" resolve="HTML" />
+      </node>
+      <node concept="3Tm6S6" id="4sIn2o4psWv" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="4sIn2o4pqlW" role="jymVt" />
     <node concept="3clFbW" id="6mblWKeaeB3" role="jymVt">
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
@@ -6470,6 +6526,22 @@
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="6mblWKeaeB6" role="1tU5fm">
           <ref role="3uigEE" node="6mblWKeadJH" resolve="ViewCirclePlace" />
+          <node concept="1ZhdrF" id="4sIn2o4szOq" role="lGtFl">
+            <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
+            <property role="2qtEX8" value="classifier" />
+            <node concept="3$xsQk" id="4sIn2o4szOr" role="3$ytzL">
+              <node concept="3clFbS" id="4sIn2o4szOs" role="2VODD2">
+                <node concept="3clFbF" id="4sIn2o4s$js" role="3cqZAp">
+                  <node concept="2OqwBi" id="4sIn2o4s$Oo" role="3clFbG">
+                    <node concept="30H73N" id="4sIn2o4s$jr" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="4sIn2o4s_qg" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="37vLTG" id="6mblWKeaeB7" role="3clF46">
@@ -6718,6 +6790,47 @@
                               </node>
                             </node>
                           </node>
+                          <node concept="3clFbF" id="6mblWKeaeCi" role="3cqZAp">
+                            <node concept="2OqwBi" id="6mblWKeaeCW" role="3clFbG">
+                              <node concept="37vLTw" id="6mblWKeaeCV" role="2Oq$k0">
+                                <ref role="3cqZAo" node="6mblWKeaeB0" resolve="mapper" />
+                              </node>
+                              <node concept="liA8E" id="6mblWKeaeCX" role="2OqNvi">
+                                <ref role="37wK5l" to="sm7x:~Mapper.attachRoot():void" resolve="attachRoot" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbF" id="4sIn2o4q3nf" role="3cqZAp">
+                            <node concept="37vLTI" id="4sIn2o4q5of" role="3clFbG">
+                              <node concept="37vLTw" id="4sIn2o4q3nd" role="37vLTJ">
+                                <ref role="3cqZAo" node="4sIn2o4psWr" resolve="htmlWrapper" />
+                              </node>
+                              <node concept="2YIFZM" id="4sIn2o4q02T" role="37vLTx">
+                                <ref role="37wK5l" to="h2fa:~HTML.wrap(com.google.gwt.dom.client.Element):com.google.gwt.user.client.ui.HTML" resolve="wrap" />
+                                <ref role="1Pybhc" to="h2fa:~HTML" resolve="HTML" />
+                                <node concept="1eOMI4" id="4sIn2o4sdG9" role="37wK5m">
+                                  <node concept="10QFUN" id="4sIn2o4sdG6" role="1eOMHV">
+                                    <node concept="3uibUv" id="4sIn2o4se7B" role="10QFUM">
+                                      <ref role="3uigEE" to="rn0p:~Element" resolve="Element" />
+                                    </node>
+                                    <node concept="2OqwBi" id="4sIn2o4pynP" role="10QFUP">
+                                      <node concept="2OqwBi" id="4sIn2o4pynQ" role="2Oq$k0">
+                                        <node concept="37vLTw" id="4sIn2o4pynR" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="6mblWKeaeB0" resolve="mapper" />
+                                        </node>
+                                        <node concept="liA8E" id="4sIn2o4pynS" role="2OqNvi">
+                                          <ref role="37wK5l" to="sm7x:~Mapper.getTarget():java.lang.Object" resolve="getTarget" />
+                                        </node>
+                                      </node>
+                                      <node concept="liA8E" id="4sIn2o4pynT" role="2OqNvi">
+                                        <ref role="37wK5l" to="mpar:~BaseWithElement.getElement():com.google.gwt.dom.client.Element" resolve="getElement" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
                         </node>
                         <node concept="3Tm1VV" id="6mblWKeaeBS" role="1B3o_S" />
                         <node concept="3cqZAl" id="6mblWKeaeBT" role="3clF45" />
@@ -6754,11 +6867,6 @@
                     </node>
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="3SKdUt" id="6mblWKeaBa3" role="3cqZAp">
-              <node concept="3SKdUq" id="6mblWKeaByp" role="3SKWNk">
-                <property role="3SKdUp" value="TODO: replace the following with the correct dbService for the module and the correct query:" />
               </node>
             </node>
             <node concept="3clFbF" id="6mblWKeaeBV" role="3cqZAp">
@@ -6907,44 +7015,51 @@
             <property role="3SKdUp" value="Attach this view to the application container" />
           </node>
         </node>
-        <node concept="3clFbF" id="6mblWKeaeCi" role="3cqZAp">
-          <node concept="2OqwBi" id="6mblWKeaeCW" role="3clFbG">
-            <node concept="37vLTw" id="6mblWKeaeCV" role="2Oq$k0">
-              <ref role="3cqZAo" node="6mblWKeaeB0" resolve="mapper" />
-            </node>
-            <node concept="liA8E" id="6mblWKeaeCX" role="2OqNvi">
-              <ref role="37wK5l" to="sm7x:~Mapper.attachRoot():void" resolve="attachRoot" />
-            </node>
-          </node>
-        </node>
         <node concept="3SKdUt" id="6mblWKeavWd" role="3cqZAp">
           <node concept="3SKdUq" id="6mblWKeawtQ" role="3SKWNk">
             <property role="3SKdUp" value="sds $(&quot;#main&quot;).append" />
           </node>
         </node>
-        <node concept="3clFbF" id="6mblWKebjwE" role="3cqZAp">
-          <node concept="2OqwBi" id="6mblWKebl5h" role="3clFbG">
-            <node concept="2YIFZM" id="6mblWKebkzJ" role="2Oq$k0">
-              <ref role="1Pybhc" to="ai6b:~GQuery" resolve="GQuery" />
-              <ref role="37wK5l" to="ai6b:~GQuery.$(java.lang.String):com.google.gwt.query.client.GQuery" resolve="$" />
-              <node concept="Xl_RD" id="6mblWKebkLF" role="37wK5m">
-                <property role="Xl_RC" value="#main" />
+        <node concept="1X3_iC" id="4sIn2o4qdNK" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="6mblWKebjwE" role="8Wnug">
+            <node concept="2OqwBi" id="6mblWKebl5h" role="3clFbG">
+              <node concept="2YIFZM" id="6mblWKebkzJ" role="2Oq$k0">
+                <ref role="1Pybhc" to="ai6b:~GQuery" resolve="GQuery" />
+                <ref role="37wK5l" to="ai6b:~GQuery.$(java.lang.String):com.google.gwt.query.client.GQuery" resolve="$" />
+                <node concept="Xl_RD" id="6mblWKebkLF" role="37wK5m">
+                  <property role="Xl_RC" value="#main" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6mblWKeblV$" role="2OqNvi">
+                <ref role="37wK5l" to="ai6b:~GQuery.append(com.google.gwt.query.client.GQuery):com.google.gwt.query.client.GQuery" resolve="append" />
+                <node concept="2OqwBi" id="6mblWKebn0E" role="37wK5m">
+                  <node concept="2OqwBi" id="6mblWKebm77" role="2Oq$k0">
+                    <node concept="37vLTw" id="6mblWKeblXa" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6mblWKeaeB0" resolve="mapper" />
+                    </node>
+                    <node concept="liA8E" id="6mblWKebmLZ" role="2OqNvi">
+                      <ref role="37wK5l" to="sm7x:~Mapper.getTarget():java.lang.Object" resolve="getTarget" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6mblWKebnhk" role="2OqNvi">
+                    <ref role="37wK5l" to="mpar:~BaseWithElement.getElement():com.google.gwt.dom.client.Element" resolve="getElement" />
+                  </node>
+                </node>
               </node>
             </node>
-            <node concept="liA8E" id="6mblWKeblV$" role="2OqNvi">
-              <ref role="37wK5l" to="ai6b:~GQuery.append(com.google.gwt.query.client.GQuery):com.google.gwt.query.client.GQuery" resolve="append" />
-              <node concept="2OqwBi" id="6mblWKebn0E" role="37wK5m">
-                <node concept="2OqwBi" id="6mblWKebm77" role="2Oq$k0">
-                  <node concept="37vLTw" id="6mblWKeblXa" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6mblWKeaeB0" resolve="mapper" />
-                  </node>
-                  <node concept="liA8E" id="6mblWKebmLZ" role="2OqNvi">
-                    <ref role="37wK5l" to="sm7x:~Mapper.getTarget():java.lang.Object" resolve="getTarget" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="6mblWKebnhk" role="2OqNvi">
-                  <ref role="37wK5l" to="mpar:~BaseWithElement.getElement():com.google.gwt.dom.client.Element" resolve="getElement" />
-                </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4sIn2o4qdSz" role="3cqZAp">
+          <node concept="2OqwBi" id="4sIn2o4qdTm" role="3clFbG">
+            <node concept="37vLTw" id="4sIn2o4qdSx" role="2Oq$k0">
+              <ref role="3cqZAo" node="6mblWKeaeCd" resolve="panel" />
+            </node>
+            <node concept="liA8E" id="4sIn2o4qdW0" role="2OqNvi">
+              <ref role="37wK5l" to="h2fa:~AcceptsOneWidget.setWidget(com.google.gwt.user.client.ui.IsWidget):void" resolve="setWidget" />
+              <node concept="37vLTw" id="4sIn2o4qdWB" role="37wK5m">
+                <ref role="3cqZAo" node="4sIn2o4psWr" resolve="htmlWrapper" />
               </node>
             </node>
           </node>
