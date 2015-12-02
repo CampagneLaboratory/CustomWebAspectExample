@@ -478,6 +478,10 @@
     <property role="3GE5qa" value="places" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7eRLJB8Dp1d" role="1TKVEl">
+      <property role="TrG5h" value="isDefault" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="6mblWKed3QL" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="concept" />
@@ -536,9 +540,54 @@
     <property role="R4oN_" value="View a Single Node" />
     <property role="34LRSv" value="ViewNodeActivity" />
     <ref role="1TJDcQ" node="6mblWKe7y9z" resolve="Activity" />
-    <node concept="1TJgyj" id="6mblWKe7y9_" role="1TKVEi">
+    <node concept="1TJgyj" id="7eRLJB8$xFx" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="focus" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7eRLJB8$xFl" resolve="NodeFocus" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7eRLJB8$xFl">
+    <property role="1pbfSe" value="1011474894" />
+    <property role="3GE5qa" value="activities" />
+    <property role="TrG5h" value="NodeFocus" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="7eRLJB8$xFm">
+    <property role="1pbfSe" value="1011474895" />
+    <property role="3GE5qa" value="activities" />
+    <property role="TrG5h" value="NewBeanCreationFocus" />
+    <ref role="1TJDcQ" node="7eRLJB8$xFl" resolve="NodeFocus" />
+  </node>
+  <node concept="1TIwiD" id="7eRLJB8$xFn">
+    <property role="1pbfSe" value="1011474896" />
+    <property role="3GE5qa" value="activities" />
+    <property role="TrG5h" value="DbRetrievedFocus" />
+    <ref role="1TJDcQ" node="7eRLJB8$xFl" resolve="NodeFocus" />
+    <node concept="1TJgyj" id="7eRLJB8$xGr" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="nodeIdToken" />
+      <property role="20kJfa" value="query" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2pxiRTwaHFM" resolve="QueryKind" />
+    </node>
+    <node concept="1TJgyj" id="7eRLJB8$xFs" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tokens" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="7eRLJB8$xFp" resolve="TokenRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7eRLJB8$xFp">
+    <property role="1pbfSe" value="1011474898" />
+    <property role="3GE5qa" value="activities" />
+    <property role="TrG5h" value="TokenRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7eRLJB8$xFq" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="token" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6mblWKe6oxL" resolve="Token" />
     </node>
   </node>

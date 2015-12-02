@@ -43,6 +43,7 @@
         <property id="4824635715685243887" name="user" index="1mS5tK" />
         <child id="2765574652333579748" name="queries" index="16iTqq" />
       </concept>
+      <concept id="8338352011213937366" name="org.campagnelab.circles.aspect.structure.NewBeanCreationFocus" flags="ng" index="2V9tKJ" />
       <concept id="1556429057109701099" name="org.campagnelab.circles.aspect.structure.WebEditors" flags="ng" index="YxNCg">
         <child id="1556429057109701121" name="editors" index="YxNBU" />
       </concept>
@@ -100,6 +101,7 @@
         <property id="7317038553511135446" name="title" index="1CltWq" />
       </concept>
       <concept id="7317038553515001966" name="org.campagnelab.circles.aspect.structure.Place" flags="ng" index="1F$HYy">
+        <property id="8338352011215212621" name="isDefault" index="2V4_qO" />
         <reference id="7317038553516752305" name="concept" index="1FJQDX" />
         <child id="7317038553515001972" name="tokens" index="1F$HYS" />
         <child id="7317038553515303527" name="activity" index="1F_nmF" />
@@ -109,7 +111,7 @@
       </concept>
       <concept id="7317038553515001969" name="org.campagnelab.circles.aspect.structure.Token" flags="ng" index="1F$HYX" />
       <concept id="7317038553515303524" name="org.campagnelab.circles.aspect.structure.ViewNodeActivity" flags="ng" index="1F_nmC">
-        <reference id="7317038553515303525" name="nodeIdToken" index="1F_nmD" />
+        <child id="8338352011213937377" name="focus" index="2V9tKo" />
       </concept>
       <concept id="4829993475490891244" name="org.campagnelab.circles.aspect.structure.GwtModule" flags="ng" index="3X4l2l">
         <property id="4829993475490925500" name="moduleName" index="3X4dV5" />
@@ -231,8 +233,16 @@
     <node concept="1F$HYX" id="6mblWKe7lLw" role="1F$HYS">
       <property role="TrG5h" value="circleId" />
     </node>
-    <node concept="1F_nmC" id="6mblWKe7AzT" role="1F_nmF">
-      <ref role="1F_nmD" node="6mblWKe7lLw" resolve="circleId" />
+    <node concept="1F_nmC" id="7eRLJB8$HRr" role="1F_nmF">
+      <node concept="2V9tKJ" id="7eRLJB8$HRv" role="2V9tKo" />
+    </node>
+  </node>
+  <node concept="1F$HYy" id="7eRLJB8yZyz">
+    <property role="TrG5h" value="ViewDashboardPlace" />
+    <property role="2V4_qO" value="true" />
+    <ref role="1FJQDX" to="avse:7pelyIRkeUs" resolve="Dashboard" />
+    <node concept="1F_nmC" id="7eRLJB8$HRi" role="1F_nmF">
+      <node concept="2V9tKJ" id="7eRLJB8$HRo" role="2V9tKo" />
     </node>
   </node>
 </model>
