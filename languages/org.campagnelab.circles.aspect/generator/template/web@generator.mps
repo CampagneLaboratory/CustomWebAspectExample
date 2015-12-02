@@ -50,6 +50,7 @@
     <import index="h2fa" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.user.client.ui(org.google.gwt/)" />
     <import index="ai6b" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.query.client(org.google.gwt/)" />
     <import index="ixh8" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.dom.builder.client(org.google.gwt/)" />
+    <import index="q4uu" ref="r:700dcccc-5294-4569-a97b-cb7b4632a7c8(web@generator)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -81,6 +82,9 @@
       <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryStatement" flags="nn" index="2GUZhq">
         <child id="1153952416686" name="body" index="2GV8ay" />
         <child id="1153952429843" name="finallyBody" index="2GVbov" />
+      </concept>
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -2250,6 +2254,24 @@
   <node concept="312cEu" id="4c7_nAY8tZh">
     <property role="3GE5qa" value="module" />
     <property role="TrG5h" value="ModuleEntryPoint" />
+    <node concept="312cEg" id="4sIn2o4o01b" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="defaultPlace" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="4sIn2o4o0Cb" role="1tU5fm">
+        <ref role="3uigEE" node="6mblWKeadJH" resolve="ViewCirclePlace" />
+      </node>
+      <node concept="2ShNRf" id="4sIn2o4o0fB" role="33vP2m">
+        <node concept="1pGfFk" id="4sIn2o4o0fC" role="2ShVmc">
+          <ref role="37wK5l" node="6mblWKeadNA" resolve="ViewCirclePlace" />
+          <node concept="Xl_RD" id="4sIn2o4o4zt" role="37wK5m">
+            <property role="Xl_RC" value="some-id" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="4sIn2o4o01g" role="1B3o_S" />
+    </node>
     <node concept="3clFb_" id="4c7_nAY8u0z" role="jymVt">
       <property role="TrG5h" value="onModuleLoad" />
       <property role="DiZV1" value="false" />
@@ -2258,27 +2280,179 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
       <node concept="3clFbS" id="4c7_nAY8u0_" role="3clF47">
-        <node concept="3cpWs8" id="6mblWKdKkln" role="3cqZAp">
-          <node concept="3cpWsn" id="6mblWKdKklm" role="3cpWs9">
+        <node concept="3cpWs8" id="4sIn2o4nVVR" role="3cqZAp">
+          <node concept="3cpWsn" id="4sIn2o4nVVQ" role="3cpWs9">
             <property role="3TUv4t" value="false" />
-            <property role="TrG5h" value="dbService" />
-            <node concept="3uibUv" id="6mblWKdKkmo" role="1tU5fm">
-              <ref role="3uigEE" node="2pxiRTw5ax4" resolve="DbGenericServiceAsync" />
+            <property role="TrG5h" value="clientFactory" />
+            <node concept="3uibUv" id="4sIn2o4nVVS" role="1tU5fm">
+              <ref role="3uigEE" node="6mblWKe9R$F" resolve="ClientFactory" />
             </node>
-            <node concept="10QFUN" id="6mblWKdKklp" role="33vP2m">
-              <node concept="2YIFZM" id="6mblWKdKklw" role="10QFUP">
-                <ref role="1Pybhc" to="wwko:~GWT" resolve="GWT" />
-                <ref role="37wK5l" to="wwko:~GWT.create(java.lang.Class):java.lang.Object" resolve="create" />
-                <node concept="3VsKOn" id="6mblWKdKkls" role="37wK5m">
-                  <ref role="3VsUkX" node="2pxiRTw5awB" resolve="DbGenericService" />
-                </node>
-              </node>
-              <node concept="3uibUv" id="6mblWKdKkn3" role="10QFUM">
-                <ref role="3uigEE" node="2pxiRTw5ax4" resolve="DbGenericServiceAsync" />
+            <node concept="2ShNRf" id="4sIn2o4nVWH" role="33vP2m">
+              <node concept="HV5vD" id="4sIn2o4nVWI" role="2ShVmc">
+                <ref role="HV5vE" node="6mblWKe9R$F" resolve="ClientFactory" />
               </node>
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="4sIn2o4nVVV" role="3cqZAp">
+          <node concept="3cpWsn" id="4sIn2o4nVVU" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="eventBus" />
+            <node concept="3uibUv" id="4sIn2o4nZTc" role="1tU5fm">
+              <ref role="3uigEE" to="xfwa:~EventBus" resolve="EventBus" />
+            </node>
+            <node concept="2OqwBi" id="4sIn2o4nVWM" role="33vP2m">
+              <node concept="37vLTw" id="4sIn2o4nVWL" role="2Oq$k0">
+                <ref role="3cqZAo" node="4sIn2o4nVVQ" resolve="clientFactory" />
+              </node>
+              <node concept="liA8E" id="4sIn2o4nVWN" role="2OqNvi">
+                <ref role="37wK5l" node="6mblWKe9RDb" resolve="getEventBus" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4sIn2o4nVVZ" role="3cqZAp">
+          <node concept="3cpWsn" id="4sIn2o4nVVY" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="placeController" />
+            <node concept="3uibUv" id="4sIn2o4nVW0" role="1tU5fm">
+              <ref role="3uigEE" to="ihha:~PlaceController" resolve="PlaceController" />
+            </node>
+            <node concept="2OqwBi" id="4sIn2o4nVWR" role="33vP2m">
+              <node concept="37vLTw" id="4sIn2o4nVWQ" role="2Oq$k0">
+                <ref role="3cqZAo" node="4sIn2o4nVVQ" resolve="clientFactory" />
+              </node>
+              <node concept="liA8E" id="4sIn2o4nVWS" role="2OqNvi">
+                <ref role="37wK5l" node="6mblWKe9RDj" resolve="getPlaceController" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4sIn2o4nVWC" role="3cqZAp">
+          <node concept="3SKdUq" id="4sIn2o4nVWB" role="3SKWNk">
+            <property role="3SKdUp" value="Start ActivityManager for the main widget with our ActivityMapper" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4sIn2o4nVW3" role="3cqZAp">
+          <node concept="3cpWsn" id="4sIn2o4nVW2" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="activityMapper" />
+            <node concept="3uibUv" id="4sIn2o4nVW4" role="1tU5fm">
+              <ref role="3uigEE" to="uxhu:~ActivityMapper" resolve="ActivityMapper" />
+            </node>
+            <node concept="2ShNRf" id="4sIn2o4nVWT" role="33vP2m">
+              <node concept="1pGfFk" id="4sIn2o4nVWU" role="2ShVmc">
+                <ref role="37wK5l" node="6mblWKe9RnY" resolve="AppActivityMapper" />
+                <node concept="37vLTw" id="4sIn2o4nVW6" role="37wK5m">
+                  <ref role="3cqZAo" node="4sIn2o4nVVQ" resolve="clientFactory" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4sIn2o4pjon" role="3cqZAp">
+          <node concept="3SKdUq" id="4sIn2o4pjop" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: need custom implementation of ActivityManager that can work with jetpad-mapper" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4sIn2o4pjw5" role="3cqZAp">
+          <node concept="3SKdUq" id="4sIn2o4pjw7" role="3SKWNk">
+            <property role="3SKdUp" value="TODO see source code at https://code.google.com/p/google-web-toolkit/source/browse/trunk/user/src/com/google/gwt/activity/shared/ActivityManager.java?r=10342" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4sIn2o4nVW8" role="3cqZAp">
+          <node concept="3cpWsn" id="4sIn2o4nVW7" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="activityManager" />
+            <node concept="3uibUv" id="4sIn2o4nVW9" role="1tU5fm">
+              <ref role="3uigEE" to="uxhu:~ActivityManager" resolve="ActivityManager" />
+            </node>
+            <node concept="2ShNRf" id="4sIn2o4nWFV" role="33vP2m">
+              <node concept="1pGfFk" id="4sIn2o4nWFW" role="2ShVmc">
+                <ref role="37wK5l" to="uxhu:~ActivityManager.&lt;init&gt;(com.google.gwt.activity.shared.ActivityMapper,com.google.web.bindery.event.shared.EventBus)" resolve="ActivityManager" />
+                <node concept="37vLTw" id="4sIn2o4nVWb" role="37wK5m">
+                  <ref role="3cqZAo" node="4sIn2o4nVW2" resolve="activityMapper" />
+                </node>
+                <node concept="37vLTw" id="4sIn2o4nVWc" role="37wK5m">
+                  <ref role="3cqZAo" node="4sIn2o4nVVU" resolve="eventBus" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4sIn2o4nVWE" role="3cqZAp">
+          <node concept="3SKdUq" id="4sIn2o4nVWD" role="3SKWNk">
+            <property role="3SKdUp" value="Start PlaceHistoryHandler with our PlaceHistoryMapper" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4sIn2o4nVWh" role="3cqZAp">
+          <node concept="3cpWsn" id="4sIn2o4nVWg" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="historyMapper" />
+            <node concept="3uibUv" id="4sIn2o4nVWi" role="1tU5fm">
+              <ref role="3uigEE" node="6mblWKeadfh" resolve="AppPlaceHistoryMapper" />
+            </node>
+            <node concept="2YIFZM" id="4sIn2o4nWG4" role="33vP2m">
+              <ref role="1Pybhc" to="wwko:~GWT" resolve="GWT" />
+              <ref role="37wK5l" to="wwko:~GWT.create(java.lang.Class):java.lang.Object" resolve="create" />
+              <node concept="3VsKOn" id="4sIn2o4nVWl" role="37wK5m">
+                <ref role="3VsUkX" node="6mblWKeadfh" resolve="AppPlaceHistoryMapper" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4sIn2o4nVWn" role="3cqZAp">
+          <node concept="3cpWsn" id="4sIn2o4nVWm" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="historyHandler" />
+            <node concept="3uibUv" id="4sIn2o4nVWo" role="1tU5fm">
+              <ref role="3uigEE" to="ihha:~PlaceHistoryHandler" resolve="PlaceHistoryHandler" />
+            </node>
+            <node concept="2ShNRf" id="4sIn2o4nWG5" role="33vP2m">
+              <node concept="1pGfFk" id="4sIn2o4nWG6" role="2ShVmc">
+                <ref role="37wK5l" to="ihha:~PlaceHistoryHandler.&lt;init&gt;(com.google.gwt.place.shared.PlaceHistoryMapper)" resolve="PlaceHistoryHandler" />
+                <node concept="37vLTw" id="4sIn2o4nVWq" role="37wK5m">
+                  <ref role="3cqZAo" node="4sIn2o4nVWg" resolve="historyMapper" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4sIn2o4nVWr" role="3cqZAp">
+          <node concept="2OqwBi" id="4sIn2o4nWGa" role="3clFbG">
+            <node concept="37vLTw" id="4sIn2o4nWG9" role="2Oq$k0">
+              <ref role="3cqZAo" node="4sIn2o4nVWm" resolve="historyHandler" />
+            </node>
+            <node concept="liA8E" id="4sIn2o4nWGb" role="2OqNvi">
+              <ref role="37wK5l" to="ihha:~PlaceHistoryHandler.register(com.google.gwt.place.shared.PlaceController,com.google.web.bindery.event.shared.EventBus,com.google.gwt.place.shared.Place):com.google.web.bindery.event.shared.HandlerRegistration" resolve="register" />
+              <node concept="37vLTw" id="4sIn2o4nVWt" role="37wK5m">
+                <ref role="3cqZAo" node="4sIn2o4nVVY" resolve="placeController" />
+              </node>
+              <node concept="37vLTw" id="4sIn2o4nVWu" role="37wK5m">
+                <ref role="3cqZAo" node="4sIn2o4nVVU" resolve="eventBus" />
+              </node>
+              <node concept="37vLTw" id="4sIn2o4nVWv" role="37wK5m">
+                <ref role="3cqZAo" node="4sIn2o4o01b" resolve="defaultPlace" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4sIn2o4nVWG" role="3cqZAp">
+          <node concept="3SKdUq" id="4sIn2o4nVWF" role="3SKWNk">
+            <property role="3SKdUp" value="Goes to the place represented on URL else default place" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="4sIn2o4nVW_" role="3cqZAp">
+          <node concept="2OqwBi" id="4sIn2o4nWGi" role="3clFbG">
+            <node concept="37vLTw" id="4sIn2o4nWGh" role="2Oq$k0">
+              <ref role="3cqZAo" node="4sIn2o4nVWm" resolve="historyHandler" />
+            </node>
+            <node concept="liA8E" id="4sIn2o4nWGj" role="2OqNvi">
+              <ref role="37wK5l" to="ihha:~PlaceHistoryHandler.handleCurrentHistory():void" resolve="handleCurrentHistory" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4sIn2o4nVTN" role="3cqZAp" />
       </node>
       <node concept="3Tm1VV" id="4c7_nAY8u15" role="1B3o_S" />
       <node concept="3cqZAl" id="4c7_nAY8u16" role="3clF45" />
@@ -2322,6 +2496,41 @@
                         <node concept="1uHKPH" id="6mblWKdM8f7" role="2OqNvi" />
                       </node>
                       <node concept="3TrcHB" id="6mblWKdM8f8" role="2OqNvi">
+                        <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2bNReR" id="4sIn2o4oZOD" role="2bNReO">
+          <property role="2bNReQ" value="client.places" />
+          <node concept="17Uvod" id="4sIn2o4oZOV" role="lGtFl">
+            <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328856609124/3317590328856609125" />
+            <property role="2qtEX9" value="packageName" />
+            <node concept="3zFVjK" id="4sIn2o4oZOW" role="3zH0cK">
+              <node concept="3clFbS" id="4sIn2o4oZOX" role="2VODD2">
+                <node concept="3clFbF" id="4sIn2o4oZXl" role="3cqZAp">
+                  <node concept="3cpWs3" id="4sIn2o4oZXm" role="3clFbG">
+                    <node concept="Xl_RD" id="4sIn2o4oZXn" role="3uHU7w">
+                      <property role="Xl_RC" value=".client.places" />
+                    </node>
+                    <node concept="2OqwBi" id="4sIn2o4oZXo" role="3uHU7B">
+                      <node concept="2OqwBi" id="4sIn2o4oZXp" role="2Oq$k0">
+                        <node concept="2OqwBi" id="4sIn2o4oZXq" role="2Oq$k0">
+                          <node concept="2OqwBi" id="4sIn2o4oZXr" role="2Oq$k0">
+                            <node concept="1iwH7S" id="4sIn2o4oZXs" role="2Oq$k0" />
+                            <node concept="1st3f0" id="4sIn2o4oZXt" role="2OqNvi" />
+                          </node>
+                          <node concept="2RRcyG" id="4sIn2o4oZXu" role="2OqNvi">
+                            <ref role="2RRcyH" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
+                          </node>
+                        </node>
+                        <node concept="1uHKPH" id="4sIn2o4oZXv" role="2OqNvi" />
+                      </node>
+                      <node concept="3TrcHB" id="4sIn2o4oZXw" role="2OqNvi">
                         <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
                       </node>
                     </node>
