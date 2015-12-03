@@ -6,6 +6,7 @@
       <sourceRoot location="gwt-user-2.7.0.jar" />
       <sourceRoot location="gwtquery-1.4.2.jar" />
       <sourceRoot location="gwt-util-1.1-SNAPSHOT.jar" />
+      <sourceRoot location="mapper-1.1-SNAPSHOT.jar" />
     </modelRoot>
   </models>
   <sourcePath />
