@@ -307,6 +307,7 @@
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
+      <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="ln" index="5jKBG" />
       <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
@@ -8143,84 +8144,20 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="7eRLJB8BA1i" role="3cqZAp">
-                <node concept="37vLTI" id="7eRLJB8BA1j" role="3clFbG">
-                  <node concept="37vLTw" id="7eRLJB8BA1k" role="37vLTJ">
-                    <ref role="3cqZAo" node="6mblWKeaeB0" resolve="mapper" />
+              <node concept="3clFbF" id="7x17OQzWDPw" role="3cqZAp">
+                <node concept="2OqwBi" id="7x17OQzWDPt" role="3clFbG">
+                  <node concept="10M0yZ" id="7x17OQzWDPu" role="2Oq$k0">
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                   </node>
-                  <node concept="2ShNRf" id="7eRLJB8BA1l" role="37vLTx">
-                    <node concept="1pGfFk" id="7eRLJB8BA1m" role="2ShVmc">
-                      <ref role="37wK5l" node="2SasHe_syBB" resolve="WebMapper" />
-                      <node concept="37vLTw" id="7eRLJB8BA1n" role="37wK5m">
-                        <ref role="3cqZAo" node="6mblWKeaeAX" resolve="model" />
-                      </node>
-                      <node concept="1ZhdrF" id="7eRLJB8BA1o" role="lGtFl">
-                        <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1204053956946/1068499141037" />
-                        <property role="2qtEX8" value="baseMethodDeclaration" />
-                        <node concept="3$xsQk" id="7eRLJB8BA1p" role="3$ytzL">
-                          <node concept="3clFbS" id="7eRLJB8BA1q" role="2VODD2">
-                            <node concept="3clFbF" id="7eRLJB8BA1r" role="3cqZAp">
-                              <node concept="3cpWs3" id="7eRLJB8BA1s" role="3clFbG">
-                                <node concept="Xl_RD" id="7eRLJB8BA1t" role="3uHU7w">
-                                  <property role="Xl_RC" value="_WebMapper" />
-                                </node>
-                                <node concept="2OqwBi" id="7eRLJB8BA1u" role="3uHU7B">
-                                  <node concept="2OqwBi" id="7eRLJB8BA1v" role="2Oq$k0">
-                                    <node concept="v3LJS" id="7eRLJB8BXLA" role="2Oq$k0">
-                                      <ref role="v3LJV" node="7eRLJB8BQpq" resolve="place" />
-                                    </node>
-                                    <node concept="3TrEf2" id="7eRLJB8BA1x" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="6je1:6mblWKed3QL" />
-                                    </node>
-                                  </node>
-                                  <node concept="3TrcHB" id="7eRLJB8BA1y" role="2OqNvi">
-                                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
+                  <node concept="liA8E" id="7x17OQzWDPv" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~PrintStream.println():void" resolve="println" />
                   </node>
                 </node>
-              </node>
-              <node concept="3clFbF" id="7x17OQzVRur" role="3cqZAp">
-                <node concept="2OqwBi" id="7x17OQzVRuA" role="3clFbG">
-                  <node concept="37vLTw" id="7x17OQzVRu_" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6mblWKeaeB0" resolve="mapper" />
-                  </node>
-                  <node concept="liA8E" id="7x17OQzVRuB" role="2OqNvi">
-                    <ref role="37wK5l" to="sm7x:~Mapper.attachRoot():void" resolve="attachRoot" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="7x17OQzVRut" role="3cqZAp">
-                <node concept="2OqwBi" id="7x17OQzVRuu" role="3clFbG">
-                  <node concept="2OqwBi" id="7x17OQzVRuE" role="2Oq$k0">
-                    <node concept="37vLTw" id="7x17OQzVRuD" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4sIn2o4psWr" resolve="htmlWrapper" />
-                    </node>
-                    <node concept="liA8E" id="7x17OQzVRuF" role="2OqNvi">
-                      <ref role="37wK5l" to="h2fa:~UIObject.getElement():com.google.gwt.user.client.Element" resolve="getElement" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="7x17OQzVRuw" role="2OqNvi">
-                    <ref role="37wK5l" to="rn0p:~Node.appendChild(com.google.gwt.dom.client.Node):com.google.gwt.dom.client.Node" resolve="appendChild" />
-                    <node concept="2OqwBi" id="7x17OQzVRux" role="37wK5m">
-                      <node concept="2OqwBi" id="7x17OQzVRuI" role="2Oq$k0">
-                        <node concept="37vLTw" id="7x17OQzVRuH" role="2Oq$k0">
-                          <ref role="3cqZAo" node="6mblWKeaeB0" resolve="mapper" />
-                        </node>
-                        <node concept="liA8E" id="7x17OQzVRuJ" role="2OqNvi">
-                          <ref role="37wK5l" to="sm7x:~Mapper.getTarget():java.lang.Object" resolve="getTarget" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="7x17OQzVRuz" role="2OqNvi">
-                        <ref role="37wK5l" to="mpar:~BaseWithElement.getElement():com.google.gwt.dom.client.Element" resolve="getElement" />
-                      </node>
-                    </node>
+                <node concept="5jKBG" id="7x17OQzWFzg" role="lGtFl">
+                  <ref role="v9R2y" node="7x17OQzWgrq" resolve="insertMapperInitialization" />
+                  <node concept="v3LJS" id="7x17OQzWIdf" role="v9R3O">
+                    <ref role="v3LJV" node="7eRLJB8BQpq" resolve="place" />
                   </node>
                 </node>
               </node>
@@ -8525,42 +8462,10 @@
                                       </node>
                                     </node>
                                   </node>
-                                </node>
-                                <node concept="3clFbF" id="7x17OQzVXWM" role="3cqZAp">
-                                  <node concept="2OqwBi" id="7x17OQzVXWN" role="3clFbG">
-                                    <node concept="37vLTw" id="7x17OQzVXWO" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="6mblWKeaeB0" resolve="mapper" />
-                                    </node>
-                                    <node concept="liA8E" id="7x17OQzVXWP" role="2OqNvi">
-                                      <ref role="37wK5l" to="sm7x:~Mapper.attachRoot():void" resolve="attachRoot" />
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="3clFbF" id="7x17OQzVXWQ" role="3cqZAp">
-                                  <node concept="2OqwBi" id="7x17OQzVXWR" role="3clFbG">
-                                    <node concept="2OqwBi" id="7x17OQzVXWS" role="2Oq$k0">
-                                      <node concept="37vLTw" id="7x17OQzVXWT" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="4sIn2o4psWr" resolve="htmlWrapper" />
-                                      </node>
-                                      <node concept="liA8E" id="7x17OQzVXWU" role="2OqNvi">
-                                        <ref role="37wK5l" to="h2fa:~UIObject.getElement():com.google.gwt.user.client.Element" resolve="getElement" />
-                                      </node>
-                                    </node>
-                                    <node concept="liA8E" id="7x17OQzVXWV" role="2OqNvi">
-                                      <ref role="37wK5l" to="rn0p:~Node.appendChild(com.google.gwt.dom.client.Node):com.google.gwt.dom.client.Node" resolve="appendChild" />
-                                      <node concept="2OqwBi" id="7x17OQzVXWW" role="37wK5m">
-                                        <node concept="2OqwBi" id="7x17OQzVXWX" role="2Oq$k0">
-                                          <node concept="37vLTw" id="7x17OQzVXWY" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="6mblWKeaeB0" resolve="mapper" />
-                                          </node>
-                                          <node concept="liA8E" id="7x17OQzVXWZ" role="2OqNvi">
-                                            <ref role="37wK5l" to="sm7x:~Mapper.getTarget():java.lang.Object" resolve="getTarget" />
-                                          </node>
-                                        </node>
-                                        <node concept="liA8E" id="7x17OQzVXX0" role="2OqNvi">
-                                          <ref role="37wK5l" to="mpar:~BaseWithElement.getElement():com.google.gwt.dom.client.Element" resolve="getElement" />
-                                        </node>
-                                      </node>
+                                  <node concept="5jKBG" id="7x17OQzWj$B" role="lGtFl">
+                                    <ref role="v9R2y" node="7x17OQzWgrq" resolve="insertMapperInitialization" />
+                                    <node concept="v3LJS" id="7x17OQzWJys" role="v9R3O">
+                                      <ref role="v3LJV" node="7eRLJB8_BIc" resolve="place" />
                                     </node>
                                   </node>
                                 </node>
@@ -8669,6 +8574,116 @@
       </node>
       <node concept="3Tm1VV" id="7eRLJB8_g_t" role="1B3o_S" />
       <node concept="3uibUv" id="7eRLJB8AjOL" role="1zkMxy">
+        <ref role="3uigEE" node="6mblWKeaezi" resolve="ViewNodeActivity" />
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="7x17OQzWgrq">
+    <property role="TrG5h" value="insertMapperInitialization" />
+    <node concept="1N15co" id="7x17OQzWoiR" role="1s_3oS">
+      <property role="TrG5h" value="place" />
+      <node concept="3Tqbb2" id="7x17OQzWoj9" role="1N15GL">
+        <ref role="ehGHo" to="6je1:6mblWKe6oxI" resolve="Place" />
+      </node>
+    </node>
+    <node concept="312cEu" id="7x17OQzWojg" role="13RCb5">
+      <property role="2bfB8j" value="true" />
+      <property role="TrG5h" value="dummy" />
+      <node concept="3clFb_" id="7x17OQzWojE" role="jymVt">
+        <property role="TrG5h" value="method" />
+        <node concept="3cqZAl" id="7x17OQzWojG" role="3clF45" />
+        <node concept="3Tm1VV" id="7x17OQzWojH" role="1B3o_S" />
+        <node concept="3clFbS" id="7x17OQzWojI" role="3clF47">
+          <node concept="9aQIb" id="7x17OQzW$Pg" role="3cqZAp">
+            <node concept="3clFbS" id="7x17OQzW$Pi" role="9aQI4">
+              <node concept="3clFbF" id="7x17OQzWoMd" role="3cqZAp">
+                <node concept="37vLTI" id="7x17OQzWoMe" role="3clFbG">
+                  <node concept="37vLTw" id="7x17OQzWoMf" role="37vLTJ">
+                    <ref role="3cqZAo" node="6mblWKeaeB0" resolve="mapper" />
+                  </node>
+                  <node concept="2ShNRf" id="7x17OQzWoMg" role="37vLTx">
+                    <node concept="1pGfFk" id="7x17OQzWoMh" role="2ShVmc">
+                      <ref role="37wK5l" node="2SasHe_syBB" resolve="WebMapper" />
+                      <node concept="1ZhdrF" id="7x17OQzWoMj" role="lGtFl">
+                        <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1204053956946/1068499141037" />
+                        <property role="2qtEX8" value="baseMethodDeclaration" />
+                        <node concept="3$xsQk" id="7x17OQzWoMk" role="3$ytzL">
+                          <node concept="3clFbS" id="7x17OQzWoMl" role="2VODD2">
+                            <node concept="3clFbF" id="7x17OQzWoMm" role="3cqZAp">
+                              <node concept="3cpWs3" id="7x17OQzWoMn" role="3clFbG">
+                                <node concept="Xl_RD" id="7x17OQzWoMo" role="3uHU7w">
+                                  <property role="Xl_RC" value="_WebMapper" />
+                                </node>
+                                <node concept="2OqwBi" id="7x17OQzWoMp" role="3uHU7B">
+                                  <node concept="2OqwBi" id="7x17OQzWoMq" role="2Oq$k0">
+                                    <node concept="v3LJS" id="7x17OQzWzDX" role="2Oq$k0">
+                                      <ref role="v3LJV" node="7x17OQzWoiR" resolve="place" />
+                                    </node>
+                                    <node concept="3TrEf2" id="7x17OQzWzO9" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="6je1:6mblWKed3QL" />
+                                    </node>
+                                  </node>
+                                  <node concept="3TrcHB" id="7x17OQzWoMt" role="2OqNvi">
+                                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="7x17OQzWygu" role="37wK5m">
+                        <ref role="3cqZAo" node="6mblWKeaeAX" resolve="model" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="7x17OQzWoMu" role="3cqZAp">
+                <node concept="2OqwBi" id="7x17OQzWoMv" role="3clFbG">
+                  <node concept="37vLTw" id="7x17OQzWoMw" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6mblWKeaeB0" resolve="mapper" />
+                  </node>
+                  <node concept="liA8E" id="7x17OQzWoMx" role="2OqNvi">
+                    <ref role="37wK5l" to="sm7x:~Mapper.attachRoot():void" resolve="attachRoot" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="7x17OQzWoMy" role="3cqZAp">
+                <node concept="2OqwBi" id="7x17OQzWoMz" role="3clFbG">
+                  <node concept="2OqwBi" id="7x17OQzWoM$" role="2Oq$k0">
+                    <node concept="37vLTw" id="7x17OQzWoM_" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4sIn2o4psWr" resolve="htmlWrapper" />
+                    </node>
+                    <node concept="liA8E" id="7x17OQzWoMA" role="2OqNvi">
+                      <ref role="37wK5l" to="h2fa:~UIObject.getElement():com.google.gwt.user.client.Element" resolve="getElement" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="7x17OQzWoMB" role="2OqNvi">
+                    <ref role="37wK5l" to="rn0p:~Node.appendChild(com.google.gwt.dom.client.Node):com.google.gwt.dom.client.Node" resolve="appendChild" />
+                    <node concept="2OqwBi" id="7x17OQzWoMC" role="37wK5m">
+                      <node concept="2OqwBi" id="7x17OQzWoMD" role="2Oq$k0">
+                        <node concept="37vLTw" id="7x17OQzWoME" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6mblWKeaeB0" resolve="mapper" />
+                        </node>
+                        <node concept="liA8E" id="7x17OQzWoMF" role="2OqNvi">
+                          <ref role="37wK5l" to="sm7x:~Mapper.getTarget():java.lang.Object" resolve="getTarget" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="7x17OQzWoMG" role="2OqNvi">
+                        <ref role="37wK5l" to="mpar:~BaseWithElement.getElement():com.google.gwt.dom.client.Element" resolve="getElement" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="raruj" id="7x17OQzWBA8" role="lGtFl" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7x17OQzWojh" role="1B3o_S" />
+      <node concept="3uibUv" id="7x17OQzWwKZ" role="1zkMxy">
         <ref role="3uigEE" node="6mblWKeaezi" resolve="ViewNodeActivity" />
       </node>
     </node>
