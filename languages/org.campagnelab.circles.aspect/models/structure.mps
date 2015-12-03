@@ -576,20 +576,38 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="tokens" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="7eRLJB8$xFp" resolve="TokenRef" />
+      <ref role="20lvS9" node="2y8Odf5V4Zm" resolve="TokenValue" />
     </node>
   </node>
   <node concept="1TIwiD" id="7eRLJB8$xFp">
     <property role="1pbfSe" value="1011474898" />
     <property role="3GE5qa" value="activities" />
     <property role="TrG5h" value="TokenRef" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="2y8Odf5V4Zm" resolve="TokenValue" />
     <node concept="1TJgyj" id="7eRLJB8$xFq" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="token" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6mblWKe6oxL" resolve="Token" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="2y8Odf5UZk4">
+    <property role="1pbfSe" value="294337065" />
+    <property role="3GE5qa" value="activities" />
+    <property role="TrG5h" value="TokenConstantValue" />
+    <ref role="1TJDcQ" node="2y8Odf5V4Zm" resolve="TokenValue" />
+    <node concept="1TJgyi" id="2y8Odf5UZk5" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2y8Odf5V4Zm">
+    <property role="1pbfSe" value="294313815" />
+    <property role="3GE5qa" value="activities" />
+    <property role="TrG5h" value="TokenValue" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

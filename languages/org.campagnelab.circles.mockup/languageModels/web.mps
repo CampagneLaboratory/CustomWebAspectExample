@@ -193,6 +193,16 @@
       <property role="1pROy$" value="orientdb-core" />
       <property role="1pROyB" value="2.1.5" />
     </node>
+    <node concept="1pROyD" id="2y8Odf5Zgsk" role="1pRVvK">
+      <property role="1pROyE" value="com.orientechnologies" />
+      <property role="1pROy$" value="orientdb-client" />
+      <property role="1pROyB" value="2.1.5" />
+    </node>
+    <node concept="1pROyD" id="2y8Odf5Zgss" role="1pRVvK">
+      <property role="1pROyE" value="com.orientechnologies" />
+      <property role="1pROy$" value="orientdb-enterprise" />
+      <property role="1pROyB" value="2.1.5" />
+    </node>
     <node concept="1pROyD" id="242NPypZmQx" role="1pRVvK">
       <property role="1pROyE" value="jetbrains.jetpad.mapper" />
       <property role="1pROy$" value="gwt-util" />

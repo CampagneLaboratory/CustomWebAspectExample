@@ -12,6 +12,7 @@
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="6je1" ref="r:2b50e9c8-828e-4d1c-b75e-74ee8d185c93(org.campagnelab.circles.aspect.structure)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -88,6 +89,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -198,10 +202,6 @@
       <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
-      </concept>
-      <concept id="1235573135402" name="jetbrains.mps.baseLanguage.collections.structure.SingletonSequenceCreator" flags="nn" index="2HTt$P">
-        <child id="1235573175711" name="elementType" index="2HTBi0" />
-        <child id="1235573187520" name="singletonValue" index="2HTEbv" />
       </concept>
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435807" name="elementType" index="HW$YZ" />
@@ -458,17 +458,19 @@
       <ref role="13i0hy" node="RKPJ9dogRU" resolve="getConcepts" />
       <node concept="3Tm1VV" id="RKPJ9dogSv" role="1B3o_S" />
       <node concept="3clFbS" id="RKPJ9dogSz" role="3clF47">
-        <node concept="3cpWs6" id="RKPJ9dogXh" role="3cqZAp">
-          <node concept="2ShNRf" id="RKPJ9doh66" role="3cqZAk">
-            <node concept="2HTt$P" id="RKPJ9doh64" role="2ShVmc">
-              <node concept="3Tqbb2" id="RKPJ9doh65" role="2HTBi0">
-                <ref role="ehGHo" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+        <node concept="3clFbH" id="2y8Odf63J9w" role="3cqZAp" />
+        <node concept="3clFbF" id="2y8Odf63O5m" role="3cqZAp">
+          <node concept="2OqwBi" id="2y8Odf63Ogi" role="3clFbG">
+            <node concept="2OqwBi" id="2y8Odf63O8e" role="2Oq$k0">
+              <node concept="13iPFW" id="2y8Odf63O5k" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2y8Odf63Odd" role="2OqNvi">
+                <ref role="3Tt5mk" to="6je1:4bOz9Wk5cXE" />
               </node>
-              <node concept="2OqwBi" id="RKPJ9doh92" role="2HTEbv">
-                <node concept="13iPFW" id="RKPJ9doh6E" role="2Oq$k0" />
-                <node concept="3TrEf2" id="RKPJ9dohdc" role="2OqNvi">
-                  <ref role="3Tt5mk" to="6je1:4bOz9Wk5cXE" />
-                </node>
+            </node>
+            <node concept="2qgKlT" id="2y8Odf63OE4" role="2OqNvi">
+              <ref role="37wK5l" to="tpcn:2A8AB0rAWpG" resolve="getAllSuperConcepts" />
+              <node concept="3clFbT" id="2y8Odf63OGB" role="37wK5m">
+                <property role="3clFbU" value="true" />
               </node>
             </node>
           </node>

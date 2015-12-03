@@ -4175,17 +4175,21 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="beLIuVGSgj" role="3clF47">
-        <node concept="34ab3g" id="beLIuVGSgk" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="3cpWs3" id="beLIuVGSgl" role="34bqiv">
-            <node concept="Xl_RD" id="beLIuVGSgm" role="3uHU7B">
-              <property role="Xl_RC" value="Checking doc class for " />
-            </node>
-            <node concept="2YIFZM" id="beLIuVGSgn" role="3uHU7w">
-              <ref role="1Pybhc" to="daa6:4Uz6rqjJFHS" resolve="DbClassNameUtil" />
-              <ref role="37wK5l" to="daa6:4Uz6rqjJHFQ" resolve="getFqName" />
-              <node concept="37vLTw" id="beLIuVGSgp" role="37wK5m">
-                <ref role="3cqZAo" node="beLIuVGSgS" resolve="concept" />
+        <node concept="1X3_iC" id="2y8Odf5Tk77" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="34ab3g" id="beLIuVGSgk" role="8Wnug">
+            <property role="35gtTG" value="info" />
+            <node concept="3cpWs3" id="beLIuVGSgl" role="34bqiv">
+              <node concept="Xl_RD" id="beLIuVGSgm" role="3uHU7B">
+                <property role="Xl_RC" value="Checking doc class for " />
+              </node>
+              <node concept="2YIFZM" id="beLIuVGSgn" role="3uHU7w">
+                <ref role="1Pybhc" to="daa6:4Uz6rqjJFHS" resolve="DbClassNameUtil" />
+                <ref role="37wK5l" to="daa6:4Uz6rqjJHFQ" resolve="getFqName" />
+                <node concept="37vLTw" id="beLIuVGSgp" role="37wK5m">
+                  <ref role="3cqZAo" node="beLIuVGSgS" resolve="concept" />
+                </node>
               </node>
             </node>
           </node>
@@ -4237,6 +4241,21 @@
           </node>
           <node concept="9aQIb" id="beLIuVGSgK" role="9aQIa">
             <node concept="3clFbS" id="beLIuVGSgL" role="9aQI4">
+              <node concept="34ab3g" id="2y8Odf5Ti6$" role="3cqZAp">
+                <property role="35gtTG" value="warn" />
+                <node concept="3cpWs3" id="2y8Odf5Ti6_" role="34bqiv">
+                  <node concept="Xl_RD" id="2y8Odf5Ti6A" role="3uHU7B">
+                    <property role="Xl_RC" value="Trying to serialize a node whose concept is not in the DB Schema: " />
+                  </node>
+                  <node concept="2YIFZM" id="2y8Odf5Ti6B" role="3uHU7w">
+                    <ref role="1Pybhc" to="daa6:4Uz6rqjJFHS" resolve="DbClassNameUtil" />
+                    <ref role="37wK5l" to="daa6:4Uz6rqjJHFQ" resolve="getFqName" />
+                    <node concept="37vLTw" id="2y8Odf5Ti6C" role="37wK5m">
+                      <ref role="3cqZAo" node="beLIuVGSgS" resolve="concept" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3cpWs6" id="beLIuVGSgM" role="3cqZAp">
                 <node concept="10Nm6u" id="beLIuVGSgN" role="3cqZAk" />
               </node>

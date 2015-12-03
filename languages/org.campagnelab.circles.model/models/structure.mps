@@ -84,7 +84,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="nodes" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      <ref role="20lvS9" node="2y8Odf5TtTe" resolve="NodeRef" />
     </node>
     <node concept="PrWs8" id="5eOdMaf2nSU" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -104,6 +104,19 @@
     <ref role="1TJDcQ" node="5eOdMaf2nSQ" resolve="Module" />
     <node concept="PrWs8" id="2CxJDc4Cph" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2y8Odf5TtTe">
+    <property role="1pbfSe" value="294736095" />
+    <property role="TrG5h" value="NodeRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2y8Odf5TtTf" role="1TKVEl">
+      <property role="TrG5h" value="nodeId" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="2y8Odf5TtTC" role="1TKVEl">
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

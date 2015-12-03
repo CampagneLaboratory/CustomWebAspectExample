@@ -888,5 +888,21 @@
       <node concept="l2Vlx" id="7eRLJB8$xG6" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="2y8Odf5UZkc">
+    <property role="3GE5qa" value="activities" />
+    <ref role="1XX52x" to="6je1:2y8Odf5UZk4" resolve="TokenConstantValue" />
+    <node concept="3EZMnI" id="2y8Odf5UZkj" role="2wV5jI">
+      <node concept="3F0ifn" id="2y8Odf5UZkq" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
+      </node>
+      <node concept="3F0A7n" id="2y8Odf5UZkw" role="3EZMnx">
+        <ref role="1NtTu8" to="6je1:2y8Odf5UZk5" resolve="value" />
+      </node>
+      <node concept="3F0ifn" id="2y8Odf5UZkC" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
+      </node>
+      <node concept="l2Vlx" id="2y8Odf5UZkm" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

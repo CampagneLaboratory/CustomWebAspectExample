@@ -36,6 +36,10 @@
         <property id="4824635715685243887" name="user" index="1mS5tK" />
         <child id="2765574652333579748" name="queries" index="16iTqq" />
       </concept>
+      <concept id="8338352011213937367" name="org.campagnelab.circles.aspect.structure.DbRetrievedFocus" flags="ng" index="2V9tKI">
+        <reference id="8338352011213937435" name="query" index="2V9tRy" />
+        <child id="8338352011213937372" name="tokens" index="2V9tK_" />
+      </concept>
       <concept id="8338352011213937366" name="org.campagnelab.circles.aspect.structure.NewBeanCreationFocus" flags="ng" index="2V9tKJ" />
       <concept id="1556429057109701099" name="org.campagnelab.circles.aspect.structure.WebEditors" flags="ng" index="YxNCg">
         <child id="1556429057109701121" name="editors" index="YxNBU" />
@@ -66,10 +70,15 @@
       <concept id="7317038553515001966" name="org.campagnelab.circles.aspect.structure.Place" flags="ng" index="1F$HYy">
         <property id="8338352011215212621" name="isDefault" index="2V4_qO" />
         <reference id="7317038553516752305" name="concept" index="1FJQDX" />
+        <child id="7317038553515001972" name="tokens" index="1F$HYS" />
         <child id="7317038553515303527" name="activity" index="1F_nmF" />
       </concept>
+      <concept id="7317038553515001969" name="org.campagnelab.circles.aspect.structure.Token" flags="ng" index="1F$HYX" />
       <concept id="7317038553515303524" name="org.campagnelab.circles.aspect.structure.ViewNodeActivity" flags="ng" index="1F_nmC">
         <child id="8338352011213937377" name="focus" index="2V9tKo" />
+      </concept>
+      <concept id="2920813966327018756" name="org.campagnelab.circles.aspect.structure.TokenConstantValue" flags="ng" index="3HoMnn">
+        <property id="2920813966327018757" name="value" index="3HoMnm" />
       </concept>
       <concept id="4829993475490891244" name="org.campagnelab.circles.aspect.structure.GwtModule" flags="ng" index="3X4l2l">
         <property id="4829993475490925500" name="moduleName" index="3X4dV5" />
@@ -110,7 +119,7 @@
     <property role="1mS5tH" value="admin" />
     <node concept="16iT6c" id="2pxiRTwb2VX" role="16iTqq">
       <property role="TrG5h" value="lookupModule" />
-      <property role="16jhX1" value="select from Module where name =?" />
+      <property role="16jhX1" value="select * from Module where name =?" />
       <node concept="16iT6d" id="2pxiRTwb2VY" role="16iTq8">
         <ref role="16iT6a" to="77ry:5eOdMaf2nSQ" resolve="Module" />
       </node>
@@ -119,9 +128,20 @@
         <node concept="17QB3L" id="2pxiRTwb2Wd" role="16iT67" />
       </node>
     </node>
+    <node concept="16iT6c" id="2y8Odf616Qe" role="16iTqq">
+      <property role="TrG5h" value="lookupSolution" />
+      <property role="16jhX1" value="select * from Solution where name =?" />
+      <node concept="16iT6d" id="2y8Odf616Qf" role="16iTq8">
+        <ref role="16iT6a" to="77ry:2CxJDc4Cpg" resolve="Solution" />
+      </node>
+      <node concept="16iT66" id="2y8Odf616Qg" role="16iTqa">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="2y8Odf616Qh" role="16iT67" />
+      </node>
+    </node>
     <node concept="16iT6c" id="6mblWKefljZ" role="16iTqq">
       <property role="TrG5h" value="lookupProject" />
-      <property role="16jhX1" value="select from Project where name= ?" />
+      <property role="16jhX1" value="select * from Project where name= ?" />
       <node concept="16iT6d" id="6mblWKeflk0" role="16iTq8">
         <ref role="16iT6a" to="77ry:5eOdMaf2nSN" resolve="Project" />
       </node>
@@ -132,7 +152,7 @@
     </node>
     <node concept="16iT6c" id="6mblWKdIf7R" role="16iTqq">
       <property role="TrG5h" value="lookupModel" />
-      <property role="16jhX1" value="select from Model where modelId= ?" />
+      <property role="16jhX1" value="select * from Model where modelId= ?" />
       <node concept="16iT6d" id="6mblWKdIwiF" role="16iTq8">
         <ref role="16iT6a" to="77ry:5eOdMaf2nST" resolve="Model" />
       </node>
@@ -147,7 +167,7 @@
   </node>
   <node concept="1F$HYy" id="6mblWKecU_y">
     <property role="TrG5h" value="ViewProject" />
-    <property role="2V4_qO" value="true" />
+    <property role="2V4_qO" value="false" />
     <ref role="1FJQDX" to="77ry:5eOdMaf2nSN" resolve="Project" />
     <node concept="1F_nmC" id="7eRLJB8H9N2" role="1F_nmF">
       <node concept="2V9tKJ" id="7eRLJB8H9N6" role="2V9tKo" />
@@ -165,6 +185,25 @@
     </node>
     <node concept="YxNCn" id="6mblWKeeUjr" role="YxNBU">
       <ref role="YxNCm" to="ehbc:6mblWKeeSzv" resolve="Solution_Editor" />
+    </node>
+    <node concept="YxNCn" id="2y8Odf5Ucpb" role="YxNBU">
+      <ref role="YxNCm" to="ehbc:2y8Odf5U65h" resolve="Module_Editor" />
+    </node>
+  </node>
+  <node concept="1F$HYy" id="2y8Odf5TtRM">
+    <property role="TrG5h" value="ViewModulePlace" />
+    <property role="2V4_qO" value="true" />
+    <ref role="1FJQDX" to="77ry:2CxJDc4Cpg" resolve="Solution" />
+    <node concept="1F$HYX" id="2y8Odf5TtRN" role="1F$HYS">
+      <property role="TrG5h" value="moduleName" />
+    </node>
+    <node concept="1F_nmC" id="2y8Odf5TtRP" role="1F_nmF">
+      <node concept="2V9tKI" id="2y8Odf5TtRT" role="2V9tKo">
+        <ref role="2V9tRy" node="2y8Odf616Qe" resolve="lookupSolution" />
+        <node concept="3HoMnn" id="2y8Odf5Xfdy" role="2V9tK_">
+          <property role="3HoMnm" value="playground" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
