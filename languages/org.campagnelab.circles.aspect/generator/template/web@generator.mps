@@ -53,6 +53,10 @@
     <import index="q4uu" ref="r:700dcccc-5294-4569-a97b-cb7b4632a7c8(web@generator)" />
     <import index="dr5r" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.logging(JDK/)" />
     <import index="sm7y" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:jetbrains.jetpad.mapper(org.google.gwt/)" />
+    <import index="oz1l" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.thirdparty.streamhtmlparser.util(org.google.gwt/)" />
+    <import index="mmh5" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.safehtml.shared(org.google.gwt/)" />
+    <import index="l6au" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.html(MPS.Core/)" />
+    <import index="4xmk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.escape(MPS.Core/)" implicit="true" />
     <import index="mpas" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:jetbrains.jetpad.mapper.gwt(org.google.gwt/)" implicit="true" />
     <import index="daa6" ref="r:623c8eb4-df21-4fdc-925d-d384e22129a2(org.campagnelab.circles.aspect.db)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
@@ -603,12 +607,21 @@
             <property role="2qtEX9" value="value" />
             <node concept="3zFVjK" id="2SasHe_$ogD" role="3zH0cK">
               <node concept="3clFbS" id="2SasHe_$ogE" role="2VODD2">
-                <node concept="3clFbF" id="2SasHe_$ogK" role="3cqZAp">
-                  <node concept="2OqwBi" id="2SasHe_$ogF" role="3clFbG">
-                    <node concept="3TrcHB" id="2SasHe_$ogI" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpc2:fBF0icJ" resolve="text" />
+                <node concept="3clFbF" id="qn4alg94Zl" role="3cqZAp">
+                  <node concept="2OqwBi" id="qn4alg957Y" role="3clFbG">
+                    <node concept="2YIFZM" id="qn4alg954O" role="2Oq$k0">
+                      <ref role="37wK5l" to="l6au:~HtmlEscapers.htmlEscaper():com.google.common.escape.Escaper" resolve="htmlEscaper" />
+                      <ref role="1Pybhc" to="l6au:~HtmlEscapers" resolve="HtmlEscapers" />
                     </node>
-                    <node concept="30H73N" id="2SasHe_$ogJ" role="2Oq$k0" />
+                    <node concept="liA8E" id="qn4alg95bJ" role="2OqNvi">
+                      <ref role="37wK5l" to="4xmk:~Escaper.escape(java.lang.String):java.lang.String" resolve="escape" />
+                      <node concept="2OqwBi" id="qn4alg95mo" role="37wK5m">
+                        <node concept="30H73N" id="qn4alg95fZ" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="qn4alg95ya" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpc2:fBF0icJ" resolve="text" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -2284,6 +2297,7 @@
         <property role="2pNNFO" value="ui:UiBinder" />
         <node concept="2pNNFK" id="2SasHe_zB4A" role="3o6s8t">
           <property role="2pNNFO" value="element" />
+          <property role="qg3DV" value="true" />
           <node concept="29HgVG" id="2SasHe_zDG9" role="lGtFl">
             <node concept="3NFfHV" id="2SasHe_zDGk" role="3NFExx">
               <node concept="3clFbS" id="2SasHe_zDGl" role="2VODD2">
