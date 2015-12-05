@@ -4,12 +4,13 @@
   <languages>
     <use id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="77ry" ref="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
     <import index="ehbc" ref="r:3d4b8a25-2cca-4083-ac64-ee80560fc20e(org.campagnelab.circles.model.editor)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -93,6 +94,9 @@
           <property role="2V$B1Q" value="org.campagnelab.circles.model" />
         </node>
       </node>
+    </node>
+    <node concept="1mS4fQ" id="7sx5qZALjOC" role="1mS4fN">
+      <ref role="1mS4fP" to="tpck:4uZwTti3_$T" resolve="Attribute" />
     </node>
     <node concept="1mS4fQ" id="5eOdMaf2o3M" role="1mS4fN">
       <ref role="1mS4fP" to="77ry:5eOdMaf2nSN" resolve="Project" />
