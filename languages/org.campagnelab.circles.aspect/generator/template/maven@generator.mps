@@ -7,10 +7,14 @@
     <use id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="6je1" ref="r:2b50e9c8-828e-4d1c-b75e-74ee8d185c93(org.campagnelab.circles.aspect.structure)" />
+    <import index="q4uu" ref="r:700dcccc-5294-4569-a97b-cb7b4632a7c8(web@generator)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -126,6 +130,15 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect">
+      <concept id="3317590328854032612" name="org.campagnelab.circles.aspect.structure.StageToAnnotation" flags="ng" index="2b_W8R">
+        <child id="3317590328854209169" name="destination" index="2bEx12" />
+      </concept>
+      <concept id="3317590328854209162" name="org.campagnelab.circles.aspect.structure.StagingInfo" flags="ng" index="2bEx1p">
+        <property id="3317590328854999532" name="generatedFilename" index="2bDwcZ" />
+        <property id="3317590328854225220" name="stagingDirRoot" index="2bEHen" />
       </concept>
     </language>
   </registry>
@@ -501,6 +514,12 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="2b_W8R" id="7sx5qZAXwcX" role="lGtFl">
+      <node concept="2bEx1p" id="7sx5qZAXzzz" role="2bEx12">
+        <property role="2bEHen" value="${module}/../../web-app/src/main/java" />
+        <property role="2bDwcZ" value="pom.xml" />
       </node>
     </node>
   </node>
