@@ -146,11 +146,11 @@
         </node>
       </node>
     </node>
-    <node concept="1mS4fQ" id="2SasHe_phYD" role="1mS4fN">
+    <node concept="1mS4fQ" id="7sx5qZBSEyV" role="1mS4fN">
       <ref role="1mS4fP" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
-    <node concept="1mS4fQ" id="2SasHe_v5IK" role="1mS4fN">
-      <ref role="1mS4fP" to="avse:7pelyIRkqin" resolve="CircleContainer" />
+    <node concept="1mS4fQ" id="7sx5qZBSEz6" role="1mS4fN">
+      <ref role="1mS4fP" to="tpck:4uZwTti3_$T" resolve="Attribute" />
     </node>
   </node>
   <node concept="YxNCg" id="1mpyZGF7YyP">
@@ -212,6 +212,12 @@
       <property role="1pROyE" value="jetbrains.jetpad" />
       <property role="1pROy$" value="model-gwt" />
       <property role="1pROyB" value="1.1-SNAPSHOT" />
+    </node>
+    <node concept="1pROyD" id="7sx5qZBAHxj" role="1pRVvK">
+      <property role="1pROyE" value="junit" />
+      <property role="1pROy$" value="junit" />
+      <property role="1pROyB" value="4.11" />
+      <property role="1pROyz" value="test" />
     </node>
     <node concept="1pRVv9" id="3V7o9sVwdhV" role="1pRVve">
       <property role="1pRVva" value="jetbrains.jetpad.mapper" />
