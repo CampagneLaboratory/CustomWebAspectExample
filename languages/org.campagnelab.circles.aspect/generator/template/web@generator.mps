@@ -65,7 +65,7 @@
     <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
     <import index="i6bd" ref="8c40f9f4-b3bd-42d0-8b65-8e644273493c/java:com.orientechnologies.orient.core.record(org.campagnelab.circles.aspect/)" />
     <import index="y8z9" ref="r:2c4c7e9e-399c-490f-b18e-ff7f5ebd651b(org.campagnelab.circles.aspect.runtime)" />
-    <import index="kt44" ref="r:69cbb07e-d989-4caa-9099-b0c98e068979(org.campagnelab.circles.bootstrap.runtime)" />
+    <import index="kt44" ref="r:69cbb07e-d989-4caa-9099-b0c98e068979(org.campagnelab.circles.model.bootstrap.runtime)" />
     <import index="mpas" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:jetbrains.jetpad.mapper.gwt(org.google.gwt/)" implicit="true" />
     <import index="daa6" ref="r:623c8eb4-df21-4fdc-925d-d384e22129a2(org.campagnelab.circles.aspect.db)" implicit="true" />
   </imports>
@@ -2669,7 +2669,7 @@
                 <node concept="3clFbS" id="6uvgPJArRun" role="3clFbx">
                   <node concept="3cpWs6" id="6uvgPJArRuo" role="3cqZAp">
                     <node concept="Xl_RD" id="6uvgPJArRup" role="3cqZAk">
-                      <property role="Xl_RC" value="org.campagnelab.circles.bootstrap.runtime" />
+                      <property role="Xl_RC" value="org.campagnelab.circles.model.bootstrap.runtime" />
                     </node>
                   </node>
                 </node>
@@ -4039,7 +4039,7 @@
                 <node concept="3clFbS" id="6uvgPJArs8R" role="3clFbx">
                   <node concept="3cpWs6" id="6uvgPJArs8S" role="3cqZAp">
                     <node concept="Xl_RD" id="6uvgPJArs8T" role="3cqZAk">
-                      <property role="Xl_RC" value="org.campagnelab.circles.bootstrap.runtime" />
+                      <property role="Xl_RC" value="org.campagnelab.circles.model.bootstrap.runtime" />
                     </node>
                   </node>
                 </node>
@@ -6481,7 +6481,7 @@
           </node>
         </node>
         <node concept="2bNReR" id="6uvgPJAtFJY" role="2bNReO">
-          <property role="2bNReQ" value="org.campagnelab.circles.bootstrap.runtime" />
+          <property role="2bNReQ" value="org.campagnelab.circles.model.bootstrap.runtime" />
         </node>
         <node concept="17Uvod" id="2pxiRTwbDQr" role="lGtFl">
           <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328854209162/3317590328854225222" />
@@ -6899,7 +6899,17 @@
             </node>
           </node>
         </node>
-        <node concept="3o6iSG" id="4c7_nAY4Eny" role="3o6s8t" />
+        <node concept="2pNNFK" id="6uvgPJAwxJa" role="3o6s8t">
+          <property role="2pNNFO" value="source" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="6uvgPJAwxQo" role="2pNNFR">
+            <property role="2pNUuO" value="path" />
+            <node concept="2pMdtt" id="6uvgPJAwxQq" role="2pMdts">
+              <property role="2pMdty" value="bootstrap" />
+            </node>
+          </node>
+        </node>
+        <node concept="3o6iSG" id="6uvgPJAwxQs" role="3o6s8t" />
         <node concept="2pNNFK" id="4c7_nAY4CPj" role="3o6s8t">
           <property role="2pNNFO" value="inherits" />
           <property role="qg3DV" value="true" />
@@ -10730,7 +10740,7 @@
           </node>
         </node>
         <node concept="2bNReR" id="6uvgPJAuarb" role="2bNReO">
-          <property role="2bNReQ" value="org.campagnelab.circles.bootstrap.runtime" />
+          <property role="2bNReQ" value="org.campagnelab.circles.model.bootstrap.runtime" />
         </node>
         <node concept="17Uvod" id="6mblWKeaVFL" role="lGtFl">
           <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328854209162/3317590328854225222" />
