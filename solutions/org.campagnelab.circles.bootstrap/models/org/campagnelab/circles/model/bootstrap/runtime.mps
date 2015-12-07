@@ -175,6 +175,9 @@
       <node concept="3clFbS" id="6uvgPJAo6KE" role="3clF47" />
       <node concept="3Tm1VV" id="6uvgPJAo6KF" role="1B3o_S" />
     </node>
+    <node concept="3uibUv" id="6uvgPJAB3Rl" role="1zkMxy">
+      <ref role="3uigEE" to="taow:~HasParent" resolve="HasParent" />
+    </node>
   </node>
   <node concept="312cEu" id="6uvgPJAknyT">
     <property role="TrG5h" value="BaseConcept_Bean" />
