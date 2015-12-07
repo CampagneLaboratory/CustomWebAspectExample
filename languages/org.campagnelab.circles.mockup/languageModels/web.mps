@@ -37,6 +37,9 @@
       </concept>
     </language>
     <language id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect">
+      <concept id="7466760769191428118" name="org.campagnelab.circles.aspect.structure.ExcludeConcept" flags="ng" index="21Tgdd">
+        <reference id="7466760769191428119" name="c" index="21Tgdc" />
+      </concept>
       <concept id="2986108014587570547" name="org.campagnelab.circles.aspect.structure.Database" flags="ng" index="B0a0o">
         <property id="2986108014587570548" name="url" index="B0a0v" />
         <property id="4824635715685243890" name="password" index="1mS5tH" />
@@ -64,10 +67,8 @@
       <concept id="2765574652333578995" name="org.campagnelab.circles.aspect.structure.QueryReturnType" flags="ng" index="16iT6d">
         <reference id="2765574652333578996" name="concept" index="16iT6a" />
       </concept>
-      <concept id="4824635715685240681" name="org.campagnelab.circles.aspect.structure.IncludeConcepts" flags="ng" index="1mS4fQ">
-        <reference id="4824635715685240682" name="c" index="1mS4fP" />
-      </concept>
       <concept id="4824635715685240675" name="org.campagnelab.circles.aspect.structure.PersistedConcepts" flags="ng" index="1mS4fW">
+        <child id="7466760769191453126" name="exclusionRules" index="21Tuat" />
         <child id="4824635715685240684" name="inclusionRules" index="1mS4fN" />
       </concept>
       <concept id="3811513598467841685" name="org.campagnelab.circles.aspect.structure.GwtPomBuild" flags="ng" index="1pQyBT" />
@@ -146,11 +147,8 @@
         </node>
       </node>
     </node>
-    <node concept="1mS4fQ" id="7sx5qZBSEyV" role="1mS4fN">
-      <ref role="1mS4fP" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    </node>
-    <node concept="1mS4fQ" id="7sx5qZBSEz6" role="1mS4fN">
-      <ref role="1mS4fP" to="tpck:4uZwTti3_$T" resolve="Attribute" />
+    <node concept="21Tgdd" id="6uvgPJAvrKU" role="21Tuat">
+      <ref role="21Tgdc" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="YxNCg" id="1mpyZGF7YyP">

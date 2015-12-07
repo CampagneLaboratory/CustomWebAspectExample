@@ -176,6 +176,22 @@
         </node>
         <node concept="l2Vlx" id="242NPypWzjP" role="2czzBx" />
       </node>
+      <node concept="3F0ifn" id="6uvgPJAuHOd" role="3EZMnx">
+        <property role="3F0ifm" value="But exclude the following:" />
+        <node concept="pVoyu" id="6uvgPJAuHOC" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="6uvgPJAuHOt" role="3EZMnx">
+        <ref role="1NtTu8" to="6je1:6uvgPJAuE76" />
+        <node concept="l2Vlx" id="6uvgPJAuHOv" role="2czzBx" />
+        <node concept="pVoyu" id="6uvgPJAuHOE" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="6uvgPJAuHOG" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="4bOz9Wk5dmY">
@@ -902,6 +918,25 @@
         <property role="3F0ifm" value="&quot;" />
       </node>
       <node concept="l2Vlx" id="2y8Odf5UZkm" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6uvgPJAu$0u">
+    <property role="3GE5qa" value="db" />
+    <ref role="1XX52x" to="6je1:6uvgPJAu$0m" resolve="ExcludeConcept" />
+    <node concept="3EZMnI" id="6uvgPJAu$0w" role="2wV5jI">
+      <node concept="3F0ifn" id="6uvgPJAu$0B" role="3EZMnx">
+        <property role="3F0ifm" value="exclude" />
+      </node>
+      <node concept="1iCGBv" id="6uvgPJAu$0H" role="3EZMnx">
+        <ref role="1NtTu8" to="6je1:6uvgPJAu$0n" />
+        <node concept="1sVBvm" id="6uvgPJAu$0J" role="1sWHZn">
+          <node concept="3F0A7n" id="6uvgPJAu$0U" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="6uvgPJAu$0z" role="2iSdaV" />
     </node>
   </node>
 </model>
