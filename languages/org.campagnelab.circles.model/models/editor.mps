@@ -46,6 +46,11 @@
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
   </registry>
   <node concept="24kQdi" id="6mblWKeeSxf">
     <ref role="1XX52x" to="77ry:5eOdMaf2nST" resolve="Model" />
@@ -328,6 +333,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2y8Odf5U65h">
+    <property role="TrG5h" value="Module_Edit'or" />
     <ref role="1XX52x" to="77ry:5eOdMaf2nSQ" resolve="Module" />
     <node concept="3EZMnI" id="2y8Odf5U65j" role="2wV5jI">
       <node concept="3F0ifn" id="2y8Odf5U65F" role="3EZMnx">

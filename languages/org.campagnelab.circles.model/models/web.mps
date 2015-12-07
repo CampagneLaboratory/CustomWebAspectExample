@@ -115,6 +115,9 @@
     <node concept="1mS4fQ" id="5eOdMaf2o4a" role="1mS4fN">
       <ref role="1mS4fP" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
+    <node concept="1mS4fQ" id="6uvgPJBBfjk" role="1mS4fN">
+      <ref role="1mS4fP" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="B0a0o" id="4UvP5h6JFr9">
     <property role="B0a0v" value="remote:127.0.0.1/circles" />
