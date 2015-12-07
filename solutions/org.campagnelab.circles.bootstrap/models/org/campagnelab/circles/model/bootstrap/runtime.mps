@@ -9,12 +9,12 @@
     <import index="y8z9" ref="r:2c4c7e9e-399c-490f-b18e-ff7f5ebd651b(org.campagnelab.circles.aspect.runtime)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="lgza" ref="67b3c41d-58b3-4756-b971-30bf8a9d63e6/java:jetbrains.jetpad.model.property(jetbrains.jetpad/)" />
-    <import index="qoc8" ref="67b3c41d-58b3-4756-b971-30bf8a9d63e6/java:jetbrains.jetpad.model.collections.list(jetbrains.jetpad/)" implicit="true" />
-    <import index="taow" ref="67b3c41d-58b3-4756-b971-30bf8a9d63e6/java:jetbrains.jetpad.model.children(jetbrains.jetpad/)" implicit="true" />
+    <import index="taow" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:jetbrains.jetpad.model.children(org.google.gwt/)" />
+    <import index="lgza" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:jetbrains.jetpad.model.property(org.google.gwt/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -63,9 +63,6 @@
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
-      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
-        <property id="8355037393041754995" name="isNative" index="2aFKle" />
-      </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
         <child id="1109201940907" name="parameter" index="11_B2D" />
@@ -112,72 +109,60 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="shortDescription" />
       <property role="3TUv4t" value="true" />
-      <node concept="3uibUv" id="6uvgPJAo6Kh" role="1tU5fm">
-        <ref role="3uigEE" to="lgza:~Property" resolve="Property" />
-        <node concept="3uibUv" id="6uvgPJAo6Ki" role="11_B2D">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
-      </node>
       <node concept="2ShNRf" id="6uvgPJAo8iN" role="33vP2m">
         <node concept="1pGfFk" id="6uvgPJAo8XJ" role="2ShVmc">
           <ref role="37wK5l" to="lgza:~ValueProperty.&lt;init&gt;()" resolve="ValueProperty" />
         </node>
       </node>
       <node concept="3Tm1VV" id="6uvgPJAo6Kk" role="1B3o_S" />
+      <node concept="3uibUv" id="6uvgPJBK8sf" role="1tU5fm">
+        <ref role="3uigEE" to="lgza:~Property" resolve="Property" />
+      </node>
     </node>
     <node concept="312cEg" id="6uvgPJAo6Kl" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="alias" />
       <property role="3TUv4t" value="true" />
-      <node concept="3uibUv" id="6uvgPJAo6Kn" role="1tU5fm">
-        <ref role="3uigEE" to="lgza:~Property" resolve="Property" />
-        <node concept="3uibUv" id="6uvgPJAo6Ko" role="11_B2D">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
-      </node>
       <node concept="2ShNRf" id="6uvgPJAo8iJ" role="33vP2m">
-        <node concept="1pGfFk" id="6uvgPJAo8iK" role="2ShVmc">
+        <node concept="1pGfFk" id="6uvgPJBIZYL" role="2ShVmc">
           <ref role="37wK5l" to="lgza:~ValueProperty.&lt;init&gt;()" resolve="ValueProperty" />
         </node>
       </node>
       <node concept="3Tm1VV" id="6uvgPJAo6Kq" role="1B3o_S" />
+      <node concept="3uibUv" id="6uvgPJBK8sF" role="1tU5fm">
+        <ref role="3uigEE" to="lgza:~Property" resolve="Property" />
+      </node>
     </node>
     <node concept="312cEg" id="6uvgPJAo6Kr" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="virtualPackage" />
       <property role="3TUv4t" value="true" />
-      <node concept="3uibUv" id="6uvgPJAo6Kt" role="1tU5fm">
-        <ref role="3uigEE" to="lgza:~Property" resolve="Property" />
-        <node concept="3uibUv" id="6uvgPJAo6Ku" role="11_B2D">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
-      </node>
       <node concept="2ShNRf" id="6uvgPJAo8iF" role="33vP2m">
-        <node concept="1pGfFk" id="6uvgPJAo8iG" role="2ShVmc">
+        <node concept="1pGfFk" id="6uvgPJBJ00A" role="2ShVmc">
           <ref role="37wK5l" to="lgza:~ValueProperty.&lt;init&gt;()" resolve="ValueProperty" />
         </node>
       </node>
       <node concept="3Tm1VV" id="6uvgPJAo6Kw" role="1B3o_S" />
+      <node concept="3uibUv" id="6uvgPJBK8t7" role="1tU5fm">
+        <ref role="3uigEE" to="lgza:~Property" resolve="Property" />
+      </node>
     </node>
     <node concept="312cEg" id="6uvgPJAo6Kx" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="smodelAttribute" />
       <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="6uvgPJAo6Kz" role="1tU5fm">
-        <ref role="3uigEE" to="qoc8:~ObservableList" resolve="ObservableList" />
-        <node concept="3uibUv" id="6uvgPJAo8pY" role="11_B2D">
-          <ref role="3uigEE" node="6uvgPJAo8pP" resolve="Attribute_WebModel" />
-        </node>
-      </node>
       <node concept="3Tm1VV" id="6uvgPJAo6KB" role="1B3o_S" />
       <node concept="2ShNRf" id="6uvgPJAo8sz" role="33vP2m">
         <node concept="1pGfFk" id="6uvgPJAo8D4" role="2ShVmc">
           <ref role="37wK5l" to="taow:~ChildList.&lt;init&gt;(java.lang.Object)" resolve="ChildList" />
           <node concept="Xjq3P" id="6uvgPJAo8FG" role="37wK5m" />
         </node>
+      </node>
+      <node concept="3uibUv" id="6uvgPJBK8nf" role="1tU5fm">
+        <ref role="3uigEE" to="taow:~ChildList" resolve="ChildList" />
       </node>
     </node>
     <node concept="3clFbW" id="6uvgPJAo6KC" role="jymVt">
@@ -186,6 +171,9 @@
       <node concept="3cqZAl" id="6uvgPJAo6KD" role="3clF45" />
       <node concept="3clFbS" id="6uvgPJAo6KE" role="3clF47" />
       <node concept="3Tm1VV" id="6uvgPJAo6KF" role="1B3o_S" />
+    </node>
+    <node concept="3uibUv" id="6uvgPJBIZqz" role="1zkMxy">
+      <ref role="3uigEE" to="taow:~HasParent" resolve="HasParent" />
     </node>
   </node>
   <node concept="312cEu" id="6uvgPJAknyT">
@@ -254,7 +242,7 @@
     <property role="1sVAO0" value="false" />
     <property role="1EXbeo" value="false" />
     <node concept="3Tm1VV" id="6uvgPJAo8pR" role="1B3o_S" />
-    <node concept="3uibUv" id="6uvgPJAo8pS" role="1zkMxy">
+    <node concept="3uibUv" id="6uvgPJBK8nN" role="1zkMxy">
       <ref role="3uigEE" node="6uvgPJAo6Kc" resolve="BaseConcept_WebModel" />
     </node>
     <node concept="3clFbW" id="6uvgPJAo8pT" role="jymVt">
@@ -267,27 +255,27 @@
   </node>
   <node concept="312cEu" id="6uvgPJAPPoR">
     <property role="TrG5h" value="WebModelFactory" />
-    <node concept="2YIFZL" id="6uvgPJAP86P" role="jymVt">
-      <property role="TrG5h" value="createMapper" />
-      <property role="od$2w" value="false" />
+    <node concept="2YIFZL" id="2ZCJcw_er0g" role="jymVt">
+      <property role="TrG5h" value="createWebModel" />
       <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="6uvgPJAP86Q" role="3clF47">
-        <node concept="3cpWs6" id="6uvgPJAP8tk" role="3cqZAp">
-          <node concept="10Nm6u" id="6uvgPJAP8tW" role="3cqZAk" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="2ZCJcw_eqyy" role="3clF47">
+        <node concept="3cpWs6" id="2ZCJcw_eqyz" role="3cqZAp">
+          <node concept="10Nm6u" id="2ZCJcw_eqy$" role="3cqZAk" />
         </node>
       </node>
-      <node concept="3Tm1VV" id="6uvgPJAP87R" role="1B3o_S" />
-      <node concept="3uibUv" id="6uvgPJAP87S" role="3clF45">
-        <ref role="3uigEE" node="6uvgPJAo6Kc" resolve="BaseConcept_WebModel" />
-      </node>
-      <node concept="37vLTG" id="6uvgPJAP87T" role="3clF46">
+      <node concept="37vLTG" id="2ZCJcw_eqyB" role="3clF46">
         <property role="TrG5h" value="bean" />
-        <node concept="3uibUv" id="6uvgPJAP87U" role="1tU5fm">
+        <node concept="3uibUv" id="2ZCJcw_eqyC" role="1tU5fm">
           <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
       </node>
+      <node concept="3uibUv" id="2ZCJcw_eqyA" role="3clF45">
+        <ref role="3uigEE" node="6uvgPJAo6Kc" resolve="BaseConcept_WebModel" />
+      </node>
+      <node concept="3Tm1VV" id="2ZCJcw_eqy_" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="2ZCJcw_541o" role="jymVt" />
     <node concept="3Tm1VV" id="6uvgPJAPPoS" role="1B3o_S" />
   </node>
 </model>

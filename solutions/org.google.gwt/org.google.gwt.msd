@@ -10,6 +10,10 @@
       <sourceRoot location="model-1.1-SNAPSHOT.jar" />
     </modelRoot>
   </models>
+  <stubModelEntries>
+    <stubModelEntry path="${module}/mapper-1.1-SNAPSHOT.jar" />
+    <stubModelEntry path="${module}/model-1.1-SNAPSHOT.jar" />
+  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
