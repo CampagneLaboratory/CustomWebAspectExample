@@ -19,6 +19,8 @@
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
+      <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
         <property id="1240249534625" name="isVolatile" index="34CwA1" />
@@ -33,6 +35,7 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -40,10 +43,16 @@
         <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
         <property id="1181808852946" name="isFinal" index="DiZV1" />
         <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS" />
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+        <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -53,6 +62,9 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
+      </concept>
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -175,9 +187,6 @@
       <node concept="3clFbS" id="6uvgPJAo6KE" role="3clF47" />
       <node concept="3Tm1VV" id="6uvgPJAo6KF" role="1B3o_S" />
     </node>
-    <node concept="3uibUv" id="6uvgPJAB3Rl" role="1zkMxy">
-      <ref role="3uigEE" to="taow:~HasParent" resolve="HasParent" />
-    </node>
   </node>
   <node concept="312cEu" id="6uvgPJAknyT">
     <property role="TrG5h" value="BaseConcept_Bean" />
@@ -255,6 +264,31 @@
       <node concept="3clFbS" id="6uvgPJAo8pV" role="3clF47" />
       <node concept="3Tm1VV" id="6uvgPJAo8pW" role="1B3o_S" />
     </node>
+  </node>
+  <node concept="312cEu" id="6uvgPJAPPoR">
+    <property role="TrG5h" value="WebModelFactory" />
+    <node concept="2YIFZL" id="6uvgPJAP86P" role="jymVt">
+      <property role="TrG5h" value="createMapper" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6uvgPJAP86Q" role="3clF47">
+        <node concept="3cpWs6" id="6uvgPJAP8tk" role="3cqZAp">
+          <node concept="10Nm6u" id="6uvgPJAP8tW" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6uvgPJAP87R" role="1B3o_S" />
+      <node concept="3uibUv" id="6uvgPJAP87S" role="3clF45">
+        <ref role="3uigEE" node="6uvgPJAo6Kc" resolve="BaseConcept_WebModel" />
+      </node>
+      <node concept="37vLTG" id="6uvgPJAP87T" role="3clF46">
+        <property role="TrG5h" value="bean" />
+        <node concept="3uibUv" id="6uvgPJAP87U" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="6uvgPJAPPoS" role="1B3o_S" />
   </node>
 </model>
 

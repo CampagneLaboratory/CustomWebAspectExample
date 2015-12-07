@@ -164,6 +164,9 @@
     <node concept="YxNCn" id="1mpyZGF7Yz8" role="YxNBU">
       <ref role="YxNCm" to="lnem:7pelyIRkzxh" resolve="Dashboard_Editor" />
     </node>
+    <node concept="YxNCn" id="6uvgPJB0jff" role="YxNBU">
+      <ref role="YxNCm" to="lnem:6uvgPJB0jh3" resolve="CircleItem_Editor" />
+    </node>
   </node>
   <node concept="1pRQAv" id="3V7o9sVwdhP">
     <property role="TrG5h" value="pom" />
