@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.campagnelab.circles.bootstrap" uuid="0cf10c09-b393-4a0c-981d-fec20eebfa22" moduleVersion="0" compileInMPS="true">
+<solution name="org.webapp.languages.jetbrains_mps_lang_core" uuid="0cf10c09-b393-4a0c-981d-fec20eebfa22" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -28,8 +28,8 @@
     <module reference="a1250a4d-c090-42c3-ad7c-d298a3357dd4(jetbrains.mps.make.runtime)" version="0" />
     <module reference="8c40f9f4-b3bd-42d0-8b65-8e644273493c(org.campagnelab.circles.aspect)" version="0" />
     <module reference="b117aec4-8d9e-4c87-a347-e41e0dfe0990(org.campagnelab.circles.aspect.runtime)" version="0" />
-    <module reference="0cf10c09-b393-4a0c-981d-fec20eebfa22(org.campagnelab.circles.bootstrap)" version="0" />
     <module reference="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3(org.google.gwt)" version="0" />
+    <module reference="0cf10c09-b393-4a0c-981d-fec20eebfa22(org.webapp.languages.jetbrains_mps_lang_core)" version="0" />
   </dependencyVersions>
 </solution>
 
