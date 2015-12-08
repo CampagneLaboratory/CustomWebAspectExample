@@ -48,7 +48,6 @@
       </concept>
       <concept id="8338352011213937367" name="org.campagnelab.circles.aspect.structure.DbRetrievedFocus" flags="ng" index="2V9tKI">
         <reference id="8338352011213937435" name="query" index="2V9tRy" />
-        <child id="8338352011213937372" name="tokens" index="2V9tK_" />
       </concept>
       <concept id="8338352011213937366" name="org.campagnelab.circles.aspect.structure.NewBeanCreationFocus" flags="ng" index="2V9tKJ" />
       <concept id="1556429057109701099" name="org.campagnelab.circles.aspect.structure.WebEditors" flags="ng" index="YxNCg">
@@ -118,9 +117,6 @@
       <concept id="7317038553515303524" name="org.campagnelab.circles.aspect.structure.ViewNodeActivity" flags="ng" index="1F_nmC">
         <child id="8338352011213937377" name="focus" index="2V9tKo" />
       </concept>
-      <concept id="2920813966327018756" name="org.campagnelab.circles.aspect.structure.TokenConstantValue" flags="ng" index="3HoMnn">
-        <property id="2920813966327018757" name="value" index="3HoMnm" />
-      </concept>
       <concept id="4829993475490891244" name="org.campagnelab.circles.aspect.structure.GwtModule" flags="ng" index="3X4l2l">
         <property id="4829993475490925500" name="moduleName" index="3X4dV5" />
         <child id="7317038553509599804" name="uses" index="1Cj4RK" />
@@ -147,10 +143,6 @@
     <node concept="16iT6c" id="2ZCJcw_kXAY" role="16iTqq">
       <property role="TrG5h" value="lookupDashboard" />
       <property role="16jhX1" value="select from Dashboard where nodeId=8524845890418800969 " />
-      <node concept="16iT66" id="2ZCJcw_kXBa" role="16iTqa">
-        <property role="TrG5h" value="name" />
-        <node concept="17QB3L" id="2ZCJcw_kXBe" role="16iT67" />
-      </node>
       <node concept="16iT6d" id="2ZCJcw_kXAZ" role="16iTq8">
         <ref role="16iT6a" to="avse:7pelyIRkeUs" resolve="Dashboard" />
       </node>
@@ -282,9 +274,6 @@
     <node concept="1F_nmC" id="7eRLJB8$HRi" role="1F_nmF">
       <node concept="2V9tKI" id="2ZCJcw_kXBh" role="2V9tKo">
         <ref role="2V9tRy" node="2ZCJcw_kXAY" resolve="lookupDashboard" />
-        <node concept="3HoMnn" id="2ZCJcw_kXBn" role="2V9tK_">
-          <property role="3HoMnm" value="nothing" />
-        </node>
       </node>
     </node>
   </node>

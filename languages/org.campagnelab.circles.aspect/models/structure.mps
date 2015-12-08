@@ -400,7 +400,7 @@
     <node concept="1TJgyj" id="2pxiRTwaHRO" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="arguments" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="2pxiRTwaHFS" resolve="QueryArgument" />
     </node>
     <node concept="1TJgyj" id="2pxiRTwaHRQ" role="1TKVEi">
@@ -581,7 +581,7 @@
     <node concept="1TJgyj" id="7eRLJB8$xFs" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="tokens" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="2y8Odf5V4Zm" resolve="TokenValue" />
     </node>
   </node>
