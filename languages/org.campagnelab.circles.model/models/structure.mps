@@ -13,7 +13,6 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
-        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -79,7 +78,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="nodes" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="2cczKT7drD5" resolve="RootConcept" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="2CxJDc4Cpd">
@@ -101,12 +100,6 @@
     <node concept="PrWs8" id="2cczKT7cIdh" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="2cczKT7drD5">
-    <property role="1pbfSe" value="1782729043" />
-    <property role="TrG5h" value="RootConcept" />
-    <property role="34LRSv" value="a rootable base concept" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 
