@@ -6,6 +6,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.circles.mockup/org.campagnelab.circles.mockup.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.circles.model/org.campagnelab.circles.model.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.circles.aspect.runtime/org.campagnelab.circles.aspect.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.circles.bootstrap/org.campagnelab.circles.bootstrap.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.circles.plugin/org.campagnelab.circles.plugin.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.google.gwt/org.google.gwt.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/playground/playground.msd" folder="" />

@@ -37,11 +37,17 @@
       </concept>
     </language>
     <language id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect">
+      <concept id="7466760769191428118" name="org.campagnelab.circles.aspect.structure.ExcludeConcept" flags="ng" index="21Tgdd">
+        <reference id="7466760769191428119" name="c" index="21Tgdc" />
+      </concept>
       <concept id="2986108014587570547" name="org.campagnelab.circles.aspect.structure.Database" flags="ng" index="B0a0o">
         <property id="2986108014587570548" name="url" index="B0a0v" />
         <property id="4824635715685243890" name="password" index="1mS5tH" />
         <property id="4824635715685243887" name="user" index="1mS5tK" />
         <child id="2765574652333579748" name="queries" index="16iTqq" />
+      </concept>
+      <concept id="8338352011213937367" name="org.campagnelab.circles.aspect.structure.DbRetrievedFocus" flags="ng" index="2V9tKI">
+        <reference id="8338352011213937435" name="query" index="2V9tRy" />
       </concept>
       <concept id="8338352011213937366" name="org.campagnelab.circles.aspect.structure.NewBeanCreationFocus" flags="ng" index="2V9tKJ" />
       <concept id="1556429057109701099" name="org.campagnelab.circles.aspect.structure.WebEditors" flags="ng" index="YxNCg">
@@ -64,10 +70,8 @@
       <concept id="2765574652333578995" name="org.campagnelab.circles.aspect.structure.QueryReturnType" flags="ng" index="16iT6d">
         <reference id="2765574652333578996" name="concept" index="16iT6a" />
       </concept>
-      <concept id="4824635715685240681" name="org.campagnelab.circles.aspect.structure.IncludeConcepts" flags="ng" index="1mS4fQ">
-        <reference id="4824635715685240682" name="c" index="1mS4fP" />
-      </concept>
       <concept id="4824635715685240675" name="org.campagnelab.circles.aspect.structure.PersistedConcepts" flags="ng" index="1mS4fW">
+        <child id="7466760769191453126" name="exclusionRules" index="21Tuat" />
         <child id="4824635715685240684" name="inclusionRules" index="1mS4fN" />
       </concept>
       <concept id="3811513598467841685" name="org.campagnelab.circles.aspect.structure.GwtPomBuild" flags="ng" index="1pQyBT" />
@@ -136,6 +140,13 @@
         <node concept="17QB3L" id="6mblWKdLHVJ" role="16iT67" />
       </node>
     </node>
+    <node concept="16iT6c" id="2ZCJcw_kXAY" role="16iTqq">
+      <property role="TrG5h" value="lookupDashboard" />
+      <property role="16jhX1" value="select from Dashboard where nodeId=8524845890418800969 " />
+      <node concept="16iT6d" id="2ZCJcw_kXAZ" role="16iTq8">
+        <ref role="16iT6a" to="avse:7pelyIRkeUs" resolve="Dashboard" />
+      </node>
+    </node>
   </node>
   <node concept="1mS4fW" id="4UvP5h6JKBj">
     <node concept="10$slB" id="242NPypWmof" role="1mS4fN">
@@ -146,11 +157,8 @@
         </node>
       </node>
     </node>
-    <node concept="1mS4fQ" id="2SasHe_phYD" role="1mS4fN">
-      <ref role="1mS4fP" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    </node>
-    <node concept="1mS4fQ" id="2SasHe_v5IK" role="1mS4fN">
-      <ref role="1mS4fP" to="avse:7pelyIRkqin" resolve="CircleContainer" />
+    <node concept="21Tgdd" id="6uvgPJAvrKU" role="21Tuat">
+      <ref role="21Tgdc" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="YxNCg" id="1mpyZGF7YyP">
@@ -165,6 +173,12 @@
     </node>
     <node concept="YxNCn" id="1mpyZGF7Yz8" role="YxNBU">
       <ref role="YxNCm" to="lnem:7pelyIRkzxh" resolve="Dashboard_Editor" />
+    </node>
+    <node concept="YxNCn" id="6uvgPJB0jff" role="YxNBU">
+      <ref role="YxNCm" to="lnem:6uvgPJB0jh3" resolve="CircleItem_Editor" />
+    </node>
+    <node concept="YxNCn" id="2ZCJcw_4gyq" role="YxNBU">
+      <ref role="YxNCm" to="lnem:6uvgPJB0qmH" resolve="AllCirclesInDb_Editor" />
     </node>
   </node>
   <node concept="1pRQAv" id="3V7o9sVwdhP">
@@ -213,6 +227,12 @@
       <property role="1pROy$" value="model-gwt" />
       <property role="1pROyB" value="1.1-SNAPSHOT" />
     </node>
+    <node concept="1pROyD" id="7sx5qZBAHxj" role="1pRVvK">
+      <property role="1pROyE" value="junit" />
+      <property role="1pROy$" value="junit" />
+      <property role="1pROyB" value="4.11" />
+      <property role="1pROyz" value="test" />
+    </node>
     <node concept="1pRVv9" id="3V7o9sVwdhV" role="1pRVve">
       <property role="1pRVva" value="jetbrains.jetpad.mapper" />
       <property role="1pRVvb" value="container" />
@@ -252,7 +272,9 @@
     <property role="2V4_qO" value="true" />
     <ref role="1FJQDX" to="avse:7pelyIRkeUs" resolve="Dashboard" />
     <node concept="1F_nmC" id="7eRLJB8$HRi" role="1F_nmF">
-      <node concept="2V9tKJ" id="7eRLJB8$HRo" role="2V9tKo" />
+      <node concept="2V9tKI" id="2ZCJcw_kXBh" role="2V9tKo">
+        <ref role="2V9tRy" node="2ZCJcw_kXAY" resolve="lookupDashboard" />
+      </node>
     </node>
   </node>
 </model>

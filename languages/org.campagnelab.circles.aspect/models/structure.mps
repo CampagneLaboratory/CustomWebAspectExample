@@ -116,6 +116,12 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="RKPJ9do_wG" resolve="ContributeConcepts" />
     </node>
+    <node concept="1TJgyj" id="6uvgPJAuE76" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="exclusionRules" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6uvgPJAuUoJ" resolve="ExcludeConcepts" />
+    </node>
     <node concept="PrWs8" id="2SasHe_wGer" role="PzmwI">
       <ref role="PrY4T" node="RKPJ9dogRy" resolve="IIncludeConcepts" />
     </node>
@@ -139,7 +145,7 @@
   <node concept="1TIwiD" id="4bOz9Wk5cXD">
     <property role="1pbfSe" value="1460231176" />
     <property role="TrG5h" value="IncludeConcepts" />
-    <property role="34LRSv" value="concept" />
+    <property role="34LRSv" value="include" />
     <property role="R4oN_" value="Include Concepts For Persistence" />
     <property role="3GE5qa" value="db" />
     <ref role="1TJDcQ" node="RKPJ9do_wG" resolve="ContributeConcepts" />
@@ -394,7 +400,7 @@
     <node concept="1TJgyj" id="2pxiRTwaHRO" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="arguments" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="2pxiRTwaHFS" resolve="QueryArgument" />
     </node>
     <node concept="1TJgyj" id="2pxiRTwaHRQ" role="1TKVEi">
@@ -575,7 +581,7 @@
     <node concept="1TJgyj" id="7eRLJB8$xFs" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="tokens" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="2y8Odf5V4Zm" resolve="TokenValue" />
     </node>
   </node>
@@ -608,6 +614,38 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="6uvgPJAu$0m">
+    <property role="1pbfSe" value="1310294897" />
+    <property role="3GE5qa" value="db" />
+    <property role="TrG5h" value="ExcludeConcept" />
+    <property role="34LRSv" value="exclude" />
+    <ref role="1TJDcQ" node="6uvgPJAuUoJ" resolve="ExcludeConcepts" />
+    <node concept="1TJgyj" id="6uvgPJAu$0n" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="c" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+    </node>
+    <node concept="PrWs8" id="6uvgPJAv6Yb" role="PzmwI">
+      <ref role="PrY4T" node="6uvgPJAv6XU" resolve="IExcludeConcepts" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6uvgPJAuUoJ">
+    <property role="1pbfSe" value="1310386570" />
+    <property role="TrG5h" value="ExcludeConcepts" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="db" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6uvgPJAv6Y8" role="PzmwI">
+      <ref role="PrY4T" node="6uvgPJAv6XU" resolve="IExcludeConcepts" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6uvgPJAv6XU">
+    <property role="1pbfSe" value="1310438101" />
+    <property role="TrG5h" value="IExcludeConcepts" />
+    <property role="3GE5qa" value="db" />
   </node>
 </model>
 

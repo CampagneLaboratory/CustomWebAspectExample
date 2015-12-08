@@ -9,7 +9,7 @@
   <imports>
     <import index="77ry" ref="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
     <import index="ehbc" ref="r:3d4b8a25-2cca-4083-ac64-ee80560fc20e(org.campagnelab.circles.model.editor)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -94,6 +94,9 @@
         </node>
       </node>
     </node>
+    <node concept="1mS4fQ" id="7sx5qZALjOC" role="1mS4fN">
+      <ref role="1mS4fP" to="tpck:4uZwTti3_$T" resolve="Attribute" />
+    </node>
     <node concept="1mS4fQ" id="5eOdMaf2o3M" role="1mS4fN">
       <ref role="1mS4fP" to="77ry:5eOdMaf2nSN" resolve="Project" />
     </node>
@@ -111,6 +114,9 @@
     </node>
     <node concept="1mS4fQ" id="5eOdMaf2o4a" role="1mS4fN">
       <ref role="1mS4fP" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="1mS4fQ" id="6uvgPJBBfjk" role="1mS4fN">
+      <ref role="1mS4fP" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="B0a0o" id="4UvP5h6JFr9">
