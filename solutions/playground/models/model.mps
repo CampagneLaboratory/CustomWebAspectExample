@@ -35,7 +35,15 @@
       </concept>
     </language>
     <language id="87c8043e-fece-4ba6-9d13-3ef71e47af25" name="org.campagnelab.circles.model">
-      <concept id="6031506422524116531" name="org.campagnelab.circles.model.structure.Project" flags="ng" index="3sJk$h" />
+      <concept id="47436205663618640" name="org.campagnelab.circles.model.structure.Solution" flags="ng" index="1cIw2E" />
+      <concept id="47436205663618637" name="org.campagnelab.circles.model.structure.Language" flags="ng" index="1cIw2R" />
+      <concept id="6031506422524116531" name="org.campagnelab.circles.model.structure.Project" flags="ng" index="3sJk$h">
+        <child id="6031506422524116540" name="modules" index="3sJk$u" />
+      </concept>
+      <concept id="6031506422524116534" name="org.campagnelab.circles.model.structure.Module" flags="ng" index="3sJk$k">
+        <child id="6031506422524116542" name="models" index="3sJk$s" />
+      </concept>
+      <concept id="6031506422524116537" name="org.campagnelab.circles.model.structure.Model" flags="ng" index="3sJk$r" />
     </language>
   </registry>
   <node concept="317o2z" id="7pelyIRn7$U">
@@ -87,6 +95,16 @@
   </node>
   <node concept="3sJk$h" id="5eOdMaf2BiH">
     <property role="TrG5h" value="TestP" />
+    <node concept="1cIw2R" id="2cczKT79x5k" role="3sJk$u" />
+  </node>
+  <node concept="3sJk$h" id="2cczKT79x5m">
+    <property role="TrG5h" value="FirstProject" />
+    <node concept="1cIw2E" id="2cczKT79x5p" role="3sJk$u">
+      <property role="TrG5h" value="playground" />
+      <node concept="3sJk$r" id="2cczKT79x5r" role="3sJk$s">
+        <property role="TrG5h" value="model" />
+      </node>
+    </node>
   </node>
 </model>
 
