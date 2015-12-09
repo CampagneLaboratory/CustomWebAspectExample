@@ -147,6 +147,13 @@
         <ref role="16iT6a" to="avse:7pelyIRkeUs" resolve="Dashboard" />
       </node>
     </node>
+    <node concept="16iT6c" id="6mjhnPMe_1g" role="16iTqq">
+      <property role="TrG5h" value="lookupAllCirclesInDb" />
+      <property role="16jhX1" value="select from AllCirclesInDb where nodeId=8524845890418800954" />
+      <node concept="16iT6d" id="6mjhnPMe_1h" role="16iTq8">
+        <ref role="16iT6a" to="avse:7pelyIRkXq8" resolve="AllCirclesInDb" />
+      </node>
+    </node>
   </node>
   <node concept="1mS4fW" id="4UvP5h6JKBj">
     <node concept="10$slB" id="242NPypWmof" role="1mS4fN">
@@ -269,11 +276,21 @@
   </node>
   <node concept="1F$HYy" id="7eRLJB8yZyz">
     <property role="TrG5h" value="ViewDashboardPlace" />
-    <property role="2V4_qO" value="true" />
+    <property role="2V4_qO" value="false" />
     <ref role="1FJQDX" to="avse:7pelyIRkeUs" resolve="Dashboard" />
     <node concept="1F_nmC" id="7eRLJB8$HRi" role="1F_nmF">
       <node concept="2V9tKI" id="2ZCJcw_kXBh" role="2V9tKo">
         <ref role="2V9tRy" node="2ZCJcw_kXAY" resolve="lookupDashboard" />
+      </node>
+    </node>
+  </node>
+  <node concept="1F$HYy" id="6mjhnPMe_10">
+    <property role="TrG5h" value="ViewAllCirclesInDbPlace" />
+    <property role="2V4_qO" value="true" />
+    <ref role="1FJQDX" to="avse:7pelyIRkXq8" resolve="AllCirclesInDb" />
+    <node concept="1F_nmC" id="6mjhnPMe_13" role="1F_nmF">
+      <node concept="2V9tKI" id="6mjhnPMe_19" role="2V9tKo">
+        <ref role="2V9tRy" node="6mjhnPMe_1g" resolve="lookupAllCirclesInDb" />
       </node>
     </node>
   </node>
