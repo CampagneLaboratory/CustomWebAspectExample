@@ -349,5 +349,38 @@
       <node concept="l2Vlx" id="2y8Odf5U65m" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="6GMbeB5BFDL">
+    <ref role="1XX52x" to="77ry:2cczKT7cIdg" resolve="CirclesBaseConcept" />
+    <node concept="3EZMnI" id="6GMbeB5BFDN" role="2wV5jI">
+      <node concept="l2Vlx" id="6GMbeB5BFDO" role="2iSdaV" />
+      <node concept="3F0ifn" id="6GMbeB5BFDP" role="3EZMnx">
+        <property role="3F0ifm" value="circles base concept" />
+      </node>
+      <node concept="3F0A7n" id="6GMbeB5BFDQ" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="6GMbeB5BFDR" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="6GMbeB5BFDS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="6GMbeB5BFDT" role="3F10Kt">
+          <property role="1413C4" value="body-paren" />
+        </node>
+        <node concept="11LMrY" id="6GMbeB5BFDU" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6GMbeB5BFDV" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="6GMbeB5BFDW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="6GMbeB5BFDX" role="3F10Kt">
+          <property role="1413C4" value="body-paren" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

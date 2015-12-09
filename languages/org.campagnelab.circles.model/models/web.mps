@@ -198,6 +198,9 @@
     <node concept="YxNCn" id="2y8Odf5Ucpb" role="YxNBU">
       <ref role="YxNCm" to="ehbc:2y8Odf5U65h" resolve="Module_Editor" />
     </node>
+    <node concept="YxNCn" id="6GMbeB5BFEe" role="YxNBU">
+      <ref role="YxNCm" to="ehbc:6GMbeB5BFDL" resolve="CirclesBaseConcept_Editor" />
+    </node>
   </node>
   <node concept="1F$HYy" id="2y8Odf5TtRM">
     <property role="TrG5h" value="ViewModulePlace" />
