@@ -518,7 +518,7 @@
     </node>
     <node concept="2b_W8R" id="7sx5qZAXwcX" role="lGtFl">
       <node concept="2bEx1p" id="7sx5qZAXzzz" role="2bEx12">
-        <property role="2bEHen" value="${module}/../../web-app/src/main/java" />
+        <property role="2bEHen" value="${module}/../../web-app" />
         <property role="2bDwcZ" value="pom.xml" />
       </node>
     </node>
