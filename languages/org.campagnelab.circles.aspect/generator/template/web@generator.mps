@@ -65,7 +65,6 @@
     <import index="y8z9" ref="r:2c4c7e9e-399c-490f-b18e-ff7f5ebd651b(org.campagnelab.circles.aspect.runtime)" />
     <import index="kt44" ref="r:69cbb07e-d989-4caa-9099-b0c98e068979(org.webapp.languages.jetbrains_mps_lang_core.client.models)" />
     <import index="e2uh" ref="r:7ec4096c-799e-4328-9e9f-4d107c475bbd(org.webapp.languages.jetbrains_mps_lang_core.shared.beans)" />
-    <import index="8ib" ref="f:diff_repository#r:700dcccc-5294-4569-a97b-cb7b4632a7c8(web@generator@repository)" />
     <import index="4xmk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.escape(MPS.Core/)" implicit="true" />
     <import index="daa6" ref="r:623c8eb4-df21-4fdc-925d-d384e22129a2(org.campagnelab.circles.aspect.db)" implicit="true" />
   </imports>
@@ -4294,7 +4293,7 @@
               </node>
             </node>
             <node concept="gft3U" id="6uvgPJAq3zn" role="UU_$l">
-              <node concept="3uibUv" id="4j7bfY4sJ_l" role="gfFT$">
+              <node concept="3uibUv" id="5XH$wZWwU7d" role="gfFT$">
                 <ref role="3uigEE" to="e2uh:6uvgPJAknyT" resolve="BaseConcept_Bean" />
               </node>
             </node>
@@ -4570,7 +4569,7 @@
           </node>
         </node>
         <node concept="gft3U" id="6uvgPJAmLRa" role="UU_$l">
-          <node concept="3uibUv" id="4j7bfY4sJ_d" role="gfFT$">
+          <node concept="3uibUv" id="5XH$wZWwU79" role="gfFT$">
             <ref role="3uigEE" to="e2uh:6uvgPJAknyT" resolve="BaseConcept_Bean" />
           </node>
         </node>
