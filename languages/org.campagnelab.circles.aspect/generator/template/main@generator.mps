@@ -5153,6 +5153,30 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="2cczKT7dqZN" role="3cqZAp">
+              <node concept="3cpWsn" id="2cczKT7dqZO" role="3cpWs9">
+                <property role="TrG5h" value="linkedField" />
+                <node concept="3uibUv" id="2cczKT7dqZP" role="1tU5fm">
+                  <ref role="3uigEE" to="i6bd:~ORecord" resolve="ORecord" />
+                </node>
+                <node concept="2OqwBi" id="2cczKT7dr4A" role="33vP2m">
+                  <node concept="Xjq3P" id="2cczKT7dr3I" role="2Oq$k0" />
+                  <node concept="liA8E" id="2cczKT7dr7e" role="2OqNvi">
+                    <ref role="37wK5l" node="2cczKT7cT5s" resolve="getLinkedField" />
+                    <node concept="37vLTw" id="2cczKT7dr8B" role="37wK5m">
+                      <ref role="3cqZAo" node="beLIuVGyB3" resolve="db" />
+                    </node>
+                    <node concept="37vLTw" id="2cczKT7draW" role="37wK5m">
+                      <ref role="3cqZAo" node="beLIuVARV6" resolve="destination" />
+                    </node>
+                    <node concept="2GrUjf" id="2cczKT7drdt" role="37wK5m">
+                      <ref role="2Gs0qQ" node="beLIuVJjsP" resolve="referenceLink" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="2cczKT7drep" role="3cqZAp" />
             <node concept="3SKdUt" id="beLIuVJCF6" role="3cqZAp">
               <node concept="3SKdUq" id="beLIuVJCGU" role="3SKWNk">
                 <property role="3SKdUp" value="TODO: check if the referenced node is already stored in the database. If not, we can link it" />
@@ -5168,6 +5192,8 @@
                 <property role="3SKdUp" value="TODO: and when we create nodes, we should always check if the node is already in the database (too slow?)" />
               </node>
             </node>
+            <node concept="3clFbH" id="2cczKT7cR75" role="3cqZAp" />
+            <node concept="3clFbH" id="2cczKT7cR7r" role="3cqZAp" />
           </node>
           <node concept="2OqwBi" id="beLIuVJjtD" role="2GsD0m">
             <node concept="37vLTw" id="beLIuVJkkl" role="2Oq$k0">
@@ -5206,6 +5232,106 @@
         <node concept="3uibUv" id="beLIuVGyB4" role="1tU5fm">
           <ref role="3uigEE" to="laoz:~ODatabaseDocumentTx" resolve="ODatabaseDocumentTx" />
         </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="2cczKT7cT5s" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getLinkedField" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="37vLTG" id="2cczKT7dfM0" role="3clF46">
+        <property role="TrG5h" value="db" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3uibUv" id="2cczKT7dfM1" role="1tU5fm">
+          <ref role="3uigEE" to="laoz:~ODatabaseDocumentTx" resolve="ODatabaseDocumentTx" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2cczKT7cT5t" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3uibUv" id="2cczKT7cT5u" role="1tU5fm">
+          <ref role="3uigEE" to="8qyd:~ODocument" resolve="ODocument" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2cczKT7cZg6" role="3clF46">
+        <property role="TrG5h" value="ref" />
+        <node concept="3uibUv" id="2cczKT7daxq" role="1tU5fm">
+          <ref role="3uigEE" to="c17a:~SReferenceLink" resolve="SReferenceLink" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="2cczKT7cT5v" role="3clF47">
+        <node concept="3clFbJ" id="2cczKT7deE7" role="3cqZAp">
+          <node concept="3clFbS" id="2cczKT7deE8" role="3clFbx">
+            <node concept="3cpWs6" id="2cczKT7dzIh" role="3cqZAp">
+              <node concept="2OqwBi" id="2cczKT7d4q8" role="3cqZAk">
+                <node concept="37vLTw" id="2cczKT7d4ia" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2cczKT7cT5t" resolve="node" />
+                </node>
+                <node concept="liA8E" id="2cczKT7d5KF" role="2OqNvi">
+                  <ref role="37wK5l" to="8qyd:~ODocument.field(java.lang.String,java.lang.Object):com.orientechnologies.orient.core.record.impl.ODocument" resolve="field" />
+                  <node concept="2OqwBi" id="2cczKT7daBd" role="37wK5m">
+                    <node concept="37vLTw" id="2cczKT7d5MJ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2cczKT7cZg6" resolve="ref" />
+                    </node>
+                    <node concept="liA8E" id="2cczKT7daH8" role="2OqNvi">
+                      <ref role="37wK5l" to="c17a:~SReferenceLink.getRoleName():java.lang.String" resolve="getRoleName" />
+                    </node>
+                  </node>
+                  <node concept="2YIFZM" id="2cczKT7dq0a" role="37wK5m">
+                    <ref role="37wK5l" to="daa6:4Uz6rqjJHFQ" resolve="getFqName" />
+                    <ref role="1Pybhc" to="daa6:4Uz6rqjJFHS" resolve="DbClassNameUtil" />
+                    <node concept="2OqwBi" id="2cczKT7dq0b" role="37wK5m">
+                      <node concept="37vLTw" id="2cczKT7dq0c" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2cczKT7cZg6" resolve="ref" />
+                      </node>
+                      <node concept="liA8E" id="2cczKT7dq0d" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SReferenceLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2cczKT7deEf" role="3clFbw">
+            <node concept="2OqwBi" id="2cczKT7deEg" role="2Oq$k0">
+              <node concept="2OqwBi" id="2cczKT7deEh" role="2Oq$k0">
+                <node concept="37vLTw" id="2cczKT7dhAG" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2cczKT7dfM0" resolve="db" />
+                </node>
+                <node concept="liA8E" id="2cczKT7deEj" role="2OqNvi">
+                  <ref role="37wK5l" to="laoz:~ODatabaseDocumentTx.getMetadata():com.orientechnologies.orient.core.metadata.OMetadataDefault" resolve="getMetadata" />
+                </node>
+              </node>
+              <node concept="liA8E" id="2cczKT7deEk" role="2OqNvi">
+                <ref role="37wK5l" to="3g47:~OMetadataDefault.getSchema():com.orientechnologies.orient.core.metadata.schema.OSchemaProxy" resolve="getSchema" />
+              </node>
+            </node>
+            <node concept="liA8E" id="2cczKT7deEl" role="2OqNvi">
+              <ref role="37wK5l" to="jm6w:~OSchemaProxy.existsClass(java.lang.String):boolean" resolve="existsClass" />
+              <node concept="2YIFZM" id="2cczKT7deEm" role="37wK5m">
+                <ref role="1Pybhc" to="daa6:4Uz6rqjJFHS" resolve="DbClassNameUtil" />
+                <ref role="37wK5l" to="daa6:4Uz6rqjJHFQ" resolve="getFqName" />
+                <node concept="2OqwBi" id="2cczKT7dhMA" role="37wK5m">
+                  <node concept="37vLTw" id="2cczKT7dhIT" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2cczKT7cZg6" resolve="ref" />
+                  </node>
+                  <node concept="liA8E" id="2cczKT7dhTR" role="2OqNvi">
+                    <ref role="37wK5l" to="c17a:~SReferenceLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="2cczKT7dnxM" role="3cqZAp">
+          <node concept="10Nm6u" id="2cczKT7dp7m" role="3cqZAk" />
+        </node>
+        <node concept="3clFbH" id="2cczKT7d7pN" role="3cqZAp" />
+      </node>
+      <node concept="3Tm6S6" id="2cczKT7cT5R" role="1B3o_S" />
+      <node concept="3uibUv" id="2cczKT7cV9O" role="3clF45">
+        <ref role="3uigEE" to="i6bd:~ORecord" resolve="ORecord" />
       </node>
     </node>
     <node concept="2tJIrI" id="beLIuVvoxR" role="jymVt" />
