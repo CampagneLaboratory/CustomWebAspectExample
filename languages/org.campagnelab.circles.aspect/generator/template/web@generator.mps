@@ -81,7 +81,6 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
-      <concept id="1215695189714" name="jetbrains.mps.baseLanguage.structure.PlusAssignmentExpression" flags="nn" index="d57v9" />
       <concept id="1153422105332" name="jetbrains.mps.baseLanguage.structure.RemExpression" flags="nn" index="2dk9JS" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
@@ -8119,15 +8118,16 @@
                 <property role="2qtEX9" value="value" />
                 <node concept="3zFVjK" id="6mblWKe35tk" role="3zH0cK">
                   <node concept="3clFbS" id="6mblWKe35tl" role="2VODD2">
-                    <node concept="3clFbF" id="6mblWKe35uy" role="3cqZAp">
-                      <node concept="3cpWs3" id="6mblWKe36Cv" role="3clFbG">
-                        <node concept="Xl_RD" id="6mblWKe36C_" role="3uHU7w">
-                          <property role="Xl_RC" value=".server.DbGenericServiceImpl" />
+                    <node concept="3clFbF" id="4yebzJk$tOH" role="3cqZAp">
+                      <node concept="2OqwBi" id="4yebzJk$tOI" role="3clFbG">
+                        <node concept="35c_gC" id="4yebzJk$tOJ" role="2Oq$k0">
+                          <ref role="35c_gD" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
                         </node>
-                        <node concept="2OqwBi" id="6mblWKe35yY" role="3uHU7B">
-                          <node concept="30H73N" id="6mblWKe35ux" role="2Oq$k0" />
-                          <node concept="3TrcHB" id="6mblWKe35Ft" role="2OqNvi">
-                            <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                        <node concept="2qgKlT" id="4yebzJk$tOK" role="2OqNvi">
+                          <ref role="37wK5l" to="x3ey:14gTH9QmnHN" resolve="getTargetPackageName" />
+                          <node concept="30H73N" id="4yebzJk$tOL" role="37wK5m" />
+                          <node concept="Xl_RD" id="4yebzJk$tOM" role="37wK5m">
+                            <property role="Xl_RC" value=".server.DbGenericServiceImpl" />
                           </node>
                         </node>
                       </node>
@@ -13551,16 +13551,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7sx5qZBUtC4" role="3cqZAp">
-          <node concept="d57v9" id="7sx5qZBUtC5" role="3clFbG">
-            <node concept="37vLTw" id="7sx5qZBUtC6" role="37vLTJ">
-              <ref role="3cqZAo" node="7sx5qZC9NHa" resolve="pojoPackageName" />
-            </node>
-            <node concept="Xl_RD" id="7sx5qZBUtC7" role="37vLTx">
-              <property role="Xl_RC" value=".server.dbtopojo" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="7sx5qZBFFhp" role="3cqZAp">
           <node concept="3cpWsn" id="7sx5qZBFFhs" role="3cpWs9">
             <property role="TrG5h" value="pojoHelperClassName" />
@@ -13767,16 +13757,17 @@
                   <property role="2qtEX9" value="value" />
                   <node concept="3zFVjK" id="7sx5qZBX7rT" role="3zH0cK">
                     <node concept="3clFbS" id="7sx5qZBX7rU" role="2VODD2">
-                      <node concept="3clFbF" id="7sx5qZC6LuJ" role="3cqZAp">
-                        <node concept="2OqwBi" id="7sx5qZC6L$S" role="3clFbG">
-                          <node concept="2OqwBi" id="7sx5qZC6Lw9" role="2Oq$k0">
-                            <node concept="1iwH7S" id="7sx5qZC6LuE" role="2Oq$k0" />
-                            <node concept="1bhEwm" id="7sx5qZC6Lyf" role="2OqNvi">
-                              <ref role="1bhEwk" node="7sx5qZBX1Vi" resolve="module" />
-                            </node>
+                      <node concept="3clFbF" id="4yebzJk$zY9" role="3cqZAp">
+                        <node concept="2OqwBi" id="4yebzJk$zYa" role="3clFbG">
+                          <node concept="35c_gC" id="4yebzJk$zYb" role="2Oq$k0">
+                            <ref role="35c_gD" to="6je1:4c7_nAY5GnG" resolve="GwtModule" />
                           </node>
-                          <node concept="3TrcHB" id="7sx5qZC6LS7" role="2OqNvi">
-                            <ref role="3TsBF5" to="6je1:4c7_nAY5OIW" resolve="moduleName" />
+                          <node concept="2qgKlT" id="4yebzJk$zYc" role="2OqNvi">
+                            <ref role="37wK5l" to="x3ey:14gTH9QmnHN" resolve="getTargetPackageName" />
+                            <node concept="30H73N" id="4yebzJk$zYd" role="37wK5m" />
+                            <node concept="Xl_RD" id="4yebzJk$zYe" role="37wK5m">
+                              <property role="Xl_RC" value=".server.dbtopojo" />
+                            </node>
                           </node>
                         </node>
                       </node>
