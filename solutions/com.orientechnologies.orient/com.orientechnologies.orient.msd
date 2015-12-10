@@ -16,9 +16,14 @@
     </modelRoot>
   </models>
   <stubModelEntries>
+    <stubModelEntry path="${module}/concurrentlinkedhashmap-lru-1.4.1.jar" />
+    <stubModelEntry path="${module}/hamcrest-core-1.3.jar" />
+    <stubModelEntry path="${module}/jna-4.0.0.jar" />
+    <stubModelEntry path="${module}/jna-platform-4.0.0.jar" />
     <stubModelEntry path="${module}/orientdb-client-2.1.5.jar" />
     <stubModelEntry path="${module}/orientdb-core-2.1.5.jar" />
     <stubModelEntry path="${module}/orientdb-enterprise-2.1.5.jar" />
+    <stubModelEntry path="${module}/snappy-java-1.1.0.1.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
