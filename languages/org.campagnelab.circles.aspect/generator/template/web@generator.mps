@@ -33,11 +33,7 @@
     <import index="x3ey" ref="r:db1c5d5d-cc86-4bed-9aa5-f6746cfde04e(org.campagnelab.circles.aspect.behavior)" />
     <import index="xmwj" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.user.client.rpc(org.google.gwt/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="scrq" ref="8c40f9f4-b3bd-42d0-8b65-8e644273493c/java:com.orientechnologies.orient.core.db(org.campagnelab.circles.aspect/)" />
-    <import index="laoz" ref="8c40f9f4-b3bd-42d0-8b65-8e644273493c/java:com.orientechnologies.orient.core.db.document(org.campagnelab.circles.aspect/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="hke8" ref="8c40f9f4-b3bd-42d0-8b65-8e644273493c/java:com.orientechnologies.orient.core.sql.query(org.campagnelab.circles.aspect/)" />
-    <import index="8qyd" ref="8c40f9f4-b3bd-42d0-8b65-8e644273493c/java:com.orientechnologies.orient.core.record.impl(org.campagnelab.circles.aspect/)" />
     <import index="ea1z" ref="r:4d14f64f-fa9a-4ab0-8621-23682dd759f0(org.campagnelab.circles.aspect.plugin)" />
     <import index="kqln" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.user.server.rpc(org.google.gwt/)" />
     <import index="xfwa" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.web.bindery.event.shared(org.google.gwt/)" />
@@ -53,20 +49,24 @@
     <import index="oz1l" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.thirdparty.streamhtmlparser.util(org.google.gwt/)" />
     <import index="l6au" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.html(MPS.Core/)" />
     <import index="mmh5" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.safehtml.shared(org.google.gwt/)" />
-    <import index="i6bd" ref="8c40f9f4-b3bd-42d0-8b65-8e644273493c/java:com.orientechnologies.orient.core.record(org.campagnelab.circles.aspect/)" />
     <import index="rjhg" ref="920eaa0e-ecca-46bc-bee7-4e5c59213dd6/java:org.junit(Testbench/)" />
     <import index="mpar" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:jetbrains.jetpad.mapper.gwt(org.google.gwt/)" />
     <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
     <import index="qoc8" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:jetbrains.jetpad.model.collections.list(org.google.gwt/)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
-    <import index="tdi1" ref="8c40f9f4-b3bd-42d0-8b65-8e644273493c/java:com.orientechnologies.orient.core.db.record(org.campagnelab.circles.aspect/)" />
     <import index="lgza" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:jetbrains.jetpad.model.property(org.google.gwt/)" />
     <import index="taow" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:jetbrains.jetpad.model.children(org.google.gwt/)" />
     <import index="y8z9" ref="r:2c4c7e9e-399c-490f-b18e-ff7f5ebd651b(org.campagnelab.circles.aspect.runtime)" />
     <import index="kt44" ref="r:69cbb07e-d989-4caa-9099-b0c98e068979(org.webapp.languages.jetbrains_mps_lang_core.client.models)" />
     <import index="e2uh" ref="r:7ec4096c-799e-4328-9e9f-4d107c475bbd(org.webapp.languages.jetbrains_mps_lang_core.shared.beans)" />
+    <import index="scrq" ref="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.db(com.orientechnologies.orient/)" />
+    <import index="laoz" ref="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.db.document(com.orientechnologies.orient/)" />
+    <import index="hke8" ref="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.sql.query(com.orientechnologies.orient/)" />
+    <import index="8qyd" ref="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.record.impl(com.orientechnologies.orient/)" />
+    <import index="tdi1" ref="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.db.record(com.orientechnologies.orient/)" />
     <import index="4xmk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.escape(MPS.Core/)" implicit="true" />
     <import index="daa6" ref="r:623c8eb4-df21-4fdc-925d-d384e22129a2(org.campagnelab.circles.aspect.db)" implicit="true" />
+    <import index="i6bd" ref="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.record(com.orientechnologies.orient/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -6432,7 +6432,7 @@
                 </node>
                 <node concept="3uibUv" id="7sx5qZB$Gtv" role="1tU5fm">
                   <ref role="3uigEE" to="33ny:~List" resolve="List" />
-                  <node concept="3uibUv" id="7sx5qZB$G$W" role="11_B2D">
+                  <node concept="3uibUv" id="6GMbeB5TwWx" role="11_B2D">
                     <ref role="3uigEE" to="tdi1:~OIdentifiable" resolve="OIdentifiable" />
                   </node>
                 </node>
@@ -12474,7 +12474,7 @@
       <property role="2aFKle" value="false" />
       <node concept="37vLTG" id="7sx5qZCh3If" role="3clF46">
         <property role="TrG5h" value="doc" />
-        <node concept="3uibUv" id="7sx5qZCh3Ig" role="1tU5fm">
+        <node concept="3uibUv" id="7_vCTwQNJPt" role="1tU5fm">
           <ref role="3uigEE" to="8qyd:~ODocument" resolve="ODocument" />
         </node>
       </node>
@@ -13677,7 +13677,7 @@
       <property role="2aFKle" value="false" />
       <node concept="37vLTG" id="7sx5qZBFiI0" role="3clF46">
         <property role="TrG5h" value="doc" />
-        <node concept="3uibUv" id="7sx5qZBFiKl" role="1tU5fm">
+        <node concept="3uibUv" id="6GMbeB5VlXN" role="1tU5fm">
           <ref role="3uigEE" to="8qyd:~ODocument" resolve="ODocument" />
         </node>
       </node>
@@ -14224,8 +14224,8 @@
         <node concept="3clFbJ" id="7sx5qZBANzd" role="3cqZAp">
           <node concept="3clFbC" id="7sx5qZBANze" role="3clFbw">
             <node concept="10M0yZ" id="7sx5qZBANzf" role="3uHU7B">
-              <ref role="3cqZAo" to="scrq:~ODatabaseRecordThreadLocal.INSTANCE" resolve="INSTANCE" />
               <ref role="1PxDUh" to="scrq:~ODatabaseRecordThreadLocal" resolve="ODatabaseRecordThreadLocal" />
+              <ref role="3cqZAo" to="scrq:~ODatabaseRecordThreadLocal.INSTANCE" resolve="INSTANCE" />
             </node>
             <node concept="10Nm6u" id="7sx5qZBANzg" role="3uHU7w" />
           </node>
@@ -14251,7 +14251,7 @@
           <node concept="3cpWsn" id="7sx5qZBANzr" role="3cpWs9">
             <property role="3TUv4t" value="false" />
             <property role="TrG5h" value="db" />
-            <node concept="3uibUv" id="7sx5qZBANzs" role="1tU5fm">
+            <node concept="3uibUv" id="6GMbeB5T9XZ" role="1tU5fm">
               <ref role="3uigEE" to="laoz:~ODatabaseDocumentTx" resolve="ODatabaseDocumentTx" />
             </node>
             <node concept="2ShNRf" id="7sx5qZBANzt" role="33vP2m">
@@ -14493,7 +14493,7 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3uibUv" id="7sx5qZBAN_8" role="10QFUM">
+                    <node concept="3uibUv" id="6GMbeB5TeVS" role="10QFUM">
                       <ref role="3uigEE" to="8qyd:~ODocument" resolve="ODocument" />
                     </node>
                   </node>

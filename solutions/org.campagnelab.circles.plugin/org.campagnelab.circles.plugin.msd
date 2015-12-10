@@ -35,6 +35,7 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
+    <module reference="c36fcbd7-b6d3-4791-b59e-c3228f9059ce(com.orientechnologies.orient)" version="0" />
     <module reference="cac2fef0-41a6-4fcd-923f-f893d536b2ab(jetbrains.mps.ide.mpsdevkit)" version="0" />
     <module reference="25092e07-e655-497c-92fb-558a8e3080ed(jetbrains.mps.ide.ui)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
@@ -45,6 +46,7 @@
     <module reference="b117aec4-8d9e-4c87-a347-e41e0dfe0990(org.campagnelab.circles.aspect.runtime)" version="0" />
     <module reference="029b58a0-078e-421d-8fcf-cfa0bf9e220b(org.campagnelab.circles.plugin)" version="0" />
     <module reference="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3(org.google.gwt)" version="0" />
+    <module reference="0cf10c09-b393-4a0c-981d-fec20eebfa22(org.webapp.languages.jetbrains_mps_lang_core)" version="0" />
   </dependencyVersions>
 </solution>
 
