@@ -209,6 +209,7 @@
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
@@ -11140,20 +11141,51 @@
                                 <property role="2qtEX8" value="classifier" />
                                 <node concept="3$xsQk" id="7sx5qZB1Hg_" role="3$ytzL">
                                   <node concept="3clFbS" id="7sx5qZB1HgA" role="2VODD2">
-                                    <node concept="3clFbF" id="7sx5qZB1HuR" role="3cqZAp">
-                                      <node concept="3cpWs3" id="7sx5qZB1KwS" role="3clFbG">
-                                        <node concept="Xl_RD" id="7sx5qZB1Kxe" role="3uHU7w">
-                                          <property role="Xl_RC" value="_WebModel" />
-                                        </node>
-                                        <node concept="2OqwBi" id="7sx5qZB1IP1" role="3uHU7B">
-                                          <node concept="2OqwBi" id="7sx5qZB1HLA" role="2Oq$k0">
-                                            <node concept="30H73N" id="7sx5qZB1HuQ" role="2Oq$k0" />
-                                            <node concept="3TrEf2" id="7sx5qZB1IqN" role="2OqNvi">
-                                              <ref role="3Tt5mk" to="tpce:fA0lvVK" />
-                                            </node>
+                                    <node concept="3clFbJ" id="6WHsPUNy03G" role="3cqZAp">
+                                      <node concept="3clFbS" id="6WHsPUNy03I" role="3clFbx">
+                                        <node concept="3SKdUt" id="6WHsPUNyzTo" role="3cqZAp">
+                                          <node concept="3SKdUq" id="6WHsPUNyzTq" role="3SKWNk">
+                                            <property role="3SKdUp" value=" we don't generate a WebModel for ICs, but just need a variable to hold the instance." />
                                           </node>
-                                          <node concept="3TrcHB" id="7sx5qZB1Jda" role="2OqNvi">
-                                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                        </node>
+                                        <node concept="3cpWs6" id="6WHsPUNzEUO" role="3cqZAp">
+                                          <node concept="Xl_RD" id="6WHsPUNyb2Q" role="3cqZAk">
+                                            <property role="Xl_RC" value="BaseConcept_WebModel" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="2OqwBi" id="6WHsPUNy4eE" role="3clFbw">
+                                        <node concept="2OqwBi" id="6WHsPUN$Ool" role="2Oq$k0">
+                                          <node concept="30H73N" id="6WHsPUNy27a" role="2Oq$k0" />
+                                          <node concept="3TrEf2" id="6WHsPUN$R4K" role="2OqNvi">
+                                            <ref role="3Tt5mk" to="tpce:fA0lvVK" />
+                                          </node>
+                                        </node>
+                                        <node concept="1mIQ4w" id="6WHsPUNy6AB" role="2OqNvi">
+                                          <node concept="chp4Y" id="6WHsPUNy8NV" role="cj9EA">
+                                            <ref role="cht4Q" to="tpce:h0PlHMJ" resolve="InterfaceConceptDeclaration" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="9aQIb" id="6WHsPUNyqGw" role="9aQIa">
+                                        <node concept="3clFbS" id="6WHsPUNyqGx" role="9aQI4">
+                                          <node concept="3cpWs6" id="6WHsPUNzTVa" role="3cqZAp">
+                                            <node concept="3cpWs3" id="7sx5qZB1KwS" role="3cqZAk">
+                                              <node concept="Xl_RD" id="7sx5qZB1Kxe" role="3uHU7w">
+                                                <property role="Xl_RC" value="_WebModel" />
+                                              </node>
+                                              <node concept="2OqwBi" id="7sx5qZB1IP1" role="3uHU7B">
+                                                <node concept="2OqwBi" id="7sx5qZB1HLA" role="2Oq$k0">
+                                                  <node concept="30H73N" id="7sx5qZB1HuQ" role="2Oq$k0" />
+                                                  <node concept="3TrEf2" id="7sx5qZB1IqN" role="2OqNvi">
+                                                    <ref role="3Tt5mk" to="tpce:fA0lvVK" />
+                                                  </node>
+                                                </node>
+                                                <node concept="3TrcHB" id="7sx5qZB1Jda" role="2OqNvi">
+                                                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                                </node>
+                                              </node>
+                                            </node>
                                           </node>
                                         </node>
                                       </node>
