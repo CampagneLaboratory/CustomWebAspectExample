@@ -8,6 +8,7 @@
       <sourceRoot location="gwt-util-1.1-SNAPSHOT.jar" />
       <sourceRoot location="mapper-1.1-SNAPSHOT.jar" />
       <sourceRoot location="model-1.1-SNAPSHOT.jar" />
+      <sourceRoot location="base-1.1-SNAPSHOT.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
