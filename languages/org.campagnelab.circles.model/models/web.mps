@@ -30,15 +30,22 @@
       </concept>
     </language>
     <language id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect">
+      <concept id="2477299493868409234" name="org.campagnelab.circles.aspect.structure.MapChild" flags="ng" index="2cajdh">
+        <reference id="2477299493868414459" name="query" index="2cagsS" />
+        <child id="2477299493868414463" name="tokens" index="2cagsW" />
+      </concept>
       <concept id="2477299493858107767" name="org.campagnelab.circles.aspect.structure.ChildrenInitialization" flags="ng" index="2fMWeO">
-        <reference id="2477299493858107768" name="children" index="2fMWeV" />
-        <reference id="2477299493858266532" name="query" index="2fN6XB" />
+        <reference id="2477299493858107768" name="child" index="2fMWeV" />
+        <child id="2477299493864914342" name="buildAs" index="2csTX_" />
       </concept>
       <concept id="2986108014587570547" name="org.campagnelab.circles.aspect.structure.Database" flags="ng" index="B0a0o">
         <property id="2986108014587570548" name="url" index="B0a0v" />
         <property id="4824635715685243890" name="password" index="1mS5tH" />
         <property id="4824635715685243887" name="user" index="1mS5tK" />
         <child id="2765574652333579748" name="queries" index="16iTqq" />
+      </concept>
+      <concept id="8338352011213937369" name="org.campagnelab.circles.aspect.structure.TokenRef" flags="ng" index="2V9tKw">
+        <reference id="8338352011213937370" name="token" index="2V9tKz" />
       </concept>
       <concept id="8338352011213937367" name="org.campagnelab.circles.aspect.structure.DbRetrievedFocus" flags="ng" index="2V9tKI">
         <reference id="8338352011213937435" name="query" index="2V9tRy" />
@@ -60,6 +67,7 @@
         <child id="2765574652333579001" name="type" index="16iT67" />
       </concept>
       <concept id="2765574652333578994" name="org.campagnelab.circles.aspect.structure.QueryKind" flags="ng" index="16iT6c">
+        <property id="2477299493869539183" name="returnsList" index="2ce6QG" />
         <property id="2765574652333675583" name="sql" index="16jhX1" />
         <child id="2765574652333579766" name="returnType" index="16iTq8" />
         <child id="2765574652333579764" name="arguments" index="16iTqa" />
@@ -72,6 +80,9 @@
       </concept>
       <concept id="4824635715685240675" name="org.campagnelab.circles.aspect.structure.PersistedConcepts" flags="ng" index="1mS4fW">
         <child id="4824635715685240684" name="inclusionRules" index="1mS4fN" />
+      </concept>
+      <concept id="7317038553511107819" name="org.campagnelab.circles.aspect.structure.HtmlDocument" flags="ng" index="1ClkGB">
+        <property id="7317038553511135446" name="title" index="1CltWq" />
       </concept>
       <concept id="7317038553515001966" name="org.campagnelab.circles.aspect.structure.Place" flags="ng" index="1F$HYy">
         <property id="8338352011215212621" name="isDefault" index="2V4_qO" />
@@ -88,6 +99,7 @@
       </concept>
       <concept id="4829993475490891244" name="org.campagnelab.circles.aspect.structure.GwtModule" flags="ng" index="3X4l2l">
         <property id="4829993475490925500" name="moduleName" index="3X4dV5" />
+        <child id="7317038553511107820" name="html" index="1ClkGw" />
       </concept>
     </language>
   </registry>
@@ -181,7 +193,8 @@
     </node>
     <node concept="16iT6c" id="29x8GeHFQu5" role="16iTqq">
       <property role="TrG5h" value="findAllRootsMatching" />
-      <property role="16jhX1" value="select from Root where name=?" />
+      <property role="16jhX1" value="select * from Root where name like '%?%'" />
+      <property role="2ce6QG" value="true" />
       <node concept="16iT66" id="29x8GeHFQuh" role="16iTqa">
         <property role="TrG5h" value="queryTerm" />
         <node concept="17QB3L" id="29x8GeHFQul" role="16iT67" />
@@ -193,6 +206,9 @@
   </node>
   <node concept="3X4l2l" id="6mblWKdIZZl">
     <property role="3X4dV5" value="org.campagnelab.circles.model" />
+    <node concept="1ClkGB" id="29x8GeI2XiM" role="1ClkGw">
+      <property role="1CltWq" value="View MPS Nodes" />
+    </node>
   </node>
   <node concept="1F$HYy" id="6mblWKecU_y">
     <property role="TrG5h" value="ViewProject" />
@@ -230,7 +246,7 @@
   </node>
   <node concept="1F$HYy" id="2y8Odf5TtRM">
     <property role="TrG5h" value="ViewModulePlace" />
-    <property role="2V4_qO" value="true" />
+    <property role="2V4_qO" value="false" />
     <ref role="1FJQDX" to="77ry:2CxJDc4Cpg" resolve="Solution" />
     <node concept="1F$HYX" id="2y8Odf5TtRN" role="1F$HYS">
       <property role="TrG5h" value="moduleName" />
@@ -246,6 +262,7 @@
   </node>
   <node concept="1F$HYy" id="29x8GeHEHj9">
     <property role="TrG5h" value="SearchNodesPlace" />
+    <property role="2V4_qO" value="true" />
     <ref role="1FJQDX" to="77ry:29x8GeHEHiq" resolve="SearchNodes" />
     <node concept="1F$HYX" id="29x8GeHEHja" role="1F$HYS">
       <property role="TrG5h" value="queryTerm" />
@@ -254,7 +271,12 @@
       <node concept="2V9tKJ" id="29x8GeHF5Xa" role="2V9tKo">
         <node concept="2fMWeO" id="29x8GeHF6kk" role="2fMWdT">
           <ref role="2fMWeV" to="77ry:29x8GeHEHit" />
-          <ref role="2fN6XB" node="29x8GeHFQu5" resolve="findAllRootsMatching" />
+          <node concept="2cajdh" id="29x8GeIjn4$" role="2csTX_">
+            <ref role="2cagsS" node="29x8GeHFQu5" resolve="findAllRootsMatching" />
+            <node concept="2V9tKw" id="29x8GeIjT8S" role="2cagsW">
+              <ref role="2V9tKz" node="29x8GeHEHja" resolve="queryTerm" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
