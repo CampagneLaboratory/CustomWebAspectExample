@@ -56,7 +56,7 @@
     <module reference="a1250a4d-c090-42c3-ad7c-d298a3357dd4(jetbrains.mps.make.runtime)" version="0" />
     <module reference="8c40f9f4-b3bd-42d0-8b65-8e644273493c(org.campagnelab.circles.aspect)" version="0" />
     <module reference="b117aec4-8d9e-4c87-a347-e41e0dfe0990(org.campagnelab.circles.aspect.runtime)" version="0" />
-    <module reference="3dc3d3d3-b034-480c-8b21-d7a88903974b(org.campagnelab.circles.mockup)" version="0" />
+    <module reference="3dc3d3d3-b034-480c-8b21-d7a88903974b(org.campagnelab.circles.mockup)" version="3" />
     <module reference="87c8043e-fece-4ba6-9d13-3ef71e47af25(org.campagnelab.circles.model)" version="0" />
     <module reference="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3(org.google.gwt)" version="0" />
     <module reference="0cf10c09-b393-4a0c-981d-fec20eebfa22(org.webapp.languages.jetbrains_mps_lang_core)" version="0" />

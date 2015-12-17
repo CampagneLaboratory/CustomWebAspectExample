@@ -6,6 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="77ry" ref="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
     <import index="avse" ref="r:51fcf803-02a7-4ac6-994f-040e45f3e9a5(org.campagnelab.circles.mockup.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -515,16 +516,16 @@
     </node>
   </node>
   <node concept="24kQdi" id="29x8GeHEHi$">
-    <ref role="1XX52x" to="avse:29x8GeHEHiq" resolve="SearchNodes_old" />
+    <ref role="1XX52x" to="77ry:29x8GeHEHiq" resolve="SearchNodes" />
     <node concept="3EZMnI" id="29x8GeHEHiA" role="2wV5jI">
       <node concept="3F0ifn" id="29x8GeHEHj2" role="3EZMnx">
         <property role="3F0ifm" value="Q" />
       </node>
       <node concept="3F0A7n" id="29x8GeHEHiH" role="3EZMnx">
-        <ref role="1NtTu8" to="avse:29x8GeHEHir" resolve="searchTerm_old" />
+        <ref role="1NtTu8" to="77ry:29x8GeHEHir" resolve="searchTerm" />
       </node>
       <node concept="3F2HdR" id="29x8GeHEHiN" role="3EZMnx">
-        <ref role="1NtTu8" to="avse:29x8GeHEHit" />
+        <ref role="1NtTu8" to="77ry:29x8GeHEHit" />
         <node concept="l2Vlx" id="29x8GeHEHiP" role="2czzBx" />
         <node concept="pVoyu" id="29x8GeHEHiT" role="3F10Kt">
           <property role="VOm3f" value="true" />

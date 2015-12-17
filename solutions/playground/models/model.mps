@@ -2,8 +2,8 @@
 <model ref="r:1cb53e38-6e72-40c6-a62e-7e8b44b75406(model)">
   <persistence version="9" />
   <languages>
-    <use id="3dc3d3d3-b034-480c-8b21-d7a88903974b" name="org.campagnelab.circles.mockup" version="-1" />
     <use id="87c8043e-fece-4ba6-9d13-3ef71e47af25" name="org.campagnelab.circles.model" version="0" />
+    <use id="3dc3d3d3-b034-480c-8b21-d7a88903974b" name="org.campagnelab.circles.mockup" version="1" />
   </languages>
   <imports />
   <registry>

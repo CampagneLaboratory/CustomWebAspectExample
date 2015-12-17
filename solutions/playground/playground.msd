@@ -8,7 +8,7 @@
   <sourcePath />
   <languageVersions>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />
-    <language id="3dc3d3d3-b034-480c-8b21-d7a88903974b" fqName="org.campagnelab.circles.mockup" version="0" />
+    <language id="3dc3d3d3-b034-480c-8b21-d7a88903974b" fqName="org.campagnelab.circles.mockup" version="1" />
     <language id="87c8043e-fece-4ba6-9d13-3ef71e47af25" fqName="org.campagnelab.circles.model" version="0" />
   </languageVersions>
   <dependencyVersions>
