@@ -7,15 +7,10 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="77ry" ref="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
-        <property id="1225118933224" name="comment" index="YLQ7P" />
-      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
-        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -42,7 +37,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -145,31 +139,6 @@
     <node concept="1TJgyi" id="7pelyIRohq3" role="1TKVEl">
       <property role="TrG5h" value="hostname" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="29x8GeHEHiq">
-    <property role="1pbfSe" value="804522147" />
-    <property role="TrG5h" value="SearchNodes_old" />
-    <property role="R4oN_" value="A search screen to look for root nodes" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="29x8GeHEHit" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="results_old" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="77ry:2cczKT7cIdg" resolve="Root" />
-      <node concept="asaX9" id="29x8GeHLq4f" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;org.campagnelab.circles.model.structure.SearchNodes&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="29x8GeHEHir" role="1TKVEl">
-      <property role="TrG5h" value="searchTerm_old" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="29x8GeHLq4k" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;org.campagnelab.circles.model.structure.SearchNodes&quot;" />
-      </node>
-    </node>
-    <node concept="asaX9" id="29x8GeHLq4p" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;org.campagnelab.circles.model&quot;" />
     </node>
   </node>
 </model>
