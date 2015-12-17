@@ -10,6 +10,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
+    <dependency reexport="false">3dc3d3d3-b034-480c-8b21-d7a88903974b(org.campagnelab.circles.mockup)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -44,11 +45,14 @@
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
+    <module reference="3dc3d3d3-b034-480c-8b21-d7a88903974b(org.campagnelab.circles.mockup)" version="0" />
     <module reference="87c8043e-fece-4ba6-9d13-3ef71e47af25(org.campagnelab.circles.model)" version="0" />
   </dependencyVersions>
   <runtime>
     <dependency reexport="false">b117aec4-8d9e-4c87-a347-e41e0dfe0990(org.campagnelab.circles.aspect.runtime)</dependency>
   </runtime>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</extendedLanguage>
+  </extendedLanguages>
 </language>
 

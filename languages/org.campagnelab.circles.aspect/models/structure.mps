@@ -566,6 +566,12 @@
     <property role="3GE5qa" value="activities" />
     <property role="TrG5h" value="NewBeanCreationFocus" />
     <ref role="1TJDcQ" node="7eRLJB8$xFl" resolve="NodeFocus" />
+    <node concept="1TJgyj" id="29x8GeHEI6U" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="initializations" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="29x8GeHEI5R" resolve="ChildrenInitialization" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7eRLJB8$xFn">
     <property role="1pbfSe" value="1011474896" />
@@ -646,6 +652,24 @@
     <property role="1pbfSe" value="1310438101" />
     <property role="TrG5h" value="IExcludeConcepts" />
     <property role="3GE5qa" value="db" />
+  </node>
+  <node concept="1TIwiD" id="29x8GeHEI5R">
+    <property role="1pbfSe" value="804518854" />
+    <property role="3GE5qa" value="activities" />
+    <property role="TrG5h" value="ChildrenInitialization" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="29x8GeHEI5S" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="children" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="29x8GeHFkQ$" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="query" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2pxiRTwaHFM" resolve="QueryKind" />
+    </node>
   </node>
 </model>
 

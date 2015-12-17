@@ -2304,7 +2304,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="6WHsPUN0Adn" role="2OqNvi">
-                                  <ref role="37wK5l" to=":^" resolve="get" />
+                                  <ref role="37wK5l" to="lgza:~ValueProperty.get():java.lang.Object" resolve="get" />
                                 </node>
                               </node>
                             </node>

@@ -30,6 +30,10 @@
       </concept>
     </language>
     <language id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect">
+      <concept id="2477299493858107767" name="org.campagnelab.circles.aspect.structure.ChildrenInitialization" flags="ng" index="2fMWeO">
+        <reference id="2477299493858107768" name="children" index="2fMWeV" />
+        <reference id="2477299493858266532" name="query" index="2fN6XB" />
+      </concept>
       <concept id="2986108014587570547" name="org.campagnelab.circles.aspect.structure.Database" flags="ng" index="B0a0o">
         <property id="2986108014587570548" name="url" index="B0a0v" />
         <property id="4824635715685243890" name="password" index="1mS5tH" />
@@ -40,7 +44,9 @@
         <reference id="8338352011213937435" name="query" index="2V9tRy" />
         <child id="8338352011213937372" name="tokens" index="2V9tK_" />
       </concept>
-      <concept id="8338352011213937366" name="org.campagnelab.circles.aspect.structure.NewBeanCreationFocus" flags="ng" index="2V9tKJ" />
+      <concept id="8338352011213937366" name="org.campagnelab.circles.aspect.structure.NewBeanCreationFocus" flags="ng" index="2V9tKJ">
+        <child id="2477299493858107834" name="initializations" index="2fMWdT" />
+      </concept>
       <concept id="1556429057109701099" name="org.campagnelab.circles.aspect.structure.WebEditors" flags="ng" index="YxNCg">
         <child id="1556429057109701121" name="editors" index="YxNBU" />
       </concept>
@@ -116,10 +122,13 @@
       <ref role="1mS4fP" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
     <node concept="1mS4fQ" id="2cczKT7gsAB" role="1mS4fN">
-      <ref role="1mS4fP" to="77ry:2cczKT7cIdg" resolve="CirclesBaseConcept" />
+      <ref role="1mS4fP" to="77ry:2cczKT7cIdg" resolve="Root" />
     </node>
     <node concept="1mS4fQ" id="6uvgPJBBfjk" role="1mS4fN">
       <ref role="1mS4fP" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1mS4fQ" id="29x8GeHHgRy" role="1mS4fN">
+      <ref role="1mS4fP" to="77ry:2cczKT7cIdg" resolve="Root" />
     </node>
   </node>
   <node concept="B0a0o" id="4UvP5h6JFr9">
@@ -170,6 +179,17 @@
         <node concept="17QB3L" id="6mblWKdIf83" role="16iT67" />
       </node>
     </node>
+    <node concept="16iT6c" id="29x8GeHFQu5" role="16iTqq">
+      <property role="TrG5h" value="findAllRootsMatching" />
+      <property role="16jhX1" value="select from Root where name=?" />
+      <node concept="16iT66" id="29x8GeHFQuh" role="16iTqa">
+        <property role="TrG5h" value="queryTerm" />
+        <node concept="17QB3L" id="29x8GeHFQul" role="16iT67" />
+      </node>
+      <node concept="16iT6d" id="29x8GeHFQu6" role="16iTq8">
+        <ref role="16iT6a" to="77ry:2cczKT7cIdg" resolve="Root" />
+      </node>
+    </node>
   </node>
   <node concept="3X4l2l" id="6mblWKdIZZl">
     <property role="3X4dV5" value="org.campagnelab.circles.model" />
@@ -199,7 +219,13 @@
       <ref role="YxNCm" to="ehbc:2y8Odf5U65h" resolve="Module_Editor" />
     </node>
     <node concept="YxNCn" id="6GMbeB5BFEe" role="YxNBU">
-      <ref role="YxNCm" to="ehbc:6GMbeB5BFDL" resolve="CirclesBaseConcept_Editor" />
+      <ref role="YxNCm" to="ehbc:6GMbeB5BFDL" resolve="Root_Editor" />
+    </node>
+    <node concept="YxNCn" id="29x8GeHGX7N" role="YxNBU">
+      <ref role="YxNCm" to="ehbc:6GMbeB5BFDL" resolve="Root_Editor" />
+    </node>
+    <node concept="YxNCn" id="29x8GeHOYAa" role="YxNBU">
+      <ref role="YxNCm" to="ehbc:29x8GeHEHi$" resolve="SearchNodes_Editor" />
     </node>
   </node>
   <node concept="1F$HYy" id="2y8Odf5TtRM">
@@ -214,6 +240,21 @@
         <ref role="2V9tRy" node="2y8Odf616Qe" resolve="lookupSolution" />
         <node concept="3HoMnn" id="2y8Odf5Xfdy" role="2V9tK_">
           <property role="3HoMnm" value="playground" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1F$HYy" id="29x8GeHEHj9">
+    <property role="TrG5h" value="SearchNodesPlace" />
+    <ref role="1FJQDX" to="77ry:29x8GeHEHiq" resolve="SearchNodes" />
+    <node concept="1F$HYX" id="29x8GeHEHja" role="1F$HYS">
+      <property role="TrG5h" value="queryTerm" />
+    </node>
+    <node concept="1F_nmC" id="29x8GeHEHjg" role="1F_nmF">
+      <node concept="2V9tKJ" id="29x8GeHF5Xa" role="2V9tKo">
+        <node concept="2fMWeO" id="29x8GeHF6kk" role="2fMWdT">
+          <ref role="2fMWeV" to="77ry:29x8GeHEHit" />
+          <ref role="2fN6XB" node="29x8GeHFQu5" resolve="findAllRootsMatching" />
         </node>
       </node>
     </node>

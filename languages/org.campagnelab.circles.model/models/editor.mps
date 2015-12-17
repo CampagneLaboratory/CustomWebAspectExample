@@ -6,7 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="77ry" ref="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" implicit="true" />
+    <import index="77ry" ref="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -16,6 +16,7 @@
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
+      <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -350,36 +351,37 @@
     </node>
   </node>
   <node concept="24kQdi" id="6GMbeB5BFDL">
-    <ref role="1XX52x" to="77ry:2cczKT7cIdg" resolve="CirclesBaseConcept" />
+    <ref role="1XX52x" to="77ry:2cczKT7cIdg" resolve="Root" />
     <node concept="3EZMnI" id="6GMbeB5BFDN" role="2wV5jI">
       <node concept="l2Vlx" id="6GMbeB5BFDO" role="2iSdaV" />
-      <node concept="3F0ifn" id="6GMbeB5BFDP" role="3EZMnx">
-        <property role="3F0ifm" value="circles base concept" />
-      </node>
-      <node concept="3F0A7n" id="6GMbeB5BFDQ" role="3EZMnx">
+      <node concept="3F0A7n" id="29x8GeHEGdL" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
-      <node concept="3F0ifn" id="6GMbeB5BFDR" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-        <node concept="11L4FC" id="6GMbeB5BFDS" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="3mYdg7" id="6GMbeB5BFDT" role="3F10Kt">
-          <property role="1413C4" value="body-paren" />
-        </node>
-        <node concept="11LMrY" id="6GMbeB5BFDU" role="3F10Kt">
+      <node concept="3F0A7n" id="29x8GeHEGd$" role="3EZMnx">
+        <ref role="1NtTu8" to="77ry:29x8GeHEG14" resolve="svgRendering" />
+        <node concept="pVoyu" id="29x8GeHEGdG" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0ifn" id="6GMbeB5BFDV" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <node concept="11L4FC" id="6GMbeB5BFDW" role="3F10Kt">
+    </node>
+  </node>
+  <node concept="24kQdi" id="29x8GeHEHi$">
+    <ref role="1XX52x" to="77ry:29x8GeHEHiq" resolve="SearchNodes" />
+    <node concept="3EZMnI" id="29x8GeHEHiA" role="2wV5jI">
+      <node concept="3F0ifn" id="29x8GeHEHj2" role="3EZMnx">
+        <property role="3F0ifm" value="Look for" />
+      </node>
+      <node concept="3F0A7n" id="29x8GeHEHiH" role="3EZMnx">
+        <ref role="1NtTu8" to="77ry:29x8GeHEHir" resolve="searchTerm" />
+      </node>
+      <node concept="3F2HdR" id="29x8GeHEHiN" role="3EZMnx">
+        <ref role="1NtTu8" to="77ry:29x8GeHEHit" />
+        <node concept="l2Vlx" id="29x8GeHEHiP" role="2czzBx" />
+        <node concept="pVoyu" id="29x8GeHEHiT" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="3mYdg7" id="6GMbeB5BFDX" role="3F10Kt">
-          <property role="1413C4" value="body-paren" />
-        </node>
       </node>
+      <node concept="l2Vlx" id="29x8GeHEHiD" role="2iSdaV" />
     </node>
   </node>
 </model>

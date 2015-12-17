@@ -11,6 +11,7 @@
     <import index="x3ey" ref="r:db1c5d5d-cc86-4bed-9aa5-f6746cfde04e(org.campagnelab.circles.aspect.behavior)" implicit="true" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -975,6 +976,25 @@
       <node concept="3F0ifn" id="7eRLJB8$xFT" role="3EZMnx">
         <property role="3F0ifm" value="create new node instance" />
       </node>
+      <node concept="3F0ifn" id="29x8GeHEI6Z" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+      </node>
+      <node concept="3F2HdR" id="29x8GeHEI7h" role="3EZMnx">
+        <ref role="1NtTu8" to="6je1:29x8GeHEI6U" />
+        <node concept="l2Vlx" id="29x8GeHEI7j" role="2czzBx" />
+        <node concept="pVoyu" id="29x8GeHEI7p" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="29x8GeHEI7t" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="29x8GeHEI77" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <node concept="pVoyu" id="29x8GeHEI7r" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="l2Vlx" id="7eRLJB8$xFP" role="2iSdaV" />
     </node>
   </node>
@@ -1037,6 +1057,37 @@
         </node>
       </node>
       <node concept="l2Vlx" id="6uvgPJAu$0z" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="29x8GeHEI5Z">
+    <property role="3GE5qa" value="activities" />
+    <ref role="1XX52x" to="6je1:29x8GeHEI5R" resolve="ChildrenInitialization" />
+    <node concept="3EZMnI" id="29x8GeHEI61" role="2wV5jI">
+      <node concept="3F0ifn" id="29x8GeHEI68" role="3EZMnx">
+        <property role="3F0ifm" value="initialize " />
+      </node>
+      <node concept="1iCGBv" id="29x8GeHEI6e" role="3EZMnx">
+        <ref role="1NtTu8" to="6je1:29x8GeHEI5S" />
+        <node concept="1sVBvm" id="29x8GeHEI6g" role="1sWHZn">
+          <node concept="3F0A7n" id="29x8GeHEI6r" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpce:fA0kJcN" resolve="role" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="29x8GeHEI6$" role="3EZMnx">
+        <property role="3F0ifm" value="with" />
+      </node>
+      <node concept="1iCGBv" id="29x8GeHFEF1" role="3EZMnx">
+        <ref role="1NtTu8" to="6je1:29x8GeHFkQ$" />
+        <node concept="1sVBvm" id="29x8GeHFEF3" role="1sWHZn">
+          <node concept="3F0A7n" id="29x8GeHFEFf" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="29x8GeHEI64" role="2iSdaV" />
     </node>
   </node>
 </model>
