@@ -212,7 +212,7 @@
   </node>
   <node concept="1F$HYy" id="6mblWKecU_y">
     <property role="TrG5h" value="ViewProject" />
-    <property role="2V4_qO" value="false" />
+    <property role="2V4_qO" value="true" />
     <ref role="1FJQDX" to="77ry:5eOdMaf2nSN" resolve="Project" />
     <node concept="1F_nmC" id="7eRLJB8H9N2" role="1F_nmF">
       <node concept="2V9tKJ" id="7eRLJB8H9N6" role="2V9tKo" />
@@ -262,7 +262,7 @@
   </node>
   <node concept="1F$HYy" id="29x8GeHEHj9">
     <property role="TrG5h" value="SearchNodesPlace" />
-    <property role="2V4_qO" value="true" />
+    <property role="2V4_qO" value="false" />
     <ref role="1FJQDX" to="77ry:29x8GeHEHiq" resolve="SearchNodes" />
     <node concept="1F$HYX" id="29x8GeHEHja" role="1F$HYS">
       <property role="TrG5h" value="queryTerm" />

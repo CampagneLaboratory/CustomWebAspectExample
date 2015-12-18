@@ -11710,8 +11710,29 @@
             </node>
             <node concept="liA8E" id="29x8GeIMzrD" role="2OqNvi">
               <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-              <node concept="Xl_RD" id="29x8GeIMzse" role="37wK5m">
-                <property role="Xl_RC" value="getActivity" />
+              <node concept="3cpWs3" id="3W6nzRGqd6H" role="37wK5m">
+                <node concept="Xl_RD" id="3W6nzRGqd6X" role="3uHU7w">
+                  <property role="Xl_RC" value="Place" />
+                  <node concept="17Uvod" id="3W6nzRGqdc4" role="lGtFl">
+                    <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                    <property role="2qtEX9" value="value" />
+                    <node concept="3zFVjK" id="3W6nzRGqdc5" role="3zH0cK">
+                      <node concept="3clFbS" id="3W6nzRGqdc6" role="2VODD2">
+                        <node concept="3clFbF" id="3W6nzRGqdK8" role="3cqZAp">
+                          <node concept="2OqwBi" id="3W6nzRGqdK9" role="3clFbG">
+                            <node concept="30H73N" id="3W6nzRGqdKa" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="3W6nzRGqdKb" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="29x8GeIMzse" role="3uHU7B">
+                  <property role="Xl_RC" value="getActivity for Place=" />
+                </node>
               </node>
             </node>
           </node>
