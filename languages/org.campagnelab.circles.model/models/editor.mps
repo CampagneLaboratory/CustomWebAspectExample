@@ -3,10 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
+    <use id="9e4f255e-96f4-445b-89f6-4c156d9e8e22" name="org.campagnelab.aspects.web.editor" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="77ry" ref="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
+    <import index="qkpo" ref="r:49694c02-82df-42da-ab19-bdfcf6883a78(org.campagnelab.circles.model.web)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -50,6 +52,12 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="9e4f255e-96f4-445b-89f6-4c156d9e8e22" name="org.campagnelab.aspects.web.editor">
+      <concept id="5761987585673253147" name="org.campagnelab.aspects.web.editor.structure.CellModel_Link" flags="ng" index="3Hm0P">
+        <property id="5761987585673258188" name="text" index="3Hlny" />
+        <reference id="5761987585673258186" name="destination" index="3Hln$" />
       </concept>
     </language>
   </registry>
@@ -373,6 +381,10 @@
       </node>
       <node concept="3F0A7n" id="29x8GeHEHiH" role="3EZMnx">
         <ref role="1NtTu8" to="77ry:29x8GeHEHir" resolve="searchTerm" />
+      </node>
+      <node concept="3Hm0P" id="4ZQGiTcj4Ks" role="3EZMnx">
+        <property role="3Hlny" value="Search" />
+        <ref role="3Hln$" to="qkpo:29x8GeHEHj9" resolve="SearchNodesPlace" />
       </node>
       <node concept="3F2HdR" id="29x8GeHEHiN" role="3EZMnx">
         <ref role="1NtTu8" to="77ry:29x8GeHEHit" />

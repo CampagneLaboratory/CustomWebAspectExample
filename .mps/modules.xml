@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.aspects.web.editor/org.campagnelab.aspects.web.editor.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.circles.aspect/org.campagnelab.circles.aspect.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.circles.mockup/org.campagnelab.circles.mockup.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.circles.model/org.campagnelab.circles.model.mpl" folder="" />

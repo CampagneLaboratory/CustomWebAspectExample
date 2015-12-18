@@ -35,6 +35,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" fqName="jetbrains.mps.lang.structure" version="1" />
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
+    <language id="9e4f255e-96f4-445b-89f6-4c156d9e8e22" fqName="org.campagnelab.aspects.web.editor" version="0" />
     <language id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" fqName="org.campagnelab.circles.aspect" version="0" />
   </languageVersions>
   <dependencyVersions>
