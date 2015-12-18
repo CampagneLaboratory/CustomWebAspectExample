@@ -93,7 +93,6 @@
   </node>
   <node concept="3sJk$h" id="5eOdMaf2BiH">
     <property role="TrG5h" value="TestP" />
-    <node concept="1cIw2R" id="2cczKT79x5k" role="3sJk$u" />
   </node>
   <node concept="3sJk$h" id="2cczKT79x5m">
     <property role="TrG5h" value="FirstProject" />

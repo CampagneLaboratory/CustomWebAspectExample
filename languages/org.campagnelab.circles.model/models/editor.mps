@@ -393,6 +393,10 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3Hm0P" id="3W6nzRGeesC" role="3EZMnx">
+        <property role="3Hlny" value="Playground" />
+        <ref role="3Hln$" to="qkpo:6mblWKecU_y" resolve="ViewProject" />
+      </node>
       <node concept="l2Vlx" id="29x8GeHEHiD" role="2iSdaV" />
     </node>
   </node>
