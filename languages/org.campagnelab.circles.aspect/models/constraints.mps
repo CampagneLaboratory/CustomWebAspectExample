@@ -287,5 +287,39 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="4QJEJ13Jrrg">
+    <property role="3GE5qa" value="activities" />
+    <ref role="1M2myG" to="6je1:4QJEJ13J6E3" resolve="PropertyInitialization" />
+    <node concept="1N5Pfh" id="4QJEJ13Jrrh" role="1Mr941">
+      <ref role="1N5Vy1" to="6je1:4QJEJ13J6E4" />
+      <node concept="1MUpDS" id="4QJEJ13JsWd" role="1N6uqs">
+        <node concept="3clFbS" id="4QJEJ13JsWe" role="2VODD2">
+          <node concept="3clFbF" id="4QJEJ13JrrK" role="3cqZAp">
+            <node concept="2OqwBi" id="4QJEJ13JrrM" role="3clFbG">
+              <node concept="2OqwBi" id="4QJEJ13JrrN" role="2Oq$k0">
+                <node concept="2OqwBi" id="4QJEJ13JrrO" role="2Oq$k0">
+                  <node concept="2rP1CM" id="4QJEJ13JrrP" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="4QJEJ13JrrQ" role="2OqNvi">
+                    <node concept="1xMEDy" id="4QJEJ13JrrR" role="1xVPHs">
+                      <node concept="chp4Y" id="4QJEJ13JrrS" role="ri$Ld">
+                        <ref role="cht4Q" to="6je1:6mblWKe6oxI" resolve="Place" />
+                      </node>
+                    </node>
+                    <node concept="1xIGOp" id="4QJEJ13JrrT" role="1xVPHs" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="4QJEJ13JrrU" role="2OqNvi">
+                  <ref role="3Tt5mk" to="6je1:6mblWKed3QL" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="4QJEJ13JuzZ" role="2OqNvi">
+                <ref role="3TtcxE" to="tpce:f_TKVDG" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

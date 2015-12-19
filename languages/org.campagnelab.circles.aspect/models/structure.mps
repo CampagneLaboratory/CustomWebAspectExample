@@ -574,7 +574,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="initializations" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="29x8GeHEI5R" resolve="ChildrenInitialization" />
+      <ref role="20lvS9" node="4QJEJ13J6E2" resolve="Initialization" />
     </node>
   </node>
   <node concept="1TIwiD" id="7eRLJB8$xFn">
@@ -661,7 +661,7 @@
     <property role="1pbfSe" value="804518854" />
     <property role="3GE5qa" value="activities" />
     <property role="TrG5h" value="ChildrenInitialization" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4QJEJ13J6E2" resolve="Initialization" />
     <node concept="1TJgyj" id="29x8GeI4FQA" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="buildAs" />
@@ -699,6 +699,33 @@
       <property role="20kJfa" value="query" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2pxiRTwaHFM" resolve="QueryKind" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4QJEJ13J6E2">
+    <property role="1pbfSe" value="1855187598" />
+    <property role="3GE5qa" value="activities" />
+    <property role="TrG5h" value="Initialization" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4QJEJ13J6E3">
+    <property role="1pbfSe" value="1855187597" />
+    <property role="3GE5qa" value="activities" />
+    <property role="TrG5h" value="PropertyInitialization" />
+    <property role="R4oN_" value="Initialize a Property" />
+    <ref role="1TJDcQ" node="4QJEJ13J6E2" resolve="Initialization" />
+    <node concept="1TJgyj" id="4QJEJ13J6E4" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="property" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:f_TJgxF" resolve="PropertyDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="4QJEJ13J6E6" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="token" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6mblWKe6oxL" resolve="Token" />
     </node>
   </node>
 </model>

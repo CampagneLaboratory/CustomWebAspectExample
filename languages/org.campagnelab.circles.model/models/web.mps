@@ -34,6 +34,10 @@
         <reference id="2477299493868414459" name="query" index="2cagsS" />
         <child id="2477299493868414463" name="tokens" index="2cagsW" />
       </concept>
+      <concept id="5597880810750110339" name="org.campagnelab.circles.aspect.structure.PropertyInitialization" flags="ng" index="e4W1N">
+        <reference id="5597880810750110340" name="property" index="e4W1O" />
+        <reference id="5597880810750110342" name="token" index="e4W1Q" />
+      </concept>
       <concept id="2477299493858107767" name="org.campagnelab.circles.aspect.structure.ChildrenInitialization" flags="ng" index="2fMWeO">
         <reference id="2477299493858107768" name="child" index="2fMWeV" />
         <child id="2477299493864914342" name="buildAs" index="2csTX_" />
@@ -269,6 +273,10 @@
     </node>
     <node concept="1F_nmC" id="29x8GeHEHjg" role="1F_nmF">
       <node concept="2V9tKJ" id="29x8GeHF5Xa" role="2V9tKo">
+        <node concept="e4W1N" id="4QJEJ13UbT5" role="2fMWdT">
+          <ref role="e4W1O" to="77ry:29x8GeHEHir" resolve="searchTerm" />
+          <ref role="e4W1Q" node="29x8GeHEHja" resolve="queryTerm" />
+        </node>
         <node concept="2fMWeO" id="29x8GeHF6kk" role="2fMWdT">
           <ref role="2fMWeV" to="77ry:29x8GeHEHit" />
           <node concept="2cajdh" id="29x8GeIjn4$" role="2csTX_">

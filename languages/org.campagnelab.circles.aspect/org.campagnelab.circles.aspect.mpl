@@ -34,6 +34,7 @@
         <dependency reexport="false">752bdff3-3d90-437b-b860-e4db8c4345c5(org.campagnelab.aspects.web.editor#5761987585673252946)</dependency>
         <dependency reexport="false">f159adf4-3c93-40f9-9c5a-1f245a8697af(jetbrains.mps.lang.aspect)</dependency>
         <dependency reexport="false">9e4f255e-96f4-445b-89f6-4c156d9e8e22(org.campagnelab.aspects.web.editor)</dependency>
+        <dependency reexport="false">e45a8b22-94f2-427f-b849-77f254c4eef5(jetbrains.mps.lang.aspect#3274906159125927726)</dependency>
       </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -78,6 +79,7 @@
         <module reference="fdaaf35f-8ee3-4c37-b09d-9efaeaaa7a41(jetbrains.mps.core.tool.environment)" version="0" />
         <module reference="aee9cad2-acd4-4608-aef2-0004f6a1cdbd(jetbrains.mps.lang.actions)" version="0" />
         <module reference="f159adf4-3c93-40f9-9c5a-1f245a8697af(jetbrains.mps.lang.aspect)" version="0" />
+        <module reference="e45a8b22-94f2-427f-b849-77f254c4eef5(jetbrains.mps.lang.aspect#3274906159125927726)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="3ac18869-0828-4401-abad-822a47bf83f1(jetbrains.mps.lang.descriptor#9020561928507175817)" version="0" />
         <module reference="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" version="0" />
