@@ -914,30 +914,27 @@
               </node>
             </node>
             <node concept="gft3U" id="29x8GeIKsT3" role="UU_$l">
-              <node concept="2pNNFK" id="29x8GeIKsXA" role="gfFT$">
-                <property role="2pNNFO" value="input" />
-                <node concept="2pNNFK" id="29x8GeIKt2Z" role="3o6s8t">
-                  <property role="2pNNFO" value="span" />
-                  <node concept="2pNUuL" id="29x8GeIKt33" role="2pNNFR">
-                    <property role="2pNUuO" value="ui:field" />
-                    <node concept="2pMdtt" id="29x8GeIOWrg" role="2pMdts">
-                      <property role="2pMdty" value="propertyName" />
-                      <node concept="17Uvod" id="29x8GeIOWri" role="lGtFl">
-                        <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
-                        <property role="2qtEX9" value="text" />
-                        <node concept="3zFVjK" id="29x8GeIOWrj" role="3zH0cK">
-                          <node concept="3clFbS" id="29x8GeIOWrk" role="2VODD2">
-                            <node concept="3clFbF" id="29x8GeIOWFQ" role="3cqZAp">
-                              <node concept="2OqwBi" id="29x8GeIOWFR" role="3clFbG">
-                                <node concept="2OqwBi" id="29x8GeIOWFS" role="2Oq$k0">
-                                  <node concept="30H73N" id="29x8GeIOWFT" role="2Oq$k0" />
-                                  <node concept="3TrEf2" id="29x8GeIOWFU" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="tpc2:fBF1KQc" />
-                                  </node>
+              <node concept="2pNNFK" id="29x8GeIKt2Z" role="gfFT$">
+                <property role="2pNNFO" value="span" />
+                <node concept="2pNUuL" id="29x8GeIKt33" role="2pNNFR">
+                  <property role="2pNUuO" value="ui:field" />
+                  <node concept="2pMdtt" id="29x8GeIOWrg" role="2pMdts">
+                    <property role="2pMdty" value="propertyName" />
+                    <node concept="17Uvod" id="29x8GeIOWri" role="lGtFl">
+                      <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
+                      <property role="2qtEX9" value="text" />
+                      <node concept="3zFVjK" id="29x8GeIOWrj" role="3zH0cK">
+                        <node concept="3clFbS" id="29x8GeIOWrk" role="2VODD2">
+                          <node concept="3clFbF" id="29x8GeIOWFQ" role="3cqZAp">
+                            <node concept="2OqwBi" id="29x8GeIOWFR" role="3clFbG">
+                              <node concept="2OqwBi" id="29x8GeIOWFS" role="2Oq$k0">
+                                <node concept="30H73N" id="29x8GeIOWFT" role="2Oq$k0" />
+                                <node concept="3TrEf2" id="29x8GeIOWFU" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="tpc2:fBF1KQc" />
                                 </node>
-                                <node concept="3TrcHB" id="29x8GeIOWFV" role="2OqNvi">
-                                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                </node>
+                              </node>
+                              <node concept="3TrcHB" id="29x8GeIOWFV" role="2OqNvi">
+                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                               </node>
                             </node>
                           </node>
@@ -1537,11 +1534,11 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="property" />
       <property role="3TUv4t" value="false" />
-      <node concept="2AHcQZ" id="FyYyYnJjas" role="2AJF6D">
-        <ref role="2AI5Lk" to="k02x:~UiField" resolve="UiField" />
-      </node>
       <node concept="3uibUv" id="2y8Odf6fwrk" role="1tU5fm">
         <ref role="3uigEE" to="rn0p:~SpanElement" resolve="SpanElement" />
+      </node>
+      <node concept="2AHcQZ" id="FyYyYnJjas" role="2AJF6D">
+        <ref role="2AI5Lk" to="k02x:~UiField" resolve="UiField" />
       </node>
       <node concept="3ejVUv" id="3N2WJcqmcA9" role="lGtFl">
         <ref role="2rW$FS" node="3N2WJcqoZGr" resolve="ViewPropertyField" />
@@ -11901,6 +11898,11 @@
                   </node>
                 </node>
               </node>
+              <node concept="3SKdUt" id="3W6nzRGt_GM" role="3cqZAp">
+                <node concept="3SKdUq" id="3W6nzRGt_GO" role="3SKWNk">
+                  <property role="3SKdUp" value="TODO obtain the value of the token from the WebModel field. " />
+                </node>
+              </node>
               <node concept="3clFbF" id="7eRLJB8zlJ4" role="3cqZAp">
                 <node concept="2OqwBi" id="7eRLJB8zlPt" role="3clFbG">
                   <node concept="37vLTw" id="7eRLJB8zlJ2" role="2Oq$k0">
@@ -12571,6 +12573,27 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3W6nzRGt9Mc" role="jymVt" />
+    <node concept="3clFb_" id="3W6nzRGtal8" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="mayStop" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="3W6nzRGtal9" role="1B3o_S" />
+      <node concept="3uibUv" id="3W6nzRGtalb" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+      </node>
+      <node concept="3clFbS" id="3W6nzRGtalc" role="3clF47">
+        <node concept="3cpWs6" id="3W6nzRGt8Mk" role="3cqZAp">
+          <node concept="Xl_RD" id="3W6nzRGt8KF" role="3cqZAk">
+            <property role="Xl_RC" value="Are you sure? " />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="3W6nzRGtald" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="6mblWKeaeC2" role="jymVt">
