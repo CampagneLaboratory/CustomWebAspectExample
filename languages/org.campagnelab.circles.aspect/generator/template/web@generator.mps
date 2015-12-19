@@ -2070,6 +2070,21 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="3SKdUt" id="4QJEJ13Hqe5" role="3cqZAp">
+                          <node concept="3SKdUq" id="4QJEJ13Hqe7" role="3SKWNk">
+                            <property role="3SKdUp" value=" the following is needed to prevent GWT from returning to the default place after a goto." />
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="4QJEJ13Hphu" role="3cqZAp">
+                          <node concept="2OqwBi" id="4QJEJ13Hphv" role="3clFbG">
+                            <node concept="1rXfSq" id="4QJEJ13Hphw" role="2Oq$k0">
+                              <ref role="37wK5l" to="ai6b:~Function.getEvent():com.google.gwt.user.client.Event" resolve="getEvent" />
+                            </node>
+                            <node concept="liA8E" id="4QJEJ13Hphx" role="2OqNvi">
+                              <ref role="37wK5l" to="rn0p:~NativeEvent.preventDefault():void" resolve="preventDefault" />
+                            </node>
+                          </node>
+                        </node>
                       </node>
                       <node concept="2AHcQZ" id="3W6nzRGd$Qc" role="2AJF6D">
                         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
@@ -12586,10 +12601,13 @@
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
       </node>
       <node concept="3clFbS" id="3W6nzRGtalc" role="3clF47">
-        <node concept="3cpWs6" id="3W6nzRGt8Mk" role="3cqZAp">
-          <node concept="Xl_RD" id="3W6nzRGt8KF" role="3cqZAk">
-            <property role="Xl_RC" value="Are you sure? " />
+        <node concept="3SKdUt" id="4QJEJ13HT7p" role="3cqZAp">
+          <node concept="3SKdUq" id="4QJEJ13HT7r" role="3SKWNk">
+            <property role="3SKdUp" value=" do not ask for confirmation when stopping" />
           </node>
+        </node>
+        <node concept="3cpWs6" id="3W6nzRGt8Mk" role="3cqZAp">
+          <node concept="10Nm6u" id="4QJEJ13HSer" role="3cqZAk" />
         </node>
       </node>
       <node concept="2AHcQZ" id="3W6nzRGtald" role="2AJF6D">
