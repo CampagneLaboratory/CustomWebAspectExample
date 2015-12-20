@@ -815,9 +815,6 @@
   <node concept="24kQdi" id="2pxiRTwb2Wg">
     <ref role="1XX52x" to="6je1:2pxiRTwaHFN" resolve="QueryReturnType" />
     <node concept="3EZMnI" id="2pxiRTwb2Wi" role="2wV5jI">
-      <node concept="3F0ifn" id="6mblWKdIwiN" role="3EZMnx">
-        <property role="3F0ifm" value="-&gt;" />
-      </node>
       <node concept="1iCGBv" id="2pxiRTwb2Wp" role="3EZMnx">
         <ref role="1NtTu8" to="6je1:2pxiRTwaHFO" />
         <node concept="1sVBvm" id="2pxiRTwb2Wr" role="1sWHZn">
@@ -826,6 +823,13 @@
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
+      </node>
+      <node concept="3F0ifn" id="4QJEJ146_RF" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="3F2HdR" id="4QJEJ146_RY" role="3EZMnx">
+        <ref role="1NtTu8" to="6je1:4QJEJ144xQt" />
+        <node concept="l2Vlx" id="4QJEJ146_S0" role="2czzBx" />
       </node>
       <node concept="l2Vlx" id="2pxiRTwb2Wl" role="2iSdaV" />
     </node>

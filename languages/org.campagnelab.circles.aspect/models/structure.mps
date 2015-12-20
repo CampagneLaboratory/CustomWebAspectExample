@@ -423,9 +423,15 @@
     <property role="TrG5h" value="QueryReturnType" />
     <property role="34LRSv" value="return" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4QJEJ144xQt" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="returns" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tp25:gNgn60t" resolve="ConceptReference" />
+    </node>
     <node concept="1TJgyj" id="2pxiRTwaHFO" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="concept" />
+      <property role="20kJfa" value="dbConcept" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
     </node>

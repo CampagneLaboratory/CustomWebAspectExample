@@ -23,6 +23,9 @@
         <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
         <property id="3542851458883439832" name="languageId" index="2V$B1T" />
       </concept>
+      <concept id="1154546950173" name="jetbrains.mps.lang.smodel.structure.ConceptReference" flags="ng" index="3gn64h">
+        <reference id="1154546997487" name="concept" index="3gnhBz" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -77,7 +80,8 @@
         <child id="2765574652333579764" name="arguments" index="16iTqa" />
       </concept>
       <concept id="2765574652333578995" name="org.campagnelab.circles.aspect.structure.QueryReturnType" flags="ng" index="16iT6d">
-        <reference id="2765574652333578996" name="concept" index="16iT6a" />
+        <reference id="2765574652333578996" name="dbConcept" index="16iT6a" />
+        <child id="5597880810755726749" name="returns" index="9JrtH" />
       </concept>
       <concept id="4824635715685240681" name="org.campagnelab.circles.aspect.structure.IncludeConcepts" flags="ng" index="1mS4fQ">
         <reference id="4824635715685240682" name="c" index="1mS4fP" />
@@ -195,6 +199,17 @@
         <node concept="17QB3L" id="6mblWKdIf83" role="16iT67" />
       </node>
     </node>
+    <node concept="16iT6c" id="4QJEJ1435DY" role="16iTqq">
+      <property role="TrG5h" value="lookupRoot" />
+      <property role="16jhX1" value="select * from Root where id= ?" />
+      <node concept="16iT66" id="4QJEJ1435Em" role="16iTqa">
+        <property role="TrG5h" value="id" />
+        <node concept="17QB3L" id="4QJEJ1435Eq" role="16iT67" />
+      </node>
+      <node concept="16iT6d" id="4QJEJ1435DZ" role="16iTq8">
+        <ref role="16iT6a" to="77ry:2cczKT7cIdg" resolve="Root" />
+      </node>
+    </node>
     <node concept="16iT6c" id="29x8GeHFQu5" role="16iTqq">
       <property role="TrG5h" value="findAllRootsMatching" />
       <property role="16jhX1" value="select * from Root where name like '%?%'" />
@@ -205,6 +220,12 @@
       </node>
       <node concept="16iT6d" id="29x8GeHFQu6" role="16iTq8">
         <ref role="16iT6a" to="77ry:2cczKT7cIdg" resolve="Root" />
+        <node concept="3gn64h" id="4QJEJ146OlP" role="9JrtH">
+          <ref role="3gnhBz" to="77ry:2cczKT7cIdg" resolve="Root" />
+        </node>
+        <node concept="3gn64h" id="4QJEJ146OlV" role="9JrtH">
+          <ref role="3gnhBz" to="77ry:4QJEJ1435Di" resolve="RootRef" />
+        </node>
       </node>
     </node>
   </node>
@@ -247,6 +268,9 @@
     <node concept="YxNCn" id="29x8GeHOYAa" role="YxNBU">
       <ref role="YxNCm" to="ehbc:29x8GeHEHi$" resolve="SearchNodes_Editor" />
     </node>
+    <node concept="YxNCn" id="4QJEJ143dGY" role="YxNBU">
+      <ref role="YxNCm" to="ehbc:4QJEJ1435Ds" resolve="RootRef_Editor" />
+    </node>
   </node>
   <node concept="1F$HYy" id="2y8Odf5TtRM">
     <property role="TrG5h" value="ViewModulePlace" />
@@ -285,6 +309,21 @@
               <ref role="2V9tKz" node="29x8GeHEHja" resolve="queryTerm" />
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1F$HYy" id="4QJEJ1435DJ">
+    <property role="TrG5h" value="ViewRoot" />
+    <ref role="1FJQDX" to="77ry:2cczKT7cIdg" resolve="Root" />
+    <node concept="1F$HYX" id="4QJEJ1435DK" role="1F$HYS">
+      <property role="TrG5h" value="id" />
+    </node>
+    <node concept="1F_nmC" id="4QJEJ1435DM" role="1F_nmF">
+      <node concept="2V9tKI" id="4QJEJ1435Et" role="2V9tKo">
+        <ref role="2V9tRy" node="4QJEJ1435DY" resolve="lookupRoot" />
+        <node concept="2V9tKw" id="4QJEJ1435Ey" role="2V9tK_">
+          <ref role="2V9tKz" node="4QJEJ1435DK" resolve="id" />
         </node>
       </node>
     </node>
