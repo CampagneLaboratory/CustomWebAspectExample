@@ -9,11 +9,14 @@
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="6je1" ref="r:2b50e9c8-828e-4d1c-b75e-74ee8d185c93(org.campagnelab.circles.aspect.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -44,6 +47,12 @@
     <property role="34LRSv" value="link" />
     <property role="R4oN_" value="Link to another page of the web app" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
+    <node concept="1TJgyj" id="4QJEJ13XuXQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tokenInitializations" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4QJEJ13XuXT" resolve="TokenValue" />
+    </node>
     <node concept="1TJgyi" id="4ZQGiTcgYjc" role="1TKVEl">
       <property role="TrG5h" value="text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -53,6 +62,39 @@
       <property role="20kJfa" value="destination" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="6je1:6mblWKe6oxI" resolve="Place" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4QJEJ13XuXT">
+    <property role="1pbfSe" value="1851418007" />
+    <property role="TrG5h" value="TokenValue" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4QJEJ13XuXU" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="token" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="6je1:6mblWKe6oxL" resolve="Token" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4QJEJ13XuXW">
+    <property role="1pbfSe" value="1851418004" />
+    <property role="TrG5h" value="TokenPropertyValue" />
+    <ref role="1TJDcQ" node="4QJEJ13XuXT" resolve="TokenValue" />
+    <node concept="1TJgyj" id="4QJEJ13XuXX" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="property" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:f_TJgxF" resolve="PropertyDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4QJEJ13YQh7">
+    <property role="1pbfSe" value="1851060425" />
+    <property role="TrG5h" value="LiteralPropertyValue" />
+    <ref role="1TJDcQ" node="4QJEJ13XuXT" resolve="TokenValue" />
+    <node concept="1TJgyi" id="4QJEJ13YQh8" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

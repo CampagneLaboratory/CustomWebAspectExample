@@ -58,6 +58,14 @@
       <concept id="5761987585673253147" name="org.campagnelab.aspects.web.editor.structure.CellModel_Link" flags="ng" index="3Hm0P">
         <property id="5761987585673258188" name="text" index="3Hlny" />
         <reference id="5761987585673258186" name="destination" index="3Hln$" />
+        <child id="5597880810753879926" name="tokenInitializations" index="em$m6" />
+      </concept>
+      <concept id="5597880810754237511" name="org.campagnelab.aspects.web.editor.structure.LiteralPropertyValue" flags="ng" index="elcUR" />
+      <concept id="5597880810753879929" name="org.campagnelab.aspects.web.editor.structure.TokenValue" flags="ng" index="em$m9">
+        <reference id="5597880810753879930" name="token" index="em$ma" />
+      </concept>
+      <concept id="5597880810753879932" name="org.campagnelab.aspects.web.editor.structure.TokenPropertyValue" flags="ng" index="em$mc">
+        <reference id="5597880810753879933" name="property" index="em$md" />
       </concept>
     </language>
   </registry>
@@ -263,6 +271,9 @@
       <node concept="3Hm0P" id="3W6nzRGqLYS" role="3EZMnx">
         <property role="3Hlny" value="SearchNodes" />
         <ref role="3Hln$" to="qkpo:29x8GeHEHj9" resolve="SearchNodesPlace" />
+        <node concept="elcUR" id="4QJEJ13ZgoU" role="em$m6">
+          <ref role="em$ma" to="qkpo:29x8GeHEHja" resolve="queryTerm" />
+        </node>
       </node>
     </node>
   </node>
@@ -389,6 +400,10 @@
       <node concept="3Hm0P" id="4ZQGiTcj4Ks" role="3EZMnx">
         <property role="3Hlny" value="Search" />
         <ref role="3Hln$" to="qkpo:29x8GeHEHj9" resolve="SearchNodesPlace" />
+        <node concept="em$mc" id="4QJEJ13Xwdp" role="em$m6">
+          <ref role="em$ma" to="qkpo:29x8GeHEHja" resolve="queryTerm" />
+          <ref role="em$md" to="77ry:29x8GeHEHir" resolve="searchTerm" />
+        </node>
       </node>
       <node concept="3F2HdR" id="29x8GeHEHiN" role="3EZMnx">
         <ref role="1NtTu8" to="77ry:29x8GeHEHit" />

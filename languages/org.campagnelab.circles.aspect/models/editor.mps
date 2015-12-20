@@ -1184,7 +1184,7 @@
     <ref role="1XX52x" to="6je1:4QJEJ13J6E3" resolve="PropertyInitialization" />
     <node concept="3EZMnI" id="4QJEJ13J6Eg" role="2wV5jI">
       <node concept="3F0ifn" id="4QJEJ13UkNC" role="3EZMnx">
-        <property role="3F0ifm" value="bind" />
+        <property role="3F0ifm" value="initialize" />
       </node>
       <node concept="1iCGBv" id="4QJEJ13J6En" role="3EZMnx">
         <ref role="1NtTu8" to="6je1:4QJEJ13J6E4" />
