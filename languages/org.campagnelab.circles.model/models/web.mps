@@ -89,6 +89,30 @@
       <concept id="4824635715685240675" name="org.campagnelab.circles.aspect.structure.PersistedConcepts" flags="ng" index="1mS4fW">
         <child id="4824635715685240684" name="inclusionRules" index="1mS4fN" />
       </concept>
+      <concept id="3811513598467841685" name="org.campagnelab.circles.aspect.structure.GwtPomBuild" flags="ng" index="1pQyBT" />
+      <concept id="3811513598467870231" name="org.campagnelab.circles.aspect.structure.Apache2_0" flags="ng" index="1pQF_V" />
+      <concept id="3811513598467870120" name="org.campagnelab.circles.aspect.structure.License" flags="ng" index="1pQFF4">
+        <property id="3811513598467870228" name="name" index="1pQF_S" />
+        <property id="3811513598467870226" name="url" index="1pQF_Y" />
+      </concept>
+      <concept id="3811513598467538885" name="org.campagnelab.circles.aspect.structure.MavenDependency" flags="ng" index="1pROyD">
+        <property id="3811513598467538895" name="scope" index="1pROyz" />
+        <property id="3811513598467538888" name="artifactId" index="1pROy$" />
+        <property id="3811513598467538891" name="version" index="1pROyB" />
+        <property id="3811513598467538886" name="groupId" index="1pROyE" />
+      </concept>
+      <concept id="3811513598467530483" name="org.campagnelab.circles.aspect.structure.MavenPom" flags="ng" index="1pRQAv">
+        <child id="3811513598467841679" name="build" index="1pQyBz" />
+        <child id="3811513598467870121" name="license" index="1pQFF5" />
+        <child id="3811513598467539117" name="self" index="1pRVv1" />
+        <child id="3811513598467539106" name="parent" index="1pRVve" />
+        <child id="3811513598467539100" name="dependencies" index="1pRVvK" />
+      </concept>
+      <concept id="3811513598467539109" name="org.campagnelab.circles.aspect.structure.MavenArtifactInfo" flags="ng" index="1pRVv9">
+        <property id="3811513598467539112" name="version" index="1pRVv4" />
+        <property id="3811513598467539110" name="groupId" index="1pRVva" />
+        <property id="3811513598467539111" name="artifactId" index="1pRVvb" />
+      </concept>
       <concept id="7317038553511107819" name="org.campagnelab.circles.aspect.structure.HtmlDocument" flags="ng" index="1ClkGB">
         <property id="7317038553511135446" name="title" index="1CltWq" />
       </concept>
@@ -326,6 +350,75 @@
           <ref role="2V9tKz" node="4QJEJ1435DK" resolve="id" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="1pRQAv" id="3V7o9sVwdhP">
+    <property role="TrG5h" value="pom" />
+    <node concept="1pQF_V" id="3V7o9sVwdhX" role="1pQFF5">
+      <property role="1pQF_S" value="Apache License, Version 2.0" />
+      <property role="1pQF_Y" value="http://www.apache.org/licenses/LICENSE-2.0.txt" />
+    </node>
+    <node concept="1pROyD" id="3V7o9sVwdhR" role="1pRVvK">
+      <property role="1pROyE" value="com.google.gwt" />
+      <property role="1pROy$" value="gwt-servlet" />
+      <property role="1pROyB" value="2.7.0" />
+      <property role="1pROyz" value="runtime" />
+    </node>
+    <node concept="1pROyD" id="242NPypZgKK" role="1pRVvK">
+      <property role="1pROyE" value="com.google.gwt" />
+      <property role="1pROy$" value="gwt-user" />
+      <property role="1pROyB" value="2.7.0" />
+    </node>
+    <node concept="1pROyD" id="3V7o9sVwdhS" role="1pRVvK">
+      <property role="1pROyE" value="com.google.guava" />
+      <property role="1pROy$" value="guava-gwt" />
+    </node>
+    <node concept="1pROyD" id="3V7o9sVwdhT" role="1pRVvK">
+      <property role="1pROyE" value="com.orientechnologies" />
+      <property role="1pROy$" value="orientdb-core" />
+      <property role="1pROyB" value="2.1.5" />
+    </node>
+    <node concept="1pROyD" id="2y8Odf5Zgsk" role="1pRVvK">
+      <property role="1pROyE" value="com.orientechnologies" />
+      <property role="1pROy$" value="orientdb-client" />
+      <property role="1pROyB" value="2.1.5" />
+    </node>
+    <node concept="1pROyD" id="2y8Odf5Zgss" role="1pRVvK">
+      <property role="1pROyE" value="com.orientechnologies" />
+      <property role="1pROy$" value="orientdb-enterprise" />
+      <property role="1pROyB" value="2.1.5" />
+    </node>
+    <node concept="1pROyD" id="242NPypZmQx" role="1pRVvK">
+      <property role="1pROyE" value="jetbrains.jetpad.mapper" />
+      <property role="1pROy$" value="gwt-util" />
+      <property role="1pROyB" value="1.1-SNAPSHOT" />
+    </node>
+    <node concept="1pROyD" id="242NPypZmQB" role="1pRVvK">
+      <property role="1pROyE" value="jetbrains.jetpad" />
+      <property role="1pROy$" value="model-gwt" />
+      <property role="1pROyB" value="1.1-SNAPSHOT" />
+    </node>
+    <node concept="1pROyD" id="7sx5qZBAHxj" role="1pRVvK">
+      <property role="1pROyE" value="junit" />
+      <property role="1pROy$" value="junit" />
+      <property role="1pROyB" value="4.11" />
+      <property role="1pROyz" value="test" />
+    </node>
+    <node concept="1pROyD" id="4QJEJ14P0EZ" role="1pRVvK">
+      <property role="1pROyE" value="org.vectomatic" />
+      <property role="1pROy$" value="lib-gwt-svg" />
+      <property role="1pROyB" value="0.5.10" />
+    </node>
+    <node concept="1pRVv9" id="3V7o9sVwdhV" role="1pRVve">
+      <property role="1pRVva" value="jetbrains.jetpad.mapper" />
+      <property role="1pRVvb" value="container" />
+      <property role="1pRVv4" value="1.1-SNAPSHOT" />
+    </node>
+    <node concept="1pQyBT" id="3V7o9sVwdhW" role="1pQyBz" />
+    <node concept="1pRVv9" id="3V7o9sVwdhZ" role="1pRVv1">
+      <property role="1pRVva" value="org.campagnelab" />
+      <property role="1pRVvb" value="circles" />
+      <property role="1pRVv4" value="1.0-SNAPSHOT" />
     </node>
   </node>
 </model>
