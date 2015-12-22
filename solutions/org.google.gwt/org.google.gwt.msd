@@ -9,11 +9,13 @@
       <sourceRoot location="mapper-1.1-SNAPSHOT.jar" />
       <sourceRoot location="model-1.1-SNAPSHOT.jar" />
       <sourceRoot location="base-1.1-SNAPSHOT.jar" />
+      <sourceRoot location="lib-gwt-svg-0.5.10.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
     <stubModelEntry path="${module}/mapper-1.1-SNAPSHOT.jar" />
     <stubModelEntry path="${module}/model-1.1-SNAPSHOT.jar" />
+    <stubModelEntry path="${module}/lib-gwt-svg-0.5.10.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

@@ -2029,9 +2029,9 @@
               <ref role="37wK5l" to="guwi:~PrintStream.println():void" resolve="println" />
             </node>
           </node>
-          <node concept="1WS0z7" id="4NDm0LFIcv" role="lGtFl">
-            <node concept="3JmXsc" id="4NDm0LFIcx" role="3Jn$fo">
-              <node concept="3clFbS" id="4NDm0LFIcz" role="2VODD2">
+          <node concept="3ejVUv" id="a8CY5abVbk" role="lGtFl">
+            <node concept="3JmXsc" id="a8CY5abVbm" role="3_Rtg">
+              <node concept="3clFbS" id="a8CY5abVbo" role="2VODD2">
                 <node concept="3clFbF" id="4NDm0Lu0b_" role="3cqZAp">
                   <node concept="2OqwBi" id="4NDm0Lu0bA" role="3clFbG">
                     <node concept="2OqwBi" id="4NDm0Lu0bB" role="2Oq$k0">
@@ -2096,6 +2096,37 @@
         </node>
       </node>
     </node>
+    <node concept="312cEg" id="a8CY5a6dir" role="jymVt">
+      <property role="TrG5h" value="a" />
+      <node concept="3Tm6S6" id="a8CY5a6dis" role="1B3o_S" />
+      <node concept="10Oyi0" id="a8CY5a6iVX" role="1tU5fm" />
+      <node concept="3ejVUv" id="a8CY5abDS9" role="lGtFl">
+        <node concept="3JmXsc" id="a8CY5abDSd" role="3_Rtg">
+          <node concept="3clFbS" id="a8CY5abDSh" role="2VODD2">
+            <node concept="3clFbF" id="a8CY5a6olz" role="3cqZAp">
+              <node concept="2OqwBi" id="a8CY5a6ol$" role="3clFbG">
+                <node concept="2OqwBi" id="a8CY5a6ol_" role="2Oq$k0">
+                  <node concept="30H73N" id="a8CY5a6olA" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="a8CY5a6olB" role="2OqNvi">
+                    <ref role="3Tt5mk" to="6je1:1mpyZGF7F7H" />
+                  </node>
+                </node>
+                <node concept="2Rf3mk" id="a8CY5a6olC" role="2OqNvi">
+                  <node concept="1xMEDy" id="a8CY5a6olD" role="1xVPHs">
+                    <node concept="chp4Y" id="a8CY5a6olE" role="ri$Ld">
+                      <ref role="cht4Q" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1sPUBX" id="a8CY5a6j4l" role="lGtFl">
+        <ref role="v9R2y" node="a8CY5a6j6d" resolve="InsertWebMapperField" />
+      </node>
+    </node>
     <node concept="3clFb_" id="2SasHe_sGJr" role="jymVt">
       <property role="TrG5h" value="registerSynchronizers" />
       <property role="DiZV1" value="false" />
@@ -2119,7 +2150,81 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="qn4alg2OtP" role="3cqZAp" />
+        <node concept="3SKdUt" id="a8CY5a7nHT" role="3cqZAp">
+          <node concept="3SKdUq" id="a8CY5a7nHV" role="3SKWNk">
+            <property role="3SKdUp" value=" Insertion point for add synchronizer:" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="a8CY5a71b6" role="3cqZAp">
+          <node concept="2OqwBi" id="a8CY5a71b3" role="3clFbG">
+            <node concept="10M0yZ" id="a8CY5a71b4" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="a8CY5a71b5" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println():void" resolve="println" />
+            </node>
+            <node concept="1sPUBX" id="a8CY5a7dUW" role="lGtFl">
+              <ref role="v9R2y" node="a8CY5a7w_5" resolve="InsertAddSynchronizer_WebMapper" />
+            </node>
+          </node>
+          <node concept="3ejVUv" id="a8CY5ab64Y" role="lGtFl">
+            <node concept="3JmXsc" id="a8CY5ab652" role="3_Rtg">
+              <node concept="3clFbS" id="a8CY5ab656" role="2VODD2">
+                <node concept="3clFbF" id="a8CY5a7j5U" role="3cqZAp">
+                  <node concept="2OqwBi" id="a8CY5ae2G0" role="3clFbG">
+                    <node concept="2OqwBi" id="a8CY5a7j5V" role="2Oq$k0">
+                      <node concept="2OqwBi" id="a8CY5a7j5W" role="2Oq$k0">
+                        <node concept="30H73N" id="a8CY5a7j5X" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="a8CY5a7j5Y" role="2OqNvi">
+                          <ref role="3Tt5mk" to="6je1:1mpyZGF7F7H" />
+                        </node>
+                      </node>
+                      <node concept="2Rf3mk" id="a8CY5a7j5Z" role="2OqNvi">
+                        <node concept="1xMEDy" id="a8CY5a7j60" role="1xVPHs">
+                          <node concept="chp4Y" id="a8CY5a7j61" role="ri$Ld">
+                            <ref role="cht4Q" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3zZkjj" id="a8CY5aezAQ" role="2OqNvi">
+                      <node concept="1bVj0M" id="a8CY5aezAS" role="23t8la">
+                        <node concept="3clFbS" id="a8CY5aezAT" role="1bW5cS">
+                          <node concept="3clFbF" id="a8CY5aezJV" role="3cqZAp">
+                            <node concept="17QLQc" id="a8CY5aeFyP" role="3clFbG">
+                              <node concept="pHN19" id="a8CY5aeFDn" role="3uHU7w">
+                                <node concept="2V$Bhx" id="a8CY5aeFP5" role="2V$M_3">
+                                  <property role="2V$B1T" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba" />
+                                  <property role="2V$B1Q" value="jetbrains.mps.lang.editor" />
+                                </node>
+                              </node>
+                              <node concept="2OqwBi" id="a8CY5ae$dj" role="3uHU7B">
+                                <node concept="2OqwBi" id="a8CY5aezPI" role="2Oq$k0">
+                                  <node concept="37vLTw" id="a8CY5aezJU" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="a8CY5aezAU" resolve="it" />
+                                  </node>
+                                  <node concept="2yIwOk" id="a8CY5ae$2W" role="2OqNvi" />
+                                </node>
+                                <node concept="liA8E" id="a8CY5ae$sm" role="2OqNvi">
+                                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getLanguage():org.jetbrains.mps.openapi.language.SLanguage" resolve="getLanguage" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="Rh6nW" id="a8CY5aezAU" role="1bW2Oz">
+                          <property role="TrG5h" value="it" />
+                          <node concept="2jxLKc" id="a8CY5aezAV" role="1tU5fm" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="2y8Odf6kXXe" role="3cqZAp">
           <node concept="2OqwBi" id="2y8Odf6kYLK" role="3clFbG">
             <node concept="37vLTw" id="2y8Odf6kXXc" role="2Oq$k0">
@@ -3864,7 +3969,7 @@
         </node>
       </node>
       <node concept="1sPUBX" id="4NDm0LLOr7" role="lGtFl">
-        <ref role="v9R2y" node="4NDm0LLUJ5" resolve="InsertIntoWebModel" />
+        <ref role="v9R2y" node="4NDm0LLUJ5" resolve="InsertMethodIntoWebModel" />
         <node concept="3NFfHV" id="4NDm0LTCAy" role="1sPUBK">
           <node concept="3clFbS" id="4NDm0LTCAz" role="2VODD2">
             <node concept="3clFbF" id="4NDm0LTCAY" role="3cqZAp">
@@ -18374,7 +18479,7 @@
     <node concept="b5Tf3" id="4NDm0LveJ5" role="jxRDz" />
   </node>
   <node concept="jVnub" id="4NDm0LLUJ5">
-    <property role="TrG5h" value="InsertIntoWebModel" />
+    <property role="TrG5h" value="InsertMethodIntoWebModel" />
     <property role="3GE5qa" value="editors" />
     <node concept="b5Tf3" id="4NDm0LLUJ6" role="jxRDz" />
   </node>
@@ -18382,6 +18487,21 @@
     <property role="3GE5qa" value="editors" />
     <property role="TrG5h" value="UIBundle_EditorCellModelSwitch" />
     <node concept="b5Tf3" id="4NDm0LRe3i" role="jxRDz" />
+  </node>
+  <node concept="jVnub" id="a8CY5a6j6d">
+    <property role="3GE5qa" value="editors" />
+    <property role="TrG5h" value="InsertWebMapperField" />
+    <node concept="b5Tf3" id="a8CY5a6j6e" role="jxRDz" />
+  </node>
+  <node concept="jVnub" id="a8CY5a7w_5">
+    <property role="TrG5h" value="InsertAddSynchronizer_WebMapper" />
+    <node concept="gft3U" id="a8CY5af9j8" role="jxRDz">
+      <node concept="3SKdUt" id="a8CY5af9jh" role="gfFT$">
+        <node concept="3SKdUq" id="a8CY5af9jj" role="3SKWNk">
+          <property role="3SKdUp" value="nothing here" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

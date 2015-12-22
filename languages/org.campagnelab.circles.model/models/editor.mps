@@ -67,6 +67,9 @@
       <concept id="5597880810753879932" name="org.campagnelab.aspects.web.editor.structure.TokenPropertyValue" flags="ng" index="em$mc">
         <reference id="5597880810753879933" name="property" index="em$md" />
       </concept>
+      <concept id="86594650414985952" name="org.campagnelab.aspects.web.editor.structure.SVGDocument" flags="ng" index="Kn9u0">
+        <reference id="86594650414985956" name="source" index="Kn9u4" />
+      </concept>
     </language>
   </registry>
   <node concept="24kQdi" id="6mblWKeeSxf">
@@ -380,9 +383,9 @@
       <node concept="3F0A7n" id="29x8GeHEGdL" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
-      <node concept="3F0A7n" id="29x8GeHEGd$" role="3EZMnx">
-        <ref role="1NtTu8" to="77ry:29x8GeHEG14" resolve="svgRendering" />
-        <node concept="pVoyu" id="29x8GeHEGdG" role="3F10Kt">
+      <node concept="Kn9u0" id="4NDm0LYCkI" role="3EZMnx">
+        <ref role="Kn9u4" to="77ry:29x8GeHEG14" resolve="svgRendering" />
+        <node concept="pVoyu" id="4NDm0LYCkO" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
