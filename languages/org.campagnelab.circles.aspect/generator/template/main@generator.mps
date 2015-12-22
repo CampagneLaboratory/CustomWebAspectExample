@@ -35,10 +35,7 @@
     <import index="77ry" ref="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
     <import index="jm6w" ref="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.metadata.schema(com.orientechnologies.orient/)" />
     <import index="laoz" ref="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.db.document(com.orientechnologies.orient/)" />
-    <import index="ajju" ref="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.query.live(com.orientechnologies.orient/)" />
     <import index="8qyd" ref="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.record.impl(com.orientechnologies.orient/)" />
-    <import index="scrq" ref="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.db(com.orientechnologies.orient/)" />
-    <import index="hke8" ref="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.sql.query(com.orientechnologies.orient/)" />
     <import index="i6bd" ref="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.record(com.orientechnologies.orient/)" />
     <import index="3g47" ref="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.metadata(com.orientechnologies.orient/)" implicit="true" />
   </imports>
