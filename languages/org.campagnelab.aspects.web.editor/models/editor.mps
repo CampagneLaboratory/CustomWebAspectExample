@@ -160,5 +160,23 @@
       <node concept="l2Vlx" id="4QJEJ13YQhk" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="4NDm0LrNbF">
+    <ref role="1XX52x" to="x0hc:4NDm0LrNbw" resolve="SVGDocument" />
+    <node concept="3EZMnI" id="4NDm0LrNbH" role="2wV5jI">
+      <node concept="3F0ifn" id="4NDm0LrNbO" role="3EZMnx">
+        <property role="3F0ifm" value="SVG" />
+      </node>
+      <node concept="1iCGBv" id="4NDm0LrNbU" role="3EZMnx">
+        <ref role="1NtTu8" to="x0hc:4NDm0LrNb$" />
+        <node concept="1sVBvm" id="4NDm0LrNbW" role="1sWHZn">
+          <node concept="3F0A7n" id="4NDm0LrNc4" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="4NDm0LrNbK" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

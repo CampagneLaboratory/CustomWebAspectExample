@@ -4591,6 +4591,12 @@
             <property role="2pMdty" value="urn:ui:com.google.gwt.uibinder" />
           </node>
         </node>
+        <node concept="2pNUuL" id="4NDm0Lr1X7" role="2pNNFR">
+          <property role="2pNUuO" value="xmlns:g" />
+          <node concept="2pMdtt" id="4NDm0Lr1ZT" role="2pMdts">
+            <property role="2pMdty" value="urn:import:com.google.gwt.user.client.ui" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="n94m4" id="2SasHe_z_Cz" role="lGtFl">
@@ -10110,7 +10116,15 @@
             </node>
           </node>
         </node>
-        <node concept="3o6iSG" id="6mblWKe8SDm" role="3o6s8t" />
+        <node concept="2pNNFK" id="4QJEJ14WlW8" role="3o6s8t">
+          <property role="2pNNFO" value="inherits" />
+          <node concept="2pNUuL" id="4QJEJ14Wm8z" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="4QJEJ14Wm8_" role="2pMdts">
+              <property role="2pMdty" value="org.vectomatic.libgwtsvg" />
+            </node>
+          </node>
+        </node>
         <node concept="2pNm8U" id="4c7_nAY4Egy" role="3o6s8t">
           <node concept="3o66tx" id="4c7_nAY4EjY" role="3o66t8">
             <property role="3o66tw" value="Use the following to speed up compilation by restricting to Chrome/Safari " />

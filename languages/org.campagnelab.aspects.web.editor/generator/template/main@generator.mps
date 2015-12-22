@@ -18,12 +18,14 @@
     <import index="jz7v" ref="6fd1293f-7f65-4ffd-99dc-4719eca7c171/java:org.jetbrains.idea.svn.properties(jetbrains.mps.ide.vcs.platform/)" />
     <import index="lgza" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:jetbrains.jetpad.model.property(org.google.gwt/)" />
     <import index="x0hc" ref="r:dff39466-848a-4f33-bee4-9587127ca062(org.campagnelab.aspects.web.editor.structure)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn" />
+      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
+        <property id="1073389577007" name="text" index="3F0ifm" />
+      </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
@@ -199,6 +201,14 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="4NDm0LrOOO" role="3acgRq">
+      <ref role="30HIoZ" to="x0hc:4NDm0LrNbw" resolve="SVGDocument" />
+      <node concept="gft3U" id="4NDm0LrOPq" role="1lVwrX">
+        <node concept="3F0ifn" id="4NDm0LrORV" role="gfFT$">
+          <property role="3F0ifm" value="SVG document" />
+        </node>
+      </node>
+    </node>
     <node concept="avzCv" id="29x8GeIZaM6" role="avys_">
       <node concept="3clFbS" id="29x8GeIZaM7" role="2VODD2">
         <node concept="3clFbF" id="7eFE78n2XSN" role="3cqZAp">
@@ -301,6 +311,41 @@
                       <ref role="3TsBF5" to="x0hc:4QJEJ13YQh8" resolve="value" />
                     </node>
                     <node concept="30H73N" id="4QJEJ13YQqk" role="2Oq$k0" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="4NDm0LrOXi" role="3acgRq">
+      <ref role="30HIoZ" to="x0hc:4NDm0LrNbw" resolve="SVGDocument" />
+      <node concept="gft3U" id="4NDm0LrOXY" role="1lVwrX">
+        <node concept="2pNNFK" id="4NDm0LrOY4" role="gfFT$">
+          <property role="2pNNFO" value="div" />
+          <node concept="2pNUuL" id="4NDm0LrOY9" role="2pNNFR">
+            <property role="2pNUuO" value="ui:field" />
+            <node concept="2pMdtt" id="4NDm0LrOYb" role="2pMdts">
+              <property role="2pMdty" value="sourceProperty" />
+              <node concept="17Uvod" id="4NDm0LrOYd" role="lGtFl">
+                <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
+                <property role="2qtEX9" value="text" />
+                <node concept="3zFVjK" id="4NDm0LrOYe" role="3zH0cK">
+                  <node concept="3clFbS" id="4NDm0LrOYf" role="2VODD2">
+                    <node concept="3clFbF" id="4NDm0LrPQj" role="3cqZAp">
+                      <node concept="2OqwBi" id="4NDm0LrQgc" role="3clFbG">
+                        <node concept="2OqwBi" id="4NDm0LrPTO" role="2Oq$k0">
+                          <node concept="30H73N" id="4NDm0LrPQi" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="4NDm0LrQ6m" role="2OqNvi">
+                            <ref role="3Tt5mk" to="x0hc:4NDm0LrNb$" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="4NDm0LrQvl" role="2OqNvi">
+                          <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>

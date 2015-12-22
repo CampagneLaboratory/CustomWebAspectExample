@@ -1691,6 +1691,28 @@
         </node>
       </node>
     </node>
+    <node concept="3clFb_" id="4QJEJ14QcZL" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="renderToSvg" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="4QJEJ14QcZO" role="3clF47">
+        <node concept="3clFbF" id="4QJEJ14Qm5v" role="3cqZAp">
+          <node concept="Xl_RD" id="4QJEJ14Qm5u" role="3clFbG">
+            <property role="Xl_RC" value="&lt;svg xmlns=\&quot;http://www.w3.org/2000/svg\&quot; xmlns:xlink=\&quot;http://www.w3.org/1999/xlink\&quot; xmlns:jfreesvg=\&quot;http://www.jfree.org/jfreesvg/svg\&quot; width=\&quot;656\&quot; height=\&quot;376\&quot; text-rendering=\&quot;auto\&quot; shape-rendering=\&quot;auto\&quot;&gt;\n&lt;defs&gt;&lt;clipPath id=\&quot;705421913357262clip-0\&quot;&gt;&lt;path d=\&quot;M 0.0 0.0 L 20.0 0.0 L 20.0 20.0 L 0.0 20.0 L 0.0 0.0 Z \&quot;/&gt;&lt;/clipPath&gt;\n&lt;clipPath id=\&quot;705421913357262clip-1\&quot;&gt;&lt;path d=\&quot;M 0.0 0.0 L 0.0 36.0 L 10.0 36.0 L 10.0 0.0 Z \&quot;/&gt;&lt;/clipPath&gt;\n&lt;clipPath id=\&quot;705421913357262clip-2\&quot;&gt;&lt;path d=\&quot;M 0.0 0.0 L 0.0 40.0 L 12.0 40.0 L 12.0 0.0 Z \&quot;/&gt;&lt;/clipPath&gt;\n&lt;/defs&gt;\n&lt;g id=\&quot;{&amp;quot;moduleId&amp;quot;=&amp;quot;766a7fab-c925-4c96-b3e5-1f6a8e96f6d5&amp;quot;, &amp;quot;modelId&amp;quot;=&amp;quot;r:6a66b146-ac09-46e7-a5cf-62b1c04652a3&amp;quot;, &amp;quot;nodeId&amp;quot;=&amp;quot;4545757943691427566&amp;quot;\&quot;&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;25\&quot; y=\&quot;40\&quot; style=\&quot;fill: rgb(48,48,48); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;build&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;73\&quot; y=\&quot;40\&quot; style=\&quot;fill: rgb(0,0,0); fill-opacity: 1.0; font-family: monospace; font-size: 13px; \&quot; &gt;Testing&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;137\&quot; y=\&quot;40\&quot; style=\&quot;fill: rgb(48,48,48); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;generates&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;217\&quot; y=\&quot;40\&quot; style=\&quot;fill: rgb(0,0,0); fill-opacity: 1.0; font-family: monospace; font-size: 13px; \&quot; &gt;build2.xml&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;25\&quot; y=\&quot;57\&quot; style=\&quot;fill: rgb(128,128,128); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;25\&quot; y=\&quot;76\&quot; style=\&quot;fill: rgb(48,48,48); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;base directory:&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;153\&quot; y=\&quot;76\&quot; style=\&quot;fill: rgb(0,0,0); fill-opacity: 1.0; font-family: monospace; font-size: 13px; \&quot; &gt;.&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;153\&quot; y=\&quot;93\&quot; style=\&quot;fill: rgb(128,128,128); fill-opacity: 1.0; font-family: monospace; font-size: 13px; \&quot; &gt;/Users/fac2003/MPSProjects/git/Editor2PDF/solutions/Playground&lt;/text&gt;&lt;/g&gt;&lt;rect x=\&quot;0.0\&quot; y=\&quot;0.0\&quot; width=\&quot;20.0\&quot; height=\&quot;20.0\&quot; style=\&quot;fill: rgb(236,236,236); fill-opacity: 1.0\&quot; transform=\&quot;matrix(1.0,0.0,0.0,1.0,628.0,34.0)\&quot; clip-path=\&quot;url(#705421913357262clip-0)\&quot;/&gt;&lt;image preserveAspectRatio=\&quot;none\&quot; xlink:href=\&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAsCAYAAABcxymWAAABBUlEQVR42u2VPYqEUBCE5xZ7iznG3mJusSeaAyiYGRiICoriv6IGKuLvARSNau2BebC4arDhWtDZ97qrX1B9u/1VwzB8NE3z+a4N0LbtI8syz/d9WJYFwzCg6zp+dMjz/Om6LpIkQd/3WJYFbzGQIOrSdR1+ExtHnfYgBpKnOI5xpJe3o5EMpNVps3mez0FVVXGmFyjL8gVe4AX+V5CSYpqm85AyTRN1XR+DpDAM4TjOOViW5VPTNBRFcQyu4++UkYqi7MIsw1ePD9u2IUkSyPM6BeM4bkFaqqqqryiKQDZEUYQgCOB5HhzHYXOEKPjJc5qmCIIAnueBDsHe1brT/9IjskT1DRg613lOrzuwAAAAAElFTkSuQmCC\&quot; clip-path=\&quot;url(#705421913357262clip-1)\&quot; transform=\&quot;matrix(0.5,0.0,0.0,0.5,630.0,36.0)\&quot; x=\&quot;0.0\&quot; y=\&quot;0.0\&quot; width=\&quot;10.0\&quot; height=\&quot;44.0\&quot;/&gt;\n&lt;image preserveAspectRatio=\&quot;none\&quot; xlink:href=\&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAsCAYAAAB/nHhDAAAARklEQVR42u3NMREAMAgEwTcaF7GFDlo0UGCDqPgqdzNXr+RuZo5zZeY615oDAAAAAAAAAAAAAAAA+AmIiHWuqlrn6u7r/AEccrFSW+vEagAAAABJRU5ErkJggg==\&quot; clip-path=\&quot;url(#705421913357262clip-2)\&quot; transform=\&quot;matrix(0.5,0.0,0.0,0.5,635.0,36.0)\&quot; x=\&quot;0.0\&quot; y=\&quot;0.0\&quot; width=\&quot;24.0\&quot; height=\&quot;44.0\&quot;/&gt;\n&lt;image preserveAspectRatio=\&quot;none\&quot; xlink:href=\&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAsCAYAAABcxymWAAABBElEQVR42u2VzYmEQBSEJ4vNYsLYLDaLjWgCUPDmwYOooCj+K+pBRfwNQNFTLa8Zd5GZcbyvBX3qr18X71B1uRxV0zSf6xmG4eMlqOs6DMOAZVnwfR9Zlnlt2349gLhrWRb0fY8kSeC6LvI8v21+wBN1XcemE7wLrjBN/rWBHcVxzDy/BVcLzOseOM8z2witbhckqap6DJRl+QRP8AT/IzhN07GkqOsapmm+DynHcRCGIXZjrygKaJqGsixvL0GCFEVZs/G6AcdxpNfMkyRJsG2bPP61A8dx4HkegiBAFEX2XRRFqKrqe9MKFOie5yEIAqRpyjxRwD+UE42nQ5f39ro+K64fIzvXeZLbzGIAAAAASUVORK5CYII=\&quot; clip-path=\&quot;url(#705421913357262clip-1)\&quot; transform=\&quot;matrix(0.5,0.0,0.0,0.5,641.0,36.0)\&quot; x=\&quot;0.0\&quot; y=\&quot;0.0\&quot; width=\&quot;10.0\&quot; height=\&quot;44.0\&quot;/&gt;\n&lt;g transform=\&quot;matrix(1.0,0.0,0.0,1.0,628.0,34.0)\&quot;&gt;&lt;text x=\&quot;4.0\&quot; y=\&quot;15.0\&quot; style=\&quot;fill: rgb(29,29,29); fill-opacity: 1.0; font-family: Helvetica Neue; font-size: 13px; \&quot; clip-path=\&quot;url(#705421913357262clip-0)\&quot;&gt;...&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;25\&quot; y=\&quot;110\&quot; style=\&quot;fill: rgb(128,128,128); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;25\&quot; y=\&quot;127\&quot; style=\&quot;fill: rgb(48,48,48); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;use plugins:&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;41\&quot; y=\&quot;144\&quot; style=\&quot;fill: rgb(128,128,128); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;&amp;lt;&amp;lt; ... &amp;gt;&amp;gt;&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;25\&quot; y=\&quot;161\&quot; style=\&quot;fill: rgb(128,128,128); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;25\&quot; y=\&quot;178\&quot; style=\&quot;fill: rgb(48,48,48); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;macros:&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;41\&quot; y=\&quot;195\&quot; style=\&quot;fill: rgb(128,128,128); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;&amp;lt;&amp;lt; ... &amp;gt;&amp;gt;&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;25\&quot; y=\&quot;212\&quot; style=\&quot;fill: rgb(128,128,128); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;25\&quot; y=\&quot;229\&quot; style=\&quot;fill: rgb(48,48,48); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;dependencies:&lt;/text&gt;&lt;/g&gt;&lt;g id=\&quot;{&amp;quot;moduleId&amp;quot;=&amp;quot;766a7fab-c925-4c96-b3e5-1f6a8e96f6d5&amp;quot;, &amp;quot;modelId&amp;quot;=&amp;quot;r:6a66b146-ac09-46e7-a5cf-62b1c04652a3&amp;quot;, &amp;quot;nodeId&amp;quot;=&amp;quot;4545757943691427598&amp;quot;\&quot;&gt;&lt;rect x=\&quot;41\&quot; y=\&quot;233\&quot; width=\&quot;120\&quot; height=\&quot;17\&quot; style=\&quot;fill: rgb(255,220,220); fill-opacity: 1.0\&quot; transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot; /&gt;&lt;rect x=\&quot;41\&quot; y=\&quot;233\&quot; width=\&quot;120\&quot; height=\&quot;17\&quot; style=\&quot;fill: rgb(255,220,220); fill-opacity: 1.0\&quot; transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot; /&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;41\&quot; y=\&quot;246\&quot; style=\&quot;fill: rgb(255,0,0); fill-opacity: 1.0; font-family: monospace; font-size: 13px; \&quot; &gt;&amp;lt;no dependency&amp;gt;&lt;/text&gt;&lt;/g&gt;&lt;rect x=\&quot;0.0\&quot; y=\&quot;0.0\&quot; width=\&quot;121.0\&quot; height=\&quot;3.0\&quot; style=\&quot;fill: black;; fill-opacity: 1.0\&quot; transform=\&quot;matrix(1.0,0.0,0.0,1.0,15.0,221.0)\&quot; /&gt;&lt;/g&gt;\n&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;25\&quot; y=\&quot;263\&quot; style=\&quot;fill: rgb(128,128,128); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;25\&quot; y=\&quot;280\&quot; style=\&quot;fill: rgb(48,48,48); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;project structure:&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;41\&quot; y=\&quot;297\&quot; style=\&quot;fill: rgb(128,128,128); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;&amp;lt;&amp;lt; ... &amp;gt;&amp;gt;&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;25\&quot; y=\&quot;314\&quot; style=\&quot;fill: rgb(128,128,128); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;25\&quot; y=\&quot;331\&quot; style=\&quot;fill: rgb(48,48,48); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;default layout:&lt;/text&gt;&lt;/g&gt;&lt;g id=\&quot;{&amp;quot;moduleId&amp;quot;=&amp;quot;766a7fab-c925-4c96-b3e5-1f6a8e96f6d5&amp;quot;, &amp;quot;modelId&amp;quot;=&amp;quot;r:6a66b146-ac09-46e7-a5cf-62b1c04652a3&amp;quot;, &amp;quot;nodeId&amp;quot;=&amp;quot;4545757943691427568&amp;quot;\&quot;&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;41\&quot; y=\&quot;348\&quot; style=\&quot;fill: rgb(128,128,128); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;&amp;lt;empty&amp;gt;&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;41\&quot; y=\&quot;365\&quot; style=\&quot;fill: rgb(128,128,128); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;\n&lt;g id=\&quot;{&amp;quot;moduleId&amp;quot;=&amp;quot;766a7fab-c925-4c96-b3e5-1f6a8e96f6d5&amp;quot;, &amp;quot;modelId&amp;quot;=&amp;quot;r:6a66b146-ac09-46e7-a5cf-62b1c04652a3&amp;quot;, &amp;quot;nodeId&amp;quot;=&amp;quot;4545757943691427602&amp;quot;\&quot;&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;25\&quot; y=\&quot;382\&quot; style=\&quot;fill: rgb(48,48,48); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;workflow&lt;/text&gt;&lt;/g&gt;&lt;g id=\&quot;{&amp;quot;moduleId&amp;quot;=&amp;quot;766a7fab-c925-4c96-b3e5-1f6a8e96f6d5&amp;quot;, &amp;quot;modelId&amp;quot;=&amp;quot;r:6a66b146-ac09-46e7-a5cf-62b1c04652a3&amp;quot;, &amp;quot;nodeId&amp;quot;=&amp;quot;4545757943691427605&amp;quot;\&quot;&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;41\&quot; y=\&quot;399\&quot; style=\&quot;fill: rgb(48,48,48); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;ant taskdef&lt;/text&gt;&lt;/g&gt;&lt;rect x=\&quot;137\&quot; y=\&quot;386\&quot; width=\&quot;72\&quot; height=\&quot;17\&quot; style=\&quot;fill: rgb(255,220,220); fill-opacity: 1.0\&quot; transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot; /&gt;&lt;rect x=\&quot;137\&quot; y=\&quot;386\&quot; width=\&quot;72\&quot; height=\&quot;17\&quot; style=\&quot;fill: rgb(255,220,220); fill-opacity: 1.0\&quot; transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot; /&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;137\&quot; y=\&quot;399\&quot; style=\&quot;fill: rgb(255,0,0); fill-opacity: 1.0; font-family: monospace; font-size: 13px; \&quot; &gt;&amp;lt;no name&amp;gt;&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;217\&quot; y=\&quot;399\&quot; style=\&quot;fill: rgb(48,48,48); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;class&lt;/text&gt;&lt;/g&gt;&lt;rect x=\&quot;265\&quot; y=\&quot;386\&quot; width=\&quot;136\&quot; height=\&quot;17\&quot; style=\&quot;fill: rgb(255,220,220); fill-opacity: 1.0\&quot; transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot; /&gt;&lt;rect x=\&quot;265\&quot; y=\&quot;386\&quot; width=\&quot;136\&quot; height=\&quot;17\&quot; style=\&quot;fill: rgb(255,220,220); fill-opacity: 1.0\&quot; transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot; /&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;265\&quot; y=\&quot;399\&quot; style=\&quot;fill: rgb(255,0,0); fill-opacity: 1.0; font-family: monospace; font-size: 13px; \&quot; &gt;&amp;lt;full class name&amp;gt;&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;409\&quot; y=\&quot;399\&quot; style=\&quot;fill: rgb(48,48,48); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;from&lt;/text&gt;&lt;/g&gt;&lt;g transform=\&quot;matrix(1,0,0,1,-25,-27)\&quot;&gt;&lt;text x=\&quot;449\&quot; y=\&quot;399\&quot; style=\&quot;fill: rgb(128,128,128); fill-opacity: 1.0; font-family: monospace; font-size: 13px; font-weight: bold; \&quot; &gt;&amp;lt;default classpath&amp;gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;\n&lt;/g&gt;\n&lt;/g&gt;\n&lt;/svg&gt;" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4QJEJ14Qcai" role="1B3o_S" />
+      <node concept="17QB3L" id="4QJEJ14QcZz" role="3clF45" />
+      <node concept="37vLTG" id="4QJEJ14QdP6" role="3clF46">
+        <property role="TrG5h" value="source" />
+        <node concept="3uibUv" id="4QJEJ14QdP5" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+    </node>
     <node concept="3clFb_" id="6GMbeB5EogX" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="populate" />
@@ -1728,53 +1750,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6GMbeB5Eoh5" role="3cqZAp">
-          <node concept="2OqwBi" id="6GMbeB5Eoh6" role="3clFbG">
-            <node concept="37vLTw" id="2cczKT7mPFG" role="2Oq$k0">
-              <ref role="3cqZAo" node="2cczKT7mMlZ" resolve="doc" />
-            </node>
-            <node concept="liA8E" id="6GMbeB5Eoh7" role="2OqNvi">
-              <ref role="37wK5l" to="8qyd:~ODocument.field(java.lang.String,java.lang.Object,com.orientechnologies.orient.core.metadata.schema.OType...):com.orientechnologies.orient.core.record.impl.ODocument" resolve="field" />
-              <node concept="Xl_RD" id="6GMbeB5Eoh8" role="37wK5m">
-                <property role="Xl_RC" value="nodeId" />
-              </node>
-              <node concept="2OqwBi" id="6GMbeB5Eoh9" role="37wK5m">
-                <node concept="2OqwBi" id="6GMbeB5Eoha" role="2Oq$k0">
-                  <node concept="37vLTw" id="6GMbeB5Eohb" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6GMbeB5EojZ" resolve="source" />
-                  </node>
-                  <node concept="liA8E" id="6GMbeB5Eohc" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="6GMbeB5Eohd" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
-                </node>
-              </node>
-              <node concept="Rm8GO" id="6GMbeB5Eohe" role="37wK5m">
-                <ref role="1Px2BO" to="jm6w:~OType" resolve="OType" />
-                <ref role="Rm8GQ" to="jm6w:~OType.STRING" resolve="STRING" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6GMbeB5Eohf" role="3cqZAp">
-          <node concept="2OqwBi" id="6GMbeB5Eohg" role="3clFbG">
-            <node concept="37vLTw" id="2cczKT7mPJT" role="2Oq$k0">
-              <ref role="3cqZAo" node="2cczKT7mMlZ" resolve="doc" />
-            </node>
-            <node concept="liA8E" id="6GMbeB5Eohh" role="2OqNvi">
-              <ref role="37wK5l" to="8qyd:~ODocument.field(java.lang.String,java.lang.Object):com.orientechnologies.orient.core.record.impl.ODocument" resolve="field" />
-              <node concept="Xl_RD" id="6GMbeB5Eohi" role="37wK5m">
-                <property role="Xl_RC" value="model" />
-              </node>
-              <node concept="37vLTw" id="6GMbeB5Eohj" role="37wK5m">
-                <ref role="3cqZAo" node="6GMbeB5Eok1" resolve="parentModel" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6GMbeB5Eohk" role="3cqZAp" />
+        <node concept="3clFbH" id="4QJEJ14Trnx" role="3cqZAp" />
         <node concept="3SKdUt" id="6GMbeB5Eohl" role="3cqZAp">
           <node concept="3SKdUq" id="6GMbeB5Eohm" role="3SKWNk">
             <property role="3SKdUp" value="populate properties" />
@@ -2036,6 +2012,149 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="6GMbeB5Eoh5" role="3cqZAp">
+          <node concept="2OqwBi" id="6GMbeB5Eoh6" role="3clFbG">
+            <node concept="37vLTw" id="2cczKT7mPFG" role="2Oq$k0">
+              <ref role="3cqZAo" node="2cczKT7mMlZ" resolve="doc" />
+            </node>
+            <node concept="liA8E" id="6GMbeB5Eoh7" role="2OqNvi">
+              <ref role="37wK5l" to="8qyd:~ODocument.field(java.lang.String,java.lang.Object,com.orientechnologies.orient.core.metadata.schema.OType...):com.orientechnologies.orient.core.record.impl.ODocument" resolve="field" />
+              <node concept="Xl_RD" id="6GMbeB5Eoh8" role="37wK5m">
+                <property role="Xl_RC" value="nodeId" />
+              </node>
+              <node concept="2OqwBi" id="6GMbeB5Eoh9" role="37wK5m">
+                <node concept="2OqwBi" id="6GMbeB5Eoha" role="2Oq$k0">
+                  <node concept="37vLTw" id="6GMbeB5Eohb" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6GMbeB5EojZ" resolve="source" />
+                  </node>
+                  <node concept="liA8E" id="6GMbeB5Eohc" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6GMbeB5Eohd" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                </node>
+              </node>
+              <node concept="Rm8GO" id="6GMbeB5Eohe" role="37wK5m">
+                <ref role="Rm8GQ" to="jm6w:~OType.STRING" resolve="STRING" />
+                <ref role="1Px2BO" to="jm6w:~OType" resolve="OType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6GMbeB5Eohf" role="3cqZAp">
+          <node concept="2OqwBi" id="6GMbeB5Eohg" role="3clFbG">
+            <node concept="37vLTw" id="2cczKT7mPJT" role="2Oq$k0">
+              <ref role="3cqZAo" node="2cczKT7mMlZ" resolve="doc" />
+            </node>
+            <node concept="liA8E" id="6GMbeB5Eohh" role="2OqNvi">
+              <ref role="37wK5l" to="8qyd:~ODocument.field(java.lang.String,java.lang.Object):com.orientechnologies.orient.core.record.impl.ODocument" resolve="field" />
+              <node concept="Xl_RD" id="6GMbeB5Eohi" role="37wK5m">
+                <property role="Xl_RC" value="model" />
+              </node>
+              <node concept="37vLTw" id="6GMbeB5Eohj" role="37wK5m">
+                <ref role="3cqZAo" node="6GMbeB5Eok1" resolve="parentModel" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4QJEJ14T5Ml" role="3cqZAp">
+          <node concept="2OqwBi" id="4QJEJ14T6qk" role="3clFbG">
+            <node concept="37vLTw" id="4QJEJ14T5Mj" role="2Oq$k0">
+              <ref role="3cqZAo" node="2cczKT7mMlZ" resolve="doc" />
+            </node>
+            <node concept="liA8E" id="4QJEJ14TcvH" role="2OqNvi">
+              <ref role="37wK5l" to="8qyd:~ODocument.field(java.lang.String,java.lang.Object,com.orientechnologies.orient.core.metadata.schema.OType...):com.orientechnologies.orient.core.record.impl.ODocument" resolve="field" />
+              <node concept="Xl_RD" id="4QJEJ14TczE" role="37wK5m">
+                <property role="Xl_RC" value="id" />
+              </node>
+              <node concept="2OqwBi" id="4QJEJ14TcT_" role="37wK5m">
+                <node concept="2YIFZM" id="4QJEJ14TcL2" role="2Oq$k0">
+                  <ref role="1Pybhc" to="33ny:~UUID" resolve="UUID" />
+                  <ref role="37wK5l" to="33ny:~UUID.randomUUID():java.util.UUID" resolve="randomUUID" />
+                </node>
+                <node concept="liA8E" id="4QJEJ14Td66" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~UUID.toString():java.lang.String" resolve="toString" />
+                </node>
+              </node>
+              <node concept="Rm8GO" id="4QJEJ14Tdjd" role="37wK5m">
+                <ref role="1Px2BO" to="jm6w:~OType" resolve="OType" />
+                <ref role="Rm8GQ" to="jm6w:~OType.STRING" resolve="STRING" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4QJEJ14TCV1" role="3cqZAp" />
+        <node concept="3clFbJ" id="4QJEJ14Q8dS" role="3cqZAp">
+          <node concept="3clFbS" id="4QJEJ14Q8dU" role="3clFbx">
+            <node concept="3SKdUt" id="4QJEJ14Qa2D" role="3cqZAp">
+              <node concept="3SKdUq" id="4QJEJ14Qa2F" role="3SKWNk">
+                <property role="3SKdUp" value=" it's a root node" />
+              </node>
+            </node>
+            <node concept="34ab3g" id="4QJEJ14RP$R" role="3cqZAp">
+              <property role="35gtTG" value="info" />
+              <node concept="3cpWs3" id="4QJEJ14RPJr" role="34bqiv">
+                <node concept="37vLTw" id="4QJEJ14RPK3" role="3uHU7w">
+                  <ref role="3cqZAo" node="6GMbeB5EojZ" resolve="source" />
+                </node>
+                <node concept="Xl_RD" id="4QJEJ14RP$T" role="3uHU7B">
+                  <property role="Xl_RC" value="Rendering root node:" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4QJEJ14Qa3c" role="3cqZAp">
+              <node concept="2OqwBi" id="4QJEJ14Qabt" role="3clFbG">
+                <node concept="37vLTw" id="4QJEJ14Qa3a" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2cczKT7mMlZ" resolve="doc" />
+                </node>
+                <node concept="liA8E" id="4QJEJ14QaRX" role="2OqNvi">
+                  <ref role="37wK5l" to="8qyd:~ODocument.field(java.lang.String,java.lang.Object,com.orientechnologies.orient.core.metadata.schema.OType...):com.orientechnologies.orient.core.record.impl.ODocument" resolve="field" />
+                  <node concept="Xl_RD" id="4QJEJ14QaUH" role="37wK5m">
+                    <property role="Xl_RC" value="svgRendering" />
+                  </node>
+                  <node concept="1rXfSq" id="4QJEJ14QmDs" role="37wK5m">
+                    <ref role="37wK5l" node="4QJEJ14QcZL" resolve="renderToSvg" />
+                    <node concept="37vLTw" id="4QJEJ14QmLO" role="37wK5m">
+                      <ref role="3cqZAo" node="6GMbeB5EojZ" resolve="source" />
+                    </node>
+                  </node>
+                  <node concept="Rm8GO" id="4QJEJ14RPr8" role="37wK5m">
+                    <ref role="1Px2BO" to="jm6w:~OType" resolve="OType" />
+                    <ref role="Rm8GQ" to="jm6w:~OType.STRING" resolve="STRING" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="22lmx$" id="4QJEJ14R1el" role="3clFbw">
+            <node concept="3clFbC" id="4QJEJ14R1LV" role="3uHU7w">
+              <node concept="10Nm6u" id="4QJEJ14R1N5" role="3uHU7w" />
+              <node concept="2OqwBi" id="4QJEJ14R1Gk" role="3uHU7B">
+                <node concept="37vLTw" id="4QJEJ14R1EQ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6GMbeB5EojZ" resolve="source" />
+                </node>
+                <node concept="liA8E" id="4QJEJ14R1Ki" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SNode.getContainingRoot():org.jetbrains.mps.openapi.model.SNode" resolve="getContainingRoot" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbC" id="4QJEJ14QWP7" role="3uHU7B">
+              <node concept="2OqwBi" id="4QJEJ14QWJu" role="3uHU7B">
+                <node concept="37vLTw" id="4QJEJ14QWHZ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6GMbeB5EojZ" resolve="source" />
+                </node>
+                <node concept="liA8E" id="4QJEJ14QWNt" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SNode.getContainingRoot():org.jetbrains.mps.openapi.model.SNode" resolve="getContainingRoot" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="4QJEJ14QWQy" role="3uHU7w">
+                <ref role="3cqZAo" node="6GMbeB5EojZ" resolve="source" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4QJEJ14RVn7" role="3cqZAp" />
         <node concept="3SKdUt" id="6GMbeB5EoiP" role="3cqZAp">
           <node concept="3SKdUq" id="6GMbeB5EoiQ" role="3SKWNk">
             <property role="3SKdUp" value="populate children" />
@@ -2303,6 +2422,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="4QJEJ14RS0V" role="3cqZAp" />
         <node concept="3clFbF" id="2cczKT7qbyi" role="3cqZAp">
           <node concept="2OqwBi" id="2cczKT7qbZR" role="3clFbG">
             <node concept="Xjq3P" id="2cczKT7qbyd" role="2Oq$k0" />
