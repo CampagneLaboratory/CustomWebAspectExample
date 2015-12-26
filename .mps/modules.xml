@@ -6,6 +6,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.circles.aspect/org.campagnelab.circles.aspect.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.circles.mockup/org.campagnelab.circles.mockup.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.circles.model/org.campagnelab.circles.model.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.stagging/org.campagnelab.stagging.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.orientechnologies.orient/com.orientechnologies.orient.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.circles.aspect.runtime/org.campagnelab.circles.aspect.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.circles.bootstrap/org.webapp.languages.jetbrains_mps_lang_core.msd" folder="" />

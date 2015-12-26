@@ -6,6 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="eo6v" ref="r:1bbd8365-893a-4b06-ac1f-a033b62ca1a7(org.campagnelab.stagging.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="6je1" ref="r:2b50e9c8-828e-4d1c-b75e-74ee8d185c93(org.campagnelab.circles.aspect.structure)" implicit="true" />
   </imports>
@@ -131,7 +132,7 @@
                 <node concept="2Sf5sV" id="2SasHe_B_l1" role="2Oq$k0" />
                 <node concept="3CFZ6_" id="2SasHe_B_to" role="2OqNvi">
                   <node concept="3CFYIy" id="2SasHe_B_uP" role="3CFYIz">
-                    <ref role="3CFYIx" to="6je1:2SasHe_Br3$" resolve="StageToAnnotation" />
+                    <ref role="3CFYIx" to="eo6v:2SasHe_Br3$" resolve="StageToAnnotation" />
                   </node>
                 </node>
               </node>
@@ -149,7 +150,7 @@
                 <node concept="2ShNRf" id="2SasHe_BALo" role="37vLTx">
                   <node concept="3zrR0B" id="2SasHe_BAKU" role="2ShVmc">
                     <node concept="3Tqbb2" id="2SasHe_BAKV" role="3zrR0E">
-                      <ref role="ehGHo" to="6je1:2SasHe_Br3$" resolve="StageToAnnotation" />
+                      <ref role="ehGHo" to="eo6v:2SasHe_Br3$" resolve="StageToAnnotation" />
                     </node>
                   </node>
                 </node>
@@ -157,7 +158,7 @@
                   <node concept="2Sf5sV" id="2SasHe_BABc" role="2Oq$k0" />
                   <node concept="3CFZ6_" id="2SasHe_BAHZ" role="2OqNvi">
                     <node concept="3CFYIy" id="2SasHe_BAIg" role="3CFYIz">
-                      <ref role="3CFYIx" to="6je1:2SasHe_Br3$" resolve="StageToAnnotation" />
+                      <ref role="3CFYIx" to="eo6v:2SasHe_Br3$" resolve="StageToAnnotation" />
                     </node>
                   </node>
                 </node>
@@ -169,7 +170,7 @@
               <node concept="2Sf5sV" id="2SasHe_BAha" role="2Oq$k0" />
               <node concept="3CFZ6_" id="2SasHe_BAoo" role="2OqNvi">
                 <node concept="3CFYIy" id="2SasHe_BAoX" role="3CFYIz">
-                  <ref role="3CFYIx" to="6je1:2SasHe_Br3$" resolve="StageToAnnotation" />
+                  <ref role="3CFYIx" to="eo6v:2SasHe_Br3$" resolve="StageToAnnotation" />
                 </node>
               </node>
             </node>
@@ -183,7 +184,7 @@
                     <node concept="2Sf5sV" id="2SasHe_BAMw" role="2Oq$k0" />
                     <node concept="3CFZ6_" id="2SasHe_BAMx" role="2OqNvi">
                       <node concept="3CFYIy" id="2SasHe_BAMy" role="3CFYIz">
-                        <ref role="3CFYIx" to="6je1:2SasHe_Br3$" resolve="StageToAnnotation" />
+                        <ref role="3CFYIx" to="eo6v:2SasHe_Br3$" resolve="StageToAnnotation" />
                       </node>
                     </node>
                   </node>

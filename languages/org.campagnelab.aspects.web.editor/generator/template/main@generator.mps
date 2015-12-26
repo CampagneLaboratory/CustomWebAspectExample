@@ -9,6 +9,7 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
     <use id="69b8a993-9b87-4d96-bf0c-3559f4bb0c63" name="jetbrains.mps.lang.slanguage" version="0" />
     <use id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect" version="0" />
+    <use id="b42eb996-b76a-4e2d-8132-9278b4ff8107" name="org.campagnelab.stagging" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -244,6 +245,11 @@
         <child id="1167770376702" name="referentFunction" index="3$ytzL" />
       </concept>
     </language>
+    <language id="b42eb996-b76a-4e2d-8132-9278b4ff8107" name="org.campagnelab.stagging">
+      <concept id="3317590328856609124" name="org.campagnelab.stagging.structure.AddImportStatement" flags="ng" index="2bNReR">
+        <property id="3317590328856609125" name="packageName" index="2bNReQ" />
+      </concept>
+    </language>
     <language id="69b8a993-9b87-4d96-bf0c-3559f4bb0c63" name="jetbrains.mps.lang.slanguage">
       <concept id="2030416617761226491" name="jetbrains.mps.lang.slanguage.structure.Model_IsAspectOperation" flags="nn" index="3zA4fs">
         <reference id="2030416617761226680" name="aspect" index="3zA4av" />
@@ -283,11 +289,6 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-    </language>
-    <language id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect">
-      <concept id="3317590328856609124" name="org.campagnelab.circles.aspect.structure.AddImportStatement" flags="ng" index="2bNReR">
-        <property id="3317590328856609125" name="packageName" index="2bNReQ" />
       </concept>
     </language>
   </registry>
@@ -643,7 +644,7 @@
         <node concept="2bNReR" id="4NDm0Lvb1d" role="gfFT$">
           <property role="2bNReQ" value=".client.place" />
           <node concept="17Uvod" id="4NDm0Lvb1g" role="lGtFl">
-            <property role="P4ACc" value="8c40f9f4-b3bd-42d0-8b65-8e644273493c/3317590328856609124/3317590328856609125" />
+            <property role="P4ACc" value="b42eb996-b76a-4e2d-8132-9278b4ff8107/3317590328856609124/3317590328856609125" />
             <property role="2qtEX9" value="packageName" />
             <node concept="3zFVjK" id="4NDm0Lvb1h" role="3zH0cK">
               <node concept="3clFbS" id="4NDm0Lvb1i" role="2VODD2">
