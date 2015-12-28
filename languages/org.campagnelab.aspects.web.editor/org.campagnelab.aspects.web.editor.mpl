@@ -68,7 +68,6 @@
         <module reference="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" version="0" />
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
-        <module reference="a1250a4d-c090-42c3-ad7c-d298a3357dd4(jetbrains.mps.make.runtime)" version="0" />
         <module reference="9e4f255e-96f4-445b-89f6-4c156d9e8e22(org.campagnelab.aspects.web.editor)" version="0" />
         <module reference="752bdff3-3d90-437b-b860-e4db8c4345c5(org.campagnelab.aspects.web.editor#5761987585673252946)" version="0" />
         <module reference="8c40f9f4-b3bd-42d0-8b65-8e644273493c(org.campagnelab.circles.aspect)" version="0" />
@@ -142,7 +141,6 @@
     <module reference="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" version="0" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
-    <module reference="a1250a4d-c090-42c3-ad7c-d298a3357dd4(jetbrains.mps.make.runtime)" version="0" />
     <module reference="9e4f255e-96f4-445b-89f6-4c156d9e8e22(org.campagnelab.aspects.web.editor)" version="0" />
     <module reference="8c40f9f4-b3bd-42d0-8b65-8e644273493c(org.campagnelab.circles.aspect)" version="0" />
     <module reference="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3(org.google.gwt)" version="0" />
