@@ -35,6 +35,7 @@
       </concept>
       <concept id="1237305557638" name="jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart" flags="ng" index="la8eA">
         <property id="1237305576108" name="value" index="lacIc" />
+        <property id="1237306361677" name="withIndent" index="ldcpH" />
       </concept>
       <concept id="1237306079178" name="jetbrains.mps.lang.textGen.structure.AppendOperation" flags="nn" index="lc7rE">
         <child id="1237306115446" name="part" index="lcghm" />
@@ -75,7 +76,7 @@
           <node concept="3clFbS" id="4KD0Z41dDOV" role="3izTki">
             <node concept="lc7rE" id="2qyF3mCbwsu" role="3cqZAp">
               <node concept="la8eA" id="2qyF3mCbwsG" role="lcghm">
-                <property role="lacIc" value="abstract" />
+                <property role="lacIc" value="public abstract" />
               </node>
               <node concept="la8eA" id="4KD0Z41cJV4" role="lcghm">
                 <property role="lacIc" value=" " />
@@ -120,6 +121,36 @@
               <node concept="l8MVK" id="4KD0Z41cc94" role="lcghm" />
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="4KD0Z41r_Aw">
+    <property role="3GE5qa" value="methods" />
+    <ref role="WuzLi" to="6je1:4KD0Z41r$vB" resolve="UserMethodReference" />
+    <node concept="11bSqf" id="4KD0Z41r_Ax" role="11c4hB">
+      <node concept="3clFbS" id="4KD0Z41r_Ay" role="2VODD2">
+        <node concept="lc7rE" id="4KD0Z41uxGf" role="3cqZAp">
+          <node concept="l8MVK" id="4KD0Z41uFvB" role="lcghm" />
+          <node concept="la8eA" id="4KD0Z41uxGR" role="lcghm">
+            <property role="lacIc" value="// call the user method" />
+          </node>
+          <node concept="l8MVK" id="4KD0Z41uxHl" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="4KD0Z41r_AI" role="3cqZAp">
+          <node concept="l9hG8" id="4KD0Z41r_Bn" role="lcghm">
+            <node concept="2OqwBi" id="4KD0Z41r_DQ" role="lb14g">
+              <node concept="117lpO" id="4KD0Z41r_C5" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4KD0Z41r_JD" role="2OqNvi">
+                <ref role="3TsBF5" to="6je1:4KD0Z41r$vE" resolve="methodName" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="4KD0Z41r_L$" role="lcghm">
+            <property role="lacIc" value="();" />
+            <property role="ldcpH" value="true" />
+          </node>
+          <node concept="l8MVK" id="4KD0Z41tau0" role="lcghm" />
         </node>
       </node>
     </node>

@@ -122,9 +122,21 @@
     </node>
     <node concept="3EZMnI" id="6mblWKdSkKT" role="6VMZX">
       <node concept="l2Vlx" id="6mblWKdSkKU" role="2iSdaV" />
+      <node concept="3F0ifn" id="4KD0Z41hqNe" role="3EZMnx">
+        <property role="3F0ifm" value="renameExtension:" />
+      </node>
       <node concept="3F1sOY" id="6mblWKdSkLM" role="3EZMnx">
         <property role="1$x2rV" value="press enter to change the file extension" />
         <ref role="1NtTu8" to="eo6v:6mblWKdSkLJ" />
+      </node>
+      <node concept="3F0ifn" id="4KD0Z41hqMT" role="3EZMnx">
+        <property role="3F0ifm" value="skipWhenFileExists:" />
+        <node concept="pVoyu" id="4KD0Z41hqN6" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4KD0Z41hqN1" role="3EZMnx">
+        <ref role="1NtTu8" to="eo6v:4KD0Z41hqML" resolve="skipWhenFileExists" />
       </node>
     </node>
   </node>

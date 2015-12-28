@@ -33,6 +33,7 @@
     <import index="1kj4" ref="r:0bcaf439-5bc6-429b-a457-4e0d9746449f(jetbrains.mps.make.delta)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="7x5y" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.charset(JDK/)" />
+    <import index="80em" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.make.delta(MPS.Core/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -57,6 +58,7 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -189,6 +191,9 @@
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -755,6 +760,17 @@
                                         <ref role="3cqZAo" node="2SasHe_OIBb" resolve="imports" />
                                       </node>
                                     </node>
+                                    <node concept="2r$n1x" id="4KD0Z41j7ND" role="2r_Bvh">
+                                      <ref role="2r$qp6" node="4KD0Z41j6kL" resolve="skipWhenFileExists" />
+                                      <node concept="2OqwBi" id="4KD0Z41j897" role="2r_lH1">
+                                        <node concept="37vLTw" id="4KD0Z41j81q" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="2SasHe_CkHJ" resolve="destination" />
+                                        </node>
+                                        <node concept="3TrcHB" id="4KD0Z41j8mo" role="2OqNvi">
+                                          <ref role="3TsBF5" to="eo6v:4KD0Z41hqML" resolve="skipWhenFileExists" />
+                                        </node>
+                                      </node>
+                                    </node>
                                   </node>
                                 </node>
                               </node>
@@ -990,7 +1006,7 @@
                           </node>
                         </node>
                         <node concept="A3Dl8" id="66ZrW4OsknJ" role="1tU5fm">
-                          <node concept="3uibUv" id="66ZrW4OsknM" role="A3Ik2">
+                          <node concept="3uibUv" id="4KD0Z41j2pK" role="A3Ik2">
                             <ref role="3uigEE" to="1kj4:16rzRJauwMP" resolve="IDelta" />
                           </node>
                         </node>
@@ -1241,39 +1257,86 @@
                                       </node>
                                     </node>
                                   </node>
-                                  <node concept="3clFbF" id="2SasHe_JQSr" role="3cqZAp">
-                                    <node concept="1rXfSq" id="2SasHe_JQSp" role="3clFbG">
-                                      <ref role="37wK5l" node="2SasHe_JNuQ" resolve="copyRenamePackage" />
-                                      <node concept="37vLTw" id="2SasHe_JR23" role="37wK5m">
-                                        <ref role="3cqZAo" node="2SasHe_GYBP" resolve="toMove" />
-                                      </node>
-                                      <node concept="37vLTw" id="2SasHe_JR5t" role="37wK5m">
-                                        <ref role="3cqZAo" node="2SasHe_GYBX" resolve="destination" />
-                                      </node>
-                                      <node concept="2OqwBi" id="2SasHe_JRxd" role="37wK5m">
-                                        <node concept="2OqwBi" id="2SasHe_JRdm" role="2Oq$k0">
-                                          <node concept="37vLTw" id="2SasHe_JR99" role="2Oq$k0">
+                                  <node concept="3cpWs8" id="4KD0Z41jaUx" role="3cqZAp">
+                                    <node concept="3cpWsn" id="4KD0Z41jaU$" role="3cpWs9">
+                                      <property role="TrG5h" value="skipWhenFileExists" />
+                                      <node concept="10P_77" id="4KD0Z41jaUv" role="1tU5fm" />
+                                      <node concept="2OqwBi" id="4KD0Z41jauV" role="33vP2m">
+                                        <node concept="2OqwBi" id="4KD0Z41jauW" role="2Oq$k0">
+                                          <node concept="37vLTw" id="4KD0Z41jauX" role="2Oq$k0">
                                             <ref role="3cqZAo" node="2SasHe_GYBL" resolve="infoWithFile" />
                                           </node>
-                                          <node concept="2sxana" id="2SasHe_JRmP" role="2OqNvi">
+                                          <node concept="2sxana" id="4KD0Z41jauY" role="2OqNvi">
                                             <ref role="2sxfKC" node="2SasHe_H0qz" resolve="triplet" />
                                           </node>
                                         </node>
-                                        <node concept="2sxana" id="2SasHe_JREy" role="2OqNvi">
-                                          <ref role="2sxfKC" node="2SasHe_ClgN" resolve="packageName" />
+                                        <node concept="2sxana" id="4KD0Z41jauZ" role="2OqNvi">
+                                          <ref role="2sxfKC" node="4KD0Z41j6kL" resolve="skipWhenFileExists" />
                                         </node>
                                       </node>
-                                      <node concept="2OqwBi" id="2SasHe_Lr4W" role="37wK5m">
-                                        <node concept="2OqwBi" id="2SasHe_LqJA" role="2Oq$k0">
-                                          <node concept="37vLTw" id="2SasHe_LqFJ" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="2SasHe_GYBL" resolve="infoWithFile" />
+                                    </node>
+                                  </node>
+                                  <node concept="3clFbJ" id="4KD0Z41j8U$" role="3cqZAp">
+                                    <node concept="3clFbS" id="4KD0Z41j8UA" role="3clFbx">
+                                      <node concept="3clFbF" id="2SasHe_JQSr" role="3cqZAp">
+                                        <node concept="1rXfSq" id="2SasHe_JQSp" role="3clFbG">
+                                          <ref role="37wK5l" node="2SasHe_JNuQ" resolve="copyRenamePackage" />
+                                          <node concept="37vLTw" id="2SasHe_JR23" role="37wK5m">
+                                            <ref role="3cqZAo" node="2SasHe_GYBP" resolve="toMove" />
                                           </node>
-                                          <node concept="2sxana" id="2SasHe_LqSq" role="2OqNvi">
-                                            <ref role="2sxfKC" node="2SasHe_H0qz" resolve="triplet" />
+                                          <node concept="37vLTw" id="2SasHe_JR5t" role="37wK5m">
+                                            <ref role="3cqZAo" node="2SasHe_GYBX" resolve="destination" />
+                                          </node>
+                                          <node concept="2OqwBi" id="2SasHe_JRxd" role="37wK5m">
+                                            <node concept="2OqwBi" id="2SasHe_JRdm" role="2Oq$k0">
+                                              <node concept="37vLTw" id="2SasHe_JR99" role="2Oq$k0">
+                                                <ref role="3cqZAo" node="2SasHe_GYBL" resolve="infoWithFile" />
+                                              </node>
+                                              <node concept="2sxana" id="2SasHe_JRmP" role="2OqNvi">
+                                                <ref role="2sxfKC" node="2SasHe_H0qz" resolve="triplet" />
+                                              </node>
+                                            </node>
+                                            <node concept="2sxana" id="2SasHe_JREy" role="2OqNvi">
+                                              <ref role="2sxfKC" node="2SasHe_ClgN" resolve="packageName" />
+                                            </node>
+                                          </node>
+                                          <node concept="2OqwBi" id="2SasHe_Lr4W" role="37wK5m">
+                                            <node concept="2OqwBi" id="2SasHe_LqJA" role="2Oq$k0">
+                                              <node concept="37vLTw" id="2SasHe_LqFJ" role="2Oq$k0">
+                                                <ref role="3cqZAo" node="2SasHe_GYBL" resolve="infoWithFile" />
+                                              </node>
+                                              <node concept="2sxana" id="2SasHe_LqSq" role="2OqNvi">
+                                                <ref role="2sxfKC" node="2SasHe_H0qz" resolve="triplet" />
+                                              </node>
+                                            </node>
+                                            <node concept="2sxana" id="2SasHe_OZhH" role="2OqNvi">
+                                              <ref role="2sxfKC" node="2SasHe_OGX2" resolve="addTheseImportedPackages" />
+                                            </node>
                                           </node>
                                         </node>
-                                        <node concept="2sxana" id="2SasHe_OZhH" role="2OqNvi">
-                                          <ref role="2sxfKC" node="2SasHe_OGX2" resolve="addTheseImportedPackages" />
+                                      </node>
+                                    </node>
+                                    <node concept="22lmx$" id="4KD0Z41jbh3" role="3clFbw">
+                                      <node concept="1eOMI4" id="4KD0Z41jbGZ" role="3uHU7w">
+                                        <node concept="1Wc70l" id="4KD0Z41jbxz" role="1eOMHV">
+                                          <node concept="3fqX7Q" id="4KD0Z41jdlj" role="3uHU7w">
+                                            <node concept="2OqwBi" id="4KD0Z41jdll" role="3fr31v">
+                                              <node concept="37vLTw" id="4KD0Z41jdlm" role="2Oq$k0">
+                                                <ref role="3cqZAo" node="2SasHe_GYBX" resolve="destination" />
+                                              </node>
+                                              <node concept="liA8E" id="4KD0Z41jdln" role="2OqNvi">
+                                                <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                                              </node>
+                                            </node>
+                                          </node>
+                                          <node concept="37vLTw" id="4KD0Z41jbsv" role="3uHU7B">
+                                            <ref role="3cqZAo" node="4KD0Z41jaU$" resolve="skipWhenFileExists" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="3fqX7Q" id="4KD0Z41jauT" role="3uHU7B">
+                                        <node concept="37vLTw" id="4KD0Z41jb6L" role="3fr31v">
+                                          <ref role="3cqZAo" node="4KD0Z41jaU$" resolve="skipWhenFileExists" />
                                         </node>
                                       </node>
                                     </node>
@@ -2539,6 +2602,11 @@
         <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
         <node concept="17QB3L" id="2SasHe_ONQY" role="11_B2D" />
       </node>
+    </node>
+    <node concept="2lGYhJ" id="4KD0Z41j6kL" role="2pHZQ9">
+      <property role="3dDGau" value="false" />
+      <property role="TrG5h" value="skipWhenFileExists" />
+      <node concept="10P_77" id="4KD0Z41j6o3" role="2lK19J" />
     </node>
     <node concept="3Tm1VV" id="2SasHe_Clar" role="1B3o_S" />
   </node>

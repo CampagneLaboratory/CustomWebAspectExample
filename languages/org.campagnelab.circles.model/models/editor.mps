@@ -70,6 +70,10 @@
       <concept id="86594650414985952" name="org.campagnelab.aspects.web.editor.structure.SVGDocument" flags="ng" index="Kn9u0">
         <reference id="86594650414985956" name="source" index="Kn9u4" />
       </concept>
+      <concept id="5487921954572064729" name="org.campagnelab.aspects.web.editor.structure.ActionLink" flags="ng" index="1dvdgC">
+        <property id="5487921954572064750" name="text" index="1dvdgv" />
+        <reference id="5487921954572064752" name="method" index="1dvdg1" />
+      </concept>
     </language>
   </registry>
   <node concept="24kQdi" id="6mblWKeeSxf">
@@ -418,6 +422,10 @@
       <node concept="3Hm0P" id="3W6nzRGeesC" role="3EZMnx">
         <property role="3Hlny" value="Playground" />
         <ref role="3Hln$" to="qkpo:6mblWKecU_y" resolve="ViewProject" />
+      </node>
+      <node concept="1dvdgC" id="4KD0Z41luCt" role="3EZMnx">
+        <property role="1dvdgv" value="clear all" />
+        <ref role="1dvdg1" to="qkpo:2qyF3mCa9UF" resolve="clearAll" />
       </node>
       <node concept="l2Vlx" id="29x8GeHEHiD" role="2iSdaV" />
     </node>

@@ -675,5 +675,16 @@
     <property role="3GE5qa" value="methods" />
     <ref role="1TJDcQ" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
   </node>
+  <node concept="1TIwiD" id="4KD0Z41r$vB">
+    <property role="1pbfSe" value="1301760984" />
+    <property role="3GE5qa" value="methods" />
+    <property role="TrG5h" value="UserMethodReference" />
+    <property role="34LRSv" value="user method reference" />
+    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
+    <node concept="1TJgyi" id="4KD0Z41r$vE" role="1TKVEl">
+      <property role="TrG5h" value="methodName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 

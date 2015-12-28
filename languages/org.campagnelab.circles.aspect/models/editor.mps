@@ -1198,5 +1198,22 @@
       <node concept="l2Vlx" id="2qyF3mCaakG" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="4KD0Z41r_Ai">
+    <property role="3GE5qa" value="methods" />
+    <ref role="1XX52x" to="6je1:4KD0Z41r$vB" resolve="UserMethodReference" />
+    <node concept="3EZMnI" id="4KD0Z41seki" role="2wV5jI">
+      <node concept="l2Vlx" id="4KD0Z41sekj" role="2iSdaV" />
+      <node concept="3F0A7n" id="4KD0Z41sekf" role="3EZMnx">
+        <ref role="1NtTu8" to="6je1:4KD0Z41r$vE" resolve="methodName" />
+      </node>
+      <node concept="3F0ifn" id="4KD0Z41sekr" role="3EZMnx">
+        <property role="3F0ifm" value="()" />
+        <node concept="11L4FC" id="4KD0Z41tr1w" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="Vb9p2" id="4KD0Z41tr3g" role="3F10Kt" />
+      </node>
+    </node>
+  </node>
 </model>
 
