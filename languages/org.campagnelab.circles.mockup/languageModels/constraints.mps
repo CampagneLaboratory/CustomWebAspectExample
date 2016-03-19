@@ -2,12 +2,12 @@
 <model ref="r:b99073a9-8fd3-48fe-a455-a5ca665e2df9(org.campagnelab.circles.mockup.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="lx25" ref="r:e31384f7-a31d-4af6-8a66-5b258c55e2b9(org.campagnelab.circles.mockup.behavior)" implicit="true" />
     <import index="avse" ref="r:51fcf803-02a7-4ac6-994f-040e45f3e9a5(org.campagnelab.circles.mockup.structure)" implicit="true" />
+    <import index="lx25" ref="r:e31384f7-a31d-4af6-8a66-5b258c55e2b9(org.campagnelab.circles.mockup.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">

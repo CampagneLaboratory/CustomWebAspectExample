@@ -2,7 +2,7 @@
 <model ref="r:3d4b8a25-2cca-4083-ac64-ee80560fc20e(org.campagnelab.circles.model.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <use id="9e4f255e-96f4-445b-89f6-4c156d9e8e22" name="org.campagnelab.aspects.web.editor" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -70,7 +70,7 @@
       <concept id="86594650414985952" name="org.campagnelab.aspects.web.editor.structure.SVGDocument" flags="ng" index="Kn9u0">
         <reference id="86594650414985956" name="source" index="Kn9u4" />
       </concept>
-      <concept id="5487921954572064729" name="org.campagnelab.aspects.web.editor.structure.ActionLink" flags="ng" index="1dvdgC">
+      <concept id="5487921954572064729" name="org.campagnelab.aspects.web.editor.structure.CellModel_ActionLink" flags="ng" index="1dvdgC">
         <property id="5487921954572064750" name="text" index="1dvdgv" />
         <reference id="5487921954572064752" name="method" index="1dvdg1" />
       </concept>
