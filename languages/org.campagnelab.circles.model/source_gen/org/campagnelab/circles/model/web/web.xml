@@ -1,0 +1,12 @@
+<?xml version = "1.0"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee\n\t\t  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  
+  <servlet>
+    <servlet-name>org.campagnelab.circles.model DbGenericService_org_campagnelab_circles_model</servlet-name>
+    <servlet-class>org.webapp.languages.org_campagnelab_circles_model.server.DbGenericServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>org.campagnelab.circles.model DbGenericService_org_campagnelab_circles_model</servlet-name>
+    <url-pattern>/org.campagnelab.circles.model/dbGenericService_org_campagnelab_circles_model</url-pattern>
+  </servlet-mapping>
+</web-app>
