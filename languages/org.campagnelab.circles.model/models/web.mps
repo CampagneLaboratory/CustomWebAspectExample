@@ -5,6 +5,14 @@
     <use id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" name="org.campagnelab.circles.aspect" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="9e4f255e-96f4-445b-89f6-4c156d9e8e22" name="org.campagnelab.aspects.web.editor" version="0" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="93bc01ac-08ca-4f11-9c7d-614d04055dfb" name="org.campagnelab.mps.editor2pdf" version="0" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <generationPart ref="9e4f255e-96f4-445b-89f6-4c156d9e8e22(org.campagnelab.aspects.web.editor)" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -12,8 +20,15 @@
     <import index="77ry" ref="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
     <import index="ehbc" ref="r:3d4b8a25-2cca-4083-ac64-ee80560fc20e(org.campagnelab.circles.model.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="xz77" ref="r:1cb53e38-6e72-40c6-a62e-7e8b44b75406(model)" />
   </imports>
   <registry>
+    <language id="93bc01ac-08ca-4f11-9c7d-614d04055dfb" name="org.campagnelab.mps.editor2pdf">
+      <concept id="8751972264247112684" name="org.campagnelab.mps.editor2pdf.structure.EditorAnnotation" flags="ng" index="3ZW7eb">
+        <property id="5378718574870043633" name="outputFormat" index="2ripvU" />
+        <reference id="893392931327136863" name="outputTo" index="KZaLW" />
+      </concept>
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
@@ -36,6 +51,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -187,6 +205,11 @@
     <node concept="1mS4fQ" id="29x8GeHHgRy" role="1mS4fN">
       <ref role="1mS4fP" to="77ry:2cczKT7cIdg" resolve="Root" />
     </node>
+    <node concept="3ZW7eb" id="2AOESKYijOJ" role="lGtFl">
+      <property role="2ripvU" value="1" />
+      <property role="TrG5h" value="Circles_PersistedConcepts-1" />
+      <ref role="KZaLW" to="xz77:2AOESKYijNM" resolve="VOLUME_II" />
+    </node>
   </node>
   <node concept="B0a0o" id="4UvP5h6JFr9">
     <property role="B0a0v" value="remote:127.0.0.1/circles" />
@@ -265,11 +288,21 @@
         </node>
       </node>
     </node>
+    <node concept="3ZW7eb" id="2AOESKYijOC" role="lGtFl">
+      <property role="2ripvU" value="1" />
+      <property role="TrG5h" value="Circles_DatabaseQueries-1" />
+      <ref role="KZaLW" to="xz77:2AOESKYijNM" resolve="VOLUME_II" />
+    </node>
   </node>
   <node concept="3X4l2l" id="6mblWKdIZZl">
     <property role="3X4dV5" value="org.campagnelab.circles.model" />
     <node concept="1ClkGB" id="29x8GeI2XiM" role="1ClkGw">
       <property role="1CltWq" value="View MPS Nodes" />
+    </node>
+    <node concept="3ZW7eb" id="2AOESKYijNP" role="lGtFl">
+      <property role="2ripvU" value="1" />
+      <property role="TrG5h" value="GwtModule-1" />
+      <ref role="KZaLW" to="xz77:2AOESKYijNM" resolve="VOLUME_II" />
     </node>
   </node>
   <node concept="1F$HYy" id="6mblWKecU_y">
@@ -307,6 +340,11 @@
     </node>
     <node concept="YxNCn" id="4QJEJ143dGY" role="YxNBU">
       <ref role="YxNCm" to="ehbc:4QJEJ1435Ds" resolve="RootRef_Editor" />
+    </node>
+    <node concept="3ZW7eb" id="2AOESKYijOL" role="lGtFl">
+      <property role="2ripvU" value="1" />
+      <property role="TrG5h" value="Cirlces_WebEditors-1" />
+      <ref role="KZaLW" to="xz77:2AOESKYijNM" resolve="VOLUME_II" />
     </node>
   </node>
   <node concept="1F$HYy" id="2y8Odf5TtRM">
@@ -348,6 +386,11 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="3ZW7eb" id="2AOESKYijON" role="lGtFl">
+      <property role="2ripvU" value="1" />
+      <property role="TrG5h" value="Circles_SearchNodesPlace-1" />
+      <ref role="KZaLW" to="xz77:2AOESKYijNM" resolve="VOLUME_II" />
     </node>
   </node>
   <node concept="1F$HYy" id="4QJEJ1435DJ">
@@ -432,6 +475,11 @@
       <property role="1pRVva" value="org.campagnelab" />
       <property role="1pRVvb" value="circles" />
       <property role="1pRVv4" value="1.0-SNAPSHOT" />
+    </node>
+    <node concept="3ZW7eb" id="2AOESKYijOE" role="lGtFl">
+      <property role="2ripvU" value="1" />
+      <property role="TrG5h" value="Circles_Pom_xml-1" />
+      <ref role="KZaLW" to="xz77:2AOESKYijNM" resolve="VOLUME_II" />
     </node>
   </node>
   <node concept="2exBce" id="2qyF3mC9PwA">

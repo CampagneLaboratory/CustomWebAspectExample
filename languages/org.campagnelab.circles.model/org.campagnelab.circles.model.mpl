@@ -12,6 +12,7 @@
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
     <dependency reexport="false">3dc3d3d3-b034-480c-8b21-d7a88903974b(org.campagnelab.circles.mockup)</dependency>
     <dependency reexport="false">9e4f255e-96f4-445b-89f6-4c156d9e8e22(org.campagnelab.aspects.web.editor)</dependency>
+    <dependency reexport="false">602575bc-87ac-4c84-862e-2a23f56e79c0(playground)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -38,6 +39,7 @@
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
     <language id="9e4f255e-96f4-445b-89f6-4c156d9e8e22" fqName="org.campagnelab.aspects.web.editor" version="0" />
     <language id="8c40f9f4-b3bd-42d0-8b65-8e644273493c" fqName="org.campagnelab.circles.aspect" version="0" />
+    <language id="93bc01ac-08ca-4f11-9c7d-614d04055dfb" fqName="org.campagnelab.mps.editor2pdf" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -65,6 +67,7 @@
     <module reference="87c8043e-fece-4ba6-9d13-3ef71e47af25(org.campagnelab.circles.model)" version="0" />
     <module reference="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3(org.google.gwt)" version="0" />
     <module reference="0cf10c09-b393-4a0c-981d-fec20eebfa22(org.webapp.languages.jetbrains_mps_lang_core)" version="0" />
+    <module reference="602575bc-87ac-4c84-862e-2a23f56e79c0(playground)" version="0" />
   </dependencyVersions>
   <runtime>
     <dependency reexport="false">b117aec4-8d9e-4c87-a347-e41e0dfe0990(org.campagnelab.circles.aspect.runtime)</dependency>
