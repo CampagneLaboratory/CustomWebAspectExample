@@ -11,23 +11,12 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
-      </concept>
     </language>
     <language id="90746344-04fd-4286-97d5-b46ae6a81709" name="jetbrains.mps.lang.migration">
-      <concept id="3116305438947623353" name="jetbrains.mps.lang.migration.structure.MoveProperty" flags="ng" index="7a1rK" />
-      <concept id="3116305438947623354" name="jetbrains.mps.lang.migration.structure.MoveContainmentLink" flags="ng" index="7a1rN" />
-      <concept id="3116305438947623350" name="jetbrains.mps.lang.migration.structure.MoveConcept" flags="ng" index="7a1rZ" />
       <concept id="3116305438947553624" name="jetbrains.mps.lang.migration.structure.RefactoringPart" flags="ng" index="7amoh">
         <property id="3628660716136424362" name="participant" index="hSBgo" />
         <child id="3628660716136424366" name="finalState" index="hSBgs" />
@@ -42,14 +31,6 @@
         <property id="2015900981881695633" name="fromVersion" index="W$Cri" />
         <child id="2015900981881695634" name="part" index="W$Crh" />
         <child id="3597905718825595708" name="options" index="1w76sc" />
-      </concept>
-      <concept id="7431903976166007326" name="jetbrains.mps.lang.migration.structure.MoveNode" flags="ng" index="Z4OXk">
-        <child id="3116305438947564633" name="specialization" index="7agGg" />
-        <child id="7431903976166276375" name="toNode" index="Z5P1t" />
-        <child id="7431903976166276373" name="fromNode" index="Z5P1v" />
-      </concept>
-      <concept id="7431903976166443707" name="jetbrains.mps.lang.migration.structure.PureMigrationScript" flags="ng" index="Z5qvL">
-        <property id="7431903976166443708" name="fromVersion" index="Z5qvQ" />
       </concept>
       <concept id="3597905718825595712" name="jetbrains.mps.lang.migration.structure.RefactoringOptions" flags="ng" index="1w76tK">
         <child id="3597905718825595718" name="options" index="1w76tQ" />
@@ -229,61 +210,6 @@
         <property role="2pBcoG" value="2477299493858104489" />
         <property role="2pBcow" value="r:3d4b8a25-2cca-4083-ac64-ee80560fc20e(org.campagnelab.circles.model.editor)" />
         <property role="2pBc3U" value="CellLayout_Indent@99893" />
-      </node>
-    </node>
-  </node>
-  <node concept="Z5qvL" id="29x8GeHLq4e">
-    <property role="Z5qvQ" value="0" />
-    <property role="TrG5h" value="MigrationScript_0" />
-    <node concept="1X3_iC" id="29x8GeHWCJ0" role="lGtFl">
-      <property role="3V$3am" value="part" />
-      <property role="3V$3ak" value="90746344-04fd-4286-97d5-b46ae6a81709/7431903976166443707/7431903976166447091" />
-      <node concept="Z4OXk" id="29x8GeHLq4j" role="8Wnug">
-        <node concept="2pBcaW" id="29x8GeHLq4h" role="Z5P1v">
-          <property role="2pBcoG" value="2477299493858104477" />
-          <property role="2pBcow" value="r:51fcf803-02a7-4ac6-994f-040e45f3e9a5(org.campagnelab.circles.mockup.structure)" />
-          <property role="2pBc3U" value="results_old" />
-        </node>
-        <node concept="2pBcaW" id="29x8GeHLq4i" role="Z5P1t">
-          <property role="2pBcoG" value="2477299493858104477" />
-          <property role="2pBcow" value="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
-          <property role="2pBc3U" value="results" />
-        </node>
-        <node concept="7a1rN" id="29x8GeHLq4g" role="7agGg" />
-      </node>
-    </node>
-    <node concept="1X3_iC" id="29x8GeHWCJi" role="lGtFl">
-      <property role="3V$3am" value="part" />
-      <property role="3V$3ak" value="90746344-04fd-4286-97d5-b46ae6a81709/7431903976166443707/7431903976166447091" />
-      <node concept="Z4OXk" id="29x8GeHLq4o" role="8Wnug">
-        <node concept="2pBcaW" id="29x8GeHLq4m" role="Z5P1v">
-          <property role="2pBcoG" value="2477299493858104475" />
-          <property role="2pBcow" value="r:51fcf803-02a7-4ac6-994f-040e45f3e9a5(org.campagnelab.circles.mockup.structure)" />
-          <property role="2pBc3U" value="searchTerm_old" />
-        </node>
-        <node concept="2pBcaW" id="29x8GeHLq4n" role="Z5P1t">
-          <property role="2pBcoG" value="2477299493858104475" />
-          <property role="2pBcow" value="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
-          <property role="2pBc3U" value="searchTerm" />
-        </node>
-        <node concept="7a1rK" id="29x8GeHLq4l" role="7agGg" />
-      </node>
-    </node>
-    <node concept="1X3_iC" id="29x8GeHWCJ_" role="lGtFl">
-      <property role="3V$3am" value="part" />
-      <property role="3V$3ak" value="90746344-04fd-4286-97d5-b46ae6a81709/7431903976166443707/7431903976166447091" />
-      <node concept="Z4OXk" id="29x8GeHLq4t" role="8Wnug">
-        <node concept="2pBcaW" id="29x8GeHLq4r" role="Z5P1v">
-          <property role="2pBcoG" value="2477299493858104474" />
-          <property role="2pBcow" value="r:51fcf803-02a7-4ac6-994f-040e45f3e9a5(org.campagnelab.circles.mockup.structure)" />
-          <property role="2pBc3U" value="SearchNodes_old" />
-        </node>
-        <node concept="2pBcaW" id="29x8GeHLq4s" role="Z5P1t">
-          <property role="2pBcoG" value="2477299493858104474" />
-          <property role="2pBcow" value="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
-          <property role="2pBc3U" value="SearchNodes" />
-        </node>
-        <node concept="7a1rZ" id="29x8GeHLq4q" role="7agGg" />
       </node>
     </node>
   </node>
