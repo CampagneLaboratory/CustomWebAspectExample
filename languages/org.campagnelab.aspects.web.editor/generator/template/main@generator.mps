@@ -24,6 +24,7 @@
     <import index="3isf" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:org.vectomatic.dom.svg(org.google.gwt/)" />
     <import index="chl9" ref="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:jetbrains.jetpad.base(org.google.gwt/)" />
     <import index="gyfg" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.base(MPS.Core/)" />
+    <import index="drkx" ref="r:25f3c254-f367-4c0e-9787-31029b580cb9(org.campagnelab.aspects.web.editor.generator.template.main@generator)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -104,9 +105,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
-        <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
-      </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -464,99 +463,70 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3clFbF" id="4NDm0LZa9S" role="3cqZAp">
-                        <node concept="37vLTI" id="4NDm0LZa9T" role="3clFbG">
-                          <node concept="2OqwBi" id="4NDm0LZa9U" role="37vLTJ">
-                            <node concept="Xjq3P" id="4NDm0LZa9V" role="2Oq$k0" />
-                            <node concept="2OwXpG" id="4NDm0LZa9W" role="2OqNvi">
+                      <node concept="3clFbF" id="2M4BYkuWn8U" role="3cqZAp">
+                        <node concept="37vLTI" id="2M4BYkuWn8V" role="3clFbG">
+                          <node concept="2OqwBi" id="2M4BYkuWn8W" role="37vLTJ">
+                            <node concept="Xjq3P" id="2M4BYkuWn8X" role="2Oq$k0" />
+                            <node concept="2OwXpG" id="2M4BYkuWn8Y" role="2OqNvi">
                               <ref role="2Oxat5" node="4NDm0LZa9G" resolve="myRegistration" />
                             </node>
                           </node>
-                          <node concept="2OqwBi" id="4NDm0LZabg" role="37vLTx">
-                            <node concept="37vLTw" id="4NDm0LZabf" role="2Oq$k0">
+                          <node concept="2OqwBi" id="2M4BYkuWn9s" role="37vLTx">
+                            <node concept="37vLTw" id="2M4BYkuWn9r" role="2Oq$k0">
                               <ref role="3cqZAo" node="4NDm0LZa9x" resolve="source" />
                             </node>
-                            <node concept="liA8E" id="4NDm0M07KY" role="2OqNvi">
+                            <node concept="liA8E" id="2M4BYkuWn9t" role="2OqNvi">
                               <ref role="37wK5l" to="x7mh:~EventSource.addHandler(jetbrains.jetpad.model.event.EventHandler):jetbrains.jetpad.base.Registration" resolve="addHandler" />
-                              <node concept="2ShNRf" id="4NDm0LZa9Y" role="37wK5m">
-                                <node concept="YeOm9" id="4NDm0LZa9Z" role="2ShVmc">
-                                  <node concept="1Y3b0j" id="4NDm0LZaa0" role="YeSDq">
-                                    <property role="2bfB8j" value="true" />
+                              <node concept="2ShNRf" id="2M4BYkuWn90" role="37wK5m">
+                                <node concept="YeOm9" id="2M4BYkuWn91" role="2ShVmc">
+                                  <node concept="1Y3b0j" id="2M4BYkuWn92" role="YeSDq">
                                     <property role="1sVAO0" value="false" />
                                     <property role="1EXbeo" value="false" />
-                                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                                     <ref role="1Y3XeK" to="x7mh:~EventHandler" resolve="EventHandler" />
-                                    <node concept="3Tm1VV" id="4NDm0LZaa1" role="1B3o_S" />
-                                    <node concept="3clFb_" id="4NDm0LZaa9" role="jymVt">
+                                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                                    <node concept="3clFb_" id="2M4BYkuWn93" role="jymVt">
                                       <property role="TrG5h" value="onEvent" />
                                       <property role="DiZV1" value="false" />
                                       <property role="od$2w" value="false" />
-                                      <node concept="37vLTG" id="4NDm0LZaaa" role="3clF46">
-                                        <property role="TrG5h" value="event" />
+                                      <node concept="2AHcQZ" id="2M4BYkuWn94" role="2AJF6D">
+                                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                                      </node>
+                                      <node concept="37vLTG" id="2M4BYkuWn95" role="3clF46">
+                                        <property role="TrG5h" value="stringPropertyChangeEvent" />
                                         <property role="3TUv4t" value="false" />
-                                        <node concept="3uibUv" id="4NDm0LZaab" role="1tU5fm">
+                                        <node concept="3uibUv" id="2M4BYkuWn96" role="1tU5fm">
                                           <ref role="3uigEE" to="lgza:~PropertyChangeEvent" resolve="PropertyChangeEvent" />
-                                          <node concept="3uibUv" id="4NDm0LZaac" role="11_B2D">
-                                            <ref role="3uigEE" to="lgza:~ReadableProperty" resolve="ReadableProperty" />
-                                            <node concept="3uibUv" id="4NDm0LZaad" role="11_B2D">
-                                              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-                                            </node>
+                                          <node concept="3uibUv" id="2M4BYkuWn97" role="11_B2D">
+                                            <ref role="3uigEE" to="wyt6:~String" resolve="String" />
                                           </node>
                                         </node>
                                       </node>
-                                      <node concept="3clFbS" id="4NDm0LZaae" role="3clF47" />
-                                      <node concept="3Tm1VV" id="4NDm0LZaaj" role="1B3o_S" />
-                                      <node concept="3cqZAl" id="4NDm0LZaak" role="3clF45" />
-                                    </node>
-                                    <node concept="3clFb_" id="4NDm0M057z" role="jymVt">
-                                      <property role="1EzhhJ" value="false" />
-                                      <property role="TrG5h" value="onEvent" />
-                                      <property role="DiZV1" value="false" />
-                                      <property role="od$2w" value="false" />
-                                      <node concept="3Tm1VV" id="4NDm0M057$" role="1B3o_S" />
-                                      <node concept="3cqZAl" id="4NDm0M057A" role="3clF45" />
-                                      <node concept="37vLTG" id="4NDm0M057B" role="3clF46">
-                                        <property role="TrG5h" value="event" />
-                                        <node concept="3uibUv" id="4NDm0M057E" role="1tU5fm">
-                                          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-                                        </node>
-                                      </node>
-                                      <node concept="3clFbS" id="4NDm0M057F" role="3clF47">
-                                        <node concept="3clFbF" id="4NDm0LZaaf" role="3cqZAp">
-                                          <node concept="1rXfSq" id="4NDm0LZaag" role="3clFbG">
-                                            <ref role="37wK5l" node="4NDm0LZc9u" resolve="replaceSvg" />
-                                            <node concept="37vLTw" id="4NDm0LZaah" role="37wK5m">
+                                      <node concept="3clFbS" id="2M4BYkuWn98" role="3clF47">
+                                        <node concept="3clFbF" id="2M4BYkuWn99" role="3cqZAp">
+                                          <node concept="1rXfSq" id="2M4BYkuWn9a" role="3clFbG">
+                                            <ref role="37wK5l" node="2M4BYkuWnZo" resolve="replaceSvgWithString" />
+                                            <node concept="37vLTw" id="2M4BYkuWn9b" role="37wK5m">
                                               <ref role="3cqZAo" node="4NDm0LZa9$" resolve="target" />
                                             </node>
-                                            <node concept="1eOMI4" id="4NDm0M06G8" role="37wK5m">
-                                              <node concept="2OqwBi" id="4NDm0LZabq" role="1eOMHV">
-                                                <node concept="liA8E" id="4NDm0LZabr" role="2OqNvi">
-                                                  <ref role="37wK5l" to="lgza:~PropertyChangeEvent.getNewValue():java.lang.Object" resolve="getNewValue" />
-                                                </node>
-                                                <node concept="1eOMI4" id="4NDm0M06G5" role="2Oq$k0">
-                                                  <node concept="10QFUN" id="4NDm0M05T4" role="1eOMHV">
-                                                    <node concept="3uibUv" id="4NDm0M064g" role="10QFUM">
-                                                      <ref role="3uigEE" to="lgza:~PropertyChangeEvent" resolve="PropertyChangeEvent" />
-                                                      <node concept="3uibUv" id="4NDm0M064h" role="11_B2D">
-                                                        <ref role="3uigEE" to="lgza:~ReadableProperty" resolve="ReadableProperty" />
-                                                        <node concept="3uibUv" id="4NDm0M064i" role="11_B2D">
-                                                          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-                                                        </node>
-                                                      </node>
-                                                    </node>
-                                                    <node concept="37vLTw" id="4NDm0LZabp" role="10QFUP">
-                                                      <ref role="3cqZAo" node="4NDm0M057B" resolve="event" />
-                                                    </node>
-                                                  </node>
-                                                </node>
+                                            <node concept="2OqwBi" id="2M4BYkuWn9I" role="37wK5m">
+                                              <node concept="37vLTw" id="2M4BYkuWn9H" role="2Oq$k0">
+                                                <ref role="3cqZAo" node="2M4BYkuWn95" resolve="stringPropertyChangeEvent" />
+                                              </node>
+                                              <node concept="liA8E" id="2M4BYkuWn9J" role="2OqNvi">
+                                                <ref role="37wK5l" to="lgza:~PropertyChangeEvent.getNewValue():java.lang.Object" resolve="getNewValue" />
                                               </node>
                                             </node>
                                           </node>
                                         </node>
                                       </node>
+                                      <node concept="3Tm1VV" id="2M4BYkuWn9d" role="1B3o_S" />
+                                      <node concept="3cqZAl" id="2M4BYkuWn9e" role="3clF45" />
                                     </node>
-                                    <node concept="3uibUv" id="2M4BYku6Nh8" role="2Ghqu4">
+                                    <node concept="3uibUv" id="2M4BYkuWn9f" role="2Ghqu4">
                                       <ref role="3uigEE" to="lgza:~PropertyChangeEvent" resolve="PropertyChangeEvent" />
+                                      <node concept="3uibUv" id="2M4BYkuWn9g" role="11_B2D">
+                                        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                                      </node>
                                     </node>
                                   </node>
                                 </node>
@@ -603,6 +573,133 @@
         </node>
         <node concept="raruj" id="a8CY5a5w_I" role="lGtFl" />
       </node>
+      <node concept="2YIFZL" id="2M4BYkuWnZo" role="jymVt">
+        <property role="TrG5h" value="replaceSvgWithString" />
+        <property role="DiZV1" value="false" />
+        <property role="od$2w" value="false" />
+        <node concept="37vLTG" id="2M4BYkuWnZp" role="3clF46">
+          <property role="TrG5h" value="target" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="2M4BYkuWnZq" role="1tU5fm">
+            <ref role="3uigEE" to="rn0p:~DivElement" resolve="DivElement" />
+          </node>
+        </node>
+        <node concept="37vLTG" id="2M4BYkuWnZr" role="3clF46">
+          <property role="TrG5h" value="svgDocument" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="2M4BYkuWnZs" role="1tU5fm">
+            <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="2M4BYkuWnZt" role="3clF47">
+          <node concept="3clFbJ" id="2M4BYkuWnZu" role="3cqZAp">
+            <node concept="3clFbC" id="2M4BYkuWnZv" role="3clFbw">
+              <node concept="37vLTw" id="2M4BYkuWnZw" role="3uHU7B">
+                <ref role="3cqZAo" node="2M4BYkuWnZr" resolve="svgDocument" />
+              </node>
+              <node concept="10Nm6u" id="2M4BYkuWnZx" role="3uHU7w" />
+            </node>
+            <node concept="3clFbS" id="2M4BYkuWnZz" role="3clFbx">
+              <node concept="3cpWs6" id="2M4BYkuWnZ$" role="3cqZAp" />
+            </node>
+          </node>
+          <node concept="3cpWs8" id="2M4BYkuWnZA" role="3cqZAp">
+            <node concept="3cpWsn" id="2M4BYkuWnZ_" role="3cpWs9">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="div" />
+              <node concept="3uibUv" id="2M4BYkuWnZB" role="1tU5fm">
+                <ref role="3uigEE" to="rn0p:~Element" resolve="Element" />
+              </node>
+              <node concept="37vLTw" id="2M4BYkuWnZC" role="33vP2m">
+                <ref role="3cqZAo" node="2M4BYkuWnZp" resolve="target" />
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="2M4BYkuWnZE" role="3cqZAp">
+            <node concept="3cpWsn" id="2M4BYkuWnZD" role="3cpWs9">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="svgElement" />
+              <node concept="3uibUv" id="2M4BYkuWnZF" role="1tU5fm">
+                <ref role="3uigEE" to="3isf:~OMSVGSVGElement" resolve="OMSVGSVGElement" />
+              </node>
+              <node concept="2YIFZM" id="2M4BYkuWo05" role="33vP2m">
+                <ref role="1Pybhc" to="f5r6:~OMSVGParser" resolve="OMSVGParser" />
+                <ref role="37wK5l" to="f5r6:~OMSVGParser.parse(java.lang.String,boolean):org.vectomatic.dom.svg.OMSVGSVGElement" resolve="parse" />
+                <node concept="37vLTw" id="2M4BYkuWnZH" role="37wK5m">
+                  <ref role="3cqZAo" node="2M4BYkuWnZr" resolve="svgDocument" />
+                </node>
+                <node concept="3clFbT" id="2M4BYkuWnZI" role="37wK5m">
+                  <property role="3clFbU" value="false" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="2M4BYkuWnZJ" role="3cqZAp">
+            <node concept="2OqwBi" id="2M4BYkuWo0e" role="3clFbw">
+              <node concept="37vLTw" id="2M4BYkuWo0d" role="2Oq$k0">
+                <ref role="3cqZAo" node="2M4BYkuWnZ_" resolve="div" />
+              </node>
+              <node concept="liA8E" id="2M4BYkuWo0f" role="2OqNvi">
+                <ref role="37wK5l" to="rn0p:~Node.hasChildNodes():boolean" resolve="hasChildNodes" />
+              </node>
+            </node>
+            <node concept="9aQIb" id="2M4BYkuWnZR" role="9aQIa">
+              <node concept="3clFbS" id="2M4BYkuWnZS" role="9aQI4">
+                <node concept="3clFbF" id="2M4BYkuWnZT" role="3cqZAp">
+                  <node concept="2OqwBi" id="2M4BYkuWo0o" role="3clFbG">
+                    <node concept="37vLTw" id="2M4BYkuWo0n" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2M4BYkuWnZ_" resolve="div" />
+                    </node>
+                    <node concept="liA8E" id="2M4BYkuWo0p" role="2OqNvi">
+                      <ref role="37wK5l" to="rn0p:~Node.appendChild(com.google.gwt.dom.client.Node):com.google.gwt.dom.client.Node" resolve="appendChild" />
+                      <node concept="2OqwBi" id="2M4BYkuWo0y" role="37wK5m">
+                        <node concept="37vLTw" id="2M4BYkuWo0x" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2M4BYkuWnZD" resolve="svgElement" />
+                        </node>
+                        <node concept="liA8E" id="2M4BYkuWo0z" role="2OqNvi">
+                          <ref role="37wK5l" to="3isf:~OMElement.getElement():com.google.gwt.dom.client.Element" resolve="getElement" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="2M4BYkuWnZM" role="3clFbx">
+              <node concept="3clFbF" id="2M4BYkuWnZN" role="3cqZAp">
+                <node concept="2OqwBi" id="2M4BYkuWo0G" role="3clFbG">
+                  <node concept="37vLTw" id="2M4BYkuWo0F" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2M4BYkuWnZ_" resolve="div" />
+                  </node>
+                  <node concept="liA8E" id="2M4BYkuWo0H" role="2OqNvi">
+                    <ref role="37wK5l" to="rn0p:~Node.replaceChild(com.google.gwt.dom.client.Node,com.google.gwt.dom.client.Node):com.google.gwt.dom.client.Node" resolve="replaceChild" />
+                    <node concept="2OqwBi" id="2M4BYkuWo0Q" role="37wK5m">
+                      <node concept="37vLTw" id="2M4BYkuWo0P" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2M4BYkuWnZD" resolve="svgElement" />
+                      </node>
+                      <node concept="liA8E" id="2M4BYkuWo0R" role="2OqNvi">
+                        <ref role="37wK5l" to="3isf:~OMElement.getElement():com.google.gwt.dom.client.Element" resolve="getElement" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="2M4BYkuWo10" role="37wK5m">
+                      <node concept="37vLTw" id="2M4BYkuWo0Z" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2M4BYkuWnZ_" resolve="div" />
+                      </node>
+                      <node concept="liA8E" id="2M4BYkuWo11" role="2OqNvi">
+                        <ref role="37wK5l" to="rn0p:~Node.getFirstChild():com.google.gwt.dom.client.Node" resolve="getFirstChild" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3Tm6S6" id="2M4BYkuWnZW" role="1B3o_S" />
+        <node concept="3cqZAl" id="2M4BYkuWnZX" role="3clF45" />
+        <node concept="raruj" id="2M4BYkuWoxU" role="lGtFl" />
+      </node>
+      <node concept="2tJIrI" id="2M4BYkuWnAF" role="jymVt" />
       <node concept="2YIFZL" id="4NDm0LZc9u" role="jymVt">
         <property role="TrG5h" value="replaceSvg" />
         <property role="DiZV1" value="false" />
