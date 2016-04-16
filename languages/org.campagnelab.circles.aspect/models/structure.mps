@@ -7,9 +7,9 @@
   </languages>
   <imports>
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
@@ -683,6 +683,82 @@
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyi" id="4KD0Z41r$vE" role="1TKVEl">
       <property role="TrG5h" value="methodName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4ZQGiTcgX4r">
+    <property role="1pbfSe" value="1673887159" />
+    <property role="TrG5h" value="CellModel_Link" />
+    <property role="34LRSv" value="link" />
+    <property role="R4oN_" value="Link to another page of the web app" />
+    <property role="3GE5qa" value="links" />
+    <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
+    <node concept="1TJgyj" id="4QJEJ13XuXQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tokenInitializations" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4QJEJ13XuXT" resolve="TokenValueLink" />
+    </node>
+    <node concept="1TJgyi" id="4ZQGiTcgYjc" role="1TKVEl">
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="4ZQGiTcgYja" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="destination" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6mblWKe6oxI" resolve="Place" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4QJEJ13XuXW">
+    <property role="1pbfSe" value="1851418004" />
+    <property role="TrG5h" value="TokenPropertyValue" />
+    <property role="3GE5qa" value="tokens" />
+    <ref role="1TJDcQ" node="4QJEJ13XuXT" resolve="TokenValueLink" />
+    <node concept="1TJgyj" id="4QJEJ13XuXX" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="property" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:f_TJgxF" resolve="PropertyDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4QJEJ13XuXT">
+    <property role="1pbfSe" value="1851418007" />
+    <property role="TrG5h" value="TokenValueLink" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="tokens" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4QJEJ13XuXU" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="token" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6mblWKe6oxL" resolve="Token" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4QJEJ13YQh7">
+    <property role="1pbfSe" value="1851060425" />
+    <property role="TrG5h" value="LiteralPropertyValue" />
+    <ref role="1TJDcQ" node="4QJEJ13XuXT" resolve="TokenValueLink" />
+    <node concept="1TJgyi" id="4QJEJ13YQh8" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4KD0Z41ltvp">
+    <property role="1pbfSe" value="1300159434" />
+    <property role="TrG5h" value="CellModel_ActionLink" />
+    <property role="34LRSv" value="action link" />
+    <property role="3GE5qa" value="action" />
+    <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
+    <node concept="1TJgyj" id="4KD0Z41ltvK" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="method" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2qyF3mC9VUM" resolve="InterfaceMethod" />
+    </node>
+    <node concept="1TJgyi" id="4KD0Z41ltvI" role="1TKVEl">
+      <property role="TrG5h" value="text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

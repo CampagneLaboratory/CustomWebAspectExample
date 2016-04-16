@@ -7,8 +7,8 @@
   </languages>
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
-    <import index="6je1" ref="r:2b50e9c8-828e-4d1c-b75e-74ee8d185c93(org.campagnelab.circles.aspect.structure)" implicit="true" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
+    <import index="6je1" ref="r:2b50e9c8-828e-4d1c-b75e-74ee8d185c93(org.campagnelab.circles.aspect.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -54,6 +54,9 @@
       <concept id="3906442776579556545" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Presentation" flags="in" index="Bn3R3" />
       <concept id="3906442776579549644" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parameterNode" flags="nn" index="Bn53e" />
       <concept id="5676632058862809931" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="in" index="13QW63" />
+      <concept id="8401916545537438642" name="jetbrains.mps.lang.constraints.structure.InheritedNodeScopeFactory" flags="ng" index="1dDu$B">
+        <reference id="8401916545537438643" name="kind" index="1dDu$A" />
+      </concept>
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="1213100494875" name="referent" index="1Mr941" />
@@ -323,6 +326,23 @@
   <node concept="1M2fIO" id="4KD0Z41r$vG">
     <property role="3GE5qa" value="methods" />
     <ref role="1M2myG" to="6je1:4KD0Z41r$vB" resolve="UserMethodReference" />
+  </node>
+  <node concept="1M2fIO" id="4ZQGiTcgYp9">
+    <property role="3GE5qa" value="links" />
+    <ref role="1M2myG" to="6je1:4ZQGiTcgX4r" resolve="CellModel_Link" />
+    <node concept="1N5Pfh" id="4ZQGiTcgYpa" role="1Mr941">
+      <ref role="1N5Vy1" to="6je1:4ZQGiTcgYja" />
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4QJEJ13Xv$d">
+    <property role="3GE5qa" value="tokens" />
+    <ref role="1M2myG" to="6je1:4QJEJ13XuXW" resolve="TokenPropertyValue" />
+    <node concept="1N5Pfh" id="4QJEJ13Xv$e" role="1Mr941">
+      <ref role="1N5Vy1" to="6je1:4QJEJ13XuXX" />
+      <node concept="1dDu$B" id="4QJEJ13Xv$i" role="1N6uqs">
+        <ref role="1dDu$A" to="tpce:f_TJgxF" resolve="PropertyDeclaration" />
+      </node>
+    </node>
   </node>
 </model>
 
