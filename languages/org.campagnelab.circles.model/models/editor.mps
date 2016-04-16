@@ -17,6 +17,7 @@
     <import index="77ry" ref="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
     <import index="qkpo" ref="r:49694c02-82df-42da-ab19-bdfcf6883a78(org.campagnelab.circles.model.web)" />
     <import index="xz77" ref="r:1cb53e38-6e72-40c6-a62e-7e8b44b75406(model)" />
+    <import index="u15d" ref="r:f1cc3556-04a7-4f8f-be28-e6a07065f328(org.campagnelab.aspects.web.editor.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -77,7 +78,6 @@
         <reference id="5761987585673258186" name="destination" index="3Hln$" />
         <child id="5597880810753879926" name="tokenInitializations" index="em$m6" />
       </concept>
-      <concept id="5597880810754237511" name="org.campagnelab.aspects.web.editor.structure.LiteralPropertyValue" flags="ng" index="elcUR" />
       <concept id="5597880810753879929" name="org.campagnelab.aspects.web.editor.structure.TokenValue" flags="ng" index="em$m9">
         <reference id="5597880810753879930" name="token" index="em$ma" />
       </concept>
@@ -290,13 +290,6 @@
         </node>
         <node concept="3mYdg7" id="6mblWKeeSz9" role="3F10Kt">
           <property role="1413C4" value="body-paren" />
-        </node>
-      </node>
-      <node concept="3Hm0P" id="3W6nzRGqLYS" role="3EZMnx">
-        <property role="3Hlny" value="SearchNodes" />
-        <ref role="3Hln$" to="qkpo:29x8GeHEHj9" resolve="SearchNodesPlace" />
-        <node concept="elcUR" id="4QJEJ13ZgoU" role="em$m6">
-          <ref role="em$ma" to="qkpo:29x8GeHEHja" resolve="queryTerm" />
         </node>
       </node>
     </node>

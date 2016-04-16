@@ -13,7 +13,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="b42eb996-b76a-4e2d-8132-9278b4ff8107" name="org.campagnelab.stagging" version="0" />
+    <use id="b42eb996-b76a-4e2d-8132-9278b4ff8107" name="org.campagnelab.staging" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -179,6 +179,10 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1109279763828" name="jetbrains.mps.baseLanguage.structure.TypeVariableDeclaration" flags="ng" index="16euLQ" />
+      <concept id="1109279851642" name="jetbrains.mps.baseLanguage.structure.GenericDeclaration" flags="ng" index="16eOlS">
+        <child id="1109279881614" name="typeVariableDeclaration" index="16eVyc" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -505,11 +509,11 @@
       </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
-    <language id="b42eb996-b76a-4e2d-8132-9278b4ff8107" name="org.campagnelab.stagging">
-      <concept id="3317590328854032612" name="org.campagnelab.stagging.structure.StageToAnnotation" flags="ng" index="2b_W8R">
+    <language id="b42eb996-b76a-4e2d-8132-9278b4ff8107" name="org.campagnelab.staging">
+      <concept id="3317590328854032612" name="org.campagnelab.staging.structure.StageToAnnotation" flags="ng" index="2b_W8R">
         <child id="3317590328854209169" name="destination" index="2bEx12" />
       </concept>
-      <concept id="3317590328854209162" name="org.campagnelab.stagging.structure.StagingInfo" flags="ng" index="2bEx1p">
+      <concept id="3317590328854209162" name="org.campagnelab.staging.structure.StagingInfo" flags="ng" index="2bEx1p">
         <property id="3317590328854999532" name="generatedFilename" index="2bDwcZ" />
         <property id="3317590328854225222" name="package" index="2bEHel" />
         <property id="3317590328854225220" name="stagingDirRoot" index="2bEHen" />
@@ -517,10 +521,10 @@
         <child id="3317590328856609127" name="imports" index="2bNReO" />
         <child id="7317038553511316591" name="renameExtension" index="1CqxIz" />
       </concept>
-      <concept id="3317590328856609124" name="org.campagnelab.stagging.structure.AddImportStatement" flags="ng" index="2bNReR">
+      <concept id="3317590328856609124" name="org.campagnelab.staging.structure.AddImportStatement" flags="ng" index="2bNReR">
         <property id="3317590328856609125" name="packageName" index="2bNReQ" />
       </concept>
-      <concept id="7317038553511316541" name="org.campagnelab.stagging.structure.ChangeExtensionInfo" flags="ng" index="1CqxJL">
+      <concept id="7317038553511316541" name="org.campagnelab.staging.structure.ChangeExtensionInfo" flags="ng" index="1CqxJL">
         <property id="7317038553511316544" name="to" index="1CqxIc" />
         <property id="7317038553511316542" name="from" index="1CqxJM" />
       </concept>
@@ -3520,6 +3524,65 @@
         </node>
         <node concept="2bNReR" id="4Mezj1A9z5Q" role="2bNReO">
           <property role="2bNReQ" value="org.webapp.languages.jetbrains_mps_lang_core.client.mappers" />
+        </node>
+      </node>
+    </node>
+    <node concept="16euLQ" id="2M4BYku5xE3" role="16eVyc">
+      <property role="TrG5h" value="WebModel" />
+      <node concept="17Uvod" id="2M4BYku6nyy" role="lGtFl">
+        <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+        <property role="2qtEX9" value="name" />
+        <node concept="3zFVjK" id="2M4BYku6nyz" role="3zH0cK">
+          <node concept="3clFbS" id="2M4BYku6ny$" role="2VODD2">
+            <node concept="3clFbF" id="2M4BYku6s4F" role="3cqZAp">
+              <node concept="3cpWs3" id="2M4BYku6s4G" role="3clFbG">
+                <node concept="Xl_RD" id="2M4BYku6s4H" role="3uHU7w">
+                  <property role="Xl_RC" value="_WebModel" />
+                </node>
+                <node concept="2OqwBi" id="2M4BYku6s4I" role="3uHU7B">
+                  <node concept="2OqwBi" id="2M4BYku6s4J" role="2Oq$k0">
+                    <node concept="2OqwBi" id="2M4BYku6s4K" role="2Oq$k0">
+                      <node concept="30H73N" id="2M4BYku6s4L" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="2M4BYku6s4M" role="2OqNvi">
+                        <ref role="3Tt5mk" to="6je1:1mpyZGF7F7H" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="2M4BYku6s4N" role="2OqNvi">
+                      <ref role="3Tt5mk" to="tpc2:gXXX56I" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="2M4BYku6s4O" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="16euLQ" id="2M4BYku64xU" role="16eVyc">
+      <property role="TrG5h" value="WebView" />
+      <node concept="17Uvod" id="2M4BYku6wfu" role="lGtFl">
+        <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+        <property role="2qtEX9" value="name" />
+        <node concept="3zFVjK" id="2M4BYku6wfv" role="3zH0cK">
+          <node concept="3clFbS" id="2M4BYku6wfw" role="2VODD2">
+            <node concept="3clFbF" id="2M4BYku6wfE" role="3cqZAp">
+              <node concept="2OqwBi" id="2M4BYkuaZVq" role="3clFbG">
+                <node concept="2OqwBi" id="2M4BYku6wfF" role="2Oq$k0">
+                  <node concept="1iwH7S" id="2M4BYku6wfG" role="2Oq$k0" />
+                  <node concept="1iwH70" id="2M4BYku6wfH" role="2OqNvi">
+                    <ref role="1iwH77" node="242NPyq034d" resolve="WebView" />
+                    <node concept="30H73N" id="2M4BYku6wfI" role="1iwH7V" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="2M4BYkub0_u" role="2OqNvi">
+                  <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

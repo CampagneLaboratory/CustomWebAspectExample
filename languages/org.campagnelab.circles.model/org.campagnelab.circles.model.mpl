@@ -13,6 +13,7 @@
     <dependency reexport="false">3dc3d3d3-b034-480c-8b21-d7a88903974b(org.campagnelab.circles.mockup)</dependency>
     <dependency reexport="false">9e4f255e-96f4-445b-89f6-4c156d9e8e22(org.campagnelab.aspects.web.editor)</dependency>
     <dependency reexport="false">602575bc-87ac-4c84-862e-2a23f56e79c0(playground)</dependency>
+    <dependency reexport="false">8c40f9f4-b3bd-42d0-8b65-8e644273493c(org.campagnelab.circles.aspect)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
