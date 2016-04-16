@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.lightweightdsl.structure.MethodInstance" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ExtensionDescriptor.java">
+      <unit at="9,0,18,0" name="org.campagnelab.circles.aspect.plugin.ExtensionDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:4d14f64f-fa9a-4ab0-8621-23682dd759f0(org.campagnelab.circles.aspect.plugin)/2986108014587570865">
+    <file name="LanguageAspectsEP_extension.java">
+      <node id="2986108014587570865" at="29,40,30,57" concept="10" />
+      <node id="2986108014587570865" at="34,48,35,21" concept="8" />
+      <node id="2986108014587570865" at="38,73,39,58" concept="7" />
+      <node id="2986108014587570865" at="41,44,42,48" concept="7" />
+      <node id="2986108014587570865" at="42,48,43,122" concept="8" />
+      <node id="2986108014587570865" at="48,55,49,203" concept="8" />
+      <node id="2986108014587570865" at="52,53,53,20" concept="8" />
+      <node id="2986108014587570865" at="56,29,57,20" concept="8" />
+      <node id="2986108014587570865" at="65,50,66,86" concept="8" />
+      <node id="2986108014587570865" at="69,44,70,43" concept="7" />
+      <node id="2986108014587570865" at="70,43,71,64" concept="7" />
+      <node id="2986108014587570865" at="71,64,72,28" concept="7" />
+      <node id="2986108014587570865" at="73,37,74,58" concept="3" />
+      <node id="2986108014587570865" at="75,16,76,65" concept="3" />
+      <node id="2986108014587570865" at="77,9,78,118" concept="3" />
+      <node id="2986108014587570865" at="81,0,82,0" concept="4" trace="ICON" />
+      <node id="2986108014587570865" at="85,78,86,46" concept="8" />
+      <node id="2986108014587570865" at="75,14,77,9" concept="1" />
+      <node id="2986108014587570865" at="29,0,32,0" concept="2" trace="LanguageAspectsEP_extension#()V" />
+      <node id="2986108014587570865" at="34,0,37,0" concept="6" trace="getPresentableAspectName#()Ljava/lang/String;" />
+      <node id="2986108014587570865" at="65,0,68,0" concept="6" trace="canCreate#(Lorg/jetbrains/mps/openapi/module/SModule;)Z" />
+      <node id="2986108014587570865" at="85,0,88,0" concept="9" trace="eq_ecu8yf_a0b0a0a0a0a0b0b0a0a0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="2986108014587570865" at="41,0,45,0" concept="6" trace="accept#(Lorg/jetbrains/mps/openapi/model/SModel;)Z" />
+      <node id="2986108014587570865" at="47,0,51,0" concept="6" trace="getMainLanguages#()Ljava/util/Collection;" />
+      <node id="2986108014587570865" at="51,0,55,0" concept="6" trace="getGenerator#()Ljetbrains/mps/smodel/language/LanguageAspectGenerator;" />
+      <node id="2986108014587570865" at="55,0,59,0" concept="6" trace="getIcon#()Ljavax/swing/Icon;" />
+      <node id="2986108014587570865" at="72,28,77,9" concept="5" />
+      <node id="2986108014587570865" at="39,58,45,49" concept="8" />
+      <node id="2986108014587570865" at="37,0,47,0" concept="6" trace="getAspectModels#(Lorg/jetbrains/mps/openapi/module/SModule;)Ljava/util/Collection;" />
+      <node id="2986108014587570865" at="69,0,80,0" concept="6" trace="create#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <node id="2986108014587570865" at="32,41,83,6" concept="8" />
+      <node id="2986108014587570865" at="32,0,85,0" concept="0" trace="get#()Ljetbrains/mps/smodel/language/LanguageAspectDescriptor;" />
+      <scope id="2986108014587570865" at="29,40,30,57" />
+      <scope id="2986108014587570865" at="34,48,35,21" />
+      <scope id="2986108014587570865" at="48,55,49,203" />
+      <scope id="2986108014587570865" at="52,53,53,20" />
+      <scope id="2986108014587570865" at="56,29,57,20" />
+      <scope id="2986108014587570865" at="65,50,66,86" />
+      <scope id="2986108014587570865" at="73,37,74,58" />
+      <scope id="2986108014587570865" at="75,16,76,65" />
+      <scope id="2986108014587570865" at="85,78,86,46" />
+      <scope id="2986108014587570865" at="41,44,43,122">
+        <var name="fullName" id="2986108014587570865" />
+      </scope>
+      <scope id="2986108014587570865" at="29,0,32,0" />
+      <scope id="2986108014587570865" at="34,0,37,0" />
+      <scope id="2986108014587570865" at="65,0,68,0">
+        <var name="language" id="2986108014587570865" />
+      </scope>
+      <scope id="2986108014587570865" at="85,0,88,0">
+        <var name="a" id="2986108014587570865" />
+        <var name="b" id="2986108014587570865" />
+      </scope>
+      <scope id="2986108014587570865" at="41,0,45,0">
+        <var name="it" id="2986108014587570865" />
+      </scope>
+      <scope id="2986108014587570865" at="47,0,51,0" />
+      <scope id="2986108014587570865" at="51,0,55,0" />
+      <scope id="2986108014587570865" at="55,0,59,0" />
+      <scope id="2986108014587570865" at="38,73,45,49">
+        <var name="allModels" id="2986108014587570865" />
+      </scope>
+      <scope id="2986108014587570865" at="69,44,78,118">
+        <var name="l" id="2986108014587570865" />
+        <var name="modelRoot" id="2986108014587570865" />
+        <var name="structureModel" id="2986108014587570865" />
+      </scope>
+      <scope id="2986108014587570865" at="37,0,47,0">
+        <var name="language" id="2986108014587570865" />
+      </scope>
+      <scope id="2986108014587570865" at="69,0,80,0">
+        <var name="language" id="2986108014587570865" />
+      </scope>
+      <scope id="2986108014587570865" at="32,41,83,6" />
+      <scope id="2986108014587570865" at="32,0,85,0" />
+      <unit id="2986108014587570865" at="40,58,45,9" name="org.campagnelab.circles.aspect.plugin.LanguageAspectsEP_extension$2" />
+      <unit id="2986108014587570865" at="33,15,83,5" name="org.campagnelab.circles.aspect.plugin.LanguageAspectsEP_extension$1" />
+      <unit id="2986108014587570865" at="28,0,89,0" name="org.campagnelab.circles.aspect.plugin.LanguageAspectsEP_extension" />
+    </file>
+  </root>
+</debug-info>
+

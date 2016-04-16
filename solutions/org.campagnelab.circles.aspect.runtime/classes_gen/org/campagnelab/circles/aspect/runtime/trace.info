@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <root nodeRef="r:2c4c7e9e-399c-490f-b18e-ff7f5ebd651b(org.campagnelab.circles.aspect.runtime)/4824635715685250266">
+    <file name="WebLanguageAspectDescriptor.java">
+      <node id="4824635715685250587" at="15,0,16,0" concept="0" trace="defineSchemaForConcepts#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="4508728853181361562" at="19,0,20,0" concept="0" trace="dropSchemaForConcepts#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="5666401028116742347" at="23,0,24,0" concept="0" trace="serializeProjectWithModules#(Ljava/lang/String;Ljava/lang/String;Ljetbrains/mps/project/MPSProject;Ljava/util/List;)V" />
+      <scope id="4824635715685250587" at="15,0,16,0">
+        <var name="password" id="7827376399075028978" />
+        <var name="user" id="7827376399075028955" />
+      </scope>
+      <scope id="4508728853181361562" at="19,0,20,0">
+        <var name="password" id="4508728853181361571" />
+        <var name="user" id="4508728853181361569" />
+      </scope>
+      <scope id="5666401028116742347" at="23,0,24,0">
+        <var name="modules" id="47436205663851746" />
+        <var name="password" id="5666401028116742350" />
+        <var name="project" id="5666401028116742354" />
+        <var name="user" id="5666401028116742348" />
+      </scope>
+      <unit id="4824635715685250266" at="10,0,26,0" name="org.campagnelab.circles.aspect.runtime.WebLanguageAspectDescriptor" />
+    </file>
+  </root>
+</debug-info>
+

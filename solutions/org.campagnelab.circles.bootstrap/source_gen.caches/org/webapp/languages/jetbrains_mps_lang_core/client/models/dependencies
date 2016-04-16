@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="org.webapp.languages.jetbrains_mps_lang_core.client.models.Attribute_WebModel" file="Attribute_WebModel.java">
+    <classNode extendsClassName="java.io.Serializable" />
+  </dependency>
+  <dependency className="org.webapp.languages.jetbrains_mps_lang_core.client.models.BaseConcept_WebModel" file="BaseConcept_WebModel.java">
+    <classNode extendsClassName="jetbrains.jetpad.model.children.HasParent" />
+  </dependency>
+</dependenciesRoot>
+

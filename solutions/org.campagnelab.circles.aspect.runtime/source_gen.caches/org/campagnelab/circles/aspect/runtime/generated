@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="emm4vn5yvixvi83e8hicpdnjdvmz3ra">
+  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="-5xb7jypw7d0bhouyx3xmbfw2tz5ihja" />
+  <common hash="dk6376k490rssc6x6iq8hnh96mw8xo" dependsOnNodes="true">
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+  </common>
+  <source id="4824635715685250266" name="WebLanguageAspectDescriptor" hash="4ufam1igcu3ho47fsipzupy9du6u4nl">
+    <file name="WebLanguageAspectDescriptor.java" />
+  </source>
+</dependencies>
+

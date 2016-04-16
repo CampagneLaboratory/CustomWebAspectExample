@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BreakStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ContinueStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <root nodeRef="r:623c8eb4-df21-4fdc-925d-d384e22129a2(org.campagnelab.circles.aspect.db)/5666401028115708792">
+    <file name="DbClassNameUtil.java">
+      <node id="5666401028115716300" at="11,60,12,111" concept="10" />
+      <node id="5666401028115715229" at="15,43,16,44" concept="10" />
+      <node id="4829993475492931477" at="18,57,19,36" concept="10" />
+      <node id="5666401028115716854" at="11,0,14,0" concept="14" trace="getFqName#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Ljava/lang/String;" />
+      <node id="5666401028115717017" at="15,0,18,0" concept="14" trace="make#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="4829993475492931382" at="18,0,21,0" concept="14" trace="dbName#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Ljava/lang/String;" />
+      <scope id="5666401028115714598" at="11,60,12,111" />
+      <scope id="5666401028115715142" at="15,43,16,44" />
+      <scope id="4829993475492931385" at="18,57,19,36" />
+      <scope id="5666401028115716854" at="11,0,14,0">
+        <var name="concept" id="5666401028115714637" />
+      </scope>
+      <scope id="5666401028115717017" at="15,0,18,0">
+        <var name="value" id="5666401028115715180" />
+      </scope>
+      <scope id="4829993475492931382" at="18,0,21,0">
+        <var name="concept" id="4829993475492931437" />
+      </scope>
+      <unit id="5666401028115708792" at="9,0,22,0" name="org.campagnelab.circles.aspect.db.DbClassNameUtil" />
+    </file>
+  </root>
+  <root nodeRef="r:623c8eb4-df21-4fdc-925d-d384e22129a2(org.campagnelab.circles.aspect.db)/6486908126552652084">
+    <file name="FIELDS.java">
+      <node id="6486908126552771543" at="8,28,9,18" concept="10" />
+      <node id="6486908126552772045" at="14,28,15,20" concept="10" />
+      <node id="6486908126552771653" at="20,28,21,23" concept="10" />
+      <node id="6486908126552771956" at="26,28,27,22" concept="10" />
+      <node id="4829993475492805568" at="32,28,33,24" concept="10" />
+      <node id="202317731864764997" at="38,28,39,21" concept="10" />
+      <node id="6486908126552771182" at="44,0,45,0" concept="8" trace="dbName#()Ljava/lang/String;" />
+      <node id="6486908126552771220" at="8,0,11,0" concept="8" trace="dbName#()Ljava/lang/String;" />
+      <node id="6486908126552771256" at="14,0,17,0" concept="8" trace="dbName#()Ljava/lang/String;" />
+      <node id="6486908126552771292" at="20,0,23,0" concept="8" trace="dbName#()Ljava/lang/String;" />
+      <node id="6486908126552771328" at="26,0,29,0" concept="8" trace="dbName#()Ljava/lang/String;" />
+      <node id="4829993475492805564" at="32,0,35,0" concept="8" trace="dbName#()Ljava/lang/String;" />
+      <node id="202317731864764993" at="38,0,41,0" concept="8" trace="dbName#()Ljava/lang/String;" />
+      <scope id="6486908126552771224" at="8,28,9,18" />
+      <scope id="6486908126552771260" at="14,28,15,20" />
+      <scope id="6486908126552771296" at="20,28,21,23" />
+      <scope id="6486908126552771332" at="26,28,27,22" />
+      <scope id="4829993475492805567" at="32,28,33,24" />
+      <scope id="202317731864764996" at="38,28,39,21" />
+      <scope id="6486908126552771182" at="44,0,45,0" />
+      <scope id="6486908126552771220" at="8,0,11,0" />
+      <scope id="6486908126552771256" at="14,0,17,0" />
+      <scope id="6486908126552771292" at="20,0,23,0" />
+      <scope id="6486908126552771328" at="26,0,29,0" />
+      <scope id="4829993475492805564" at="32,0,35,0" />
+      <scope id="202317731864764993" at="38,0,41,0" />
+      <unit id="6486908126552652084" at="6,0,46,0" name="org.campagnelab.circles.aspect.db.FIELDS" />
+    </file>
+  </root>
+  <root nodeRef="r:623c8eb4-df21-4fdc-925d-d384e22129a2(org.campagnelab.circles.aspect.db)/6486908126552652373">
+    <file name="CIRCLES_BASE_CONCEPTS.java">
+      <node id="202317731862289080" at="8,29,9,85" concept="10" />
+      <node id="202317731862290623" at="14,29,15,84" concept="10" />
+      <node id="202317731862290856" at="20,29,21,83" concept="10" />
+      <node id="202317731862291069" at="26,29,27,86" concept="10" />
+      <node id="202317731862291348" at="32,29,33,86" concept="10" />
+      <node id="6486908126552770283" at="38,0,39,0" concept="8" trace="dbClass#()Ljava/lang/String;" />
+      <node id="6486908126552770327" at="8,0,11,0" concept="8" trace="dbClass#()Ljava/lang/String;" />
+      <node id="6486908126552770520" at="14,0,17,0" concept="8" trace="dbClass#()Ljava/lang/String;" />
+      <node id="6486908126552770681" at="20,0,23,0" concept="8" trace="dbClass#()Ljava/lang/String;" />
+      <node id="47436205663628632" at="26,0,29,0" concept="8" trace="dbClass#()Ljava/lang/String;" />
+      <node id="47436205663628832" at="32,0,35,0" concept="8" trace="dbClass#()Ljava/lang/String;" />
+      <scope id="6486908126552770331" at="8,29,9,85" />
+      <scope id="6486908126552770523" at="14,29,15,84" />
+      <scope id="6486908126552770684" at="20,29,21,83" />
+      <scope id="47436205663628635" at="26,29,27,86" />
+      <scope id="47436205663628835" at="32,29,33,86" />
+      <scope id="6486908126552770283" at="38,0,39,0" />
+      <scope id="6486908126552770327" at="8,0,11,0" />
+      <scope id="6486908126552770520" at="14,0,17,0" />
+      <scope id="6486908126552770681" at="20,0,23,0" />
+      <scope id="47436205663628632" at="26,0,29,0" />
+      <scope id="47436205663628832" at="32,0,35,0" />
+      <unit id="6486908126552652373" at="6,0,40,0" name="org.campagnelab.circles.aspect.db.CIRCLES_BASE_CONCEPTS" />
+    </file>
+  </root>
+  <root nodeRef="r:623c8eb4-df21-4fdc-925d-d384e22129a2(org.campagnelab.circles.aspect.db)/7724285693452225189">
+    <file name="DbAccess.java">
+      <node id="7724285693452225642" at="17,86,18,27" concept="9" />
+      <node id="7724285693452225645" at="18,27,19,38" concept="4" />
+      <node id="7724285693452225653" at="21,41,22,43" concept="4" />
+      <node id="7724285693452225655" at="23,7,24,18" concept="10" />
+      <node id="7724285693452225669" at="25,12,26,30" concept="4" />
+      <node id="7724285693452225675" at="26,30,27,35" concept="4" />
+      <node id="7724285693452225679" at="27,35,28,16" concept="10" />
+      <node id="7724285693452225691" at="31,92,32,27" concept="9" />
+      <node id="7724285693452225694" at="32,27,33,38" concept="4" />
+      <node id="7724285693452225702" at="35,32,36,61" concept="4" />
+      <node id="7724285693452225704" at="37,7,38,18" concept="4" />
+      <node id="7724285693452225708" at="38,18,39,46" concept="4" />
+      <node id="7724285693452225727" at="40,12,41,30" concept="4" />
+      <node id="7724285693452225733" at="42,5,43,33" concept="4" />
+      <node id="7724285693452225737" at="43,33,44,14" concept="10" />
+      <node id="7724285693452225751" at="47,21,48,17" concept="4" />
+      <node id="7724285693452225764" at="51,74,52,68" concept="11" />
+      <node id="7724285693452225766" at="52,68,53,93" concept="11" />
+      <node id="7724285693452225773" at="55,5,56,174" concept="9" />
+      <node id="7425961015989029802" at="57,30,58,150" concept="4" />
+      <node id="7724285693452225797" at="59,5,60,70" concept="10" />
+      <node id="7724285693452225189" at="63,0,64,0" concept="13" trace="LOG" />
+      <node id="7724285693452225725" at="40,10,42,5" concept="0" />
+      <node id="7724285693452225768" at="53,93,55,5" concept="7" />
+      <node id="7724285693452225653" at="20,56,23,7" concept="0" />
+      <node id="7724285693452225653" at="20,56,23,7" concept="7" />
+      <node id="7724285693452225702" at="34,56,37,7" concept="0" />
+      <node id="7724285693452225702" at="34,56,37,7" concept="7" />
+      <node id="7724285693452225749" at="46,54,49,5" concept="7" />
+      <node id="7425961015989029802" at="56,174,59,5" concept="0" />
+      <node id="7425961015989029802" at="56,174,59,5" concept="7" />
+      <node id="7724285693452225667" at="25,10,29,5" concept="0" />
+      <node id="7724285693452225747" at="46,0,51,0" concept="14" trace="closeDb#(Lcom/orientechnologies/orient/core/db/document/ODatabaseDocumentTx;)V" />
+      <node id="7724285693452225700" at="33,38,42,5" concept="7" />
+      <node id="7724285693452225651" at="19,38,29,5" concept="7" />
+      <node id="7724285693452225762" at="51,0,62,0" concept="14" trace="lookupNode#(Lcom/orientechnologies/orient/core/db/document/ODatabaseDocumentTx;Lorg/jetbrains/mps/openapi/model/SNode;)Lcom/orientechnologies/orient/core/record/impl/ODocument;" />
+      <node id="7724285693452225640" at="17,0,31,0" concept="14" trace="openDb#(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/orientechnologies/orient/core/db/document/ODatabaseDocumentTx;" />
+      <node id="7724285693452225689" at="31,0,46,0" concept="14" trace="openCreateDb#(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/orientechnologies/orient/core/db/document/ODatabaseDocumentTx;" />
+      <scope id="7724285693452225772" at="54,54,54,54" />
+      <scope id="7724285693452225653" at="21,41,22,43" />
+      <scope id="7724285693452225702" at="35,32,36,61" />
+      <scope id="7724285693452225726" at="40,12,41,30" />
+      <scope id="7724285693452225750" at="47,21,48,17" />
+      <scope id="7425961015989029802" at="57,30,58,150" />
+      <scope id="7724285693452225653" at="20,56,23,7" />
+      <scope id="7724285693452225668" at="25,12,28,16" />
+      <scope id="7724285693452225702" at="34,56,37,7" />
+      <scope id="7724285693452225748" at="46,54,49,5" />
+      <scope id="7425961015989029802" at="56,174,59,5" />
+      <scope id="7724285693452225652" at="20,56,24,18" />
+      <scope id="7724285693452225701" at="34,56,39,46" />
+      <scope id="7724285693452225747" at="46,0,51,0">
+        <var name="db" id="7724285693452225760" />
+      </scope>
+      <scope id="7724285693452225763" at="51,74,60,70">
+        <var name="results" id="7724285693452225774" />
+      </scope>
+      <scope id="7724285693452225762" at="51,0,62,0">
+        <var name="db" id="7724285693452225813" />
+        <var name="node" id="7724285693452225815" />
+      </scope>
+      <scope id="7724285693452225641" at="17,86,29,5">
+        <var name="db" id="7724285693452225643" />
+      </scope>
+      <scope id="7724285693452225690" at="31,92,44,14">
+        <var name="db" id="7724285693452225692" />
+      </scope>
+      <scope id="7724285693452225640" at="17,0,31,0">
+        <var name="password" id="7724285693452225685" />
+        <var name="url" id="7724285693452225681" />
+        <var name="user" id="7724285693452225683" />
+      </scope>
+      <scope id="7724285693452225689" at="31,0,46,0">
+        <var name="password" id="7724285693452225743" />
+        <var name="url" id="7724285693452225739" />
+        <var name="user" id="7724285693452225741" />
+      </scope>
+      <unit id="7724285693452225189" at="16,0,65,0" name="org.campagnelab.circles.aspect.db.DbAccess" />
+    </file>
+  </root>
+  <root nodeRef="r:623c8eb4-df21-4fdc-925d-d384e22129a2(org.campagnelab.circles.aspect.db)/7724285693452230622">
+    <file name="DbCache.java">
+      <node id="7437307999543028687" at="13,0,14,0" concept="5" trace="cache" />
+      <node id="7437307999543033797" at="15,20,16,47" concept="4" />
+      <node id="7437307999543049861" at="18,35,19,40" concept="4" />
+      <node id="7437307999543083244" at="21,38,22,41" concept="4" />
+      <node id="7437307999543143936" at="24,41,25,42" concept="4" />
+      <node id="5635568830301221747" at="27,36,28,44" concept="10" />
+      <node id="7437307999543134920" at="30,38,31,72" concept="10" />
+      <node id="7437307999543123278" at="33,40,34,76" concept="10" />
+      <node id="7437307999543119714" at="36,42,37,43" concept="10" />
+      <node id="7437307999543033536" at="15,0,18,0" concept="2" trace="DbCache#()V" />
+      <node id="7437307999543040554" at="18,0,21,0" concept="8" trace="addNode#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7437307999543083242" at="21,0,24,0" concept="8" trace="addModel#(Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="7437307999543143934" at="24,0,27,0" concept="8" trace="addModule#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <node id="5635568830301220124" at="27,0,30,0" concept="8" trace="exist#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="7437307999543051757" at="30,0,33,0" concept="8" trace="makeKey#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="7437307999543104838" at="33,0,36,0" concept="8" trace="makeKey#(Lorg/jetbrains/mps/openapi/model/SModel;)Ljava/lang/String;" />
+      <node id="7437307999543109967" at="36,0,39,0" concept="8" trace="makeKey#(Lorg/jetbrains/mps/openapi/module/SModule;)Ljava/lang/String;" />
+      <scope id="7437307999543033540" at="15,20,16,47" />
+      <scope id="7437307999543040557" at="18,35,19,40" />
+      <scope id="7437307999543083243" at="21,38,22,41" />
+      <scope id="7437307999543143935" at="24,41,25,42" />
+      <scope id="5635568830301220127" at="27,36,28,44" />
+      <scope id="7437307999543051760" at="30,38,31,72" />
+      <scope id="7437307999543104839" at="33,40,34,76" />
+      <scope id="7437307999543109968" at="36,42,37,43" />
+      <scope id="7437307999543033536" at="15,0,18,0" />
+      <scope id="7437307999543040554" at="18,0,21,0">
+        <var name="node" id="7437307999543049608" />
+      </scope>
+      <scope id="7437307999543083242" at="21,0,24,0">
+        <var name="model" id="7437307999543083255" />
+      </scope>
+      <scope id="7437307999543143934" at="24,0,27,0">
+        <var name="module" id="7437307999543143947" />
+      </scope>
+      <scope id="5635568830301220124" at="27,0,30,0">
+        <var name="node" id="5635568830301221095" />
+      </scope>
+      <scope id="7437307999543051757" at="30,0,33,0">
+        <var name="node" id="7437307999543052083" />
+      </scope>
+      <scope id="7437307999543104838" at="33,0,36,0">
+        <var name="model" id="7437307999543104864" />
+      </scope>
+      <scope id="7437307999543109967" at="36,0,39,0">
+        <var name="module" id="7437307999543109997" />
+      </scope>
+      <unit id="7724285693452230622" at="11,0,41,0" name="org.campagnelab.circles.aspect.db.DbCache" />
+    </file>
+  </root>
+  <root nodeRef="r:623c8eb4-df21-4fdc-925d-d384e22129a2(org.campagnelab.circles.aspect.db)/7724285693452237917">
+    <file name="DbNode.java">
+      <node id="2525550782537475455" at="28,0,29,0" concept="5" trace="doc" />
+      <node id="2525550782537463448" at="29,0,30,0" concept="5" trace="db" />
+      <node id="2525550782537480299" at="31,53,32,52" concept="4" />
+      <node id="2525550782537481762" at="32,52,33,17" concept="4" />
+      <node id="2525550782537527748" at="35,64,36,39" concept="4" />
+      <node id="2525550782537527758" at="36,39,37,17" concept="4" />
+      <node id="2525550782538359317" at="39,56,40,19" concept="4" />
+      <node id="2525550782538360751" at="40,19,41,17" concept="4" />
+      <node id="2525550782537513563" at="44,87,45,64" concept="10" />
+      <node id="2525550782537513585" at="47,41,48,124" concept="4" />
+      <node id="2525550782537513591" at="49,7,50,18" concept="10" />
+      <node id="5597880810768785759" at="53,43,54,10904" concept="10" />
+      <node id="2525550782537649048" at="57,27,58,13" concept="10" />
+      <node id="7724285693449045055" at="59,5,60,49" concept="9" />
+      <node id="5597880810769593825" at="60,49,61,0" concept="12" />
+      <node id="7724285693449045077" at="61,0,62,27" concept="11" />
+      <node id="7724285693449045082" at="64,32,65,53" concept="4" />
+      <node id="7724285693449045090" at="67,88,68,17" concept="3" />
+      <node id="7724285693449045101" at="69,7,70,70" concept="9" />
+      <node id="7724285693449045114" at="70,70,71,35" concept="9" />
+      <node id="7724285693449045125" at="74,39,75,81" concept="4" />
+      <node id="7724285693449045134" at="75,81,76,18" concept="1" />
+      <node id="7724285693449045138" at="77,38,78,81" concept="4" />
+      <node id="7724285693449045147" at="78,81,79,18" concept="1" />
+      <node id="7724285693449045153" at="81,18,82,64" concept="4" />
+      <node id="7724285693449045061" at="85,5,86,69" concept="4" />
+      <node id="7724285693449045071" at="86,69,87,36" concept="4" />
+      <node id="5597880810769505429" at="87,36,88,64" concept="4" />
+      <node id="5597880810769649345" at="88,64,89,0" concept="12" />
+      <node id="5597880810768736425" at="90,85,91,27" concept="11" />
+      <node id="5597880810769176887" at="92,32,93,50" concept="4" />
+      <node id="5597880810768736460" at="94,7,95,67" concept="4" />
+      <node id="5597880810769200583" at="96,5,97,0" concept="12" />
+      <node id="7724285693449045173" at="97,0,98,25" concept="11" />
+      <node id="7724285693449045180" at="100,96,101,17" concept="3" />
+      <node id="7724285693449045191" at="102,7,103,61" concept="9" />
+      <node id="2525550782537494958" at="105,28,106,74" concept="9" />
+      <node id="2525550782537536603" at="106,74,107,56" concept="4" />
+      <node id="7724285693449045201" at="107,56,108,43" concept="4" />
+      <node id="7437307999543174502" at="108,43,109,31" concept="4" />
+      <node id="7724285693449045211" at="112,34,113,17" concept="3" />
+      <node id="7724285693449045219" at="115,35,116,72" concept="4" />
+      <node id="7724285693449045232" at="117,14,118,79" concept="4" />
+      <node id="5597880810769186875" at="120,5,121,0" concept="12" />
+      <node id="2525550782538365074" at="121,0,122,16" concept="4" />
+      <node id="7724285693449844001" at="125,30,126,102" concept="4" />
+      <node id="2525550782538393425" at="127,5,128,49" concept="9" />
+      <node id="2525550782538393432" at="128,49,129,22" concept="11" />
+      <node id="7425961015988777557" at="130,111,131,63" concept="9" />
+      <node id="2525550782538393439" at="132,136,133,17" concept="3" />
+      <node id="7425961015989019553" at="135,32,136,71" concept="4" />
+      <node id="7425961015988811322" at="137,7,138,84" concept="4" />
+      <node id="7425961015989279125" at="139,5,140,16" concept="4" />
+      <node id="2525550782538421398" at="143,102,144,94" concept="10" />
+      <node id="2525550782538421420" at="145,5,146,16" concept="10" />
+      <node id="2525550782537593569" at="149,28,150,20" concept="10" />
+      <node id="2525550782537574961" at="153,27,154,22" concept="4" />
+      <node id="7724285693452237917" at="158,0,159,0" concept="13" trace="LOG" />
+      <node id="7724285693449045230" at="117,12,119,7" concept="0" />
+      <node id="2525550782537513585" at="46,12,49,7" concept="0" />
+      <node id="2525550782537513585" at="46,12,49,7" concept="7" />
+      <node id="5597880810768748529" at="53,0,56,0" concept="8" trace="renderToSvg#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="2525550782537641014" at="56,76,59,5" concept="7" />
+      <node id="7724285693449045082" at="63,90,66,7" concept="0" />
+      <node id="7724285693449045082" at="63,90,66,7" concept="7" />
+      <node id="7724285693449045088" at="66,7,69,7" concept="7" />
+      <node id="5597880810769176887" at="91,27,94,7" concept="0" />
+      <node id="5597880810769176887" at="91,27,94,7" concept="7" />
+      <node id="7724285693449045178" at="99,111,102,7" concept="7" />
+      <node id="7724285693449045209" at="111,7,114,7" concept="7" />
+      <node id="7724285693449844001" at="124,56,127,5" concept="0" />
+      <node id="7724285693449844001" at="124,56,127,5" concept="7" />
+      <node id="2525550782538393437" at="131,63,134,7" concept="7" />
+      <node id="7425961015989019553" at="134,7,137,7" concept="0" />
+      <node id="7425961015989019553" at="134,7,137,7" concept="7" />
+      <node id="2525550782538421396" at="142,94,145,5" concept="7" />
+      <node id="2525550782537590806" at="149,0,152,0" concept="8" trace="asDoc#()Lcom/orientechnologies/orient/core/record/impl/ODocument;" />
+      <node id="2525550782537581562" at="152,22,155,5" concept="7" />
+      <node id="2525550782537432153" at="31,0,35,0" concept="2" trace="DbNode#(Lcom/orientechnologies/orient/core/db/document/ODatabaseDocumentTx;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2525550782537527740" at="35,0,39,0" concept="2" trace="DbNode#(Lcom/orientechnologies/orient/core/db/document/ODatabaseDocumentTx;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)V" />
+      <node id="2525550782538355786" at="39,0,43,0" concept="2" trace="DbNode#(Lcom/orientechnologies/orient/core/db/document/ODatabaseDocumentTx;Lcom/orientechnologies/orient/core/record/impl/ODocument;)V" />
+      <node id="2525550782537513595" at="46,10,51,5" concept="0" />
+      <node id="7724285693449045217" at="114,7,119,7" concept="7" />
+      <node id="2525550782537572260" at="152,0,157,0" concept="8" trace="save#()V" />
+      <node id="4541420894301125511" at="104,80,110,9" concept="7" />
+      <node id="2525550782538421388" at="142,0,148,0" concept="8" trace="getLinkedField#(Lcom/orientechnologies/orient/core/db/document/ODatabaseDocumentTx;Lcom/orientechnologies/orient/core/record/impl/ODocument;Lorg/jetbrains/mps/openapi/language/SReferenceLink;)Lcom/orientechnologies/orient/core/record/ORecord;" />
+      <node id="5597880810768728952" at="89,0,96,5" concept="7" />
+      <node id="2525550782537513549" at="43,85,51,5" concept="7" />
+      <node id="7724285693449045198" at="103,61,111,7" concept="6" />
+      <node id="2525550782537513565" at="43,0,53,0" concept="8" trace="createNodeDoc#(Lcom/orientechnologies/orient/core/db/document/ODatabaseDocumentTx;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Lcom/orientechnologies/orient/core/record/impl/ODocument;" />
+      <node id="2525550782538393434" at="129,22,139,5" concept="6" />
+      <node id="7724285693449045122" at="72,47,83,9" concept="15" />
+      <node id="7724285693449045120" at="71,35,84,7" concept="7" />
+      <node id="2525550782538376846" at="124,0,142,0" concept="8" trace="resolveRefs#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/campagnelab/circles/aspect/db/DbCache;)V" />
+      <node id="7724285693449045175" at="98,25,120,5" concept="6" />
+      <node id="7724285693449045079" at="62,27,85,5" concept="6" />
+      <node id="7724285693449045053" at="56,0,124,0" concept="8" trace="populate#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/orientechnologies/orient/core/record/impl/ODocument;Lorg/campagnelab/circles/aspect/db/DbCache;)V" />
+      <scope id="7724285693449045150" at="80,41,80,41" />
+      <scope id="2525550782537513561" at="44,87,45,64" />
+      <scope id="2525550782537513585" at="47,41,48,124" />
+      <scope id="5597880810768748532" at="53,43,54,10904" />
+      <scope id="2525550782537641016" at="57,27,58,13" />
+      <scope id="7724285693449045082" at="64,32,65,53" />
+      <scope id="7724285693449045089" at="67,88,68,17" />
+      <scope id="7724285693449045152" at="81,18,82,64" />
+      <scope id="5597880810769176887" at="92,32,93,50" />
+      <scope id="7724285693449045179" at="100,96,101,17" />
+      <scope id="7724285693449045210" at="112,34,113,17" />
+      <scope id="7724285693449045218" at="115,35,116,72" />
+      <scope id="7724285693449045231" at="117,14,118,79" />
+      <scope id="7724285693449844001" at="125,30,126,102" />
+      <scope id="2525550782538393438" at="132,136,133,17" />
+      <scope id="7425961015989019553" at="135,32,136,71" />
+      <scope id="2525550782538421397" at="143,102,144,94" />
+      <scope id="2525550782537590809" at="149,28,150,20" />
+      <scope id="2525550782537581564" at="153,27,154,22" />
+      <scope id="2525550782537432157" at="31,53,33,17" />
+      <scope id="2525550782537527747" at="35,64,37,17" />
+      <scope id="2525550782538355789" at="39,56,41,17" />
+      <scope id="7724285693449045124" at="74,39,76,18" />
+      <scope id="7724285693449045137" at="77,38,79,18" />
+      <scope id="2525550782537513585" at="46,12,49,7" />
+      <scope id="5597880810768748529" at="53,0,56,0">
+        <var name="source" id="5597880810768751942" />
+      </scope>
+      <scope id="7724285693449045082" at="63,90,66,7" />
+      <scope id="5597880810769176887" at="91,27,94,7" />
+      <scope id="7724285693449844001" at="124,56,127,5" />
+      <scope id="7425961015989019553" at="134,7,137,7" />
+      <scope id="2525550782537590806" at="149,0,152,0" />
+      <scope id="2525550782537572263" at="152,22,155,5" />
+      <scope id="2525550782537432153" at="31,0,35,0">
+        <var name="db" id="2525550782537432378" />
+        <var name="node" id="2525550782537432409" />
+      </scope>
+      <scope id="2525550782537527740" at="35,0,39,0">
+        <var name="db" id="2525550782537527741" />
+        <var name="node" id="2525550782537527743" />
+      </scope>
+      <scope id="2525550782538355786" at="39,0,43,0">
+        <var name="db" id="2525550782538358957" />
+        <var name="doc" id="2525550782538358619" />
+      </scope>
+      <scope id="2525550782537513597" at="46,12,50,18" />
+      <scope id="4541420894301125513" at="105,28,109,31">
+        <var name="childNode" id="2525550782537494959" />
+      </scope>
+      <scope id="2525550782538421395" at="142,94,146,16" />
+      <scope id="5597880810768728954" at="90,85,95,67" />
+      <scope id="2525550782537572260" at="152,0,157,0" />
+      <scope id="7724285693449045200" at="104,80,110,9" />
+      <scope id="2525550782538421388" at="142,0,148,0">
+        <var name="db" id="2525550782538421389" />
+        <var name="node" id="2525550782538421391" />
+        <var name="ref" id="2525550782538421393" />
+      </scope>
+      <scope id="2525550782537513567" at="43,85,51,5" />
+      <scope id="7724285693449045198" at="103,61,111,7">
+        <var name="child" id="7724285693449045199" />
+      </scope>
+      <scope id="2525550782538393436" at="130,111,138,84">
+        <var name="refNode" id="7425961015988777558" />
+      </scope>
+      <scope id="2525550782537513565" at="43,0,53,0">
+        <var name="concept" id="2525550782537513589" />
+        <var name="db" id="2525550782537513599" />
+      </scope>
+      <scope id="2525550782538393434" at="129,22,139,5">
+        <var name="referenceLink" id="2525550782538393435" />
+      </scope>
+      <scope id="7724285693449045121" at="72,47,83,9" />
+      <scope id="2525550782538376849" at="124,56,140,16">
+        <var name="sourceConcept" id="2525550782538393426" />
+      </scope>
+      <scope id="2525550782538376846" at="124,0,142,0">
+        <var name="cache" id="7425961015989537809" />
+        <var name="source" id="2525550782538385593" />
+      </scope>
+      <scope id="7724285693449045177" at="99,111,119,7">
+        <var name="childDocs" id="7724285693449045192" />
+      </scope>
+      <scope id="7724285693449045081" at="63,90,84,7">
+        <var name="type" id="7724285693449045115" />
+        <var name="value" id="7724285693449045102" />
+      </scope>
+      <scope id="7724285693449045175" at="98,25,120,5">
+        <var name="childRole" id="7724285693449045176" />
+      </scope>
+      <scope id="7724285693449045079" at="62,27,85,5">
+        <var name="p" id="7724285693449045080" />
+      </scope>
+      <scope id="7724285693449045054" at="56,76,122,16">
+        <var name="sourceConcept" id="7724285693449045056" />
+      </scope>
+      <scope id="7724285693449045053" at="56,0,124,0">
+        <var name="cache" id="7437307999543164275" />
+        <var name="parentModel" id="7724285693449045249" />
+        <var name="source" id="7724285693449045247" />
+      </scope>
+      <unit id="7724285693452237917" at="27,0,160,0" name="org.campagnelab.circles.aspect.db.DbNode" />
+    </file>
+  </root>
+</debug-info>
+

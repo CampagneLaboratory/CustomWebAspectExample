@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="dcwf5d3uyozq9h3nfw6zqvk1pg0uys9">
+  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="-5xb7jypw7d0bhouyx3xmbfw2tz5ihja" />
+  <common hash="-1zg1ygmz1xs93b0q4i43gmoso5xdtip" dependsOnNodes="true">
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+  </common>
+  <source id="7466760769189735436" name="BaseConcept_WebModel" hash="-ape6ty7hggbmwar8q3s02wrv2horjta">
+    <file name="BaseConcept_WebModel.java" />
+  </source>
+  <source id="2045918617408932309" name="Attribute_WebModel" hash="-2sstpti2henivixrh2lj3vdrh4dzd6t">
+    <file name="Attribute_WebModel.java" />
+  </source>
+</dependencies>
+

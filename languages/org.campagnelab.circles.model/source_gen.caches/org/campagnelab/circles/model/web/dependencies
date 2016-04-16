@@ -1,0 +1,1550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="org.campagnelab.circles.model.web.AppActivityMapper" file="AppActivityMapper.java">
+    <classNode dependClassName="com.google.gwt.activity.shared.Activity" />
+    <classNode dependClassName="com.google.gwt.place.shared.Place" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactory" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.GenericPlace" />
+    <classNode extendsClassName="com.google.gwt.activity.shared.ActivityMapper" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.AppPlaceHistoryMapper" file="AppPlaceHistoryMapper.java">
+    <classNode dependClassName="com.google.gwt.place.shared.WithTokenizers" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SearchNodesPlace" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ViewModulePlace" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ViewProject" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ViewRoot" />
+    <classNode extendsClassName="com.google.gwt.place.shared.PlaceHistoryMapper" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.AttributeToWebModel" file="AttributeToWebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Attribute_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Attribute_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConceptToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Attribute_Bean" file="Attribute_Bean.java">
+    <classNode extendsClassName="java.io.Serializable" />
+    <classNode extendsClassName="org.webapp.languages.jetbrains_mps_lang_core.shared.beans.BaseConcept_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Attribute_DbToPojoHelper" file="Attribute_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Attribute_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Attribute_WebModel" file="Attribute_WebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode extendsClassName="org.webapp.languages.jetbrains_mps_lang_core.client.models.BaseConcept_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Attribute_WebModelImpl" file="Attribute_WebModelImpl.java">
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Attribute_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.BaseCommentAttributeToWebModel" file="BaseCommentAttributeToWebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseCommentAttribute_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseCommentAttribute_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConceptToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConcept_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConcept_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ChildAttributeToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.BaseCommentAttribute_Bean" file="BaseCommentAttribute_Bean.java">
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="org.webapp.languages.jetbrains_mps_lang_core.shared.beans.BaseConcept_Bean" />
+    <classNode extendsClassName="java.io.Serializable" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.ChildAttribute_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.BaseCommentAttribute_DbToPojoHelper" file="BaseCommentAttribute_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.record.OIdentifiable" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseCommentAttribute_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConcept_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ChildAttribute_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ReflectionHelper" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.BaseCommentAttribute_WebModel" file="BaseCommentAttribute_WebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="jetbrains.jetpad.model.children.ChildList" />
+    <classNode dependClassName="jetbrains.jetpad.model.collections.list.ObservableList" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConcept_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.ChildAttribute_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.BaseCommentAttribute_WebModelImpl" file="BaseCommentAttribute_WebModelImpl.java">
+    <classNode extendsClassName="org.campagnelab.circles.model.web.BaseCommentAttribute_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.BaseConceptToWebModel" file="BaseConceptToWebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.AttributeToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Attribute_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Attribute_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConcept_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConcept_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.BaseConcept_Bean" file="BaseConcept_Bean.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Attribute_Bean" />
+    <classNode extendsClassName="java.io.Serializable" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.BaseConcept_DbToPojoHelper" file="BaseConcept_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.record.OIdentifiable" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Attribute_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConcept_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ReflectionHelper" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.BaseConcept_WebMapper" file="BaseConcept_WebMapper.java">
+    <classNode dependClassName="jetbrains.jetpad.mapper.gwt.WithElement" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConcept_WebView" />
+    <classNode dependClassName="org.webapp.languages.jetbrains_mps_lang_core.client.models.BaseConcept_WebModel" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.Mapper" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.BaseConcept_WebModel" file="BaseConcept_WebModel.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="jetbrains.jetpad.model.children.ChildList" />
+    <classNode dependClassName="jetbrains.jetpad.model.collections.list.ObservableList" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.Property" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.ValueProperty" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Attribute_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode extendsClassName="jetbrains.jetpad.model.children.HasParent" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.BaseConcept_WebModelImpl" file="BaseConcept_WebModelImpl.java">
+    <classNode extendsClassName="org.campagnelab.circles.model.web.BaseConcept_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.BaseConcept_WebView" file="BaseConcept_WebView.java">
+    <classNode dependClassName="com.google.gwt.core.client.GWT" />
+    <classNode dependClassName="com.google.gwt.dom.client.DivElement" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiBinder" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.gwt.BaseWithElement" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.BaseConcept_WebView.ui" file="BaseConcept_WebView.ui.xml" />
+  <dependency className="org.campagnelab.circles.model.web.ChildAttributeToWebModel" file="ChildAttributeToWebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.AttributeToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ChildAttribute_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ChildAttribute_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ChildAttribute_Bean" file="ChildAttribute_Bean.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="java.io.Serializable" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Attribute_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ChildAttribute_DbToPojoHelper" file="ChildAttribute_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Attribute_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ChildAttribute_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ChildAttribute_WebModel" file="ChildAttribute_WebModel.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.Property" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.ValueProperty" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Attribute_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ChildAttribute_WebModelImpl" file="ChildAttribute_WebModelImpl.java">
+    <classNode extendsClassName="org.campagnelab.circles.model.web.ChildAttribute_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ClientFactory" file="ClientFactory.java">
+    <classNode dependClassName="com.google.gwt.core.client.GWT" />
+    <classNode dependClassName="com.google.gwt.place.shared.PlaceController" />
+    <classNode dependClassName="com.google.web.bindery.event.shared.EventBus" />
+    <classNode dependClassName="com.google.web.bindery.event.shared.SimpleEventBus" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.DbGenericService" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.DbGenericServiceAsync" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ClientFactoryInterface" file="ClientFactoryInterface.java">
+    <classNode dependClassName="com.google.gwt.place.shared.PlaceController" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.DbGenericService" file="DbGenericService.java">
+    <classNode dependClassName="com.google.gwt.user.client.rpc.RemoteServiceRelativePath" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Model_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Project_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Solution_Bean" />
+    <classNode extendsClassName="com.google.gwt.user.client.rpc.RemoteService" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.DbGenericServiceAsync" file="DbGenericServiceAsync.java">
+    <classNode dependClassName="com.google.gwt.user.client.rpc.AsyncCallback" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Model_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Project_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Solution_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.DbGenericServiceImpl" file="DbGenericServiceImpl.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Model_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Model_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Project_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Project_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Solution_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Solution_DbToPojoHelper" />
+    <classNode extendsClassName="com.google.gwt.user.server.rpc.RemoteServiceServlet" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.DbGenericService" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.DbSchemaHelper" file="DbSchemaHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.metadata.schema.OClass" />
+    <classNode dependClassName="com.orientechnologies.orient.core.metadata.schema.OSchemaProxy" />
+    <classNode dependClassName="com.orientechnologies.orient.core.metadata.schema.OType" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.Throwable" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="java.util.Iterator" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.CollectionSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.apache.log4j.Level" />
+    <classNode dependClassName="org.apache.log4j.LogManager" />
+    <classNode dependClassName="org.apache.log4j.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.aspect.db.DbAccess" />
+    <classNode dependClassName="org.campagnelab.circles.aspect.db.DbClassNameUtil" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SDataType" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SEnumeration" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SPrimitiveDataType" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SReferenceLink" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.DbSerializer" file="DbSerializer.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.ORecord" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
+    <classNode dependClassName="jetbrains.mps.project.MPSProject" />
+    <classNode dependClassName="jetbrains.mps.project.Solution" />
+    <classNode dependClassName="jetbrains.mps.smodel.Language" />
+    <classNode dependClassName="org.apache.log4j.Level" />
+    <classNode dependClassName="org.apache.log4j.LogManager" />
+    <classNode dependClassName="org.apache.log4j.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.aspect.db.CIRCLES_BASE_CONCEPTS" />
+    <classNode dependClassName="org.campagnelab.circles.aspect.db.DbAccess" />
+    <classNode dependClassName="org.campagnelab.circles.aspect.db.DbCache" />
+    <classNode dependClassName="org.campagnelab.circles.aspect.db.DbNode" />
+    <classNode dependClassName="org.campagnelab.circles.aspect.db.FIELDS" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SModel" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.module.SModule" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.module.SModuleId" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ExportScopeModuleToWebModel" file="ExportScopeModuleToWebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopeModule_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopeModule_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopeToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ExportScopeModule_Bean" file="ExportScopeModule_Bean.java">
+    <classNode extendsClassName="java.io.Serializable" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.ExportScope_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ExportScopeModule_DbToPojoHelper" file="ExportScopeModule_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopeModule_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScope_DbToPojoHelper" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ExportScopeModule_WebModel" file="ExportScopeModule_WebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.ExportScope_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ExportScopeModule_WebModelImpl" file="ExportScopeModule_WebModelImpl.java">
+    <classNode extendsClassName="org.campagnelab.circles.model.web.ExportScopeModule_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ExportScopeNamespaceToWebModel" file="ExportScopeNamespaceToWebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopeNamespace_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopeNamespace_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopeToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ExportScopeNamespace_Bean" file="ExportScopeNamespace_Bean.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="java.io.Serializable" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.ExportScope_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ExportScopeNamespace_DbToPojoHelper" file="ExportScopeNamespace_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopeNamespace_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScope_DbToPojoHelper" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ExportScopeNamespace_WebModel" file="ExportScopeNamespace_WebModel.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.Property" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.ValueProperty" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.ExportScope_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ExportScopeNamespace_WebModelImpl" file="ExportScopeNamespace_WebModelImpl.java">
+    <classNode extendsClassName="org.campagnelab.circles.model.web.ExportScopeNamespace_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ExportScopePublicToWebModel" file="ExportScopePublicToWebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopePublic_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopePublic_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopeToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ExportScopePublic_Bean" file="ExportScopePublic_Bean.java">
+    <classNode extendsClassName="java.io.Serializable" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.ExportScope_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ExportScopePublic_DbToPojoHelper" file="ExportScopePublic_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopePublic_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScope_DbToPojoHelper" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ExportScopePublic_WebModel" file="ExportScopePublic_WebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.ExportScope_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ExportScopePublic_WebModelImpl" file="ExportScopePublic_WebModelImpl.java">
+    <classNode extendsClassName="org.campagnelab.circles.model.web.ExportScopePublic_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ExportScopeToWebModel" file="ExportScopeToWebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScope_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScope_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.NodeAttributeToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ExportScope_Bean" file="ExportScope_Bean.java">
+    <classNode extendsClassName="java.io.Serializable" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.NodeAttribute_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ExportScope_DbToPojoHelper" file="ExportScope_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScope_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.NodeAttribute_DbToPojoHelper" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ExportScope_WebModel" file="ExportScope_WebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.NodeAttribute_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ExportScope_WebModelImpl" file="ExportScope_WebModelImpl.java">
+    <classNode extendsClassName="org.campagnelab.circles.model.web.ExportScope_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.GenericPlace" file="GenericPlace.java">
+    <classNode dependClassName="com.google.gwt.activity.shared.Activity" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.IDontApplyTypesystemRules_Bean" file="IDontApplyTypesystemRules_Bean.java">
+    <classNode extendsClassName="java.io.Serializable" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.IDontApplyTypesystemRules_DbToPojoHelper" file="IDontApplyTypesystemRules_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.IDontApplyTypesystemRules_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.INamedConcept_Bean" file="INamedConcept_Bean.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="java.io.Serializable" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.INamedConcept_DbToPojoHelper" file="INamedConcept_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.INamedConcept_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ISkipConstraintsChecking_Bean" file="ISkipConstraintsChecking_Bean.java">
+    <classNode extendsClassName="java.io.Serializable" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ISkipConstraintsChecking_DbToPojoHelper" file="ISkipConstraintsChecking_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ISkipConstraintsChecking_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ISuppressErrors_Bean" file="ISuppressErrors_Bean.java">
+    <classNode extendsClassName="java.io.Serializable" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ISuppressErrors_DbToPojoHelper" file="ISuppressErrors_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ISuppressErrors_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.IWrapper_Bean" file="IWrapper_Bean.java">
+    <classNode extendsClassName="java.io.Serializable" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.IWrapper_DbToPojoHelper" file="IWrapper_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.IWrapper_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.InterfacePart_Bean" file="InterfacePart_Bean.java">
+    <classNode extendsClassName="java.io.Serializable" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.InterfacePart_DbToPojoHelper" file="InterfacePart_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.InterfacePart_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.LanguageToWebModel" file="LanguageToWebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Language_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Language_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ModuleToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Language_Bean" file="Language_Bean.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="java.io.Serializable" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Module_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Language_DbToPojoHelper" file="Language_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Language_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_DbToPojoHelper" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Language_WebMapper" file="Language_WebMapper.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.MapperFactory" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.Synchronizers" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.gwt.DomUtil" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Language_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Language_WebView" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+    <classNode dependClassName="org.webapp.languages.jetbrains_mps_lang_core.client.models.BaseConcept_WebModel" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.Mapper" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Language_WebModel" file="Language_WebModel.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.Property" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.ValueProperty" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Module_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Language_WebModelImpl" file="Language_WebModelImpl.java">
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Language_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Language_WebView" file="Language_WebView.java">
+    <classNode dependClassName="com.google.gwt.core.client.GWT" />
+    <classNode dependClassName="com.google.gwt.dom.client.DivElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.SpanElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.UListElement" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiBinder" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiField" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.gwt.BaseWithElement" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Language_WebView.ui" file="Language_WebView.ui.xml" />
+  <dependency className="org.campagnelab.circles.model.web.LinkAttributeToWebModel" file="LinkAttributeToWebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.AttributeToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.LinkAttribute_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.LinkAttribute_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.LinkAttribute_Bean" file="LinkAttribute_Bean.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="java.io.Serializable" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Attribute_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.LinkAttribute_DbToPojoHelper" file="LinkAttribute_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Attribute_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.LinkAttribute_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.LinkAttribute_WebModel" file="LinkAttribute_WebModel.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.Property" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.ValueProperty" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Attribute_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.LinkAttribute_WebModelImpl" file="LinkAttribute_WebModelImpl.java">
+    <classNode extendsClassName="org.campagnelab.circles.model.web.LinkAttribute_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ModelToWebModel" file="ModelToWebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConceptToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConcept_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConcept_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Model_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Model_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Model_Bean" file="Model_Bean.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="org.webapp.languages.jetbrains_mps_lang_core.shared.beans.BaseConcept_Bean" />
+    <classNode extendsClassName="java.io.Serializable" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Root_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Model_DbToPojoHelper" file="Model_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.record.OIdentifiable" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConcept_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Model_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ReflectionHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_DbToPojoHelper" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Model_WebMapper" file="Model_WebMapper.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.MapperFactory" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.Synchronizers" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.gwt.DomUtil" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Model_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Model_WebView" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+    <classNode dependClassName="org.webapp.languages.jetbrains_mps_lang_core.client.models.BaseConcept_WebModel" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.Mapper" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Model_WebModel" file="Model_WebModel.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="jetbrains.jetpad.model.children.ChildList" />
+    <classNode dependClassName="jetbrains.jetpad.model.collections.list.ObservableList" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.Property" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.ValueProperty" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConcept_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Root_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Model_WebModelImpl" file="Model_WebModelImpl.java">
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Model_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Model_WebView" file="Model_WebView.java">
+    <classNode dependClassName="com.google.gwt.core.client.GWT" />
+    <classNode dependClassName="com.google.gwt.dom.client.DivElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.SpanElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.UListElement" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiBinder" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiField" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.gwt.BaseWithElement" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Model_WebView.ui" file="Model_WebView.ui.xml" />
+  <dependency className="org.campagnelab.circles.model.web.ModuleEntryPoint" file="ModuleEntryPoint.java">
+    <classNode dependClassName="com.google.gwt.activity.shared.ActivityManager" />
+    <classNode dependClassName="com.google.gwt.activity.shared.ActivityMapper" />
+    <classNode dependClassName="com.google.gwt.core.client.GWT" />
+    <classNode dependClassName="com.google.gwt.place.shared.PlaceController" />
+    <classNode dependClassName="com.google.gwt.place.shared.PlaceHistoryHandler" />
+    <classNode dependClassName="com.google.gwt.user.client.ui.RootPanel" />
+    <classNode dependClassName="com.google.gwt.user.client.ui.SimplePanel" />
+    <classNode dependClassName="com.google.web.bindery.event.shared.EventBus" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.AppActivityMapper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.AppPlaceHistoryMapper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactory" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SearchNodesPlace" />
+    <classNode extendsClassName="com.google.gwt.core.client.EntryPoint" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ModuleToWebModel" file="ModuleToWebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ModelToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Model_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Model_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Module_Bean" file="Module_Bean.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Model_Bean" />
+    <classNode extendsClassName="java.io.Serializable" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Root_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Module_DbToPojoHelper" file="Module_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.record.OIdentifiable" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Model_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ReflectionHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_DbToPojoHelper" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Module_WebMapper" file="Module_WebMapper.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.MapperFactory" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.Synchronizers" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.gwt.DomUtil" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_WebView" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+    <classNode dependClassName="org.webapp.languages.jetbrains_mps_lang_core.client.models.BaseConcept_WebModel" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.Mapper" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Module_WebModel" file="Module_WebModel.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="jetbrains.jetpad.model.children.ChildList" />
+    <classNode dependClassName="jetbrains.jetpad.model.collections.list.ObservableList" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.Property" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.ValueProperty" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Model_WebModel" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Root_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Module_WebModelImpl" file="Module_WebModelImpl.java">
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Module_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Module_WebView" file="Module_WebView.java">
+    <classNode dependClassName="com.google.gwt.core.client.GWT" />
+    <classNode dependClassName="com.google.gwt.dom.client.DivElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.SpanElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.UListElement" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiBinder" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiField" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.gwt.BaseWithElement" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Module_WebView.ui" file="Module_WebView.ui.xml" />
+  <dependency className="org.campagnelab.circles.model.web.NodeAttributeToWebModel" file="NodeAttributeToWebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.AttributeToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.NodeAttribute_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.NodeAttribute_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.NodeAttribute_Bean" file="NodeAttribute_Bean.java">
+    <classNode extendsClassName="java.io.Serializable" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Attribute_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.NodeAttribute_DbToPojoHelper" file="NodeAttribute_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Attribute_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.NodeAttribute_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.NodeAttribute_WebModel" file="NodeAttribute_WebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Attribute_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.NodeAttribute_WebModelImpl" file="NodeAttribute_WebModelImpl.java">
+    <classNode extendsClassName="org.campagnelab.circles.model.web.NodeAttribute_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ProjectToWebModel" file="ProjectToWebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ModuleToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Project_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Project_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Project_Bean" file="Project_Bean.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_Bean" />
+    <classNode extendsClassName="java.io.Serializable" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Root_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Project_DbToPojoHelper" file="Project_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.record.OIdentifiable" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Project_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ReflectionHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_DbToPojoHelper" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Project_WebMapper" file="Project_WebMapper.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.MapperFactory" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.Synchronizers" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.gwt.DomUtil" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Project_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Project_WebView" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+    <classNode dependClassName="org.webapp.languages.jetbrains_mps_lang_core.client.models.BaseConcept_WebModel" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.Mapper" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Project_WebModel" file="Project_WebModel.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="jetbrains.jetpad.model.children.ChildList" />
+    <classNode dependClassName="jetbrains.jetpad.model.collections.list.ObservableList" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.Property" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.ValueProperty" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_WebModel" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Root_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Project_WebModelImpl" file="Project_WebModelImpl.java">
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Project_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Project_WebView" file="Project_WebView.java">
+    <classNode dependClassName="com.google.gwt.core.client.GWT" />
+    <classNode dependClassName="com.google.gwt.dom.client.DivElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.SpanElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.UListElement" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiBinder" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiField" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.gwt.BaseWithElement" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Project_WebView.ui" file="Project_WebView.ui.xml" />
+  <dependency className="org.campagnelab.circles.model.web.PropertyAttributeToWebModel" file="PropertyAttributeToWebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.AttributeToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.PropertyAttribute_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.PropertyAttribute_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.PropertyAttribute_Bean" file="PropertyAttribute_Bean.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="java.io.Serializable" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Attribute_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.PropertyAttribute_DbToPojoHelper" file="PropertyAttribute_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Attribute_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.PropertyAttribute_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.PropertyAttribute_WebModel" file="PropertyAttribute_WebModel.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.Property" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.ValueProperty" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Attribute_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.PropertyAttribute_WebModelImpl" file="PropertyAttribute_WebModelImpl.java">
+    <classNode extendsClassName="org.campagnelab.circles.model.web.PropertyAttribute_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ReflectionHelper" file="ReflectionHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.ClassNotFoundException" />
+    <classNode dependClassName="java.lang.IllegalAccessException" />
+    <classNode dependClassName="java.lang.NoSuchMethodException" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.lang.reflect.InvocationTargetException" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.RootRefToWebModel" file="RootRefToWebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConceptToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.RootRef_Bean" file="RootRef_Bean.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="java.io.Serializable" />
+    <classNode extendsClassName="org.webapp.languages.jetbrains_mps_lang_core.shared.beans.BaseConcept_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.RootRef_DbToPojoHelper" file="RootRef_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.RootRef_WebMapper" file="RootRef_WebMapper.java">
+    <classNode dependClassName="com.google.gwt.query.client.Function" />
+    <classNode dependClassName="com.google.gwt.query.client.GQuery" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.Synchronizers" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.gwt.DomUtil" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_WebView" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.Mapper" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.RootRef_WebModel" file="RootRef_WebModel.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.Property" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.ValueProperty" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ViewRoot" />
+    <classNode extendsClassName="org.webapp.languages.jetbrains_mps_lang_core.client.models.BaseConcept_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.RootRef_WebModelImpl" file="RootRef_WebModelImpl.java">
+    <classNode extendsClassName="org.campagnelab.circles.model.web.RootRef_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.RootRef_WebView" file="RootRef_WebView.java">
+    <classNode dependClassName="com.google.gwt.core.client.GWT" />
+    <classNode dependClassName="com.google.gwt.dom.client.AnchorElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.DivElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.SpanElement" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiBinder" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiField" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.gwt.BaseWithElement" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.RootRef_WebView.ui" file="RootRef_WebView.ui.xml" />
+  <dependency className="org.campagnelab.circles.model.web.RootToWebModel" file="RootToWebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConceptToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Root_Bean" file="Root_Bean.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="java.io.Serializable" />
+    <classNode extendsClassName="org.webapp.languages.jetbrains_mps_lang_core.shared.beans.BaseConcept_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Root_DbToPojoHelper" file="Root_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Root_WebMapper" file="Root_WebMapper.java">
+    <classNode dependClassName="com.google.common.base.Supplier" />
+    <classNode dependClassName="com.google.gwt.dom.client.DivElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.Element" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.jetpad.base.Registration" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.Synchronizer" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.SynchronizerContext" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.Synchronizers" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.gwt.DomUtil" />
+    <classNode dependClassName="jetbrains.jetpad.model.event.EventHandler" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.PropertyChangeEvent" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.ReadableProperty" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_WebView" />
+    <classNode dependClassName="org.vectomatic.dom.svg.OMSVGSVGElement" />
+    <classNode dependClassName="org.vectomatic.dom.svg.utils.OMSVGParser" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.Mapper" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Root_WebModel" file="Root_WebModel.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.Property" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.ValueProperty" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode extendsClassName="org.webapp.languages.jetbrains_mps_lang_core.client.models.BaseConcept_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Root_WebModelImpl" file="Root_WebModelImpl.java">
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Root_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Root_WebView" file="Root_WebView.java">
+    <classNode dependClassName="com.google.gwt.core.client.GWT" />
+    <classNode dependClassName="com.google.gwt.dom.client.DivElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.SpanElement" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiBinder" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiField" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.gwt.BaseWithElement" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Root_WebView.ui" file="Root_WebView.ui.xml" />
+  <dependency className="org.campagnelab.circles.model.web.SearchNodesPlace" file="SearchNodesPlace.java">
+    <classNode dependClassName="com.google.gwt.activity.shared.Activity" />
+    <classNode dependClassName="com.google.gwt.place.shared.PlaceTokenizer" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.StringBuffer" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactory" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ViewSearchNodesActivity" />
+    <classNode extendsClassName="com.google.gwt.place.shared.Place" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.GenericPlace" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.SearchNodesToWebModel" file="SearchNodesToWebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConceptToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRefToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SearchNodes_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SearchNodes_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.SearchNodes_Bean" file="SearchNodes_Bean.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_Bean" />
+    <classNode extendsClassName="java.io.Serializable" />
+    <classNode extendsClassName="org.webapp.languages.jetbrains_mps_lang_core.shared.beans.BaseConcept_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.SearchNodes_DbToPojoHelper" file="SearchNodes_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.record.OIdentifiable" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ReflectionHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SearchNodes_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.SearchNodes_WebMapper" file="SearchNodes_WebMapper.java">
+    <classNode dependClassName="com.google.gwt.query.client.Function" />
+    <classNode dependClassName="com.google.gwt.query.client.GQuery" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.MapperFactory" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.Synchronizers" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.gwt.DomUtil" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SearchNodes_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SearchNodes_WebView" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+    <classNode dependClassName="org.webapp.languages.jetbrains_mps_lang_core.client.models.BaseConcept_WebModel" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.Mapper" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.SearchNodes_WebModel" file="SearchNodes_WebModel.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="jetbrains.jetpad.model.children.ChildList" />
+    <classNode dependClassName="jetbrains.jetpad.model.collections.list.ObservableList" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.Property" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.ValueProperty" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SearchNodesPlace" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ViewProject" />
+    <classNode extendsClassName="org.webapp.languages.jetbrains_mps_lang_core.client.models.BaseConcept_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.SearchNodes_WebModelImpl" file="SearchNodes_WebModelImpl.java">
+    <classNode extendsClassName="org.campagnelab.circles.model.web.SearchNodes_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.SearchNodes_WebView" file="SearchNodes_WebView.java">
+    <classNode dependClassName="com.google.gwt.core.client.GWT" />
+    <classNode dependClassName="com.google.gwt.dom.client.AnchorElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.DivElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.SpanElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.UListElement" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiBinder" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiField" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.gwt.BaseWithElement" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.SearchNodes_WebView.ui" file="SearchNodes_WebView.ui.xml" />
+  <dependency className="org.campagnelab.circles.model.web.SideTransformInfoToWebModel" file="SideTransformInfoToWebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.NodeAttributeToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SideTransformInfo_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SideTransformInfo_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.SideTransformInfo_Bean" file="SideTransformInfo_Bean.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="java.io.Serializable" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.NodeAttribute_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.SideTransformInfo_DbToPojoHelper" file="SideTransformInfo_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.NodeAttribute_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SideTransformInfo_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.SideTransformInfo_WebModel" file="SideTransformInfo_WebModel.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.Property" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.ValueProperty" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.NodeAttribute_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.SideTransformInfo_WebModelImpl" file="SideTransformInfo_WebModelImpl.java">
+    <classNode extendsClassName="org.campagnelab.circles.model.web.SideTransformInfo_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.SolutionToWebModel" file="SolutionToWebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ModuleToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Solution_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Solution_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Solution_Bean" file="Solution_Bean.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="java.io.Serializable" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Module_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Solution_DbToPojoHelper" file="Solution_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Solution_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Solution_WebMapper" file="Solution_WebMapper.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.MapperFactory" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.Synchronizers" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.gwt.DomUtil" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Solution_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Solution_WebView" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+    <classNode dependClassName="org.webapp.languages.jetbrains_mps_lang_core.client.models.BaseConcept_WebModel" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.Mapper" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Solution_WebModel" file="Solution_WebModel.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.Property" />
+    <classNode dependClassName="jetbrains.jetpad.model.property.ValueProperty" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Module_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Solution_WebModelImpl" file="Solution_WebModelImpl.java">
+    <classNode extendsClassName="org.campagnelab.circles.model.web.Solution_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Solution_WebView" file="Solution_WebView.java">
+    <classNode dependClassName="com.google.gwt.core.client.GWT" />
+    <classNode dependClassName="com.google.gwt.dom.client.DivElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.SpanElement" />
+    <classNode dependClassName="com.google.gwt.dom.client.UListElement" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiBinder" />
+    <classNode dependClassName="com.google.gwt.uibinder.client.UiField" />
+    <classNode extendsClassName="jetbrains.jetpad.mapper.gwt.BaseWithElement" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.Solution_WebView.ui" file="Solution_WebView.ui.xml" />
+  <dependency className="org.campagnelab.circles.model.web.SuppressErrorsAnnotationToWebModel" file="SuppressErrorsAnnotationToWebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.NodeAttributeToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SuppressErrorsAnnotation_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SuppressErrorsAnnotation_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.WebModelFactory" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.SuppressErrorsAnnotation_Bean" file="SuppressErrorsAnnotation_Bean.java">
+    <classNode extendsClassName="java.io.Serializable" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.NodeAttribute_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.SuppressErrorsAnnotation_DbToPojoHelper" file="SuppressErrorsAnnotation_DbToPojoHelper.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.NodeAttribute_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SuppressErrorsAnnotation_Bean" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.SuppressErrorsAnnotation_WebModel" file="SuppressErrorsAnnotation_WebModel.java">
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactoryInterface" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.NodeAttribute_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.SuppressErrorsAnnotation_WebModelImpl" file="SuppressErrorsAnnotation_WebModelImpl.java">
+    <classNode extendsClassName="org.campagnelab.circles.model.web.SuppressErrorsAnnotation_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.TestAttribute" file="TestAttribute.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="junit.framework.Assert" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.AttributeToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Attribute_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Attribute_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Attribute_WebModel" />
+    <classNode dependClassName="org.junit.Test" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.TestBaseCommentAttribute" file="TestBaseCommentAttribute.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="junit.framework.Assert" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseCommentAttributeToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseCommentAttribute_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseCommentAttribute_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseCommentAttribute_WebModel" />
+    <classNode dependClassName="org.junit.Test" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.TestBaseConcept" file="TestBaseConcept.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="junit.framework.Assert" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConceptToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConcept_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConcept_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.BaseConcept_WebModel" />
+    <classNode dependClassName="org.junit.Test" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.TestChildAttribute" file="TestChildAttribute.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="junit.framework.Assert" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ChildAttributeToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ChildAttribute_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ChildAttribute_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ChildAttribute_WebModel" />
+    <classNode dependClassName="org.junit.Test" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.TestExportScope" file="TestExportScope.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="junit.framework.Assert" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopeToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScope_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScope_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScope_WebModel" />
+    <classNode dependClassName="org.junit.Test" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.TestExportScopeModule" file="TestExportScopeModule.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="junit.framework.Assert" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopeModuleToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopeModule_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopeModule_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopeModule_WebModel" />
+    <classNode dependClassName="org.junit.Test" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.TestExportScopeNamespace" file="TestExportScopeNamespace.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="junit.framework.Assert" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopeNamespaceToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopeNamespace_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopeNamespace_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopeNamespace_WebModel" />
+    <classNode dependClassName="org.junit.Test" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.TestExportScopePublic" file="TestExportScopePublic.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="junit.framework.Assert" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopePublicToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopePublic_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopePublic_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ExportScopePublic_WebModel" />
+    <classNode dependClassName="org.junit.Test" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.TestLanguage" file="TestLanguage.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="junit.framework.Assert" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.LanguageToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Language_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Language_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Language_WebModel" />
+    <classNode dependClassName="org.junit.Test" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.TestLinkAttribute" file="TestLinkAttribute.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="junit.framework.Assert" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.LinkAttributeToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.LinkAttribute_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.LinkAttribute_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.LinkAttribute_WebModel" />
+    <classNode dependClassName="org.junit.Test" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.TestModel" file="TestModel.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="junit.framework.Assert" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ModelToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Model_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Model_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Model_WebModel" />
+    <classNode dependClassName="org.junit.Test" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.TestModule" file="TestModule.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="junit.framework.Assert" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ModuleToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_WebModel" />
+    <classNode dependClassName="org.junit.Test" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.TestNodeAttribute" file="TestNodeAttribute.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="junit.framework.Assert" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.NodeAttributeToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.NodeAttribute_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.NodeAttribute_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.NodeAttribute_WebModel" />
+    <classNode dependClassName="org.junit.Test" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.TestProject" file="TestProject.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="junit.framework.Assert" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ProjectToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Project_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Project_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Project_WebModel" />
+    <classNode dependClassName="org.junit.Test" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.TestPropertyAttribute" file="TestPropertyAttribute.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="junit.framework.Assert" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.PropertyAttributeToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.PropertyAttribute_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.PropertyAttribute_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.PropertyAttribute_WebModel" />
+    <classNode dependClassName="org.junit.Test" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.TestRoot" file="TestRoot.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="junit.framework.Assert" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_WebModel" />
+    <classNode dependClassName="org.junit.Test" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.TestRootRef" file="TestRootRef.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="junit.framework.Assert" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRefToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_WebModel" />
+    <classNode dependClassName="org.junit.Test" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.TestSearchNodes" file="TestSearchNodes.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="junit.framework.Assert" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SearchNodesToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SearchNodes_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SearchNodes_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SearchNodes_WebModel" />
+    <classNode dependClassName="org.junit.Test" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.TestSideTransformInfo" file="TestSideTransformInfo.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="junit.framework.Assert" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SideTransformInfoToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SideTransformInfo_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SideTransformInfo_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SideTransformInfo_WebModel" />
+    <classNode dependClassName="org.junit.Test" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.TestSolution" file="TestSolution.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="junit.framework.Assert" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SolutionToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Solution_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Solution_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Solution_WebModel" />
+    <classNode dependClassName="org.junit.Test" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.TestSuppressErrorsAnnotation" file="TestSuppressErrorsAnnotation.java">
+    <classNode dependClassName="com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal" />
+    <classNode dependClassName="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" />
+    <classNode dependClassName="com.orientechnologies.orient.core.record.impl.ODocument" />
+    <classNode dependClassName="com.orientechnologies.orient.core.sql.query.OSQLSynchQuery" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="junit.framework.Assert" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SuppressErrorsAnnotationToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SuppressErrorsAnnotation_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SuppressErrorsAnnotation_DbToPojoHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SuppressErrorsAnnotation_WebModel" />
+    <classNode dependClassName="org.junit.Test" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ViewModulePlace" file="ViewModulePlace.java">
+    <classNode dependClassName="com.google.gwt.activity.shared.Activity" />
+    <classNode dependClassName="com.google.gwt.place.shared.PlaceTokenizer" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.StringBuffer" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactory" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ViewSolutionActivity" />
+    <classNode extendsClassName="com.google.gwt.place.shared.Place" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.GenericPlace" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ViewProject" file="ViewProject.java">
+    <classNode dependClassName="com.google.gwt.activity.shared.Activity" />
+    <classNode dependClassName="com.google.gwt.place.shared.PlaceTokenizer" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.StringBuffer" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactory" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ViewProjectActivity" />
+    <classNode extendsClassName="com.google.gwt.place.shared.Place" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.GenericPlace" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ViewProjectActivity" file="ViewProjectActivity.java">
+    <classNode dependClassName="com.google.gwt.event.shared.EventBus" />
+    <classNode dependClassName="com.google.gwt.user.client.ui.AcceptsOneWidget" />
+    <classNode dependClassName="com.google.gwt.user.client.ui.HTML" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactory" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Project_WebMapper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Project_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Project_WebModelImpl" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ViewProject" />
+    <classNode extendsClassName="com.google.gwt.activity.shared.AbstractActivity" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ViewRoot" file="ViewRoot.java">
+    <classNode dependClassName="com.google.gwt.activity.shared.Activity" />
+    <classNode dependClassName="com.google.gwt.place.shared.PlaceTokenizer" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.StringBuffer" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactory" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ViewRootActivity" />
+    <classNode extendsClassName="com.google.gwt.place.shared.Place" />
+    <classNode extendsClassName="org.campagnelab.circles.model.web.GenericPlace" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ViewRootActivity" file="ViewRootActivity.java">
+    <classNode dependClassName="com.google.gwt.event.shared.EventBus" />
+    <classNode dependClassName="com.google.gwt.user.client.rpc.AsyncCallback" />
+    <classNode dependClassName="com.google.gwt.user.client.ui.AcceptsOneWidget" />
+    <classNode dependClassName="com.google.gwt.user.client.ui.HTML" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.Throwable" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactory" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_WebMapper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ViewRoot" />
+    <classNode extendsClassName="com.google.gwt.activity.shared.AbstractActivity" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ViewSearchNodesActivity" file="ViewSearchNodesActivity.java">
+    <classNode dependClassName="com.google.gwt.event.shared.EventBus" />
+    <classNode dependClassName="com.google.gwt.user.client.rpc.AsyncCallback" />
+    <classNode dependClassName="com.google.gwt.user.client.ui.AcceptsOneWidget" />
+    <classNode dependClassName="com.google.gwt.user.client.ui.HTML" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.Throwable" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactory" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRefToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SearchNodesPlace" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SearchNodes_WebMapper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SearchNodes_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SearchNodes_WebModelImpl" />
+    <classNode extendsClassName="com.google.gwt.activity.shared.AbstractActivity" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.ViewSolutionActivity" file="ViewSolutionActivity.java">
+    <classNode dependClassName="com.google.gwt.event.shared.EventBus" />
+    <classNode dependClassName="com.google.gwt.user.client.rpc.AsyncCallback" />
+    <classNode dependClassName="com.google.gwt.user.client.ui.AcceptsOneWidget" />
+    <classNode dependClassName="com.google.gwt.user.client.ui.HTML" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.Throwable" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ClientFactory" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SolutionToWebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Solution_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Solution_WebMapper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Solution_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.ViewModulePlace" />
+    <classNode extendsClassName="com.google.gwt.activity.shared.AbstractActivity" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.WebAspectDescriptor" file="WebAspectDescriptor.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.Throwable" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.project.MPSProject" />
+    <classNode dependClassName="org.apache.log4j.Level" />
+    <classNode dependClassName="org.apache.log4j.LogManager" />
+    <classNode dependClassName="org.apache.log4j.Logger" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.DbSchemaHelper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.DbSerializer" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.module.SModule" />
+    <classNode extendsClassName="org.campagnelab.circles.aspect.runtime.WebLanguageAspectDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.WebModelFactory" file="WebModelFactory.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="jetbrains.jetpad.mapper.Mapper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Language_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Language_WebMapper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Language_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Language_WebModelImpl" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Model_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Model_WebMapper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Model_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Model_WebModelImpl" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_WebMapper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Module_WebModelImpl" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Project_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Project_WebMapper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Project_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Project_WebModelImpl" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_WebMapper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.RootRef_WebModelImpl" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_WebMapper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Root_WebModelImpl" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SearchNodes_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SearchNodes_WebMapper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SearchNodes_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.SearchNodes_WebModelImpl" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Solution_Bean" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Solution_WebMapper" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Solution_WebModel" />
+    <classNode dependClassName="org.campagnelab.circles.model.web.Solution_WebModelImpl" />
+    <classNode dependClassName="org.webapp.languages.jetbrains_mps_lang_core.client.models.BaseConcept_WebModel" />
+  </dependency>
+  <dependency className="org.campagnelab.circles.model.web.module.gwt" file="module.gwt.xml" />
+  <dependency className="org.campagnelab.circles.model.web.module.html" file="module.html.xml" />
+  <dependency className="org.campagnelab.circles.model.web.pom" file="pom.xml" />
+  <dependency className="org.campagnelab.circles.model.web.web" file="web.xml" />
+</dependenciesRoot>
+

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+  <root nodeRef="r:d3b37b30-cdff-43c0-8fa0-a9526797ea6b(org.campagnelab.circles.plugin.plugin)/1004539053072902909">
+    <file name="Plugin_ApplicationPlugin.java">
+      <node id="1004539053072902909" at="9,0,10,0" concept="3" trace="myId" />
+      <node id="1004539053072902909" at="12,27,13,16" concept="8" />
+      <node id="1004539053072902909" at="15,30,16,30" concept="9" />
+      <node id="1004539053072902909" at="16,30,17,43" concept="2" />
+      <node id="1004539053072902909" at="17,43,18,41" concept="2" />
+      <node id="1004539053072902909" at="18,41,19,49" concept="2" />
+      <node id="1004539053072902909" at="19,49,20,14" concept="9" />
+      <node id="1004539053072902909" at="20,14,21,50" concept="2" />
+      <node id="1004539053072902909" at="23,37,24,122" concept="2" />
+      <node id="1004539053072902909" at="10,0,12,0" concept="1" trace="Plugin_ApplicationPlugin#()V" />
+      <node id="1004539053072902909" at="12,0,15,0" concept="6" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="1004539053072902909" at="23,0,26,0" concept="6" trace="adjustRegularGroups#()V" />
+      <node id="1004539053072902909" at="15,0,23,0" concept="6" trace="createGroups#()V" />
+      <scope id="1004539053072902909" at="10,37,10,37" />
+      <scope id="1004539053072902909" at="12,27,13,16" />
+      <scope id="1004539053072902909" at="23,37,24,122" />
+      <scope id="1004539053072902909" at="10,0,12,0" />
+      <scope id="1004539053072902909" at="12,0,15,0" />
+      <scope id="1004539053072902909" at="23,0,26,0" />
+      <scope id="1004539053072902909" at="15,30,21,50" />
+      <scope id="1004539053072902909" at="15,0,23,0" />
+      <unit id="1004539053072902909" at="8,0,27,0" name="org.campagnelab.circles.plugin.plugin.Plugin_ApplicationPlugin" />
+    </file>
+    <file name="startup.properties">
+      <unit id="1004539053072902909" at="1,0,5,0" name="org.campagnelab.circles.plugin.plugin.startup" />
+    </file>
+  </root>
+  <root nodeRef="r:d3b37b30-cdff-43c0-8fa0-a9526797ea6b(org.campagnelab.circles.plugin.plugin)/1004539053072927170">
+    <file name="DefineDbSchema_Action.java">
+      <node id="1004539053072927170" at="21,0,22,0" concept="10" trace="ICON" />
+      <node id="1004539053072927170" at="22,34,23,40" concept="11" />
+      <node id="1004539053072927170" at="23,40,24,35" concept="2" />
+      <node id="1004539053072927170" at="24,35,25,41" concept="2" />
+      <node id="1004539053072927170" at="28,32,29,16" concept="8" />
+      <node id="1004539053072927222" at="32,87,33,82" concept="7" />
+      <node id="1004539053072927230" at="33,82,34,164" concept="7" />
+      <node id="1004539053072927242" at="35,34,36,111" concept="7" />
+      <node id="1004539053073014356" at="36,111,37,35" concept="8" />
+      <node id="1004539053072973864" at="38,5,39,16" concept="8" />
+      <node id="1004539053072927170" at="42,89,43,85" concept="2" />
+      <node id="1004539053072927170" at="47,53,48,19" concept="8" />
+      <node id="1004539053072927170" at="50,5,51,54" concept="7" />
+      <node id="1004539053072927170" at="52,22,53,21" concept="8" />
+      <node id="1004539053072927170" at="56,5,57,66" concept="7" />
+      <node id="1004539053072927170" at="58,22,59,21" concept="8" />
+      <node id="1004539053072927170" at="61,5,62,16" concept="8" />
+      <node id="1004539053072927173" at="65,96,66,82" concept="7" />
+      <node id="1004539053072953098" at="66,82,67,164" concept="7" />
+      <node id="1004539053072953110" at="67,164,68,109" concept="7" />
+      <node id="1004539053072957127" at="68,109,69,59" concept="2" />
+      <node id="5665480314685264972" at="70,30,71,42" concept="2" />
+      <node id="1004539053072927170" at="74,0,75,0" concept="10" trace="LOG" />
+      <node id="1004539053072927170" at="46,95,49,5" concept="5" />
+      <node id="1004539053072927170" at="51,54,54,7" concept="5" />
+      <node id="1004539053072927170" at="57,66,60,7" concept="5" />
+      <node id="5665480314685264972" at="69,59,72,5" concept="0" />
+      <node id="5665480314685264972" at="69,59,72,5" concept="5" />
+      <node id="1004539053072927170" at="27,0,31,0" concept="6" trace="isDumbAware#()Z" />
+      <node id="1004539053072967611" at="34,164,38,5" concept="5" />
+      <node id="1004539053072927170" at="41,0,45,0" concept="6" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="1004539053072927170" at="22,0,27,0" concept="1" trace="DefineDbSchema_Action#()V" />
+      <node id="1004539053072927170" at="49,5,55,5" concept="0" />
+      <node id="1004539053072927170" at="55,5,61,5" concept="0" />
+      <node id="1004539053072927170" at="31,0,41,0" concept="6" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="1004539053072927170" at="64,0,74,0" concept="6" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="1004539053072927170" at="45,0,64,0" concept="6" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="1004539053072927170" at="28,32,29,16" />
+      <scope id="1004539053072927170" at="42,89,43,85" />
+      <scope id="1004539053072927170" at="47,53,48,19" />
+      <scope id="1004539053072927170" at="52,22,53,21" />
+      <scope id="1004539053072927170" at="58,22,59,21" />
+      <scope id="5665480314685264972" at="70,30,71,42" />
+      <scope id="1004539053072967613" at="35,34,37,35">
+        <var name="webDescriptor" id="1004539053072927243" />
+      </scope>
+      <scope id="1004539053072927170" at="22,34,25,41" />
+      <scope id="5665480314685264972" at="69,59,72,5" />
+      <scope id="1004539053072927170" at="27,0,31,0" />
+      <scope id="1004539053072927170" at="41,0,45,0">
+        <var name="_params" id="1004539053072927170" />
+        <var name="event" id="1004539053072927170" />
+      </scope>
+      <scope id="1004539053072927170" at="50,5,54,7">
+        <var name="p" id="1004539053072927170" />
+      </scope>
+      <scope id="1004539053072927170" at="56,5,60,7">
+        <var name="p" id="1004539053072927170" />
+      </scope>
+      <scope id="1004539053072927170" at="22,0,27,0" />
+      <scope id="1004539053072927221" at="32,87,39,16">
+        <var name="concept" id="1004539053072927223" />
+        <var name="languageRuntime" id="1004539053072927231" />
+      </scope>
+      <scope id="1004539053072927170" at="65,96,72,5">
+        <var name="concept" id="1004539053072927174" />
+        <var name="languageRuntime" id="1004539053072953099" />
+        <var name="webDescriptor" id="1004539053072953111" />
+      </scope>
+      <scope id="1004539053072927170" at="31,0,41,0">
+        <var name="_params" id="1004539053072927170" />
+        <var name="event" id="1004539053072927170" />
+      </scope>
+      <scope id="1004539053072927170" at="64,0,74,0">
+        <var name="_params" id="1004539053072927170" />
+        <var name="event" id="1004539053072927170" />
+      </scope>
+      <scope id="1004539053072927170" at="46,95,62,16" />
+      <scope id="1004539053072927170" at="45,0,64,0">
+        <var name="_params" id="1004539053072927170" />
+        <var name="event" id="1004539053072927170" />
+      </scope>
+      <unit id="1004539053072927170" at="20,0,76,0" name="org.campagnelab.circles.plugin.plugin.DefineDbSchema_Action" />
+    </file>
+  </root>
+  <root nodeRef="r:d3b37b30-cdff-43c0-8fa0-a9526797ea6b(org.campagnelab.circles.plugin.plugin)/1004539053072962909">
+    <file name="AddCirclesActions_ActionGroup.java">
+      <node id="1004539053072962909" at="10,0,11,0" concept="10" trace="LOG" />
+      <node id="1004539053072962909" at="11,0,12,0" concept="10" trace="ID" />
+      <node id="1004539053072962909" at="12,42,13,35" concept="11" />
+      <node id="1004539053072962909" at="13,35,14,30" concept="2" />
+      <node id="1004539053072962909" at="14,30,15,25" concept="2" />
+      <node id="1004539053072975631" at="16,9,17,56" concept="2" />
+      <node id="1004539053072975625" at="17,56,18,114" concept="2" />
+      <node id="4508728853181731570" at="18,114,19,112" concept="2" />
+      <node id="6031506422523331866" at="19,112,20,120" concept="2" />
+      <node id="1004539053072962909" at="21,27,22,39" concept="2" />
+      <node id="1004539053072962909" at="15,25,23,5" concept="12" />
+      <node id="1004539053072962909" at="12,0,25,0" concept="1" trace="AddCirclesActions_ActionGroup#()V" />
+      <scope id="1004539053072962909" at="21,0,22,39">
+        <var name="t" id="1004539053072962909" />
+      </scope>
+      <scope id="1004539053072962909" at="21,27,22,39" />
+      <scope id="1004539053072962909" at="16,9,20,120" />
+      <scope id="1004539053072962909" at="12,42,23,5" />
+      <scope id="1004539053072962909" at="12,0,25,0" />
+      <unit id="1004539053072962909" at="9,0,26,0" name="org.campagnelab.circles.plugin.plugin.AddCirclesActions_ActionGroup" />
+    </file>
+  </root>
+  <root nodeRef="r:d3b37b30-cdff-43c0-8fa0-a9526797ea6b(org.campagnelab.circles.plugin.plugin)/4508728853181359688">
+    <file name="DropDbSchema_Action.java">
+      <node id="4508728853181359688" at="21,0,22,0" concept="10" trace="ICON" />
+      <node id="4508728853181359688" at="22,32,23,38" concept="11" />
+      <node id="4508728853181359688" at="23,38,24,35" concept="2" />
+      <node id="4508728853181359688" at="24,35,25,41" concept="2" />
+      <node id="4508728853181359688" at="28,32,29,16" concept="8" />
+      <node id="4508728853181359732" at="32,87,33,82" concept="7" />
+      <node id="4508728853181359740" at="33,82,34,164" concept="7" />
+      <node id="4508728853181359754" at="35,34,36,111" concept="7" />
+      <node id="4508728853181359761" at="36,111,37,35" concept="8" />
+      <node id="4508728853181359768" at="38,5,39,16" concept="8" />
+      <node id="4508728853181359688" at="42,89,43,85" concept="2" />
+      <node id="4508728853181359688" at="47,53,48,19" concept="8" />
+      <node id="4508728853181359688" at="50,5,51,54" concept="7" />
+      <node id="4508728853181359688" at="52,22,53,21" concept="8" />
+      <node id="4508728853181359688" at="56,5,57,66" concept="7" />
+      <node id="4508728853181359688" at="58,22,59,21" concept="8" />
+      <node id="4508728853181359688" at="61,5,62,16" concept="8" />
+      <node id="4508728853181359691" at="65,96,66,82" concept="7" />
+      <node id="4508728853181359699" at="66,82,67,164" concept="7" />
+      <node id="4508728853181359711" at="67,164,68,109" concept="7" />
+      <node id="4508728853181359718" at="68,109,69,57" concept="2" />
+      <node id="4508728853181359724" at="70,30,71,40" concept="2" />
+      <node id="4508728853181359688" at="74,0,75,0" concept="10" trace="LOG" />
+      <node id="4508728853181359688" at="46,95,49,5" concept="5" />
+      <node id="4508728853181359688" at="51,54,54,7" concept="5" />
+      <node id="4508728853181359688" at="57,66,60,7" concept="5" />
+      <node id="4508728853181359724" at="69,57,72,5" concept="0" />
+      <node id="4508728853181359724" at="69,57,72,5" concept="5" />
+      <node id="4508728853181359688" at="27,0,31,0" concept="6" trace="isDumbAware#()Z" />
+      <node id="4508728853181359752" at="34,164,38,5" concept="5" />
+      <node id="4508728853181359688" at="41,0,45,0" concept="6" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="4508728853181359688" at="22,0,27,0" concept="1" trace="DropDbSchema_Action#()V" />
+      <node id="4508728853181359688" at="49,5,55,5" concept="0" />
+      <node id="4508728853181359688" at="55,5,61,5" concept="0" />
+      <node id="4508728853181359688" at="31,0,41,0" concept="6" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="4508728853181359688" at="64,0,74,0" concept="6" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="4508728853181359688" at="45,0,64,0" concept="6" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="4508728853181359688" at="28,32,29,16" />
+      <scope id="4508728853181359688" at="42,89,43,85" />
+      <scope id="4508728853181359688" at="47,53,48,19" />
+      <scope id="4508728853181359688" at="52,22,53,21" />
+      <scope id="4508728853181359688" at="58,22,59,21" />
+      <scope id="4508728853181359724" at="70,30,71,40" />
+      <scope id="4508728853181359753" at="35,34,37,35">
+        <var name="webDescriptor" id="4508728853181359755" />
+      </scope>
+      <scope id="4508728853181359688" at="22,32,25,41" />
+      <scope id="4508728853181359724" at="69,57,72,5" />
+      <scope id="4508728853181359688" at="27,0,31,0" />
+      <scope id="4508728853181359688" at="41,0,45,0">
+        <var name="_params" id="4508728853181359688" />
+        <var name="event" id="4508728853181359688" />
+      </scope>
+      <scope id="4508728853181359688" at="50,5,54,7">
+        <var name="p" id="4508728853181359688" />
+      </scope>
+      <scope id="4508728853181359688" at="56,5,60,7">
+        <var name="p" id="4508728853181359688" />
+      </scope>
+      <scope id="4508728853181359688" at="22,0,27,0" />
+      <scope id="4508728853181359731" at="32,87,39,16">
+        <var name="concept" id="4508728853181359733" />
+        <var name="languageRuntime" id="4508728853181359741" />
+      </scope>
+      <scope id="4508728853181359688" at="65,96,72,5">
+        <var name="concept" id="4508728853181359692" />
+        <var name="languageRuntime" id="4508728853181359700" />
+        <var name="webDescriptor" id="4508728853181359712" />
+      </scope>
+      <scope id="4508728853181359688" at="31,0,41,0">
+        <var name="_params" id="4508728853181359688" />
+        <var name="event" id="4508728853181359688" />
+      </scope>
+      <scope id="4508728853181359688" at="64,0,74,0">
+        <var name="_params" id="4508728853181359688" />
+        <var name="event" id="4508728853181359688" />
+      </scope>
+      <scope id="4508728853181359688" at="46,95,62,16" />
+      <scope id="4508728853181359688" at="45,0,64,0">
+        <var name="_params" id="4508728853181359688" />
+        <var name="event" id="4508728853181359688" />
+      </scope>
+      <unit id="4508728853181359688" at="20,0,76,0" name="org.campagnelab.circles.plugin.plugin.DropDbSchema_Action" />
+    </file>
+  </root>
+  <root nodeRef="r:d3b37b30-cdff-43c0-8fa0-a9526797ea6b(org.campagnelab.circles.plugin.plugin)/6031506422523281947">
+    <file name="SerializeModulesToDB_Action.java">
+      <node id="6031506422523281947" at="22,0,23,0" concept="10" trace="ICON" />
+      <node id="6031506422523281947" at="23,40,24,47" concept="11" />
+      <node id="6031506422523281947" at="24,47,25,35" concept="2" />
+      <node id="6031506422523281947" at="25,35,26,41" concept="2" />
+      <node id="6031506422523281947" at="29,32,30,16" concept="8" />
+      <node id="6031506422523299880" at="33,87,34,115" concept="8" />
+      <node id="6031506422523281947" at="37,89,38,85" concept="2" />
+      <node id="6031506422523281947" at="42,53,43,19" concept="8" />
+      <node id="6031506422523281947" at="45,5,46,65" concept="7" />
+      <node id="6031506422523281947" at="47,22,48,21" concept="8" />
+      <node id="6031506422523281947" at="51,5,52,66" concept="7" />
+      <node id="6031506422523281947" at="53,22,54,21" concept="8" />
+      <node id="6031506422523281947" at="56,5,57,16" concept="8" />
+      <node id="6031506422523298013" at="60,96,61,141" concept="7" />
+      <node id="5666401028116745237" at="61,141,62,148" concept="2" />
+      <node id="6031506422523290970" at="66,81,67,155" concept="7" />
+      <node id="6031506422523290982" at="68,38,69,115" concept="7" />
+      <node id="6031506422523296843" at="70,38,71,33" concept="8" />
+      <node id="6031506422523289849" at="75,5,76,16" concept="8" />
+      <node id="6031506422523281947" at="41,95,44,5" concept="5" />
+      <node id="6031506422523281947" at="46,65,49,7" concept="5" />
+      <node id="6031506422523281947" at="52,66,55,7" concept="5" />
+      <node id="6031506422523294801" at="69,115,72,11" concept="5" />
+      <node id="6031506422523281947" at="28,0,32,0" concept="6" trace="isDumbAware#()Z" />
+      <node id="6031506422523281947" at="32,0,36,0" concept="6" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="6031506422523281947" at="36,0,40,0" concept="6" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="6031506422523281947" at="23,0,28,0" concept="1" trace="SerializeModulesToDB_Action#()V" />
+      <node id="6031506422523281947" at="59,0,64,0" concept="6" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="6031506422523281947" at="44,5,50,5" concept="0" />
+      <node id="6031506422523281947" at="50,5,56,5" concept="0" />
+      <node id="6031506422523292481" at="67,155,73,9" concept="5" />
+      <node id="6031506422523290311" at="65,59,74,7" concept="4" />
+      <node id="6031506422523289451" at="64,107,75,5" concept="4" />
+      <node id="6031506422523283944" at="64,0,78,0" concept="6" trace="findWebAspect#(Ljava/util/List;Lcom/intellij/openapi/actionSystem/AnActionEvent;)Lorg/campagnelab/circles/aspect/runtime/WebLanguageAspectDescriptor;" />
+      <node id="6031506422523281947" at="40,0,59,0" concept="6" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="6031506422523281947" at="29,32,30,16" />
+      <scope id="6031506422523299186" at="33,87,34,115" />
+      <scope id="6031506422523281947" at="37,89,38,85" />
+      <scope id="6031506422523281947" at="42,53,43,19" />
+      <scope id="6031506422523281947" at="47,22,48,21" />
+      <scope id="6031506422523281947" at="53,22,54,21" />
+      <scope id="6031506422523294803" at="70,38,71,33" />
+      <scope id="6031506422523281947" at="60,96,62,148">
+        <var name="descriptor" id="6031506422523298014" />
+      </scope>
+      <scope id="6031506422523281947" at="23,40,26,41" />
+      <scope id="6031506422523281947" at="28,0,32,0" />
+      <scope id="6031506422523281947" at="32,0,36,0">
+        <var name="_params" id="6031506422523281947" />
+        <var name="event" id="6031506422523281947" />
+      </scope>
+      <scope id="6031506422523281947" at="36,0,40,0">
+        <var name="_params" id="6031506422523281947" />
+        <var name="event" id="6031506422523281947" />
+      </scope>
+      <scope id="6031506422523281947" at="45,5,49,7">
+        <var name="p" id="6031506422523281947" />
+      </scope>
+      <scope id="6031506422523281947" at="51,5,55,7">
+        <var name="p" id="6031506422523281947" />
+      </scope>
+      <scope id="6031506422523292483" at="68,38,72,11">
+        <var name="webDescriptor" id="6031506422523290983" />
+      </scope>
+      <scope id="6031506422523281947" at="23,0,28,0" />
+      <scope id="6031506422523281947" at="59,0,64,0">
+        <var name="_params" id="6031506422523281947" />
+        <var name="event" id="6031506422523281947" />
+      </scope>
+      <scope id="6031506422523290313" at="66,81,73,9">
+        <var name="languageRuntime" id="6031506422523290971" />
+      </scope>
+      <scope id="6031506422523289453" at="65,59,74,7" />
+      <scope id="6031506422523290311" at="65,59,74,7">
+        <var name="language" id="6031506422523290312" />
+      </scope>
+      <scope id="6031506422523289451" at="64,107,75,5">
+        <var name="module" id="6031506422523289452" />
+      </scope>
+      <scope id="6031506422523283945" at="64,107,76,16" />
+      <scope id="6031506422523283944" at="64,0,78,0">
+        <var name="event" id="6031506422523283944" />
+        <var name="modules" id="6031506422523287955" />
+      </scope>
+      <scope id="6031506422523281947" at="41,95,57,16" />
+      <scope id="6031506422523281947" at="40,0,59,0">
+        <var name="_params" id="6031506422523281947" />
+        <var name="event" id="6031506422523281947" />
+      </scope>
+      <unit id="6031506422523281947" at="21,0,79,0" name="org.campagnelab.circles.plugin.plugin.SerializeModulesToDB_Action" />
+    </file>
+  </root>
+</debug-info>
+

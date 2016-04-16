@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="yo50oshvbf38vvildxk87qq68bnag7">
+  <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" hash="edv6457qhe381dcl4ioix6smpp8i4qc" />
+  <dep model="r:00000000-0000-4000-0000-011c8959029f(jetbrains.mps.lang.editor.generator.baseLanguage.template.main@generator)" hash="-3s14n3ry8kc9bp5d4hiekauc7t77vhx" />
+  <dep model="r:00000000-0000-4000-0000-011c895902a9(jetbrains.mps.lang.actions.generator.baseLanguage.template.main@generator)" hash="3ef02s88wyul60qxf429gddijo2xke1" />
+  <dep model="r:229ce18d-2bb0-4d5b-a7cd-cec65841e459(jetbrains.mps.lang.behavior.generator.template.main@generator)" hash="c9jhi1xvfq7fl5qi8aklqbki6jibyu3" />
+  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="-5xb7jypw7d0bhouyx3xmbfw2tz5ihja" />
+  <common hash="-6v1exvsslxxlhwjo561r4fw3o5c0e9o" dependsOnNodes="true">
+    <dep root="2525550782533996886" />
+    <dep root="3005215470191721714" />
+    <dep root="6031506422524179629" />
+    <dep root="8524845890418800954" />
+    <dep root="8524845890418800969" />
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959029f(jetbrains.mps.lang.editor.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902a9(jetbrains.mps.lang.actions.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:229ce18d-2bb0-4d5b-a7cd-cec65841e459(jetbrains.mps.lang.behavior.generator.template.main@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+  </common>
+  <source id="8524845890418800954" hash="8qxonp8myuzvvp447zjkzqima5ujyh1" />
+  <source id="8524845890418800969" hash="bky9msu37e9j2biyzdvj9q3xttbjrf1" />
+  <source id="6031506422524179629" name="TestP" hash="eizf5uktcnx3x3kbnxoay2g0hfliq1k" />
+  <source id="2525550782533996886" name="FirstProject" hash="-2gjujbwpvk484qnbvzdd8oom5i35cj" />
+  <source id="3005215470191721714" name="VOLUME_II" hash="5nsiwyfqpljg2yb17q90chbbm06433u" />
+</dependencies>
+

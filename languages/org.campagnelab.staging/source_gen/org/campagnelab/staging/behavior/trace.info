@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <root>
+    <file name="AddImportStatement_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="org.campagnelab.staging.behavior.AddImportStatement_BehaviorDescriptor" />
+    </file>
+    <file name="BehaviorAspectDescriptor.java">
+      <unit at="14,0,46,0" name="org.campagnelab.staging.behavior.BehaviorAspectDescriptor" />
+    </file>
+    <file name="ChangeExtensionInfo_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="org.campagnelab.staging.behavior.ChangeExtensionInfo_BehaviorDescriptor" />
+    </file>
+    <file name="StageToAnnotation_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="org.campagnelab.staging.behavior.StageToAnnotation_BehaviorDescriptor" />
+    </file>
+    <file name="StagingInfo_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="org.campagnelab.staging.behavior.StagingInfo_BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:207a5c5d-0df5-4f0c-a227-f7d43a97d945(org.campagnelab.staging.behavior)/3317590328854255870">
+    <file name="StageToAnnotation_Behavior.java">
+      <unit id="3317590328854255870" at="10,0,13,0" name="org.campagnelab.staging.behavior.StageToAnnotation_Behavior" />
+    </file>
+    <file name="StageToAnnotation__BehaviorDescriptor.java">
+      <node id="3317590328854255870" at="23,0,24,0" concept="8" trace="CONCEPT" />
+      <node id="3317590328854255870" at="24,0,25,0" concept="8" trace="REGISTRY" />
+      <node id="3317590328854255870" at="27,0,28,0" concept="8" trace="BH_METHODS" />
+      <node id="3317590328854255874" at="29,63,30,394" concept="2" />
+      <node id="3317590328854255870" at="34,55,35,20" concept="10" />
+      <node id="3317590328854255870" at="39,114,40,21" concept="2" />
+      <node id="3317590328854255870" at="44,114,45,49" concept="5" />
+      <node id="3317590328854255870" at="46,26,47,56" concept="12" />
+      <node id="3317590328854255870" at="50,14,51,58" concept="12" />
+      <node id="3317590328854255870" at="56,128,57,49" concept="5" />
+      <node id="3317590328854255870" at="58,26,59,56" concept="12" />
+      <node id="3317590328854255870" at="62,14,63,58" concept="12" />
+      <node id="3317590328854255870" at="69,48,70,22" concept="6" />
+      <node id="3317590328854255870" at="75,40,76,19" concept="6" />
+      <node id="3317590328854255870" at="29,0,32,0" concept="9" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3317590328854255870" at="34,0,37,0" concept="1" trace="StageToAnnotation__BehaviorDescriptor#()V" />
+      <node id="3317590328854255870" at="45,49,48,5" concept="3" />
+      <node id="3317590328854255870" at="57,49,60,5" concept="3" />
+      <node id="3317590328854255870" at="38,0,42,0" concept="4" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="3317590328854255870" at="48,5,52,5" concept="11" />
+      <node id="3317590328854255870" at="60,5,64,5" concept="11" />
+      <node id="3317590328854255870" at="67,0,72,0" concept="4" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="3317590328854255870" at="73,0,78,0" concept="4" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3317590328854255870" at="43,0,54,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="3317590328854255870" at="55,0,66,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="3317590328854255870" at="29,63,30,394" />
+      <scope id="3317590328854255870" at="34,55,35,20" />
+      <scope id="3317590328854255870" at="39,114,40,21" />
+      <scope id="3317590328854255870" at="46,26,47,56" />
+      <scope id="3317590328854255870" at="50,14,51,58" />
+      <scope id="3317590328854255870" at="58,26,59,56" />
+      <scope id="3317590328854255870" at="62,14,63,58" />
+      <scope id="3317590328854255870" at="69,48,70,22" />
+      <scope id="3317590328854255870" at="75,40,76,19" />
+      <scope id="3317590328854255870" at="29,0,32,0">
+        <var name="__thisNode__" id="3317590328854255870" />
+      </scope>
+      <scope id="3317590328854255870" at="34,0,37,0" />
+      <scope id="3317590328854255870" at="38,0,42,0">
+        <var name="constructor" id="3317590328854255870" />
+        <var name="node" id="3317590328854255870" />
+        <var name="parameters" id="3317590328854255870" />
+      </scope>
+      <scope id="3317590328854255870" at="67,0,72,0" />
+      <scope id="3317590328854255870" at="73,0,78,0" />
+      <scope id="3317590328854255870" at="44,114,52,5">
+        <var name="methodIndex" id="3317590328854255870" />
+      </scope>
+      <scope id="3317590328854255870" at="56,128,64,5">
+        <var name="methodIndex" id="3317590328854255870" />
+      </scope>
+      <scope id="3317590328854255870" at="43,0,54,0">
+        <var name="method" id="3317590328854255870" />
+        <var name="node" id="3317590328854255870" />
+        <var name="parameters" id="3317590328854255870" />
+      </scope>
+      <scope id="3317590328854255870" at="55,0,66,0">
+        <var name="concept" id="3317590328854255870" />
+        <var name="method" id="3317590328854255870" />
+        <var name="parameters" id="3317590328854255870" />
+      </scope>
+      <unit id="3317590328854255870" at="22,0,79,0" name="org.campagnelab.staging.behavior.StageToAnnotation__BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:207a5c5d-0df5-4f0c-a227-f7d43a97d945(org.campagnelab.staging.behavior)/3317590328857310596">
+    <file name="StagingInfo_Behavior.java">
+      <node id="3317590328857310596" at="14,83,15,79" concept="6" />
+      <node id="3317590328857310596" at="14,0,17,0" concept="9" trace="call_imports_3317590328857310599#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/List;" />
+      <scope id="3317590328857310596" at="14,83,15,79" />
+      <scope id="3317590328857310596" at="14,0,17,0">
+        <var name="__thisNode__" id="3317590328857310596" />
+      </scope>
+      <unit id="3317590328857310596" at="12,0,18,0" name="org.campagnelab.staging.behavior.StagingInfo_Behavior" />
+    </file>
+    <file name="StagingInfo__BehaviorDescriptor.java">
+      <node id="3317590328857310596" at="29,0,30,0" concept="8" trace="CONCEPT" />
+      <node id="3317590328857310596" at="30,0,31,0" concept="8" trace="REGISTRY" />
+      <node id="3317590328857310596" at="32,0,33,0" concept="8" trace="imports_id2SasHe_NVm7" />
+      <node id="3317590328857310596" at="34,0,35,0" concept="8" trace="BH_METHODS" />
+      <node id="3317590328857318534" at="40,219,41,60" concept="6" />
+      <node id="3317590328857326968" at="44,40,45,182" concept="6" />
+      <node id="3317590328857318656" at="48,5,49,0" concept="7" />
+      <node id="3317590328857310596" at="52,49,53,20" concept="10" />
+      <node id="3317590328857310596" at="57,114,58,21" concept="2" />
+      <node id="3317590328857310596" at="62,114,63,49" concept="5" />
+      <node id="3317590328857310596" at="64,26,65,56" concept="12" />
+      <node id="3317590328857310596" at="68,13,69,64" concept="6" />
+      <node id="3317590328857310596" at="70,14,71,58" concept="12" />
+      <node id="3317590328857310596" at="76,128,77,49" concept="5" />
+      <node id="3317590328857310596" at="78,26,79,56" concept="12" />
+      <node id="3317590328857310596" at="82,14,83,58" concept="12" />
+      <node id="3317590328857310596" at="89,48,90,22" concept="6" />
+      <node id="3317590328857310596" at="95,40,96,19" concept="6" />
+      <node id="3317590328857310596" at="36,0,38,0" concept="9" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3317590328857326776" at="44,0,47,0" concept="4" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="3317590328857310596" at="52,0,55,0" concept="1" trace="StagingInfo__BehaviorDescriptor#()V" />
+      <node id="3317590328857310596" at="63,49,66,5" concept="3" />
+      <node id="3317590328857310596" at="77,49,80,5" concept="3" />
+      <node id="3317590328857310596" at="56,0,60,0" concept="4" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="3317590328857310596" at="80,5,84,5" concept="11" />
+      <node id="3317590328857318865" at="42,12,47,26" concept="6" />
+      <node id="3317590328857310596" at="87,0,92,0" concept="4" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="3317590328857310596" at="93,0,98,0" concept="4" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3317590328857318766" at="42,10,48,5" concept="0" />
+      <node id="3317590328857310596" at="66,5,72,5" concept="11" />
+      <node id="3317590328857310616" at="39,86,48,5" concept="3" />
+      <node id="3317590328857310596" at="75,0,86,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="3317590328857310596" at="39,0,51,0" concept="9" trace="imports_id2SasHe_NVm7#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/List;" />
+      <node id="3317590328857310596" at="61,0,74,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="3317590328857310596" at="36,63,36,63" />
+      <scope id="3317590328857310617" at="40,219,41,60" />
+      <scope id="3317590328857326777" at="44,40,45,182" />
+      <scope id="3317590328857310596" at="52,49,53,20" />
+      <scope id="3317590328857310596" at="57,114,58,21" />
+      <scope id="3317590328857310596" at="64,26,65,56" />
+      <scope id="3317590328857310596" at="68,13,69,64" />
+      <scope id="3317590328857310596" at="70,14,71,58" />
+      <scope id="3317590328857310596" at="78,26,79,56" />
+      <scope id="3317590328857310596" at="82,14,83,58" />
+      <scope id="3317590328857310596" at="89,48,90,22" />
+      <scope id="3317590328857310596" at="95,40,96,19" />
+      <scope id="3317590328857310596" at="36,0,38,0">
+        <var name="__thisNode__" id="3317590328857310596" />
+      </scope>
+      <scope id="3317590328857326776" at="44,0,47,0">
+        <var name="it" id="3317590328857326776" />
+      </scope>
+      <scope id="3317590328857310596" at="52,0,55,0" />
+      <scope id="3317590328857310596" at="56,0,60,0">
+        <var name="constructor" id="3317590328857310596" />
+        <var name="node" id="3317590328857310596" />
+        <var name="parameters" id="3317590328857310596" />
+      </scope>
+      <scope id="3317590328857318767" at="42,12,47,26" />
+      <scope id="3317590328857310596" at="87,0,92,0" />
+      <scope id="3317590328857310596" at="93,0,98,0" />
+      <scope id="3317590328857310596" at="76,128,84,5">
+        <var name="methodIndex" id="3317590328857310596" />
+      </scope>
+      <scope id="3317590328857310601" at="39,86,49,0" />
+      <scope id="3317590328857310596" at="62,114,72,5">
+        <var name="methodIndex" id="3317590328857310596" />
+      </scope>
+      <scope id="3317590328857310596" at="75,0,86,0">
+        <var name="concept" id="3317590328857310596" />
+        <var name="method" id="3317590328857310596" />
+        <var name="parameters" id="3317590328857310596" />
+      </scope>
+      <scope id="3317590328857310596" at="39,0,51,0">
+        <var name="__thisNode__" id="3317590328857310596" />
+      </scope>
+      <scope id="3317590328857310596" at="61,0,74,0">
+        <var name="method" id="3317590328857310596" />
+        <var name="node" id="3317590328857310596" />
+        <var name="parameters" id="3317590328857310596" />
+      </scope>
+      <unit id="3317590328857326776" at="43,223,47,7" name="org.campagnelab.staging.behavior.StagingInfo__BehaviorDescriptor$1" />
+      <unit id="3317590328857310596" at="28,0,99,0" name="org.campagnelab.staging.behavior.StagingInfo__BehaviorDescriptor" />
+    </file>
+  </root>
+</debug-info>
+

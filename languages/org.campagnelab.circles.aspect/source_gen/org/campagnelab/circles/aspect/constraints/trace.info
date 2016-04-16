@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="9,0,44,0" name="org.campagnelab.circles.aspect.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:d467affb-2c05-4eaf-a6d4-4049442a9d3e(org.campagnelab.circles.aspect.constraints)/2477299493858197073">
+    <file name="NewBeanCreationFocus_Constraints.java">
+      <node id="2477299493858197073" at="9,45,10,98" concept="7" />
+      <node id="2477299493858197073" at="9,0,12,0" concept="1" trace="NewBeanCreationFocus_Constraints#()V" />
+      <scope id="2477299493858197073" at="9,45,10,98" />
+      <scope id="2477299493858197073" at="9,0,12,0" />
+      <unit id="2477299493858197073" at="8,0,13,0" name="org.campagnelab.circles.aspect.constraints.NewBeanCreationFocus_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:d467affb-2c05-4eaf-a6d4-4049442a9d3e(org.campagnelab.circles.aspect.constraints)/2477299493858197148">
+    <file name="ChildrenInitialization_Constraints.java">
+      <node id="2477299493858197148" at="28,47,29,98" concept="7" />
+      <node id="2477299493858197148" at="32,98,33,135" concept="4" />
+      <node id="2477299493858197148" at="36,44,37,20" concept="5" />
+      <node id="2477299493868216397" at="46,47,47,371" concept="5" />
+      <node id="2477299493858197148" at="52,63,53,57" concept="5" />
+      <node id="2477299493858197148" at="57,7,58,22" concept="5" />
+      <node id="2477299493858197148" at="60,0,61,0" concept="6" trace="breakingNode_zfi9n_a0a1a0a0a1a0b0a1a1" />
+      <node id="2477299493858197148" at="28,0,31,0" concept="1" trace="ChildrenInitialization_Constraints#()V" />
+      <node id="2477299493868210490" at="46,0,49,0" concept="3" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="2477299493858197148" at="35,0,39,0" concept="3" trace="hasOwnScopeProvider#()Z" />
+      <node id="2477299493858197148" at="51,0,55,0" concept="3" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="2477299493858216113" at="44,142,49,15" concept="5" />
+      <node id="2477299493858197148" at="43,0,51,0" concept="3" trace="createSearchScopeOrListOfNodes#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljava/lang/Object;" />
+      <node id="2477299493858197148" at="41,56,55,10" concept="5" />
+      <node id="2477299493858197148" at="39,0,57,0" concept="3" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="2477299493858197148" at="33,135,57,7" concept="2" />
+      <node id="2477299493858197148" at="31,0,60,0" concept="3" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
+      <scope id="2477299493858197148" at="28,47,29,98" />
+      <scope id="2477299493858197148" at="36,44,37,20" />
+      <scope id="2477299493868210491" at="46,47,47,371" />
+      <scope id="2477299493858197148" at="52,63,53,57" />
+      <scope id="2477299493858197148" at="28,0,31,0" />
+      <scope id="2477299493868210490" at="46,0,49,0">
+        <var name="it" id="2477299493868210490" />
+      </scope>
+      <scope id="2477299493858197148" at="35,0,39,0" />
+      <scope id="2477299493858197148" at="51,0,55,0" />
+      <scope id="2477299493858215687" at="44,142,49,15" />
+      <scope id="2477299493858197148" at="43,0,51,0">
+        <var name="_context" id="2477299493858197148" />
+        <var name="operationContext" id="2477299493858197148" />
+      </scope>
+      <scope id="2477299493858197148" at="41,56,55,10" />
+      <scope id="2477299493858197148" at="39,0,57,0" />
+      <scope id="2477299493858197148" at="32,98,58,22">
+        <var name="references" id="2477299493858197148" />
+      </scope>
+      <scope id="2477299493858197148" at="31,0,60,0" />
+      <unit id="2477299493868210490" at="45,593,49,13" name="org.campagnelab.circles.aspect.constraints.ChildrenInitialization_Constraints$3" />
+      <unit id="2477299493858197148" at="42,19,55,9" name="org.campagnelab.circles.aspect.constraints.ChildrenInitialization_Constraints$2" />
+      <unit id="2477299493858197148" at="34,128,57,5" name="org.campagnelab.circles.aspect.constraints.ChildrenInitialization_Constraints$1" />
+      <unit id="2477299493858197148" at="27,0,62,0" name="org.campagnelab.circles.aspect.constraints.ChildrenInitialization_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:d467affb-2c05-4eaf-a6d4-4049442a9d3e(org.campagnelab.circles.aspect.constraints)/2477299493869647470">
+    <file name="MapChild_Constraints.java">
+      <node id="2477299493869647470" at="32,33,33,98" concept="7" />
+      <node id="2477299493869647470" at="36,98,37,135" concept="4" />
+      <node id="2477299493869647470" at="40,44,41,20" concept="5" />
+      <node id="2477299493869647470" at="48,63,49,58" concept="5" />
+      <node id="2477299493869654357" at="54,58,55,189" concept="5" />
+      <node id="2477299493869659683" at="58,47,59,189" concept="5" />
+      <node id="2477299493869647470" at="65,7,66,22" concept="5" />
+      <node id="2477299493869647470" at="68,0,69,0" concept="6" trace="breakingNode_iqof63_a0a0a0a0a1a0b0a1a1" />
+      <node id="2477299493869647470" at="32,0,35,0" concept="1" trace="MapChild_Constraints#()V" />
+      <node id="2477299493869654357" at="54,0,57,0" concept="3" trace="translate#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <node id="2477299493869659420" at="58,0,61,0" concept="3" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="2477299493869647470" at="39,0,43,0" concept="3" trace="hasOwnScopeProvider#()Z" />
+      <node id="2477299493869647470" at="47,0,51,0" concept="3" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="2477299493869647470" at="52,122,61,16" concept="0" />
+      <node id="2477299493869647506" at="52,122,61,16" concept="5" />
+      <node id="2477299493869647470" at="51,0,63,0" concept="3" trace="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="2477299493869647470" at="45,56,63,10" concept="5" />
+      <node id="2477299493869647470" at="43,0,65,0" concept="3" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="2477299493869647470" at="37,135,65,7" concept="2" />
+      <node id="2477299493869647470" at="35,0,68,0" concept="3" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
+      <scope id="2477299493869647470" at="32,33,33,98" />
+      <scope id="2477299493869647470" at="40,44,41,20" />
+      <scope id="2477299493869647470" at="48,63,49,58" />
+      <scope id="2477299493869654357" at="54,58,55,189" />
+      <scope id="2477299493869659421" at="58,47,59,189" />
+      <scope id="2477299493869647470" at="32,0,35,0" />
+      <scope id="2477299493869654357" at="54,0,57,0">
+        <var name="it" id="2477299493869654357" />
+      </scope>
+      <scope id="2477299493869659420" at="58,0,61,0">
+        <var name="it" id="2477299493869659420" />
+      </scope>
+      <scope id="2477299493869647470" at="39,0,43,0" />
+      <scope id="2477299493869647470" at="47,0,51,0" />
+      <scope id="2477299493869647470" at="52,122,61,16" />
+      <scope id="2477299493869647477" at="52,122,61,16" />
+      <scope id="2477299493869647470" at="51,0,63,0">
+        <var name="_context" id="2477299493869647470" />
+        <var name="operationContext" id="2477299493869647470" />
+      </scope>
+      <scope id="2477299493869647470" at="45,56,63,10" />
+      <scope id="2477299493869647470" at="43,0,65,0" />
+      <scope id="2477299493869647470" at="36,98,66,22">
+        <var name="references" id="2477299493869647470" />
+      </scope>
+      <scope id="2477299493869647470" at="35,0,68,0" />
+      <unit id="2477299493869654357" at="53,323,57,13" name="org.campagnelab.circles.aspect.constraints.MapChild_Constraints$3" />
+      <unit id="2477299493869659420" at="57,25,61,13" name="org.campagnelab.circles.aspect.constraints.MapChild_Constraints$3" />
+      <unit id="2477299493869647470" at="46,19,63,9" name="org.campagnelab.circles.aspect.constraints.MapChild_Constraints$2" />
+      <unit id="2477299493869647470" at="38,128,65,5" name="org.campagnelab.circles.aspect.constraints.MapChild_Constraints$1" />
+      <unit id="2477299493869647470" at="31,0,70,0" name="org.campagnelab.circles.aspect.constraints.MapChild_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:d467affb-2c05-4eaf-a6d4-4049442a9d3e(org.campagnelab.circles.aspect.constraints)/3811513598467675197">
+    <file name="MavenPom_Constraints.java">
+      <node id="3811513598467675197" at="9,33,10,98" concept="7" />
+      <node id="3811513598467675197" at="9,0,12,0" concept="1" trace="MavenPom_Constraints#()V" />
+      <scope id="3811513598467675197" at="9,33,10,98" />
+      <scope id="3811513598467675197" at="9,0,12,0" />
+      <unit id="3811513598467675197" at="8,0,13,0" name="org.campagnelab.circles.aspect.constraints.MavenPom_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:d467affb-2c05-4eaf-a6d4-4049442a9d3e(org.campagnelab.circles.aspect.constraints)/5487921954573666284">
+    <file name="UserMethodReference_Constraints.java">
+      <node id="5487921954573666284" at="9,44,10,98" concept="7" />
+      <node id="5487921954573666284" at="9,0,12,0" concept="1" trace="UserMethodReference_Constraints#()V" />
+      <scope id="5487921954573666284" at="9,44,10,98" />
+      <scope id="5487921954573666284" at="9,0,12,0" />
+      <unit id="5487921954573666284" at="8,0,13,0" name="org.campagnelab.circles.aspect.constraints.UserMethodReference_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:d467affb-2c05-4eaf-a6d4-4049442a9d3e(org.campagnelab.circles.aspect.constraints)/5597880810750195408">
+    <file name="PropertyInitialization_Constraints.java">
+      <node id="5597880810750195408" at="24,47,25,98" concept="7" />
+      <node id="5597880810750195408" at="28,98,29,135" concept="4" />
+      <node id="5597880810750195408" at="32,44,33,20" concept="5" />
+      <node id="5597880810750195440" at="40,142,41,558" concept="5" />
+      <node id="5597880810750195408" at="44,63,45,58" concept="5" />
+      <node id="5597880810750195408" at="49,7,50,22" concept="5" />
+      <node id="5597880810750195408" at="52,0,53,0" concept="6" trace="breakingNode_51c2na_a0a1a0a0a1a0b0a1a1" />
+      <node id="5597880810750195408" at="24,0,27,0" concept="1" trace="PropertyInitialization_Constraints#()V" />
+      <node id="5597880810750195408" at="31,0,35,0" concept="3" trace="hasOwnScopeProvider#()Z" />
+      <node id="5597880810750195408" at="39,0,43,0" concept="3" trace="createSearchScopeOrListOfNodes#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljava/lang/Object;" />
+      <node id="5597880810750195408" at="43,0,47,0" concept="3" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="5597880810750195408" at="37,56,47,10" concept="5" />
+      <node id="5597880810750195408" at="35,0,49,0" concept="3" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="5597880810750195408" at="29,135,49,7" concept="2" />
+      <node id="5597880810750195408" at="27,0,52,0" concept="3" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
+      <scope id="5597880810750195408" at="24,47,25,98" />
+      <scope id="5597880810750195408" at="32,44,33,20" />
+      <scope id="5597880810750201614" at="40,142,41,558" />
+      <scope id="5597880810750195408" at="44,63,45,58" />
+      <scope id="5597880810750195408" at="24,0,27,0" />
+      <scope id="5597880810750195408" at="31,0,35,0" />
+      <scope id="5597880810750195408" at="39,0,43,0">
+        <var name="_context" id="5597880810750195408" />
+        <var name="operationContext" id="5597880810750195408" />
+      </scope>
+      <scope id="5597880810750195408" at="43,0,47,0" />
+      <scope id="5597880810750195408" at="37,56,47,10" />
+      <scope id="5597880810750195408" at="35,0,49,0" />
+      <scope id="5597880810750195408" at="28,98,50,22">
+        <var name="references" id="5597880810750195408" />
+      </scope>
+      <scope id="5597880810750195408" at="27,0,52,0" />
+      <unit id="5597880810750195408" at="38,19,47,9" name="org.campagnelab.circles.aspect.constraints.PropertyInitialization_Constraints$2" />
+      <unit id="5597880810750195408" at="30,128,49,5" name="org.campagnelab.circles.aspect.constraints.PropertyInitialization_Constraints$1" />
+      <unit id="5597880810750195408" at="23,0,54,0" name="org.campagnelab.circles.aspect.constraints.PropertyInitialization_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:d467affb-2c05-4eaf-a6d4-4049442a9d3e(org.campagnelab.circles.aspect.constraints)/5597880810753882381">
+    <file name="TokenPropertyValue_Constraints.java">
+      <node id="5597880810753882381" at="25,43,26,98" concept="7" />
+      <node id="5597880810753882381" at="29,98,30,135" concept="4" />
+      <node id="5597880810753882381" at="33,44,34,20" concept="5" />
+      <node id="5597880810753882381" at="41,63,42,58" concept="5" />
+      <node id="5597880810753882381" at="46,13,47,234" concept="4" />
+      <node id="5597880810753882381" at="47,234,48,64" concept="5" />
+      <node id="5597880810753882381" at="53,7,54,22" concept="5" />
+      <node id="5597880810753882381" at="56,0,57,0" concept="6" trace="breakingNode_mvptal_a0a0a0a0a1a0b0a1a1" />
+      <node id="5597880810753882381" at="25,0,28,0" concept="1" trace="TokenPropertyValue_Constraints#()V" />
+      <node id="5597880810753882381" at="32,0,36,0" concept="3" trace="hasOwnScopeProvider#()Z" />
+      <node id="5597880810753882381" at="40,0,44,0" concept="3" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="5597880810753882381" at="45,122,49,13" concept="0" />
+      <node id="5597880810753882381" at="44,0,51,0" concept="3" trace="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="5597880810753882381" at="38,56,51,10" concept="5" />
+      <node id="5597880810753882381" at="36,0,53,0" concept="3" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="5597880810753882381" at="30,135,53,7" concept="2" />
+      <node id="5597880810753882381" at="28,0,56,0" concept="3" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
+      <scope id="5597880810753882381" at="25,43,26,98" />
+      <scope id="5597880810753882381" at="33,44,34,20" />
+      <scope id="5597880810753882381" at="41,63,42,58" />
+      <scope id="5597880810753882381" at="46,13,48,64">
+        <var name="scope" id="5597880810753882381" />
+      </scope>
+      <scope id="5597880810753882381" at="25,0,28,0" />
+      <scope id="5597880810753882381" at="32,0,36,0" />
+      <scope id="5597880810753882381" at="40,0,44,0" />
+      <scope id="5597880810753882381" at="45,122,49,13" />
+      <scope id="5597880810753882381" at="44,0,51,0">
+        <var name="_context" id="5597880810753882381" />
+        <var name="operationContext" id="5597880810753882381" />
+      </scope>
+      <scope id="5597880810753882381" at="38,56,51,10" />
+      <scope id="5597880810753882381" at="36,0,53,0" />
+      <scope id="5597880810753882381" at="29,98,54,22">
+        <var name="references" id="5597880810753882381" />
+      </scope>
+      <scope id="5597880810753882381" at="28,0,56,0" />
+      <unit id="5597880810753882381" at="39,19,51,9" name="org.campagnelab.circles.aspect.constraints.TokenPropertyValue_Constraints$2" />
+      <unit id="5597880810753882381" at="31,128,53,5" name="org.campagnelab.circles.aspect.constraints.TokenPropertyValue_Constraints$1" />
+      <unit id="5597880810753882381" at="24,0,58,0" name="org.campagnelab.circles.aspect.constraints.TokenPropertyValue_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:d467affb-2c05-4eaf-a6d4-4049442a9d3e(org.campagnelab.circles.aspect.constraints)/5761987585673258569">
+    <file name="CellModel_Link_Constraints.java">
+      <node id="5761987585673258569" at="17,39,18,98" concept="7" />
+      <node id="5761987585673258569" at="21,98,22,135" concept="4" />
+      <node id="5761987585673258569" at="26,56,27,42" concept="5" />
+      <node id="5761987585673258569" at="29,7,30,22" concept="5" />
+      <node id="5761987585673258569" at="17,0,20,0" concept="1" trace="CellModel_Link_Constraints#()V" />
+      <node id="5761987585673258569" at="24,0,29,0" concept="3" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="5761987585673258569" at="22,135,29,7" concept="2" />
+      <node id="5761987585673258569" at="20,0,32,0" concept="3" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
+      <scope id="5761987585673258569" at="17,39,18,98" />
+      <scope id="5761987585673258569" at="26,56,27,42" />
+      <scope id="5761987585673258569" at="17,0,20,0" />
+      <scope id="5761987585673258569" at="24,0,29,0" />
+      <scope id="5761987585673258569" at="21,98,30,22">
+        <var name="references" id="5761987585673258569" />
+      </scope>
+      <scope id="5761987585673258569" at="20,0,32,0" />
+      <unit id="5761987585673258569" at="27,19,27,41" name="org.campagnelab.circles.aspect.constraints.CellModel_Link_Constraints$2" />
+      <unit id="5761987585673258569" at="23,128,29,5" name="org.campagnelab.circles.aspect.constraints.CellModel_Link_Constraints$1" />
+      <unit id="5761987585673258569" at="16,0,33,0" name="org.campagnelab.circles.aspect.constraints.CellModel_Link_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:d467affb-2c05-4eaf-a6d4-4049442a9d3e(org.campagnelab.circles.aspect.constraints)/7317038553509646045">
+    <file name="GwtModuleRef_Constraints.java">
+      <node id="7317038553509646045" at="21,37,22,98" concept="7" />
+      <node id="7317038553509646045" at="25,98,26,135" concept="4" />
+      <node id="7317038553509646045" at="33,44,34,24" concept="5" />
+      <node id="7317038553509646122" at="37,128,38,224" concept="5" />
+      <node id="7317038553509646045" at="42,7,43,22" concept="5" />
+      <node id="7317038553509646045" at="21,0,24,0" concept="1" trace="GwtModuleRef_Constraints#()V" />
+      <node id="7317038553509646045" at="32,0,36,0" concept="3" trace="hasPresentation#()Z" />
+      <node id="7317038553509646045" at="36,0,40,0" concept="3" trace="getPresentation#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferencePresentationContext;)Ljava/lang/String;" />
+      <node id="7317038553509646045" at="30,56,40,10" concept="5" />
+      <node id="7317038553509646045" at="28,0,42,0" concept="3" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="7317038553509646045" at="26,135,42,7" concept="2" />
+      <node id="7317038553509646045" at="24,0,45,0" concept="3" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
+      <scope id="7317038553509646045" at="21,37,22,98" />
+      <scope id="7317038553509646045" at="33,44,34,24" />
+      <scope id="7317038553509646049" at="37,128,38,224" />
+      <scope id="7317038553509646045" at="21,0,24,0" />
+      <scope id="7317038553509646045" at="32,0,36,0" />
+      <scope id="7317038553509646045" at="36,0,40,0">
+        <var name="_context" id="7317038553509646045" />
+        <var name="operationContext" id="7317038553509646045" />
+      </scope>
+      <scope id="7317038553509646045" at="30,56,40,10" />
+      <scope id="7317038553509646045" at="28,0,42,0" />
+      <scope id="7317038553509646045" at="25,98,43,22">
+        <var name="references" id="7317038553509646045" />
+      </scope>
+      <scope id="7317038553509646045" at="24,0,45,0" />
+      <unit id="7317038553509646045" at="31,19,40,9" name="org.campagnelab.circles.aspect.constraints.GwtModuleRef_Constraints$2" />
+      <unit id="7317038553509646045" at="27,128,42,5" name="org.campagnelab.circles.aspect.constraints.GwtModuleRef_Constraints$1" />
+      <unit id="7317038553509646045" at="20,0,46,0" name="org.campagnelab.circles.aspect.constraints.GwtModuleRef_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

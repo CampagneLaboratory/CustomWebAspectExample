@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="9,0,20,0" name="org.campagnelab.circles.mockup.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:b99073a9-8fd3-48fe-a455-a5ca665e2df9(org.campagnelab.circles.mockup.constraints)/5883119402027345341">
+    <file name="Dashboard_Constraints.java">
+      <node id="5883119402027345341" at="18,34,19,98" concept="8" />
+      <node id="5883119402027345341" at="22,88,23,123" concept="5" />
+      <node id="5883119402027345341" at="26,37,27,20" concept="6" />
+      <node id="5883119402027345341" at="30,62,31,42" concept="5" />
+      <node id="5883119402027356067" at="31,42,32,215" concept="2" />
+      <node id="5883119402027360589" at="32,215,33,0" concept="7" />
+      <node id="5883119402027354473" at="34,97,35,80" concept="2" />
+      <node id="5883119402027360869" at="35,80,36,173" concept="2" />
+      <node id="5883119402027345341" at="39,7,40,22" concept="6" />
+      <node id="5883119402027345341" at="18,0,21,0" concept="1" trace="Dashboard_Constraints#()V" />
+      <node id="5883119402027345341" at="25,0,29,0" concept="4" trace="hasOwnSetter#()Z" />
+      <node id="5883119402027346003" at="33,0,37,9" concept="3" />
+      <node id="5883119402027345341" at="31,42,37,9" concept="0" />
+      <node id="5883119402027345341" at="29,0,39,0" concept="4" trace="setValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="5883119402027345341" at="23,123,39,7" concept="2" />
+      <node id="5883119402027345341" at="21,0,42,0" concept="4" trace="getNotDefaultSProperties#()Ljava/util/Map;" />
+      <scope id="5883119402027345341" at="18,34,19,98" />
+      <scope id="5883119402027345341" at="26,37,27,20" />
+      <scope id="5883119402027346004" at="34,97,36,173" />
+      <scope id="5883119402027345341" at="18,0,21,0" />
+      <scope id="5883119402027345341" at="25,0,29,0" />
+      <scope id="5883119402027345891" at="31,42,37,9" />
+      <scope id="5883119402027345341" at="30,62,37,9">
+        <var name="propertyName" id="5883119402027345341" />
+      </scope>
+      <scope id="5883119402027345341" at="29,0,39,0">
+        <var name="node" id="5883119402027345341" />
+        <var name="propertyValue" id="5883119402027345341" />
+      </scope>
+      <scope id="5883119402027345341" at="22,88,40,22">
+        <var name="properties" id="5883119402027345341" />
+      </scope>
+      <scope id="5883119402027345341" at="21,0,42,0" />
+      <unit id="5883119402027345341" at="24,129,39,5" name="org.campagnelab.circles.mockup.constraints.Dashboard_Constraints$1" />
+      <unit id="5883119402027345341" at="17,0,43,0" name="org.campagnelab.circles.mockup.constraints.Dashboard_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

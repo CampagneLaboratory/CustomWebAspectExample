@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="aaw62sb2ien9j49kq4psave66doykcd">
+  <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+  <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+  <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
+  <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+  <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.logging(JDK/)" />
+  <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.ids(MPS.Core/)" />
+  <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.structure(MPS.Core/)" />
+  <dep model="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+  <dep model="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+  <dep model="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+  <dep model="a3e4657f-a76c-45bb-bbda-c764596ecc65/java:org.apache.log4j(jetbrains.mps.baseLanguage.logging.runtime/)" />
+  <dep model="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.core.client(org.google.gwt/)" />
+  <dep model="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.dom.client(org.google.gwt/)" />
+  <dep model="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.uibinder.client(org.google.gwt/)" />
+  <dep model="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:jetbrains.jetpad.mapper(org.google.gwt/)" />
+  <dep model="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:jetbrains.jetpad.mapper.gwt(org.google.gwt/)" />
+  <dep model="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:jetbrains.jetpad.model.event(org.google.gwt/)" />
+  <dep model="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:jetbrains.jetpad.model.property(org.google.gwt/)" />
+  <dep model="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.common.concur.resource(com.orientechnologies.orient/)" />
+  <dep model="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core(com.orientechnologies.orient/)" />
+  <dep model="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.db.document(com.orientechnologies.orient/)" />
+  <dep model="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.db.record(com.orientechnologies.orient/)" />
+  <dep model="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.metadata.schema(com.orientechnologies.orient/)" />
+  <dep model="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.record.impl(com.orientechnologies.orient/)" />
+  <dep model="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.type(com.orientechnologies.orient/)" />
+  <dep model="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" hash="-5os1n1zhnr5ye6vwxezcpm6efvd7uwh" />
+  <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="ablv8pfswrhbw1rlmm7134a3n4snmlw" />
+  <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" hash="edv6457qhe381dcl4ioix6smpp8i4qc" />
+  <dep model="r:00000000-0000-4000-0000-011c8959029f(jetbrains.mps.lang.editor.generator.baseLanguage.template.main@generator)" hash="-3s14n3ry8kc9bp5d4hiekauc7t77vhx" />
+  <dep model="r:00000000-0000-4000-0000-011c895902a9(jetbrains.mps.lang.actions.generator.baseLanguage.template.main@generator)" hash="3ef02s88wyul60qxf429gddijo2xke1" />
+  <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" hash="-3i2fksyx0t02zh375cs47dlyeqa2gnb" />
+  <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="7rnkisogkv9glziinitb1mcanz0rma9" />
+  <dep model="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" hash="-63v76fe6uwbnm9r42mf6xrypnmpyub2" />
+  <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" hash="dcmykzke1natadyl93xhpoxzxwwgwsa" />
+  <dep model="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" hash="-6462vy4aon027tj793tks1586zo6y8i" />
+  <dep model="r:00000000-0000-4000-0000-011c8959032f(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.main@generator)" hash="-brzbrhwgbr7l9u49d5j1oc7j9hjx66d" />
+  <dep model="r:00000000-0000-4000-0000-011c89590580(jetbrains.mps.baseLanguage.logging.generator.baseLanguage.template.main@generator)" hash="4ouvf0if2mocz9d0sfow422sdgi7ae7" />
+  <dep model="r:229ce18d-2bb0-4d5b-a7cd-cec65841e459(jetbrains.mps.lang.behavior.generator.template.main@generator)" hash="c9jhi1xvfq7fl5qi8aklqbki6jibyu3" />
+  <dep model="r:25f3c254-f367-4c0e-9787-31029b580cb9(org.campagnelab.aspects.web.editor.generator.template.main@generator)" hash="-cdswipbme5xe0y9k6lbfunglmb8vwun" />
+  <dep model="r:3d4b8a25-2cca-4083-ac64-ee80560fc20e(org.campagnelab.circles.model.editor)" hash="949u1zcgoh41uar5bz0ww7bz5v3ea20" />
+  <dep model="r:623c8eb4-df21-4fdc-925d-d384e22129a2(org.campagnelab.circles.aspect.db)" hash="-sbef22c12qy7uansp5navr75c0rnl1" />
+  <dep model="r:700dcccc-5294-4569-a97b-cb7b4632a7c8(web@generator)" hash="2asghtdmf4jjagzxozrplne2olycsmm" />
+  <dep model="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" hash="5tyle61eiix8ybkdc7j0fz27r5170ak" />
+  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="-5xb7jypw7d0bhouyx3xmbfw2tz5ihja" />
+  <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" hash="62u381ta1stvmwb9ag94ry3gbigcrl8" />
+  <dep model="r:c71b740e-a20d-4190-9688-0f8df932da4d(jetbrains.mps.baseLanguage.tuples.generator.template.main@generator)" hash="3ndi5oguf9ar8o0fntk8lv2vizkf203" />
+  <dep model="r:ccf57985-801c-4f69-ab7c-010c610dc9b9(org.campagnelab.circles.aspect.generator.template.main@generator)" hash="2zc08dgw3tmz6cnbbyy9q054ekcyxnt" />
+  <dep model="r:d1558b8f-fc9e-4ca7-bb90-70ac789f336e(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.post@generator)" hash="508a8t82z61ifoghlvwx4mhs1o85jb4" />
+  <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="exf8ta60n8p6ynrjiy6o6g4awd1t7t4" />
+  <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" hash="-a9qnmv9xpy8bi0sm6iwrptmrospabf2" />
+  <common hash="-1btxmc5uvay4jp7p00ge01b1t93eerf" dependsOnNodes="true">
+    <dep root="2477299493858104521" />
+    <dep root="2783976866122782758" />
+    <dep root="2920813966326619634" />
+    <dep root="4523690553371579509" />
+    <dep root="5597880810755349103" />
+    <dep root="5665480314684618441" />
+    <dep root="6031506422524117231" />
+    <dep root="7317038553508872149" />
+    <dep root="7317038553516714338" />
+    <dep root="7317038553517237457" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <dep model="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <dep model="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <dep model="a3e4657f-a76c-45bb-bbda-c764596ecc65/java:org.apache.log4j(jetbrains.mps.baseLanguage.logging.runtime/)" />
+    <dep model="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.core.client(org.google.gwt/)" />
+    <dep model="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.dom.client(org.google.gwt/)" />
+    <dep model="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.uibinder.client(org.google.gwt/)" />
+    <dep model="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:jetbrains.jetpad.mapper.gwt(org.google.gwt/)" />
+    <dep model="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.db.document(com.orientechnologies.orient/)" />
+    <dep model="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.record.impl(com.orientechnologies.orient/)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959029f(jetbrains.mps.lang.editor.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902a9(jetbrains.mps.lang.actions.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590580(jetbrains.mps.baseLanguage.logging.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:229ce18d-2bb0-4d5b-a7cd-cec65841e459(jetbrains.mps.lang.behavior.generator.template.main@generator)" />
+    <dep model="r:700dcccc-5294-4569-a97b-cb7b4632a7c8(web@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:c71b740e-a20d-4190-9688-0f8df932da4d(jetbrains.mps.baseLanguage.tuples.generator.template.main@generator)" />
+    <dep model="r:ccf57985-801c-4f69-ab7c-010c610dc9b9(org.campagnelab.circles.aspect.generator.template.main@generator)" />
+    <dep model="r:d1558b8f-fc9e-4ca7-bb90-70ac789f336e(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.post@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
+    <file name="BaseConcept_WebMapper.java" />
+    <file name="BaseConcept_WebView.java" />
+    <file name="BaseConcept_WebView.ui.xml" />
+    <file name="DbSerializer.java" />
+    <file name="WebAspectDescriptor.java" />
+  </common>
+  <source id="6031506422524117231" hash="1xsyb87ba0v3b7lnkenv24fq6f8665l" dependsOnCreated="true" dependsOnNodes="true">
+    <dep root="2477299493858104521" />
+    <dep root="2783976866122782758" />
+    <dep root="2920813966326619634" />
+    <dep root="4523690553371579509" />
+    <dep root="5597880810755349103" />
+    <dep root="5665480314684618441" />
+    <dep root="7317038553508872149" />
+    <dep root="7317038553516714338" />
+    <dep root="7317038553517237457" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.logging(JDK/)" />
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.ids(MPS.Core/)" />
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.structure(MPS.Core/)" />
+    <dep model="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <dep model="a3e4657f-a76c-45bb-bbda-c764596ecc65/java:org.apache.log4j(jetbrains.mps.baseLanguage.logging.runtime/)" />
+    <dep model="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.common.concur.resource(com.orientechnologies.orient/)" />
+    <dep model="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core(com.orientechnologies.orient/)" />
+    <dep model="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.db.document(com.orientechnologies.orient/)" />
+    <dep model="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.db.record(com.orientechnologies.orient/)" />
+    <dep model="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.metadata.schema(com.orientechnologies.orient/)" />
+    <dep model="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.record.impl(com.orientechnologies.orient/)" />
+    <dep model="c36fcbd7-b6d3-4791-b59e-c3228f9059ce/java:com.orientechnologies.orient.core.type(com.orientechnologies.orient/)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959029f(jetbrains.mps.lang.editor.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959032f(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590580(jetbrains.mps.baseLanguage.logging.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:3d4b8a25-2cca-4083-ac64-ee80560fc20e(org.campagnelab.circles.model.editor)" />
+    <dep model="r:623c8eb4-df21-4fdc-925d-d384e22129a2(org.campagnelab.circles.aspect.db)" />
+    <dep model="r:700dcccc-5294-4569-a97b-cb7b4632a7c8(web@generator)" />
+    <dep model="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
+    <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
+    <dep model="r:ccf57985-801c-4f69-ab7c-010c610dc9b9(org.campagnelab.circles.aspect.generator.template.main@generator)" />
+    <dep model="r:d1558b8f-fc9e-4ca7-bb90-70ac789f336e(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.post@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
+    <file name="AttributeToWebModel.java" />
+    <file name="Attribute_Bean.java" />
+    <file name="Attribute_DbToPojoHelper.java" />
+    <file name="Attribute_WebModel.java" />
+    <file name="Attribute_WebModelImpl.java" />
+    <file name="BaseCommentAttributeToWebModel.java" />
+    <file name="BaseCommentAttribute_Bean.java" />
+    <file name="BaseCommentAttribute_DbToPojoHelper.java" />
+    <file name="BaseCommentAttribute_WebModel.java" />
+    <file name="BaseCommentAttribute_WebModelImpl.java" />
+    <file name="BaseConceptToWebModel.java" />
+    <file name="BaseConcept_Bean.java" />
+    <file name="BaseConcept_DbToPojoHelper.java" />
+    <file name="BaseConcept_WebModel.java" />
+    <file name="BaseConcept_WebModelImpl.java" />
+    <file name="ChildAttributeToWebModel.java" />
+    <file name="ChildAttribute_Bean.java" />
+    <file name="ChildAttribute_DbToPojoHelper.java" />
+    <file name="ChildAttribute_WebModel.java" />
+    <file name="ChildAttribute_WebModelImpl.java" />
+    <file name="DbGenericService.java" />
+    <file name="DbGenericServiceAsync.java" />
+    <file name="DbGenericServiceImpl.java" />
+    <file name="DbSchemaHelper.java" />
+    <file name="ExportScopeModuleToWebModel.java" />
+    <file name="ExportScopeModule_Bean.java" />
+    <file name="ExportScopeModule_DbToPojoHelper.java" />
+    <file name="ExportScopeModule_WebModel.java" />
+    <file name="ExportScopeModule_WebModelImpl.java" />
+    <file name="ExportScopeNamespaceToWebModel.java" />
+    <file name="ExportScopeNamespace_Bean.java" />
+    <file name="ExportScopeNamespace_DbToPojoHelper.java" />
+    <file name="ExportScopeNamespace_WebModel.java" />
+    <file name="ExportScopeNamespace_WebModelImpl.java" />
+    <file name="ExportScopePublicToWebModel.java" />
+    <file name="ExportScopePublic_Bean.java" />
+    <file name="ExportScopePublic_DbToPojoHelper.java" />
+    <file name="ExportScopePublic_WebModel.java" />
+    <file name="ExportScopePublic_WebModelImpl.java" />
+    <file name="ExportScopeToWebModel.java" />
+    <file name="ExportScope_Bean.java" />
+    <file name="ExportScope_DbToPojoHelper.java" />
+    <file name="ExportScope_WebModel.java" />
+    <file name="ExportScope_WebModelImpl.java" />
+    <file name="IDontApplyTypesystemRules_Bean.java" />
+    <file name="IDontApplyTypesystemRules_DbToPojoHelper.java" />
+    <file name="INamedConcept_Bean.java" />
+    <file name="INamedConcept_DbToPojoHelper.java" />
+    <file name="ISkipConstraintsChecking_Bean.java" />
+    <file name="ISkipConstraintsChecking_DbToPojoHelper.java" />
+    <file name="ISuppressErrors_Bean.java" />
+    <file name="ISuppressErrors_DbToPojoHelper.java" />
+    <file name="IWrapper_Bean.java" />
+    <file name="IWrapper_DbToPojoHelper.java" />
+    <file name="InterfacePart_Bean.java" />
+    <file name="InterfacePart_DbToPojoHelper.java" />
+    <file name="LanguageToWebModel.java" />
+    <file name="Language_Bean.java" />
+    <file name="Language_DbToPojoHelper.java" />
+    <file name="Language_WebModel.java" />
+    <file name="Language_WebModelImpl.java" />
+    <file name="LinkAttributeToWebModel.java" />
+    <file name="LinkAttribute_Bean.java" />
+    <file name="LinkAttribute_DbToPojoHelper.java" />
+    <file name="LinkAttribute_WebModel.java" />
+    <file name="LinkAttribute_WebModelImpl.java" />
+    <file name="ModelToWebModel.java" />
+    <file name="Model_Bean.java" />
+    <file name="Model_DbToPojoHelper.java" />
+    <file name="Model_WebModel.java" />
+    <file name="Model_WebModelImpl.java" />
+    <file name="ModuleToWebModel.java" />
+    <file name="Module_Bean.java" />
+    <file name="Module_DbToPojoHelper.java" />
+    <file name="Module_WebModel.java" />
+    <file name="Module_WebModelImpl.java" />
+    <file name="NodeAttributeToWebModel.java" />
+    <file name="NodeAttribute_Bean.java" />
+    <file name="NodeAttribute_DbToPojoHelper.java" />
+    <file name="NodeAttribute_WebModel.java" />
+    <file name="NodeAttribute_WebModelImpl.java" />
+    <file name="ProjectToWebModel.java" />
+    <file name="Project_Bean.java" />
+    <file name="Project_DbToPojoHelper.java" />
+    <file name="Project_WebModel.java" />
+    <file name="Project_WebModelImpl.java" />
+    <file name="PropertyAttributeToWebModel.java" />
+    <file name="PropertyAttribute_Bean.java" />
+    <file name="PropertyAttribute_DbToPojoHelper.java" />
+    <file name="PropertyAttribute_WebModel.java" />
+    <file name="PropertyAttribute_WebModelImpl.java" />
+    <file name="RootRefToWebModel.java" />
+    <file name="RootRef_Bean.java" />
+    <file name="RootRef_DbToPojoHelper.java" />
+    <file name="RootRef_WebModel.java" />
+    <file name="RootRef_WebModelImpl.java" />
+    <file name="RootToWebModel.java" />
+    <file name="Root_Bean.java" />
+    <file name="Root_DbToPojoHelper.java" />
+    <file name="Root_WebModel.java" />
+    <file name="Root_WebModelImpl.java" />
+    <file name="SearchNodesToWebModel.java" />
+    <file name="SearchNodes_Bean.java" />
+    <file name="SearchNodes_DbToPojoHelper.java" />
+    <file name="SearchNodes_WebModel.java" />
+    <file name="SearchNodes_WebModelImpl.java" />
+    <file name="SideTransformInfoToWebModel.java" />
+    <file name="SideTransformInfo_Bean.java" />
+    <file name="SideTransformInfo_DbToPojoHelper.java" />
+    <file name="SideTransformInfo_WebModel.java" />
+    <file name="SideTransformInfo_WebModelImpl.java" />
+    <file name="SolutionToWebModel.java" />
+    <file name="Solution_Bean.java" />
+    <file name="Solution_DbToPojoHelper.java" />
+    <file name="Solution_WebModel.java" />
+    <file name="Solution_WebModelImpl.java" />
+    <file name="SuppressErrorsAnnotationToWebModel.java" />
+    <file name="SuppressErrorsAnnotation_Bean.java" />
+    <file name="SuppressErrorsAnnotation_DbToPojoHelper.java" />
+    <file name="SuppressErrorsAnnotation_WebModel.java" />
+    <file name="SuppressErrorsAnnotation_WebModelImpl.java" />
+    <file name="TestAttribute.java" />
+    <file name="TestBaseCommentAttribute.java" />
+    <file name="TestBaseConcept.java" />
+    <file name="TestChildAttribute.java" />
+    <file name="TestExportScope.java" />
+    <file name="TestExportScopeModule.java" />
+    <file name="TestExportScopeNamespace.java" />
+    <file name="TestExportScopePublic.java" />
+    <file name="TestLanguage.java" />
+    <file name="TestLinkAttribute.java" />
+    <file name="TestModel.java" />
+    <file name="TestModule.java" />
+    <file name="TestNodeAttribute.java" />
+    <file name="TestProject.java" />
+    <file name="TestPropertyAttribute.java" />
+    <file name="TestRoot.java" />
+    <file name="TestRootRef.java" />
+    <file name="TestSearchNodes.java" />
+    <file name="TestSideTransformInfo.java" />
+    <file name="TestSolution.java" />
+    <file name="TestSuppressErrorsAnnotation.java" />
+  </source>
+  <source id="5665480314684618441" hash="-b7rb8pl21ykzqiala7ysziivab2pgt8" />
+  <source id="7317038553508872149" hash="dbmsd1td4swxuf1abdek09kve3cfmlb" dependsOnNodes="true">
+    <dep root="2477299493858104521" />
+    <dep root="2783976866122782758" />
+    <dep root="2920813966326619634" />
+    <dep root="4523690553371579509" />
+    <dep root="5597880810755349103" />
+    <dep root="5665480314684618441" />
+    <dep root="6031506422524117231" />
+    <dep root="7317038553516714338" />
+    <dep root="7317038553517237457" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.logging(JDK/)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:3d4b8a25-2cca-4083-ac64-ee80560fc20e(org.campagnelab.circles.model.editor)" />
+    <dep model="r:700dcccc-5294-4569-a97b-cb7b4632a7c8(web@generator)" />
+    <dep model="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
+    <file name="AppActivityMapper.java" />
+    <file name="AppPlaceHistoryMapper.java" />
+    <file name="ClientFactory.java" />
+    <file name="ClientFactoryInterface.java" />
+    <file name="GenericPlace.java" />
+    <file name="ModuleEntryPoint.java" />
+    <file name="ReflectionHelper.java" />
+    <file name="WebModelFactory.java" />
+    <file name="module.gwt.xml" />
+    <file name="module.html.xml" />
+    <file name="web.xml" />
+  </source>
+  <source id="7317038553516714338" name="ViewProject" hash="-9z528b3ycru0m5j6dfoz2u0lx9tju05" dependsOnNodes="true">
+    <dep root="2477299493858104521" />
+    <dep root="2783976866122782758" />
+    <dep root="2920813966326619634" />
+    <dep root="4523690553371579509" />
+    <dep root="5597880810755349103" />
+    <dep root="5665480314684618441" />
+    <dep root="6031506422524117231" />
+    <dep root="7317038553508872149" />
+    <dep root="7317038553517237457" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.logging(JDK/)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:700dcccc-5294-4569-a97b-cb7b4632a7c8(web@generator)" />
+    <dep model="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
+    <file name="ViewProject.java" />
+    <file name="ViewProjectActivity.java" />
+  </source>
+  <source id="7317038553517237457" hash="7xte6wqukav5rptzoz0axnlbvva58lr" dependsOnNodes="true">
+    <dep root="2477299493858104521" />
+    <dep root="2783976866122782758" />
+    <dep root="2920813966326619634" />
+    <dep root="4523690553371579509" />
+    <dep root="5597880810755349103" />
+    <dep root="5665480314684618441" />
+    <dep root="6031506422524117231" />
+    <dep root="7317038553508872149" />
+    <dep root="7317038553516714338" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
+    <dep model="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.core.client(org.google.gwt/)" />
+    <dep model="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.dom.client(org.google.gwt/)" />
+    <dep model="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:com.google.gwt.uibinder.client(org.google.gwt/)" />
+    <dep model="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:jetbrains.jetpad.mapper(org.google.gwt/)" />
+    <dep model="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:jetbrains.jetpad.mapper.gwt(org.google.gwt/)" />
+    <dep model="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:jetbrains.jetpad.model.event(org.google.gwt/)" />
+    <dep model="c2c984cb-cc95-4cf9-be8a-1d2e7c86d1d3/java:jetbrains.jetpad.model.property(org.google.gwt/)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959029f(jetbrains.mps.lang.editor.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:25f3c254-f367-4c0e-9787-31029b580cb9(org.campagnelab.aspects.web.editor.generator.template.main@generator)" />
+    <dep model="r:3d4b8a25-2cca-4083-ac64-ee80560fc20e(org.campagnelab.circles.model.editor)" />
+    <dep model="r:700dcccc-5294-4569-a97b-cb7b4632a7c8(web@generator)" />
+    <dep model="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <file name="Language_WebMapper.java" />
+    <file name="Language_WebView.java" />
+    <file name="Language_WebView.ui.xml" />
+    <file name="Model_WebMapper.java" />
+    <file name="Model_WebView.java" />
+    <file name="Model_WebView.ui.xml" />
+    <file name="Module_WebMapper.java" />
+    <file name="Module_WebView.java" />
+    <file name="Module_WebView.ui.xml" />
+    <file name="Project_WebMapper.java" />
+    <file name="Project_WebView.java" />
+    <file name="Project_WebView.ui.xml" />
+    <file name="RootRef_WebMapper.java" />
+    <file name="RootRef_WebView.java" />
+    <file name="RootRef_WebView.ui.xml" />
+    <file name="Root_WebMapper.java" />
+    <file name="Root_WebView.java" />
+    <file name="Root_WebView.ui.xml" />
+    <file name="SearchNodes_WebMapper.java" />
+    <file name="SearchNodes_WebView.java" />
+    <file name="SearchNodes_WebView.ui.xml" />
+    <file name="Solution_WebMapper.java" />
+    <file name="Solution_WebView.java" />
+    <file name="Solution_WebView.ui.xml" />
+  </source>
+  <source id="2920813966326619634" name="ViewModulePlace" hash="1657xcu6pjvijljlqhp5pmeu7qdgyvo" dependsOnNodes="true">
+    <dep root="2477299493858104521" />
+    <dep root="2783976866122782758" />
+    <dep root="4523690553371579509" />
+    <dep root="5597880810755349103" />
+    <dep root="5665480314684618441" />
+    <dep root="6031506422524117231" />
+    <dep root="7317038553508872149" />
+    <dep root="7317038553516714338" />
+    <dep root="7317038553517237457" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.logging(JDK/)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:700dcccc-5294-4569-a97b-cb7b4632a7c8(web@generator)" />
+    <dep model="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
+    <file name="ViewModulePlace.java" />
+    <file name="ViewSolutionActivity.java" />
+  </source>
+  <source id="2477299493858104521" name="SearchNodesPlace" hash="-bbm8x9shi804rgvg29ovh6hqqh7neqv" dependsOnNodes="true">
+    <dep root="2783976866122782758" />
+    <dep root="2920813966326619634" />
+    <dep root="4523690553371579509" />
+    <dep root="5597880810755349103" />
+    <dep root="5665480314684618441" />
+    <dep root="6031506422524117231" />
+    <dep root="7317038553508872149" />
+    <dep root="7317038553516714338" />
+    <dep root="7317038553517237457" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.logging(JDK/)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:700dcccc-5294-4569-a97b-cb7b4632a7c8(web@generator)" />
+    <dep model="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
+    <file name="SearchNodesPlace.java" />
+    <file name="ViewSearchNodesActivity.java" />
+  </source>
+  <source id="5597880810755349103" name="ViewRoot" hash="-cxia93ljoz9rb4oj4tnv8pd56eb6grm" dependsOnNodes="true">
+    <dep root="2477299493858104521" />
+    <dep root="2783976866122782758" />
+    <dep root="2920813966326619634" />
+    <dep root="4523690553371579509" />
+    <dep root="5665480314684618441" />
+    <dep root="6031506422524117231" />
+    <dep root="7317038553508872149" />
+    <dep root="7317038553516714338" />
+    <dep root="7317038553517237457" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.logging(JDK/)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:700dcccc-5294-4569-a97b-cb7b4632a7c8(web@generator)" />
+    <dep model="r:9b094ee1-a2f9-46da-8bf6-a03a289da61f(org.campagnelab.circles.model.structure)" />
+    <file name="ViewRoot.java" />
+    <file name="ViewRootActivity.java" />
+  </source>
+  <source id="4523690553371579509" name="pom" hash="-8xeeclsrutqs2sutka0taq589kbyjtq">
+    <file name="pom.xml" />
+  </source>
+  <source id="2783976866122782758" name="myMethod" hash="-9clo6jj02893kd08quk5ftivnn4y1df" />
+</dependencies>
+

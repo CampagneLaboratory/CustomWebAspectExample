@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="IntentionsDescriptor.java">
+      <unit at="13,0,47,0" name="org.campagnelab.staging.intentions.IntentionsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:560fd43b-6530-430a-924a-4ac5df08b114(org.campagnelab.staging.intentions)/3317590328854074614">
+    <file name="AddRemoveStageAnnotation_Intention.java">
+      <node id="3317590328854074614" at="23,0,24,0" concept="3" trace="myCachedExecutable" />
+      <node id="3317590328854074614" at="24,47,25,296" concept="8" />
+      <node id="3317590328854074614" at="28,35,29,38" concept="6" />
+      <node id="3317590328854074614" at="33,53,34,19" concept="6" />
+      <node id="3317590328854074614" at="35,5,36,16" concept="6" />
+      <node id="3317590328854086212" at="38,91,39,38" concept="7" />
+      <node id="4829993475491372700" at="39,38,40,102" concept="6" />
+      <node id="3317590328854074614" at="43,35,44,17" concept="6" />
+      <node id="3317590328854074614" at="47,37,48,140" concept="2" />
+      <node id="3317590328854074614" at="49,5,50,30" concept="6" />
+      <node id="3317590328854074690" at="56,87,57,314" concept="6" />
+      <node id="3317590328854079950" at="61,250,62,454" concept="2" />
+      <node id="3317590328854080666" at="63,14,64,264" concept="2" />
+      <node id="3317590328854074614" at="68,48,69,53" concept="6" />
+      <node id="3317590328854074614" at="53,0,55,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="3317590328854080631" at="63,12,65,7" concept="0" />
+      <node id="3317590328854074614" at="24,0,27,0" concept="1" trace="AddRemoveStageAnnotation_Intention#()V" />
+      <node id="3317590328854074614" at="32,84,35,5" concept="4" />
+      <node id="3317590328854074614" at="46,99,49,5" concept="4" />
+      <node id="3317590328854074614" at="27,0,31,0" concept="5" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="3317590328854074614" at="38,0,42,0" concept="5" trace="isApplicableToNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="3317590328854074614" at="42,0,46,0" concept="5" trace="isSurroundWith#()Z" />
+      <node id="3317590328854074614" at="55,0,59,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="3317590328854074614" at="67,0,71,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/intentions/IntentionDescriptor;" />
+      <node id="3317590328854078511" at="60,78,65,7" concept="4" />
+      <node id="3317590328854074614" at="46,0,52,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="3317590328854074614" at="31,0,38,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="3317590328854074614" at="59,0,67,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <scope id="3317590328854074614" at="53,38,53,38" />
+      <scope id="3317590328854074614" at="24,47,25,296" />
+      <scope id="3317590328854074614" at="28,35,29,38" />
+      <scope id="3317590328854074614" at="33,53,34,19" />
+      <scope id="3317590328854074614" at="43,35,44,17" />
+      <scope id="3317590328854074614" at="47,37,48,140" />
+      <scope id="3317590328854074616" at="56,87,57,314" />
+      <scope id="3317590328854078513" at="61,250,62,454" />
+      <scope id="3317590328854080632" at="63,14,64,264" />
+      <scope id="3317590328854074614" at="68,48,69,53" />
+      <scope id="3317590328854084647" at="38,91,40,102" />
+      <scope id="3317590328854074614" at="53,0,55,0" />
+      <scope id="3317590328854074614" at="24,0,27,0" />
+      <scope id="3317590328854074614" at="27,0,31,0" />
+      <scope id="3317590328854074614" at="32,84,36,16" />
+      <scope id="3317590328854074614" at="38,0,42,0">
+        <var name="editorContext" id="3317590328854074614" />
+        <var name="node" id="3317590328854074614" />
+      </scope>
+      <scope id="3317590328854074614" at="42,0,46,0" />
+      <scope id="3317590328854074614" at="46,99,50,30" />
+      <scope id="3317590328854074614" at="55,0,59,0">
+        <var name="editorContext" id="3317590328854074614" />
+        <var name="node" id="3317590328854074614" />
+      </scope>
+      <scope id="3317590328854074614" at="67,0,71,0" />
+      <scope id="3317590328854074618" at="60,78,65,7" />
+      <scope id="3317590328854074614" at="46,0,52,0">
+        <var name="context" id="3317590328854074614" />
+        <var name="node" id="3317590328854074614" />
+      </scope>
+      <scope id="3317590328854074614" at="31,0,38,0">
+        <var name="editorContext" id="3317590328854074614" />
+        <var name="node" id="3317590328854074614" />
+      </scope>
+      <scope id="3317590328854074614" at="59,0,67,0">
+        <var name="editorContext" id="3317590328854074614" />
+        <var name="node" id="3317590328854074614" />
+      </scope>
+      <unit id="3317590328854074614" at="52,0,72,0" name="org.campagnelab.staging.intentions.AddRemoveStageAnnotation_Intention$IntentionImplementation" />
+      <unit id="3317590328854074614" at="22,0,73,0" name="org.campagnelab.staging.intentions.AddRemoveStageAnnotation_Intention" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="2asghtdmf4jjagzxozrplne2olycsmm">
+  <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+  <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+  <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+  <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.escape(MPS.Core/)" />
+  <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.template(MPS.Core/)" />
+  <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.ids(MPS.Core/)" />
+  <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.structure(MPS.Core/)" />
+  <dep model="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+  <dep model="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+  <dep model="d936855b-48da-4812-a8a0-2bfddd633ac5/java:jetbrains.mps.core.aspects.behaviour.api(jetbrains.mps.lang.behavior.api/)" />
+  <dep model="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" hash="-a8e484rd9imtn088xa5huxrzutshd8z" />
+  <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="ablv8pfswrhbw1rlmm7134a3n4snmlw" />
+  <dep model="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" hash="aexc77xhgtim5opfr44ijtvhmvhzmns" />
+  <dep model="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" hash="-bssss0rgoa6tyge29ygqp3jtl01d2u1" />
+  <dep model="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)" hash="-9mfzi1i6fujwaz595o3lbldwomz2rqt" />
+  <dep model="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" hash="77em03df6z01c2ba8jurgw9erbpw3c4" />
+  <dep model="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" hash="9h997f4e40pl1fx2bd06kd4yxkcop6o" />
+  <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" hash="-3i2fksyx0t02zh375cs47dlyeqa2gnb" />
+  <dep model="r:00000000-0000-4000-0000-011c895902cc(jetbrains.mps.baseLanguage.generator.java.conceptFunctionDefaults@generator)" hash="-6urusu3hy054we1z6atu0qgf30j2ttw" />
+  <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="7rnkisogkv9glziinitb1mcanz0rma9" />
+  <dep model="r:00000000-0000-4000-0000-011c895902de(jetbrains.mps.baseLanguage.blTypes.primitiveDescriptors)" />
+  <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" hash="a0yobyvflqxzm67b5tp1ptojn7zvwhv" />
+  <dep model="r:00000000-0000-4000-0000-011c895902e9(jetbrains.mps.lang.generator.generator.baseLanguage.template.main@generator)" hash="-4jmzt47gpxspxd022i59nvtkxzlnrpv" />
+  <dep model="r:00000000-0000-4000-0000-011c895902f3(jetbrains.mps.lang.generator.generationContext.structure)" hash="tw18uxj9ebmqzfee48hcjqnlef2570" />
+  <dep model="r:00000000-0000-4000-0000-011c895902f4(jetbrains.mps.lang.generator.generationContext.generator.baseLanguage.template.main@generator)" hash="7tu6r5ftw7w80r84ftmjr5sjpjg3id8" />
+  <dep model="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" hash="-63v76fe6uwbnm9r42mf6xrypnmpyub2" />
+  <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" hash="dcmykzke1natadyl93xhpoxzxwwgwsa" />
+  <dep model="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" hash="-6462vy4aon027tj793tks1586zo6y8i" />
+  <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" hash="5dojjs745ice4fh5ramaihtwiwmjxlx" />
+  <dep model="r:229ce18d-2bb0-4d5b-a7cd-cec65841e459(jetbrains.mps.lang.behavior.generator.template.main@generator)" hash="c9jhi1xvfq7fl5qi8aklqbki6jibyu3" />
+  <dep model="r:2b50e9c8-828e-4d1c-b75e-74ee8d185c93(org.campagnelab.circles.aspect.structure)" hash="-2zbdh7sd9a3ol25st0ozo66v8vugbl0" />
+  <dep model="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" hash="-2fdesmql8ca801bii65qg466b0dw1xl" />
+  <dep model="r:4d14f64f-fa9a-4ab0-8621-23682dd759f0(org.campagnelab.circles.aspect.plugin)" hash="d6qiyqm9f5el8k9slqz9kl0kypam1kw" />
+  <dep model="r:623c8eb4-df21-4fdc-925d-d384e22129a2(org.campagnelab.circles.aspect.db)" hash="-sbef22c12qy7uansp5navr75c0rnl1" />
+  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="-5xb7jypw7d0bhouyx3xmbfw2tz5ihja" />
+  <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" hash="62u381ta1stvmwb9ag94ry3gbigcrl8" />
+  <dep model="r:db1c5d5d-cc86-4bed-9aa5-f6746cfde04e(org.campagnelab.circles.aspect.behavior)" hash="dfuc4ryxtnce9ok2fpfj5frdw917ffb" />
+  <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="exf8ta60n8p6ynrjiy6o6g4awd1t7t4" />
+  <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" hash="-a9qnmv9xpy8bi0sm6iwrptmrospabf2" />
+  <common hash="-9b09o4sled2nt0ime4lb0ejrcalcf80" dependsOnNodes="true">
+    <dep root="1556429057109998660" />
+    <dep root="1556429057111052797" />
+    <dep root="182575972914639245" />
+    <dep root="182575972914956613" />
+    <dep root="2378691532652793725" />
+    <dep root="2378691532652809129" />
+    <dep root="2477299493866976902" />
+    <dep root="2477299493868411230" />
+    <dep root="2477299493868411235" />
+    <dep root="2477299493877720723" />
+    <dep root="2765574652332124199" />
+    <dep root="2765574652332124228" />
+    <dep root="2765574652332604467" />
+    <dep root="2765574652333819728" />
+    <dep root="2920813966327044407" />
+    <dep root="3317590328853027360" />
+    <dep root="4829993475490610255" />
+    <dep root="4829993475491618769" />
+    <dep root="4829993475491768676" />
+    <dep root="5487921954570253446" />
+    <dep root="5487921954572139393" />
+    <dep root="5487921954572170277" />
+    <dep root="5487921954572326325" />
+    <dep root="5487921954572326674" />
+    <dep root="5487921954572331249" />
+    <dep root="5487921954572337852" />
+    <dep root="5516501832587681173" />
+    <dep root="5516501832589652446" />
+    <dep root="5597880810753920269" />
+    <dep root="5761987585673252947" />
+    <dep root="7317038553506954818" />
+    <dep root="7317038553508835652" />
+    <dep root="7317038553511134506" />
+    <dep root="7317038553514083086" />
+    <dep root="7317038553515914520" />
+    <dep root="7317038553515915563" />
+    <dep root="7317038553516000262" />
+    <dep root="7317038553516004305" />
+    <dep root="7317038553516006381" />
+    <dep root="7317038553516009682" />
+    <dep root="7317038553516125573" />
+    <dep root="7466760769194737279" />
+    <dep root="7466760769197338929" />
+    <dep root="7466760769210711713" />
+    <dep root="7466760769210728132" />
+    <dep root="7466760769210729664" />
+    <dep root="8338352011214109451" />
+    <dep root="8338352011214129486" />
+    <dep root="8584166209994020957" />
+    <dep root="8584166209994020960" />
+    <dep root="8584166209995209034" />
+    <dep root="8584166209999870899" />
+    <dep root="8584166210005121933" />
+    <dep root="86594650415519558" />
+    <dep root="86594650415593108" />
+    <dep root="86594650415593119" />
+    <dep root="86594650415836045" />
+    <dep root="86594650415862710" />
+    <dep root="86594650415885252" />
+    <dep root="86594650415889744" />
+    <dep root="86594650420784069" />
+    <dep root="86594650420784076" />
+    <dep root="86594650420784081" />
+    <dep root="86594650422173905" />
+    <dep root="86594650422174068" />
+    <dep root="8665241576360969946" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.escape(MPS.Core/)" />
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.template(MPS.Core/)" />
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.ids(MPS.Core/)" />
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.structure(MPS.Core/)" />
+    <dep model="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <dep model="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <dep model="d936855b-48da-4812-a8a0-2bfddd633ac5/java:jetbrains.mps.core.aspects.behaviour.api(jetbrains.mps.lang.behavior.api/)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cc(jetbrains.mps.baseLanguage.generator.java.conceptFunctionDefaults@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902de(jetbrains.mps.baseLanguage.blTypes.primitiveDescriptors)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902e9(jetbrains.mps.lang.generator.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902f3(jetbrains.mps.lang.generator.generationContext.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902f4(jetbrains.mps.lang.generator.generationContext.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:229ce18d-2bb0-4d5b-a7cd-cec65841e459(jetbrains.mps.lang.behavior.generator.template.main@generator)" />
+    <dep model="r:2b50e9c8-828e-4d1c-b75e-74ee8d185c93(org.campagnelab.circles.aspect.structure)" />
+    <dep model="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
+    <dep model="r:4d14f64f-fa9a-4ab0-8621-23682dd759f0(org.campagnelab.circles.aspect.plugin)" />
+    <dep model="r:623c8eb4-df21-4fdc-925d-d384e22129a2(org.campagnelab.circles.aspect.db)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
+    <dep model="r:db1c5d5d-cc86-4bed-9aa5-f6746cfde04e(org.campagnelab.circles.aspect.behavior)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
+    <file name="QueriesGenerated.java" />
+  </common>
+  <source id="1556429057109998660" name="Web" hash="-6l6y41vdpgnlwextamat83c614v1mhi">
+    <dep model="r:00000000-0000-4000-0000-011c895902e9(jetbrains.mps.lang.generator.generator.baseLanguage.template.main@generator)" />
+  </source>
+  <source id="1556429057111052797" name="WebView" hash="-acfba26tbazowzs52mucfj6ghvlvili">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="2378691532652793725" name="WebMapper" hash="85fdowgzwrypo7iyq95n2k4zq0z9mi2">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="2378691532652809129" name="WebModel" hash="4v93ihxug67xwvpnsj0hv85sah13c94">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="3317590328853027360" name="UIBundle" hash="-6l8fcfz90y2nl7c7zruhi47bdwiu1ma" />
+  <source id="4829993475491618769" name="ModuleEntryPoint" hash="-54yok94y5ouf36q7hjczb4ylepoukp3">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="4829993475491768676" name="POJOBean" hash="9jx5w5dygkchqotboizv43d7e9mrwum">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="2765574652332124199" name="DbGenericService" hash="-40am3tcq7ktrw52s6klcoj06l8rinf5" />
+  <source id="2765574652332124228" name="DbGenericServiceAsync" hash="4i9x4eajfwk1qjati0ctgx9wh9fk55i" />
+  <source id="2765574652332604467" name="DbGenericServiceImpl" hash="8x2kgitrrfojg2plnoi948nqziw2ncm">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="2765574652333819728" name="DbToPojoHelper" hash="-ab0ssxsz40637pe1f6skoey4ovb6lre">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="7317038553506954818" name="ServiceImpl" hash="2l2ldmr9xton6ty4ef80p2py06i25y1" />
+  <source id="7317038553508835652" name="CheckModule" hash="84k1ok4aq23urswx3yin22n9g2w6k31" />
+  <source id="4829993475490610255" name="module.gwt" hash="3fnymsow2xdn3cszkjzv5lk6da3h9df" />
+  <source id="7317038553511134506" name="module.html" hash="93om5ell07960eqznw0um0opm3amgtb" />
+  <source id="7317038553514083086" name="web" hash="-6xfk5t9oucd3i8n1nwc10emk4la2a0p" />
+  <source id="7317038553515914520" name="AppActivityMapper" hash="58p8nyqv9m30e397j1befjq8bbdt34n">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="7317038553515915563" name="ClientFactory" hash="26hymhxum6kch5aoesl02xlux5drqj1">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="7317038553516000262" name="GenericPlace" hash="5wmcpeu32p3ovp5xzdlt2f5mizdv500" />
+  <source id="7317038553516004305" name="AppPlaceHistoryMapper" hash="-2940e08u0ekgys3av9ipispvdhplry3" />
+  <source id="7317038553516006381" name="ViewCirclePlace" hash="-bqgdrq6ftro3468fa5ynb05l5g8uf0s">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="7317038553516009682" name="ViewNodeActivity" hash="-9adv3yvvrswg90vmatn9q0minki5euv">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="7317038553516125573" name="BeanToWebModel" hash="76q2g3k6a0nnuldor4f9i5fh64gg6ku">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="8338352011214109451" name="reduce_NewBeanCreationFocus" hash="atoesm3t39gmp77oja86nb6i3l9kwu5" />
+  <source id="8338352011214129486" name="reduce_DbRetrievedFocus" hash="-93w0fchb6vi3l3jdho5xklwe91z6wdk" />
+  <source id="8665241576360969946" name="insertMapperInitialization" hash="-9znnb240co46o6lvefiuktjuo7yds7f" />
+  <source id="2920813966327044407" name="reduce_TokenRef" hash="bgp2d2y72p3rb85629uipac1n5bqft5" />
+  <source id="7466760769210711713" name="BaseConcept_WebMapper" hash="-ectmui6y1eduj0783n2vjridedvxzts">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="8584166210005121933" name="ReflectionHelperDummy" hash="-7yl29kf27exbl8ohz4qafrq25lpdrap">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="8584166209994020957" name="UnitTests" hash="-35iibhilwgg3fiqa3butctujrgu1rx9" />
+  <source id="8584166209999870899" name="DbClassToModuleName" hash="-9ozy24v5rxv1bphgj2p2mrmpk6302ap">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="7466760769194737279" name="WebModelFactory" hash="-dlwfijyd5zs91poh0wa0g61gxyri6l6">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="7466760769210728132" name="BaseConcept_WebView" hash="1gb8sj9h4m33crs963k5xnyoxetgc6q">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="7466760769197338929" name="WebModelFactoryDummy" hash="1mew7ib4eeubory6257kp5dw1u6a91m">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="7466760769210729664" name="BaseConcept_WebView.ui" hash="elybh3kn2pmkvzohhplhky3v69eja2d" />
+  <source id="8584166209995209034" name="ReflectionHelper" hash="-9pvbpezddo0z3smrm8h37e7ervx37fs">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="8584166209994020960" name="JUnitTest" hash="-amnpkoynhdvizjx3dgr2742ftypw880">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="5516501832587681173" name="BaseConcept_Bean2" hash="-1obpof9rwf828tvo58ph7r0xgpxybku">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="5516501832589652446" name="BaseConcept_WebModel2" hash="-9abalg3zij0cz9f3chc14hhelvqhj1v">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="2477299493866976902" name="NodeFocusSwitch" hash="-9ibzxmkiltinryu6mu5jw5vrxbshi8m" />
+  <source id="2477299493868411230" name="NListFocusSwitch" hash="zzdefgkqvwj4lhpnzlkzeykmoit7vh" />
+  <source id="2477299493868411235" name="case_MapChild" hash="elrsw3tmwl2cuwlpo49nkrq5g83qat5" />
+  <source id="2477299493877720723" name="ClientFactoryInterface" hash="-1vmjkaiecec1v1gauap6d5ovjqo29s8" />
+  <source id="86594650415519558" name="InsertActionWebMapperFragment" hash="-b7sdwp1e7592bkckiqbfsaqox8yl046" />
+  <source id="86594650415836045" name="InsertJavaPackageImport" hash="-3tlgn3r07ck2ko1lgjd8dssivdgzpt4" />
+  <source id="86594650415885252" name="InsertFieldIntoWebView" hash="-7fdo1auodln0c8g06r8dmlx9ql6aq5k" />
+  <source id="86594650420784069" name="InsertMethodIntoWebModel" hash="-2nmu48cxvq1w6qb8jz95sf6auae6245" />
+  <source id="86594650422173905" name="UIBundle_EditorCellModelSwitch" hash="-e56god6rcvbszwsjn0h9rrmjd65fm8v" />
+  <source id="182575972914639245" name="InsertWebMapperField" hash="-dqm2310ydydau4x7ma7xhdi4lpvduq7" />
+  <source id="182575972914956613" name="InsertAddSynchronizer_WebMapper" hash="-5dc3t80nbyx4ukwqhxhlh21anehizlh" />
+  <source id="5487921954570253446" name="WebModelImpl" hash="-z00jqvvmm3ewrad537rq4q18f1e7o4">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
+  </source>
+  <source id="86594650415862710" name="InsertLinkPlacePackages" hash="-5ta2kdtn0vf89bewwstysv803l2u1ye" />
+  <source id="86594650420784076" name="InsertLinkMethod" hash="-1nkz8yq5z1pi0mlh8fmyfsa49hzun0z" />
+  <source id="86594650415593108" name="InsertLinkIntoMapper" hash="cks982mmyrky5ykvmcfu6iy44yj5syl" />
+  <source id="86594650422174068" name="Link_UI" hash="bt8e862nilzxa8oqnf48zy08vk30mwn" />
+  <source id="86594650415889744" name="AddLinkToView" hash="3m19wvlcm879daen4qn9r08dlrq0x6x" />
+  <source id="86594650415593119" name="case_CellModel_Link_WebMapper" hash="-8kk9ll1ohxehsd5d6r8c1ebtsprfsvh" />
+  <source id="86594650420784081" name="case_CellModel_Link" hash="c19lyib760ybyczs0ma5vao76ukatf9" />
+  <source id="5487921954572170277" name="case_CellModel_ActionLink_WebMapper" hash="-9sevak9220lkcm5uosfojs37o49s0qe" />
+  <source id="5487921954572326674" name="InsertActionLinkIntoMapper" hash="21fjrjhs2xq6qdn8dm79i1bizcnowww" />
+  <source id="5487921954572337852" name="ActionLink_UI" hash="4m1ood2prtwde92b9a5qw2834yu7y06" />
+  <source id="5487921954572139393" name="case_CellModel_ActionLink" hash="dgg21f329feqqyqsba8wd06j9v30zhm" />
+  <source id="5487921954572326325" name="AddActionLinkToView" hash="-e1mizse7q2xfhf5s76mpdblqavomb7j" />
+  <source id="5487921954572331249" name="InsertActionLinkMethod" hash="87ngrvyuh6ox4uolcef71err1pvz1um" />
+  <source id="5597880810753920269" name="reduceTokenPropertyValue" hash="4ist6e0ksk6nub6gwgyd4md4j3vu9em" />
+  <source id="5761987585673252947" name="notWebAspect" hash="-ev14ocn9qbiuh4otdykskttcg45qa6f" />
+</dependencies>
+

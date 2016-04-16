@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <root nodeRef="r:7ec4096c-799e-4328-9e9f-4d107c475bbd(org.webapp.languages.jetbrains_mps_lang_core.shared.beans)/7466760769188755641">
+    <file name="BaseConcept_Bean.java">
+      <node id="5516501832588064979" at="8,29,9,28" concept="1" />
+      <node id="5516501832588064984" at="9,28,10,17" concept="1" />
+      <node id="5516501832588064989" at="10,17,11,26" concept="1" />
+      <node id="7466760769188755662" at="8,0,13,0" concept="0" trace="BaseConcept_Bean#()V" />
+      <scope id="7466760769188755664" at="8,29,11,26">
+        <var name="alias" id="5516501832588064987" />
+        <var name="shortDescription" id="5516501832588064982" />
+        <var name="virtualPackage" id="5516501832588064992" />
+      </scope>
+      <scope id="7466760769188755662" at="8,0,13,0" />
+      <unit id="7466760769188755641" at="7,0,14,0" name="org.webapp.languages.jetbrains_mps_lang_core.shared.beans.BaseConcept_Bean" />
+    </file>
+  </root>
+</debug-info>
+

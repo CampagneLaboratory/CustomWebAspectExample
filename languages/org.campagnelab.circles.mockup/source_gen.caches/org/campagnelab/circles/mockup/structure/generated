@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="bulgum58qti9xzw4f4fgj8t3z4dq86z">
+  <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+  <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="ablv8pfswrhbw1rlmm7134a3n4snmlw" />
+  <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" hash="edv6457qhe381dcl4ioix6smpp8i4qc" />
+  <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" hash="-3i2fksyx0t02zh375cs47dlyeqa2gnb" />
+  <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="7rnkisogkv9glziinitb1mcanz0rma9" />
+  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="-5xb7jypw7d0bhouyx3xmbfw2tz5ihja" />
+  <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="exf8ta60n8p6ynrjiy6o6g4awd1t7t4" />
+  <common hash="4ehq0em1os5zm0zmsjdxym9uy2qtaju" dependsOnNodes="true">
+    <dep root="8524845890418044572" />
+    <dep root="8524845890418069011" />
+    <dep root="8524845890418091159" />
+    <dep root="8524845890418235016" />
+    <dep root="8524845890418836699" />
+    <dep root="8524845890419102361" />
+    <dep root="8524845890419103360" />
+    <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <file name="StructureAspectDescriptor.java" />
+  </common>
+  <source id="8524845890418044572" name="Dashboard" hash="-3j8382d49s0ncctteutvc3gyjpcw73m" />
+  <source id="8524845890418069011" name="Circle" hash="3jjan0jkb1mt4dsptwmvadtl93blj8r" />
+  <source id="8524845890418091159" name="CircleContainer" hash="27lnstgp4wcdl05ir0q5rjbzsbyphce" />
+  <source id="8524845890418235016" name="AllCirclesInDb" hash="bmg8uss8dwzx2qazpqsnhyq3sdqd93s" />
+  <source id="8524845890418836699" name="CircleRef" hash="-5w290uwfgu5ematz1taatlmeuuynu6z" />
+  <source id="8524845890419102361" name="CircleItem" hash="-csoeducnhic0dkwvxnl6hzvvub9fb0v" />
+  <source id="8524845890419103360" name="FileItem" hash="-alknfsdcm62p3eanv0wfatfw8w4w63n" />
+</dependencies>
+
